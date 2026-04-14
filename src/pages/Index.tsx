@@ -29,7 +29,7 @@ const features = [
 ];
 
 const Index = () => {
-  const whatsappUrl = "https://wa.me/306948446827";
+  const whatsappUrl = "https://wa.me/306949393700";
 
   return (
     <div className="min-h-screen bg-background">
@@ -243,14 +243,14 @@ const Index = () => {
           </div>
           <div className="grid sm:grid-cols-3 gap-8">
             {[
-              { icon: Phone, label: "Phone / WhatsApp", value: "+30 694 844 6827", href: "tel:+306948446827" },
+              { icon: Phone, label: "Phone / WhatsApp", value: "+30 694 939 3700", href: "tel:+306949393700" },
               { icon: Mail, label: "Email", value: "haviptours@gmail.com", href: "mailto:haviptours@gmail.com" },
               { icon: MapPin, label: "Based In", value: "Athens, Greece", href: "#" },
             ].map((c) => (
-              <a key={c.label} href={c.href} className="bg-card border border-border rounded-lg p-8 text-center hover:border-primary/40 transition-colors block">
-                <c.icon className="w-6 h-6 text-primary mx-auto mb-4" />
+              <a key={c.label} href={c.href} className="bg-card border border-border rounded-lg p-6 text-center hover:border-primary/40 transition-colors block overflow-hidden">
+                <c.icon className="w-6 h-6 text-primary mx-auto mb-3" />
                 <p className="text-sm text-muted-foreground mb-1">{c.label}</p>
-                <p className="font-medium text-foreground">{c.value}</p>
+                <p className="font-medium text-foreground text-sm break-all">{c.value}</p>
               </a>
             ))}
           </div>
