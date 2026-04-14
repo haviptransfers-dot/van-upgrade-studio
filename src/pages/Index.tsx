@@ -102,7 +102,7 @@ const Index = () => {
                 WhatsApp Booking
               </Button>
             </a>
-            <a href="tel:+306948446827">
+            <a href="tel:+306949393700">
               <Button size="lg" variant="outline" className="text-base px-8 gap-2 border-primary/30 text-primary hover:bg-primary/10">
                 <Phone className="w-5 h-5" />
                 Call Us
