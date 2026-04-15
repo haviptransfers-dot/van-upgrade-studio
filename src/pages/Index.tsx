@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Clock, Users, Shield, Star, ChevronDown, MessageCircle, Plane, Ship, Camera, Building } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Gallery from "@/components/Gallery";
 import heroImg from "@/assets/hero-van.jpg";
 import interiorImg from "@/assets/van-interior.jpg";
 import logoImg from "@/assets/logo.png";
