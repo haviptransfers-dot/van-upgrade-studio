@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Clock, Users, Shield, Star, ChevronDown, MessageCircle, Plane, Ship, Camera, Building } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Gallery from "@/components/Gallery";
+import PrivateTours from "@/components/PrivateTours";
 import heroImg from "@/assets/hero-van.jpg";
 import interiorImg from "@/assets/van-interior.jpg";
 import logoImg from "@/assets/logo.png";
@@ -152,6 +153,9 @@ const Index = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* Private Tours */}
+      <PrivateTours />
 
       {/* Fleet / About */}
       <section id="fleet" className="py-24 px-4 bg-card">
