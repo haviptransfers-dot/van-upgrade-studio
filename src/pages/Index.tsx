@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Clock, Users, Shield, Star, ChevronDown, MessageCircle, Plane, Ship, Camera, Building } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Gallery from "@/components/Gallery";
 import heroImg from "@/assets/hero-van.jpg";
 import interiorImg from "@/assets/van-interior.jpg";
 import logoImg from "@/assets/logo.png";
@@ -46,6 +47,7 @@ const Index = () => {
           <div className="hidden md:flex items-center gap-8 text-sm font-medium">
             <a href="#services" className="text-foreground/70 hover:text-primary transition-colors">Services</a>
             <a href="#fleet" className="text-foreground/70 hover:text-primary transition-colors">Our Fleet</a>
+            <a href="#gallery" className="text-foreground/70 hover:text-primary transition-colors">Gallery</a>
             <a href="#about" className="text-foreground/70 hover:text-primary transition-colors">About</a>
             <a href="#contact" className="text-foreground/70 hover:text-primary transition-colors">Contact</a>
           </div>
@@ -185,6 +187,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Gallery */}
+      <Gallery />
 
       {/* Why Choose Us */}
       <section id="about" className="py-24 px-4">
