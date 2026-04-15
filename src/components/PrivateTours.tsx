@@ -52,7 +52,7 @@ const PrivateTours = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"
+          className="grid grid-cols-2 md:grid-cols-3 gap-4"
         >
           {tours.map((tour, i) => (
             <motion.div
