@@ -6,6 +6,7 @@ import tourMeteora from "@/assets/tour-meteora.jpg";
 import tourNafplio from "@/assets/tour-nafplio.jpg";
 import tourSounio from "@/assets/tour-sounio.jpg";
 import tourAcropolis from "@/assets/tour-acropolis.jpg";
+import tourSyntagma from "@/assets/tour-syntagma.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -22,6 +23,7 @@ const tours = [
   { src: tourNafplio, name: "Nafplio", desc: "Charming seaside town & Bourtzi fortress" },
   { src: tourSounio, name: "Cape Sounion", desc: "Temple of Poseidon at sunset" },
   { src: tourAcropolis, name: "Acropolis", desc: "The iconic Parthenon & Athens highlights" },
+  { src: tourSyntagma, name: "Syntagma", desc: "Unknown Soldier monument & Evzones guards" },
 ];
 
 const PrivateTours = () => {
@@ -50,7 +52,7 @@ const PrivateTours = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"
+          className="grid grid-cols-2 md:grid-cols-3 gap-4"
         >
           {tours.map((tour, i) => (
             <motion.div
