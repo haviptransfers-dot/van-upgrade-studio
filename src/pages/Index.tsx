@@ -225,7 +225,7 @@ const Index = () => {
       <section className="py-20 px-4 bg-primary/10 border-y border-primary/20">
         <div className="container mx-auto max-w-3xl text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Ready to Book Your Transfer?</h2>
-          <p className="text-muted-foreground mb-8 text-lg">Contact us via WhatsApp for instant booking confirmation. Available in English, Greek, French, German & Italian.</p>
+          <p className="text-muted-foreground mb-8 text-lg">Contact us via WhatsApp for instant booking confirmation. Available in English, Greek, French, German &amp; Italian.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="text-base px-10 gap-2 bg-primary text-primary-foreground hover:bg-primary/80">
@@ -233,7 +233,7 @@ const Index = () => {
                 Book via WhatsApp
               </Button>
             </a>
-            <a href="mailto:haviptours@gmail.com">
+            <a href="mailto:h.a.viptransfers@gmail.com">
               <Button size="lg" variant="outline" className="text-base px-10 gap-2 border-primary/30 text-primary hover:bg-primary/10">
                 <Mail className="w-5 h-5" />
                 Email Us
@@ -253,7 +253,7 @@ const Index = () => {
           <div className="grid sm:grid-cols-3 gap-8">
             {[
               { icon: Phone, label: "Phone / WhatsApp", value: "+30 694 939 3700", href: "tel:+306949393700" },
-              { icon: Mail, label: "Email", value: "haviptours@gmail.com", href: "mailto:haviptours@gmail.com" },
+              { icon: Mail, label: "Email", value: "h.a.viptransfers@gmail.com", href: "mailto:h.a.viptransfers@gmail.com" },
               { icon: MapPin, label: "Based In", value: "Athens, Greece", href: "#" },
             ].map((c) => (
               <a key={c.label} href={c.href} className="bg-card border border-border rounded-lg p-6 text-center hover:border-primary/40 transition-colors block overflow-hidden">
