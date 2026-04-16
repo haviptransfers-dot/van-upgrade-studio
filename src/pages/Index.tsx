@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import Gallery from "@/components/Gallery";
 import PrivateTours from "@/components/PrivateTours";
 import heroImg from "@/assets/hero-van.jpg";
-import interiorImg from "@/assets/van-interior.jpg";
+import interiorImg from "@/assets/van-interior-new.jpg";
 import logoImg from "@/assets/logo.png";
 
 const fadeUp = {
