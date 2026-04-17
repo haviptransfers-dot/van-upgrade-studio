@@ -6,6 +6,8 @@ const langs = [
   { code: "de", label: "DE" },
   { code: "es", label: "ES" },
   { code: "fr", label: "FR" },
+  { code: "it", label: "IT" },
+  { code: "el", label: "GR" },
 ];
 
 const LanguageSwitcher = () => {
