@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import tourDelphi from "@/assets/tour-delphi.jpg";
@@ -17,17 +18,18 @@ const fadeUp = {
   }),
 };
 
-const tours = [
-  { src: tourDelphi, name: "Delphi", desc: "Oracle of Apollo & ancient sanctuary" },
-  { src: tourMeteora, name: "Meteora", desc: "Monasteries on towering rock pillars" },
-  { src: tourNafplio, name: "Nafplio", desc: "Charming seaside town & Bourtzi fortress" },
-  { src: tourSounio, name: "Cape Sounion", desc: "Temple of Poseidon at sunset" },
-  { src: tourAcropolis, name: "Acropolis", desc: "The iconic Parthenon & Athens highlights" },
-  { src: tourSyntagma, name: "Syntagma", desc: "Unknown Soldier monument & Evzones guards" },
-];
-
 const PrivateTours = () => {
+  const { t } = useTranslation();
   const whatsappUrl = "https://wa.me/306949393700";
+
+  const tours = [
+    { src: tourDelphi, key: "delphi" },
+    { src: tourMeteora, key: "meteora" },
+    { src: tourNafplio, key: "nafplio" },
+    { src: tourSounio, key: "sounio" },
+    { src: tourAcropolis, key: "acropolis" },
+    { src: tourSyntagma, key: "syntagma" },
+  ];
 
   return (
     <section id="tours" className="py-24 px-4 bg-card">
@@ -39,13 +41,13 @@ const PrivateTours = () => {
           className="text-center mb-16"
         >
           <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-sm mb-3">
-            Explore Greece
+            {t("tours.eyebrow")}
           </motion.p>
           <motion.h2 variants={fadeUp} custom={1} className="font-display text-3xl md:text-5xl font-bold">
-            Private Tours
+            {t("tours.title")}
           </motion.h2>
           <motion.p variants={fadeUp} custom={2} className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Customized day trips from Athens to Greece's most iconic destinations. Travel in luxury with your own private driver.
+            {t("tours.subtitle")}
           </motion.p>
         </motion.div>
         <motion.div
@@ -54,28 +56,32 @@ const PrivateTours = () => {
           viewport={{ once: true }}
           className="grid grid-cols-2 md:grid-cols-3 gap-4"
         >
-          {tours.map((tour, i) => (
-            <motion.div
-              key={tour.name}
-              variants={fadeUp}
-              custom={i}
-              className="relative overflow-hidden rounded-lg group cursor-pointer"
-            >
-              <img
-                src={tour.src}
-                alt={`Private tour to ${tour.name}`}
-                loading="lazy"
-                width={768}
-                height={512}
-                className="w-full h-52 sm:h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-                <h3 className="font-display text-lg font-bold text-foreground">{tour.name}</h3>
-                <p className="text-foreground/60 text-xs mt-1">{tour.desc}</p>
-              </div>
-            </motion.div>
-          ))}
+          {tours.map((tour, i) => {
+            const name = t(`tours.items.${tour.key}.name`);
+            const desc = t(`tours.items.${tour.key}.desc`);
+            return (
+              <motion.div
+                key={tour.key}
+                variants={fadeUp}
+                custom={i}
+                className="relative overflow-hidden rounded-lg group cursor-pointer"
+              >
+                <img
+                  src={tour.src}
+                  alt={`Private tour to ${name}`}
+                  loading="lazy"
+                  width={768}
+                  height={512}
+                  className="w-full h-52 sm:h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <h3 className="font-display text-lg font-bold text-foreground">{name}</h3>
+                  <p className="text-foreground/60 text-xs mt-1">{desc}</p>
+                </div>
+              </motion.div>
+            );
+          })}
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -85,10 +91,10 @@ const PrivateTours = () => {
           className="text-center mt-10"
         >
           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-            <Button size="lg" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/80">
-              <MessageCircle className="w-5 h-5" />
-              Book a Private Tour
-            </Button>
+              <Button size="lg" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/80">
+                <MessageCircle className="w-5 h-5" />
+                {t("tours.cta")}
+              </Button>
           </a>
         </motion.div>
       </div>
