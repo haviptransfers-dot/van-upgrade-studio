@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
@@ -20,7 +21,9 @@ const images = [
   { src: gallery4, alt: "H&A Tours van with Athens Acropolis view" },
 ];
 
-const Gallery = () => (
+const Gallery = () => {
+  const { t } = useTranslation();
+  return (
   <section id="gallery" className="py-24 px-4">
     <div className="container mx-auto max-w-6xl">
       <motion.div
@@ -30,10 +33,10 @@ const Gallery = () => (
         className="text-center mb-16"
       >
         <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-sm mb-3">
-          See Our Vehicle
+          {t("gallery.eyebrow")}
         </motion.p>
         <motion.h2 variants={fadeUp} custom={1} className="font-display text-3xl md:text-5xl font-bold">
-          Photo Gallery
+          {t("gallery.title")}
         </motion.h2>
       </motion.div>
       <motion.div
@@ -60,6 +63,7 @@ const Gallery = () => (
       </motion.div>
     </div>
   </section>
-);
+  );
+};
 
 export default Gallery;
