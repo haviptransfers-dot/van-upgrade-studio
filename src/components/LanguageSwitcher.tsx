@@ -2,12 +2,12 @@ import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 
 const langs = [
-  { code: "en", label: "EN", flag: "🇬🇧" },
-  { code: "de", label: "DE", flag: "🇩🇪" },
-  { code: "es", label: "ES", flag: "🇪🇸" },
-  { code: "fr", label: "FR", flag: "🇫🇷" },
-  { code: "it", label: "IT", flag: "🇮🇹" },
-  { code: "el", label: "GR", flag: "🇬🇷" },
+  { code: "en", label: "EN", country: "gb" },
+  { code: "de", label: "DE", country: "de" },
+  { code: "es", label: "ES", country: "es" },
+  { code: "fr", label: "FR", country: "fr" },
+  { code: "it", label: "IT", country: "it" },
+  { code: "el", label: "GR", country: "gr" },
 ];
 
 const LanguageSwitcher = () => {
@@ -21,12 +21,19 @@ const LanguageSwitcher = () => {
           <button
             onClick={() => i18n.changeLanguage(l.code)}
             className={cn(
-              "transition-colors px-1 inline-flex items-center gap-1",
+              "transition-colors px-1 inline-flex items-center gap-1.5",
               current === l.code ? "text-primary" : "text-foreground/50 hover:text-foreground"
             )}
             aria-label={`Switch language to ${l.label}`}
           >
-            <span aria-hidden>{l.flag}</span>
+            <img
+              src={`https://flagcdn.com/20x15/${l.country}.png`}
+              srcSet={`https://flagcdn.com/40x30/${l.country}.png 2x`}
+              width={20}
+              height={15}
+              alt=""
+              className="inline-block rounded-sm"
+            />
             <span>{l.label}</span>
           </button>
           {i < langs.length - 1 && <span className="text-foreground/20">|</span>}
