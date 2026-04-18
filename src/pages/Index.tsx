@@ -4,6 +4,7 @@ import { Phone, Mail, MapPin, Clock, Users, Shield, Star, ChevronDown, MessageCi
 import { Button } from "@/components/ui/button";
 import Gallery from "@/components/Gallery";
 import PrivateTours from "@/components/PrivateTours";
+import PriceCalculator from "@/components/PriceCalculator";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import heroImg from "@/assets/hero-van.jpg";
 import interiorImg from "@/assets/van-interior-new.jpg";
@@ -173,6 +174,8 @@ const Index = () => {
       </section>
 
       <Gallery />
+
+      <PriceCalculator />
 
       {/* Why Choose Us */}
       <section id="about" className="py-24 px-4">
