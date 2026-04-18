@@ -90,6 +90,8 @@ export default {
     base: "Basis",
     nightSurcharge: "Nachtzuschlag",
     bookWhatsapp: "Über WhatsApp buchen",
+    askOther: "Andere Fahrten & Touren anfragen",
+    askOtherMsg: "Hallo! Ich möchte mich nach weiteren Fahrten und Touren erkundigen.",
     services: {
       airport_to_athens: "Flughafen nach Athen",
       athens_to_airport: "Athen zum Flughafen",
