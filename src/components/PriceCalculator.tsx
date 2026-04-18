@@ -174,12 +174,20 @@ const PriceCalculator = () => {
               {t("calc.bookWhatsapp")}
             </Button>
           </a>
-          <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mt-4">
+          <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 mt-4">
             {(t("calc.includes", { returnObjects: true }) as string[]).map((item) => (
               <span key={item} className="text-[9px] tracking-[0.15em] uppercase text-muted-foreground">
                 <span className="text-primary">✓</span> {item}
               </span>
             ))}
+            <a
+              href={`https://wa.me/306949393700?text=${encodeURIComponent(t("calc.askOtherMsg"))}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[9px] tracking-[0.15em] uppercase text-primary hover:text-primary/80 underline underline-offset-2"
+            >
+              ✉ {t("calc.askOther")}
+            </a>
           </div>
         </div>
       </div>
