@@ -90,6 +90,8 @@ export default {
     base: "Βάση",
     nightSurcharge: "Νυχτερινή Προσαύξηση",
     bookWhatsapp: "Κράτηση μέσω WhatsApp",
+    askOther: "Ζητήστε άλλες διαδρομές & εκδρομές",
+    askOtherMsg: "Γεια σας! Θα ήθελα να ρωτήσω για άλλες διαδρομές και εκδρομές.",
     services: {
       airport_to_athens: "Αεροδρόμιο προς Αθήνα",
       athens_to_airport: "Αθήνα προς Αεροδρόμιο",
