@@ -16,8 +16,8 @@ const fadeUp = {
 
 const images = [
   { src: gallery1, alt: "Mercedes Vito exterior with open door" },
-  { src: gallery2, alt: "Quilted leather interior with child booster seats" },
-  { src: gallery3, alt: "Mercedes Vito at luxury hotel entrance" },
+  { src: gallery2, alt: "Mercedes V Class quilted cognac leather rear seats" },
+  { src: gallery3, alt: "Mercedes Vito side view with open sliding door and luxury interior" },
   { src: gallery4, alt: "H&A Tours van with Athens Acropolis view" },
 ];
 
