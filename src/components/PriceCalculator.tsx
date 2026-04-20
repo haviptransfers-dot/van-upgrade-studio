@@ -111,7 +111,7 @@ const PriceCalculator = () => {
               </button>
               <div className="font-display text-3xl min-w-[3rem] text-center">{pax}</div>
               <button
-                onClick={() => setPax((p) => Math.min(7, p + 1))}
+                onClick={() => setPax((p) => Math.min(8, p + 1))}
                 className="w-10 h-10 border border-border text-primary rounded-sm hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center"
               >
                 <Plus className="w-4 h-4" />
