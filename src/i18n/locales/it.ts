@@ -45,7 +45,7 @@ export default {
     title: "Mercedes Classe V",
     desc: "Viaggia in massimo comfort con la nostra Mercedes Classe V — la scelta premium per i viaggiatori esigenti. Spazioso interno in pelle, climatizzatore, Wi-Fi e acqua in omaggio per ogni viaggio.",
     features: [
-      "Fino a 7 passeggeri",
+      "Fino a 7-8 passeggeri",
       "Sedili in pelle e illuminazione d'ambiente",
       "Wi-Fi e acqua in omaggio",
       "Autista professionista anglofono",

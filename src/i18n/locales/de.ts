@@ -45,7 +45,7 @@ export default {
     title: "Mercedes V-Klasse",
     desc: "Reisen Sie in höchstem Komfort mit unserem Mercedes V-Klasse — die erste Wahl für anspruchsvolle Reisende. Geräumiges Lederinterieur, Klimaanlage, kostenloses WLAN und Wasser bei jeder Fahrt.",
     features: [
-      "Bis zu 7 Passagiere",
+      "Bis zu 7-8 Passagiere",
       "Ledersitze & Ambientebeleuchtung",
       "Kostenloses WLAN & Wasser",
       "Professioneller englischsprachiger Fahrer",
