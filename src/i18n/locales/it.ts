@@ -83,7 +83,7 @@ export default {
     title2: "Prezzo Immediato",
     selectService: "Seleziona Servizio",
     passengers: "Passeggeri",
-    maxPax: "Mercedes V Class · Max 7 passeggeri",
+    maxPax: "Mercedes V Class · Max 8 passeggeri",
     nightRate: "Tariffa Notturna (22:00 – 06:00) +€10/persona",
     estimated: "Prezzo Stimato",
     fixedPrice: "Prezzo Fisso · Nessun Costo Nascosto",

@@ -83,7 +83,7 @@ export default {
     title2: "Άμεση Τιμή",
     selectService: "Επιλέξτε Υπηρεσία",
     passengers: "Επιβάτες",
-    maxPax: "Mercedes V Class · Μέγ. 7 επιβάτες",
+    maxPax: "Mercedes V Class · Μέγ. 8 επιβάτες",
     nightRate: "Νυχτερινή Χρέωση (22:00 – 06:00) +€10/άτομο",
     estimated: "Εκτιμώμενη Τιμή",
     fixedPrice: "Σταθερή Τιμή · Χωρίς Κρυφές Χρεώσεις",
