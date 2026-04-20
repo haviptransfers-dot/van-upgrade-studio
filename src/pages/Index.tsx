@@ -7,7 +7,7 @@ import PrivateTours from "@/components/PrivateTours";
 import PriceCalculator from "@/components/PriceCalculator";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import heroImg from "@/assets/hero-van.jpg";
-import interiorImg from "@/assets/fleet-double-vito.jpg";
+import interiorImg from "@/assets/fleet-vito.png";
 import logoImg from "@/assets/logo.png";
 
 const fadeUp = {
