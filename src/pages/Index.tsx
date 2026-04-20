@@ -6,6 +6,7 @@ import Gallery from "@/components/Gallery";
 import PrivateTours from "@/components/PrivateTours";
 import PriceCalculator from "@/components/PriceCalculator";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import ChatBot from "@/components/ChatBot";
 import heroImg from "@/assets/hero-van.jpg";
 import interiorImg from "@/assets/fleet-vito.png";
 import logoImg from "@/assets/logo.png";
@@ -262,6 +263,8 @@ const Index = () => {
       >
         <MessageCircle className="w-7 h-7 text-white" />
       </a>
+
+      <ChatBot />
     </div>
   );
 };
