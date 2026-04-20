@@ -45,7 +45,7 @@ export default {
     title: "Mercedes V Class",
     desc: "Travel in ultimate comfort with our Mercedes V Class -Vito  the premium choice for discerning travelers. Spacious leather interior, climate control, complimentary Wi-Fi and bottled water for every journey.",
     features: [
-      "Up to 7 passengers",
+      "Up to 7-8 passengers",
       "Leather seats & ambient lighting",
       "Complimentary Wi-Fi & water",
       "Professional English-speaking driver",
