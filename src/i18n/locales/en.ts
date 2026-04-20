@@ -43,7 +43,7 @@ export default {
   fleet: {
     eyebrow: "Our Fleet",
     title: "Mercedes V Class",
-    desc: "Travel in ultimate comfort with our Mercedes V Class — the premium choice for discerning travelers. Spacious leather interior, climate control, complimentary Wi-Fi and bottled water for every journey.",
+    desc: "Travel in ultimate comfort with our Mercedes V Class -Vito  the premium choice for discerning travelers. Spacious leather interior, climate control, complimentary Wi-Fi and bottled water for every journey.",
     features: [
       "Up to 7 passengers",
       "Leather seats & ambient lighting",
