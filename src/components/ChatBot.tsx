@@ -165,30 +165,53 @@ const ChatBot = () => {
 
   return (
     <>
-      {/* Floating bubble */}
-      <motion.button
-        initial={{ scale: 0, rotate: -180 }}
-        animate={{ scale: 1, rotate: 0 }}
-        transition={{ delay: 1, type: "spring", stiffness: 200 }}
-        onClick={() => setOpen((o) => !o)}
-        aria-label="Open chat"
-        className="fixed bottom-6 left-6 z-50 w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-2xl flex items-center justify-center hover:scale-110 transition-transform"
-      >
-        <AnimatePresence mode="wait">
-          {open ? (
-            <motion.div key="x" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }}>
-              <X className="w-6 h-6" />
-            </motion.div>
-          ) : (
-            <motion.div key="van" initial={{ scale: 0.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.5, opacity: 0 }}>
-              <img src={vanIcon} alt="H&A Van" className="w-9 h-9 object-contain drop-shadow" />
+      {/* Floating bubble + label */}
+      <div className="fixed bottom-6 left-6 z-50 flex items-center gap-2">
+        <motion.button
+          initial={{ scale: 0, rotate: -180 }}
+          animate={{ scale: 1, rotate: 0 }}
+          transition={{ delay: 1, type: "spring", stiffness: 200 }}
+          onClick={() => setOpen((o) => !o)}
+          aria-label="Open AI assistant"
+          className="relative w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-2xl flex items-center justify-center hover:scale-110 transition-transform"
+        >
+          <AnimatePresence mode="wait">
+            {open ? (
+              <motion.div key="x" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }}>
+                <X className="w-6 h-6" />
+              </motion.div>
+            ) : (
+              <motion.div key="van" initial={{ scale: 0.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.5, opacity: 0 }}>
+                <img src={vanIcon} alt="H&A Van" className="w-9 h-9 object-contain drop-shadow" />
+              </motion.div>
+            )}
+          </AnimatePresence>
+          {!open && (
+            <span className="absolute -top-1 -right-1 w-3 h-3 rounded-full bg-green-500 ring-2 ring-background animate-pulse" />
+          )}
+        </motion.button>
+
+        <AnimatePresence>
+          {!open && (
+            <motion.div
+              initial={{ opacity: 0, x: -10, scale: 0.9 }}
+              animate={{ opacity: 1, x: 0, scale: 1 }}
+              exit={{ opacity: 0, x: -10, scale: 0.9 }}
+              transition={{ delay: 1.4, type: "spring", stiffness: 260 }}
+              onClick={() => setOpen(true)}
+              className="cursor-pointer bg-card border border-primary/40 rounded-full pl-3 pr-4 py-2 shadow-xl flex items-center gap-2 hover:border-primary hover:scale-105 transition-all"
+            >
+              <span className="relative flex w-2 h-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
+              </span>
+              <span className="text-xs font-display font-semibold text-foreground whitespace-nowrap">
+                Ask our AI Assistant 💬
+              </span>
             </motion.div>
           )}
         </AnimatePresence>
-        {!open && (
-          <span className="absolute -top-1 -right-1 w-3 h-3 rounded-full bg-green-500 ring-2 ring-background animate-pulse" />
-        )}
-      </motion.button>
+      </div>
 
       {/* Chat panel */}
       <AnimatePresence>
