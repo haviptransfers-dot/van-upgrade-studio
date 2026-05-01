@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion } from "framer-motion";
-import { Car, X, Send, Loader2 } from "lucide-react";
+import { X, Send, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import vanIcon from "@/assets/fleet-vito.png";
 
 type Msg = { role: "user" | "assistant"; content: string };
 
@@ -34,9 +35,15 @@ const ChatBot = () => {
 
   useEffect(() => {
     if (open && messages.length === 0) {
-      setMessages([{ role: "assistant", content: t("chat.welcome") }]);
+      setMessages([
+        {
+          role: "assistant",
+          content:
+            "👋 Welcome to **H&A VIP Tours**! I'm your concierge for luxury transfers in Athens — airport, port, private tours and more.\n\nHow can I help you today?",
+        },
+      ]);
     }
-  }, [open, t, messages.length]);
+  }, [open, messages.length]);
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
@@ -173,8 +180,8 @@ const ChatBot = () => {
               <X className="w-6 h-6" />
             </motion.div>
           ) : (
-            <motion.div key="car" initial={{ rotate: 90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: -90, opacity: 0 }}>
-              <Car className="w-6 h-6" />
+            <motion.div key="van" initial={{ scale: 0.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.5, opacity: 0 }}>
+              <img src={vanIcon} alt="H&A Van" className="w-9 h-9 object-contain drop-shadow" />
             </motion.div>
           )}
         </AnimatePresence>
@@ -196,8 +203,8 @@ const ChatBot = () => {
           >
             {/* Header */}
             <div className="bg-gradient-to-br from-primary/20 to-card border-b border-primary/20 p-4 flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center">
-                <Car className="w-5 h-5" />
+              <div className="w-10 h-10 rounded-full bg-primary/10 ring-1 ring-primary/30 flex items-center justify-center overflow-hidden">
+                <img src={vanIcon} alt="H&A Van" className="w-9 h-9 object-contain" />
               </div>
               <div className="flex-1">
                 <p className="font-display font-bold text-sm text-foreground">{t("chat.title")}</p>
