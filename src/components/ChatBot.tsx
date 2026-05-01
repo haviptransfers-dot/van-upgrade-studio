@@ -35,9 +35,15 @@ const ChatBot = () => {
 
   useEffect(() => {
     if (open && messages.length === 0) {
-      setMessages([{ role: "assistant", content: t("chat.welcome") }]);
+      setMessages([
+        {
+          role: "assistant",
+          content:
+            "👋 Welcome to **H&A VIP Tours**! I'm your concierge for luxury transfers in Athens — airport, port, private tours and more.\n\nHow can I help you today?",
+        },
+      ]);
     }
-  }, [open, t, messages.length]);
+  }, [open, messages.length]);
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
