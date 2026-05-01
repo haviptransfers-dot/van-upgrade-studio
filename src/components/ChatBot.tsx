@@ -180,8 +180,8 @@ const ChatBot = () => {
               <X className="w-6 h-6" />
             </motion.div>
           ) : (
-            <motion.div key="car" initial={{ rotate: 90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: -90, opacity: 0 }}>
-              <Car className="w-6 h-6" />
+            <motion.div key="van" initial={{ scale: 0.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.5, opacity: 0 }}>
+              <img src={vanIcon} alt="H&A Van" className="w-9 h-9 object-contain drop-shadow" />
             </motion.div>
           )}
         </AnimatePresence>
