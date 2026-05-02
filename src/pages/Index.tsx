@@ -191,8 +191,10 @@ const Index = () => {
       <PriceCalculator />
 
       {/* Why Choose Us */}
-      <section id="about" className="py-24 px-4">
-        <div className="container mx-auto max-w-6xl">
+      <section id="about" className="relative py-24 px-4 overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center bg-fixed opacity-20" style={{ backgroundImage: `url(${bgWhy})` }} aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/85 to-background" aria-hidden="true" />
+        <div className="container mx-auto max-w-6xl relative z-10">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-16">
             <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-sm mb-3">{t("why.eyebrow")}</motion.p>
             <motion.h2 variants={fadeUp} custom={1} className="font-display text-3xl md:text-5xl font-bold">{t("why.title")}</motion.h2>
