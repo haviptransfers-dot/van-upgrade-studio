@@ -226,8 +226,8 @@ const ChatBot = () => {
           >
             {/* Header */}
             <div className="bg-gradient-to-br from-primary/20 to-card border-b border-primary/20 p-4 flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-primary/10 ring-1 ring-primary/30 flex items-center justify-center overflow-hidden">
-                <img src={vanIcon} alt="H&A Van" className="w-9 h-9 object-contain" />
+              <div className="w-10 h-10 rounded-full ring-1 ring-primary/30 overflow-hidden flex-shrink-0">
+                <img src={vanIcon} alt="H&A Van" className="w-full h-full object-cover" />
               </div>
               <div className="flex-1">
                 <p className="font-display font-bold text-sm text-foreground">{t("chat.title")}</p>
