@@ -4,6 +4,7 @@ import { Phone, Mail, MapPin, Clock, Users, Shield, Star, ChevronDown, MessageCi
 import { Button } from "@/components/ui/button";
 import Gallery from "@/components/Gallery";
 import Showcase from "@/components/Showcase";
+import PhotoWall from "@/components/PhotoWall";
 import PrivateTours from "@/components/PrivateTours";
 import PriceCalculator from "@/components/PriceCalculator";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -150,6 +151,8 @@ const Index = () => {
       </section>
 
       <Showcase />
+
+      <PhotoWall />
 
       <PrivateTours />
 
