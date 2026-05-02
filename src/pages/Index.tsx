@@ -228,9 +228,10 @@ const Index = () => {
             <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">{t("contact.eyebrow")}</p>
             <h2 className="font-display text-3xl md:text-5xl font-bold">{t("contact.title")}</h2>
           </div>
-          <div className="grid sm:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { icon: Phone, label: t("contact.phone"), value: "+30 694 939 3700", href: "tel:+306949393700" },
+              { icon: Phone, label: "Landline", value: "+30 210 992 5244", href: "tel:+302109925244" },
               { icon: Mail, label: t("contact.email"), value: "h.a.viptransfers@gmail.com", href: "mailto:h.a.viptransfers@gmail.com" },
               { icon: MapPin, label: t("contact.based"), value: t("contact.location"), href: "#" },
             ].map((c) => (
