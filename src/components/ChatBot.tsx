@@ -173,16 +173,16 @@ const ChatBot = () => {
           transition={{ delay: 1, type: "spring", stiffness: 200 }}
           onClick={() => setOpen((o) => !o)}
           aria-label="Open AI assistant"
-          className="relative w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-2xl flex items-center justify-center hover:scale-110 transition-transform"
+          className="relative w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-2xl flex items-center justify-center hover:scale-110 transition-transform overflow-hidden ring-2 ring-primary/40"
         >
           <AnimatePresence mode="wait">
             {open ? (
-              <motion.div key="x" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }}>
+              <motion.div key="x" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }} className="absolute inset-0 flex items-center justify-center bg-primary">
                 <X className="w-6 h-6" />
               </motion.div>
             ) : (
-              <motion.div key="van" initial={{ scale: 0.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.5, opacity: 0 }}>
-                <img src={vanIcon} alt="H&A Van" className="w-9 h-9 object-contain drop-shadow" />
+              <motion.div key="van" initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.8, opacity: 0 }} className="absolute inset-0">
+                <img src={vanIcon} alt="H&A Van" className="w-full h-full object-cover" />
               </motion.div>
             )}
           </AnimatePresence>
@@ -226,8 +226,8 @@ const ChatBot = () => {
           >
             {/* Header */}
             <div className="bg-gradient-to-br from-primary/20 to-card border-b border-primary/20 p-4 flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-primary/10 ring-1 ring-primary/30 flex items-center justify-center overflow-hidden">
-                <img src={vanIcon} alt="H&A Van" className="w-9 h-9 object-contain" />
+              <div className="w-10 h-10 rounded-full ring-1 ring-primary/30 overflow-hidden flex-shrink-0">
+                <img src={vanIcon} alt="H&A Van" className="w-full h-full object-cover" />
               </div>
               <div className="flex-1">
                 <p className="font-display font-bold text-sm text-foreground">{t("chat.title")}</p>
