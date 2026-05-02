@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Phone, Mail, MapPin, Clock, Users, Shield, Star, ChevronDown, MessageCircle, Plane, Ship, Camera, Building } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Gallery from "@/components/Gallery";
+import Showcase from "@/components/Showcase";
 import PrivateTours from "@/components/PrivateTours";
 import PriceCalculator from "@/components/PriceCalculator";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -147,6 +148,8 @@ const Index = () => {
           </motion.div>
         </div>
       </section>
+
+      <Showcase />
 
       <PrivateTours />
 
