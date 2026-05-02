@@ -173,16 +173,16 @@ const ChatBot = () => {
           transition={{ delay: 1, type: "spring", stiffness: 200 }}
           onClick={() => setOpen((o) => !o)}
           aria-label="Open AI assistant"
-          className="relative w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-2xl flex items-center justify-center hover:scale-110 transition-transform"
+          className="relative w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-2xl flex items-center justify-center hover:scale-110 transition-transform overflow-hidden ring-2 ring-primary/40"
         >
           <AnimatePresence mode="wait">
             {open ? (
-              <motion.div key="x" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }}>
+              <motion.div key="x" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }} className="absolute inset-0 flex items-center justify-center bg-primary">
                 <X className="w-6 h-6" />
               </motion.div>
             ) : (
-              <motion.div key="van" initial={{ scale: 0.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.5, opacity: 0 }}>
-                <img src={vanIcon} alt="H&A Van" className="w-9 h-9 object-contain drop-shadow" />
+              <motion.div key="van" initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.8, opacity: 0 }} className="absolute inset-0">
+                <img src={vanIcon} alt="H&A Van" className="w-full h-full object-cover" />
               </motion.div>
             )}
           </AnimatePresence>
