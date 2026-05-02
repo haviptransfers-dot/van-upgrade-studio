@@ -214,8 +214,11 @@ const Index = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 bg-primary/10 border-y border-primary/20">
-        <div className="container mx-auto max-w-3xl text-center">
+      <section className="relative py-20 px-4 border-y border-primary/20 overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center bg-fixed opacity-25" style={{ backgroundImage: `url(${bgCta})` }} aria-hidden="true" />
+        <div className="absolute inset-0 bg-primary/10" aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background/70" aria-hidden="true" />
+        <div className="container mx-auto max-w-3xl text-center relative z-10">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">{t("cta.title")}</h2>
           <p className="text-muted-foreground mb-8 text-lg">{t("cta.desc")}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
