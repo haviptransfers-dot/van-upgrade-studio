@@ -164,7 +164,7 @@ const Index = () => {
 
       {/* Fleet */}
       <section id="fleet" className="py-24 px-4 bg-card">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-6xl relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
               <img src={interiorImg} alt="Mercedes V Class" className="rounded-lg shadow-2xl" loading="lazy" width={800} height={600} />
