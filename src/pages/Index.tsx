@@ -239,8 +239,10 @@ const Index = () => {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="py-24 px-4">
-        <div className="container mx-auto max-w-4xl">
+      <section id="contact" className="relative py-24 px-4 overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center bg-fixed opacity-20" style={{ backgroundImage: `url(${bgContact})` }} aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/85 to-background" aria-hidden="true" />
+        <div className="container mx-auto max-w-4xl relative z-10">
           <div className="text-center mb-12">
             <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">{t("contact.eyebrow")}</p>
             <h2 className="font-display text-3xl md:text-5xl font-bold">{t("contact.title")}</h2>
