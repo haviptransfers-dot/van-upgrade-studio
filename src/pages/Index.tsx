@@ -134,7 +134,9 @@ const Index = () => {
       </section>
 
       {/* Services */}
-      <section id="services" className="py-24 px-4">
+      <section id="services" className="relative py-24 px-4 overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center bg-fixed opacity-20" style={{ backgroundImage: `url(${bgServices})` }} aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background" aria-hidden="true" />
         <div className="container mx-auto max-w-6xl">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-16">
             <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-sm mb-3">{t("services.eyebrow")}</motion.p>
