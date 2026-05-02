@@ -12,6 +12,10 @@ import ChatBot from "@/components/ChatBot";
 import heroImg from "@/assets/hero-van.jpg";
 import interiorImg from "@/assets/fleet-vito.png";
 import logoImg from "@/assets/logo.png";
+import bgServices from "@/assets/wall-1.jpg";
+import bgWhy from "@/assets/showcase-2.jpg";
+import bgCta from "@/assets/wall-3.jpg";
+import bgContact from "@/assets/showcase-3.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
