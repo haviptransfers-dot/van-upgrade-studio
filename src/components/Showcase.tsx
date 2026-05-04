@@ -40,7 +40,7 @@ const Showcase = () => {
           className="relative h-[70vh] md:h-screen w-full overflow-hidden bg-background"
         >
           <div
-            className="absolute inset-0 bg-cover bg-center bg-fixed"
+            className="absolute inset-0 bg-cover bg-center md:bg-fixed"
             style={{ backgroundImage: `url(${slide.src})` }}
             aria-label={slide.alt}
             role="img"

@@ -148,7 +148,7 @@ const Index = () => {
 
       {/* Services */}
       <section id="services" className="relative py-24 px-4 overflow-hidden bg-card">
-        <div className="absolute inset-0 bg-cover bg-center bg-fixed opacity-10" style={{ backgroundImage: `url(${bgServices})` }} aria-hidden="true" />
+        <div className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-10" style={{ backgroundImage: `url(${bgServices})` }} aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background/40" aria-hidden="true" />
         <div className="container mx-auto max-w-6xl relative z-10">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-16">
@@ -205,7 +205,7 @@ const Index = () => {
 
       {/* Why Choose Us */}
       <section id="about" className="relative py-24 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-fixed opacity-20" style={{ backgroundImage: `url(${bgWhy})` }} aria-hidden="true" />
+        <div className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-20" style={{ backgroundImage: `url(${bgWhy})` }} aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/85 to-background" aria-hidden="true" />
         <div className="container mx-auto max-w-6xl relative z-10">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-16">
@@ -228,7 +228,7 @@ const Index = () => {
 
       {/* CTA */}
       <section className="relative py-20 px-4 border-y border-primary/20 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-fixed opacity-25" style={{ backgroundImage: `url(${bgCta})` }} aria-hidden="true" />
+        <div className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-25" style={{ backgroundImage: `url(${bgCta})` }} aria-hidden="true" />
         <div className="absolute inset-0 bg-primary/10" aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background/70" aria-hidden="true" />
         <div className="container mx-auto max-w-3xl text-center relative z-10">
@@ -253,7 +253,7 @@ const Index = () => {
 
       {/* Contact */}
       <section id="contact" className="relative py-24 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-fixed opacity-20" style={{ backgroundImage: `url(${bgContact})` }} aria-hidden="true" />
+        <div className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-20" style={{ backgroundImage: `url(${bgContact})` }} aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/85 to-background" aria-hidden="true" />
         <div className="container mx-auto max-w-4xl relative z-10">
           <div className="text-center mb-12">
