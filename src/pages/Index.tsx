@@ -180,7 +180,7 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
-              <img src={interiorImg} alt="Mercedes V Class" className="rounded-lg shadow-2xl" loading="lazy" width={800} height={600} />
+              <img src={interiorImg} alt="Mercedes V Class" className="rounded-lg shadow-2xl" loading="lazy" decoding="async" width={800} height={600} />
             </motion.div>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }}>
               <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-sm mb-3">{t("fleet.eyebrow")}</motion.p>
