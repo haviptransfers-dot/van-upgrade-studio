@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion } from "framer-motion";
 import { X, Send, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import vanIcon from "@/assets/fleet-vito.png";
+import vanIcon from "@/assets/fleet-vito.webp";
 
 type Msg = { role: "user" | "assistant"; content: string };
 
@@ -182,7 +182,7 @@ const ChatBot = () => {
               </motion.div>
             ) : (
               <motion.div key="van" initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.8, opacity: 0 }} className="absolute inset-0">
-                <img src={vanIcon} alt="H&A Van" className="w-full h-full object-cover" />
+                <img src={vanIcon} alt="H&A Van" className="w-full h-full object-cover" loading="lazy" decoding="async" />
               </motion.div>
             )}
           </AnimatePresence>
@@ -227,7 +227,7 @@ const ChatBot = () => {
             {/* Header */}
             <div className="bg-gradient-to-br from-primary/20 to-card border-b border-primary/20 p-4 flex items-center gap-3">
               <div className="w-10 h-10 rounded-full ring-1 ring-primary/30 overflow-hidden flex-shrink-0">
-                <img src={vanIcon} alt="H&A Van" className="w-full h-full object-cover" />
+                <img src={vanIcon} alt="H&A Van" className="w-full h-full object-cover" loading="lazy" decoding="async" />
               </div>
               <div className="flex-1">
                 <p className="font-display font-bold text-sm text-foreground">{t("chat.title")}</p>

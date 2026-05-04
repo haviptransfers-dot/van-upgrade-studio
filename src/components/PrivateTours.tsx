@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import tourDelphi from "@/assets/tour-delphi.jpg";
-import tourMeteora from "@/assets/tour-meteora.jpg";
-import tourNafplio from "@/assets/tour-nafplio.jpg";
-import tourSounio from "@/assets/tour-sounio.jpg";
-import tourAcropolis from "@/assets/tour-acropolis.jpg";
-import tourSyntagma from "@/assets/tour-syntagma.jpg";
+import tourDelphi from "@/assets/tour-delphi.webp";
+import tourMeteora from "@/assets/tour-meteora.webp";
+import tourNafplio from "@/assets/tour-nafplio.webp";
+import tourSounio from "@/assets/tour-sounio.webp";
+import tourAcropolis from "@/assets/tour-acropolis.webp";
+import tourSyntagma from "@/assets/tour-syntagma.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },

@@ -9,13 +9,14 @@ import PrivateTours from "@/components/PrivateTours";
 import PriceCalculator from "@/components/PriceCalculator";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import ChatBot from "@/components/ChatBot";
-import heroImg from "@/assets/hero-van.jpg";
-import interiorImg from "@/assets/fleet-vito.png";
-import logoImg from "@/assets/logo.png";
-import bgServices from "@/assets/wall-1.jpg";
-import bgWhy from "@/assets/showcase-2.jpg";
-import bgCta from "@/assets/wall-3.jpg";
-import bgContact from "@/assets/showcase-3.jpg";
+import heroImg from "@/assets/hero-van.webp";
+import heroImgMobile from "@/assets/hero-van-mobile.webp";
+import interiorImg from "@/assets/fleet-vito.webp";
+import logoImg from "@/assets/logo.webp";
+import bgServices from "@/assets/wall-1.webp";
+import bgWhy from "@/assets/showcase-2.webp";
+import bgCta from "@/assets/wall-3.webp";
+import bgContact from "@/assets/showcase-3.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -52,7 +53,7 @@ const Index = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
         <div className="container mx-auto flex items-center justify-between py-3 px-4">
           <div className="flex items-center gap-3">
-            <img src={logoImg} alt="H&A Tours" className="h-10 w-10 object-contain" />
+            <img src={logoImg} alt="H&A Tours" className="h-10 w-10 object-contain" width={40} height={40} decoding="async" />
             <div>
               <span className="font-display text-lg font-bold text-primary">H&A TOURS</span>
               <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">{t("nav.tagline")}</p>
@@ -80,7 +81,19 @@ const Index = () => {
       {/* Hero */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Mercedes V Class in Athens" className="w-full h-full object-cover" width={1920} height={1080} />
+          <picture>
+            <source media="(max-width: 768px)" srcSet={heroImgMobile} type="image/webp" />
+            <source srcSet={heroImg} type="image/webp" />
+            <img
+              src={heroImg}
+              alt="Mercedes V Class in Athens"
+              className="w-full h-full object-cover"
+              width={1920}
+              height={1080}
+              fetchPriority="high"
+              decoding="async"
+            />
+          </picture>
           <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background" />
         </div>
         <div className="relative z-10 text-center px-4 max-w-4xl">
@@ -135,7 +148,7 @@ const Index = () => {
 
       {/* Services */}
       <section id="services" className="relative py-24 px-4 overflow-hidden bg-card">
-        <div className="absolute inset-0 bg-cover bg-center bg-fixed opacity-10" style={{ backgroundImage: `url(${bgServices})` }} aria-hidden="true" />
+        <div className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-10" style={{ backgroundImage: `url(${bgServices})` }} aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background/40" aria-hidden="true" />
         <div className="container mx-auto max-w-6xl relative z-10">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-16">
@@ -167,7 +180,7 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
-              <img src={interiorImg} alt="Mercedes V Class" className="rounded-lg shadow-2xl" loading="lazy" width={800} height={600} />
+              <img src={interiorImg} alt="Mercedes V Class" className="rounded-lg shadow-2xl" loading="lazy" decoding="async" width={800} height={600} />
             </motion.div>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }}>
               <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-sm mb-3">{t("fleet.eyebrow")}</motion.p>
@@ -192,7 +205,7 @@ const Index = () => {
 
       {/* Why Choose Us */}
       <section id="about" className="relative py-24 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-fixed opacity-20" style={{ backgroundImage: `url(${bgWhy})` }} aria-hidden="true" />
+        <div className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-20" style={{ backgroundImage: `url(${bgWhy})` }} aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/85 to-background" aria-hidden="true" />
         <div className="container mx-auto max-w-6xl relative z-10">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-16">
@@ -215,7 +228,7 @@ const Index = () => {
 
       {/* CTA */}
       <section className="relative py-20 px-4 border-y border-primary/20 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-fixed opacity-25" style={{ backgroundImage: `url(${bgCta})` }} aria-hidden="true" />
+        <div className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-25" style={{ backgroundImage: `url(${bgCta})` }} aria-hidden="true" />
         <div className="absolute inset-0 bg-primary/10" aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background/70" aria-hidden="true" />
         <div className="container mx-auto max-w-3xl text-center relative z-10">
@@ -240,7 +253,7 @@ const Index = () => {
 
       {/* Contact */}
       <section id="contact" className="relative py-24 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-fixed opacity-20" style={{ backgroundImage: `url(${bgContact})` }} aria-hidden="true" />
+        <div className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-20" style={{ backgroundImage: `url(${bgContact})` }} aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/85 to-background" aria-hidden="true" />
         <div className="container mx-auto max-w-4xl relative z-10">
           <div className="text-center mb-12">
