@@ -9,13 +9,13 @@ import PrivateTours from "@/components/PrivateTours";
 import PriceCalculator from "@/components/PriceCalculator";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import ChatBot from "@/components/ChatBot";
-import heroImg from "@/assets/hero-van.jpg";
-import interiorImg from "@/assets/fleet-vito.png";
-import logoImg from "@/assets/logo.png";
-import bgServices from "@/assets/wall-1.jpg";
-import bgWhy from "@/assets/showcase-2.jpg";
-import bgCta from "@/assets/wall-3.jpg";
-import bgContact from "@/assets/showcase-3.jpg";
+import heroImg from "@/assets/hero-van.webp";
+import interiorImg from "@/assets/fleet-vito.webp";
+import logoImg from "@/assets/logo.webp";
+import bgServices from "@/assets/wall-1.webp";
+import bgWhy from "@/assets/showcase-2.webp";
+import bgCta from "@/assets/wall-3.webp";
+import bgContact from "@/assets/showcase-3.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },

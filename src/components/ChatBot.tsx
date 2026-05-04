@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion } from "framer-motion";
 import { X, Send, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import vanIcon from "@/assets/fleet-vito.png";
+import vanIcon from "@/assets/fleet-vito.webp";
 
 type Msg = { role: "user" | "assistant"; content: string };
 
