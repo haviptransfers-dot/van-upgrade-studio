@@ -166,7 +166,7 @@ const ChatBot = () => {
   return (
     <>
       {/* Floating bubble + label — bottom-right on mobile, top-right on desktop */}
-      <div className="fixed bottom-6 right-4 sm:bottom-auto sm:top-20 sm:right-6 z-50 flex items-center gap-2 sm:flex-row-reverse">
+      <div className="fixed bottom-6 left-4 sm:bottom-auto sm:top-20 sm:left-6 z-50 flex items-center gap-2">
         <motion.button
           initial={{ scale: 0, rotate: -180 }}
           animate={{ scale: 1, rotate: 0 }}
@@ -221,7 +221,7 @@ const ChatBot = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ type: "spring", damping: 22, stiffness: 280 }}
-            className="fixed bottom-24 right-4 left-4 sm:bottom-auto sm:top-36 sm:left-auto sm:right-6 sm:w-[380px] z-50 bg-card border border-primary/30 rounded-lg shadow-2xl flex flex-col overflow-hidden"
+            className="fixed bottom-24 left-4 right-4 sm:bottom-auto sm:top-36 sm:right-auto sm:left-6 sm:w-[380px] z-50 bg-card border border-primary/30 rounded-lg shadow-2xl flex flex-col overflow-hidden"
             style={{ maxHeight: "min(640px, calc(100vh - 8rem))" }}
           >
             {/* Header */}
