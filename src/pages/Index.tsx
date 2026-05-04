@@ -10,6 +10,7 @@ import PriceCalculator from "@/components/PriceCalculator";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import ChatBot from "@/components/ChatBot";
 import heroImg from "@/assets/hero-van.webp";
+import heroImgMobile from "@/assets/hero-van-mobile.webp";
 import interiorImg from "@/assets/fleet-vito.webp";
 import logoImg from "@/assets/logo.webp";
 import bgServices from "@/assets/wall-1.webp";
