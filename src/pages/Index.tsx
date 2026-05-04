@@ -81,7 +81,19 @@ const Index = () => {
       {/* Hero */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Mercedes V Class in Athens" className="w-full h-full object-cover" width={1920} height={1080} />
+          <picture>
+            <source media="(max-width: 768px)" srcSet={heroImgMobile} type="image/webp" />
+            <source srcSet={heroImg} type="image/webp" />
+            <img
+              src={heroImg}
+              alt="Mercedes V Class in Athens"
+              className="w-full h-full object-cover"
+              width={1920}
+              height={1080}
+              fetchPriority="high"
+              decoding="async"
+            />
+          </picture>
           <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background" />
         </div>
         <div className="relative z-10 text-center px-4 max-w-4xl">
