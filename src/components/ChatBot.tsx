@@ -165,8 +165,8 @@ const ChatBot = () => {
 
   return (
     <>
-      {/* Floating bubble + label */}
-      <div className="fixed top-20 right-4 sm:right-6 z-50 flex items-center gap-2 flex-row-reverse">
+      {/* Floating bubble + label — bottom-right on mobile, top-right on desktop */}
+      <div className="fixed bottom-6 right-4 sm:bottom-auto sm:top-20 sm:right-6 z-50 flex items-center gap-2 sm:flex-row-reverse">
         <motion.button
           initial={{ scale: 0, rotate: -180 }}
           animate={{ scale: 1, rotate: 0 }}
@@ -199,7 +199,7 @@ const ChatBot = () => {
               exit={{ opacity: 0, x: -10, scale: 0.9 }}
               transition={{ delay: 1.4, type: "spring", stiffness: 260 }}
               onClick={() => setOpen(true)}
-              className="cursor-pointer bg-card border border-primary/40 rounded-full pl-3 pr-4 py-2 shadow-xl flex items-center gap-2 hover:border-primary hover:scale-105 transition-all"
+              className="hidden sm:flex cursor-pointer bg-card border border-primary/40 rounded-full pl-3 pr-4 py-2 shadow-xl items-center gap-2 hover:border-primary hover:scale-105 transition-all"
             >
               <span className="relative flex w-2 h-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
@@ -221,8 +221,8 @@ const ChatBot = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ type: "spring", damping: 22, stiffness: 280 }}
-            className="fixed top-36 right-4 left-4 sm:left-auto sm:right-6 sm:w-[380px] z-50 bg-card border border-primary/30 rounded-lg shadow-2xl flex flex-col overflow-hidden"
-            style={{ maxHeight: "min(640px, calc(100vh - 10rem))" }}
+            className="fixed bottom-24 right-4 left-4 sm:bottom-auto sm:top-36 sm:left-auto sm:right-6 sm:w-[380px] z-50 bg-card border border-primary/30 rounded-lg shadow-2xl flex flex-col overflow-hidden"
+            style={{ maxHeight: "min(640px, calc(100vh - 8rem))" }}
           >
             {/* Header */}
             <div className="bg-gradient-to-br from-primary/20 to-card border-b border-primary/20 p-4 flex items-center gap-3">
