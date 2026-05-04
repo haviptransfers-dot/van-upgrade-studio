@@ -53,7 +53,7 @@ const Index = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
         <div className="container mx-auto flex items-center justify-between py-3 px-4">
           <div className="flex items-center gap-3">
-            <img src={logoImg} alt="H&A Tours" className="h-10 w-10 object-contain" />
+            <img src={logoImg} alt="H&A Tours" className="h-10 w-10 object-contain" width={40} height={40} decoding="async" />
             <div>
               <span className="font-display text-lg font-bold text-primary">H&A TOURS</span>
               <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">{t("nav.tagline")}</p>
