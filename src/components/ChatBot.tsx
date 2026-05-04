@@ -199,14 +199,14 @@ const ChatBot = () => {
               exit={{ opacity: 0, x: -10, scale: 0.9 }}
               transition={{ delay: 1.4, type: "spring", stiffness: 260 }}
               onClick={() => setOpen(true)}
-              className="hidden sm:flex cursor-pointer bg-card border border-primary/40 rounded-full pl-3 pr-4 py-2 shadow-xl items-center gap-2 hover:border-primary hover:scale-105 transition-all"
+              className="flex cursor-pointer bg-card border border-primary/40 rounded-full pl-3 pr-4 py-2 shadow-xl items-center gap-2 hover:border-primary hover:scale-105 transition-all"
             >
               <span className="relative flex w-2 h-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
               </span>
               <span className="text-xs font-display font-semibold text-foreground whitespace-nowrap">
-                Ask our AI Assistant 💬
+                <span className="hidden sm:inline">Ask our </span>AI Assistant 💬
               </span>
             </motion.div>
           )}
