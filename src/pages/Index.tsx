@@ -172,11 +172,11 @@ const Index = () => {
         </div>
       </section>
 
-      <Showcase />
-
-      <PhotoWall />
-
-      <PrivateTours />
+      <Suspense fallback={<LazyFallback />}>
+        <Showcase />
+        <PhotoWall />
+        <PrivateTours />
+      </Suspense>
 
       {/* Fleet */}
       <section id="fleet" className="py-24 px-4 bg-card">
@@ -202,9 +202,10 @@ const Index = () => {
         </div>
       </section>
 
-      <Gallery />
-
-      <PriceCalculator />
+      <Suspense fallback={<LazyFallback />}>
+        <Gallery />
+        <PriceCalculator />
+      </Suspense>
 
       {/* Why Choose Us */}
       <section id="about" className="relative py-24 px-4 overflow-hidden">
