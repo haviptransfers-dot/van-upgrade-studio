@@ -23,6 +23,24 @@
       />
     </noscript>
 
+    <!-- Preload mobile hero image for faster LCP on phones -->
+    <link
+      rel="preload"
+      as="image"
+      href="/src/assets/hero-van-mobile.webp"
+      type="image/webp"
+      media="(max-width: 768px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/src/assets/hero-van.webp"
+      type="image/webp"
+      media="(min-width: 769px)"
+      fetchpriority="high"
+    />
+
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Lovable" />
