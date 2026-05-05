@@ -1,14 +1,9 @@
+import { lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Phone, Mail, MapPin, Clock, Users, Shield, Star, ChevronDown, MessageCircle, Plane, Ship, Camera, Building } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Gallery from "@/components/Gallery";
-import Showcase from "@/components/Showcase";
-import PhotoWall from "@/components/PhotoWall";
-import PrivateTours from "@/components/PrivateTours";
-import PriceCalculator from "@/components/PriceCalculator";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import ChatBot from "@/components/ChatBot";
 import heroImg from "@/assets/hero-van.webp";
 import heroImgMobile from "@/assets/hero-van-mobile.webp";
 import interiorImg from "@/assets/fleet-vito.webp";
@@ -17,6 +12,14 @@ import bgServices from "@/assets/showcase-1.webp";
 import bgWhy from "@/assets/showcase-2.webp";
 import bgCta from "@/assets/wall-3.webp";
 import bgContact from "@/assets/showcase-3.webp";
+
+const Gallery = lazy(() => import("@/components/Gallery"));
+const Showcase = lazy(() => import("@/components/Showcase"));
+const PhotoWall = lazy(() => import("@/components/PhotoWall"));
+const PrivateTours = lazy(() => import("@/components/PrivateTours"));
+const PriceCalculator = lazy(() => import("@/components/PriceCalculator"));
+const ChatBot = lazy(() => import("@/components/ChatBot"));
+const LazyFallback = () => <div className="min-h-[200px]" aria-hidden="true" />;
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
