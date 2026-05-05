@@ -262,13 +262,53 @@ const Index = () => {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Phone, label: t("contact.phone"), value: "+30 694 939 3700", href: "tel:+306949393700" },
-              { icon: Phone, label: "Landline", value: "+30 210 992 5244", href: "tel:+302109925244" },
-              { icon: Mail, label: t("contact.email"), value: "h.a.viptransfers@gmail.com", href: "mailto:h.a.viptransfers@gmail.com" },
-              { icon: MapPin, label: t("contact.based"), value: t("contact.location"), href: "#" },
+              {
+                label: t("contact.phone"),
+                value: "+30 694 939 3700",
+                href: "tel:+306949393700",
+                icon: (
+                  <svg viewBox="0 0 24 24" className="w-10 h-10" aria-hidden="true">
+                    <path fill="#22c55e" d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.7-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1C8.7 6.4 8.5 5.2 8.5 4c0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1z"/>
+                  </svg>
+                ),
+              },
+              {
+                label: "Landline",
+                value: "+30 210 992 5244",
+                href: "tel:+302109925244",
+                icon: (
+                  <svg viewBox="0 0 24 24" className="w-10 h-10" aria-hidden="true">
+                    <path fill="hsl(var(--primary))" d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.7-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1C8.7 6.4 8.5 5.2 8.5 4c0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1z"/>
+                  </svg>
+                ),
+              },
+              {
+                label: t("contact.email"),
+                value: "h.a.viptransfers@gmail.com",
+                href: "mailto:h.a.viptransfers@gmail.com",
+                icon: (
+                  <svg viewBox="0 0 48 48" className="w-10 h-10" aria-hidden="true">
+                    <path fill="#4285f4" d="M44 11.5L24 26 4 11.5V36a2 2 0 002 2h6V22l12 9 12-9v16h6a2 2 0 002-2V11.5z"/>
+                    <path fill="#34a853" d="M12 38V22l12 9 12-9v16h-6V28l-6 4.5L18 28v10z"/>
+                    <path fill="#fbbc04" d="M36 38h6a2 2 0 002-2V11.5L36 17.5z"/>
+                    <path fill="#ea4335" d="M4 11.5L12 17.5V38H6a2 2 0 01-2-2z"/>
+                    <path fill="#c5221f" d="M44 11.5a2 2 0 00-2-2h-4L24 20 10 9.5H6a2 2 0 00-2 2L24 26z"/>
+                  </svg>
+                ),
+              },
+              {
+                label: t("contact.based"),
+                value: t("contact.location"),
+                href: "#",
+                icon: (
+                  <svg viewBox="0 0 24 24" className="w-10 h-10" aria-hidden="true">
+                    <path fill="#ef4444" d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/>
+                  </svg>
+                ),
+              },
             ].map((c) => (
               <a key={c.label} href={c.href} className="bg-card border border-border rounded-lg p-6 text-center hover:border-primary/40 transition-colors block overflow-hidden">
-                <c.icon className="w-6 h-6 text-primary mx-auto mb-3" />
+                <div className="flex justify-center mb-3">{c.icon}</div>
                 <p className="text-sm text-muted-foreground mb-1">{c.label}</p>
                 <p className="font-medium text-foreground text-sm break-all">{c.value}</p>
               </a>
