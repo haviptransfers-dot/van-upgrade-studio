@@ -260,7 +260,7 @@ const Index = () => {
             <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">{t("contact.eyebrow")}</p>
             <h2 className="font-display text-3xl md:text-5xl font-bold">{t("contact.title")}</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
             {[
               {
                 label: t("contact.phone"),
@@ -303,6 +303,27 @@ const Index = () => {
                 icon: (
                   <svg viewBox="0 0 24 24" className="w-10 h-10" aria-hidden="true">
                     <path fill="#ef4444" d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/>
+                  </svg>
+                ),
+              },
+              {
+                label: "Instagram",
+                value: "@antonhs_ieronymakis",
+                href: "https://instagram.com/antonhs_ieronymakis",
+                icon: (
+                  <svg viewBox="0 0 24 24" className="w-10 h-10" aria-hidden="true">
+                    <defs>
+                      <radialGradient id="igGrad" cx="30%" cy="107%" r="150%">
+                        <stop offset="0%" stopColor="#fdf497"/>
+                        <stop offset="5%" stopColor="#fdf497"/>
+                        <stop offset="45%" stopColor="#fd5949"/>
+                        <stop offset="60%" stopColor="#d6249f"/>
+                        <stop offset="90%" stopColor="#285AEB"/>
+                      </radialGradient>
+                    </defs>
+                    <rect x="2" y="2" width="20" height="20" rx="5" fill="url(#igGrad)"/>
+                    <circle cx="12" cy="12" r="4.2" fill="none" stroke="#fff" strokeWidth="1.8"/>
+                    <circle cx="17.5" cy="6.5" r="1.2" fill="#fff"/>
                   </svg>
                 ),
               },
