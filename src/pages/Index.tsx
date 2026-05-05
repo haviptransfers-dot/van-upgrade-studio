@@ -308,8 +308,8 @@ const Index = () => {
               },
               {
                 label: "Instagram",
-                value: "@antonhs_ieronymakis",
-                href: "https://instagram.com/antonhs_ieronymakis",
+                value: "@antonis_ieronymakhs",
+                href: "https://instagram.com/antonis_ieronymakhs",
                 icon: (
                   <svg viewBox="0 0 24 24" className="w-10 h-10" aria-hidden="true">
                     <defs>
