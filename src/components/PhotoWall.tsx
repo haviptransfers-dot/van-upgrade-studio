@@ -1,10 +1,6 @@
-import wall1 from "@/assets/wall-1.webp";
-import wall2 from "@/assets/wall-2.webp";
 import wall3 from "@/assets/wall-3.webp";
 
 const photos = [
-  { src: wall1, alt: "Client arriving at Mercedes V Class" },
-  { src: wall2, alt: "Guest stepping out of luxury van at hotel" },
   { src: wall3, alt: "Mercedes V Class cruising on the highway" },
 ];
 
