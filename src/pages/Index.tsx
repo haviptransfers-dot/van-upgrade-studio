@@ -13,7 +13,7 @@ import heroImg from "@/assets/hero-van.webp";
 import heroImgMobile from "@/assets/hero-van-mobile.webp";
 import interiorImg from "@/assets/fleet-vito.webp";
 import logoImg from "@/assets/logo.webp";
-import bgServices from "@/assets/wall-1.webp";
+import bgServices from "@/assets/showcase-1.webp";
 import bgWhy from "@/assets/showcase-2.webp";
 import bgCta from "@/assets/wall-3.webp";
 import bgContact from "@/assets/showcase-3.webp";
