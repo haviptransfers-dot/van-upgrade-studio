@@ -56,6 +56,9 @@ const Gallery = () => {
               src={img.src}
               alt={img.alt}
               loading="lazy"
+              decoding="async"
+              width={800}
+              height={600}
               className="w-full h-64 sm:h-72 object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </motion.div>
