@@ -362,7 +362,9 @@ const Index = () => {
         <MessageCircle className="w-7 h-7 text-white" />
       </a>
 
-      <ChatBot />
+      <Suspense fallback={null}>
+        <ChatBot />
+      </Suspense>
     </div>
   );
 };
