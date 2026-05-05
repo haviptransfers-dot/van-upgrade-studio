@@ -13,6 +13,9 @@ const PhotoWall = () => {
             src={p.src}
             alt={p.alt}
             loading="lazy"
+            decoding="async"
+            width={1600}
+            height={900}
             className="w-full h-[60vh] md:h-screen object-cover block"
           />
         </div>
