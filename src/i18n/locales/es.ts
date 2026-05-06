@@ -97,7 +97,7 @@ export default {
       athens_to_airport: "Atenas al Aeropuerto",
       port_to_athens: "Pireo a Atenas",
       athens_to_port: "Atenas a Pireo",
-      sounio: "Sounio – Templo de Poseidón (4h)",
+      sounio: "Sounio – Templo de Poseidón (5h)",
       athens_sights: "Tour Atenas (3h)",
     },
     includes: ["Recepción", "Seguimiento de Vuelo", "Espera Gratis", "WiFi Gratis", "Sillas Infantiles"],

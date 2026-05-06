@@ -14,14 +14,14 @@ type ServiceKey =
 
 const fixedPrices: Partial<Record<ServiceKey, number>> = {
   sounio: 200,
-  athens_sights: 160,
+  athens_sights: 150,
 };
 
 const perPaxPrices: Partial<Record<ServiceKey, { base: number; extra: number; baseMax: number }>> = {
   airport_to_athens: { base: 70, extra: 5, baseMax: 4 },
   athens_to_airport: { base: 70, extra: 5, baseMax: 4 },
-  port_to_athens: { base: 40, extra: 5, baseMax: 4 },
-  athens_to_port: { base: 40, extra: 5, baseMax: 4 },
+  port_to_athens: { base: 80, extra: 5, baseMax: 4 },
+  athens_to_port: { base: 80, extra: 5, baseMax: 4 },
 };
 
 const PriceCalculator = () => {
