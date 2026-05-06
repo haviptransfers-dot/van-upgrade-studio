@@ -9,19 +9,21 @@ type ServiceKey =
   | "athens_to_airport"
   | "port_to_athens"
   | "athens_to_port"
+  | "airport_to_port"
   | "sounio"
   | "athens_sights";
 
 const fixedPrices: Partial<Record<ServiceKey, number>> = {
   sounio: 200,
   athens_sights: 150,
+  airport_to_port: 100,
 };
 
 const perPaxPrices: Partial<Record<ServiceKey, { base: number; extra: number; baseMax: number }>> = {
   airport_to_athens: { base: 70, extra: 5, baseMax: 4 },
   athens_to_airport: { base: 70, extra: 5, baseMax: 4 },
-  port_to_athens: { base: 80, extra: 5, baseMax: 4 },
-  athens_to_port: { base: 80, extra: 5, baseMax: 4 },
+  port_to_athens: { base: 40, extra: 5, baseMax: 4 },
+  athens_to_port: { base: 40, extra: 5, baseMax: 4 },
 };
 
 const PriceCalculator = () => {
@@ -35,6 +37,7 @@ const PriceCalculator = () => {
     { key: "athens_to_airport", label: `🏛 → ✈ ${t("calc.services.athens_to_airport")}` },
     { key: "port_to_athens", label: `⚓ → 🏛 ${t("calc.services.port_to_athens")}` },
     { key: "athens_to_port", label: `🏛 → ⚓ ${t("calc.services.athens_to_port")}` },
+    { key: "airport_to_port", label: `✈ → ⚓ ${t("calc.services.airport_to_port")}` },
     { key: "sounio", label: `🏛 ${t("calc.services.sounio")}` },
     { key: "athens_sights", label: `🗺 ${t("calc.services.athens_sights")}` },
   ];

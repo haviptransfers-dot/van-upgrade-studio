@@ -97,6 +97,7 @@ export default {
       athens_to_airport: "Αθήνα προς Αεροδρόμιο",
       port_to_athens: "Πειραιάς προς Αθήνα",
       athens_to_port: "Αθήνα προς Πειραιά",
+      airport_to_port: "Αεροδρόμιο προς Πειραιά",
       sounio: "Σούνιο – Ναός Ποσειδώνα (5ώρες)",
       athens_sights: "Περιήγηση Αθήνας (3ώρες)",
     },
