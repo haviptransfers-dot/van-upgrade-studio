@@ -97,6 +97,7 @@ export default {
       athens_to_airport: "Athènes vers Aéroport",
       port_to_athens: "Le Pirée vers Athènes",
       athens_to_port: "Athènes vers Le Pirée",
+      airport_to_port: "Aéroport vers Le Pirée",
       sounio: "Sounion – Temple de Poséidon (5h)",
       athens_sights: "Tour d'Athènes (3h)",
     },
