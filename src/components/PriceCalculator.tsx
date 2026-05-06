@@ -9,19 +9,21 @@ type ServiceKey =
   | "athens_to_airport"
   | "port_to_athens"
   | "athens_to_port"
+  | "airport_to_port"
   | "sounio"
   | "athens_sights";
 
 const fixedPrices: Partial<Record<ServiceKey, number>> = {
   sounio: 200,
   athens_sights: 150,
+  airport_to_port: 100,
 };
 
 const perPaxPrices: Partial<Record<ServiceKey, { base: number; extra: number; baseMax: number }>> = {
   airport_to_athens: { base: 70, extra: 5, baseMax: 4 },
   athens_to_airport: { base: 70, extra: 5, baseMax: 4 },
-  port_to_athens: { base: 80, extra: 5, baseMax: 4 },
-  athens_to_port: { base: 80, extra: 5, baseMax: 4 },
+  port_to_athens: { base: 40, extra: 5, baseMax: 4 },
+  athens_to_port: { base: 40, extra: 5, baseMax: 4 },
 };
 
 const PriceCalculator = () => {
