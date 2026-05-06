@@ -37,6 +37,7 @@ const PriceCalculator = () => {
     { key: "athens_to_airport", label: `🏛 → ✈ ${t("calc.services.athens_to_airport")}` },
     { key: "port_to_athens", label: `⚓ → 🏛 ${t("calc.services.port_to_athens")}` },
     { key: "athens_to_port", label: `🏛 → ⚓ ${t("calc.services.athens_to_port")}` },
+    { key: "airport_to_port", label: `✈ → ⚓ ${t("calc.services.airport_to_port")}` },
     { key: "sounio", label: `🏛 ${t("calc.services.sounio")}` },
     { key: "athens_sights", label: `🗺 ${t("calc.services.athens_sights")}` },
   ];
