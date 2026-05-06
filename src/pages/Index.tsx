@@ -71,8 +71,8 @@ const Index = () => {
           </div>
           <div className="flex items-center gap-3">
             <LanguageSwitcher />
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-              <Button className="gap-2 bg-primary text-primary-foreground hover:bg-primary/80">
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="Book now via WhatsApp">
+              <Button className="gap-2 bg-primary text-primary-foreground hover:bg-primary/80" aria-label="Book now via WhatsApp">
                 <MessageCircle className="w-4 h-4" />
                 <span className="hidden sm:inline">{t("nav.bookNow")}</span>
               </Button>
@@ -144,7 +144,7 @@ const Index = () => {
             </a>
           </motion.div>
         </div>
-        <a href="#services" className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-primary/60">
+        <a href="#services" aria-label="Scroll to services" className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-primary/60">
           <ChevronDown className="w-8 h-8" />
         </a>
       </section>
@@ -357,6 +357,7 @@ const Index = () => {
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
         className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors hover:scale-110"
       >
         <MessageCircle className="w-7 h-7 text-white" />
