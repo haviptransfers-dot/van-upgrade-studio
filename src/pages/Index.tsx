@@ -71,8 +71,8 @@ const Index = () => {
           </div>
           <div className="flex items-center gap-3">
             <LanguageSwitcher />
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-              <Button className="gap-2 bg-primary text-primary-foreground hover:bg-primary/80">
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="Book now via WhatsApp">
+              <Button className="gap-2 bg-primary text-primary-foreground hover:bg-primary/80" aria-label="Book now via WhatsApp">
                 <MessageCircle className="w-4 h-4" />
                 <span className="hidden sm:inline">{t("nav.bookNow")}</span>
               </Button>
