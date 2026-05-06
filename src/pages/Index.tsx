@@ -144,7 +144,7 @@ const Index = () => {
             </a>
           </motion.div>
         </div>
-        <a href="#services" className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-primary/60">
+        <a href="#services" aria-label="Scroll to services" className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-primary/60">
           <ChevronDown className="w-8 h-8" />
         </a>
       </section>
