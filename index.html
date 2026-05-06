@@ -50,18 +50,20 @@
     <meta property="og:description" content="Premium private transfers in Athens with Mercedes V Class. Airport, port, hotel transfers &amp; custom tours. Book via WhatsApp 24/7.">
     <meta name="twitter:description" content="Premium private transfers in Athens with Mercedes V Class. Airport, port, hotel transfers &amp; custom tours. Book via WhatsApp 24/7.">
 
-    <!-- Defer Google Analytics so it doesn't block LCP -->
+    <!-- Defer Google Analytics so it doesn't block LCP/TBT -->
     <script>
       window.addEventListener('load', function () {
-        var s = document.createElement('script');
-        s.async = true;
-        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-1K40KS1TVB';
-        document.head.appendChild(s);
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        window.gtag = gtag;
-        gtag('js', new Date());
-        gtag('config', 'G-1K40KS1TVB');
+        setTimeout(function () {
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-1K40KS1TVB';
+          document.head.appendChild(s);
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          window.gtag = gtag;
+          gtag('js', new Date());
+          gtag('config', 'G-1K40KS1TVB');
+        }, 3000);
       });
     </script>
   </head>
