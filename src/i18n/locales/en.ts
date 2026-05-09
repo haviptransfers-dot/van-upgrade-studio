@@ -32,12 +32,12 @@ export default {
     subtitle: "Customized day trips from Athens to Greece's most iconic destinations. Travel in luxury with your own private driver.",
     cta: "Book a Private Tour",
     items: {
-      delphi: { name: "Delphi", desc: "Oracle of Apollo & ancient sanctuary" },
-      meteora: { name: "Meteora", desc: "Monasteries on towering rock pillars" },
-      nafplio: { name: "Nafplio", desc: "Charming seaside town & Bourtzi fortress" },
-      sounio: { name: "Cape Sounion", desc: "Temple of Poseidon at sunset" },
-      acropolis: { name: "Acropolis", desc: "The iconic Parthenon & Athens highlights" },
-      syntagma: { name: "Syntagma", desc: "Unknown Soldier monument & Evzones guards" },
+      delphi: { name: "Delphi", desc: "Oracle of Apollo & ancient sanctuary", long: "Travel through the mountains of central Greece to Delphi, once considered the navel of the world. Explore the Sanctuary of Apollo, the ancient theater, the stadium and the world-class museum, with a stop in the picturesque village of Arachova. Approx. 9–10 hours round trip from Athens." },
+      meteora: { name: "Meteora", desc: "Monasteries on towering rock pillars", long: "A breathtaking full-day journey to Meteora, a UNESCO World Heritage site where centuries-old monasteries sit atop dramatic rock pillars. Visit 2–3 active monasteries, enjoy panoramic photo stops and a relaxed lunch in Kalambaka. Approx. 12 hours with private driver." },
+      nafplio: { name: "Nafplio", desc: "Charming seaside town & Bourtzi fortress", long: "Discover Nafplio, the first capital of modern Greece. Stroll the Venetian old town, see the iconic Bourtzi sea fortress and climb (or drive up) to Palamidi castle. Optional stops at the Corinth Canal, ancient Mycenae and Epidaurus theater on the way. Approx. 8–9 hours." },
+      sounio: { name: "Cape Sounion", desc: "Temple of Poseidon at sunset", long: "A scenic drive along the Athens Riviera to Cape Sounion, home to the marble Temple of Poseidon perched on a cliff above the Aegean. Best timed for sunset, with stops for photos and an optional seaside dinner. Approx. 4–5 hours." },
+      acropolis: { name: "Acropolis", desc: "The iconic Parthenon & Athens highlights", long: "A private city tour covering the Acropolis and Parthenon, the Acropolis Museum, Plaka, Monastiraki and the Panathenaic Stadium. We drop you at each landmark, wait, and continue at your pace. Licensed guide can be arranged on request. Approx. 4 hours." },
+      syntagma: { name: "Syntagma", desc: "Unknown Soldier monument & Evzones guards", long: "Visit Syntagma Square and the Hellenic Parliament to witness the ceremonial Changing of the Guard by the Evzones at the Tomb of the Unknown Soldier. Easily combined with a short tour of central Athens. Approx. 1–2 hours." },
     },
   },
   fleet: {
