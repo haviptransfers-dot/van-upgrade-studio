@@ -1,7 +1,15 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 import tourDelphi from "@/assets/tour-delphi.webp";
 import tourMeteora from "@/assets/tour-meteora.webp";
 import tourNafplio from "@/assets/tour-nafplio.webp";
@@ -21,6 +29,7 @@ const fadeUp = {
 const PrivateTours = () => {
   const { t } = useTranslation();
   const whatsappUrl = "https://wa.me/306949393700";
+  const [activeTour, setActiveTour] = useState<{ key: string; src: string } | null>(null);
 
   const tours = [
     { src: tourDelphi, key: "delphi" },
@@ -30,6 +39,15 @@ const PrivateTours = () => {
     { src: tourAcropolis, key: "acropolis" },
     { src: tourSyntagma, key: "syntagma" },
   ];
+
+  const activeName = activeTour ? t(`tours.items.${activeTour.key}.name`) : "";
+  const activeDesc = activeTour ? t(`tours.items.${activeTour.key}.desc`) : "";
+  const activeLong = activeTour
+    ? t(`tours.items.${activeTour.key}.long`, { defaultValue: t(`tours.items.${activeTour.key}.desc`) })
+    : "";
+  const waMsg = activeTour
+    ? `Hi! I'd like to book the private tour to ${activeName}.`
+    : "";
 
   return (
     <section id="tours" className="py-24 px-4 bg-card">
@@ -60,11 +78,14 @@ const PrivateTours = () => {
             const name = t(`tours.items.${tour.key}.name`);
             const desc = t(`tours.items.${tour.key}.desc`);
             return (
-              <motion.div
+              <motion.button
+                type="button"
+                onClick={() => setActiveTour(tour)}
                 key={tour.key}
                 variants={fadeUp}
                 custom={i}
-                className="relative overflow-hidden rounded-lg group cursor-pointer"
+                className="relative overflow-hidden rounded-lg group cursor-pointer text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                aria-label={`View details for ${name}`}
               >
                 <img
                   src={tour.src}
@@ -79,7 +100,7 @@ const PrivateTours = () => {
                   <h3 className="font-display text-lg font-bold text-foreground">{name}</h3>
                   <p className="text-foreground/60 text-xs mt-1">{desc}</p>
                 </div>
-              </motion.div>
+              </motion.button>
             );
           })}
         </motion.div>
@@ -98,6 +119,50 @@ const PrivateTours = () => {
           </a>
         </motion.div>
       </div>
+
+      <Dialog open={!!activeTour} onOpenChange={(open) => !open && setActiveTour(null)}>
+        <DialogContent className="max-w-lg p-0 overflow-hidden border-primary/20 bg-card">
+          {activeTour && (
+            <>
+              <div className="relative h-56 w-full">
+                <img
+                  src={activeTour.src}
+                  alt={`Private tour to ${activeName}`}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
+              </div>
+              <div className="p-6 -mt-2">
+                <DialogHeader>
+                  <p className="text-primary uppercase tracking-[0.2em] text-xs mb-1">
+                    {t("tours.eyebrow")}
+                  </p>
+                  <DialogTitle className="font-display text-3xl text-foreground">
+                    {activeName}
+                  </DialogTitle>
+                  <DialogDescription className="text-primary/80 text-sm">
+                    {activeDesc}
+                  </DialogDescription>
+                </DialogHeader>
+                <p className="text-muted-foreground text-sm leading-relaxed mt-4">
+                  {activeLong}
+                </p>
+                <a
+                  href={`${whatsappUrl}?text=${encodeURIComponent(waMsg)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block mt-6"
+                >
+                  <Button className="w-full gap-2 bg-primary text-primary-foreground hover:bg-primary/80">
+                    <MessageCircle className="w-5 h-5" />
+                    {t("tours.cta")}
+                  </Button>
+                </a>
+              </div>
+            </>
+          )}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
