@@ -43,7 +43,7 @@ const reviews = [
 ];
 
 const GOOGLE_REVIEWS_URL =
-  "https://www.google.com/search?q=H%26A+Tours+EE+%E2%80%93+VIP+VAN+Transfers+Athens+%2F+Airport+Transfer&stick=H4sIAAAAAAAA_-NgU1I1qDA0STRMSjOyTDNLMk6xSEmyMqgws0g1MDIxMUhNszAzA6JFrDYeao4KIfmlRcUKrq4KjxomK4R5BiiEOfophBQl5hWnpQIlHEsyUvOKFfQVHDOLCvKLSuBSAAV4YsJoAAAA&hl=el&mat=CdxnYNVeY2quElYBTVDHnpjz-h0xkaIJx2cbZ7tFQPl5F26ABJ6iJVubNPoGDIkND3A-dGrvO9XNIk65oLHc6hofAYrZEdN7DZ6ssNs2bP9ol-DuoT05990Mz0d8ZqFlyw";
+  "https://www.google.com/maps/search/?api=1&query=H%26A+Tours+EE+VIP+VAN+Transfers+Athens";
 
 const Reviews = () => {
   const [index, setIndex] = useState(0);
