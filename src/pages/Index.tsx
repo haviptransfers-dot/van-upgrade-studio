@@ -18,6 +18,7 @@ const Showcase = lazy(() => import("@/components/Showcase"));
 const PhotoWall = lazy(() => import("@/components/PhotoWall"));
 const PrivateTours = lazy(() => import("@/components/PrivateTours"));
 const PriceCalculator = lazy(() => import("@/components/PriceCalculator"));
+const Reviews = lazy(() => import("@/components/Reviews"));
 const ChatBot = lazy(() => import("@/components/ChatBot"));
 const LazyFallback = () => <div className="min-h-[200px]" aria-hidden="true" />;
 
