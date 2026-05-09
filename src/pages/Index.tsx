@@ -206,6 +206,7 @@ const Index = () => {
       <Suspense fallback={<LazyFallback />}>
         <Gallery />
         <PriceCalculator />
+        <Reviews />
       </Suspense>
 
       {/* Why Choose Us */}
