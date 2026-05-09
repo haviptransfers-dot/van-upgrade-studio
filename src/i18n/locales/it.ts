@@ -32,12 +32,12 @@ export default {
     subtitle: "Escursioni personalizzate da Atene verso le destinazioni più iconiche della Grecia. Viaggia nel lusso con il tuo autista privato.",
     cta: "Prenota un Tour Privato",
     items: {
-      delphi: { name: "Delfi", desc: "Oracolo di Apollo e antico santuario" },
-      meteora: { name: "Meteora", desc: "Monasteri su imponenti pilastri di roccia" },
-      nafplio: { name: "Nafplio", desc: "Affascinante città di mare e fortezza Bourtzi" },
-      sounio: { name: "Capo Sounion", desc: "Tempio di Poseidone al tramonto" },
-      acropolis: { name: "Acropoli", desc: "L'iconico Partenone e i punti salienti di Atene" },
-      syntagma: { name: "Syntagma", desc: "Monumento al Milite Ignoto e guardie Evzones" },
+      delphi: { name: "Delfi", desc: "Oracolo di Apollo e antico santuario", long: "Attraversa le montagne della Grecia centrale fino a Delfi, un tempo considerata l'ombelico del mondo. Visita il Santuario di Apollo, il teatro antico, lo stadio e il museo, con sosta nel pittoresco villaggio di Arachova. Circa 9-10 ore andata e ritorno da Atene." },
+      meteora: { name: "Meteora", desc: "Monasteri su imponenti pilastri di roccia", long: "Una giornata mozzafiato a Meteora, sito UNESCO dove monasteri secolari si ergono su spettacolari pilastri rocciosi. Visita di 2-3 monasteri attivi, soste panoramiche per foto e pranzo rilassato a Kalambaka. Circa 12 ore con autista privato." },
+      nafplio: { name: "Nafplio", desc: "Affascinante città di mare e fortezza Bourtzi", long: "Scopri Nafplio, la prima capitale della Grecia moderna. Passeggia nel centro storico veneziano, ammira la fortezza di Bourtzi e sali al castello di Palamidi. Soste opzionali al Canale di Corinto, a Micene e al teatro di Epidauro. Circa 8-9 ore." },
+      sounio: { name: "Capo Sounion", desc: "Tempio di Poseidone al tramonto", long: "Percorso panoramico lungo la Riviera ateniese fino a Capo Sounion, dove sorge il Tempio di Poseidone in marmo a strapiombo sull'Egeo. Ideale al tramonto, con soste per foto e cena fronte mare opzionale. Circa 4-5 ore." },
+      acropolis: { name: "Acropoli", desc: "L'iconico Partenone e i punti salienti di Atene", long: "Tour privato della città che include l'Acropoli e il Partenone, il Museo dell'Acropoli, Plaka, Monastiraki e lo Stadio Panatenaico. Ti accompagniamo a ogni sito, aspettiamo e proseguiamo al tuo ritmo. Guida autorizzata su richiesta. Circa 4 ore." },
+      syntagma: { name: "Syntagma", desc: "Monumento al Milite Ignoto e guardie Evzones", long: "Visita Piazza Syntagma e il Parlamento ellenico per assistere al cerimoniale Cambio della Guardia degli Evzones presso la Tomba del Milite Ignoto. Facilmente abbinabile a un breve tour del centro di Atene. Circa 1-2 ore." },
     },
   },
   fleet: {

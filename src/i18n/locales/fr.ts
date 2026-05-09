@@ -32,12 +32,12 @@ export default {
     subtitle: "Excursions sur mesure depuis Athènes vers les destinations les plus emblématiques de Grèce. Voyagez dans le luxe avec votre chauffeur privé.",
     cta: "Réserver une Visite Privée",
     items: {
-      delphi: { name: "Delphes", desc: "Oracle d'Apollon et sanctuaire antique" },
-      meteora: { name: "Météores", desc: "Monastères perchés sur des rochers" },
-      nafplio: { name: "Nauplie", desc: "Ville côtière charmante et forteresse Bourtzi" },
-      sounio: { name: "Cap Sounion", desc: "Temple de Poséidon au coucher du soleil" },
-      acropolis: { name: "Acropole", desc: "Le Parthénon iconique et les incontournables d'Athènes" },
-      syntagma: { name: "Syntagma", desc: "Tombe du Soldat Inconnu et gardes Evzones" },
+      delphi: { name: "Delphes", desc: "Oracle d'Apollon et sanctuaire antique", long: "Traversez les montagnes de la Grèce centrale jusqu'à Delphes, autrefois considérée comme le nombril du monde. Découvrez le Sanctuaire d'Apollon, le théâtre antique, le stade et le musée, avec un arrêt dans le pittoresque village d'Arachova. Environ 9 à 10 heures aller-retour depuis Athènes." },
+      meteora: { name: "Météores", desc: "Monastères perchés sur des rochers", long: "Une journée à couper le souffle aux Météores, site UNESCO où des monastères centenaires se dressent au sommet de spectaculaires pitons rocheux. Visite de 2 à 3 monastères actifs, arrêts photo panoramiques et déjeuner détendu à Kalambaka. Environ 12 heures avec chauffeur privé." },
+      nafplio: { name: "Nauplie", desc: "Ville côtière charmante et forteresse Bourtzi", long: "Découvrez Nauplie, la première capitale de la Grèce moderne. Promenez-vous dans la vieille ville vénitienne, admirez la forteresse de Bourtzi et montez au château de Palamède. Arrêts optionnels au canal de Corinthe, à Mycènes et au théâtre d'Épidaure. Environ 8 à 9 heures." },
+      sounio: { name: "Cap Sounion", desc: "Temple de Poséidon au coucher du soleil", long: "Route panoramique le long de la Riviera athénienne jusqu'au Cap Sounion, où se dresse le temple de Poséidon en marbre, surplombant la mer Égée. Idéal au coucher du soleil, avec arrêts photo et dîner en bord de mer en option. Environ 4 à 5 heures." },
+      acropolis: { name: "Acropole", desc: "Le Parthénon iconique et les incontournables d'Athènes", long: "Visite privée couvrant l'Acropole et le Parthénon, le musée de l'Acropole, Plaka, Monastiraki et le stade Panathénaïque. Nous vous déposons à chaque site, attendons et continuons à votre rythme. Guide agréé sur demande. Environ 4 heures." },
+      syntagma: { name: "Syntagma", desc: "Tombe du Soldat Inconnu et gardes Evzones", long: "Visitez la place Syntagma et le Parlement hellénique pour assister à la cérémonie de la relève de la garde par les Evzones devant la Tombe du Soldat Inconnu. Facilement combinable avec une courte visite du centre d'Athènes. Environ 1 à 2 heures." },
     },
   },
   fleet: {

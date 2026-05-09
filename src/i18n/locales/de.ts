@@ -32,12 +32,12 @@ export default {
     subtitle: "Maßgeschneiderte Tagesausflüge von Athen zu den ikonischsten Zielen Griechenlands. Reisen Sie luxuriös mit Ihrem eigenen Privatchauffeur.",
     cta: "Privattour buchen",
     items: {
-      delphi: { name: "Delphi", desc: "Orakel von Apollon & antikes Heiligtum" },
-      meteora: { name: "Meteora", desc: "Klöster auf hoch aufragenden Felsen" },
-      nafplio: { name: "Nafplio", desc: "Charmante Hafenstadt & Bourtzi-Festung" },
-      sounio: { name: "Kap Sounion", desc: "Poseidon-Tempel bei Sonnenuntergang" },
-      acropolis: { name: "Akropolis", desc: "Der ikonische Parthenon & Athens Highlights" },
-      syntagma: { name: "Syntagma", desc: "Grabmal des Unbekannten Soldaten & Evzonen-Wachen" },
+      delphi: { name: "Delphi", desc: "Orakel von Apollon & antikes Heiligtum", long: "Fahren Sie durch die Berge Mittelgriechenlands nach Delphi, einst als Nabel der Welt verehrt. Besichtigen Sie das Apollon-Heiligtum, das antike Theater, das Stadion und das Museum, mit Stopp im malerischen Dorf Arachova. Etwa 9-10 Stunden hin und zurück ab Athen." },
+      meteora: { name: "Meteora", desc: "Klöster auf hoch aufragenden Felsen", long: "Eine atemberaubende Tagesreise nach Meteora, UNESCO-Welterbe, wo jahrhundertealte Klöster auf dramatischen Felsensäulen thronen. Besuch von 2-3 aktiven Klöstern, Panorama-Fotostopps und entspanntes Mittagessen in Kalambaka. Etwa 12 Stunden mit Privatfahrer." },
+      nafplio: { name: "Nafplio", desc: "Charmante Hafenstadt & Bourtzi-Festung", long: "Entdecken Sie Nafplio, die erste Hauptstadt des modernen Griechenlands. Schlendern Sie durch die venezianische Altstadt, sehen Sie die ikonische Bourtzi-Seefestung und besteigen Sie die Palamidi-Burg. Optionale Stopps am Kanal von Korinth, in Mykene und im Theater von Epidauros. Etwa 8-9 Stunden." },
+      sounio: { name: "Kap Sounion", desc: "Poseidon-Tempel bei Sonnenuntergang", long: "Eine landschaftlich reizvolle Fahrt entlang der Athener Riviera zum Kap Sounion, wo der marmorne Poseidon-Tempel hoch über der Ägäis thront. Ideal bei Sonnenuntergang, mit Fotostopps und optionalem Abendessen am Meer. Etwa 4-5 Stunden." },
+      acropolis: { name: "Akropolis", desc: "Der ikonische Parthenon & Athens Highlights", long: "Private Stadtrundfahrt mit Akropolis und Parthenon, Akropolis-Museum, Plaka, Monastiraki und Panathinaiko-Stadion. Wir setzen Sie an jedem Highlight ab, warten und fahren in Ihrem Tempo weiter. Lizenzierter Guide auf Anfrage. Etwa 4 Stunden." },
+      syntagma: { name: "Syntagma", desc: "Grabmal des Unbekannten Soldaten & Evzonen-Wachen", long: "Besuchen Sie den Syntagma-Platz und das griechische Parlament und erleben Sie die feierliche Wachablösung der Evzonen am Grab des Unbekannten Soldaten. Lässt sich leicht mit einer kurzen Tour durch das Zentrum Athens kombinieren. Etwa 1-2 Stunden." },
     },
   },
   fleet: {
