@@ -32,12 +32,12 @@ export default {
     subtitle: "Excursiones de un día a medida desde Atenas a los destinos más emblemáticos de Grecia. Viaja con lujo y tu propio chófer privado.",
     cta: "Reservar un Tour Privado",
     items: {
-      delphi: { name: "Delfos", desc: "Oráculo de Apolo y santuario antiguo" },
-      meteora: { name: "Meteora", desc: "Monasterios sobre imponentes rocas" },
-      nafplio: { name: "Nafplio", desc: "Encantadora ciudad costera y fortaleza Bourtzi" },
-      sounio: { name: "Cabo Sunión", desc: "Templo de Poseidón al atardecer" },
-      acropolis: { name: "Acrópolis", desc: "El icónico Partenón y lo mejor de Atenas" },
-      syntagma: { name: "Syntagma", desc: "Tumba del Soldado Desconocido y guardias Evzones" },
+      delphi: { name: "Delfos", desc: "Oráculo de Apolo y santuario antiguo", long: "Viaja a través de las montañas de Grecia central hasta Delfos, considerada antiguamente el ombligo del mundo. Explora el Santuario de Apolo, el teatro antiguo, el estadio y el museo, con parada en el pintoresco pueblo de Arachova. Aproximadamente 9-10 horas ida y vuelta desde Atenas." },
+      meteora: { name: "Meteora", desc: "Monasterios sobre imponentes rocas", long: "Una jornada impresionante a Meteora, Patrimonio de la Humanidad de la UNESCO donde monasterios centenarios se alzan sobre espectaculares pilares de roca. Visita 2-3 monasterios activos, paradas panorámicas para fotos y almuerzo relajado en Kalambaka. Aproximadamente 12 horas con chófer privado." },
+      nafplio: { name: "Nafplio", desc: "Encantadora ciudad costera y fortaleza Bourtzi", long: "Descubre Nafplio, la primera capital de la Grecia moderna. Pasea por el casco veneciano, admira la fortaleza de Bourtzi y sube al castillo de Palamidi. Paradas opcionales en el Canal de Corinto, Micenas y el teatro de Epidauro. Aproximadamente 8-9 horas." },
+      sounio: { name: "Cabo Sunión", desc: "Templo de Poseidón al atardecer", long: "Ruta panorámica por la Riviera ateniense hasta el Cabo Sunión, donde se alza el Templo de Poseidón de mármol sobre el mar Egeo. Ideal al atardecer, con paradas para fotos y cena junto al mar opcional. Aproximadamente 4-5 horas." },
+      acropolis: { name: "Acrópolis", desc: "El icónico Partenón y lo mejor de Atenas", long: "Tour privado por la ciudad que incluye la Acrópolis y el Partenón, el Museo de la Acrópolis, Plaka, Monastiraki y el Estadio Panatenaico. Te dejamos en cada lugar, esperamos y continuamos a tu ritmo. Guía oficial bajo petición. Aproximadamente 4 horas." },
+      syntagma: { name: "Syntagma", desc: "Tumba del Soldado Desconocido y guardias Evzones", long: "Visita la Plaza Syntagma y el Parlamento Helénico para presenciar el ceremonial Cambio de Guardia de los Evzones en la Tumba del Soldado Desconocido. Se combina fácilmente con un breve recorrido por el centro de Atenas. Aproximadamente 1-2 horas." },
     },
   },
   fleet: {
