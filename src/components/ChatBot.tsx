@@ -295,16 +295,25 @@ const ChatBot = () => {
                     className="bg-background border border-border rounded px-3 py-2 text-sm focus:border-primary outline-none"
                   />
                 </div>
-                <input
-                  required
-                  type="number"
-                  min={1}
-                  max={8}
-                  placeholder={t("chat.bookingPax")}
-                  value={booking.pax}
-                  onChange={(e) => setBooking({ ...booking, pax: e.target.value })}
-                  className="w-full bg-background border border-border rounded px-3 py-2 text-sm focus:border-primary outline-none"
-                />
+                <div className="grid grid-cols-2 gap-2">
+                  <input
+                    required
+                    type="number"
+                    min={1}
+                    max={8}
+                    placeholder={t("chat.bookingPax")}
+                    value={booking.pax}
+                    onChange={(e) => setBooking({ ...booking, pax: e.target.value })}
+                    className="bg-background border border-border rounded px-3 py-2 text-sm focus:border-primary outline-none"
+                  />
+                  <input
+                    type="text"
+                    placeholder={t("chat.bookingFlight")}
+                    value={booking.flight}
+                    onChange={(e) => setBooking({ ...booking, flight: e.target.value })}
+                    className="bg-background border border-border rounded px-3 py-2 text-sm focus:border-primary outline-none"
+                  />
+                </div>
                 <textarea
                   rows={2}
                   placeholder={t("chat.bookingNotes")}
@@ -312,12 +321,23 @@ const ChatBot = () => {
                   onChange={(e) => setBooking({ ...booking, notes: e.target.value })}
                   className="w-full bg-background border border-border rounded px-3 py-2 text-sm focus:border-primary outline-none resize-none"
                 />
-                <div className="flex gap-2 pt-1">
-                  <Button type="button" variant="outline" onClick={() => setShowBooking(false)} className="flex-1">
+                <div className="flex flex-col gap-2 pt-1">
+                  <div className="grid grid-cols-2 gap-2">
+                    <Button type="submit" className="bg-primary text-primary-foreground hover:bg-primary/80 gap-1.5">
+                      <Send className="w-3.5 h-3.5" />
+                      {t("chat.bookingSubmit")}
+                    </Button>
+                    <Button
+                      type="button"
+                      onClick={sendBookingWhatsapp}
+                      className="bg-[#25D366] text-white hover:bg-[#25D366]/90 gap-1.5"
+                    >
+                      <MessageCircle className="w-3.5 h-3.5" />
+                      {t("chat.bookingWhatsapp")}
+                    </Button>
+                  </div>
+                  <Button type="button" variant="outline" onClick={() => setShowBooking(false)} className="w-full">
                     {t("chat.bookingCancel")}
-                  </Button>
-                  <Button type="submit" className="flex-1 bg-primary text-primary-foreground hover:bg-primary/80">
-                    {t("chat.bookingSubmit")}
                   </Button>
                 </div>
               </form>
