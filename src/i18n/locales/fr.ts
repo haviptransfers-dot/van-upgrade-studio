@@ -142,7 +142,7 @@ export default {
       q2: "Qu'est-ce qui est inclus dans le prix ?",
       a2: "Tous les transferts incluent les péages, l'eau en bouteille, le Wi-Fi gratuit et le suivi des vols ou des navires.",
       q3: "Combien de passagers et de valises peuvent entrer ?",
-      a3: "Nous disposons de véhicules pour jusqu'à 7 et jusqu'à 8 passagers. La capacité bagages correspond à une grande valise par passager.",
+      a3: "Nous avons des véhicules pour 7 ou 8 passagers. Chaque passager peut apporter une grande valise.",
       q4: "Quels modes de paiement acceptez-vous ?",
       a4: "Nous acceptons les espèces (EUR), le paiement par carte via POS mobile (Visa/Mastercard) et le virement bancaire.",
       q5: "Un acompte est-il requis ?",

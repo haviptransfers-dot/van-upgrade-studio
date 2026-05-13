@@ -142,7 +142,7 @@ export default {
       q2: "What is included in the price?",
       a2: "All transfers include tolls, bottled water, complimentary Wi-Fi, and flight or ship tracking.",
       q3: "How many passengers and suitcases fit?",
-      a3: "We have vehicles for up to 7 and up to 8 passengers. Luggage capacity corresponds to one large suitcase per passenger.",
+      a3: "We have vehicles for 7 or 8 passengers. Each passenger can bring one large suitcase.",
       q4: "What payment methods do you accept?",
       a4: "We accept cash (EUR), card payment via portable POS (Visa/Mastercard), and bank transfer.",
       q5: "Is a deposit required?",

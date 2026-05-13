@@ -142,7 +142,7 @@ export default {
       q2: "Was ist im Preis inbegriffen?",
       a2: "Alle Transfers beinhalten Maut, Wasser, kostenloses WLAN sowie Flug- und Schiffsüberwachung.",
       q3: "Wie viele Passagiere und Koffer passen hinein?",
-      a3: "Wir haben Fahrzeuge für bis zu 7 und bis zu 8 Passagiere. Das Gepäckvolumen entspricht einem großen Koffer pro Person.",
+      a3: "Wir haben Fahrzeuge für 7 oder 8 Passagiere. Jeder Passagier kann einen großen Koffer mitnehmen.",
       q4: "Welche Zahlungsarten akzeptieren Sie?",
       a4: "Wir akzeptieren Bargeld (EUR), Kartenzahlung per mobilem POS (Visa/Mastercard) und Banküberweisung.",
       q5: "Ist eine Anzahlung erforderlich?",

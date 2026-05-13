@@ -142,7 +142,7 @@ export default {
       q2: "¿Qué está incluido en el precio?",
       a2: "Todos los traslados incluyen peajes, agua embotellada, Wi-Fi gratuito y seguimiento de vuelos o barcos.",
       q3: "¿Cuántos pasajeros y maletas caben?",
-      a3: "Tenemos vehículos para hasta 7 y hasta 8 pasajeros. La capacidad de equipaje corresponde a una maleta grande por pasajero.",
+      a3: "Tenemos vehículos para 7 u 8 pasajeros. Cada pasajero puede traer una maleta grande.",
       q4: "¿Qué métodos de pago aceptan?",
       a4: "Aceptamos efectivo (EUR), pago con tarjeta vía POS portátil (Visa/Mastercard) y transferencia bancaria.",
       q5: "¿Se requiere un depósito?",

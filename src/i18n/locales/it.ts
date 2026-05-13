@@ -142,7 +142,7 @@ export default {
       q2: "Cosa è incluso nel prezzo?",
       a2: "Tutti i transfer includono pedaggi, acqua in bottiglia, Wi-Fi gratuito e monitoraggio voli o navi.",
       q3: "Quanti passeggeri e valigie entrano?",
-      a3: "Disponiamo di veicoli fino a 7 e fino a 8 passeggeri. La capacità bagagli corrisponde a una valigia grande a passeggero.",
+      a3: "Disponiamo di veicoli per 7 o 8 passeggeri. Ogni passeggero può portare una valigia grande.",
       q4: "Quali metodi di pagamento accettate?",
       a4: "Accettiamo contanti (EUR), pagamento con carta tramite POS portatile (Visa/Mastercard) e bonifico bancario.",
       q5: "È richiesto un deposito?",
