@@ -5,6 +5,7 @@ import gallery2 from "@/assets/gallery-2.webp";
 import gallery3 from "@/assets/gallery-3.webp";
 import gallery4 from "@/assets/gallery-4.webp";
 import gallery5 from "@/assets/gallery-5.jpg";
+import gallery6 from "@/assets/gallery-6.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -21,6 +22,7 @@ const images = [
   { src: gallery3, alt: "Black Mercedes Vito parked in front of a luxury Athens hotel entrance" },
   { src: gallery4, alt: "H&A Tours van with Athens Acropolis view" },
   { src: gallery5, alt: "Mercedes V Class open sliding door showing cognac leather seats with ambient lighting" },
+  { src: gallery6, alt: "Mercedes V Class interior with diamond-stitched black leather seats and blue ambient floor lighting" },
 ];
 
 const Gallery = () => {
