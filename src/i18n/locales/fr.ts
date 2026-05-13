@@ -58,7 +58,7 @@ export default {
     title: "Pourquoi nous choisir",
     items: {
       licensed: { title: "Licencié & Assuré", desc: "Service de chauffeur professionnel entièrement licencié" },
-      passengers: { title: "Jusqu'à 7 Passagers", desc: "Mercedes Classe V spacieux pour groupes et familles" },
+      passengers: { title: "7-8 Passagers", desc: "Mercedes Classe V spacieux pour groupes et familles" },
       available: { title: "Disponible 24/7", desc: "Service en continu, tôt le matin et tard le soir" },
       rated: { title: "Noté 5 Étoiles", desc: "Des centaines de voyageurs satisfaits du monde entier" },
     },

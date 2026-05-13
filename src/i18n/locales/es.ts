@@ -58,7 +58,7 @@ export default {
     title: "Por qué elegirnos",
     items: {
       licensed: { title: "Licencia y Seguro", desc: "Servicio de chófer profesional con licencia completa" },
-      passengers: { title: "Hasta 7 Pasajeros", desc: "Amplio Mercedes Clase V para grupos y familias" },
+      passengers: { title: "7-8 Pasajeros", desc: "Amplio Mercedes Clase V para grupos y familias" },
       available: { title: "Disponible 24/7", desc: "Servicio las 24 horas, madrugada y noche" },
       rated: { title: "5 Estrellas", desc: "Cientos de viajeros satisfechos de todo el mundo" },
     },

@@ -58,7 +58,7 @@ export default {
     title: "Why Choose Us",
     items: {
       licensed: { title: "Licensed & Insured", desc: "Fully licensed, professional chauffeur service" },
-      passengers: { title: "Up to 7 Passengers", desc: "Spacious Mercedes V Class for groups & families" },
+      passengers: { title: "7-8 Passengers", desc: "Spacious Mercedes V Class for groups & families" },
       available: { title: "24/7 Available", desc: "Round-the-clock service, early morning & late night" },
       rated: { title: "5-Star Rated", desc: "Hundreds of satisfied travelers from around the world" },
     },
