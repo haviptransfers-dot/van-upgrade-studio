@@ -20,6 +20,7 @@ const PrivateTours = lazy(() => import("@/components/PrivateTours"));
 const PriceCalculator = lazy(() => import("@/components/PriceCalculator"));
 const Reviews = lazy(() => import("@/components/Reviews"));
 const ChatBot = lazy(() => import("@/components/ChatBot"));
+const FAQ = lazy(() => import("@/components/FAQ"));
 const LazyFallback = () => <div className="min-h-[200px]" aria-hidden="true" />;
 
 const fadeUp = {
