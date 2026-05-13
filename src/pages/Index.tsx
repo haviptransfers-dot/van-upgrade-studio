@@ -208,6 +208,7 @@ const Index = () => {
         <Gallery />
         <PriceCalculator />
         <Reviews />
+        <FAQ />
       </Suspense>
 
       {/* Why Choose Us */}
