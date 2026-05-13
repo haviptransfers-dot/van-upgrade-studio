@@ -97,7 +97,7 @@ const Reviews = () => {
               ))}
             </div>
             <span className="font-semibold text-lg">5.0</span>
-            <span className="text-muted-foreground text-sm">· 30+ verified reviews</span>
+            <span className="text-muted-foreground text-sm">· 40+ verified reviews</span>
           </div>
         </motion.div>
 
