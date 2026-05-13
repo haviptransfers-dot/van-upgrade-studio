@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion } from "framer-motion";
-import { X, Send, Loader2 } from "lucide-react";
+import { X, Send, Loader2, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import vanIcon from "@/assets/fleet-vito.webp";
 
@@ -30,6 +30,7 @@ const ChatBot = () => {
     date: "",
     time: "",
     pax: "2",
+    flight: "",
     notes: "",
   });
 
@@ -135,10 +136,8 @@ const ChatBot = () => {
     sendMessage(prompts[key]);
   };
 
-  const submitBooking = (e: React.FormEvent) => {
-    e.preventDefault();
-    const subject = `New Booking Request — ${booking.name}`;
-    const body =
+  const buildBookingText = () => {
+    return (
       `New booking request from H&A website:\n\n` +
       `Name: ${booking.name}\n` +
       `Email: ${booking.email}\n` +
@@ -149,18 +148,39 @@ const ChatBot = () => {
       `Date: ${booking.date}\n` +
       `Time: ${booking.time}\n` +
       `Passengers: ${booking.pax}\n` +
-      `Notes: ${booking.notes}\n`;
-    window.location.href = `mailto:h.a.viptransfers@gmail.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
+      `Flight / Ship #: ${booking.flight}\n` +
+      `Notes: ${booking.notes}\n`
+    );
+  };
+
+  const finishBooking = () => {
     setShowBooking(false);
     setMessages((prev) => [
       ...prev,
       {
         role: "assistant",
-        content: `✅ ${booking.name ? booking.name + ", y" : "Y"}our booking request is ready. Your email app should open now — just hit Send! We'll confirm shortly.`,
+        content: `✅ ${booking.name ? booking.name + ", y" : "Y"}our booking request is ready. We'll confirm shortly.`,
       },
     ]);
+  };
+
+  const submitBooking = (e: React.FormEvent) => {
+    e.preventDefault();
+    const subject = `New Booking Request — ${booking.name}`;
+    window.location.href = `mailto:h.a.viptransfers@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(buildBookingText())}`;
+    finishBooking();
+  };
+
+  const sendBookingWhatsapp = () => {
+    if (!booking.name || !booking.email || !booking.phone || !booking.service || !booking.pickup || !booking.dropoff || !booking.date || !booking.time) {
+      alert(t("chat.bookingFillRequired") || "Please fill in all required fields first.");
+      return;
+    }
+    const url = `https://wa.me/306949393700?text=${encodeURIComponent(buildBookingText())}`;
+    window.open(url, "_blank", "noopener,noreferrer");
+    finishBooking();
   };
 
   return (
@@ -275,16 +295,25 @@ const ChatBot = () => {
                     className="bg-background border border-border rounded px-3 py-2 text-sm focus:border-primary outline-none"
                   />
                 </div>
-                <input
-                  required
-                  type="number"
-                  min={1}
-                  max={8}
-                  placeholder={t("chat.bookingPax")}
-                  value={booking.pax}
-                  onChange={(e) => setBooking({ ...booking, pax: e.target.value })}
-                  className="w-full bg-background border border-border rounded px-3 py-2 text-sm focus:border-primary outline-none"
-                />
+                <div className="grid grid-cols-2 gap-2">
+                  <input
+                    required
+                    type="number"
+                    min={1}
+                    max={8}
+                    placeholder={t("chat.bookingPax")}
+                    value={booking.pax}
+                    onChange={(e) => setBooking({ ...booking, pax: e.target.value })}
+                    className="bg-background border border-border rounded px-3 py-2 text-sm focus:border-primary outline-none"
+                  />
+                  <input
+                    type="text"
+                    placeholder={t("chat.bookingFlight")}
+                    value={booking.flight}
+                    onChange={(e) => setBooking({ ...booking, flight: e.target.value })}
+                    className="bg-background border border-border rounded px-3 py-2 text-sm focus:border-primary outline-none"
+                  />
+                </div>
                 <textarea
                   rows={2}
                   placeholder={t("chat.bookingNotes")}
@@ -292,12 +321,23 @@ const ChatBot = () => {
                   onChange={(e) => setBooking({ ...booking, notes: e.target.value })}
                   className="w-full bg-background border border-border rounded px-3 py-2 text-sm focus:border-primary outline-none resize-none"
                 />
-                <div className="flex gap-2 pt-1">
-                  <Button type="button" variant="outline" onClick={() => setShowBooking(false)} className="flex-1">
+                <div className="flex flex-col gap-2 pt-1">
+                  <div className="grid grid-cols-2 gap-2">
+                    <Button type="submit" className="bg-primary text-primary-foreground hover:bg-primary/80 gap-1.5">
+                      <Send className="w-3.5 h-3.5" />
+                      {t("chat.bookingSubmit")}
+                    </Button>
+                    <Button
+                      type="button"
+                      onClick={sendBookingWhatsapp}
+                      className="bg-[#25D366] text-white hover:bg-[#25D366]/90 gap-1.5"
+                    >
+                      <MessageCircle className="w-3.5 h-3.5" />
+                      {t("chat.bookingWhatsapp")}
+                    </Button>
+                  </div>
+                  <Button type="button" variant="outline" onClick={() => setShowBooking(false)} className="w-full">
                     {t("chat.bookingCancel")}
-                  </Button>
-                  <Button type="submit" className="flex-1 bg-primary text-primary-foreground hover:bg-primary/80">
-                    {t("chat.bookingSubmit")}
                   </Button>
                 </div>
               </form>
