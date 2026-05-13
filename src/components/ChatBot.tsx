@@ -30,6 +30,7 @@ const ChatBot = () => {
     date: "",
     time: "",
     pax: "2",
+    flight: "",
     notes: "",
   });
 
