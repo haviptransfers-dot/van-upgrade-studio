@@ -58,7 +58,7 @@ export default {
     title: "Warum uns wählen",
     items: {
       licensed: { title: "Lizenziert & Versichert", desc: "Voll lizenzierter, professioneller Chauffeurservice" },
-      passengers: { title: "Bis zu 7 Passagiere", desc: "Geräumiger Mercedes V-Klasse für Gruppen & Familien" },
+      passengers: { title: "7-8 Passagiere", desc: "Geräumiger Mercedes V-Klasse für Gruppen & Familien" },
       available: { title: "24/7 Verfügbar", desc: "Rund-um-die-Uhr-Service, früh morgens & spät abends" },
       rated: { title: "5-Sterne-Bewertung", desc: "Hunderte zufriedener Reisender aus aller Welt" },
     },
