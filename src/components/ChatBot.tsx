@@ -136,10 +136,8 @@ const ChatBot = () => {
     sendMessage(prompts[key]);
   };
 
-  const submitBooking = (e: React.FormEvent) => {
-    e.preventDefault();
-    const subject = `New Booking Request — ${booking.name}`;
-    const body =
+  const buildBookingText = () => {
+    return (
       `New booking request from H&A website:\n\n` +
       `Name: ${booking.name}\n` +
       `Email: ${booking.email}\n` +
@@ -150,18 +148,39 @@ const ChatBot = () => {
       `Date: ${booking.date}\n` +
       `Time: ${booking.time}\n` +
       `Passengers: ${booking.pax}\n` +
-      `Notes: ${booking.notes}\n`;
-    window.location.href = `mailto:h.a.viptransfers@gmail.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
+      `Flight / Ship #: ${booking.flight}\n` +
+      `Notes: ${booking.notes}\n`
+    );
+  };
+
+  const finishBooking = () => {
     setShowBooking(false);
     setMessages((prev) => [
       ...prev,
       {
         role: "assistant",
-        content: `✅ ${booking.name ? booking.name + ", y" : "Y"}our booking request is ready. Your email app should open now — just hit Send! We'll confirm shortly.`,
+        content: `✅ ${booking.name ? booking.name + ", y" : "Y"}our booking request is ready. We'll confirm shortly.`,
       },
     ]);
+  };
+
+  const submitBooking = (e: React.FormEvent) => {
+    e.preventDefault();
+    const subject = `New Booking Request — ${booking.name}`;
+    window.location.href = `mailto:h.a.viptransfers@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(buildBookingText())}`;
+    finishBooking();
+  };
+
+  const sendBookingWhatsapp = () => {
+    if (!booking.name || !booking.email || !booking.phone || !booking.service || !booking.pickup || !booking.dropoff || !booking.date || !booking.time) {
+      alert(t("chat.bookingFillRequired") || "Please fill in all required fields first.");
+      return;
+    }
+    const url = `https://wa.me/306949393700?text=${encodeURIComponent(buildBookingText())}`;
+    window.open(url, "_blank", "noopener,noreferrer");
+    finishBooking();
   };
 
   return (
