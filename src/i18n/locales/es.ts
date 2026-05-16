@@ -154,5 +154,14 @@ export default {
       q8: "¿Cómo encontraré a mi conductor en el aeropuerto?",
       a8: "Tu conductor sostendrá un cartel con el nombre de nuestra empresa (H&A VIP Transfers). Si lo deseas, también podemos mostrar un cartel con tu nombre — solo pídelo.",
     },
+  },,
+  seo: {
+    airport: { title: "Traslado Aeropuerto de Atenas (ATH) – Mercedes V Class | H&A VIP Tours", description: "Traslados privados al Aeropuerto Internacional de Atenas en Mercedes V Class de lujo. Seguimiento de vuelo, recibimiento, precios fijos desde 70€. Reserva por WhatsApp 24/7." },
+    piraeus: { title: "Traslado Puerto del Pireo desde Atenas y Aeropuerto | H&A VIP Tours", description: "Traslados privados de lujo a y desde los puertos del Pireo, Rafina y Lavrio. Ideal para cruceros y ferris. Mercedes V Class, 7–8 pasajeros, precios fijos." },
+    athens: { title: "Tour Privado por Atenas – Acrópolis y Lugares Emblemáticos | H&A VIP Tours", description: "Tour privado por la ciudad de Atenas con conductor profesional. Visita la Acrópolis, Plaka, Syntagma y el Estadio Panatenaico en un Mercedes V Class." },
+    delphi: { title: "Tour Privado a Delfos desde Atenas | H&A VIP Tours", description: "Excursión privada de día completo desde Atenas a Delfos, el antiguo Oráculo de Apolo. Mercedes V Class de lujo con conductor angloparlante. Parada en Arachova." },
+    meteora: { title: "Tour Privado a Meteora desde Atenas | H&A VIP Tours", description: "Tour privado a los monasterios de Meteora (UNESCO) desde Atenas en Mercedes V Class. Viaje cómodo de día completo con conductor profesional." },
+    nafplio: { title: "Tour Privado a Nafplio desde Atenas | H&A VIP Tours", description: "Excursión privada de un día desde Atenas a Nafplio, Micenas y Epidauro. Descubre la primera capital de Grecia en un Mercedes V Class." },
+    sounion: { title: "Tour al Cabo Sunión – Templo de Poseidón | H&A VIP Tours", description: "Tour privado al atardecer desde Atenas al Cabo Sunión y el Templo de Poseidón. Recorrido escénico por la Riviera Ateniense en Mercedes V Class." },
   },
 };
