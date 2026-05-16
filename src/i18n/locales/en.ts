@@ -104,6 +104,7 @@ export default {
     includes: ["Meet & Greet", "Flight Tracking", "Free Wait", "Free WiFi", "Child Seats"],
   },
   footer: { rights: "All rights reserved." },
+  photoWall: { eyebrow: "On The Road", title: "Effortless Journeys", subtitle: "Smooth, silent, and always on time — wherever Greece takes you." },
   chat: {
     title: "H&A Concierge",
     subtitle: "Ask anything · 24/7",

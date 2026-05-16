@@ -104,6 +104,7 @@ export default {
     includes: ["Empfang", "Flugverfolgung", "Freie Wartezeit", "Gratis WLAN", "Kindersitze"],
   },
   footer: { rights: "Alle Rechte vorbehalten." },
+  photoWall: { eyebrow: "Unterwegs", title: "Mühelose Fahrten", subtitle: "Sanft, leise und immer pünktlich — wohin Sie Griechenland auch führt." },
   chat: {
     title: "H&A Concierge",
     subtitle: "Fragen Sie alles · 24/7",
