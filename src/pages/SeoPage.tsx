@@ -7,7 +7,7 @@ interface SeoPageProps {
   path: string;
 }
 
-const SITE_URL = "https://van-move-boost.lovable.app";
+const SITE_URL = "https://haviptransfers.gr";
 
 const SeoPage = ({ routeKey, path }: SeoPageProps) => {
   const { t, i18n } = useTranslation();
