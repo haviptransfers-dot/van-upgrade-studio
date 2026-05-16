@@ -22,7 +22,7 @@ const App = () => (
             <Route
               key={r.path}
               path={r.path}
-              element={<SeoPage path={r.path} title={r.title} description={r.description} />}
+              element={<SeoPage path={r.path} routeKey={r.key} />}
             />
           ))}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

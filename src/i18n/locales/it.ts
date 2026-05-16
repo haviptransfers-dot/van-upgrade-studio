@@ -155,4 +155,13 @@ export default {
       a8: "Il tuo autista terrà un cartello con il nome della nostra azienda (H&A VIP Transfers). Se lo desideri, possiamo anche mostrare un cartello con il tuo nome — basta chiedere.",
     },
   },
+  seo: {
+    airport: { title: "Transfer Aeroporto di Atene (ATH) – Mercedes V Class | H&A VIP Tours", description: "Transfer privati per l'Aeroporto Internazionale di Atene con Mercedes V Class di lusso. Monitoraggio voli, accoglienza, prezzi fissi da 70€. Prenota via WhatsApp 24/7." },
+    piraeus: { title: "Transfer Porto del Pireo da Atene e Aeroporto | H&A VIP Tours", description: "Transfer privati di lusso da e per i porti del Pireo, Rafina e Lavrio. Ideale per crociere e traghetti. Mercedes V Class, 7–8 passeggeri, prezzi fissi." },
+    athens: { title: "Tour Privato di Atene – Acropoli e Attrazioni | H&A VIP Tours", description: "Tour privato della città di Atene con autista professionista. Visita l'Acropoli, Plaka, Syntagma e lo Stadio Panatenaico con una Mercedes V Class." },
+    delphi: { title: "Tour Privato a Delfi da Atene | H&A VIP Tours", description: "Tour privato di un'intera giornata da Atene a Delfi, l'antico Oracolo di Apollo. Mercedes V Class di lusso con autista anglofono. Sosta ad Arachova." },
+    meteora: { title: "Tour Privato a Meteora da Atene | H&A VIP Tours", description: "Tour privato ai monasteri UNESCO di Meteora da Atene con Mercedes V Class. Viaggio comodo di una giornata intera con autista professionista." },
+    nafplio: { title: "Tour Privato a Nafplio da Atene | H&A VIP Tours", description: "Tour privato di un giorno da Atene a Nafplio, Micene ed Epidauro. Scopri la prima capitale della Grecia in Mercedes V Class." },
+    sounion: { title: "Tour a Capo Sounion – Tempio di Poseidone | H&A VIP Tours", description: "Tour privato al tramonto da Atene a Capo Sounion e al Tempio di Poseidone. Percorso panoramico sulla Riviera Ateniese in Mercedes V Class." },
+  },
 };

@@ -1,19 +1,23 @@
 import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 import Index from "./Index";
 
 interface SeoPageProps {
-  title: string;
-  description: string;
+  routeKey: string;
   path: string;
 }
 
 const SITE_URL = "https://van-move-boost.lovable.app";
 
-const SeoPage = ({ title, description, path }: SeoPageProps) => {
+const SeoPage = ({ routeKey, path }: SeoPageProps) => {
+  const { t, i18n } = useTranslation();
   const url = `${SITE_URL}${path}`;
+  const title = t(`seo.${routeKey}.title`);
+  const description = t(`seo.${routeKey}.description`);
   return (
     <>
       <Helmet>
+        <html lang={i18n.language} />
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="canonical" href={url} />

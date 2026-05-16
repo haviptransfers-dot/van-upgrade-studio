@@ -155,4 +155,13 @@ export default {
       a8: "Ihr Fahrer hält ein Schild mit unserem Firmennamen (H&A VIP Transfers). Auf Wunsch können wir auch ein Schild mit Ihrem Namen anfertigen — einfach nachfragen.",
     },
   },
+  seo: {
+    airport: { title: "Athen Flughafentransfer (ATH) – Mercedes V Class | H&A VIP Tours", description: "Private Transfers zum Internationalen Flughafen Athen in einer luxuriösen Mercedes V Class. Flugverfolgung, Meet & Greet, Festpreise ab 70€. Buchung via WhatsApp 24/7." },
+    piraeus: { title: "Hafentransfer Piräus von Athen & Flughafen | H&A VIP Tours", description: "Luxuriöse private Transfers zu und von den Häfen Piräus, Rafina und Lavrio. Perfekt für Kreuzfahrt- und Fährreisende. Mercedes V Class, 7–8 Passagiere, Festpreise." },
+    athens: { title: "Private Stadtführung Athen – Akropolis & Highlights | H&A VIP Tours", description: "Private Stadttour durch Athen mit professionellem Fahrer. Besuchen Sie Akropolis, Plaka, Syntagma & Panathenäisches Stadion in einer Mercedes V Class." },
+    delphi: { title: "Private Tagestour nach Delphi ab Athen | H&A VIP Tours", description: "Private Ganztagestour von Athen nach Delphi, dem antiken Orakel des Apollo. Luxuriöse Mercedes V Class mit englischsprachigem Fahrer. Stopp in Arachova." },
+    meteora: { title: "Private Meteora-Tour ab Athen | H&A VIP Tours", description: "Private Tour zu den UNESCO-Klöstern von Meteora ab Athen in einer Mercedes V Class. Komfortable Ganztagesreise mit professionellem Fahrer." },
+    nafplio: { title: "Private Tagestour nach Nafplio ab Athen | H&A VIP Tours", description: "Private Tagestour von Athen nach Nafplio, Mykene und Epidauros. Entdecken Sie Griechenlands erste Hauptstadt in einer Mercedes V Class." },
+    sounion: { title: "Kap Sounion Sonnenuntergangstour – Poseidon-Tempel | H&A VIP Tours", description: "Private Sonnenuntergangstour von Athen zum Kap Sounion und dem Poseidon-Tempel. Malerische Fahrt entlang der athenischen Riviera in einer Mercedes V Class." },
+  },
 };
