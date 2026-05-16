@@ -154,7 +154,7 @@ export default {
       q8: "Come trovo il mio autista all'aeroporto?",
       a8: "Il tuo autista terrà un cartello con il nome della nostra azienda (H&A VIP Transfers). Se lo desideri, possiamo anche mostrare un cartello con il tuo nome — basta chiedere.",
     },
-  },,
+  },
   seo: {
     airport: { title: "Transfer Aeroporto di Atene (ATH) – Mercedes V Class | H&A VIP Tours", description: "Transfer privati per l'Aeroporto Internazionale di Atene con Mercedes V Class di lusso. Monitoraggio voli, accoglienza, prezzi fissi da 70€. Prenota via WhatsApp 24/7." },
     piraeus: { title: "Transfer Porto del Pireo da Atene e Aeroporto | H&A VIP Tours", description: "Transfer privati di lusso da e per i porti del Pireo, Rafina e Lavrio. Ideale per crociere e traghetti. Mercedes V Class, 7–8 passeggeri, prezzi fissi." },

@@ -154,7 +154,7 @@ export default {
       q8: "Wie finde ich meinen Fahrer am Flughafen?",
       a8: "Ihr Fahrer hält ein Schild mit unserem Firmennamen (H&A VIP Transfers). Auf Wunsch können wir auch ein Schild mit Ihrem Namen anfertigen — einfach nachfragen.",
     },
-  },,
+  },
   seo: {
     airport: { title: "Athen Flughafentransfer (ATH) – Mercedes V Class | H&A VIP Tours", description: "Private Transfers zum Internationalen Flughafen Athen in einer luxuriösen Mercedes V Class. Flugverfolgung, Meet & Greet, Festpreise ab 70€. Buchung via WhatsApp 24/7." },
     piraeus: { title: "Hafentransfer Piräus von Athen & Flughafen | H&A VIP Tours", description: "Luxuriöse private Transfers zu und von den Häfen Piräus, Rafina und Lavrio. Perfekt für Kreuzfahrt- und Fährreisende. Mercedes V Class, 7–8 Passagiere, Festpreise." },

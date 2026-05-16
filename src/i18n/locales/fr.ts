@@ -154,7 +154,7 @@ export default {
       q8: "Comment trouver mon chauffeur à l'aéroport ?",
       a8: "Votre chauffeur tiendra une pancarte avec le nom de notre entreprise (H&A VIP Transfers). Si vous le souhaitez, nous pouvons aussi afficher votre nom — il suffit de demander.",
     },
-  },,
+  },
   seo: {
     airport: { title: "Transfert Aéroport d'Athènes (ATH) – Mercedes V Class | H&A VIP Tours", description: "Transferts privés vers l'Aéroport International d'Athènes en Mercedes V Class de luxe. Suivi des vols, accueil, prix fixes à partir de 70€. Réservation WhatsApp 24/7." },
     piraeus: { title: "Transfert Port du Pirée depuis Athènes et l'Aéroport | H&A VIP Tours", description: "Transferts privés de luxe vers et depuis les ports du Pirée, Rafina et Lavrio. Idéal pour les voyageurs en croisière et ferry. Mercedes V Class, 7–8 passagers, prix fixes." },
