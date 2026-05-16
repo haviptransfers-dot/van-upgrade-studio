@@ -104,6 +104,7 @@ export default {
     includes: ["Recepción", "Seguimiento de Vuelo", "Espera Gratis", "WiFi Gratis", "Sillas Infantiles"],
   },
   footer: { rights: "Todos los derechos reservados." },
+  photoWall: { eyebrow: "En la Carretera", title: "Viajes Sin Esfuerzo", subtitle: "Suaves, silenciosos y siempre puntuales — donde sea que Grecia te lleve." },
   chat: {
     title: "H&A Concierge",
     subtitle: "Pregunta lo que quieras · 24/7",
