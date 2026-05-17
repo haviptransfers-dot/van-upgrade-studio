@@ -165,11 +165,11 @@ const PriceCalculator = () => {
         )}
 
         {/* Result */}
-        <div className="rounded-md p-7 text-center border border-primary bg-gradient-to-br from-primary/10 to-background">
+        <div className="rounded-md p-5 md:p-7 text-center border border-primary bg-gradient-to-br from-primary/10 to-background">
           <p className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-2">
             {t("calc.estimated")}
           </p>
-          <div className="font-display text-5xl text-primary leading-none mb-1">€{total}</div>
+          <div className="font-display text-4xl md:text-5xl text-primary leading-none mb-1">€{total}</div>
           <p className="text-[10px] tracking-[0.15em] uppercase text-muted-foreground mb-6">
             {night ? `${t("calc.base")} €${base} + ${t("calc.nightSurcharge")} €${nightExtra}` : t("calc.fixedPrice")}
           </p>
