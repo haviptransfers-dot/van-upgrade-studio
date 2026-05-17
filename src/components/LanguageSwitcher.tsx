@@ -34,7 +34,7 @@ const LanguageSwitcher = () => {
               alt=""
               loading="lazy"
               decoding="async"
-              className="inline-block rounded-sm"
+              className="inline-block rounded-sm w-3.5 h-2.5 md:w-5 md:h-[15px]"
             />
             <span className="hidden md:inline">{l.label}</span>
           </button>
