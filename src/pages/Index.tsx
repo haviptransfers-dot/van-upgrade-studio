@@ -235,22 +235,22 @@ const Index = () => {
       </section>
 
       {/* CTA */}
-      <section className="relative py-20 px-4 border-y border-primary/20 overflow-hidden">
+      <section className="relative py-14 md:py-20 px-4 border-y border-primary/20 overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-25" style={{ backgroundImage: `url(${bgCta})` }} aria-hidden="true" />
         <div className="absolute inset-0 bg-primary/10" aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background/70" aria-hidden="true" />
         <div className="container mx-auto max-w-3xl text-center relative z-10">
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">{t("cta.title")}</h2>
-          <p className="text-muted-foreground mb-8 text-lg">{t("cta.desc")}</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">{t("cta.title")}</h2>
+          <p className="text-muted-foreground mb-6 md:mb-8 text-base md:text-lg">{t("cta.desc")}</p>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="text-base px-10 gap-2 bg-primary text-primary-foreground hover:bg-primary/80">
+              <Button size="lg" className="w-full sm:w-auto text-base px-8 md:px-10 gap-2 bg-primary text-primary-foreground hover:bg-primary/80">
                 <MessageCircle className="w-5 h-5" />
                 {t("cta.whatsapp")}
               </Button>
             </a>
             <a href="mailto:h.a.viptransfers@gmail.com">
-              <Button size="lg" variant="outline" className="text-base px-10 gap-2 border-primary/30 text-primary hover:bg-primary/10">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto text-base px-8 md:px-10 gap-2 border-primary/30 text-primary hover:bg-primary/10">
                 <Mail className="w-5 h-5" />
                 {t("cta.email")}
               </Button>
