@@ -6,7 +6,7 @@ const PhotoWall = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="relative h-[70vh] md:h-screen w-full overflow-hidden bg-background">
+    <section className="relative h-[60vh] min-h-[440px] md:h-screen w-full overflow-hidden bg-background">
       <img
         src={wall3}
         alt="Mercedes V Class cruising on the highway"
