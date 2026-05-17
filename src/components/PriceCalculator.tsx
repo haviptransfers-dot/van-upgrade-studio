@@ -174,7 +174,7 @@ const PriceCalculator = () => {
             {night ? `${t("calc.base")} €${base} + ${t("calc.nightSurcharge")} €${nightExtra}` : t("calc.fixedPrice")}
           </p>
           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-            <Button className="w-full gap-2 bg-primary text-primary-foreground hover:bg-primary/80 tracking-[0.2em] uppercase text-xs font-bold py-6">
+            <Button className="w-full gap-2 bg-primary text-primary-foreground hover:bg-primary/80 tracking-[0.15em] md:tracking-[0.2em] uppercase text-[11px] md:text-xs font-bold py-5 md:py-6">
               <MessageCircle className="w-4 h-4" />
               {t("calc.bookWhatsapp")}
             </Button>
