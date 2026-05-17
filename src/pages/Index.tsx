@@ -188,9 +188,9 @@ const Index = () => {
               <img src={interiorImg} alt="Mercedes V Class" className="rounded-lg shadow-2xl" loading="lazy" decoding="async" width={800} height={600} />
             </motion.div>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }}>
-              <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-sm mb-3">{t("fleet.eyebrow")}</motion.p>
-              <motion.h2 variants={fadeUp} custom={1} className="font-display text-3xl md:text-4xl font-bold mb-6">{t("fleet.title")}</motion.h2>
-              <motion.p variants={fadeUp} custom={2} className="text-muted-foreground leading-relaxed mb-6">{t("fleet.desc")}</motion.p>
+              <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-xs md:text-sm mb-3">{t("fleet.eyebrow")}</motion.p>
+              <motion.h2 variants={fadeUp} custom={1} className="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">{t("fleet.title")}</motion.h2>
+              <motion.p variants={fadeUp} custom={2} className="text-muted-foreground leading-relaxed mb-6 text-sm md:text-base">{t("fleet.desc")}</motion.p>
               <motion.ul variants={fadeUp} custom={3} className="space-y-3 text-foreground/80">
                 {fleetFeatures.map(item => (
                   <li key={item} className="flex items-center gap-3">
