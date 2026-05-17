@@ -26,23 +26,23 @@ const Reviews = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <p className="text-primary uppercase tracking-[0.3em] text-xs md:text-sm mb-3">
+          <p className="text-primary uppercase tracking-[0.3em] text-[10px] md:text-sm mb-3">
             Trusted by Travelers Worldwide
           </p>
-          <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="font-display text-3xl md:text-5xl font-bold mb-5 md:mb-6">
             Google <span className="text-primary">Reviews</span>
           </h2>
 
-          <div className="flex items-center justify-center gap-2 text-foreground/80 mb-8">
+          <div className="flex items-center justify-center gap-2 text-foreground/80 mb-6 md:mb-8">
             <div className="flex">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-6 h-6 fill-primary text-primary" />
+                <Star key={i} className="w-5 h-5 md:w-6 md:h-6 fill-primary text-primary" />
               ))}
             </div>
-            <span className="font-semibold text-xl">5.0</span>
+            <span className="font-semibold text-lg md:text-xl">5.0</span>
           </div>
 
-          <p className="text-foreground/75 text-base md:text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+          <p className="text-foreground/75 text-sm md:text-lg leading-relaxed mb-8 md:mb-10 max-w-2xl mx-auto">
             Hundreds of travelers from around the world trust H&A Tours for their
             Athens VIP transfers. Read every verified review directly on Google.
           </p>
