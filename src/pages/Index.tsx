@@ -223,11 +223,11 @@ const Index = () => {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {features.map((f, i) => (
               <motion.div key={f.title} variants={fadeUp} custom={i} className="text-center">
-                <div className="w-16 h-16 rounded-full border-2 border-primary/30 flex items-center justify-center mx-auto mb-4">
-                  <f.icon className="w-7 h-7 text-primary" />
+                <div className="w-14 h-14 md:w-16 md:h-16 rounded-full border-2 border-primary/30 flex items-center justify-center mx-auto mb-3 md:mb-4">
+                  <f.icon className="w-6 h-6 md:w-7 md:h-7 text-primary" />
                 </div>
-                <h3 className="font-display text-lg font-semibold mb-2">{f.title}</h3>
-                <p className="text-muted-foreground text-sm">{f.desc}</p>
+                <h3 className="font-display text-base md:text-lg font-semibold mb-2">{f.title}</h3>
+                <p className="text-muted-foreground text-xs md:text-sm">{f.desc}</p>
               </motion.div>
             ))}
           </motion.div>
