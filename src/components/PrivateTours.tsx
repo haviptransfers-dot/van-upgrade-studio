@@ -50,13 +50,13 @@ const PrivateTours = () => {
     : "";
 
   return (
-    <section id="tours" className="py-24 px-4 bg-card">
+    <section id="tours" className="py-16 md:py-24 px-4 bg-card">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
           <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-sm mb-3">
             {t("tours.eyebrow")}
