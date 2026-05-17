@@ -71,10 +71,10 @@ const Index = () => {
             <a href="#about" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.about")}</a>
             <a href="#contact" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.contact")}</a>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">
             <LanguageSwitcher />
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="Book now via WhatsApp">
-              <Button className="gap-2 bg-primary text-primary-foreground hover:bg-primary/80" aria-label="Book now via WhatsApp">
+              <Button size="sm" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/80 md:h-10 md:px-4" aria-label="Book now via WhatsApp">
                 <MessageCircle className="w-4 h-4" />
                 <span className="hidden sm:inline">{t("nav.bookNow")}</span>
               </Button>
