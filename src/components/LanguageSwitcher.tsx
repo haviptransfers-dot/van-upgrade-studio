@@ -15,13 +15,13 @@ const LanguageSwitcher = () => {
   const current = i18n.language?.split("-")[0] || "en";
 
   return (
-    <div className="flex items-center gap-1 text-xs font-medium">
+    <div className="flex items-center gap-0.5 md:gap-1 text-xs font-medium">
       {langs.map((l, i) => (
-        <div key={l.code} className="flex items-center gap-1">
+        <div key={l.code} className="flex items-center gap-0.5 md:gap-1">
           <button
             onClick={() => i18n.changeLanguage(l.code)}
             className={cn(
-              "transition-colors px-1 inline-flex items-center gap-1.5",
+              "transition-colors px-0.5 md:px-1 inline-flex items-center gap-1 md:gap-1.5",
               current === l.code ? "text-primary" : "text-foreground/50 hover:text-foreground"
             )}
             aria-label={`Switch language to ${l.label}`}
@@ -36,9 +36,9 @@ const LanguageSwitcher = () => {
               decoding="async"
               className="inline-block rounded-sm"
             />
-            <span>{l.label}</span>
+            <span className="hidden md:inline">{l.label}</span>
           </button>
-          {i < langs.length - 1 && <span className="text-foreground/20">|</span>}
+          {i < langs.length - 1 && <span className="hidden md:inline text-foreground/20">|</span>}
         </div>
       ))}
     </div>
