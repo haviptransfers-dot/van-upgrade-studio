@@ -336,7 +336,7 @@ const Index = () => {
                 ),
               },
             ].map((c) => (
-              <a key={c.label} href={c.href} className="bg-card border border-border rounded-lg p-6 text-center hover:border-primary/40 transition-colors block overflow-hidden">
+              <a key={c.label} href={c.href} className="bg-card border border-border rounded-lg p-5 md:p-6 text-center hover:border-primary/40 transition-colors block overflow-hidden">
                 <div className="flex justify-center mb-3">{c.icon}</div>
                 <p className="text-sm text-muted-foreground mb-1">{c.label}</p>
                 <p className="font-medium text-foreground text-sm break-all">{c.value}</p>
