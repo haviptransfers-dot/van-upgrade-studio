@@ -122,7 +122,7 @@ const Index = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
-            className="text-foreground/60 text-lg md:text-xl mb-10 max-w-2xl mx-auto"
+            className="text-foreground/60 text-base md:text-xl mb-8 md:mb-10 max-w-2xl mx-auto"
           >
             {t("hero.subtitle")}
           </motion.p>
