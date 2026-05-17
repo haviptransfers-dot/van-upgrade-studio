@@ -37,7 +37,7 @@ const Showcase = () => {
       {slides.map((slide, i) => (
         <div
           key={slide.title}
-          className="relative h-[70vh] md:h-screen w-full overflow-hidden bg-background"
+          className="relative h-[60vh] min-h-[440px] md:h-screen w-full overflow-hidden bg-background"
         >
           <div
             className="absolute inset-0 bg-cover bg-center md:bg-fixed"
@@ -46,7 +46,7 @@ const Showcase = () => {
             role="img"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-background/20" />
-          <div className="relative z-10 h-full flex items-end md:items-center justify-center md:justify-start px-6 md:px-20 pb-16 md:pb-0">
+          <div className="relative z-10 h-full flex items-end md:items-center justify-center md:justify-start px-6 md:px-20 pb-12 md:pb-0">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -54,13 +54,13 @@ const Showcase = () => {
               transition={{ duration: 0.8 }}
               className="max-w-xl text-center md:text-left"
             >
-              <p className="text-primary uppercase tracking-[0.3em] text-xs md:text-sm mb-3">
+              <p className="text-primary uppercase tracking-[0.3em] text-[10px] md:text-sm mb-3">
                 {`0${i + 1} / 0${slides.length}`}
               </p>
-              <h3 className="font-display text-3xl md:text-6xl font-bold text-foreground mb-3 md:mb-5 leading-tight">
+              <h3 className="font-display text-3xl sm:text-4xl md:text-6xl font-bold text-foreground mb-3 md:mb-5 leading-tight">
                 {slide.title}
               </h3>
-              <p className="text-foreground/70 text-base md:text-lg">
+              <p className="text-foreground/70 text-sm sm:text-base md:text-lg">
                 {slide.subtitle}
               </p>
             </motion.div>

@@ -63,22 +63,22 @@ const PriceCalculator = () => {
   const whatsappUrl = `https://wa.me/306949393700?text=${whatsappMsg}`;
 
   return (
-    <section id="calculator" className="py-24 px-4 bg-card">
+    <section id="calculator" className="py-16 md:py-24 px-4 bg-card">
       <div className="container mx-auto max-w-xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-10"
+          className="text-center mb-8 md:mb-10"
         >
-          <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">{t("calc.eyebrow")}</p>
-          <h2 className="font-display text-3xl md:text-4xl font-bold">
+          <p className="text-primary uppercase tracking-[0.2em] text-xs md:text-sm mb-3">{t("calc.eyebrow")}</p>
+          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold">
             {t("calc.title1")} <span className="text-primary">{t("calc.title2")}</span>
           </h2>
         </motion.div>
 
         {/* Service */}
-        <div className="bg-background border border-border rounded-md p-6 mb-4">
+        <div className="bg-background border border-border rounded-md p-4 md:p-6 mb-4">
           <label className="block text-[10px] tracking-[0.2em] uppercase text-primary mb-3">
             {t("calc.selectService")}
           </label>
@@ -101,7 +101,7 @@ const PriceCalculator = () => {
 
         {/* Passengers */}
         {!isFixed && (
-          <div className="bg-background border border-border rounded-md p-6 mb-4">
+          <div className="bg-background border border-border rounded-md p-4 md:p-6 mb-4">
             <label className="block text-[10px] tracking-[0.2em] uppercase text-primary mb-3">
               {t("calc.passengers")}
             </label>
@@ -146,7 +146,7 @@ const PriceCalculator = () => {
         )}
 
         {isFixed && (
-          <div className="bg-background border border-border rounded-md p-6 mb-4 flex items-center justify-between">
+          <div className="bg-background border border-border rounded-md p-4 md:p-6 mb-4 flex items-center justify-between">
             <span className="text-[10px] tracking-[0.15em] uppercase text-muted-foreground flex items-center gap-1">
               <Moon className="w-3 h-3" /> {t("calc.nightRate")}
             </span>
@@ -165,16 +165,16 @@ const PriceCalculator = () => {
         )}
 
         {/* Result */}
-        <div className="rounded-md p-7 text-center border border-primary bg-gradient-to-br from-primary/10 to-background">
+        <div className="rounded-md p-5 md:p-7 text-center border border-primary bg-gradient-to-br from-primary/10 to-background">
           <p className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-2">
             {t("calc.estimated")}
           </p>
-          <div className="font-display text-5xl text-primary leading-none mb-1">€{total}</div>
+          <div className="font-display text-4xl md:text-5xl text-primary leading-none mb-1">€{total}</div>
           <p className="text-[10px] tracking-[0.15em] uppercase text-muted-foreground mb-6">
             {night ? `${t("calc.base")} €${base} + ${t("calc.nightSurcharge")} €${nightExtra}` : t("calc.fixedPrice")}
           </p>
           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-            <Button className="w-full gap-2 bg-primary text-primary-foreground hover:bg-primary/80 tracking-[0.2em] uppercase text-xs font-bold py-6">
+            <Button className="w-full gap-2 bg-primary text-primary-foreground hover:bg-primary/80 tracking-[0.15em] md:tracking-[0.2em] uppercase text-[11px] md:text-xs font-bold py-5 md:py-6">
               <MessageCircle className="w-4 h-4" />
               {t("calc.bookWhatsapp")}
             </Button>

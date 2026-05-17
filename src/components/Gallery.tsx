@@ -28,15 +28,15 @@ const images = [
 const Gallery = () => {
   const { t } = useTranslation();
   return (
-  <section id="gallery" className="py-24 px-4">
+  <section id="gallery" className="py-16 md:py-24 px-4">
     <div className="container mx-auto max-w-6xl">
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="text-center mb-16"
+        className="text-center mb-12 md:mb-16"
       >
-        <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-sm mb-3">
+        <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-xs md:text-sm mb-3">
           {t("gallery.eyebrow")}
         </motion.p>
         <motion.h2 variants={fadeUp} custom={1} className="font-display text-3xl md:text-5xl font-bold">
@@ -63,7 +63,7 @@ const Gallery = () => {
               decoding="async"
               width={800}
               height={600}
-              className="w-full h-64 sm:h-72 object-cover transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-56 sm:h-72 object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </motion.div>
         ))}

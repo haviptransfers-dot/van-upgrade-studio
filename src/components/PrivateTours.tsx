@@ -50,21 +50,21 @@ const PrivateTours = () => {
     : "";
 
   return (
-    <section id="tours" className="py-24 px-4 bg-card">
+    <section id="tours" className="py-16 md:py-24 px-4 bg-card">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
-          <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-sm mb-3">
+          <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-xs md:text-sm mb-3">
             {t("tours.eyebrow")}
           </motion.p>
           <motion.h2 variants={fadeUp} custom={1} className="font-display text-3xl md:text-5xl font-bold">
             {t("tours.title")}
           </motion.h2>
-          <motion.p variants={fadeUp} custom={2} className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+          <motion.p variants={fadeUp} custom={2} className="text-muted-foreground mt-4 max-w-2xl mx-auto text-sm md:text-base px-2">
             {t("tours.subtitle")}
           </motion.p>
         </motion.div>
@@ -72,7 +72,7 @@ const PrivateTours = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-3 gap-4"
+          className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4"
         >
           {tours.map((tour, i) => {
             const name = t(`tours.items.${tour.key}.name`);
@@ -93,12 +93,12 @@ const PrivateTours = () => {
                   loading="lazy"
                   width={768}
                   height={512}
-                  className="w-full h-52 sm:h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-40 sm:h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <h3 className="font-display text-lg font-bold text-foreground">{name}</h3>
-                  <p className="text-foreground/60 text-xs mt-1">{desc}</p>
+                <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4">
+                  <h3 className="font-display text-base md:text-lg font-bold text-foreground leading-tight">{name}</h3>
+                  <p className="text-foreground/60 text-[10px] md:text-xs mt-1 line-clamp-2">{desc}</p>
                 </div>
               </motion.button>
             );

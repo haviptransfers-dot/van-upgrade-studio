@@ -45,7 +45,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-24 px-4 bg-card">
+    <section id="faq" className="py-16 md:py-24 px-4 bg-card">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -55,12 +55,12 @@ export default function FAQ() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text-center mb-14"
+          className="text-center mb-10 md:mb-14"
         >
           <motion.p
             variants={fadeUp}
             custom={0}
-            className="text-primary uppercase tracking-[0.2em] text-sm mb-3"
+            className="text-primary uppercase tracking-[0.2em] text-xs md:text-sm mb-3"
           >
             {t("faq.eyebrow")}
           </motion.p>
@@ -85,15 +85,15 @@ export default function FAQ() {
                   value={`item-${i}`}
                   className="border-b border-border"
                 >
-                  <AccordionTrigger className="text-left py-5 hover:no-underline group">
-                    <div className="flex items-center gap-3">
-                      <HelpCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                      <span className="font-display text-base font-semibold text-foreground group-hover:text-primary transition-colors">
+                  <AccordionTrigger className="text-left py-4 md:py-5 hover:no-underline group">
+                    <div className="flex items-start gap-3">
+                      <HelpCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="font-display text-sm md:text-base font-semibold text-foreground group-hover:text-primary transition-colors leading-snug">
                         {item.q}
                       </span>
                     </div>
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed pl-8">
+                  <AccordionContent className="text-muted-foreground leading-relaxed pl-8 text-sm md:text-base">
                     {item.a}
                   </AccordionContent>
                 </AccordionItem>

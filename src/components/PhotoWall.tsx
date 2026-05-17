@@ -6,7 +6,7 @@ const PhotoWall = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="relative h-[70vh] md:h-screen w-full overflow-hidden bg-background">
+    <section className="relative h-[60vh] min-h-[440px] md:h-screen w-full overflow-hidden bg-background">
       <img
         src={wall3}
         alt="Mercedes V Class cruising on the highway"
@@ -25,13 +25,13 @@ const PhotoWall = () => {
           transition={{ duration: 0.8 }}
           className="max-w-xl text-center md:text-left"
         >
-          <p className="text-primary uppercase tracking-[0.3em] text-xs md:text-sm mb-3">
+          <p className="text-primary uppercase tracking-[0.3em] text-[10px] md:text-sm mb-3">
             {t("photoWall.eyebrow")}
           </p>
-          <h3 className="font-display text-3xl md:text-6xl font-bold text-foreground mb-3 md:mb-5 leading-tight">
+          <h3 className="font-display text-3xl sm:text-4xl md:text-6xl font-bold text-foreground mb-3 md:mb-5 leading-tight">
             {t("photoWall.title")}
           </h3>
-          <p className="text-foreground/70 text-base md:text-lg">
+          <p className="text-foreground/70 text-sm sm:text-base md:text-lg">
             {t("photoWall.subtitle")}
           </p>
         </motion.div>
