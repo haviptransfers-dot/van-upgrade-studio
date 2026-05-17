@@ -63,16 +63,16 @@ const PriceCalculator = () => {
   const whatsappUrl = `https://wa.me/306949393700?text=${whatsappMsg}`;
 
   return (
-    <section id="calculator" className="py-24 px-4 bg-card">
+    <section id="calculator" className="py-16 md:py-24 px-4 bg-card">
       <div className="container mx-auto max-w-xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-10"
+          className="text-center mb-8 md:mb-10"
         >
-          <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">{t("calc.eyebrow")}</p>
-          <h2 className="font-display text-3xl md:text-4xl font-bold">
+          <p className="text-primary uppercase tracking-[0.2em] text-xs md:text-sm mb-3">{t("calc.eyebrow")}</p>
+          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold">
             {t("calc.title1")} <span className="text-primary">{t("calc.title2")}</span>
           </h2>
         </motion.div>
