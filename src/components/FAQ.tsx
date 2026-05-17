@@ -55,12 +55,12 @@ export default function FAQ() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text-center mb-14"
+          className="text-center mb-10 md:mb-14"
         >
           <motion.p
             variants={fadeUp}
             custom={0}
-            className="text-primary uppercase tracking-[0.2em] text-sm mb-3"
+            className="text-primary uppercase tracking-[0.2em] text-xs md:text-sm mb-3"
           >
             {t("faq.eyebrow")}
           </motion.p>
