@@ -93,12 +93,12 @@ const PrivateTours = () => {
                   loading="lazy"
                   width={768}
                   height={512}
-                  className="w-full h-52 sm:h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-40 sm:h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <h3 className="font-display text-lg font-bold text-foreground">{name}</h3>
-                  <p className="text-foreground/60 text-xs mt-1">{desc}</p>
+                <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4">
+                  <h3 className="font-display text-base md:text-lg font-bold text-foreground leading-tight">{name}</h3>
+                  <p className="text-foreground/60 text-[10px] md:text-xs mt-1 line-clamp-2">{desc}</p>
                 </div>
               </motion.button>
             );
