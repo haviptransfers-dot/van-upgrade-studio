@@ -114,7 +114,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="font-display text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight"
+            className="font-display text-[2.25rem] sm:text-5xl md:text-7xl font-bold mb-5 md:mb-6 leading-[1.1]"
           >
             {t("hero.title1")} <span className="text-primary">{t("hero.title2")}</span>
           </motion.h1>
