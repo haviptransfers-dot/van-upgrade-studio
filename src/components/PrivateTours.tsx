@@ -58,13 +58,13 @@ const PrivateTours = () => {
           viewport={{ once: true }}
           className="text-center mb-12 md:mb-16"
         >
-          <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-sm mb-3">
+          <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-xs md:text-sm mb-3">
             {t("tours.eyebrow")}
           </motion.p>
           <motion.h2 variants={fadeUp} custom={1} className="font-display text-3xl md:text-5xl font-bold">
             {t("tours.title")}
           </motion.h2>
-          <motion.p variants={fadeUp} custom={2} className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+          <motion.p variants={fadeUp} custom={2} className="text-muted-foreground mt-4 max-w-2xl mx-auto text-sm md:text-base px-2">
             {t("tours.subtitle")}
           </motion.p>
         </motion.div>
