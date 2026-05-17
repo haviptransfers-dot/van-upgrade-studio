@@ -212,15 +212,15 @@ const Index = () => {
       </Suspense>
 
       {/* Why Choose Us */}
-      <section id="about" className="relative py-24 px-4 overflow-hidden">
+      <section id="about" className="relative py-16 md:py-24 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-20" style={{ backgroundImage: `url(${bgWhy})` }} aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/85 to-background" aria-hidden="true" />
         <div className="container mx-auto max-w-6xl relative z-10">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-16">
-            <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-sm mb-3">{t("why.eyebrow")}</motion.p>
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-12 md:mb-16">
+            <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-xs md:text-sm mb-3">{t("why.eyebrow")}</motion.p>
             <motion.h2 variants={fadeUp} custom={1} className="font-display text-3xl md:text-5xl font-bold">{t("why.title")}</motion.h2>
           </motion.div>
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {features.map((f, i) => (
               <motion.div key={f.title} variants={fadeUp} custom={i} className="text-center">
                 <div className="w-16 h-16 rounded-full border-2 border-primary/30 flex items-center justify-center mx-auto mb-4">
