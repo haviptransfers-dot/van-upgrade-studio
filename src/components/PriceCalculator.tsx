@@ -146,7 +146,7 @@ const PriceCalculator = () => {
         )}
 
         {isFixed && (
-          <div className="bg-background border border-border rounded-md p-6 mb-4 flex items-center justify-between">
+          <div className="bg-background border border-border rounded-md p-4 md:p-6 mb-4 flex items-center justify-between">
             <span className="text-[10px] tracking-[0.15em] uppercase text-muted-foreground flex items-center gap-1">
               <Moon className="w-3 h-3" /> {t("calc.nightRate")}
             </span>
