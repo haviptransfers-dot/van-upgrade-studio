@@ -260,15 +260,15 @@ const Index = () => {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="relative py-24 px-4 overflow-hidden">
+      <section id="contact" className="relative py-16 md:py-24 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-20" style={{ backgroundImage: `url(${bgContact})` }} aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/85 to-background" aria-hidden="true" />
         <div className="container mx-auto max-w-4xl relative z-10">
-          <div className="text-center mb-12">
-            <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">{t("contact.eyebrow")}</p>
+          <div className="text-center mb-10 md:mb-12">
+            <p className="text-primary uppercase tracking-[0.2em] text-xs md:text-sm mb-3">{t("contact.eyebrow")}</p>
             <h2 className="font-display text-3xl md:text-5xl font-bold">{t("contact.title")}</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
             {[
               {
                 label: t("contact.phone"),
