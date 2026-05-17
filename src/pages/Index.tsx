@@ -162,7 +162,7 @@ const Index = () => {
           </motion.div>
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
             {services.map((s, i) => (
-              <motion.div key={s.title} variants={fadeUp} custom={i} className="bg-card border border-border rounded-lg p-8 text-center hover:border-primary/40 transition-colors group">
+              <motion.div key={s.title} variants={fadeUp} custom={i} className="bg-card border border-border rounded-lg p-6 md:p-8 text-center hover:border-primary/40 transition-colors group">
                 <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-5 group-hover:bg-primary/20 transition-colors">
                   <s.icon className="w-6 h-6 text-primary" />
                 </div>
