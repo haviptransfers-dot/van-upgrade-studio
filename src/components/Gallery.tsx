@@ -63,7 +63,7 @@ const Gallery = () => {
               decoding="async"
               width={800}
               height={600}
-              className="w-full h-64 sm:h-72 object-cover transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-56 sm:h-72 object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </motion.div>
         ))}
