@@ -7,7 +7,7 @@ const GOOGLE_REVIEWS_URL =
 
 const Reviews = () => {
   return (
-    <section className="relative py-24 px-4 overflow-hidden bg-background">
+    <section className="relative py-16 md:py-24 px-4 overflow-hidden bg-background">
       <div
         className="absolute inset-0 opacity-40"
         style={{
