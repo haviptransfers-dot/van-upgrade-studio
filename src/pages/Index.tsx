@@ -57,11 +57,11 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
         <div className="container mx-auto flex items-center justify-between py-3 px-4">
-          <div className="flex items-center gap-3">
-            <img src={logoImg} alt="H&A Tours" className="h-10 w-10 object-contain" width={40} height={40} decoding="async" />
-            <div>
-              <span className="font-display text-lg font-bold text-primary">H&A TOURS</span>
-              <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">{t("nav.tagline")}</p>
+          <div className="flex items-center gap-2 md:gap-3 min-w-0">
+            <img src={logoImg} alt="H&A Tours" className="h-9 w-9 md:h-10 md:w-10 object-contain flex-shrink-0" width={40} height={40} decoding="async" />
+            <div className="min-w-0">
+              <span className="font-display text-base md:text-lg font-bold text-primary whitespace-nowrap">H&A TOURS</span>
+              <p className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-muted-foreground">{t("nav.tagline")}</p>
             </div>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium">
