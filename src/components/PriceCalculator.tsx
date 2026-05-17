@@ -78,7 +78,7 @@ const PriceCalculator = () => {
         </motion.div>
 
         {/* Service */}
-        <div className="bg-background border border-border rounded-md p-6 mb-4">
+        <div className="bg-background border border-border rounded-md p-4 md:p-6 mb-4">
           <label className="block text-[10px] tracking-[0.2em] uppercase text-primary mb-3">
             {t("calc.selectService")}
           </label>
