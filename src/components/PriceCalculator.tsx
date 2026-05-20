@@ -15,7 +15,7 @@ type ServiceKey =
 
 const fixedPrices: Partial<Record<ServiceKey, number>> = {
   sounio: 350,
-  athens_sights: 150,
+  athens_sights: 180,
   airport_to_port: 100,
 };
 
