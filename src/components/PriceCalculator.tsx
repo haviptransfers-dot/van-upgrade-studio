@@ -17,13 +17,13 @@ const fixedPrices: Partial<Record<ServiceKey, number>> = {
   sounio: 350,
   athens_sights: 180,
   airport_to_port: 100,
+  port_to_athens: 55,
+  athens_to_port: 55,
 };
 
 const perPaxPrices: Partial<Record<ServiceKey, { base: number; extra: number; baseMax: number }>> = {
   airport_to_athens: { base: 70, extra: 5, baseMax: 4 },
   athens_to_airport: { base: 70, extra: 5, baseMax: 4 },
-  port_to_athens: { base: 40, extra: 5, baseMax: 4 },
-  athens_to_port: { base: 40, extra: 5, baseMax: 4 },
 };
 
 const PriceCalculator = () => {
