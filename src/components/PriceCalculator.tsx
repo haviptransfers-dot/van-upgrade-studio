@@ -22,8 +22,8 @@ const fixedPrices: Partial<Record<ServiceKey, number>> = {
 };
 
 const perPaxPrices: Partial<Record<ServiceKey, { base: number; extra: number; baseMax: number }>> = {
-  airport_to_athens: { base: 70, extra: 5, baseMax: 4 },
-  athens_to_airport: { base: 70, extra: 5, baseMax: 4 },
+  airport_to_athens: { base: 75, extra: 5, baseMax: 4 },
+  athens_to_airport: { base: 75, extra: 5, baseMax: 4 },
 };
 
 const PriceCalculator = () => {
