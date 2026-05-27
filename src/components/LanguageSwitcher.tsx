@@ -2,12 +2,12 @@ import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 
 const langs = [
+  { code: "el", label: "GR", country: "gr" },
   { code: "en", label: "EN", country: "gb" },
   { code: "de", label: "DE", country: "de" },
   { code: "es", label: "ES", country: "es" },
   { code: "fr", label: "FR", country: "fr" },
   { code: "it", label: "IT", country: "it" },
-  { code: "el", label: "GR", country: "gr" },
   { code: "he", label: "HE", country: "il" },
   { code: "ar", label: "AR", country: "ae" },
 ];
