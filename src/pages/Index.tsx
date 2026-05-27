@@ -56,7 +56,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
-        <div className="container mx-auto flex items-center justify-between py-3 px-4">
+        <div className="container mx-auto flex flex-wrap items-center justify-between py-2 md:py-3 px-4">
           <div className="flex items-center gap-2 md:gap-3 min-w-0">
             <img src={logoImg} alt="H&A Tours" className="h-9 w-9 md:h-10 md:w-10 object-contain flex-shrink-0" width={40} height={40} decoding="async" />
             <div className="min-w-0">
@@ -72,13 +72,18 @@ const Index = () => {
             <a href="#contact" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.contact")}</a>
           </div>
           <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">
-            <LanguageSwitcher />
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="Book now via WhatsApp">
               <Button size="sm" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/80 md:h-10 md:px-4" aria-label="Book now via WhatsApp">
                 <MessageCircle className="w-4 h-4" />
                 <span className="hidden sm:inline">{t("nav.bookNow")}</span>
               </Button>
             </a>
+          </div>
+          <div className="w-full flex justify-center mt-1.5 md:hidden">
+            <LanguageSwitcher />
+          </div>
+          <div className="hidden md:block">
+            <LanguageSwitcher />
           </div>
         </div>
       </nav>
