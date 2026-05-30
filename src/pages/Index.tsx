@@ -151,7 +151,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center"
           >
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="text-base px-8 gap-2 bg-primary text-primary-foreground hover:bg-primary/80">
@@ -165,6 +165,25 @@ const Index = () => {
                 {t("hero.call")}
               </Button>
             </a>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button size="lg" variant="outline" className="text-base px-8 gap-2 border-primary/30 text-primary hover:bg-primary/10">
+                  <ChevronDown className="w-5 h-5" />
+                  {t("hero.exploreTours")}
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="center" className="bg-card border-border min-w-[220px]">
+                {tourLinks.map((tour) => (
+                  <DropdownMenuItem
+                    key={tour.path}
+                    onClick={() => navigate(tour.path)}
+                    className="cursor-pointer text-foreground hover:text-primary focus:text-primary"
+                  >
+                    {t(tour.labelKey)}
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </motion.div>
         </div>
         <a href="#services" aria-label="Scroll to services" className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-primary/60">
