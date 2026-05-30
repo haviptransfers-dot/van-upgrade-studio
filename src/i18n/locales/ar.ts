@@ -15,6 +15,7 @@ export default {
     subtitle: "اختبر اليونان بأناقة مع مرسيدس V Class. خدمات نقل من المطار والميناء وجولات خاصة ونقل VIP.",
     whatsapp: "حجز عبر واتساب",
     call: "اتصل بنا",
+    exploreTours: "استكشف جولاتنا",
   },
   services: {
     eyebrow: "ما نقدمه",

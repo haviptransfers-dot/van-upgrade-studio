@@ -15,6 +15,7 @@ export default {
     subtitle: "Erleben Sie Griechenland mit Stil in unserem Mercedes V-Klasse. Flughafentransfers, Hafenabholungen, Privattouren & VIP-Transport.",
     whatsapp: "Per WhatsApp buchen",
     call: "Anrufen",
+    exploreTours: "Entdecken Sie unsere Touren",
   },
   services: {
     eyebrow: "Unser Angebot",

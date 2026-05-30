@@ -15,6 +15,7 @@ export default {
     subtitle: "חוו את יוון בסטייל עם מרצדס V Class שלנו. הסעות משדה התעופה, מהנמל, סיורים פרטיים והסעות VIP.",
     whatsapp: "הזמנה בוואטסאפ",
     call: "התקשרו אלינו",
+    exploreTours: "גלה את הסיורים שלנו",
   },
   services: {
     eyebrow: "מה אנו מציעים",

@@ -15,6 +15,7 @@ export default {
     subtitle: "Vivi la Grecia con stile a bordo della nostra Mercedes Classe V. Transfer aeroportuali, prelievi al porto, tour privati e trasporti VIP.",
     whatsapp: "Prenota su WhatsApp",
     call: "Chiamaci",
+    exploreTours: "Scopri i Nostri Tour",
   },
   services: {
     eyebrow: "Cosa Offriamo",

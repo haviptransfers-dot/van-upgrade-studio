@@ -15,6 +15,7 @@ export default {
     subtitle: "Ζήστε την Ελλάδα με στιλ με τη Mercedes V Class μας. Μεταφορές αεροδρομίου, λιμανιού, ιδιωτικές εκδρομές & VIP μεταφορές.",
     whatsapp: "Κράτηση μέσω WhatsApp",
     call: "Καλέστε μας",
+    exploreTours: "Ανακαλύψτε τις Εκδρομές μας",
   },
   services: {
     eyebrow: "Τι Προσφέρουμε",
