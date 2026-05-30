@@ -21,8 +21,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/delphi-private-tour" element={<DelphiTour />} />
+          <Route path="/athens-city-tour" element={<AthensTour />} />
           {seoRoutes
-            .filter((r) => r.path !== "/delphi-private-tour")
+            .filter((r) => r.path !== "/delphi-private-tour" && r.path !== "/athens-city-tour")
             .map((r) => (
               <Route
                 key={r.path}
