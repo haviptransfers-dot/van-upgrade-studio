@@ -31,10 +31,10 @@ const PrivateTours = () => {
   const whatsappUrl = "https://wa.me/306949393700";
   const [activeTour, setActiveTour] = useState<{ key: string; src: string } | null>(null);
 
-  const tours: { src: string; key: string; price?: string }[] = [
-    { src: tourNafplio, key: "nafplio", price: "€500" },
-    { src: tourMeteora, key: "meteora", price: "€800" },
-    { src: tourDelphi, key: "delphi", price: "€500" },
+  const tours: { src: string; key: string }[] = [
+    { src: tourNafplio, key: "nafplio" },
+    { src: tourMeteora, key: "meteora" },
+    { src: tourDelphi, key: "delphi" },
     { src: tourSounio, key: "sounio" },
     { src: tourAcropolis, key: "acropolis" },
     { src: tourSyntagma, key: "syntagma" },
