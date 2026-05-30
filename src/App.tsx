@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound.tsx";
 import SeoPage from "./pages/SeoPage.tsx";
 import DelphiTour from "./pages/DelphiTour.tsx";
 import AthensTour from "./pages/AthensTour.tsx";
+import CapeSounionTour from "./pages/CapeSounionTour.tsx";
 import { seoRoutes } from "./seoRoutes.ts";
 
 const queryClient = new QueryClient();
@@ -22,8 +23,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/delphi-private-tour" element={<DelphiTour />} />
           <Route path="/athens-city-tour" element={<AthensTour />} />
+          <Route path="/cape-sounion-tour" element={<CapeSounionTour />} />
           {seoRoutes
-            .filter((r) => r.path !== "/delphi-private-tour" && r.path !== "/athens-city-tour")
+            .filter((r) => r.path !== "/delphi-private-tour" && r.path !== "/athens-city-tour" && r.path !== "/cape-sounion-tour")
             .map((r) => (
               <Route
                 key={r.path}
