@@ -41,7 +41,16 @@ const fadeUp = {
 
 const Index = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const whatsappUrl = "https://wa.me/306949393700";
+
+  const tourLinks = [
+    { path: "/athens-city-tour", labelKey: "athensTour.title" },
+    { path: "/cape-sounion-tour", labelKey: "sounionTour.title" },
+    { path: "/delphi-private-tour", labelKey: "delphiTour.title" },
+    { path: "/meteora-private-tour", labelKey: "meteoraTour.title" },
+    { path: "/nafplio-private-tour", labelKey: "nafplioTour.title" },
+  ];
 
   const services = [
     { icon: Plane, title: t("services.items.airport.title"), desc: t("services.items.airport.desc") },
