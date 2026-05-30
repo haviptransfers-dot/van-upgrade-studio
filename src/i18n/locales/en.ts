@@ -15,6 +15,7 @@ export default {
     subtitle: "Experience Greece in style with our Mercedes V Class. Airport transfers, port pickups, private tours & VIP transportation.",
     whatsapp: "WhatsApp Booking",
     call: "Call Us",
+    exploreTours: "Explore Our Tours",
   },
   services: {
     eyebrow: "What We Offer",

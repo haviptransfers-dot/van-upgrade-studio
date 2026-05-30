@@ -15,6 +15,7 @@ export default {
     subtitle: "Découvrez la Grèce avec style dans notre Mercedes Classe V. Transferts aéroport, prises en charge au port, visites privées et transport VIP.",
     whatsapp: "Réserver via WhatsApp",
     call: "Appelez-nous",
+    exploreTours: "Découvrez nos Visites",
   },
   services: {
     eyebrow: "Notre offre",
