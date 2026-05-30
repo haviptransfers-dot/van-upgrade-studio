@@ -10,6 +10,7 @@ import DelphiTour from "./pages/DelphiTour.tsx";
 import AthensTour from "./pages/AthensTour.tsx";
 import CapeSounionTour from "./pages/CapeSounionTour.tsx";
 import MeteoraTour from "./pages/MeteoraTour.tsx";
+import NafplioTour from "./pages/NafplioTour.tsx";
 import { seoRoutes } from "./seoRoutes.ts";
 
 const queryClient = new QueryClient();
