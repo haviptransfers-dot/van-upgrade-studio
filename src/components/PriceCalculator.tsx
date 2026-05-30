@@ -11,7 +11,10 @@ type ServiceKey =
   | "athens_to_port"
   | "airport_to_port"
   | "sounio"
-  | "athens_sights";
+  | "athens_sights"
+  | "nafplio"
+  | "meteora"
+  | "delphi";
 
 const fixedPrices: Partial<Record<ServiceKey, number>> = {
   sounio: 350,
@@ -19,6 +22,9 @@ const fixedPrices: Partial<Record<ServiceKey, number>> = {
   airport_to_port: 100,
   port_to_athens: 55,
   athens_to_port: 55,
+  nafplio: 500,
+  meteora: 800,
+  delphi: 500,
 };
 
 const perPaxPrices: Partial<Record<ServiceKey, { base: number; extra: number; baseMax: number }>> = {
@@ -40,6 +46,9 @@ const PriceCalculator = () => {
     { key: "airport_to_port", label: `✈ → ⚓ ${t("calc.services.airport_to_port")}` },
     { key: "sounio", label: `🏛 ${t("calc.services.sounio")}` },
     { key: "athens_sights", label: `🗺 ${t("calc.services.athens_sights")}` },
+    { key: "nafplio", label: `🏖 ${t("calc.services.nafplio", { defaultValue: "Nafplio Tour" })}` },
+    { key: "meteora", label: `⛰ ${t("calc.services.meteora", { defaultValue: "Meteora Tour" })}` },
+    { key: "delphi", label: `🏛 ${t("calc.services.delphi", { defaultValue: "Delphi Tour" })}` },
   ];
 
   const isFixed = fixedPrices[service] !== undefined;
