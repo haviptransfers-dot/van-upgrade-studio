@@ -27,8 +27,9 @@ const App = () => (
           <Route path="/athens-city-tour" element={<AthensTour />} />
           <Route path="/cape-sounion-tour" element={<CapeSounionTour />} />
           <Route path="/meteora-private-tour" element={<MeteoraTour />} />
+          <Route path="/nafplio-private-tour" element={<NafplioTour />} />
           {seoRoutes
-            .filter((r) => r.path !== "/delphi-private-tour" && r.path !== "/athens-city-tour" && r.path !== "/cape-sounion-tour" && r.path !== "/meteora-private-tour")
+            .filter((r) => r.path !== "/delphi-private-tour" && r.path !== "/athens-city-tour" && r.path !== "/cape-sounion-tour" && r.path !== "/meteora-private-tour" && r.path !== "/nafplio-private-tour")
             .map((r) => (
               <Route
                 key={r.path}
