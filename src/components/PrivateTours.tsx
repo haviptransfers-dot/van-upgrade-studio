@@ -31,10 +31,10 @@ const PrivateTours = () => {
   const whatsappUrl = "https://wa.me/306949393700";
   const [activeTour, setActiveTour] = useState<{ key: string; src: string } | null>(null);
 
-  const tours: { src: string; key: string; price?: string }[] = [
-    { src: tourNafplio, key: "nafplio", price: "€500" },
-    { src: tourMeteora, key: "meteora", price: "€800" },
-    { src: tourDelphi, key: "delphi", price: "€500" },
+  const tours: { src: string; key: string }[] = [
+    { src: tourNafplio, key: "nafplio" },
+    { src: tourMeteora, key: "meteora" },
+    { src: tourDelphi, key: "delphi" },
     { src: tourSounio, key: "sounio" },
     { src: tourAcropolis, key: "acropolis" },
     { src: tourSyntagma, key: "syntagma" },
@@ -96,11 +96,6 @@ const PrivateTours = () => {
                   className="w-full h-40 sm:h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
-                {tour.price && (
-                  <div className="absolute top-2 right-2 bg-primary text-primary-foreground text-xs md:text-sm font-bold px-2.5 py-1 rounded-full shadow-lg">
-                    {tour.price}
-                  </div>
-                )}
                 <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4">
                   <h3 className="font-display text-base md:text-lg font-bold text-foreground leading-tight">{name}</h3>
                   <p className="text-foreground/60 text-[10px] md:text-xs mt-1 line-clamp-2">{desc}</p>
