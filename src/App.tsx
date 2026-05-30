@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound.tsx";
 import SeoPage from "./pages/SeoPage.tsx";
 import DelphiTour from "./pages/DelphiTour.tsx";
 import AthensTour from "./pages/AthensTour.tsx";
+import CapeSounionTour from "./pages/CapeSounionTour.tsx";
 import { seoRoutes } from "./seoRoutes.ts";
 
 const queryClient = new QueryClient();
