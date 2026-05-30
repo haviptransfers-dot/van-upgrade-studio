@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import SeoPage from "./pages/SeoPage.tsx";
+import DelphiTour from "./pages/DelphiTour.tsx";
 import { seoRoutes } from "./seoRoutes.ts";
 
 const queryClient = new QueryClient();
@@ -18,13 +19,16 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          {seoRoutes.map((r) => (
-            <Route
-              key={r.path}
-              path={r.path}
-              element={<SeoPage path={r.path} routeKey={r.key} />}
-            />
-          ))}
+          <Route path="/delphi-private-tour" element={<DelphiTour />} />
+          {seoRoutes
+            .filter((r) => r.path !== "/delphi-private-tour")
+            .map((r) => (
+              <Route
+                key={r.path}
+                path={r.path}
+                element={<SeoPage path={r.path} routeKey={r.key} />}
+              />
+            ))}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
