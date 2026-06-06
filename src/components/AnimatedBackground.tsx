@@ -6,8 +6,10 @@ import img3 from "@/assets/tour-meteora.webp";
 import img4 from "@/assets/tour-delphi.webp";
 import img5 from "@/assets/tour-nafplio.webp";
 import img6 from "@/assets/showcase-1.webp";
+import heroSunsetCarAsset from "@/assets/hero-sunset-car.png.asset.json";
+import fleetTrioAsset from "@/assets/fleet-trio.png.asset.json";
 
-const images = [img1, img2, img3, img4, img5, img6];
+const images = [heroSunsetCarAsset.url, img1, img2, fleetTrioAsset.url, img3, img4, img5, img6];
 
 const AnimatedBackground = () => {
   const [index, setIndex] = useState(0);

@@ -24,10 +24,20 @@ import tourSounio from "@/assets/tour-sounio.webp";
 import tourMeteora from "@/assets/tour-meteora.webp";
 import tourDelphi from "@/assets/tour-delphi.webp";
 import tourNafplio from "@/assets/tour-nafplio.webp";
+import heroSunsetCarAsset from "@/assets/hero-sunset-car.png.asset.json";
+import fleetTrioAsset from "@/assets/fleet-trio.png.asset.json";
 
 import AnimatedBackground from "@/components/AnimatedBackground";
 
-const heroCycleImages = [tourAcropolis, tourSounio, tourMeteora, tourDelphi, tourNafplio];
+const heroCycleImages = [
+  heroSunsetCarAsset.url,
+  tourAcropolis,
+  tourSounio,
+  fleetTrioAsset.url,
+  tourMeteora,
+  tourDelphi,
+  tourNafplio,
+];
 
 const SLIDE_DURATION = 9; // seconds each slide is the main image
 const FADE_DURATION = 2.5; // crossfade overlap
