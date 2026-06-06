@@ -53,6 +53,14 @@ const Index = () => {
   const navigate = useNavigate();
   const whatsappUrl = "https://wa.me/306949393700";
 
+  const [heroCycleIndex, setHeroCycleIndex] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => {
+      setHeroCycleIndex((i) => (i + 1) % heroCycleImages.length);
+    }, 5000);
+    return () => clearInterval(id);
+  }, []);
+
   const tourLinks = [
     { path: "/athens-city-tour", labelKey: "athensTour.title" },
     { path: "/cape-sounion-tour", labelKey: "sounionTour.title" },
