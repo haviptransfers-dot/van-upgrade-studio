@@ -20,6 +20,8 @@ import bgWhy from "@/assets/showcase-2.webp";
 import bgCta from "@/assets/wall-3.webp";
 import bgContact from "@/assets/showcase-3.webp";
 
+import AnimatedBackground from "@/components/AnimatedBackground";
+
 const Gallery = lazy(() => import("@/components/Gallery"));
 const Showcase = lazy(() => import("@/components/Showcase"));
 const PhotoWall = lazy(() => import("@/components/PhotoWall"));
