@@ -15,7 +15,7 @@ const AnimatedBackground = () => {
   useEffect(() => {
     const id = setInterval(() => {
       setIndex((i) => (i + 1) % images.length);
-    }, 7000);
+    }, 14000);
     return () => clearInterval(id);
   }, []);
 
@@ -28,9 +28,9 @@ const AnimatedBackground = () => {
         <motion.div
           key={index}
           initial={{ opacity: 0, scale: 1.05 }}
-          animate={{ opacity: 0.35, scale: 1.15 }}
-          exit={{ opacity: 0, scale: 1.2 }}
-          transition={{ opacity: { duration: 2.2 }, scale: { duration: 9, ease: "linear" } }}
+          animate={{ opacity: 0.22, scale: 1.15 }}
+          exit={{ opacity: 0, scale: 1.18 }}
+          transition={{ opacity: { duration: 4, ease: "easeInOut" }, scale: { duration: 18, ease: "linear" } }}
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${images[index]})` }}
         />
