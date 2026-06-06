@@ -28,10 +28,10 @@ import fleetTrio from "@/assets/fleet-trio.webp";
 import AnimatedBackground from "@/components/AnimatedBackground";
 
 const heroCycleImages = [
-  heroSunsetCarAsset.url,
+  heroSunsetCar,
   tourAcropolis,
   tourSounio,
-  fleetTrioAsset.url,
+  fleetTrio,
   tourMeteora,
   tourDelphi,
   tourNafplio,
