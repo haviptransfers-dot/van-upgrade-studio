@@ -60,7 +60,7 @@ const Index = () => {
   useEffect(() => {
     const id = setInterval(() => {
       setHeroCycleIndex((i) => (i + 1) % heroCycleImages.length);
-    }, 12000);
+    }, SLIDE_DURATION * 1000);
     return () => clearInterval(id);
   }, []);
 
