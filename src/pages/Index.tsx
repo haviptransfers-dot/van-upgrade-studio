@@ -20,6 +20,8 @@ import bgWhy from "@/assets/showcase-2.webp";
 import bgCta from "@/assets/wall-3.webp";
 import bgContact from "@/assets/showcase-3.webp";
 
+import AnimatedBackground from "@/components/AnimatedBackground";
+
 const Gallery = lazy(() => import("@/components/Gallery"));
 const Showcase = lazy(() => import("@/components/Showcase"));
 const PhotoWall = lazy(() => import("@/components/PhotoWall"));
@@ -69,7 +71,8 @@ const Index = () => {
   const fleetFeatures = t("fleet.features", { returnObjects: true }) as string[];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-transparent relative">
+      <AnimatedBackground />
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
         <div className="container mx-auto flex flex-wrap items-center justify-between py-2 md:py-3 px-4">
@@ -192,7 +195,7 @@ const Index = () => {
       </section>
 
       {/* Services */}
-      <section id="services" className="relative py-16 md:py-24 px-4 overflow-hidden bg-card">
+      <section id="services" className="relative py-16 md:py-24 px-4 overflow-hidden bg-card/70 backdrop-blur-sm">
         <div className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-10" style={{ backgroundImage: `url(${bgServices})` }} aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background/40" aria-hidden="true" />
         <div className="container mx-auto max-w-6xl relative z-10">
@@ -221,7 +224,7 @@ const Index = () => {
       </Suspense>
 
       {/* Fleet */}
-      <section id="fleet" className="py-16 md:py-24 px-4 bg-card">
+      <section id="fleet" className="py-16 md:py-24 px-4 bg-card/70 backdrop-blur-sm">
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
