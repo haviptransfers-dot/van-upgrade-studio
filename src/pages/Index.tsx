@@ -1,5 +1,5 @@
-import { lazy, Suspense } from "react";
-import { motion } from "framer-motion";
+import { lazy, Suspense, useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock, Users, Shield, Star, ChevronDown, MessageCircle, Plane, Ship, Camera, Building } from "lucide-react";
@@ -19,8 +19,15 @@ import bgServices from "@/assets/showcase-1.webp";
 import bgWhy from "@/assets/showcase-2.webp";
 import bgCta from "@/assets/wall-3.webp";
 import bgContact from "@/assets/showcase-3.webp";
+import tourAcropolis from "@/assets/tour-acropolis.webp";
+import tourSounio from "@/assets/tour-sounio.webp";
+import tourMeteora from "@/assets/tour-meteora.webp";
+import tourDelphi from "@/assets/tour-delphi.webp";
+import tourNafplio from "@/assets/tour-nafplio.webp";
 
 import AnimatedBackground from "@/components/AnimatedBackground";
+
+const heroCycleImages = [tourAcropolis, tourSounio, tourMeteora, tourDelphi, tourNafplio];
 
 const Gallery = lazy(() => import("@/components/Gallery"));
 const Showcase = lazy(() => import("@/components/Showcase"));
@@ -45,6 +52,14 @@ const Index = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const whatsappUrl = "https://wa.me/306949393700";
+
+  const [heroCycleIndex, setHeroCycleIndex] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => {
+      setHeroCycleIndex((i) => (i + 1) % heroCycleImages.length);
+    }, 5000);
+    return () => clearInterval(id);
+  }, []);
 
   const tourLinks = [
     { path: "/athens-city-tour", labelKey: "athensTour.title" },
@@ -109,21 +124,39 @@ const Index = () => {
 
       {/* Hero */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <picture>
-            <source media="(max-width: 768px)" srcSet={heroImgMobile} type="image/webp" />
-            <source srcSet={heroImg} type="image/webp" />
-            <img
-              src={heroImg}
-              alt="Mercedes V Class in Athens"
-              className="w-full h-full object-cover"
-              width={1920}
-              height={1080}
-              fetchPriority="high"
-              decoding="async"
+        <div className="absolute inset-0 overflow-hidden">
+          <motion.div
+            initial={{ scale: 1 }}
+            animate={{ scale: 1.18 }}
+            transition={{ duration: 16, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
+            className="absolute inset-0"
+          >
+            <picture>
+              <source media="(max-width: 768px)" srcSet={heroImgMobile} type="image/webp" />
+              <source srcSet={heroImg} type="image/webp" />
+              <img
+                src={heroImg}
+                alt="Mercedes V Class in Athens"
+                className="w-full h-full object-cover"
+                width={1920}
+                height={1080}
+                fetchPriority="high"
+                decoding="async"
+              />
+            </picture>
+          </motion.div>
+          <AnimatePresence>
+            <motion.div
+              key={heroCycleIndex}
+              initial={{ opacity: 0, scale: 1.05 }}
+              animate={{ opacity: 0.55, scale: 1.18 }}
+              exit={{ opacity: 0, scale: 1.22 }}
+              transition={{ opacity: { duration: 2 }, scale: { duration: 10, ease: "linear" } }}
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${heroCycleImages[heroCycleIndex]})` }}
             />
-          </picture>
-          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background" />
+          </AnimatePresence>
+          <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background" />
         </div>
         <div className="relative z-10 text-center px-4 max-w-4xl">
           <motion.p
