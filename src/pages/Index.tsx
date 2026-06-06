@@ -29,6 +29,9 @@ import AnimatedBackground from "@/components/AnimatedBackground";
 
 const heroCycleImages = [tourAcropolis, tourSounio, tourMeteora, tourDelphi, tourNafplio];
 
+const SLIDE_DURATION = 9; // seconds each slide is the main image
+const FADE_DURATION = 2.5; // crossfade overlap
+
 const Gallery = lazy(() => import("@/components/Gallery"));
 const Showcase = lazy(() => import("@/components/Showcase"));
 const PhotoWall = lazy(() => import("@/components/PhotoWall"));
