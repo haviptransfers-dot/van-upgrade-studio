@@ -66,6 +66,11 @@ const Index = () => {
 
   const [heroCycleIndex, setHeroCycleIndex] = useState(0);
   useEffect(() => {
+    // Preload all hero images to avoid black gaps between slides
+    heroCycleImages.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
     const id = setInterval(() => {
       setHeroCycleIndex((i) => (i + 1) % heroCycleImages.length);
     }, SLIDE_DURATION * 1000);
@@ -136,12 +141,21 @@ const Index = () => {
       {/* Hero */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 overflow-hidden bg-background">
-          <AnimatePresence>
+          {/* Static base layer — first image always painted to avoid black gap */}
+          <img
+            src={heroCycleImages[0]}
+            alt=""
+            aria-hidden="true"
+            fetchPriority="high"
+            decoding="async"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <AnimatePresence mode="sync">
             <motion.div
               key={heroCycleIndex}
-              initial={{ opacity: 0, scale: 1 }}
-              animate={{ opacity: 1, scale: 1.25 }}
-              exit={{ opacity: 0, scale: 1.32 }}
+              initial={{ opacity: 0, scale: 1.05 }}
+              animate={{ opacity: 1, scale: 1.2 }}
+              exit={{ opacity: 0, scale: 1.28 }}
               transition={{
                 opacity: { duration: FADE_DURATION, ease: "easeInOut" },
                 scale: { duration: SLIDE_DURATION + FADE_DURATION * 2, ease: "linear" },
