@@ -22,8 +22,8 @@ import tourSounio from "@/assets/tour-sounio.webp";
 import tourMeteora from "@/assets/tour-meteora.webp";
 import tourDelphi from "@/assets/tour-delphi.webp";
 import tourNafplio from "@/assets/tour-nafplio.webp";
-import heroSunsetCarAsset from "@/assets/hero-sunset-car.png.asset.json";
-import fleetTrioAsset from "@/assets/fleet-trio.png.asset.json";
+import heroSunsetCar from "@/assets/hero-sunset-car.webp";
+import fleetTrio from "@/assets/fleet-trio.webp";
 
 import AnimatedBackground from "@/components/AnimatedBackground";
 
