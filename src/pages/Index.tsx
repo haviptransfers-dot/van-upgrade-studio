@@ -195,7 +195,7 @@ const Index = () => {
       </section>
 
       {/* Services */}
-      <section id="services" className="relative py-16 md:py-24 px-4 overflow-hidden bg-card">
+      <section id="services" className="relative py-16 md:py-24 px-4 overflow-hidden bg-card/70 backdrop-blur-sm">
         <div className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-10" style={{ backgroundImage: `url(${bgServices})` }} aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background/40" aria-hidden="true" />
         <div className="container mx-auto max-w-6xl relative z-10">
@@ -224,7 +224,7 @@ const Index = () => {
       </Suspense>
 
       {/* Fleet */}
-      <section id="fleet" className="py-16 md:py-24 px-4 bg-card">
+      <section id="fleet" className="py-16 md:py-24 px-4 bg-card/70 backdrop-blur-sm">
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
