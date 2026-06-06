@@ -6,8 +6,10 @@ import img3 from "@/assets/tour-meteora.webp";
 import img4 from "@/assets/tour-delphi.webp";
 import img5 from "@/assets/tour-nafplio.webp";
 import img6 from "@/assets/showcase-1.webp";
+import heroSunsetCarAsset from "@/assets/hero-sunset-car.png.asset.json";
+import fleetTrioAsset from "@/assets/fleet-trio.png.asset.json";
 
-const images = [img1, img2, img3, img4, img5, img6];
+const images = [heroSunsetCarAsset.url, img1, img2, fleetTrioAsset.url, img3, img4, img5, img6];
 
 const AnimatedBackground = () => {
   const [index, setIndex] = useState(0);
@@ -15,7 +17,7 @@ const AnimatedBackground = () => {
   useEffect(() => {
     const id = setInterval(() => {
       setIndex((i) => (i + 1) % images.length);
-    }, 14000);
+    }, 18000);
     return () => clearInterval(id);
   }, []);
 
@@ -27,17 +29,16 @@ const AnimatedBackground = () => {
       <AnimatePresence mode="sync">
         <motion.div
           key={index}
-          initial={{ opacity: 0, scale: 1.05 }}
-          animate={{ opacity: 0.22, scale: 1.15 }}
-          exit={{ opacity: 0, scale: 1.18 }}
-          transition={{ opacity: { duration: 4, ease: "easeInOut" }, scale: { duration: 18, ease: "linear" } }}
+          initial={{ opacity: 0, scale: 1.03 }}
+          animate={{ opacity: 0.16, scale: 1.1 }}
+          exit={{ opacity: 0, scale: 1.12 }}
+          transition={{ opacity: { duration: 5, ease: "easeInOut" }, scale: { duration: 22, ease: "linear" } }}
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${images[index]})` }}
         />
       </AnimatePresence>
 
-      {/* Dark veil for readability */}
-      <div className="absolute inset-0 bg-background/70" />
+      <div className="absolute inset-0 bg-background/80" />
 
       {/* Floating gold orbs */}
       <motion.div
