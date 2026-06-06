@@ -19,8 +19,15 @@ import bgServices from "@/assets/showcase-1.webp";
 import bgWhy from "@/assets/showcase-2.webp";
 import bgCta from "@/assets/wall-3.webp";
 import bgContact from "@/assets/showcase-3.webp";
+import tourAcropolis from "@/assets/tour-acropolis.webp";
+import tourSounio from "@/assets/tour-sounio.webp";
+import tourMeteora from "@/assets/tour-meteora.webp";
+import tourDelphi from "@/assets/tour-delphi.webp";
+import tourNafplio from "@/assets/tour-nafplio.webp";
 
 import AnimatedBackground from "@/components/AnimatedBackground";
+
+const heroCycleImages = [tourAcropolis, tourSounio, tourMeteora, tourDelphi, tourNafplio];
 
 const Gallery = lazy(() => import("@/components/Gallery"));
 const Showcase = lazy(() => import("@/components/Showcase"));
