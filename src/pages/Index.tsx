@@ -2,7 +2,7 @@ import { lazy, Suspense, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-import { Phone, Mail, MapPin, Clock, Users, Shield, Star, ChevronDown, MessageCircle, Plane, Ship, Camera, Building } from "lucide-react";
+import { Phone, Mail, Clock, Users, Shield, Star, ChevronDown, MessageCircle, Plane, Ship, Camera, Building } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -11,8 +11,6 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import heroImg from "@/assets/hero-van.webp";
-import heroImgMobile from "@/assets/hero-van-mobile.webp";
 import interiorImg from "@/assets/fleet-vito.webp";
 import logoImg from "@/assets/logo.webp";
 import bgServices from "@/assets/showcase-1.webp";

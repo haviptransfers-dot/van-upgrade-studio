@@ -38,7 +38,7 @@ const AnimatedBackground = () => {
         />
       </AnimatePresence>
 
-      <div className="absolute inset-0 bg-background/76" />
+      <div className="absolute inset-0 bg-background/80" />
 
       {/* Floating gold orbs */}
       <motion.div
