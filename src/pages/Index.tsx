@@ -127,39 +127,22 @@ const Index = () => {
 
       {/* Hero */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden">
-          <motion.div
-            initial={{ scale: 1 }}
-            animate={{ scale: 1.12 }}
-            transition={{ duration: 40, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
-            className="absolute inset-0"
-          >
-            <picture>
-              <source media="(max-width: 768px)" srcSet={heroImgMobile} type="image/webp" />
-              <source srcSet={heroImg} type="image/webp" />
-              <img
-                src={heroImg}
-                alt="Mercedes V Class in Athens"
-                className="w-full h-full object-cover"
-                width={1920}
-                height={1080}
-                fetchPriority="high"
-                decoding="async"
-              />
-            </picture>
-          </motion.div>
-          <AnimatePresence mode="sync">
+        <div className="absolute inset-0 overflow-hidden bg-background">
+          <AnimatePresence>
             <motion.div
               key={heroCycleIndex}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.3 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 4, ease: "easeInOut" }}
-              className="absolute inset-0 bg-cover bg-center"
+              initial={{ opacity: 0, scale: 1 }}
+              animate={{ opacity: 1, scale: 1.25 }}
+              exit={{ opacity: 0, scale: 1.32 }}
+              transition={{
+                opacity: { duration: FADE_DURATION, ease: "easeInOut" },
+                scale: { duration: SLIDE_DURATION + FADE_DURATION * 2, ease: "linear" },
+              }}
+              className="absolute inset-0 bg-cover bg-center will-change-transform"
               style={{ backgroundImage: `url(${heroCycleImages[heroCycleIndex]})` }}
             />
           </AnimatePresence>
-          <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/30 to-background" />
         </div>
         <div className="relative z-10 text-center px-4 max-w-4xl">
           <motion.p
