@@ -66,6 +66,11 @@ const Index = () => {
 
   const [heroCycleIndex, setHeroCycleIndex] = useState(0);
   useEffect(() => {
+    // Preload all hero images to avoid black gaps between slides
+    heroCycleImages.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
     const id = setInterval(() => {
       setHeroCycleIndex((i) => (i + 1) % heroCycleImages.length);
     }, SLIDE_DURATION * 1000);
