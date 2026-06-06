@@ -127,8 +127,8 @@ const Index = () => {
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
             initial={{ scale: 1 }}
-            animate={{ scale: 1.18 }}
-            transition={{ duration: 16, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
+            animate={{ scale: 1.12 }}
+            transition={{ duration: 40, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
             className="absolute inset-0"
           >
             <picture>
@@ -145,13 +145,13 @@ const Index = () => {
               />
             </picture>
           </motion.div>
-          <AnimatePresence>
+          <AnimatePresence mode="sync">
             <motion.div
               key={heroCycleIndex}
-              initial={{ opacity: 0, scale: 1.05 }}
-              animate={{ opacity: 0.55, scale: 1.18 }}
-              exit={{ opacity: 0, scale: 1.22 }}
-              transition={{ opacity: { duration: 2 }, scale: { duration: 10, ease: "linear" } }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.3 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 4, ease: "easeInOut" }}
               className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: `url(${heroCycleImages[heroCycleIndex]})` }}
             />
