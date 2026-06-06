@@ -39,8 +39,8 @@ const heroCycleImages = [
   tourNafplio,
 ];
 
-const SLIDE_DURATION = 9; // seconds each slide is the main image
-const FADE_DURATION = 2.5; // crossfade overlap
+const SLIDE_DURATION = 10; // seconds each slide is the main image
+const FADE_DURATION = 3; // crossfade overlap
 
 const Gallery = lazy(() => import("@/components/Gallery"));
 const Showcase = lazy(() => import("@/components/Showcase"));
