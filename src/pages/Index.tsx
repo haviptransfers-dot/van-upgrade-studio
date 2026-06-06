@@ -71,7 +71,8 @@ const Index = () => {
   const fleetFeatures = t("fleet.features", { returnObjects: true }) as string[];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-transparent relative">
+      <AnimatedBackground />
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
         <div className="container mx-auto flex flex-wrap items-center justify-between py-2 md:py-3 px-4">
