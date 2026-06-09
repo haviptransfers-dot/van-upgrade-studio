@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://van-move-boost.lovable.app/sitemap.xml
+Sitemap: https://haviptransfers.gr/sitemap.xml
