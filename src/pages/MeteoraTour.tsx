@@ -31,7 +31,45 @@ const MeteoraTour = () => {
     lamia: "🌿",
   };
   const whatIncluded = t("meteoraTour.whatIncluded", { returnObjects: true }) as string[];
-  const faq = t("meteoraTour.faq", { returnObjects: true }) as { q: string; a: string }[];
+  const faqItems = [
+    {
+      q: "What is included in the Meteora Private Tour?",
+      a: "The tour includes a private Mercedes-Benz V-Class with a professional English-speaking driver, door-to-door pickup from your Athens hotel or Airbnb, a scenic drive through Thessaly, visits to the spectacular monasteries of Meteora, and complimentary cold drinks on board. Entrance fees are not included.",
+    },
+    {
+      q: "How long is the Meteora Private Tour?",
+      a: "The full day tour lasts approximately 10–11 hours, including driving time and your visits at the monasteries.",
+    },
+    {
+      q: "How far is Meteora from Athens?",
+      a: "Meteora is approximately 350 km from Athens, about a 3.5-hour drive through central Greece.",
+    },
+    {
+      q: "Is the Meteora tour fully private?",
+      a: "Yes, 100% private. The vehicle and driver are exclusively for you and your group — no shared tours, no strangers.",
+    },
+    {
+      q: "How many passengers can travel together?",
+      a: "Our Mercedes-Benz V-Class accommodates up to 7 passengers, ideal for families and small groups.",
+    },
+    {
+      q: "How do I book the Meteora Private Tour?",
+      a: "You can book via WhatsApp, email, or through our online booking form. We confirm all bookings within a few hours.",
+    },
+  ];
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
+  };
   const bookUrl = `${WHATSAPP}?text=${encodeURIComponent(t("meteoraTour.bookMsg"))}`;
 
   return (
@@ -46,6 +84,9 @@ const MeteoraTour = () => {
         <meta property="og:url" content={url} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={`${SITE_URL}${tourMeteora}`} />
+        <script type="application/ld+json">
+          {JSON.stringify(faqJsonLd)}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background text-foreground">
@@ -203,10 +244,10 @@ const MeteoraTour = () => {
         <section className="py-12 md:py-20 px-4">
           <div className="container mx-auto max-w-3xl">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-10">
-              {t("meteoraTour.faqTitle")}
+              Frequently Asked Questions
             </h2>
             <Accordion type="single" collapsible className="space-y-2">
-              {faq.map((item, i) => (
+              {faqItems.map((item, i) => (
                 <AccordionItem
                   key={i}
                   value={`item-${i}`}
