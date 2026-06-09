@@ -31,7 +31,6 @@ const CapeSounionTour = () => {
     voula: "☕",
   };
   const whatIncluded = t("sounionTour.whatIncluded", { returnObjects: true }) as string[];
-  const faq = t("sounionTour.faq", { returnObjects: true }) as { q: string; a: string }[];
   const bookUrl = `${WHATSAPP}?text=${encodeURIComponent(t("sounionTour.bookMsg"))}`;
 
   const faqItems = [
