@@ -85,6 +85,9 @@ const NafplioTour = () => {
         <meta property="og:url" content={url} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={`${SITE_URL}${tourNafplio}`} />
+        <script type="application/ld+json">
+          {JSON.stringify(faqJsonLd)}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background text-foreground">
