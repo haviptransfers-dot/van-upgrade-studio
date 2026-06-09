@@ -32,7 +32,45 @@ const AthensTour = () => {
     monastiraki: "🛍️",
   };
   const whatIncluded = t("athensTour.whatIncluded", { returnObjects: true }) as string[];
-  const faq = t("athensTour.faq", { returnObjects: true }) as { q: string; a: string }[];
+  const faqItems = [
+    {
+      q: "What is included in the Athens City Tour?",
+      a: "The tour includes a private Mercedes-Benz V-Class with a professional English-speaking driver, door-to-door pickup from your hotel or Airbnb, visits to the Acropolis area, Plaka, Monastiraki, Panathenaic Stadium, and other iconic Athens landmarks, plus complimentary cold drinks on board.",
+    },
+    {
+      q: "How long is the Athens City Tour?",
+      a: "The tour lasts approximately 4–5 hours, giving you plenty of time to explore the highlights of Athens at a relaxed pace.",
+    },
+    {
+      q: "Is the Athens City Tour fully private?",
+      a: "Yes, 100% private. You will not share the vehicle with other tourists. The tour is exclusively for you and your group.",
+    },
+    {
+      q: "Can we customize the stops on the Athens City Tour?",
+      a: "Absolutely. We tailor every tour to your interests. Just let us know in advance if there are specific sites or neighborhoods you'd like to visit.",
+    },
+    {
+      q: "How many passengers can join the Athens City Tour?",
+      a: "Our Mercedes-Benz V-Class comfortably accommodates up to 7 passengers, perfect for families and small groups.",
+    },
+    {
+      q: "How do I book the Athens City Tour?",
+      a: "You can book via WhatsApp, email, or through our online booking form on the website. We confirm all bookings within a few hours.",
+    },
+  ];
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
+  };
   const bookUrl = `${WHATSAPP}?text=${encodeURIComponent(t("athensTour.bookMsg"))}`;
 
   return (
