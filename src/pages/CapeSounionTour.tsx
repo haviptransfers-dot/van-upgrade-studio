@@ -31,8 +31,47 @@ const CapeSounionTour = () => {
     voula: "☕",
   };
   const whatIncluded = t("sounionTour.whatIncluded", { returnObjects: true }) as string[];
-  const faq = t("sounionTour.faq", { returnObjects: true }) as { q: string; a: string }[];
   const bookUrl = `${WHATSAPP}?text=${encodeURIComponent(t("sounionTour.bookMsg"))}`;
+
+  const faqItems = [
+    {
+      q: "What is included in the Cape Sounion private tour?",
+      a: "The tour includes a private Mercedes-Benz V-Class with a professional English-speaking driver, door-to-door pickup from your Athens hotel or Airbnb, a scenic coastal drive along the Athens Riviera, a stop at the Temple of Poseidon, and complimentary cold drinks on board. Entrance fees are not included.",
+    },
+    {
+      q: "How long is the Cape Sounion tour?",
+      a: "The full tour takes approximately 4–5 hours, including driving time and your visit at the Temple of Poseidon.",
+    },
+    {
+      q: "How far is Cape Sounion from Athens?",
+      a: "Cape Sounion is approximately 70 km from central Athens, about a 1-hour scenic drive along the Athenian Riviera.",
+    },
+    {
+      q: "Can I book a sunset tour to Cape Sounion?",
+      a: "Yes! Our sunset tour departs in the late afternoon so you arrive at the Temple of Poseidon just before sunset — one of the most spectacular views in all of Greece.",
+    },
+    {
+      q: "How many passengers can travel together?",
+      a: "Our Mercedes-Benz V-Class accommodates up to 7 passengers, making it ideal for families and small groups.",
+    },
+    {
+      q: "How do I book the Cape Sounion tour?",
+      a: "You can book via WhatsApp, email, or through our online booking form. We confirm all bookings within a few hours.",
+    },
+  ];
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
+  };
 
   return (
     <>
@@ -46,6 +85,9 @@ const CapeSounionTour = () => {
         <meta property="og:url" content={url} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={`${SITE_URL}${tourSounio}`} />
+        <script type="application/ld+json">
+          {JSON.stringify(faqJsonLd)}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background text-foreground">
@@ -203,10 +245,10 @@ const CapeSounionTour = () => {
         <section className="py-12 md:py-20 px-4">
           <div className="container mx-auto max-w-3xl">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-10">
-              {t("sounionTour.faqTitle")}
+              Frequently Asked Questions
             </h2>
             <Accordion type="single" collapsible className="space-y-2">
-              {faq.map((item, i) => (
+              {faqItems.map((item, i) => (
                 <AccordionItem
                   key={i}
                   value={`item-${i}`}
