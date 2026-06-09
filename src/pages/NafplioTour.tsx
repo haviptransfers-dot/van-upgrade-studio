@@ -238,10 +238,10 @@ const NafplioTour = () => {
         <section className="py-12 md:py-20 px-4">
           <div className="container mx-auto max-w-3xl">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-10">
-              {t("nafplioTour.faqTitle")}
+              Frequently Asked Questions
             </h2>
             <Accordion type="single" collapsible className="space-y-2">
-              {faq.map((item, i) => (
+              {faqItems.map((item, i) => (
                 <AccordionItem
                   key={i}
                   value={`item-${i}`}
