@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 
 const langs = [
   { code: "el", label: "GR", country: "gr" },
+  { code: "en", label: "US", country: "us" },
   { code: "en", label: "EN", country: "gb" },
   { code: "de", label: "DE", country: "de" },
   { code: "es", label: "ES", country: "es" },
