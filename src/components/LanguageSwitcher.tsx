@@ -20,7 +20,7 @@ const LanguageSwitcher = () => {
   return (
     <div className="flex items-center gap-0.5 md:gap-1 text-xs font-medium">
       {langs.map((l, i) => (
-        <div key={l.code} className="flex items-center gap-0.5 md:gap-1">
+        <div key={l.country} className="flex items-center gap-0.5 md:gap-1">
           <button
             onClick={() => i18n.changeLanguage(l.code)}
             className={cn(
