@@ -11,7 +11,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import Reviews, { TrustBadge } from "@/components/Reviews";
+import ReviewsLazy, { TrustBadge } from "@/components/Reviews";
 import interiorImg from "@/assets/fleet-vito.webp";
 import logoImg from "@/assets/logo.webp";
 import bgServices from "@/assets/showcase-1.webp";
