@@ -230,6 +230,14 @@ const Index = () => {
               </DropdownMenuContent>
             </DropdownMenu>
           </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.1 }}
+            className="mt-6 flex justify-center"
+          >
+            <TrustBadge />
+          </motion.div>
         </div>
         <a href="#services" aria-label="Scroll to services" className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-primary/60">
           <ChevronDown className="w-8 h-8" />
