@@ -131,13 +131,16 @@ const Reviews = () => {
         {/* Review cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 mb-12 md:mb-16">
           {reviews.map((review, i) => (
-            <motion.div
+            <motion.a
               key={review.name}
+              href={GOOGLE_REVIEWS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08, duration: 0.5 }}
-              className="bg-card/60 backdrop-blur-sm border border-border rounded-xl p-5 md:p-6 hover:border-primary/30 transition-colors group relative"
+              className="bg-card/60 backdrop-blur-sm border border-border rounded-xl p-5 md:p-6 hover:border-primary/40 transition-colors group relative block cursor-pointer"
             >
               <Quote className="absolute top-4 right-4 w-6 h-6 text-primary/20 group-hover:text-primary/30 transition-colors" />
               
@@ -165,7 +168,7 @@ const Reviews = () => {
               </p>
 
               <p className="text-xs text-muted-foreground">{review.date}</p>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
 
