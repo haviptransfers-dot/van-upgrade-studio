@@ -349,6 +349,9 @@ const Index = () => {
               </Button>
             </a>
           </div>
+          <div className="mt-5 flex justify-center">
+            <TrustBadge />
+          </div>
         </div>
       </section>
 
