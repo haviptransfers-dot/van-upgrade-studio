@@ -292,7 +292,7 @@ const Index = () => {
       <Suspense fallback={<LazyFallback />}>
         <Gallery />
         <PriceCalculator />
-        <Reviews />
+        <ReviewsComponent />
         <FAQ />
       </Suspense>
 
