@@ -11,6 +11,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import ReviewsLazy, { TrustBadge } from "@/components/Reviews";
 import interiorImg from "@/assets/fleet-vito.webp";
 import logoImg from "@/assets/logo.webp";
 import bgServices from "@/assets/showcase-1.webp";
@@ -45,7 +46,7 @@ const Showcase = lazy(() => import("@/components/Showcase"));
 const PhotoWall = lazy(() => import("@/components/PhotoWall"));
 const PrivateTours = lazy(() => import("@/components/PrivateTours"));
 const PriceCalculator = lazy(() => import("@/components/PriceCalculator"));
-const Reviews = lazy(() => import("@/components/Reviews"));
+const ReviewsComponent = lazy(() => import("@/components/Reviews"));
 const ChatBot = lazy(() => import("@/components/ChatBot"));
 const FAQ = lazy(() => import("@/components/FAQ"));
 const LazyFallback = () => <div className="min-h-[200px]" aria-hidden="true" />;
@@ -229,6 +230,14 @@ const Index = () => {
               </DropdownMenuContent>
             </DropdownMenu>
           </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.1 }}
+            className="mt-6 flex justify-center"
+          >
+            <TrustBadge />
+          </motion.div>
         </div>
         <a href="#services" aria-label="Scroll to services" className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-primary/60">
           <ChevronDown className="w-8 h-8" />
@@ -291,7 +300,7 @@ const Index = () => {
       <Suspense fallback={<LazyFallback />}>
         <Gallery />
         <PriceCalculator />
-        <Reviews />
+        <ReviewsComponent />
         <FAQ />
       </Suspense>
 
@@ -339,6 +348,9 @@ const Index = () => {
                 {t("cta.email")}
               </Button>
             </a>
+          </div>
+          <div className="mt-5 flex justify-center">
+            <TrustBadge />
           </div>
         </div>
       </section>
