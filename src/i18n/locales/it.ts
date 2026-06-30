@@ -77,6 +77,8 @@ export default {
     email: "Email",
     based: "Sede",
     location: "Atene, Grecia",
+    license: "MHTE (Registro delle Imprese Turistiche Greche)",
+    licenseValue: "0261E60000128500",
   },
   calc: {
     eyebrow: "Preventivo Immediato",

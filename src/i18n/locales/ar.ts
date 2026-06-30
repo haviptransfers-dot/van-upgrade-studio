@@ -77,6 +77,8 @@ export default {
     email: "البريد الإلكتروني",
     based: "مقرنا",
     location: "أثينا، اليونان",
+    license: "MHTE (سجل الشركات السياحية اليونانية)",
+    licenseValue: "0261E60000128500",
   },
   calc: {
     eyebrow: "عرض سعر فوري",
