@@ -77,6 +77,8 @@ export default {
     email: "Email",
     based: "Based In",
     location: "Athens, Greece",
+    license: "MHTE (Greek Tourism Business Registry Number)",
+    licenseValue: "0261E60000128500",
   },
   calc: {
     eyebrow: "Instant Quote",

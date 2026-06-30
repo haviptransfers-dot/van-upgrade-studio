@@ -364,7 +364,7 @@ const Index = () => {
             <p className="text-primary uppercase tracking-[0.2em] text-xs md:text-sm mb-3">{t("contact.eyebrow")}</p>
             <h2 className="font-display text-3xl md:text-5xl font-bold">{t("contact.title")}</h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 sm:gap-6 md:gap-8">
             {[
               {
                 label: t("contact.phone"),
@@ -401,6 +401,11 @@ const Index = () => {
                 ),
               },
               {
+                label: t("contact.license"),
+                value: t("contact.licenseValue"),
+                icon: <Shield className="w-10 h-10 text-primary" aria-hidden="true" />,
+              },
+              {
                 label: t("contact.based"),
                 value: t("contact.location"),
                 href: "#",
@@ -431,13 +436,21 @@ const Index = () => {
                   </svg>
                 ),
               },
-            ].map((c) => (
-              <a key={c.label} href={c.href} className="bg-card border border-border rounded-lg p-5 md:p-6 text-center hover:border-primary/40 transition-colors block overflow-hidden">
-                <div className="flex justify-center mb-3">{c.icon}</div>
-                <p className="text-sm text-muted-foreground mb-1">{c.label}</p>
-                <p className="font-medium text-foreground text-sm break-all">{c.value}</p>
-              </a>
-            ))}
+            ].map((c) =>
+              c.href ? (
+                <a key={c.label} href={c.href} className="bg-card border border-border rounded-lg p-5 md:p-6 text-center hover:border-primary/40 transition-colors block overflow-hidden">
+                  <div className="flex justify-center mb-3">{c.icon}</div>
+                  <p className="text-sm text-muted-foreground mb-1">{c.label}</p>
+                  <p className="font-medium text-foreground text-sm break-all">{c.value}</p>
+                </a>
+              ) : (
+                <div key={c.label} className="bg-card border border-border rounded-lg p-5 md:p-6 text-center hover:border-primary/40 transition-colors block overflow-hidden">
+                  <div className="flex justify-center mb-3">{c.icon}</div>
+                  <p className="text-sm text-muted-foreground mb-1">{c.label}</p>
+                  <p className="font-medium text-foreground text-sm break-all">{c.value}</p>
+                </div>
+              )
+            )}
           </div>
         </div>
       </section>

@@ -77,6 +77,8 @@ export default {
     email: "אימייל",
     based: "ממוקמים ב",
     location: "אתונה, יוון",
+    license: "MHTE (רישום עסקי תיירות יווני)",
+    licenseValue: "0261E60000128500",
   },
   calc: {
     eyebrow: "הצעת מחיר מיידית",

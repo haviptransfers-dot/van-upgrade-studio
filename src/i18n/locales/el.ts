@@ -77,6 +77,8 @@ export default {
     email: "Email",
     based: "Έδρα",
     location: "Αθήνα, Ελλάδα",
+    license: "MHTE (Μητρώο Τουριστικών Επιχειρήσεων)",
+    licenseValue: "0261E60000128500",
   },
   calc: {
     eyebrow: "Άμεση Προσφορά",
