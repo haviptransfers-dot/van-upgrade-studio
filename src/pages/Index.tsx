@@ -462,6 +462,42 @@ const Index = () => {
             <img src={logoImg} alt="H&A Tours" className="h-8 w-8 object-contain" loading="lazy" />
             <span className="font-display text-sm font-bold text-primary">H&A TOURS</span>
           </div>
+          <div className="flex items-center gap-4">
+            <a
+              href="https://instagram.com/antonis_ieronymakhs"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="hover:opacity-80 transition-opacity"
+            >
+              <svg viewBox="0 0 24 24" className="w-6 h-6" aria-hidden="true">
+                <defs>
+                  <radialGradient id="igFooterGrad" cx="30%" cy="107%" r="150%">
+                    <stop offset="0%" stopColor="#fdf497"/>
+                    <stop offset="5%" stopColor="#fdf497"/>
+                    <stop offset="45%" stopColor="#fd5949"/>
+                    <stop offset="60%" stopColor="#d6249f"/>
+                    <stop offset="90%" stopColor="#285AEB"/>
+                  </radialGradient>
+                </defs>
+                <rect x="2" y="2" width="20" height="20" rx="5" fill="url(#igFooterGrad)"/>
+                <circle cx="12" cy="12" r="4.2" fill="none" stroke="#fff" strokeWidth="1.8"/>
+                <circle cx="17.5" cy="6.5" r="1.2" fill="#fff"/>
+              </svg>
+            </a>
+            <a
+              href="https://youtube.com/@hatoursltdtransfers?si=pu05tl68ZLWd9v2K"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              className="hover:opacity-80 transition-opacity"
+            >
+              <svg viewBox="0 0 24 24" className="w-6 h-6" aria-hidden="true">
+                <path fill="#FF0000" d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19C0 8.09 0 12 0 12s0 3.91.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14C24 15.91 24 12 24 12s0-3.91-.5-5.81z"/>
+                <path fill="#fff" d="M9.55 15.5V8.5l6.27 3.5-6.27 3.5z"/>
+              </svg>
+            </a>
+          </div>
           <p className="text-muted-foreground text-xs">© {new Date().getFullYear()} H&A VIP Tours. {t("footer.rights")}</p>
         </div>
       </footer>
