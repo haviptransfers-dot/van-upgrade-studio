@@ -436,15 +436,27 @@ const Index = () => {
                   </svg>
                 ),
               },
+              {
+                label: "YouTube",
+                value: "@hatoursltdtransfers",
+                href: "https://youtube.com/@hatoursltdtransfers?si=pu05tl68ZLWd9v2K",
+                icon: (
+                  <svg viewBox="0 0 24 24" className="w-10 h-10" aria-hidden="true">
+                    <path fill="#FF0000" d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19C0 8.09 0 12 0 12s0 3.91.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14C24 15.91 24 12 24 12s0-3.91-.5-5.81z"/>
+                    <path fill="#fff" d="M9.55 15.5V8.5l6.27 3.5-6.27 3.5z"/>
+                  </svg>
+                ),
+                className: "lg:col-start-3 xl:col-start-3",
+              },
             ].map((c) =>
               c.href ? (
-                <a key={c.label} href={c.href} className="bg-card border border-border rounded-lg p-5 md:p-6 text-center hover:border-primary/40 transition-colors block overflow-hidden">
+                <a key={c.label} href={c.href} className={`bg-card border border-border rounded-lg p-5 md:p-6 text-center hover:border-primary/40 transition-colors block overflow-hidden ${c.className || ""}`}>
                   <div className="flex justify-center mb-3">{c.icon}</div>
                   <p className="text-sm text-muted-foreground mb-1">{c.label}</p>
                   <p className="font-medium text-foreground text-sm break-all">{c.value}</p>
                 </a>
               ) : (
-                <div key={c.label} className="bg-card border border-border rounded-lg p-5 md:p-6 text-center hover:border-primary/40 transition-colors block overflow-hidden">
+                <div key={c.label} className={`bg-card border border-border rounded-lg p-5 md:p-6 text-center hover:border-primary/40 transition-colors block overflow-hidden ${c.className || ""}`}>
                   <div className="flex justify-center mb-3">{c.icon}</div>
                   <p className="text-sm text-muted-foreground mb-1">{c.label}</p>
                   <p className="font-medium text-foreground text-sm break-all">{c.value}</p>
