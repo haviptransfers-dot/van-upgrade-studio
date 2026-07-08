@@ -446,7 +446,7 @@ const Index = () => {
                     <path fill="#fff" d="M9.55 15.5V8.5l6.27 3.5-6.27 3.5z"/>
                   </svg>
                 ),
-                className: "lg:col-start-3 xl:col-start-3",
+                className: "sm:col-start-2 lg:col-start-3 xl:col-start-3",
               },
             ].map((c) =>
               c.href ? (
