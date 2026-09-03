@@ -321,5 +321,19 @@ export default {
     cta: "Reservar por WhatsApp",
     back: "← Volver al inicio",
     bookMsg: "¡Hola! Me gustaría reservar el Tour Privado a Nafplio (€500).",
+  },
+  blog: {
+    nav: "Blog",
+    eyebrow: "Guías de Viaje",
+    title: "Guías de Viaje",
+    readMore: "Leer Más",
+    backHome: "Inicio",
+    backToBlog: "Volver al Blog",
+    notFound: "Artículo no encontrado",
+    ctaTitle: "¿Listo para Reservar?",
+    ctaDesc: "Escríbenos por WhatsApp y confirmamos en minutos.",
+    ctaWhatsapp: "Reservar por WhatsApp",
+    metaTitle: "Guías de Viaje y Blog | H&A VIP Transfers Atenas",
+    metaDescription: "Guías de viaje, consejos e información útil sobre traslados al aeropuerto, al puerto y tours privados en Grecia.",
   }
 };

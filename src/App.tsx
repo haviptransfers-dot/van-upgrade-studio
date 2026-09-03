@@ -12,6 +12,8 @@ import CapeSounionTour from "./pages/CapeSounionTour.tsx";
 import MeteoraTour from "./pages/MeteoraTour.tsx";
 import NafplioTour from "./pages/NafplioTour.tsx";
 import { seoRoutes } from "./seoRoutes.ts";
+import Blog from "./pages/Blog.tsx";
+import BlogPost from "./pages/BlogPost.tsx";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +30,8 @@ const App = () => (
           <Route path="/cape-sounion-tour" element={<CapeSounionTour />} />
           <Route path="/meteora-private-tour" element={<MeteoraTour />} />
           <Route path="/nafplio-private-tour" element={<NafplioTour />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           {seoRoutes
             .filter((r) => r.path !== "/delphi-private-tour" && r.path !== "/athens-city-tour" && r.path !== "/cape-sounion-tour" && r.path !== "/meteora-private-tour" && r.path !== "/nafplio-private-tour")
             .map((r) => (

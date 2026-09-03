@@ -321,5 +321,19 @@ export default {
     cta: "Prenota via WhatsApp",
     back: "← Torna alla home",
     bookMsg: "Salve! Vorrei prenotare il Tour Privato a Nafplio (€500).",
+  },
+  blog: {
+    nav: "Blog",
+    eyebrow: "Guide di Viaggio",
+    title: "Guide di Viaggio",
+    readMore: "Leggi di Più",
+    backHome: "Home",
+    backToBlog: "Torna al Blog",
+    notFound: "Articolo non trovato",
+    ctaTitle: "Pronto a Prenotare?",
+    ctaDesc: "Scrivici su WhatsApp e confermiamo in pochi minuti.",
+    ctaWhatsapp: "Prenota via WhatsApp",
+    metaTitle: "Guide di Viaggio e Blog | H&A VIP Transfers Atene",
+    metaDescription: "Guide di viaggio, consigli e informazioni utili per trasferimenti aeroporto, porto e tour privati in Grecia.",
   }
 };

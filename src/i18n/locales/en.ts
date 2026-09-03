@@ -321,5 +321,19 @@ export default {
     cta: "Book via WhatsApp",
     back: "← Back to home",
     bookMsg: "Hi! I'd like to book the Nafplio Private Tour (€500).",
+  },
+  blog: {
+    nav: "Blog",
+    eyebrow: "Travel Guides",
+    title: "Travel Guides",
+    readMore: "Read More",
+    backHome: "Home",
+    backToBlog: "Back to Blog",
+    notFound: "Article not found",
+    ctaTitle: "Ready to Book Your Transfer?",
+    ctaDesc: "Message us on WhatsApp and we'll confirm within minutes.",
+    ctaWhatsapp: "Book via WhatsApp",
+    metaTitle: "Travel Guides & Blog | H&A VIP Transfers Athens",
+    metaDescription: "Travel guides, tips and insider knowledge for Athens airport transfers, port transfers and private tours in Greece.",
   }
 };
