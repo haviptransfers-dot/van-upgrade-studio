@@ -11,7 +11,8 @@ const SITE_URL = "https://haviptransfers.gr";
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const { t, i18n } = useTranslation();
-  const post = blogPosts.find((p) => p.slug === slug);
+  const found = blogPosts.find((p) => p.slug === slug);
+  const post = found ? localizePost(found, i18n.language) : undefined;
 
   if (!post) {
     return (
