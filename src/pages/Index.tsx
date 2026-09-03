@@ -122,7 +122,13 @@ const Index = () => {
             <a href="#gallery" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.gallery")}</a>
             <a href="#about" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.about")}</a>
             <a href="#contact" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.contact")}</a>
-            <Link to="/blog" className="text-foreground/70 hover:text-primary transition-colors">{t("blog.nav")}</Link>
+            <Link to="/blog" className="relative text-foreground/70 hover:text-primary transition-colors">
+              {t("blog.nav")}
+              <span className="absolute -top-1.5 -right-2.5 flex h-2 w-2" aria-hidden="true">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-notification opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-notification"></span>
+              </span>
+            </Link>
           </div>
           <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="Book now via WhatsApp">
