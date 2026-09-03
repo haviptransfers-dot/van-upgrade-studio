@@ -39,7 +39,7 @@ export const blogPosts: BlogPost[] = [
     title: "Private Transfer from Athens Airport to Hotel",
     excerpt:
       "Skip taxi queues and travel from Athens Airport to your hotel in comfort. Discover why a private Mercedes V-Class transfer is the smartest start to your Athens stay.",
-    image: athensAirportHotelTransfer.url,
+    image: athensAirportHotelTransfer,
     imageAlt:
       "Stylized illustration of a private car transfer from Athens Airport to a hotel at sunset",
     date: "2026-09-03",
