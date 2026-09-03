@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import { Phone, Mail, Clock, Users, Shield, Star, ChevronDown, MessageCircle, Plane, Ship, Camera, Building, ArrowRight } from "lucide-react";
-import { blogPosts } from "@/data/blogPosts";
+import { blogPosts, localizePost } from "@/data/blogPosts";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,

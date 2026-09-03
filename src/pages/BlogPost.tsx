@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ArrowLeft, MessageCircle, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { blogPosts, WHATSAPP_URL } from "@/data/blogPosts";
+import { blogPosts, localizePost, WHATSAPP_URL } from "@/data/blogPosts";
 import logoImg from "@/assets/logo.webp";
 
 const SITE_URL = "https://haviptransfers.gr";

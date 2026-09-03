@@ -2,14 +2,16 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ArrowRight, ArrowLeft } from "lucide-react";
-import { blogPosts } from "@/data/blogPosts";
+import { blogPosts, localizePost } from "@/data/blogPosts";
 import logoImg from "@/assets/logo.webp";
 
 const SITE_URL = "https://haviptransfers.gr";
 
 const Blog = () => {
   const { t, i18n } = useTranslation();
-  const posts = [...blogPosts].sort((a, b) => b.date.localeCompare(a.date));
+  const posts = [...blogPosts]
+    .map((p) => localizePost(p, i18n.language))
+    .sort((a, b) => b.date.localeCompare(a.date));
 
   return (
     <div className="min-h-screen bg-background">
