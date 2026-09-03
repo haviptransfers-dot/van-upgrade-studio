@@ -321,5 +321,19 @@ export default {
     cta: "Réserver via WhatsApp",
     back: "← Retour à l'accueil",
     bookMsg: "Bonjour! Je souhaite réserver le Tour Privé de Nauplie (€500).",
+  },
+  blog: {
+    nav: "Blog",,
+    eyebrow: "Guides de Voyage",,
+    title: "Guides de Voyage",,
+    readMore: "Lire la Suite",,
+    backHome: "Accueil",,
+    backToBlog: "Retour au Blog",,
+    notFound: "Article introuvable",,
+    ctaTitle: "Prêt à Réserver ?",,
+    ctaDesc: "Écrivez-nous sur WhatsApp et nous confirmons en quelques minutes.",,
+    ctaWhatsapp: "Réserver via WhatsApp",,
+    metaTitle: "Guides de Voyage & Blog | H&A VIP Transfers Athènes",,
+    metaDescription: "Guides de voyage, conseils et astuces pour les transferts aéroport, port et les visites privées en Grèce.",
   }
 };
