@@ -27,6 +27,9 @@
     --accent: 43 60% 40%;
     --accent-foreground: 45 30% 95%;
 
+    --notification: 217 91% 60%;
+    --notification-foreground: 0 0% 100%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
