@@ -1,5 +1,5 @@
 import tourAcropolis from "@/assets/tour-acropolis.webp";
-import athensAirportHotelTransfer from "@/assets/athens-airport-hotel-transfer.webp.asset.json";
+import athensAirportHotelTransfer from "@/assets/athens-airport-hotel-transfer.webp";
 import { blogPostTranslations, type BlogPostTranslation } from "./blogPostTranslations";
 
 export interface BlogSection {
