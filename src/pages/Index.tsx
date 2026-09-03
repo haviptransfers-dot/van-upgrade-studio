@@ -1,8 +1,9 @@
 import { lazy, Suspense, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
-import { Phone, Mail, Clock, Users, Shield, Star, ChevronDown, MessageCircle, Plane, Ship, Camera, Building } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
+import { Phone, Mail, Clock, Users, Shield, Star, ChevronDown, MessageCircle, Plane, Ship, Camera, Building, ArrowRight } from "lucide-react";
+import { blogPosts } from "@/data/blogPosts";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -121,6 +122,7 @@ const Index = () => {
             <a href="#gallery" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.gallery")}</a>
             <a href="#about" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.about")}</a>
             <a href="#contact" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.contact")}</a>
+            <Link to="/blog" className="text-foreground/70 hover:text-primary transition-colors">{t("blog.nav")}</Link>
           </div>
           <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="Book now via WhatsApp">
@@ -464,6 +466,44 @@ const Index = () => {
               )
             )}
           </div>
+        </div>
+      </section>
+
+      {/* Blog — Travel Guides */}
+      <section className="relative py-16 md:py-24 px-4 bg-card/70 backdrop-blur-sm">
+        <div className="container mx-auto max-w-6xl relative z-10">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-12 md:mb-16">
+            <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-xs md:text-sm mb-3">{t("blog.eyebrow")}</motion.p>
+            <motion.h2 variants={fadeUp} custom={1} className="font-display text-3xl md:text-5xl font-bold">{t("blog.title")}</motion.h2>
+          </motion.div>
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {[...blogPosts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3).map((post, i) => (
+              <motion.div key={post.slug} variants={fadeUp} custom={i}>
+                <Link
+                  to={`/blog/${post.slug}`}
+                  className="bg-card border border-border rounded-lg overflow-hidden hover:border-primary/40 transition-colors group block h-full"
+                >
+                  <div className="aspect-[16/10] overflow-hidden">
+                    <img
+                      src={post.image}
+                      alt={post.imageAlt}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="font-display text-xl font-semibold mb-2 group-hover:text-primary transition-colors">{post.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-4">{post.excerpt}</p>
+                    <span className="inline-flex items-center gap-1 text-primary text-sm font-medium">
+                      {t("blog.readMore")}
+                      <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
