@@ -62,7 +62,7 @@ const fadeUp = {
 };
 
 const Index = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const whatsappUrl = "https://wa.me/306949393700";
 
