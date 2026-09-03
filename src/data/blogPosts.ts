@@ -1,5 +1,6 @@
 import tourAcropolis from "@/assets/tour-acropolis.webp";
 import athensAirportHotelTransfer from "@/assets/athens-airport-hotel-transfer.webp.asset.json";
+import { blogPostTranslations, type BlogPostTranslation } from "./blogPostTranslations";
 
 export interface BlogSection {
   heading?: string; // H2
@@ -18,6 +19,16 @@ export interface BlogPost {
   metaTitle: string;
   metaDescription: string;
   sections: BlogSection[];
+}
+
+/** Returns the post with localized fields for `lang`, falling back to the base (English) content. */
+export function localizePost(post: BlogPost, lang: string): BlogPost {
+  const base = lang?.split("-")[0];
+  const tr: BlogPostTranslation | undefined =
+    blogPostTranslations[post.slug]?.[lang] ??
+    (base ? blogPostTranslations[post.slug]?.[base] : undefined);
+  if (!tr) return post;
+  return { ...post, ...tr };
 }
 
 export const WHATSAPP_URL = "https://wa.me/306949393700";

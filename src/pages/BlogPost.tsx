@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ArrowLeft, MessageCircle, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { blogPosts, WHATSAPP_URL } from "@/data/blogPosts";
+import { blogPosts, localizePost, WHATSAPP_URL } from "@/data/blogPosts";
 import logoImg from "@/assets/logo.webp";
 
 const SITE_URL = "https://haviptransfers.gr";
@@ -11,7 +11,8 @@ const SITE_URL = "https://haviptransfers.gr";
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const { t, i18n } = useTranslation();
-  const post = blogPosts.find((p) => p.slug === slug);
+  const found = blogPosts.find((p) => p.slug === slug);
+  const post = found ? localizePost(found, i18n.language) : undefined;
 
   if (!post) {
     return (

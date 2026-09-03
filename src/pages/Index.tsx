@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import { Phone, Mail, Clock, Users, Shield, Star, ChevronDown, MessageCircle, Plane, Ship, Camera, Building, ArrowRight } from "lucide-react";
-import { blogPosts } from "@/data/blogPosts";
+import { blogPosts, localizePost } from "@/data/blogPosts";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -62,7 +62,7 @@ const fadeUp = {
 };
 
 const Index = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const whatsappUrl = "https://wa.me/306949393700";
 
@@ -483,7 +483,7 @@ const Index = () => {
             <motion.h2 variants={fadeUp} custom={1} className="font-display text-3xl md:text-5xl font-bold">{t("blog.title")}</motion.h2>
           </motion.div>
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {[...blogPosts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3).map((post, i) => (
+            {[...blogPosts].map((p) => localizePost(p, i18n.language)).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3).map((post, i) => (
               <motion.div key={post.slug} variants={fadeUp} custom={i}>
                 <Link
                   to={`/blog/${post.slug}`}
