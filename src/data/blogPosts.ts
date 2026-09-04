@@ -1,5 +1,6 @@
 import tourAcropolis from "@/assets/tour-acropolis.webp";
 import athensAirportHotelTransfer from "@/assets/athens-airport-hotel-transfer.webp";
+import mercedesVClassChauffeurAthens from "@/assets/mercedes-v-class-chauffeur-athens.webp";
 import { blogPostTranslations, type BlogPostTranslation } from "./blogPostTranslations";
 
 export interface BlogSection {
