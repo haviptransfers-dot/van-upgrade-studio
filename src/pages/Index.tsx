@@ -138,8 +138,15 @@ const Index = () => {
               </Button>
             </a>
           </div>
-          <div className="w-full flex justify-center mt-1.5 md:hidden">
+          <div className="w-full flex items-center justify-center gap-4 mt-1.5 md:hidden">
             <LanguageSwitcher />
+            <Link to="/blog" className="relative text-xs font-medium uppercase tracking-wider text-foreground/70 hover:text-primary transition-colors">
+              {t("blog.nav")}
+              <span className="absolute -top-1 -right-2.5 flex h-2 w-2" aria-hidden="true">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-notification opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-notification"></span>
+              </span>
+            </Link>
           </div>
           <div className="hidden md:block">
             <LanguageSwitcher />
