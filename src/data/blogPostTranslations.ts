@@ -398,7 +398,6 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       ],
     },
   },
-,
   "mercedes-v-class-chauffeur-service-athens": {
   el: {
     title: "Υπηρεσία Σοφέρ Mercedes V-Class στην Αθήνα",
