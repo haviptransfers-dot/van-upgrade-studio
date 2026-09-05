@@ -967,4 +967,538 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
     ],
   },
   },
+  "private-transfer-piraeus-port-to-athens-airport": {
+    el: {
+      title: "Ιδιωτική Μεταφορά από το Λιμάνι του Πειραιά",
+      excerpt:
+        "Αναχωρείτε από τον Πειραιά μετά από κρουαζιέρα ή διαμονή στο λιμάνι; Δείτε γιατί μια προκρατημένη ιδιωτική μεταφορά προς το αεροδρόμιο της Αθήνας είναι ο πιο ήρεμος τρόπος να κλείσει το ταξίδι σας.",
+      imageAlt:
+        "Εικονογράφηση H&A Tours με Mercedes V-Class που συνδέει το λιμάνι του Πειραιά, την πόλη και το αεροδρόμιο της Αθήνας",
+      metaTitle: "Ιδιωτική Μεταφορά Πειραιάς - Αεροδρόμιο Αθηνών | H&A VIP Transfers",
+      metaDescription:
+        "Κλείστε ιδιωτική μεταφορά από το λιμάνι του Πειραιά στο αεροδρόμιο της Αθήνας. Mercedes V-Class, συντονισμός παραλαβής από κρουαζιερόπλοιο, WhatsApp 24/7.",
+      sections: [
+        {
+          paragraphs: [
+            "Η ιδιωτική μεταφορά από τον Πειραιά στο αεροδρόμιο της Αθήνας δεν είναι απλώς η τελευταία διαδρομή ενός ταξιδιού. Για έναν επιβάτη που αναχωρεί μετά από κρουαζιέρα, διαμονή στο λιμάνι ή επαγγελματικό ραντεβού, είναι το σημείο όπου η σωστή οργάνωση κάνει τη διαφορά ανάμεσα σε μια ήρεμη αναχώρηση και στο άγχος με αποσκευές, κίνηση και αβεβαιότητα.",
+            "Με προκρατημένο ιδιωτικό όχημα, ο οδηγός παραλαμβάνει τους επιβάτες από το συμφωνημένο σημείο και η διαδρομή προσαρμόζεται στην ώρα της πτήσης, τον αριθμό των επιβατών και τις αποσκευές τους. Η εμπειρία παραμένει ιδιωτική, άνετη και επικεντρωμένη σε αυτό που έχει πραγματική σημασία: ο χρόνος σας.",
+          ],
+        },
+        {
+          heading: "Γιατί η διαδρομή Πειραιάς - Αεροδρόμιο απαιτεί προγραμματισμό",
+          paragraphs: [
+            "Το λιμάνι του Πειραιά και το Διεθνές Αεροδρόμιο της Αθήνας βρίσκονται σε αντίθετες άκρες του αστικού ιστού. Η διάρκεια της μεταφοράς διαφέρει ανάλογα με την ώρα, την ημέρα, την κίνηση και το ακριβές σημείο παραλαβής. Υπό κανονικές συνθήκες μια μεταφορά μπορεί να διαρκέσει περίπου 45 έως 60 λεπτά, αλλά οι ώρες αιχμής, η έντονη κίνηση γύρω από το λιμάνι ή η αποβίβαση χιλιάδων επιβατών από ένα μεγάλο κρουαζιερόπλοιο μπορούν να αλλάξουν τα πάντα.",
+            "Γι' αυτό μια ποιοτική υπηρεσία δεν βασίζεται σε μια πρόχειρη εκτίμηση. Λαμβάνει υπόψη την ώρα αναχώρησης της πτήσης, τον συνιστώμενο χρόνο άφιξης της αεροπορικής εταιρείας στο αεροδρόμιο, το τερματικό, την πιθανή ανάγκη check-in και τις ιδιαίτερες απαιτήσεις της ομάδας. Για διεθνείς πτήσεις, η έγκαιρη άφιξη στο αεροδρόμιο είναι συνήθως η σοφότερη επιλογή, ειδικά την καλοκαιρινή περίοδο.",
+            "Για τους επιβάτες κρουαζιέρας, η πρόκληση είναι συχνά διαφορετική. Η αποβίβαση μπορεί να ολοκληρωθεί νωρίτερα ή αργότερα από το αναμενόμενο, ενώ κάθε πύλη του λιμανιού έχει διαφορετική πρόσβαση. Η εκ των προτέρων συμφωνία για το πλοίο, το τερματικό και το επιθυμητό σημείο συνάντησης ελαχιστοποιεί τον χρόνο αναμονής και αποτρέπει περιττές μετακινήσεις με βαριές βαλίτσες.",
+          ],
+          imageAlt:
+            "Διαδρομή Google Maps από το λιμάνι του Πειραιά προς το Διεθνές Αεροδρόμιο Αθηνών, περίπου 40 χλμ. και 35 λεπτά μέσω Αττικής Οδού",
+        },
+        {
+          heading: "Ιδιωτική μεταφορά Πειραιάς - Αεροδρόμιο Αθηνών με το κατάλληλο όχημα",
+          paragraphs: [
+            "Η επιλογή οχήματος δεν αφορά μόνο την εμφάνιση. Για ένα ζευγάρι με χειραποσκευές, ένα πολυτελές σεντάν μπορεί να αρκεί. Για μια οικογένεια, μια παρέα φίλων ή επιβάτες που αποβιβάζονται από κρουαζιέρα με περισσότερες αποσκευές, ένα Mercedes V-Class προσφέρει πολύ πιο πρακτική λύση: ευρύχωρο, διακριτικό, και επιτρέπει σε όλους να ταξιδέψουν μαζί χωρίς να στριμώχνονται.",
+            "Το όχημα πρέπει να ανταποκρίνεται στον πραγματικό αριθμό επιβατών και αποσκευών, όχι μόνο στον αριθμό των θέσεων. Αυτή η λεπτομέρεια είναι ιδιαίτερα σημαντική όταν υπάρχουν μεγάλα ταξιδιωτικά είδη, βρεφικό καρότσι, εξοπλισμός ή πολλαπλές αποσκευές ανά άτομο. Η σωστή πληροφόρηση κατά την κράτηση βοηθά ώστε η μεταφορά να ξεκινήσει όπως πρέπει, χωρίς αλλαγές τελευταίας στιγμής.",
+            "Μια premium ιδιωτική μεταφορά προσφέρει επίσης κάτι που δεν είναι δεδομένο στις εναλλακτικές: προσωπικό χώρο. Δεν μοιράζεστε το όχημα με ξένους, δεν κάνετε ενδιάμεσες στάσεις για άλλους επιβάτες και δεν χρειάζεται να προσαρμόσετε το πρόγραμμά σας σε δρομολόγιο shuttle. Η διαδρομή είναι αποκλειστικά δική σας, από το σημείο παραλαβής έως την αποβίβαση στο αεροδρόμιο.",
+          ],
+        },
+        {
+          heading: "Τι να περιμένετε από μια premium υπηρεσία",
+          paragraphs: [
+            "Η αξία μιας ιδιωτικής μεταφοράς φαίνεται ακόμη και πριν ανοίξει η πόρτα του οχήματος. Η κράτηση πρέπει να είναι ξεκάθαρη, με επιβεβαιωμένα στοιχεία παραλαβής, ώρα, προορισμό και στοιχεία επικοινωνίας. Την ημέρα της μεταφοράς, η ακρίβεια του οδηγού και η καθαριότητα του οχήματος δημιουργούν το επίπεδο εμπιστοσύνης που αναζητά ο απαιτητικός ταξιδιώτης.",
+            "Στην H&A VIP Tours, οι μεταφορές με Mercedes V-Class οργανώνονται ως προσωπική υπηρεσία και όχι ως μια απλή διαδρομή. Αυτό σημαίνει ότι η ομάδα γνωρίζει το πρόγραμμά σας εκ των προτέρων και μπορεί να διαχειριστεί αλλαγές ή ερωτήσεις μέσω WhatsApp, 24 ώρες το 24ωρο. Για επισκέπτες που δεν γνωρίζουν την Αθήνα ή έχουν περιορισμένο χρόνο, η άμεση επικοινωνία είναι ουσιαστικό μέρος της εμπειρίας.",
+            "Ο επαγγελματισμός δεν χρειάζεται να είναι επιδεικτικός. Εκφράζεται μέσα από έναν ευγενικό, διακριτικό οδηγό, προσεκτική οδήγηση, βοήθεια με τις αποσκευές και γνώση των διαδρομών προς το αεροδρόμιο. Για επαγγελματίες ταξιδιώτες, αυτό δημιουργεί τον ήσυχο χρόνο που χρειάζονται πριν από μια πτήση. Για οικογένειες και ζευγάρια, προσφέρει ένα πιο άνετο τέλος στις διακοπές τους.",
+          ],
+        },
+        {
+          heading: "Ιδιωτική μεταφορά ή ταξί από τον Πειραιά;",
+          paragraphs: [
+            "Ένα ταξί μπορεί να ταιριάζει όταν κάποιος ταξιδεύει μόνος, έχει ελάχιστες αποσκευές και μπορεί να περιμένει χωρίς ιδιαίτερη χρονική πίεση. Ωστόσο, στο λιμάνι του Πειραιά η ζήτηση κατά τις ώρες άφιξης πλοίων και κρουαζιερόπλοιων μπορεί να είναι υψηλή. Η αναζήτηση διαθέσιμου οχήματος, η ουρά και η αβεβαιότητα για τον χώρο αποσκευών δεν ταιριάζουν σε κάθε ταξιδιωτικό πλάνο.",
+            "Τα κοινόχρηστα shuttle έχουν συνήθως χαμηλότερο κόστος, αλλά περιλαμβάνουν σταθερές ώρες, πιθανές στάσεις και μικρότερη ευελιξία. Μπορούν να εξυπηρετήσουν επισκέπτες που δίνουν προτεραιότητα στην οικονομία πάνω απ' όλα. Αντίθετα, μια ιδιωτική μεταφορά δικαιολογεί την επιλογή της όταν προτεραιότητα είναι η ακρίβεια, η άνεση, η ιδιωτικότητα και η άμεση αναχώρηση.",
+            "Το θέμα δεν είναι ότι μια επιλογή είναι σωστή για όλους. Είναι να επιλέξετε με βάση το δικό σας πρόγραμμα. Αν έχετε πρωινή πτήση, παιδιά, σημαντικές αποσκευές, σφιχτό χρονικό περιθώριο ή απλώς επιθυμείτε ένα πιο εκλεπτυσμένο επίπεδο υπηρεσίας, η προκράτηση ιδιωτικού οχήματος προσφέρει σημαντικά μεγαλύτερη ηρεμία.",
+          ],
+        },
+        {
+          heading: "Πληροφορίες που κάνουν την κράτηση πιο ακριβή",
+          paragraphs: [
+            "Για να οργανωθεί σωστά η μεταφορά, χρειάζονται ορισμένες απλές αλλά ουσιαστικές πληροφορίες: η ημερομηνία και η επιθυμητή ώρα παραλαβής, το ακριβές σημείο στον Πειραιά, ο αριθμός επιβατών, οι αποσκευές και η ώρα της πτήσης. Αν η παραλαβή γίνεται από κρουαζιερόπλοιο, είναι χρήσιμο να αναφέρετε το όνομα του πλοίου και, όπου είναι διαθέσιμο, το τερματικό ή την πύλη αποβίβασης.",
+            "Αν ταξιδεύετε με μικρά παιδιά, ενημερώστε μας εκ των προτέρων για τις ανάγκες καθισμάτων. Αν η πτήση σας αλλάξει ή η αποβίβαση καθυστερήσει, η γρήγορη επικοινωνία επιτρέπει στην υπηρεσία να αξιολογήσει την καλύτερη δυνατή προσαρμογή. Η έγκαιρη κράτηση είναι ιδιαίτερα χρήσιμη από Μάιο έως Οκτώβριο, όταν η ζήτηση για μεταφορές λιμανιού και αεροδρομίου είναι αυξημένη.",
+          ],
+        },
+        {
+          heading: "Πόσο νωρίς πρέπει να φύγω από τον Πειραιά;",
+          paragraphs: [
+            "Η σωστή ώρα εξαρτάται από την πτήση και τις συνθήκες της ημέρας. Υπολογίστε χρόνο για τη διαδρομή, πιθανή κίνηση και την απαιτούμενη άφιξη στο αεροδρόμιο. Για διεθνή πτήση, προτιμήστε ένα άνετο περιθώριο αντί να βασίζεστε στον ελάχιστο θεωρητικό χρόνο.",
+          ],
+        },
+        {
+          heading: "Μπορεί η παραλαβή να γίνει απευθείας από το κρουαζιερόπλοιο;",
+          paragraphs: [
+            "Ναι, εφόσον το σημείο συνάντησης έχει συμφωνηθεί εκ των προτέρων και υπάρχουν διαθέσιμα τα απαραίτητα στοιχεία του πλοίου. Η ξεκάθαρη επικοινωνία είναι ιδιαίτερα σημαντική στο λιμάνι, όπου οι πύλες και οι ροές επιβατών διαφέρουν.",
+          ],
+        },
+        {
+          paragraphs: [
+            "Μια σωστή αναχώρηση από τον Πειραιά ξεκινά πριν καν μπείτε στο όχημα: με μια επιβεβαιωμένη ώρα, άφθονο χώρο για τις αποσκευές και έναν οδηγό που ξέρει ότι κάθε λεπτό πριν από την πτήση σας μετράει.",
+          ],
+        },
+      ],
+    },
+    it: {
+      title: "Trasferimento Privato dal Porto del Pireo",
+      excerpt:
+        "Partite dal Pireo dopo una crociera o un soggiorno al porto? Scoprite perché un trasferimento privato prenotato in anticipo verso l'aeroporto di Atene è il modo più sereno per concludere il viaggio.",
+      imageAlt:
+        "Illustrazione H&A Tours di una Mercedes V-Class che collega il porto del Pireo, la città e l'aeroporto di Atene",
+      metaTitle: "Trasferimento Privato Pireo - Aeroporto di Atene | H&A VIP Transfers",
+      metaDescription:
+        "Prenotate un trasferimento privato dal porto del Pireo all'aeroporto di Atene. Mercedes V-Class, coordinamento per crociere, supporto WhatsApp 24/7.",
+      sections: [
+        {
+          paragraphs: [
+            "Il trasferimento privato dal Pireo all'aeroporto di Atene non è solo l'ultimo tragitto di un viaggio. Per un ospite che parte dopo una crociera, un soggiorno al porto o un incontro di lavoro, è il punto in cui una buona organizzazione fa la differenza tra una partenza tranquilla e lo stress di bagagli, traffico e incertezza.",
+            "Con un veicolo privato prenotato in anticipo, l'autista vi accoglie nel punto d'incontro concordato e il percorso viene adattato all'orario del volo, al numero di passeggeri e ai loro bagagli. L'esperienza rimane privata, confortevole e concentrata su ciò che conta davvero: il vostro tempo.",
+          ],
+        },
+        {
+          heading: "Perché la tratta Pireo - Aeroporto richiede pianificazione",
+          paragraphs: [
+            "Il porto del Pireo e l'aeroporto internazionale di Atene si trovano alle estremità opposte dell'area urbana. La durata del trasferimento varia a seconda dell'ora, del giorno, del traffico e del punto di prelievo esatto. In condizioni normali un trasferimento può durare dai 45 ai 60 minuti, ma le ore di punta, il traffico intenso intorno al porto o lo sbarco di migliaia di passeggeri da una grande nave da crociera possono cambiare tutto.",
+            "Per questo un servizio di qualità non si basa su una stima approssimativa. Tiene conto dell'orario di partenza del volo, dell'orario di arrivo consigliato dalla compagnia aerea, del terminal, dell'eventuale necessità di check-in e delle esigenze specifiche del gruppo. Per i voli internazionali, arrivare presto in aeroporto è di solito la scelta più saggia, soprattutto nella stagione estiva.",
+            "Per i crocieristi, la sfida è spesso diversa. Lo sbarco può concludersi prima o dopo il previsto, e ogni gate del porto ha un accesso differente. Concordare in anticipo la nave, il terminal e il punto d'incontro desiderato riduce al minimo i tempi di attesa ed evita spostamenti inutili con valigie pesanti.",
+          ],
+          imageAlt:
+            "Percorso Google Maps dal porto del Pireo all'aeroporto internazionale di Atene, circa 40 km e 35 minuti via Attiki Odos",
+        },
+        {
+          heading: "Trasferimento privato Pireo - Aeroporto di Atene con il veicolo giusto",
+          paragraphs: [
+            "La scelta del veicolo non riguarda solo l'aspetto. Per una coppia con bagaglio a mano, una berlina di lusso può bastare. Per una famiglia, un gruppo di amici o passeggeri che sbarcano da una crociera con più bagagli, una Mercedes V-Class offre una soluzione molto più pratica: spaziosa, discreta e permette a tutti di viaggiare insieme senza strettezze.",
+            "Il veicolo deve corrispondere al numero reale di passeggeri e bagagli, non solo al numero di posti. Questo dettaglio è particolarmente importante quando ci sono articoli da viaggio voluminosi, un passeggino, attrezzature o più bagagli a persona. Fornire informazioni corrette al momento della prenotazione aiuta a garantire che il trasferimento inizi come dovrebbe, senza cambiamenti dell'ultimo minuto.",
+            "Un trasferimento privato premium offre anche qualcosa che non è scontato con le alternative: spazio personale. Non condividete il veicolo con estranei, non fate fermate intermedie per altri passeggeri e non dovete adattare il vostro programma a un orario di navetta. Il viaggio è esclusivamente vostro, dal punto di prelievo alla consegna in aeroporto.",
+          ],
+        },
+        {
+          heading: "Cosa aspettarsi da un servizio premium",
+          paragraphs: [
+            "Il valore di un trasferimento privato si vede ancora prima che si apra la portiera. La prenotazione deve essere chiara, con dettagli di prelievo confermati, orario, destinazione e contatti. Il giorno del trasferimento, la puntualità dell'autista e la pulizia del veicolo creano il livello di fiducia che un viaggiatore esigente cerca.",
+            "Da H&A VIP Tours, i trasferimenti con Mercedes V-Class sono organizzati come un servizio personale e non come una semplice corsa. Questo significa che il team conosce in anticipo il vostro programma e può gestire cambiamenti o domande via WhatsApp, 24 ore su 24. Per i visitatori che non conoscono Atene o hanno poco tempo, la comunicazione diretta è una parte essenziale dell'esperienza.",
+            "La professionalità non ha bisogno di essere appariscente. Si esprime attraverso un autista cortese e discreto, una guida attenta, aiuto con i bagagli e conoscenza dei percorsi verso l'aeroporto. Per i viaggiatori d'affari, questo crea il momento di tranquillità necessario prima di un volo. Per famiglie e coppie, offre una conclusione più confortevole della vacanza.",
+          ],
+        },
+        {
+          heading: "Trasferimento privato o taxi dal Pireo?",
+          paragraphs: [
+            "Un taxi può essere adatto quando si viaggia da soli, con bagagli minimi e senza particolari pressioni di tempo. Tuttavia, al porto del Pireo la domanda durante gli orari di arrivo di traghetti e crociere può essere elevata. Cercare un veicolo disponibile, fare la fila e l'incertezza sullo spazio per i bagagli non si adattano a ogni piano di viaggio.",
+            "Le navette condivise hanno di solito un costo inferiore, ma prevedono orari fissi, possibili fermate e minore flessibilità. Possono servire gli ospiti che privilegiano il risparmio sopra ogni altra cosa. Al contrario, un trasferimento privato giustifica la scelta quando la priorità è puntualità, comfort, privacy e partenza immediata.",
+            "Non si tratta di un'opzione giusta per tutti. Si tratta di scegliere in base al proprio programma. Se avete un volo di prima mattina, bambini, bagagli importanti, tempi stretti o semplicemente desiderate un livello di servizio più raffinato, la prenotazione anticipata di un veicolo privato offre una tranquillità decisamente maggiore.",
+          ],
+        },
+        {
+          heading: "Informazioni che rendono la prenotazione più precisa",
+          paragraphs: [
+            "Per organizzare correttamente il trasferimento servono alcune informazioni semplici ma essenziali: la data e l'orario di prelievo desiderato, il punto esatto al Pireo, il numero di passeggeri, i bagagli e l'orario del volo. Se il prelievo avviene da una nave da crociera, è utile indicare il nome della nave e, se disponibile, il terminal o il gate di sbarco.",
+            "Se viaggiate con bambini piccoli, informateci in anticipo sulle esigenze di seggiolini. Se il vostro volo cambia o lo sbarco è in ritardo, una comunicazione rapida permette al servizio di valutare il miglior adattamento possibile. La prenotazione anticipata è particolarmente utile da maggio a ottobre, quando la domanda di trasferimenti tra porto e aeroporto è elevata.",
+          ],
+        },
+        {
+          heading: "Quanto tempo prima devo lasciare il Pireo?",
+          paragraphs: [
+            "L'orario giusto dipende dal volo e dalle condizioni del giorno. Prevedete tempo per il tragitto, il possibile traffico e l'arrivo richiesto in aeroporto. Per un volo internazionale, è preferibile avere un margine confortevole piuttosto che affidarsi al tempo minimo teorico.",
+          ],
+        },
+        {
+          heading: "Il prelievo può avvenire direttamente dalla nave da crociera?",
+          paragraphs: [
+            "Sì, a condizione che il punto d'incontro sia stato concordato in anticipo e che siano disponibili i dettagli necessari della nave. Una comunicazione chiara è particolarmente importante al porto, dove i gate e i flussi di passeggeri variano.",
+          ],
+        },
+        {
+          paragraphs: [
+            "Una partenza ben organizzata dal Pireo inizia prima ancora di salire a bordo del veicolo: con un orario confermato, ampio spazio per i bagagli e un autista che sa che ogni minuto prima del vostro volo conta.",
+          ],
+        },
+      ],
+    },
+    es: {
+      title: "Traslado Privado desde el Puerto del Pireo",
+      excerpt:
+        "¿Sale del Pireo después de un crucero o una estancia en el puerto? Descubra por qué un traslado privado reservado con antelación al aeropuerto de Atenas es la forma más tranquila de terminar su viaje.",
+      imageAlt:
+        "Ilustración de H&A Tours con una Mercedes V-Class que conecta el puerto del Pireo, la ciudad y el aeropuerto de Atenas",
+      metaTitle: "Traslado Privado Pireo - Aeropuerto de Atenas | H&A VIP Transfers",
+      metaDescription:
+        "Reserve un traslado privado desde el puerto del Pireo al aeropuerto de Atenas. Mercedes V-Class, coordinación de recogida en cruceros, WhatsApp 24/7.",
+      sections: [
+        {
+          paragraphs: [
+            "El traslado privado del Pireo al aeropuerto de Atenas no es solo el último trayecto de un viaje. Para un huésped que parte después de un crucero, una estancia en el puerto o una reunión de negocios, es el punto donde una buena organización marca la diferencia entre una salida tranquila y el estrés del equipaje, el tráfico y la incertidumbre.",
+            "Con un vehículo privado reservado con antelación, el conductor recoge a los pasajeros en el punto de encuentro acordado y la ruta se adapta a la hora del vuelo, al número de pasajeros y a su equipaje. La experiencia se mantiene privada, cómoda y centrada en lo que realmente importa: su tiempo.",
+          ],
+        },
+        {
+          heading: "Por qué la ruta Pireo - Aeropuerto requiere planificación",
+          paragraphs: [
+            "El puerto del Pireo y el aeropuerto internacional de Atenas se encuentran en extremos opuestos del área urbana. La duración del traslado varía según la hora, el día, el tráfico y el punto exacto de recogida. En condiciones normales, un traslado puede durar entre 45 y 60 minutos, pero las horas punta, el tráfico intenso alrededor del puerto o el desembarque de miles de pasajeros de un gran crucero pueden cambiarlo todo.",
+            "Por eso un servicio de calidad no se basa en una estimación aproximada. Tiene en cuenta la hora de salida del vuelo, la hora de llegada recomendada por la aerolínea, la terminal, la posible necesidad de facturación y los requisitos específicos del grupo. Para vuelos internacionales, llegar temprano al aeropuerto suele ser la opción más acertada, especialmente en temporada de verano.",
+            "Para los pasajeros de cruceros, el desafío suele ser diferente. El desembarque puede terminar antes o después de lo previsto, y cada puerta del puerto tiene un acceso diferente. Acordar con antelación el barco, la terminal y el punto de encuentro deseado minimiza el tiempo de espera y evita desplazamientos innecesarios con maletas pesadas.",
+          ],
+          imageAlt:
+            "Ruta de Google Maps desde el puerto del Pireo hasta el aeropuerto internacional de Atenas, unos 40 km y 35 minutos por Attiki Odos",
+        },
+        {
+          heading: "Traslado privado Pireo - Aeropuerto de Atenas con el vehículo adecuado",
+          paragraphs: [
+            "La elección del vehículo no es solo cuestión de apariencia. Para una pareja con equipaje de mano, una berlina de lujo puede ser suficiente. Para una familia, un grupo de amigos o pasajeros que desembarcan de un crucero con más equipaje, una Mercedes V-Class ofrece una solución mucho más práctica: espaciosa, discreta y permite que todos viajen juntos sin estrecheces.",
+            "El vehículo debe corresponder al número real de pasajeros y equipaje, no solo al número de asientos. Este detalle es especialmente importante cuando hay artículos de viaje voluminosos, un cochecito de bebé, equipamiento o varias maletas por persona. Proporcionar información correcta en el momento de la reserva ayuda a que el traslado comience como debe, sin cambios de última hora.",
+            "Un traslado privado premium también ofrece algo que no siempre está garantizado con las alternativas: espacio personal. No comparte el vehículo con desconocidos, no hace paradas intermedias para otros pasajeros y no necesita adaptar su horario al de un shuttle. El trayecto es exclusivamente suyo, desde el punto de recogida hasta la entrega en el aeropuerto.",
+          ],
+        },
+        {
+          heading: "Qué esperar de un servicio premium",
+          paragraphs: [
+            "El valor de un traslado privado se aprecia incluso antes de que se abra la puerta del vehículo. La reserva debe ser clara, con detalles de recogida confirmados, hora, destino e información de contacto. El día del traslado, la puntualidad del conductor y la limpieza del vehículo crean el nivel de confianza que busca un viajero exigente.",
+            "En H&A VIP Tours, los traslados con Mercedes V-Class se organizan como un servicio personal y no como un simple trayecto. Esto significa que el equipo conoce su programa con antelación y puede gestionar cambios o preguntas a través de WhatsApp, las 24 horas del día. Para los visitantes que no conocen Atenas o tienen tiempo limitado, la comunicación directa es una parte esencial de la experiencia.",
+            "La profesionalidad no necesita ser ostentosa. Se expresa a través de un conductor educado y discreto, una conducción cuidadosa, ayuda con el equipaje y conocimiento de las rutas hacia el aeropuerto. Para los viajeros de negocios, esto crea el momento de tranquilidad que necesitan antes de un vuelo. Para familias y parejas, ofrece un final más cómodo de sus vacaciones.",
+          ],
+        },
+        {
+          heading: "¿Traslado privado o taxi desde el Pireo?",
+          paragraphs: [
+            "Un taxi puede ser adecuado cuando alguien viaja solo, tiene equipaje mínimo y puede esperar sin presión horaria específica. Sin embargo, en el puerto del Pireo la demanda durante los horarios de llegada de barcos y cruceros puede ser alta. Buscar un vehículo disponible, hacer cola y la incertidumbre sobre el espacio para el equipaje no se adaptan a todos los planes de viaje.",
+            "Los shuttles compartidos suelen tener un coste menor, pero implican horarios fijos, posibles paradas y menos flexibilidad. Pueden servir a los huéspedes que priorizan la economía por encima de todo. En cambio, un traslado privado justifica su elección cuando la prioridad es la puntualidad, la comodidad, la privacidad y la salida inmediata.",
+            "No se trata de que una opción sea la correcta para todos. Se trata de elegir según su propio programa. Si tiene un vuelo temprano, niños, equipaje considerable, un margen de tiempo ajustado o simplemente desea un nivel de servicio más refinado, la reserva anticipada de un vehículo privado ofrece una tranquilidad significativamente mayor.",
+          ],
+        },
+        {
+          heading: "Información que hace la reserva más precisa",
+          paragraphs: [
+            "Para organizar correctamente el traslado se necesitan algunos datos simples pero esenciales: la fecha y la hora de recogida deseada, el punto exacto en el Pireo, el número de pasajeros, el equipaje y la hora del vuelo. Si la recogida es desde un crucero, es útil mencionar el nombre del barco y, cuando esté disponible, la terminal o la puerta de desembarque.",
+            "Si viaja con niños pequeños, infórmenos con antelación sobre las necesidades de sillas infantiles. Si su vuelo cambia o el desembarque se retrasa, una comunicación rápida permite al servicio valorar el mejor ajuste posible. La reserva anticipada es especialmente útil de mayo a octubre, cuando la demanda de traslados entre puerto y aeropuerto es mayor.",
+          ],
+        },
+        {
+          heading: "¿Con cuánta antelación debo salir del Pireo?",
+          paragraphs: [
+            "La hora adecuada depende del vuelo y de las condiciones del día. Prevea tiempo para el trayecto, el posible tráfico y la llegada requerida al aeropuerto. Para un vuelo internacional, es preferible contar con un margen cómodo en lugar de confiar en el tiempo mínimo teórico.",
+          ],
+        },
+        {
+          heading: "¿Se puede recoger directamente desde el crucero?",
+          paragraphs: [
+            "Sí, siempre que el punto de encuentro se haya acordado con antelación y se disponga de los datos necesarios del barco. Una comunicación clara es especialmente importante en el puerto, donde las puertas y los flujos de pasajeros varían.",
+          ],
+        },
+        {
+          paragraphs: [
+            "Una salida bien organizada desde el Pireo comienza antes incluso de subir al vehículo: con una hora confirmada, espacio de sobra para el equipaje y un conductor que sabe que cada minuto antes de su vuelo cuenta.",
+          ],
+        },
+      ],
+    },
+    fr: {
+      title: "Transfert Privé depuis le Port du Pirée",
+      excerpt:
+        "Vous quittez le Pirée après une croisière ou un séjour au port ? Découvrez pourquoi un transfert privé réservé à l'avance vers l'aéroport d'Athènes est la façon la plus sereine de terminer votre voyage.",
+      imageAlt:
+        "Illustration H&A Tours d'une Mercedes V-Class reliant le port du Pirée, la ville et l'aéroport d'Athènes",
+      metaTitle: "Transfert Privé Pirée - Aéroport d'Athènes | H&A VIP Transfers",
+      metaDescription:
+        "Réservez un transfert privé du port du Pirée à l'aéroport d'Athènes. Mercedes V-Class, coordination pour les croisières, assistance WhatsApp 24/7.",
+      sections: [
+        {
+          paragraphs: [
+            "Le transfert privé du Pirée à l'aéroport d'Athènes n'est pas seulement le dernier trajet d'un voyage. Pour un voyageur qui repart après une croisière, un séjour au port ou une réunion d'affaires, c'est le moment où une bonne organisation fait la différence entre un départ serein et le stress des bagages, du trafic et de l'incertitude.",
+            "Avec un véhicule privé réservé à l'avance, le chauffeur prend en charge les passagers au point de rendez-vous convenu et l'itinéraire s'adapte à l'heure du vol, au nombre de passagers et à leurs bagages. L'expérience reste privée, confortable et centrée sur ce qui compte vraiment : votre temps.",
+          ],
+        },
+        {
+          heading: "Pourquoi la liaison Pirée - Aéroport demande une planification",
+          paragraphs: [
+            "Le port du Pirée et l'aéroport international d'Athènes se situent aux extrémités opposées de la zone urbaine. La durée du transfert varie selon l'heure, le jour, le trafic et le point de prise en charge exact. Dans des conditions normales, un transfert peut durer environ 45 à 60 minutes, mais les heures de pointe, le trafic dense autour du port ou le débarquement de milliers de passagers d'un grand paquebot peuvent tout changer.",
+            "C'est pourquoi un service de qualité ne repose pas sur une estimation approximative. Il tient compte de l'heure de départ du vol, de l'heure d'arrivée recommandée par la compagnie aérienne, du terminal, de l'éventuel enregistrement et des exigences spécifiques du groupe. Pour les vols internationaux, arriver tôt à l'aéroport est généralement le choix le plus judicieux, surtout en saison estivale.",
+            "Pour les croisiéristes, le défi est souvent différent. Le débarquement peut se terminer plus tôt ou plus tard que prévu, et chaque porte du port a un accès différent. Convenir à l'avance du navire, du terminal et du point de rencontre souhaité minimise le temps d'attente et évite les déplacements inutiles avec de lourdes valises.",
+          ],
+          imageAlt:
+            "Itinéraire Google Maps du port du Pirée à l'aéroport international d'Athènes, environ 40 km et 35 minutes par l'Attiki Odos",
+        },
+        {
+          heading: "Transfert privé Pirée - Aéroport d'Athènes avec le bon véhicule",
+          paragraphs: [
+            "Le choix du véhicule n'est pas qu'une question d'apparence. Pour un couple avec des bagages à main, une berline de luxe peut suffire. Pour une famille, un groupe d'amis ou des passagers débarquant d'une croisière avec plus de bagages, une Mercedes V-Class offre une solution bien plus pratique : spacieuse, discrète, et permettant à tous de voyager ensemble sans être à l'étroit.",
+            "Le véhicule doit correspondre au nombre réel de passagers et de bagages, pas seulement au nombre de sièges. Ce détail est particulièrement important lorsqu'il y a des articles volumineux, une poussette, du matériel ou plusieurs bagages par personne. Fournir des informations correctes lors de la réservation permet de garantir que le transfert démarre comme prévu, sans changements de dernière minute.",
+            "Un transfert privé premium offre aussi quelque chose qui n'est pas toujours acquis avec les alternatives : l'espace personnel. Vous ne partagez pas le véhicule avec des inconnus, vous ne faites pas d'arrêts intermédiaires pour d'autres passagers et vous n'avez pas à adapter votre programme à un horaire de navette. Le trajet vous appartient exclusivement, du point de prise en charge jusqu'au dépôt à l'aéroport.",
+          ],
+        },
+        {
+          heading: "À quoi s'attendre d'un service premium",
+          paragraphs: [
+            "La valeur d'un transfert privé se perçoit avant même que la portière ne s'ouvre. La réservation doit être claire, avec des détails de prise en charge confirmés, l'heure, la destination et les coordonnées. Le jour du transfert, la ponctualité du chauffeur et la propreté du véhicule créent le niveau de confiance que recherche un voyageur exigeant.",
+            "Chez H&A VIP Tours, les transferts en Mercedes V-Class sont organisés comme un service personnel et non comme une simple course. Cela signifie que l'équipe connaît votre programme à l'avance et peut gérer les changements ou questions via WhatsApp, 24 heures sur 24. Pour les visiteurs qui ne connaissent pas Athènes ou disposent de peu de temps, la communication directe est une part essentielle de l'expérience.",
+            "Le professionnalisme n'a pas besoin d'être démonstratif. Il s'exprime à travers un chauffeur poli et discret, une conduite soigneuse, une aide pour les bagages et une connaissance des itinéraires vers l'aéroport. Pour les voyageurs d'affaires, cela crée le moment de calme nécessaire avant un vol. Pour les familles et les couples, cela offre une fin de séjour plus confortable.",
+          ],
+        },
+        {
+          heading: "Transfert privé ou taxi depuis le Pirée ?",
+          paragraphs: [
+            "Un taxi peut convenir lorsque l'on voyage seul, avec un minimum de bagages et sans pression horaire particulière. Cependant, au port du Pirée, la demande aux heures d'arrivée des ferries et des croisières peut être élevée. Chercher un véhicule disponible, faire la queue et l'incertitude sur l'espace pour les bagages ne conviennent pas à tous les plans de voyage.",
+            "Les navettes partagées ont généralement un coût inférieur, mais impliquent des horaires fixes, d'éventuels arrêts et moins de flexibilité. Elles peuvent convenir aux voyageurs qui privilégient l'économie avant tout. À l'inverse, un transfert privé justifie son choix lorsque la priorité est la ponctualité, le confort, l'intimité et le départ immédiat.",
+            "Il ne s'agit pas de dire qu'une option convient à tous. Il s'agit de choisir en fonction de votre propre programme. Si vous avez un vol matinal, des enfants, des bagages importants, un délai serré ou simplement l'envie d'un niveau de service plus raffiné, la réservation anticipée d'un véhicule privé offre une tranquillité d'esprit nettement supérieure.",
+          ],
+        },
+        {
+          heading: "Les informations qui rendent la réservation plus précise",
+          paragraphs: [
+            "Pour organiser correctement le transfert, quelques informations simples mais essentielles sont nécessaires : la date et l'heure de prise en charge souhaitée, le point exact au Pirée, le nombre de passagers, les bagages et l'heure du vol. Si la prise en charge se fait depuis un paquebot de croisière, il est utile de mentionner le nom du navire et, si disponible, le terminal ou la porte de débarquement.",
+            "Si vous voyagez avec de jeunes enfants, informez-nous à l'avance des besoins en sièges. Si votre vol change ou si le débarquement est retardé, une communication rapide permet au service d'évaluer le meilleur ajustement possible. La réservation anticipée est particulièrement utile de mai à octobre, lorsque la demande de transferts entre le port et l'aéroport est élevée.",
+          ],
+        },
+        {
+          heading: "Combien de temps à l'avance dois-je quitter le Pirée ?",
+          paragraphs: [
+            "Le bon horaire dépend du vol et des conditions du jour. Prévoyez du temps pour le trajet, le trafic éventuel et l'arrivée requise à l'aéroport. Pour un vol international, mieux vaut disposer d'une marge confortable plutôt que de compter sur le temps théorique minimum.",
+          ],
+        },
+        {
+          heading: "La prise en charge peut-elle se faire directement depuis le paquebot ?",
+          paragraphs: [
+            "Oui, à condition que le point de rencontre ait été convenu à l'avance et que les informations nécessaires sur le navire soient disponibles. Une communication claire est particulièrement importante au port, où les portes et les flux de passagers varient.",
+          ],
+        },
+        {
+          paragraphs: [
+            "Un départ bien organisé depuis le Pirée commence avant même de monter à bord du véhicule : avec une heure confirmée, un espace généreux pour les bagages et un chauffeur qui sait que chaque minute avant votre vol compte.",
+          ],
+        },
+      ],
+    },
+    de: {
+      title: "Privater Transfer vom Hafen Piräus",
+      excerpt:
+        "Abreise aus Piräus nach einer Kreuzfahrt oder einem Aufenthalt am Hafen? Erfahren Sie, warum ein vorab gebuchter Privattransfer zum Flughafen Athen die entspannteste Art ist, Ihre Reise zu beenden.",
+      imageAlt:
+        "H&A Tours Illustration eines Mercedes V-Class, der den Hafen Piräus, die Stadt und den Flughafen Athen verbindet",
+      metaTitle: "Privater Transfer Piräus - Flughafen Athen | H&A VIP Transfers",
+      metaDescription:
+        "Buchen Sie einen privaten Transfer vom Hafen Piräus zum Flughafen Athen. Mercedes V-Class, Abholkoordination für Kreuzfahrten, WhatsApp-Support 24/7.",
+      sections: [
+        {
+          paragraphs: [
+            "Der private Transfer von Piräus zum Flughafen Athen ist nicht nur die letzte Fahrt einer Reise. Für einen Gast, der nach einer Kreuzfahrt, einem Aufenthalt am Hafen oder einem Geschäftstermin abreist, ist es der Punkt, an dem gute Organisation den Unterschied zwischen einer ruhigen Abreise und Stress mit Gepäck, Verkehr und Unsicherheit ausmacht.",
+            "Mit einem im Voraus gebuchten Privatfahrzeug holt der Fahrer die Gäste am vereinbarten Treffpunkt ab und die Route wird an die Flugzeit, die Anzahl der Passagiere und ihr Gepäck angepasst. Das Erlebnis bleibt privat, komfortabel und konzentriert sich auf das, was wirklich zählt: Ihre Zeit.",
+          ],
+        },
+        {
+          heading: "Warum die Strecke Piräus - Flughafen Planung erfordert",
+          paragraphs: [
+            "Der Hafen von Piräus und der internationale Flughafen Athen liegen an gegenüberliegenden Enden des Stadtgebiets. Die Dauer des Transfers variiert je nach Uhrzeit, Tag, Verkehr und genauem Abholpunkt. Unter normalen Bedingungen kann ein Transfer etwa 45 bis 60 Minuten dauern, aber Stoßzeiten, starker Verkehr rund um den Hafen oder das Ausschiffen tausender Passagiere eines großen Kreuzfahrtschiffs können alles verändern.",
+            "Deshalb basiert ein hochwertiger Service nicht auf einer groben Schätzung. Er berücksichtigt die Abflugzeit, die von der Fluggesellschaft empfohlene Ankunftszeit am Flughafen, das Terminal, den möglichen Check-in-Bedarf und die spezifischen Anforderungen der Gruppe. Bei internationalen Flügen ist eine frühe Ankunft am Flughafen meist die klügste Wahl, besonders in der Sommersaison.",
+            "Für Kreuzfahrtreisende ist die Herausforderung oft eine andere. Die Ausschiffung kann früher oder später als erwartet abgeschlossen sein, und jeder Hafenausgang hat einen anderen Zugang. Die vorherige Absprache von Schiff, Terminal und gewünschtem Treffpunkt minimiert die Wartezeit und verhindert unnötige Wege mit schweren Koffern.",
+          ],
+          imageAlt:
+            "Google-Maps-Route vom Hafen Piräus zum internationalen Flughafen Athen, etwa 40 km und 35 Minuten über die Attiki Odos",
+        },
+        {
+          heading: "Privater Transfer Piräus - Flughafen Athen mit dem richtigen Fahrzeug",
+          paragraphs: [
+            "Die Wahl des Fahrzeugs ist nicht nur eine Frage des Aussehens. Für ein Paar mit Handgepäck mag eine Luxuslimousine ausreichen. Für eine Familie, eine Gruppe von Freunden oder Passagiere, die von einer Kreuzfahrt mit mehr Gepäck ausgeschifft werden, bietet ein Mercedes V-Class eine deutlich praktischere Lösung: geräumig, diskret und ermöglicht allen, gemeinsam zu reisen, ohne sich zu beengen.",
+            "Das Fahrzeug muss der tatsächlichen Anzahl von Passagieren und Gepäckstücken entsprechen, nicht nur der Anzahl der Sitze. Dieses Detail ist besonders wichtig, wenn es sperrige Reiseartikel, einen Kinderwagen, Ausrüstung oder mehrere Gepäckstücke pro Person gibt. Korrekte Angaben bei der Buchung helfen sicherzustellen, dass der Transfer wie vorgesehen beginnt, ohne Änderungen in letzter Minute.",
+            "Ein Premium-Privattransfer bietet außerdem etwas, das bei Alternativen nicht selbstverständlich ist: persönlichen Raum. Sie teilen das Fahrzeug nicht mit Fremden, machen keine Zwischenstopps für andere Passagiere und müssen Ihren Zeitplan nicht an einen Shuttle-Fahrplan anpassen. Die Fahrt gehört ausschließlich Ihnen, vom Abholpunkt bis zur Übergabe am Flughafen.",
+          ],
+        },
+        {
+          heading: "Was Sie von einem Premium-Service erwarten dürfen",
+          paragraphs: [
+            "Der Wert eines privaten Transfers zeigt sich schon bevor sich die Fahrzeugtür öffnet. Die Buchung muss klar sein, mit bestätigten Abholdetails, Uhrzeit, Ziel und Kontaktinformationen. Am Tag des Transfers schaffen die Pünktlichkeit des Fahrers und die Sauberkeit des Fahrzeugs das Vertrauen, das ein anspruchsvoller Reisender sucht.",
+            "Bei H&A VIP Tours werden Transfers mit Mercedes V-Class als persönlicher Service organisiert und nicht als einfache Fahrt. Das bedeutet, das Team kennt Ihren Zeitplan im Voraus und kann Änderungen oder Fragen über WhatsApp bearbeiten, 24 Stunden am Tag. Für Besucher, die Athen nicht kennen oder wenig Zeit haben, ist die direkte Kommunikation ein wesentlicher Teil des Erlebnisses.",
+            "Professionalität muss nicht auffällig sein. Sie zeigt sich durch einen höflichen, diskreten Fahrer, umsichtige Fahrweise, Hilfe mit dem Gepäck und Kenntnis der Routen zum Flughafen. Für Geschäftsreisende schafft dies die ruhige Zeit, die sie vor einem Flug brauchen. Für Familien und Paare bietet es einen komfortableren Abschluss des Urlaubs.",
+          ],
+        },
+        {
+          heading: "Privattransfer oder Taxi ab Piräus?",
+          paragraphs: [
+            "Ein Taxi kann passend sein, wenn jemand allein reist, minimales Gepäck hat und ohne besonderen Zeitdruck warten kann. Am Hafen von Piräus kann die Nachfrage zu den Ankunftszeiten von Fähren und Kreuzfahrtschiffen jedoch hoch sein. Die Suche nach einem verfügbaren Fahrzeug, das Anstehen und die Unsicherheit über den Gepäckraum passen nicht zu jedem Reiseplan.",
+            "Geteilte Shuttles sind in der Regel günstiger, beinhalten aber feste Zeiten, mögliche Zwischenstopps und weniger Flexibilität. Sie können Gäste bedienen, die Sparsamkeit über alles stellen. Ein privater Transfer dagegen rechtfertigt die Wahl, wenn Priorität auf Pünktlichkeit, Komfort, Privatsphäre und sofortiger Abfahrt liegt.",
+            "Es geht nicht darum, dass eine Option für alle richtig ist. Es geht darum, nach dem eigenen Zeitplan zu wählen. Wenn Sie einen frühen Flug haben, Kinder, viel Gepäck, einen knappen Zeitrahmen oder einfach einen gehobeneren Servicestandard wünschen, bietet die Vorausbuchung eines Privatfahrzeugs deutlich mehr Gelassenheit.",
+          ],
+        },
+        {
+          heading: "Informationen, die die Buchung präziser machen",
+          paragraphs: [
+            "Um den Transfer richtig zu organisieren, werden einige einfache, aber wesentliche Angaben benötigt: Datum und gewünschte Abholzeit, der genaue Punkt in Piräus, die Anzahl der Passagiere, das Gepäck und die Flugzeit. Bei Abholung von einem Kreuzfahrtschiff ist es hilfreich, den Namen des Schiffs und, falls verfügbar, das Terminal oder das Ausschiffungsgate anzugeben.",
+            "Wenn Sie mit kleinen Kindern reisen, informieren Sie uns bitte im Voraus über den Bedarf an Kindersitzen. Wenn sich Ihr Flug ändert oder die Ausschiffung sich verzögert, ermöglicht schnelle Kommunikation dem Service, die bestmögliche Anpassung zu bewerten. Eine frühzeitige Buchung ist besonders von Mai bis Oktober sinnvoll, wenn die Nachfrage nach Hafen- und Flughafentransfers erhöht ist.",
+          ],
+        },
+        {
+          heading: "Wie früh sollte ich Piräus verlassen?",
+          paragraphs: [
+            "Die richtige Zeit hängt vom Flug und den Bedingungen des Tages ab. Planen Sie Zeit für die Fahrt, möglichen Verkehr und die erforderliche Ankunft am Flughafen ein. Bei einem internationalen Flug ist ein komfortabler Puffer vorzuziehen, statt sich auf die theoretische Mindestzeit zu verlassen.",
+          ],
+        },
+        {
+          heading: "Ist eine Abholung direkt am Kreuzfahrtschiff möglich?",
+          paragraphs: [
+            "Ja, sofern der Treffpunkt im Voraus vereinbart wurde und die notwendigen Schiffsdaten vorliegen. Klare Kommunikation ist am Hafen besonders wichtig, wo sich Ausgänge und Passagierströme unterscheiden.",
+          ],
+        },
+        {
+          paragraphs: [
+            "Eine gut organisierte Abreise aus Piräus beginnt, bevor Sie überhaupt ins Fahrzeug steigen: mit einer bestätigten Uhrzeit, reichlich Platz für das Gepäck und einem Fahrer, der weiß, dass jede Minute vor Ihrem Flug zählt.",
+          ],
+        },
+      ],
+    },
+    ar: {
+      title: "نقل خاص من ميناء بيرايوس",
+      excerpt:
+        "تغادر من بيرايوس بعد رحلة بحرية أو إقامة في الميناء؟ اكتشف لماذا يُعد النقل الخاص المحجوز مسبقاً إلى مطار أثينا الطريقة الأكثر هدوءاً لإنهاء رحلتك.",
+      imageAlt:
+        "رسم توضيحي من H&A Tours لسيارة مرسيدس V-Class تربط ميناء بيرايوس والمدينة ومطار أثينا",
+      metaTitle: "نقل خاص بيرايوس - مطار أثينا | H&A VIP Transfers",
+      metaDescription:
+        "احجز نقلاً خاصاً من ميناء بيرايوس إلى مطار أثينا. مرسيدس V-Class، تنسيق الاستقبال من السفن السياحية، دعم واتساب على مدار الساعة.",
+      sections: [
+        {
+          paragraphs: [
+            "النقل الخاص من بيرايوس إلى مطار أثينا ليس مجرد الرحلة الأخيرة في السفر. بالنسبة لضيف يغادر بعد رحلة بحرية أو إقامة في الميناء أو اجتماع عمل، إنها النقطة التي تصنع فيها التنظيم الجيد الفرق بين مغادرة هادئة وضغط الأمتعة والازدحام وعدم اليقين.",
+            "مع مركبة خاصة محجوزة مسبقاً، يستلم السائق الضيوف من نقطة اللقاء المتفق عليها وتُكيَّف المسيرة مع وقت الرحلة وعدد الركاب وأمتعتهم. تبقى التجربة خاصة ومريحة ومركزة على ما يهم حقاً: وقتك.",
+          ],
+        },
+        {
+          heading: "لماذا يتطلب مسار بيرايوس - المطار تخطيطاً",
+          paragraphs: [
+            "يقع ميناء بيرايوس ومطار أثينا الدولي في طرفين متقابلين من المنطقة الحضرية. تختلف مدة النقل حسب الوقت واليوم والازدحام ونقطة الاستلام الدقيقة. في الظروف العادية قد يستغرق النقل حوالي 45 إلى 60 دقيقة، لكن ساعات الذروة أو الازدحام الشديد حول الميناء أو نزول آلاف الركاب من سفينة سياحية كبيرة يمكن أن يغير كل شيء.",
+            "لهذا السبب لا تعتمد الخدمة الجيدة على تقدير تقريبي. بل تأخذ في الاعتبار وقت مغادرة الرحلة، والوقت الموصى به من شركة الطيران للوصول إلى المطار، والمبنى، والحاجة المحتملة لإجراءات تسجيل الوصول، ومتطلبات المجموعة الخاصة. للرحلات الدولية، عادة ما يكون الوصول المبكر إلى المطار هو الخيار الأحكم، خاصة خلال موسم الصيف.",
+            "بالنسبة لمسافري الرحلات البحرية، يكون التحدي مختلفاً في كثير من الأحيان. قد تكتمل إجراءات النزول من السفينة أبكر أو متأخراً عن المتوقع، ولكل بوابة في الميناء مدخل مختلف. الاتفاق المسبق على السفينة والمبنى ونقطة اللقاء المطلوبة يقلل وقت الانتظار ويمنع التنقلات غير الضرورية بالحقائب الثقيلة.",
+          ],
+          imageAlt:
+            "مسار خرائط جوجل من ميناء بيرايوس إلى مطار أثينا الدولي، حوالي 40 كم و35 دقيقة عبر أتيكي أودوس",
+        },
+        {
+          heading: "نقل خاص بيرايوس - مطار أثينا بالمركبة المناسبة",
+          paragraphs: [
+            "اختيار المركبة ليس مجرد مسألة مظهر. بالنسبة لزوجين مع أمتعة يد، قد تكفي سيارة سيدان فاخرة. أما لعائلة أو مجموعة أصدقاء أو ركاب ينزلون من رحلة بحرية مع أمتعة أكثر، فإن مرسيدس V-Class تقدم حلاً أكثر عملية بكثير: واسعة وأنيقة وتتيح للجميع السفر معاً دون تكدس.",
+            "يجب أن تتوافق المركبة مع العدد الفعلي للركاب والأمتعة، وليس فقط مع عدد المقاعد. هذا التفصيل مهم بشكل خاص عندما تكون هناك أغراض سفر كبيرة أو عربة أطفال أو معدات أو حقائب متعددة لكل شخص. تقديم معلومات صحيحة عند الحجز يساعد على ضمان بدء النقل كما يجب، دون تغييرات في اللحظة الأخيرة.",
+            "النقل الخاص الفاخر يقدم أيضاً شيئاً ليس مضموناً دائماً مع البدائل: المساحة الشخصية. لا تشارك المركبة مع الغرباء، ولا تتوقف في محطات وسيطة لركاب آخرين، ولا تحتاج إلى تكييف جدولك مع مواعيد النقل الجماعي. الرحلة لك وحدك حصرياً، من نقطة الاستلام حتى التوصيل إلى المطار.",
+          ],
+        },
+        {
+          heading: "ما الذي تتوقعه من خدمة فاخرة",
+          paragraphs: [
+            "تظهر قيمة النقل الخاص حتى قبل أن يُفتح باب المركبة. يجب أن يكون الحجز واضحاً، مع تفاصيل استلام مؤكدة ووقت ووجهة ومعلومات اتصال. في يوم النقل، تصنع دقة السائق ونظافة المركبة مستوى الثقة الذي يبحث عنه المسافر المتطلب.",
+            "في H&A VIP Tours، تُنظَّم عمليات النقل بمرسيدس V-Class كخدمة شخصية وليس كمجرد مشوار. هذا يعني أن الفريق يعرف جدولك مسبقاً ويمكنه التعامل مع التغييرات أو الأسئلة عبر واتساب، على مدار 24 ساعة. للزوار الذين لا يعرفون أثينا أو لديهم وقت محدود، يُعد التواصل المباشر جزءاً أساسياً من التجربة.",
+            "الاحترافية لا تحتاج إلى أن تكون استعراضية. تتجلى من خلال سائق مهذب ورصين، وقيادة حذرة، ومساعدة في الأمتعة، ومعرفة بالطرق المؤدية إلى المطار. بالنسبة لمسافري الأعمال، يوفر هذا الوقت الهادئ الذي يحتاجونه قبل الرحلة. وللعائلات والأزواج، يقدم نهاية أكثر راحة لعطلتهم.",
+          ],
+        },
+        {
+          heading: "نقل خاص أم سيارة أجرة من بيرايوس؟",
+          paragraphs: [
+            "قد تكون سيارة الأجرة مناسبة عندما يسافر الشخص وحده، ولديه أمتعة قليلة، ويمكنه الانتظار دون ضغط زمني محدد. ومع ذلك، في ميناء بيرايوس قد يكون الطلب مرتفعاً خلال أوقات وصول السفن والرحلات البحرية. البحث عن مركبة متاحة والوقوف في الطابور وعدم اليقين بشأن مساحة الأمتعة لا يناسب كل خطة سفر.",
+            "عادة ما تكون خدمات النقل الجماعي المشتركة أقل تكلفة، لكنها تتضمن أوقاتاً ثابتة وتوقفات محتملة ومرونة أقل. يمكن أن تخدم الضيوف الذين يعطون الأولوية للتوفير فوق كل شيء. في المقابل، يبرر النقل الخاص اختياره عندما تكون الأولوية للدقة والراحة والخصوصية والمغادرة الفورية.",
+            "ليست المسألة أن خياراً واحداً يناسب الجميع. بل المسألة اختيار ما يناسب جدولك الخاص. إذا كانت لديك رحلة مبكرة أو أطفال أو أمتعة كبيرة أو إطار زمني ضيق، أو ببساطة ترغب في مستوى خدمة أكثر رقياً، فإن الحجز المسبق لمركبة خاصة يوفر راحة بال أكبر بكثير.",
+          ],
+        },
+        {
+          heading: "معلومات تجعل الحجز أكثر دقة",
+          paragraphs: [
+            "لتنظيم النقل بشكل صحيح، هناك حاجة إلى بعض المعلومات البسيطة لكن الأساسية: التاريخ ووقت الاستلام المطلوب، والنقطة الدقيقة في بيرايوس، وعدد الركاب، والأمتعة، ووقت الرحلة. إذا كان الاستلام من سفينة سياحية، فمن المفيد ذكر اسم السفينة، وحيثما توفر، المبنى أو بوابة النزول.",
+            "إذا كنت تسافر مع أطفال صغار، يرجى إبلاغنا مسبقاً باحتياجات المقاعد. إذا تغيرت رحلتك أو تأخر النزول من السفينة، فإن التواصل السريع يتيح للخدمة تقييم أفضل تعديل ممكن. الحجز المبكر مفيد بشكل خاص من مايو إلى أكتوبر، عندما يرتفع الطلب على النقل بين الميناء والمطار.",
+          ],
+        },
+        {
+          heading: "كم يجب أن أغادر بيرايوس مبكراً؟",
+          paragraphs: [
+            "يعتمد الوقت المناسب على الرحلة وظروف اليوم. خصص وقتاً للرحلة والازدحام المحتمل والوصول المطلوب إلى المطار. للرحلات الدولية، يُفضل أن يكون لديك هامش مريح بدلاً من الاعتماد على الحد الأدنى النظري للوقت.",
+          ],
+        },
+        {
+          heading: "هل يمكن الاستلام مباشرة من السفينة السياحية؟",
+          paragraphs: [
+            "نعم، بشرط أن تكون نقطة اللقاء قد اتُّفق عليها مسبقاً وتوافرت تفاصيل السفينة اللازمة. التواصل الواضح مهم بشكل خاص في الميناء، حيث تختلف البوابات وتدفقات الركاب.",
+          ],
+        },
+        {
+          paragraphs: [
+            "المغادرة المنظمة جيداً من بيرايوس تبدأ قبل أن تصعد إلى المركبة: بوقت مؤكد، ومساحة وافرة للأمتعة، وسائق يعرف أن كل دقيقة قبل رحلتك لها قيمتها.",
+          ],
+        },
+      ],
+    },
+    he: {
+      title: "הסעה פרטית מנמל פיראוס",
+      excerpt:
+        "יוצאים מפיראוס אחרי שייט או שהייה בנמל? גלו למה הסעה פרטית מוזמנת מראש לשדה התעופה של אתונה היא הדרך הרגועה ביותר לסיים את הטיול.",
+      imageAlt:
+        "איור של H&A Tours עם מרצדס V-Class המחברת את נמל פיראוס, העיר ושדה התעופה של אתונה",
+      metaTitle: "הסעה פרטית פיראוס - שדה התעופה אתונה | H&A VIP Transfers",
+      metaDescription:
+        "הזמינו הסעה פרטית מנמל פיראוס לשדה התעופה של אתונה. מרצדס V-Class, תיאום איסוף מאוניות תענוגות, תמיכת וואטסאפ 24/7.",
+      sections: [
+        {
+          paragraphs: [
+            "הסעה פרטית מפיראוס לשדה התעופה של אתונה היא לא רק הנסיעה האחרונה של הטיול. עבור אורח היוצא אחרי שייט, שהייה בנמל או פגישת עסקים, זו הנקודה שבה ארגון נכון עושה את ההבדל בין יציאה רגועה לבין לחץ עם מזוודות, פקקים ואי-ודאות.",
+            "עם רכב פרטי מוזמן מראש, הנהג אוסף את האורחים מנקודת המפגש המוסכמת והמסלול מותאם לשעת הטיסה, למספר הנוסעים ולמטען שלהם. החוויה נשארת פרטית, נוחה וממוקדת במה שבאמת חשוב: הזמן שלכם.",
+          ],
+        },
+        {
+          heading: "למה המסלול פיראוס - שדה התעופה דורש תכנון",
+          paragraphs: [
+            "נמל פיראוס ושדה התעופה הבינלאומי של אתונה ממוקמים בקצוות מנוגדים של האזור העירוני. משך ההסעה משתנה בהתאם לשעה, ליום, לעומס התנועה ולנקודת האיסוף המדויקת. בתנאים רגילים הסעה יכולה להימשך כ-45 עד 60 דקות, אבל שעות שיא, עומס כבד סביב הנמל או ירידה של אלפי נוסעים מאוניית תענוגות גדולה יכולים לשנות הכל.",
+            "לכן שירות איכותי לא מבוסס על הערכה גסה. הוא לוקח בחשבון את שעת יציאת הטיסה, את זמן ההגעה המומלץ של חברת התעופה לשדה, את הטרמינל, את הצורך האפשרי בצ'ק-אין ואת הדרישות הספציפיות של הקבוצה. בטיסות בינלאומיות, הגעה מוקדמת לשדה התעופה היא בדרך כלל הבחירה הנבונה, במיוחד בעונת הקיץ.",
+            "עבור נוסעי שייט, האתגר הוא לעיתים שונה. הירידה מהאונייה עשויה להסתיים מוקדם או מאוחר מהצפוי, ולכל שער בנמל יש גישה שונה. הסכמה מראש על האונייה, הטרמינל ונקודת המפגש הרצויה ממזערת את זמן ההמתנה ומונעת תנועות מיותרות עם מזוודות כבדות.",
+          ],
+          imageAlt:
+            "מסלול גוגל מפס מנמל פיראוס לשדה התעופה הבינלאומי של אתונה, כ-40 ק\"מ ו-35 דקות דרך אטיקי אודוס",
+        },
+        {
+          heading: "הסעה פרטית פיראוס - שדה התעופה אתונה עם הרכב הנכון",
+          paragraphs: [
+            "בחירת הרכב היא לא רק עניין של מראה. לזוג עם כבודת יד, סדאן יוקרתית עשויה להספיק. למשפחה, לקבוצת חברים או לנוסעים היורדים משייט עם יותר מטען, מרצדס V-Class מציעה פתרון פרקטי בהרבה: מרווחת, דיסקרטית ומאפשרת לכולם לנסוע יחד בלי צפיפות.",
+            "הרכב חייב להתאים למספר האמיתי של הנוסעים והמטען, לא רק למספר המושבים. הפרט הזה חשוב במיוחד כשיש פריטי נסיעה גדולים, עגלת תינוק, ציוד או מספר מזוודות לאדם. מסירת מידע נכון בעת ההזמנה עוזרת להבטיח שההסעה תתחיל כראוי, בלי שינויים של הרגע האחרון.",
+            "הסעה פרטית פרימיום מציעה גם משהו שלא תמיד מובן מאליו בחלופות: מרחב אישי. אתם לא חולקים את הרכב עם זרים, לא עוצרים בעצירות ביניים לנוסעים אחרים ולא צריכים להתאים את הלו\"ז שלכם לשאטל. הנסיעה היא שלכם בלבד, מנקודת האיסוף ועד ההורדה בשדה התעופה.",
+          ],
+        },
+        {
+          heading: "מה לצפות משירות פרימיום",
+          paragraphs: [
+            "הערך של הסעה פרטית ניכר עוד לפני שדלת הרכב נפתחת. ההזמנה צריכה להיות ברורה, עם פרטי איסוף מאושרים, שעה, יעד ופרטי קשר. ביום ההסעה, הדייקנות של הנהג וניקיון הרכב יוצרים את רמת הביטחון שמטייל תובעני מחפש.",
+            "ב-H&A VIP Tours, ההסעות עם מרצדס V-Class מאורגנות כשירות אישי ולא כסתם נסיעה. המשמעות היא שהצוות מכיר את הלו\"ז שלכם מראש ויכול לטפל בשינויים או שאלות דרך וואטסאפ, 24 שעות ביממה. למבקרים שלא מכירים את אתונה או שיש להם זמן מוגבל, תקשורת ישירה היא חלק חיוני מהחוויה.",
+            "מקצועיות לא צריכה להיות ראוותנית. היא מתבטאת בנהג אדיב ודיסקרטי, בנהיגה זהירה, בעזרה עם המטען ובידיעת המסלולים לשדה התעופה. לאנשי עסקים, זה יוצר את הזמן השקט שהם צריכים לפני טיסה. למשפחות ולזוגות, זה מציע סיום נוח יותר לחופשה.",
+          ],
+        },
+        {
+          heading: "הסעה פרטית או מונית מפיראוס?",
+          paragraphs: [
+            "מונית יכולה להתאים כשמישהו נוסע לבד, עם מינימום מטען ויכול לחכות בלי לחץ זמן מסוים. עם זאת, בנמל פיראוס הביקוש בשעות הגעת אוניות ושייט יכול להיות גבוה. חיפוש רכב זמין, עמידה בתור ואי-ודאות לגבי מקום למטען לא מתאימים לכל תוכנית נסיעה.",
+            "שאטלים משותפים בדרך כלל זולים יותר, אבל כוללים שעות קבועות, עצירות אפשריות ופחות גמישות. הם יכולים לשרת אורחים ששמים חיסכון מעל הכל. לעומת זאת, הסעה פרטית מצדיקה את הבחירה כשהעדיפות היא דייקנות, נוחות, פרטיות ויציאה מיידית.",
+            "לא מדובר בכך שאופציה אחת מתאימה לכולם. מדובר בבחירה לפי הלו\"ז שלכם. אם יש לכם טיסה מוקדמת, ילדים, מטען משמעותי, מסגרת זמן צפופה או פשוט רצון ברמת שירות מעודנת יותר, הזמנה מראש של רכב פרטי מציעה שקט נפשי גדול בהרבה.",
+          ],
+        },
+        {
+          heading: "מידע שהופך את ההזמנה למדויקת יותר",
+          paragraphs: [
+            "כדי לארגן את ההסעה כראוי, נדרש מידע פשוט אך חיוני: התאריך ושעת האיסוף הרצויה, הנקודה המדויקת בפיראוס, מספר הנוסעים, המטען ושעת הטיסה. אם האיסוף הוא מאוניית תענוגות, כדאי לציין את שם האונייה, ובמידה וזמין, את הטרמינל או שער הירידה.",
+            "אם אתם נוסעים עם ילדים קטנים, עדכנו אותנו מראש לגבי צרכי מושבי בטיחות. אם הטיסה משתנה או הירידה מהאונייה מתעכבת, תקשורת מהירה מאפשרת לשירות להעריך את ההתאמה הטובה ביותר האפשרית. הזמנה מוקדמת שימושית במיוחד ממאי עד אוקטובר, כשהביקוש להסעות נמל ושדה תעופה מוגבר.",
+          ],
+        },
+        {
+          heading: "כמה מוקדם כדאי לצאת מפיראוס?",
+          paragraphs: [
+            "השעה הנכונה תלויה בטיסה ובתנאי היום. הקצו זמן לנסיעה, לפקקים אפשריים ולהגעה הנדרשת לשדה התעופה. בטיסה בינלאומית, עדיף שיהיה מרווח נוח מאשר להסתמך על הזמן התיאורטי המינימלי.",
+          ],
+        },
+        {
+          heading: "אפשר לאסוף ישירות מאוניית התענוגות?",
+          paragraphs: [
+            "כן, בתנאי שנקודת המפגש סוכמה מראש ופרטי האונייה הדרושים זמינים. תקשורת ברורה חשובה במיוחד בנמל, שבו השערים וזרמי הנוסעים משתנים.",
+          ],
+        },
+        {
+          paragraphs: [
+            "יציאה מסודרת מפיראוס מתחילה עוד לפני שאתם נכנסים לרכב: עם שעה מאושרת, שפע מקום למטען ונהג שיודע שכל דקה לפני הטיסה נחשבת.",
+          ],
+        },
+      ],
+    },
+  },
 };
