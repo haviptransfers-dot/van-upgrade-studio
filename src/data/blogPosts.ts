@@ -13,7 +13,20 @@ export interface BlogSection {
   image?: string; // inline image shown inside the section
   imageAlt?: string;
 }
-...
+
+export interface BlogPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  image: string;
+  imageAlt: string;
+  date: string; // ISO
+  metaTitle: string;
+  metaDescription: string;
+  sections: BlogSection[];
+}
+
+/** Returns the post with localized fields for `lang`, falling back to the base (English) content. */
 export function localizePost(post: BlogPost, lang: string): BlogPost {
   const base = lang?.split("-")[0];
   const tr: BlogPostTranslation | undefined =
