@@ -1,6 +1,8 @@
 import tourAcropolis from "@/assets/tour-acropolis.webp";
 import athensAirportHotelTransfer from "@/assets/athens-airport-hotel-transfer.webp";
 import mercedesVClassChauffeurAthens from "@/assets/mercedes-v-class-chauffeur-athens.webp";
+import piraeusPortAirportTransfer from "@/assets/piraeus-port-airport-transfer.webp";
+import piraeusAirportRouteMap from "@/assets/piraeus-airport-route-map.webp";
 import { blogPostTranslations, type BlogPostTranslation } from "./blogPostTranslations";
 
 export interface BlogSection {
@@ -8,6 +10,8 @@ export interface BlogSection {
   subheading?: string; // H3
   paragraphs?: string[];
   bullets?: string[];
+  image?: string; // inline image shown inside the section
+  imageAlt?: string;
 }
 
 export interface BlogPost {
@@ -29,7 +33,13 @@ export function localizePost(post: BlogPost, lang: string): BlogPost {
     blogPostTranslations[post.slug]?.[lang] ??
     (base ? blogPostTranslations[post.slug]?.[base] : undefined);
   if (!tr) return post;
-  return { ...post, ...tr };
+  // Translated sections don't carry images: inherit them from the base sections by index.
+  const sections = tr.sections.map((s, i) => ({
+    ...s,
+    image: s.image ?? post.sections[i]?.image,
+    imageAlt: s.imageAlt ?? post.sections[i]?.imageAlt,
+  }));
+  return { ...post, ...tr, sections };
 }
 
 export const WHATSAPP_URL = "https://wa.me/306949393700";
@@ -220,6 +230,86 @@ export const blogPosts: BlogPost[] = [
           "The most useful booking request includes the travel date, pickup and drop-off locations, number of passengers, luggage estimate, flight or vessel details when relevant, and any child-seat requirements. For private tours, it also helps to share the preferred destinations, available hours, and whether the day should emphasize history, scenery, shopping, dining, or a relaxed mix.",
           "Direct 24/7 WhatsApp access is especially helpful when plans change during travel. A delayed flight, updated hotel address, or revised port timing can be addressed quickly with a clear conversation. H&A VIP Tours approaches these requests as part of guest care, not an interruption to the service.",
           "For the best result, reserve the Mercedes V-Class as soon as your core itinerary is confirmed, particularly during high-demand travel periods. Then allow the transfer to become the quiet, well-organized part of your Athens stay: a private space between the places you came to enjoy.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "private-transfer-piraeus-port-to-athens-airport",
+    title: "Private Transfer from Piraeus Port",
+    excerpt:
+      "Departing from Piraeus after a cruise or a stay at the port? Discover why a pre-booked private transfer to Athens Airport is the calmest way to end your trip.",
+    image: piraeusPortAirportTransfer,
+    imageAlt:
+      "Stylized H&A Tours illustration of a Mercedes V-Class connecting Piraeus port, the city and Athens Airport",
+    date: "2026-09-05",
+    metaTitle: "Private Transfer from Piraeus Port to Athens Airport | H&A VIP Transfers",
+    metaDescription:
+      "Book a private transfer from Piraeus Port to Athens Airport. Mercedes V-Class, cruise pickup coordination, 24/7 WhatsApp support, fixed scheduling.",
+    sections: [
+      {
+        paragraphs: [
+          "Private transfer from Piraeus to Athens Airport is not just the last ride of a trip. For a guest departing after a cruise, a stay at the port or a business meeting, it is the point where proper organization makes the difference between a calm departure and stress with luggage, traffic and uncertainty.",
+          "With a pre-booked private vehicle, the driver picks up guests from the agreed meeting point and the route is adapted to the flight time, the number of passengers and their luggage. The experience remains private, comfortable and focused on what truly matters: your time.",
+        ],
+      },
+      {
+        heading: "Why the Piraeus - Airport route requires planning",
+        paragraphs: [
+          "The Port of Piraeus and Athens International Airport are located at opposite ends of the urban area. The duration of the transfer varies depending on the time, day, traffic and the exact pick-up point. Under normal conditions, a transfer can take about 45 to 60 minutes, but peak hours, heavy traffic around the port or a large cruise ship disembarking thousands of passengers can change everything.",
+          "That's why a quality service is not based on a rough estimate. It takes into account the flight departure time, the airline's recommended arrival time at the airport, the terminal, the potential need for check-in and the specific requirements of the group. For international flights, arriving at the airport early is usually the wisest choice, especially during the summer season.",
+          "For cruise travelers, the challenge is often different. Disembarkation may be completed earlier or later than expected, while each gate of the port has different access. Agreeing in advance on the ship, the terminal and the desired meeting point minimizes waiting time and prevents unnecessary moves with heavy suitcases.",
+        ],
+        image: piraeusAirportRouteMap,
+        imageAlt:
+          "Google Maps route from Piraeus Port to Athens International Airport, about 40 km and 35 minutes via Attiki Odos",
+      },
+      {
+        heading: "Private Piraeus - Athens Airport transfer with the right vehicle",
+        paragraphs: [
+          "The choice of vehicle is not just about appearance. For a couple with carry-on luggage, a luxury sedan may be enough. For a family, a group of friends or passengers disembarking from a cruise with more luggage, a Mercedes V-Class offers a much more practical solution: spacious, discreet, and allowing everyone to travel together without being cramped.",
+          "The vehicle must correspond to the actual number of passengers and luggage, not just the number of seats. This detail is particularly important when there are large travel items, a baby stroller, equipment or multiple pieces of luggage per person. Providing correct information at the time of booking helps ensure the transfer starts as it should, without last-minute changes.",
+          "A premium private transfer also offers something that is not always a given with alternatives: personal space. You don't share the vehicle with strangers, you don't make intermediate stops for other passengers and you don't need to adapt your schedule to a shuttle timetable. The ride is exclusively yours, from the pick-up point to drop-off at the airport.",
+        ],
+      },
+      {
+        heading: "What to expect from a premium service",
+        paragraphs: [
+          "The value of a private transfer is evident even before the vehicle door opens. The booking needs to be clear, with confirmed pick-up details, time, destination and contact information. On the day of the transfer, the driver's punctuality and the cleanliness of the vehicle create the level of confidence a demanding traveler is looking for.",
+          "At H&A VIP Tours, transfers with Mercedes V-Class are organized as a personal service and not just a simple ride. This means the team knows your schedule in advance and can handle changes or questions via WhatsApp, 24 hours a day. For visitors who do not know Athens or have limited time, direct communication is an essential part of the experience.",
+          "Professionalism does not need to be showy. It is expressed through a polite, discreet driver, careful driving, help with luggage and knowledge of the routes to the airport. For business travelers, this creates the quiet time they need before a flight. For families and couples, it offers a more comfortable end to their holiday.",
+        ],
+      },
+      {
+        heading: "Private transfer or taxi from Piraeus?",
+        paragraphs: [
+          "A taxi can be suitable when someone is traveling alone, has minimal luggage and can wait without specific time pressure. However, at the port of Piraeus demand during ship and cruise arrival times can be high. Searching for an available vehicle, queuing and uncertainty about luggage space do not suit every travel plan.",
+          "Shared shuttles usually have a lower cost, but involve fixed times, possible stops and less flexibility. They can serve guests who prioritize economy above all else. In contrast, a private transfer justifies its choice when priority is punctuality, comfort, privacy and immediate departure.",
+          "The point is not that one option is right for everyone. It is about choosing based on your own schedule. If you have an early flight, children, significant luggage, a tight timeframe or simply desire a more refined level of service, pre-booking a private vehicle offers significantly greater peace of mind.",
+        ],
+      },
+      {
+        heading: "Information that makes the booking more accurate",
+        paragraphs: [
+          "To organize the transfer properly, some simple but essential information is needed: the date and desired pick-up time, the exact point in Piraeus, the number of passengers, luggage and flight time. If pick-up is from a cruise ship, it is useful to mention the name of the ship and, where available, the terminal or disembarkation gate.",
+          "If you are traveling with small children, please inform us in advance about seating needs. If your flight changes or disembarkation is delayed, quick communication allows the service to assess the best possible adjustment. Early booking is particularly useful from May to October, when demand for port and airport transfers is increased.",
+        ],
+      },
+      {
+        heading: "How early should I leave Piraeus?",
+        paragraphs: [
+          "The right time depends on the flight and the conditions of the day. Allow time for the journey, possible traffic and the required arrival at the airport. For an international flight, it is preferable to have a comfortable margin rather than relying on the minimum theoretical time.",
+        ],
+      },
+      {
+        heading: "Can pick-up be done directly from the cruise ship?",
+        paragraphs: [
+          "Yes, provided that the meeting point has been agreed in advance and the necessary ship details are available. Clear communication is particularly important at the port, where gates and passenger flows vary.",
+        ],
+      },
+      {
+        paragraphs: [
+          "A proper departure from Piraeus starts before you get into the vehicle: with a confirmed time, plenty of space for luggage and a driver who knows that every minute before your flight counts.",
         ],
       },
     ],

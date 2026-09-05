@@ -102,6 +102,15 @@ const BlogPost = () => {
                   ))}
                 </ul>
               )}
+              {section.image && (
+                <img
+                  src={section.image}
+                  alt={section.imageAlt ?? ""}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full rounded-lg shadow-xl mt-6 border border-border"
+                />
+              )}
             </section>
           ))}
         </article>
