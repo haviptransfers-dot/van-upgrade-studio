@@ -1,6 +1,8 @@
 import tourAcropolis from "@/assets/tour-acropolis.webp";
 import athensAirportHotelTransfer from "@/assets/athens-airport-hotel-transfer.webp";
 import mercedesVClassChauffeurAthens from "@/assets/mercedes-v-class-chauffeur-athens.webp";
+import piraeusPortAirportTransfer from "@/assets/piraeus-port-airport-transfer.webp";
+import piraeusAirportRouteMap from "@/assets/piraeus-airport-route-map.webp";
 import { blogPostTranslations, type BlogPostTranslation } from "./blogPostTranslations";
 
 export interface BlogSection {
@@ -8,28 +10,23 @@ export interface BlogSection {
   subheading?: string; // H3
   paragraphs?: string[];
   bullets?: string[];
+  image?: string; // inline image shown inside the section
+  imageAlt?: string;
 }
-
-export interface BlogPost {
-  slug: string;
-  title: string;
-  excerpt: string;
-  image: string;
-  imageAlt: string;
-  date: string; // ISO
-  metaTitle: string;
-  metaDescription: string;
-  sections: BlogSection[];
-}
-
-/** Returns the post with localized fields for `lang`, falling back to the base (English) content. */
+...
 export function localizePost(post: BlogPost, lang: string): BlogPost {
   const base = lang?.split("-")[0];
   const tr: BlogPostTranslation | undefined =
     blogPostTranslations[post.slug]?.[lang] ??
     (base ? blogPostTranslations[post.slug]?.[base] : undefined);
   if (!tr) return post;
-  return { ...post, ...tr };
+  // Translated sections don't carry images: inherit them from the base sections by index.
+  const sections = tr.sections.map((s, i) => ({
+    ...s,
+    image: s.image ?? post.sections[i]?.image,
+    imageAlt: s.imageAlt ?? post.sections[i]?.imageAlt,
+  }));
+  return { ...post, ...tr, sections };
 }
 
 export const WHATSAPP_URL = "https://wa.me/306949393700";
