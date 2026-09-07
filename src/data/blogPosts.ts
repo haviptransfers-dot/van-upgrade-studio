@@ -5,6 +5,8 @@ import piraeusPortAirportTransfer from "@/assets/piraeus-port-airport-transfer.w
 import piraeusAirportRouteMap from "@/assets/piraeus-airport-route-map.webp";
 import piraeusCruiseTransfer from "@/assets/piraeus-cruise-transfer.webp";
 import piraeusCruiseRouteMap from "@/assets/piraeus-cruise-route-map.webp";
+import athensPrivateDriverTour from "@/assets/athens-private-driver-tour.webp";
+import athensHistoricCenterMap from "@/assets/athens-historic-center-map.webp";
 import { blogPostTranslations, type BlogPostTranslation } from "./blogPostTranslations";
 
 export interface BlogSection {
@@ -388,6 +390,85 @@ export const blogPosts: BlogPost[] = [
       {
         paragraphs: [
           "Η αποβίβαση από μια κρουαζιέρα είναι ήδη μια μετάβαση ανάμεσα σε δύο ταξιδιωτικές εμπειρίες. Όταν η μετακίνησή σας από τον Πειραιά έχει οργανωθεί με το σωστό όχημα, σαφή επικοινωνία και χρόνο προσαρμοσμένο στο πρόγραμμά σας, μπορείτε να αφήσετε το λιμάνι με την ηρεμία που αξίζει στις διακοπές σας.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "athens-private-tour-with-driver",
+    title: "Private Tour of Athens with Driver: Discover the City in a Mercedes V-Class",
+    excerpt: "A planned private tour with a driver turns a busy day in Athens into a private experience built around your priorities — professional chauffeur, premium vehicle, flexible itinerary.",
+    image: athensPrivateDriverTour,
+    imageAlt: "H&A Tours Ltd illustration — Athens historic center private tour with a black Mercedes V-Class, the Parthenon and Lycabettus Hill at sunset",
+    date: "2026-09-07",
+    metaTitle: "Private Tour of Athens with Driver | Mercedes V-Class | H&A VIP Tours",
+    metaDescription: "Discover Athens at your own pace with a private tour and professional chauffeur in a luxury Mercedes V-Class. Custom itinerary, hotel & cruise terminal pickup, child seats on request.",
+    sections: [
+      {
+        paragraphs: [
+          "Athens rewards travelers who can move at their own pace. A planned private tour with driver turns a busy day of reservations, historic sites, viewpoints, and neighborhood stops into a private experience built around your priorities. Rather than organizing each movement separately, you have a professional chauffeur, a premium vehicle, and an itinerary that can adjust when the day calls for it.",
+          "For couples, families, small groups, cruise guests, and business travelers, the real value is not simply transportation between landmarks. It is the confidence that your day begins on time, luggage is accommodated, the vehicle remains comfortable between stops, and your schedule belongs to you.",
+        ],
+      },
+      {
+        heading: "What a Private Athens Tour With a Driver Offers",
+        paragraphs: [
+          "A private tour with a driver is designed for travelers who want Athens to feel organized without feeling rushed. Your chauffeur collects you directly from your hotel, residence, cruise terminal, or another agreed location. From there, the route follows the plan you have made - with room for sensible adjustments along the way.",
+          "A Mercedes V-Class is especially well suited to this style of touring. Its spacious cabin allows guests to travel together comfortably, with room for day bags, shopping, strollers, and the luggage that often accompanies a hotel change or a port connection. Families can request child and baby seats in advance, so the journey is prepared for every passenger from the start.",
+          "The service is private from pickup through final drop-off. There is no need to coordinate with other travelers' timing or make every stop fit a fixed route. If you would like more time in Plaka, prefer a relaxed lunch near the coast, or need to return to your hotel before an evening reservation, your transport plan can reflect that.",
+        ],
+      },
+      {
+        heading: "A Private Itinerary, Not a Rigid Schedule",
+        paragraphs: [
+          "Athens has a remarkable concentration of essential places, but fitting them into one day requires practical planning. The Acropolis area, Acropolis Museum, Ancient Agora, Roman Agora, Panathenaic Stadium, Lycabettus Hill, Syntagma Square, and the neighborhoods below the Acropolis can all be part of a custom tour. The right combination depends on your available hours, mobility needs, interests, and pace.",
+          "A half-day private outing works well when your time in Athens is limited. It can focus on key city highlights and scenic photo stops before returning you to your hotel, cruise terminal, or business appointment. A full-day service gives more flexibility for museum visits, lunch, coastal views, and destinations beyond the city center, such as Cape Sounion and the Temple of Poseidon.",
+          "The benefit of a chauffeur-driven experience is that the time between locations is managed professionally. Athens is a city where walking can be rewarding, but steep streets, summer heat, crowded areas, and distance between certain sites can change how enjoyable a day feels. Your vehicle provides a cool, comfortable place to return to between visits.",
+        ],
+        image: athensHistoricCenterMap,
+        imageAlt: "Google Maps route of the Athens Historic Center Tour — 5.6 km loop with 6 stops: Acropolis, Plaka, Monastiraki, Syntagma and Panathenaic Stadium",
+      },
+      {
+        subheading: "Driver Service and Licensed Site Guiding",
+        paragraphs: [
+          "A driver and a licensed tour guide fulfill different roles, and knowing the difference helps you plan the right experience. Your professional chauffeur focuses on safe, punctual, and discreet private transportation, route coordination, and a well-managed itinerary. For guests who want detailed historical interpretation inside archaeological sites or museums, a licensed guide may be the appropriate addition.",
+          "Some travelers prefer the freedom to explore independently once they arrive at each location. Others want a guide to bring the monuments, mythology, and history into sharper focus. Both approaches work well. The best choice depends on whether your day is primarily about efficient sightseeing, deeper cultural context, or a balance of both.",
+        ],
+      },
+      {
+        heading: "When a Private Tour Makes the Most Sense",
+        paragraphs: [
+          "Private touring is particularly useful on arrival and departure days. If you land early and cannot check in immediately, a thoughtfully paced Athens tour can make productive use of those hours before your hotel transfer. On departure day, the same approach can work around a later flight, with luggage remaining securely in the vehicle while you enjoy a final visit or lunch.",
+          "Cruise passengers also benefit from a service built around port timing. A private driver can meet you at the terminal, follow a schedule that respects your return time, and bring you back with a comfortable margin before boarding. For small groups, traveling in one Mercedes V-Class also keeps the experience together rather than splitting the party across vehicles.",
+          "Business travelers may not need a full sightseeing program, yet often appreciate the same level of planning. A private vehicle can combine a hotel pickup, a meeting transfer, a short city orientation, and a precise airport or port departure. Privacy, presentation, and punctuality matter when every part of the day is scheduled.",
+        ],
+      },
+      {
+        heading: "How to Build the Right Day in Athens",
+        paragraphs: [
+          "Start with the moments that cannot move. These may include a timed Acropolis entry, a restaurant reservation, cruise boarding, a meeting, or an airport departure. Once these anchors are in place, the rest of the tour can be arranged around realistic travel time and the rhythm you prefer.",
+          "Next, decide what you do not want to compromise on. For some visitors, that is a morning at the Acropolis before the day becomes warmer. For others, it is panoramic views from Lycabettus Hill, a long lunch in a favorite neighborhood, or a sunset journey toward the Athenian Riviera. A custom itinerary should protect those priorities rather than try to include every landmark.",
+          "It is also worth allowing breathing room. A tightly packed plan may look efficient on paper, but Athens is best enjoyed with time to pause for photos, coffee, shopping, or an unexpected view worth lingering over. A private driver gives you the flexibility to make those decisions without disrupting the entire day.",
+        ],
+      },
+      {
+        subheading: "Details to Share When Booking",
+        paragraphs: [
+          "Clear information creates a better experience. Provide your pickup address, preferred start time, passenger count, luggage needs, and any child-seat requirements. If you have timed tickets or an onward flight, ferry, or port appointment, include those details as well.",
+          "You can also share the style of day you want: landmark-focused, museum-centered, family-friendly, scenic, or relaxed. This helps shape sensible routing and avoids spending valuable time moving back and forth across the city. For travelers arriving from abroad, direct 24/7 WhatsApp communication is useful for confirming details quickly and managing last-minute changes with confidence.",
+        ],
+      },
+      {
+        heading: "Comfort Is Part of the Experience",
+        paragraphs: [
+          "The difference between a standard sightseeing day and a premium private tour is often felt in the intervals. It is the ease of being met at the right place, the space to settle into a clean Mercedes V-Class, and the reassurance of having an experienced local chauffeur handling the route while you focus on Athens.",
+          "That level of service is especially valuable during warm months, when a comfortable vehicle between outdoor sites can make a full day more enjoyable. It also matters for multigenerational families, guests with limited mobility, and travelers carrying luggage between accommodations. Luxury in this setting is practical: more space, more privacy, and less friction around each transition.",
+          "H&A VIP Tours arranges premium private transfers and custom Athens tours for guests who want this experience to feel straightforward from the first message to the final drop-off. The emphasis is on a polished, reliable service that respects your time while leaving room for the Athens you came to see.",
+        ],
+      },
+      {
+        paragraphs: [
+          "A well-planned private day should leave you with more than a list of places visited. It should give you the time to look up at the Acropolis, stay a little longer over lunch, and reach your next destination feeling composed rather than hurried.",
         ],
       },
     ],
