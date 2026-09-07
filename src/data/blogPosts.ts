@@ -5,6 +5,8 @@ import piraeusPortAirportTransfer from "@/assets/piraeus-port-airport-transfer.w
 import piraeusAirportRouteMap from "@/assets/piraeus-airport-route-map.webp";
 import piraeusCruiseTransfer from "@/assets/piraeus-cruise-transfer.webp";
 import piraeusCruiseRouteMap from "@/assets/piraeus-cruise-route-map.webp";
+import athensPrivateDriverTour from "@/assets/athens-private-driver-tour.webp";
+import athensHistoricCenterMap from "@/assets/athens-historic-center-map.webp";
 import { blogPostTranslations, type BlogPostTranslation } from "./blogPostTranslations";
 
 export interface BlogSection {
