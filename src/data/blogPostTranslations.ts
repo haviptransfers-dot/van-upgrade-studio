@@ -2844,4 +2844,371 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       ],
     },
   },
+  "private-delphi-day-trip-from-athens": {
+    el: {
+      title: "Ιδιωτική Ημερήσια Εκδρομή στους Δελφούς από την Αθήνα με Mercedes V-Class",
+      excerpt: "Μια ολόκληρη μέρα στην κεντρική Ελλάδα, στις πλαγιές του Παρνασσού. Παραλαβή από το ξενοδοχείο, πολυτελής Mercedes V-Class και χαλαρό πρόγραμμα με Δελφούς, μουσείο και Αράχωβα.",
+      imageAlt: "Πολύχρωμη εικονογράφηση μαύρης Mercedes V-Class σε ορεινό δρόμο προς το αρχαίο ιερό των Δελφών κάτω από τον Παρνασσό στο ηλιοβασίλεμα",
+      metaTitle: "Ιδιωτική Εκδρομή στους Δελφούς από την Αθήνα – Mercedes V-Class | H&A VIP Tours",
+      metaDescription: "Ιδιωτική ημερήσια εκδρομή με οδηγό από την Αθήνα στους Δελφούς με Mercedes V-Class. Παραλαβή από ξενοδοχείο, στάση στην Αράχωβα, ευέλικτο ωράριο. Κράτηση WhatsApp 24/7.",
+      sections: [
+        { paragraphs: [
+          "Η διαδρομή προς τους Δελφούς δεν είναι απλώς μια μεταφορά από την Αθήνα σε έναν αρχαιολογικό χώρο. Είναι μια ολόκληρη μέρα στην κεντρική Ελλάδα, με ορεινούς δρόμους, εναλλασσόμενα τοπία και έναν προορισμό που αξίζει χρόνο χωρίς βιασύνη. Ένα ιδιωτικό πρόγραμμα προσφέρει τη σωστή ισορροπία άνεσης, ρυθμού και προσωπικής εξυπηρέτησης.",
+          "Οι Δελφοί βρίσκονται στις πλαγιές του Παρνασσού, περίπου 185 χιλιόμετρα βορειοδυτικά της Αθήνας. Η διαδρομή είναι αρκετά μεγάλη ώστε η ποιότητα του οχήματος, ο χώρος και ο χρονισμός να καθορίζουν την εμπειρία. Μια premium ιδιωτική μεταφορά με Mercedes V-Class επιτρέπει σε ζευγάρια, οικογένειες, μικρές ομάδες και επαγγελματίες να ταξιδεύουν με ιδιωτικότητα και να κάνουν τη μέρα δική τους.",
+        ]},
+        { heading: "Γιατί μια ιδιωτική εκδρομή στους Δελφούς είναι διαφορετική", paragraphs: [
+          "Οι Δελφοί περιγράφονται συχνά ως το πνευματικό κέντρο του αρχαίου ελληνικού κόσμου, αλλά το τοπίο είναι εξίσου αξέχαστο με τα ερείπια. Το ιερό ατενίζει την κοιλάδα του Πλειστού και τα βουνά πέρα από αυτήν. Φτάνοντας ξεκούραστοι έχετε τον χρόνο να απολαύσετε τον Ναό του Απόλλωνα, την Ιερά Οδό, το θέατρο και το αρχαιολογικό μουσείο χωρίς να τρέχετε.",
+          "Μια ιδιωτική ημερήσια εκδρομή είναι ιδιαίτερα πολύτιμη για επισκέπτες στο κέντρο της Αθήνας, στην Αθηναϊκή Ριβιέρα ή κοντά στον Πειραιά πριν ή μετά από κρουαζιέρα. Ο οδηγός σας σας παραλαμβάνει απευθείας από το ξενοδοχείο, την κατοικία ή το συμφωνημένο σημείο συνάντησης, χωρίς μεταφορές σε στάδια και χωρίς σταθερό ομαδικό πρόγραμμα.",
+          "Η Mercedes V-Class ταιριάζει ιδανικά στη διαδρομή. Η ευρύχωρη καμπίνα προσφέρει άνετα καθίσματα, κλιματισμό και χώρο για τσάντες ημέρας, φωτογραφικές μηχανές, καρότσια και προσωπικά αντικείμενα. Οι οικογένειες μπορούν να ζητήσουν παιδικά καθίσματα εκ των προτέρων.",
+        ]},
+        { heading: "Η διαδρομή Αθήνα – Δελφοί", paragraphs: [
+          "Η συνηθέστερη διαδρομή φεύγει από την Αθήνα μέσω της Εθνικής Οδού Α1 προς τη βόρεια Αττική και συνεχίζει μέσω Θήβας και Λιβαδειάς, ανεβαίνοντας προς Αράχωβα και Δελφούς. Ο χρόνος ταξιδιού είναι συνήθως 2,5 έως 3 ώρες ανά κατεύθυνση, ανάλογα με το σημείο παραλαβής, την κίνηση και τις στάσεις.",
+          "Το πρώτο τμήμα είναι γρήγορη οδήγηση σε αυτοκινητόδρομο, ενώ η προσέγγιση στους Δελφούς γίνεται πιο γραφική και ελικοειδής. Ένας επαγγελματίας οδηγός που γνωρίζει τη διαδρομή κρατά τη μέρα ήρεμη, ώστε εσείς να χαλαρώνετε αντί να ασχολείστε με χρονισμό, κατευθύνσεις ή πάρκινγκ.",
+          "Μια πρακτική ώρα αναχώρησης είναι συνήθως μεταξύ 7:30 και 8:30 το πρωί. Το καλοκαίρι μια νωρίτερη εκκίνηση είναι προτιμότερη λόγω ζέστης και επισκεψιμότητας. Την άνοιξη και το φθινόπωρο μια ελαφρώς αργότερη αναχώρηση ταιριάζει σε όσους θέλουν ήρεμο πρωινό. Το σωστό πρόγραμμα εξαρτάται από το ξενοδοχείο σας, τον ρυθμό σας και το αν θέλετε στάση στην Αράχωβα.",
+        ]},
+        { heading: "Ένα προσεγμένο πρόγραμμα για μια ολόκληρη μέρα στους Δελφούς", paragraphs: [
+          "Ένα ιδιωτικό πρόγραμμα πρέπει να έχει αρκετή δομή ώστε να προστατεύει τον χρόνο σας, αλλά και ευελιξία. Οι περισσότεροι επισκέπτες χρειάζονται τέσσερις έως πέντε ώρες στους Δελφούς και την γύρω περιοχή, επιπλέον του χρόνου μετακίνησης.",
+        ]},
+        { subheading: "Πρωί: αρχαιολογικός χώρος και μουσείο", paragraphs: [
+          "Ξεκινήστε από τον Αρχαιολογικό Χώρο των Δελφών, όπου η Ιερά Οδός ανηφορίζει ανάμεσα σε θησαυρούς και μνημεία προς τον Ναό του Απόλλωνα. Η ανάβαση είναι κατά τόπους ήπια και αλλού πιο απαιτητική, οπότε άνετα παπούτσια, νερό και αντηλιακή προστασία είναι απαραίτητα από τα τέλη της άνοιξης έως τις αρχές του φθινοπώρου.",
+          "Το αρχαίο θέατρο πάνω από τον ναό προσφέρει μια από τις πιο εντυπωσιακές θέες στο ιερό και την κοιλάδα. Επισκέπτες με περιορισμένη κινητικότητα μπορούν να δουν σημαντικά σημεία, αν και το έδαφος έχει ανώμαλα λιθόστρωτα και ανηφόρες.",
+          "Το Αρχαιολογικό Μουσείο των Δελφών είναι η φυσική επόμενη στάση. Η συλλογή του δίνει πλαίσιο σε όσα μόλις είδατε, με τον Ηνίοχο των Δελφών και γλυπτά από το ιερό. Μια χαλαρή επίσκεψη στο μουσείο συνδέει τα μνημεία με τους ανθρώπους και τα τελετουργικά που καθόρισαν τους Δελφούς.",
+        ]},
+        { subheading: "Μεσημέρι: γεύμα με ορεινό χαρακτήρα", paragraphs: [
+          "Το γεύμα μπορεί να κανονιστεί στο χωριό των Δελφών ή στην κοντινή Αράχωβα. Οι Δελφοί προσφέρουν ευκολία μετά την επίσκεψη, ενώ η Αράχωβα προσθέτει χαρακτηριστική ατμόσφαιρα ορεινού χωριού, πέτρινη αρχιτεκτονική και θέα στον Παρνασσό.",
+          "Η Αράχωβα είναι ελκυστική προσθήκη αλλά όχι απαραίτητη για όλους. Όσοι θέλουν περισσότερο χρόνο στα ερείπια ίσως προτιμούν ένα ήρεμο γεύμα στους Δελφούς και ήσυχη επιστροφή. Το ιδιωτικό πρόγραμμα κάνει και τις δύο επιλογές εφικτές.",
+        ]},
+        { subheading: "Απόγευμα: προαιρετικές στάσεις και επιστροφή στην Αθήνα", paragraphs: [
+          "Ανάλογα με την εποχή και τα ενδιαφέροντά σας, ο οδηγός σας μπορεί να προσθέσει μια σύντομη στάση θέας, χρόνο στην Αράχωβα ή ένα διάλειμμα πριν την επιστροφή. Στη Mercedes V-Class μπορείτε να χαλαρώσετε και να φτάσετε στο ξενοδοχείο σας με άνεση νωρίς το βράδυ.",
+          "Για ένα τυπικό ολοήμερο πρόγραμμα υπολογίστε περίπου 10 έως 12 ώρες από πόρτα σε πόρτα. Επισκέπτες κρουαζιέρας ή ταξιδιώτες με σφιχτή πτήση χρειάζονται επιπλέον περιθώριο. Οι Δελφοί απολαμβάνονται καλύτερα όταν η επιστροφή δεν είναι βιαστική.",
+        ]},
+        { heading: "Τι να κανονίσετε πριν την αναχώρηση", paragraphs: [
+          "Οι λεπτομέρειες που μοιράζεστε πριν το ταξίδι κάνουν τη μέρα πιο άρτια. Επιβεβαιώστε την ακριβή διεύθυνση παραλαβής, την ώρα αναχώρησης, τον αριθμό επιβατών και τις ανάγκες σε αποσκευές. Αν ταξιδεύετε με παιδιά, ζητήστε τα κατάλληλα παιδικά καθίσματα κατά την κράτηση.",
+          "Βοηθά επίσης να αποφασίσετε αν θέλετε πρόγραμμα μόνο για τους Δελφούς ή με Αράχωβα. Αναφέρετε θέματα κινητικότητας, προτιμήσεις φαγητού ή σταθερά σχέδια στην Αθήνα για το βράδυ, ώστε ο χρονισμός να οργανωθεί γύρω από εσάς.",
+          "Τα εισιτήρια εισόδου και οι υπηρεσίες αδειούχου ξεναγού είναι ξεχωριστά από τη μεταφορά. Άλλοι προτιμούν να εξερευνήσουν ελεύθερα και άλλοι εκτιμούν έναν ξεναγό για βαθύτερο ιστορικό πλαίσιο. Αυτό επηρεάζει τον χρόνο που κρατάτε για τον χώρο και το μουσείο.",
+        ]},
+        { heading: "Ποια είναι η καλύτερη εποχή για τους Δελφούς;", paragraphs: [
+          "Ο Απρίλιος έως ο Ιούνιος και ο Σεπτέμβριος έως ο Οκτώβριος είναι ιδανικοί μήνες. Το τοπίο είναι όμορφο, το φως γενναιόδωρο και οι συνθήκες περπατήματος πιο άνετες. Το καλοκαίρι προσφέρει μεγάλες μέρες, αλλά χρειάζεται πρωινή αναχώρηση και μετρημένος ρυθμός λόγω ζέστης.",
+          "Ο χειμώνας ανταμείβει όσους εκτιμούν ήσυχους χώρους και δραματικό ορεινό καιρό. Οι συνθήκες στον Παρνασσό αλλάζουν, οπότε υπολογίστε επιπλέον χρόνο και ντυθείτε με στρώσεις. Ένα ιδιωτικό ταξίδι με οδηγό δίνει σιγουριά όταν ο καιρός απαιτεί προσαρμογές.",
+        ]},
+        { heading: "Premium μεταφορά για μια μέρα που αξίζει χρόνο", paragraphs: [
+          "Η H&A VIP Tours προσφέρει ιδιωτικά ταξίδια στους Δελφούς σχεδιασμένα γύρω από τον δικό σας τρόπο: παραλαβή από το ξενοδοχείο, πολυτελή Mercedes V-Class, διακριτική επαγγελματική εξυπηρέτηση και πρόγραμμα στα μέτρα σας. Η κράτηση μέσω WhatsApp είναι διαθέσιμη 24/7.",
+          "Οι Δελφοί ανταμείβουν όσους τους δίνουν χώρο να αναπνεύσουν. Φύγετε νωρίς από την Αθήνα, πάρτε τον ορεινό δρόμο με άνεση και αφήστε την τελευταία θέα στην κοιλάδα να δώσει τον ρυθμό στο υπόλοιπο ταξίδι σας.",
+        ]},
+      ],
+    },
+    it: {
+      title: "Escursione privata a Delfi da Atene: una giornata intera con Mercedes V-Class",
+      excerpt: "Una giornata intera nella Grecia centrale, sulle pendici del Monte Parnaso. Prelievo in hotel, Mercedes V-Class di lusso e un itinerario senza fretta tra Delfi, il museo e Arachova.",
+      imageAlt: "Illustrazione colorata di una Mercedes V-Class nera su una strada di montagna verso l'antico santuario di Delfi al tramonto",
+      metaTitle: "Escursione privata a Delfi da Atene – Mercedes V-Class | H&A VIP Tours",
+      metaDescription: "Escursione privata di un giorno da Atene a Delfi con autista e Mercedes V-Class. Prelievo in hotel, sosta ad Arachova, orari flessibili. Prenota su WhatsApp 24/7.",
+      sections: [
+        { paragraphs: [
+          "Il viaggio verso Delfi non è semplicemente un trasferimento tra Atene e un sito antico. È una giornata intera nella Grecia centrale, tra strade di montagna, panorami che cambiano e una destinazione che merita tempo senza fretta. Un itinerario privato offre il giusto equilibrio tra comfort, ritmo e attenzione personale.",
+          "Delfi si trova sulle pendici del Monte Parnaso, circa 185 km a nord-ovest di Atene. Il percorso è abbastanza lungo perché qualità del veicolo, spazio e tempistica definiscano l'esperienza. Un trasferimento privato premium in Mercedes V-Class permette a coppie, famiglie, piccoli gruppi e viaggiatori d'affari di viaggiare in privacy e vivere la giornata a modo proprio.",
+        ]},
+        { heading: "Perché un'escursione privata a Delfi è diversa", paragraphs: [
+          "Delfi è spesso descritta come il centro spirituale del mondo greco antico, ma il paesaggio è memorabile quanto le rovine. Il santuario domina la valle del Pleistos e si apre verso le montagne. Arrivare riposati permette di apprezzare il Tempio di Apollo, la Via Sacra, il teatro e il museo archeologico senza guardare l'orologio.",
+          "Una giornata privata è preziosa soprattutto per chi soggiorna nel centro di Atene, lungo la Riviera ateniese o vicino al Pireo prima o dopo una crociera. L'autista vi preleva direttamente dall'hotel, dalla residenza o dal punto d'incontro concordato, senza tappe da coordinare né orari di gruppo.",
+          "La Mercedes V-Class è ideale per questo percorso: abitacolo spazioso, sedute comode, climatizzazione e spazio per borse, macchine fotografiche, passeggini ed effetti personali. Le famiglie possono richiedere seggiolini per bambini in anticipo.",
+        ]},
+        { heading: "Il percorso da Atene a Delfi", paragraphs: [
+          "Il tragitto più comune lascia Atene sull'autostrada A1 verso l'Attica settentrionale, prosegue per Tebe e Livadia e sale verso Arachova e Delfi. Il tempo di percorrenza è generalmente di 2,5-3 ore per tratta, secondo il punto di prelievo, il traffico e le soste scelte.",
+          "Il primo tratto è autostradale e scorrevole, mentre l'avvicinamento a Delfi diventa più panoramico e tortuoso. Un autista professionista che conosce il percorso mantiene la giornata serena, lasciandovi rilassare invece di pensare a orari, indicazioni o parcheggi.",
+          "Una partenza pratica è di solito tra le 7:30 e le 8:30. In estate conviene partire prima, per il caldo e l'afflusso di visitatori. In primavera e autunno una partenza leggermente più tardi consente una colazione tranquilla. L'orario giusto dipende dalla posizione dell'hotel, dal ritmo e dall'eventuale sosta ad Arachova.",
+        ]},
+        { heading: "Un itinerario ben studiato per una giornata a Delfi", paragraphs: [
+          "Un itinerario privato deve avere struttura sufficiente a proteggere il vostro tempo, ma anche flessibilità. La maggior parte degli ospiti trova ideale dedicare quattro o cinque ore a Delfi e dintorni, oltre al tempo di viaggio.",
+        ]},
+        { subheading: "Mattina: sito archeologico e museo", paragraphs: [
+          "Si inizia dal Sito Archeologico di Delfi, dove la Via Sacra sale tra tesori e monumenti verso il Tempio di Apollo. La salita è talvolta dolce e talvolta più impegnativa: scarpe comode, acqua e protezione solare sono indispensabili dalla tarda primavera all'inizio dell'autunno.",
+          "Il teatro antico sopra il tempio offre una delle viste più suggestive sul santuario e sulla valle. Gli ospiti con mobilità ridotta possono comunque visitare aree importanti, anche se il terreno presenta pietre irregolari e pendenze.",
+          "Il Museo Archeologico di Delfi è la tappa successiva naturale. La collezione, con l'Auriga di Delfi e i frammenti scultorei del santuario, dà contesto a ciò che avete appena visto e collega i monumenti alle persone e ai rituali che definirono Delfi.",
+        ]},
+        { subheading: "Mezzogiorno: pranzo dal carattere montano", paragraphs: [
+          "Il pranzo può essere organizzato nel villaggio di Delfi o nella vicina Arachova. Delfi è comoda dopo la visita, mentre Arachova aggiunge l'atmosfera di un villaggio di montagna, architetture in pietra e vedute sul Parnaso.",
+          "Arachova è un'aggiunta piacevole ma non indispensabile. Chi desidera più tempo tra le rovine può preferire un pranzo tranquillo a Delfi e un rientro sereno. Il programma privato rende possibili entrambe le scelte.",
+        ]},
+        { subheading: "Pomeriggio: soste facoltative e rientro ad Atene", paragraphs: [
+          "A seconda della stagione e dei vostri interessi, l'autista può inserire una breve sosta panoramica, del tempo ad Arachova o una pausa prima del rientro. In Mercedes V-Class potete rilassarvi e arrivare in hotel comodamente in prima serata.",
+          "Per una giornata intera standard prevedete circa 10-12 ore porta a porta. Gli ospiti in crociera o con voli in orario stretto dovrebbero prevedere margine. Delfi si gode al meglio quando il ritorno non è affrettato.",
+        ]},
+        { heading: "Cosa organizzare prima della partenza", paragraphs: [
+          "I dettagli condivisi in anticipo rendono la giornata impeccabile. Confermate l'indirizzo esatto di prelievo, l'orario di partenza, il numero di passeggeri e le esigenze di bagagli. Con bambini, richiedete i seggiolini adatti al momento della prenotazione.",
+          "È utile decidere se volete un itinerario dedicato solo a Delfi o comprensivo di Arachova. Segnalate esigenze di mobilità, preferenze gastronomiche o impegni serali ad Atene, così la tempistica sarà organizzata intorno a voi.",
+          "Biglietti d'ingresso e guide autorizzate sono servizi distinti dal trasporto. Alcuni preferiscono visitare in autonomia, altri apprezzano una guida per un contesto storico più profondo: questa scelta influenza il tempo da riservare al sito e al museo.",
+        ]},
+        { heading: "Qual è il periodo migliore per visitare Delfi?", paragraphs: [
+          "Da aprile a giugno e da settembre a ottobre sono i periodi ideali: paesaggio splendido, molte ore di luce e condizioni di cammino più confortevoli. L'estate offre giornate lunghe, ma conviene partire presto e mantenere un ritmo misurato per via del caldo.",
+          "L'inverno premia chi ama siti tranquilli e un'atmosfera più contemplativa. Le condizioni sul Parnaso possono cambiare: prevedete più tempo e vestitevi a strati. Un viaggio privato con autista offre sicurezza quando meteo o strade richiedono adattamenti.",
+        ]},
+        { heading: "Trasporto premium per una giornata che merita tempo", paragraphs: [
+          "H&A VIP Tours propone viaggi privati a Delfi pensati sul vostro modo di viaggiare: prelievo diretto in hotel, Mercedes V-Class di lusso, servizio discreto e programma su misura. La prenotazione via WhatsApp è disponibile 24 ore su 24.",
+          "Delfi premia chi le concede spazio. Partite presto da Atene, percorrete la strada di montagna con calma e lasciate che l'ultima vista sulla valle dia il ritmo al resto del vostro viaggio in Grecia.",
+        ]},
+      ],
+    },
+    es: {
+      title: "Excursión privada a Delfos desde Atenas: un día completo en Mercedes V-Class",
+      excerpt: "Un día completo por la Grecia central, en las laderas del monte Parnaso. Recogida en el hotel, Mercedes V-Class de lujo y un itinerario sin prisas por Delfos, su museo y Arachova.",
+      imageAlt: "Ilustración colorida de un Mercedes V-Class negro en una carretera de montaña hacia el antiguo santuario de Delfos al atardecer",
+      metaTitle: "Excursión privada a Delfos desde Atenas – Mercedes V-Class | H&A VIP Tours",
+      metaDescription: "Excursión privada de un día de Atenas a Delfos con chófer y Mercedes V-Class. Recogida en el hotel, parada en Arachova, horarios flexibles. Reserva por WhatsApp 24/7.",
+      sections: [
+        { paragraphs: [
+          "El viaje a Delfos no es solo un traslado entre Atenas y un sitio antiguo. Es un día completo por la Grecia central, con carreteras de montaña, paisajes cambiantes y un destino que merece tiempo sin prisas. Un itinerario privado ofrece el equilibrio justo entre comodidad, ritmo y atención personal.",
+          "Delfos se encuentra en las laderas del monte Parnaso, a unos 185 km al noroeste de Atenas. El trayecto es lo bastante largo como para que la calidad del vehículo, el espacio y los horarios definan la experiencia. Un traslado privado premium en Mercedes V-Class permite a parejas, familias, grupos pequeños y viajeros de negocios disfrutar del día a su manera.",
+        ]},
+        { heading: "Por qué una excursión privada a Delfos es diferente", paragraphs: [
+          "Delfos se describe como el centro espiritual del mundo griego antiguo, pero el entorno es tan memorable como las ruinas. El santuario domina el valle del Pleistos y se abre hacia las montañas. Llegar descansado permite apreciar el Templo de Apolo, la Vía Sagrada, el teatro y el museo arqueológico sin mirar el reloj.",
+          "Un día privado resulta especialmente valioso para quienes se alojan en el centro de Atenas, en la Riviera ateniense o cerca de El Pireo antes o después de un crucero. Su chófer le recoge directamente en el hotel, la residencia o el punto acordado, sin etapas que coordinar ni horarios de grupo.",
+          "El Mercedes V-Class encaja perfectamente en esta ruta: cabina amplia, asientos cómodos, climatización y espacio para bolsos, cámaras, carritos y objetos personales. Las familias pueden solicitar sillitas infantiles con antelación.",
+        ]},
+        { heading: "La ruta de Atenas a Delfos", paragraphs: [
+          "La ruta habitual sale de Atenas por la autopista A1 hacia el norte del Ática, continúa por Tebas y Livadia y asciende hacia Arachova y Delfos. El tiempo de viaje suele ser de 2,5 a 3 horas por trayecto, según el punto de recogida, el tráfico y las paradas elegidas.",
+          "El primer tramo es autopista rápida, mientras que la aproximación a Delfos se vuelve más panorámica y sinuosa. Un chófer profesional que conoce el camino mantiene la jornada tranquila para que usted se relaje en lugar de pensar en horarios, indicaciones o aparcamiento.",
+          "Una salida práctica suele ser entre las 7:30 y las 8:30. En verano conviene salir antes, por el calor y la afluencia. En primavera y otoño una salida algo más tardía permite un desayuno relajado. El horario ideal depende de su hotel, su ritmo y de si desea incluir Arachova.",
+        ]},
+        { heading: "Un itinerario bien pensado para un día en Delfos", paragraphs: [
+          "Un itinerario privado debe tener estructura suficiente para proteger su tiempo, pero también flexibilidad. La mayoría de los viajeros disfrutan reservando de cuatro a cinco horas en Delfos y alrededores, además del tiempo de viaje.",
+        ]},
+        { subheading: "Mañana: el sitio arqueológico y el museo", paragraphs: [
+          "Comience en el Sitio Arqueológico de Delfos, donde la Vía Sagrada asciende entre tesoros y monumentos hacia el Templo de Apolo. La subida es suave en algunos tramos y más exigente en otros: calzado cómodo, agua y protección solar son esenciales de finales de primavera a principios de otoño.",
+          "El teatro antiguo sobre el templo ofrece una de las vistas más impresionantes del santuario y del valle. Los visitantes con movilidad reducida pueden recorrer áreas importantes, aunque el terreno incluye piedra irregular y pendientes.",
+          "El Museo Arqueológico de Delfos es la siguiente parada natural. Su colección, con el Auriga de Delfos y fragmentos escultóricos del santuario, da contexto a lo que acaba de ver y conecta los monumentos con las personas y los rituales que definieron Delfos.",
+        ]},
+        { subheading: "Mediodía: almuerzo con carácter de montaña", paragraphs: [
+          "El almuerzo puede organizarse en el pueblo de Delfos o en la cercana Arachova. Delfos resulta cómodo tras la visita, mientras que Arachova aporta ambiente de pueblo de montaña, arquitectura en piedra y vistas al Parnaso.",
+          "Arachova es un añadido atractivo, pero no imprescindible. Quien desee más tiempo entre las ruinas puede preferir un almuerzo tranquilo en Delfos y un regreso sereno. El programa privado hace posibles ambas opciones.",
+        ]},
+        { subheading: "Tarde: paradas opcionales y regreso a Atenas", paragraphs: [
+          "Según la temporada y sus intereses, su chófer puede añadir un mirador, tiempo en Arachova o una pausa antes del regreso. En el Mercedes V-Class podrá descansar y llegar a su hotel de Atenas cómodamente al comienzo de la tarde-noche.",
+          "Para un día completo estándar, calcule entre 10 y 12 horas puerta a puerta. Los pasajeros de crucero o con vuelos ajustados deberían añadir margen. Delfos se disfruta mejor cuando el regreso no es apresurado.",
+        ]},
+        { heading: "Qué organizar antes de salir", paragraphs: [
+          "Los detalles compartidos antes del viaje hacen que el día sea impecable. Confirme la dirección exacta de recogida, la hora de salida, el número de pasajeros y las necesidades de equipaje. Si viaja con niños, solicite las sillitas adecuadas al reservar.",
+          "También ayuda decidir si quiere un itinerario centrado solo en Delfos o que incluya Arachova. Indique necesidades de movilidad, preferencias gastronómicas o planes fijos en Atenas para la noche.",
+          "Las entradas y los guías autorizados son servicios distintos del transporte. Algunos prefieren explorar por su cuenta y otros valoran un guía para un contexto histórico más profundo; esa elección influye en el tiempo reservado al sitio y al museo.",
+        ]},
+        { heading: "¿Cuál es la mejor época para visitar Delfos?", paragraphs: [
+          "De abril a junio y de septiembre a octubre son los periodos ideales: paisaje atractivo, luz generosa y mejores condiciones para caminar. El verano ofrece días largos, aunque conviene salir temprano y mantener un ritmo medido por el calor.",
+          "El invierno recompensa a quienes valoran sitios tranquilos y un ambiente más contemplativo. Las condiciones en el Parnaso pueden cambiar: prevea más tiempo y vístase por capas. Un viaje privado con chófer aporta tranquilidad cuando el tiempo exige ajustes.",
+        ]},
+        { heading: "Transporte premium para un día que merece tiempo", paragraphs: [
+          "H&A VIP Tours ofrece viajes privados a Delfos diseñados a su medida: recogida directa en el hotel, Mercedes V-Class de lujo, servicio profesional discreto y un horario adaptado a sus prioridades. La reserva por WhatsApp está disponible 24/7.",
+          "Delfos recompensa a quien le da espacio para respirar. Salga temprano de Atenas, recorra la carretera de montaña con calma y deje que la última vista del valle marque el ritmo del resto de su viaje por Grecia.",
+        ]},
+      ],
+    },
+    fr: {
+      title: "Excursion privée à Delphes depuis Athènes : une journée complète en Mercedes V-Class",
+      excerpt: "Une journée entière au cœur de la Grèce centrale, sur les pentes du mont Parnasse. Prise en charge à l'hôtel, Mercedes V-Class de luxe et itinéraire sans hâte entre Delphes, son musée et Arachova.",
+      imageAlt: "Illustration colorée d'un Mercedes V-Class noir sur une route de montagne vers l'ancien sanctuaire de Delphes au coucher du soleil",
+      metaTitle: "Excursion privée à Delphes depuis Athènes – Mercedes V-Class | H&A VIP Tours",
+      metaDescription: "Excursion privée d'une journée d'Athènes à Delphes avec chauffeur et Mercedes V-Class. Prise en charge à l'hôtel, arrêt à Arachova, horaires flexibles. Réservation WhatsApp 24/7.",
+      sections: [
+        { paragraphs: [
+          "La route vers Delphes n'est pas un simple transfert entre Athènes et un site antique. C'est une journée entière à travers la Grèce centrale, avec des routes de montagne, des paysages changeants et une destination qui mérite du temps. Un itinéraire privé offre le juste équilibre entre confort, rythme et attention personnelle.",
+          "Delphes se situe sur les pentes du mont Parnasse, à environ 185 km au nord-ouest d'Athènes. Le trajet est assez long pour que la qualité du véhicule, l'espace et les horaires façonnent l'expérience. Un transfert privé haut de gamme en Mercedes V-Class permet aux couples, familles, petits groupes et voyageurs d'affaires de vivre la journée à leur façon.",
+        ]},
+        { heading: "Pourquoi une journée privée à Delphes est différente", paragraphs: [
+          "Delphes est souvent décrite comme le centre spirituel du monde grec antique, mais le cadre est aussi marquant que les ruines. Le sanctuaire domine la vallée du Pleistos et s'ouvre vers les montagnes. Arriver reposé permet d'apprécier le temple d'Apollon, la Voie sacrée, le théâtre et le musée archéologique sans regarder l'heure.",
+          "Une journée privée est précieuse pour les voyageurs logés dans le centre d'Athènes, sur la Riviera athénienne ou près du Pirée avant ou après une croisière. Votre chauffeur vient vous chercher directement à votre hôtel, votre résidence ou au point de rendez-vous convenu, sans étapes à coordonner ni horaires de groupe.",
+          "Le Mercedes V-Class convient parfaitement : habitacle spacieux, sièges confortables, climatisation et place pour les sacs, appareils photo, poussettes et effets personnels. Les familles peuvent demander des sièges enfants à l'avance.",
+        ]},
+        { heading: "L'itinéraire Athènes – Delphes", paragraphs: [
+          "La route la plus courante quitte Athènes par l'autoroute A1 vers l'Attique du nord, puis traverse Thèbes et Livadia avant de monter vers Arachova et Delphes. Le trajet dure généralement 2h30 à 3h par sens, selon le lieu de prise en charge, la circulation et les arrêts choisis.",
+          "La première partie est de l'autoroute fluide, tandis que l'approche de Delphes devient plus panoramique et sinueuse. Un chauffeur professionnel qui connaît la route garde la journée sereine et vous laisse vous détendre plutôt que gérer horaires, itinéraire ou stationnement.",
+          "Un départ pratique se situe généralement entre 7h30 et 8h30. En été, partir plus tôt est préférable en raison de la chaleur et de l'affluence. Au printemps et à l'automne, un départ un peu plus tardif permet un petit-déjeuner tranquille. L'horaire idéal dépend de votre hôtel, de votre rythme et d'un éventuel arrêt à Arachova.",
+        ]},
+        { heading: "Un itinéraire réfléchi pour une journée à Delphes", paragraphs: [
+          "Un itinéraire privé doit être assez structuré pour protéger votre temps, tout en restant flexible. La plupart des voyageurs apprécient de prévoir quatre à cinq heures à Delphes et alentour, en plus du temps de route.",
+        ]},
+        { subheading: "Matin : le site archéologique et le musée", paragraphs: [
+          "Commencez par le site archéologique de Delphes, où la Voie sacrée monte entre trésors et monuments vers le temple d'Apollon. La montée est douce par endroits et plus exigeante ailleurs : chaussures confortables, eau et protection solaire sont indispensables de la fin du printemps au début de l'automne.",
+          "Le théâtre antique au-dessus du temple offre l'une des plus belles vues sur le sanctuaire et la vallée. Les visiteurs à mobilité réduite peuvent découvrir des zones importantes, même si le terrain comporte des pierres irrégulières et des pentes.",
+          "Le musée archéologique de Delphes est la suite naturelle. Sa collection, avec l'Aurige de Delphes et des fragments sculptés du sanctuaire, éclaire ce que vous venez de voir et relie les monuments aux hommes et aux rituels qui ont fait Delphes.",
+        ]},
+        { subheading: "Midi : un déjeuner au caractère montagnard", paragraphs: [
+          "Le déjeuner peut être organisé au village de Delphes ou à Arachova, tout proche. Delphes est pratique après la visite, tandis qu'Arachova ajoute une atmosphère de village de montagne, une architecture de pierre et des vues sur le Parnasse.",
+          "Arachova est un plus agréable, mais pas indispensable. Ceux qui souhaitent plus de temps parmi les ruines préféreront un déjeuner tranquille à Delphes et un retour paisible. Le programme privé rend les deux possibles.",
+        ]},
+        { subheading: "Après-midi : arrêts optionnels et retour à Athènes", paragraphs: [
+          "Selon la saison et vos envies, votre chauffeur peut ajouter un point de vue, du temps à Arachova ou une pause avant le retour. Dans le Mercedes V-Class, vous pouvez vous détendre et rejoindre votre hôtel athénien confortablement en début de soirée.",
+          "Pour une journée complète classique, comptez environ 10 à 12 heures porte à porte. Les croisiéristes ou les voyageurs avec un vol serré devraient prévoir une marge. Delphes se savoure quand le retour n'est pas précipité.",
+        ]},
+        { heading: "Ce qu'il faut organiser avant le départ", paragraphs: [
+          "Les détails partagés en amont rendent la journée impeccable. Confirmez l'adresse exacte de prise en charge, l'heure de départ, le nombre de passagers et les besoins en bagages. Avec des enfants, demandez les sièges adaptés lors de la réservation.",
+          "Il est utile de décider si vous souhaitez un itinéraire uniquement à Delphes ou incluant Arachova. Signalez les contraintes de mobilité, vos préférences culinaires ou vos engagements du soir à Athènes.",
+          "Les billets d'entrée et les guides agréés sont distincts du transport. Certains préfèrent explorer librement, d'autres apprécient un guide pour le contexte historique ; ce choix influence le temps réservé au site et au musée.",
+        ]},
+        { heading: "Quelle est la meilleure période pour visiter Delphes ?", paragraphs: [
+          "D'avril à juin et de septembre à octobre, les conditions sont idéales : beaux paysages, longue lumière et marche plus agréable. L'été offre de longues journées, mais un départ matinal et un rythme mesuré sont conseillés à cause de la chaleur.",
+          "L'hiver récompense ceux qui aiment les sites calmes et une atmosphère contemplative. Les conditions sur le Parnasse peuvent changer : prévoyez du temps et habillez-vous en couches. Un trajet privé avec chauffeur rassure lorsque la météo impose des ajustements.",
+        ]},
+        { heading: "Un transport haut de gamme pour une journée qui mérite du temps", paragraphs: [
+          "H&A VIP Tours propose des voyages privés à Delphes conçus autour de votre façon de voyager : prise en charge à l'hôtel, Mercedes V-Class de luxe, service professionnel discret et horaires sur mesure. La réservation par WhatsApp est disponible 24h/24.",
+          "Delphes récompense ceux qui lui laissent de l'espace. Quittez Athènes tôt, prenez la route de montagne sans hâte et laissez la dernière vue sur la vallée donner le tempo au reste de votre voyage en Grèce.",
+        ]},
+      ],
+    },
+    de: {
+      title: "Privater Tagesausflug nach Delphi ab Athen: ein ganzer Tag im Mercedes V-Class",
+      excerpt: "Ein ganzer Tag durch Mittelgriechenland an den Hängen des Parnass. Abholung am Hotel, luxuriöser Mercedes V-Class und ein entspanntes Programm mit Delphi, Museum und Arachova.",
+      imageAlt: "Farbenfrohe Illustration eines schwarzen Mercedes V-Class auf einer Bergstraße zum antiken Heiligtum von Delphi bei Sonnenuntergang",
+      metaTitle: "Privater Delphi-Tagesausflug ab Athen – Mercedes V-Class | H&A VIP Tours",
+      metaDescription: "Privater Tagesausflug mit Chauffeur von Athen nach Delphi im Mercedes V-Class. Hotelabholung, Stopp in Arachova, flexible Zeiten. Buchung per WhatsApp 24/7.",
+      sections: [
+        { paragraphs: [
+          "Die Fahrt nach Delphi ist nicht einfach ein Transfer zwischen Athen und einer antiken Stätte. Sie ist ein ganzer Tag durch Mittelgriechenland, mit Bergstraßen, wechselnden Ausblicken und einem Ziel, das Zeit verdient. Ein privates Programm bietet die richtige Balance aus Komfort, Tempo und persönlicher Betreuung.",
+          "Delphi liegt an den Hängen des Parnass, rund 185 km nordwestlich von Athen. Die Strecke ist lang genug, dass Fahrzeugqualität, Platz und Timing das Erlebnis prägen. Ein privater Premium-Transfer im Mercedes V-Class erlaubt Paaren, Familien, kleinen Gruppen und Geschäftsreisenden, den Tag nach eigenen Wünschen zu gestalten.",
+        ]},
+        { heading: "Warum ein privater Delphi-Tag anders ist", paragraphs: [
+          "Delphi gilt als spirituelles Zentrum der antiken griechischen Welt, doch die Landschaft ist ebenso eindrucksvoll wie die Ruinen. Das Heiligtum blickt über das Pleistos-Tal zu den Bergen. Ausgeruht anzukommen bedeutet, den Apollontempel, die Heilige Straße, das Theater und das Museum ohne Zeitdruck zu erleben.",
+          "Ein privater Tagesausflug ist besonders wertvoll für Gäste im Zentrum Athens, an der Athener Riviera oder in Piräus vor oder nach einer Kreuzfahrt. Ihr Chauffeur holt Sie direkt am Hotel, an der Unterkunft oder am vereinbarten Treffpunkt ab – ohne Etappen zu koordinieren und ohne festen Gruppenplan.",
+          "Der Mercedes V-Class passt ideal zu dieser Route: großzügiger Innenraum, bequeme Sitze, Klimatisierung und Platz für Taschen, Kameras, Kinderwagen und persönliche Dinge. Kindersitze können vorab angefragt werden.",
+        ]},
+        { heading: "Die Strecke von Athen nach Delphi", paragraphs: [
+          "Die übliche Route verlässt Athen über die Autobahn A1 Richtung Nordattika und führt über Theben und Livadia hinauf nach Arachova und Delphi. Die Fahrzeit beträgt in der Regel 2,5 bis 3 Stunden pro Richtung, je nach Abholort, Verkehr und gewählten Stopps.",
+          "Der erste Abschnitt ist zügige Autobahnfahrt, die Annäherung an Delphi wird landschaftlich reizvoller und kurviger. Ein erfahrener Chauffeur hält den Tag ruhig, sodass Sie sich entspannen können, statt sich um Timing, Navigation oder Parkplätze zu kümmern.",
+          "Eine praktische Abfahrt liegt meist zwischen 7:30 und 8:30 Uhr. Im Sommer ist ein früherer Start wegen Hitze und Besucherandrang sinnvoll. Im Frühjahr und Herbst passt eine etwas spätere Abfahrt mit entspanntem Frühstück. Der richtige Zeitplan hängt von Hotel, Tempo und einem möglichen Stopp in Arachova ab.",
+        ]},
+        { heading: "Ein durchdachtes Programm für einen ganzen Tag in Delphi", paragraphs: [
+          "Ein privates Programm braucht genug Struktur, um Ihre Zeit zu schützen, und genug Flexibilität für den Tag. Für Delphi und Umgebung sind vier bis fünf Stunden zusätzlich zur Fahrzeit ideal.",
+        ]},
+        { subheading: "Vormittag: Ausgrabungsstätte und Museum", paragraphs: [
+          "Beginnen Sie an der archäologischen Stätte von Delphi, wo die Heilige Straße an Schatzhäusern und Monumenten vorbei zum Apollontempel ansteigt. Der Aufstieg ist teils sanft, teils anspruchsvoll: bequeme Schuhe, Wasser und Sonnenschutz sind vom späten Frühling bis zum Frühherbst unerlässlich.",
+          "Das antike Theater oberhalb des Tempels bietet einen der schönsten Blicke über Heiligtum und Tal. Gäste mit eingeschränkter Mobilität können wichtige Bereiche erleben, auch wenn das Gelände unebene Steinwege und Steigungen hat.",
+          "Das Archäologische Museum von Delphi ist der natürliche nächste Halt. Die Sammlung mit dem Wagenlenker von Delphi und Skulpturenfragmenten des Heiligtums verbindet die Monumente mit den Menschen und Ritualen, die Delphi prägten.",
+        ]},
+        { subheading: "Mittag: ein Essen mit Bergcharakter", paragraphs: [
+          "Das Mittagessen lässt sich im Dorf Delphi oder im nahen Arachova arrangieren. Delphi ist nach dem Besuch praktisch, Arachova bietet Bergdorf-Atmosphäre, Steinarchitektur und Blicke auf den Parnass.",
+          "Arachova ist eine schöne Ergänzung, aber nicht für jeden notwendig. Wer mehr Zeit bei den Ruinen möchte, wählt ein ruhiges Essen in Delphi und eine entspannte Rückfahrt. Das private Programm macht beides möglich.",
+        ]},
+        { subheading: "Nachmittag: optionale Stopps und Rückfahrt nach Athen", paragraphs: [
+          "Je nach Saison und Interessen kann Ihr Chauffeur einen Aussichtsstopp, Zeit in Arachova oder eine Pause einplanen. Im Mercedes V-Class können Sie sich zurücklehnen und am frühen Abend bequem am Hotel in Athen ankommen.",
+          "Für einen klassischen Ganztagesplan rechnen Sie mit etwa 10 bis 12 Stunden von Tür zu Tür. Kreuzfahrtgäste oder Reisende mit knappem Flug sollten Puffer einplanen. Delphi genießt man am besten ohne hektische Rückfahrt.",
+        ]},
+        { heading: "Was Sie vor der Abfahrt klären sollten", paragraphs: [
+          "Vorab geteilte Details machen den Tag reibungslos. Bestätigen Sie die genaue Abholadresse, die Abfahrtszeit, die Personenzahl und den Gepäckbedarf. Mit Kindern bitte passende Kindersitze bei der Buchung anfragen.",
+          "Hilfreich ist auch die Entscheidung, ob der Tag nur Delphi oder auch Arachova umfassen soll. Nennen Sie Mobilitätsbedürfnisse, kulinarische Vorlieben oder feste Abendpläne in Athen.",
+          "Eintritte und lizenzierte Guides sind vom Transport getrennt. Manche erkunden lieber selbstständig, andere schätzen einen Guide für historischen Kontext – das beeinflusst die eingeplante Zeit für Stätte und Museum.",
+        ]},
+        { heading: "Wann ist die beste Zeit für Delphi?", paragraphs: [
+          "April bis Juni und September bis Oktober sind ideal: schöne Landschaft, viel Tageslicht und angenehmere Bedingungen zum Gehen. Der Sommer bietet lange Tage, verlangt aber früh loszufahren und ein gemäßigtes Tempo.",
+          "Der Winter belohnt Reisende, die ruhige Stätten und eine kontemplative Stimmung schätzen. Am Parnass können die Bedingungen wechseln: mehr Zeit einplanen und Zwiebellook tragen. Eine private Chauffeurfahrt gibt Sicherheit, wenn Wetter oder Straßen Anpassungen erfordern.",
+        ]},
+        { heading: "Premium-Transport für einen Tag, der Zeit verdient", paragraphs: [
+          "H&A VIP Tours bietet private Delphi-Fahrten nach Ihren Wünschen: Abholung direkt am Hotel, luxuriöser Mercedes V-Class, diskreter professioneller Service und ein maßgeschneiderter Zeitplan. Die Buchung über WhatsApp ist rund um die Uhr möglich.",
+          "Delphi belohnt alle, die ihm Raum geben. Verlassen Sie Athen früh, fahren Sie die Bergstraße in Ruhe und lassen Sie den letzten Blick über das Tal den Rhythmus für Ihre weitere Griechenlandreise setzen.",
+        ]},
+      ],
+    },
+    ar: {
+      title: "رحلة يومية خاصة إلى دلفي من أثينا بسيارة مرسيدس V-Class",
+      excerpt: "يوم كامل عبر وسط اليونان على سفوح جبل بارناسوس. استقبال من الفندق، مرسيدس V-Class فاخرة، وبرنامج مريح يشمل دلفي والمتحف وأراخوفا.",
+      imageAlt: "رسم ملوّن لسيارة مرسيدس V-Class سوداء على طريق جبلي نحو موقع دلفي الأثري عند الغروب",
+      metaTitle: "رحلة خاصة إلى دلفي من أثينا – مرسيدس V-Class | H&A VIP Tours",
+      metaDescription: "رحلة يومية خاصة بسائق من أثينا إلى دلفي بسيارة مرسيدس V-Class. استقبال من الفندق، توقف في أراخوفا، مواعيد مرنة. الحجز عبر واتساب على مدار الساعة.",
+      sections: [
+        { paragraphs: [
+          "الرحلة إلى دلفي ليست مجرد نقل بين أثينا وموقع أثري، بل يوم كامل عبر وسط اليونان بطرق جبلية ومناظر متغيرة ووجهة تستحق وقتاً بلا عجلة. البرنامج الخاص يمنح التوازن الصحيح بين الراحة والإيقاع والاهتمام الشخصي.",
+          "تقع دلفي على سفوح جبل بارناسوس، على بعد نحو 185 كم شمال غرب أثينا. الطريق طويل بما يكفي ليصبح مستوى السيارة والمساحة والتوقيت عناصر أساسية. النقل الخاص المميز بسيارة مرسيدس V-Class يتيح للأزواج والعائلات والمجموعات الصغيرة ورجال الأعمال قضاء اليوم على طريقتهم.",
+        ]},
+        { heading: "لماذا تختلف رحلة دلفي الخاصة؟", paragraphs: [
+          "توصف دلفي بأنها المركز الروحي للعالم اليوناني القديم، لكن المشهد الطبيعي لا يقل روعة عن الآثار. يطل الموقع على وادي بليستوس والجبال خلفه. الوصول مرتاحاً يمنحك وقتاً لتقدير معبد أبولو والطريق المقدس والمسرح والمتحف دون مراقبة الساعة.",
+          "الرحلة الخاصة مفيدة خصوصاً للنزلاء في وسط أثينا أو على الريفييرا الأثينية أو قرب بيرايوس قبل رحلة بحرية أو بعدها. يستقبلك السائق مباشرة من الفندق أو مكان الإقامة أو نقطة اللقاء المتفق عليها، دون تنسيق مراحل أو التقيّد ببرنامج جماعي.",
+          "سيارة مرسيدس V-Class مثالية لهذا الطريق: مقصورة واسعة ومقاعد مريحة وتكييف ومساحة للحقائب والكاميرات وعربات الأطفال. يمكن طلب مقاعد الأطفال مسبقاً.",
+        ]},
+        { heading: "طريق أثينا – دلفي", paragraphs: [
+          "يغادر الطريق المعتاد أثينا عبر الطريق السريع A1 نحو شمال أتيكا، ثم يمر بطيبة وليفاديا قبل الصعود نحو أراخوفا ودلفي. تستغرق الرحلة عادة من 2.5 إلى 3 ساعات في كل اتجاه حسب نقطة الاستقبال وحركة المرور والتوقفات.",
+          "القسم الأول قيادة سريعة على الطريق السريع، بينما يصبح الاقتراب من دلفي أكثر جمالاً والتواءً. السائق المحترف الذي يعرف الطريق يبقي اليوم هادئاً لتسترخي بدلاً من الانشغال بالتوقيت والاتجاهات ومواقف السيارات.",
+          "الانطلاق العملي يكون عادة بين 7:30 و8:30 صباحاً. في الصيف يُفضّل الانطلاق مبكراً بسبب الحرارة وازدحام الزوار. في الربيع والخريف يناسب البعض انطلاق أكثر تأخراً بعد إفطار هادئ. التوقيت المناسب يعتمد على موقع فندقك وإيقاعك ورغبتك في زيارة أراخوفا.",
+        ]},
+        { heading: "برنامج مدروس ليوم كامل في دلفي", paragraphs: [
+          "ينبغي أن يكون البرنامج الخاص منظماً بما يحمي وقتك ومرناً بما يكفي. يستفيد معظم الضيوف من تخصيص أربع إلى خمس ساعات في دلفي ومحيطها، إضافة إلى وقت التنقل.",
+        ]},
+        { subheading: "الصباح: الموقع الأثري والمتحف", paragraphs: [
+          "ابدأ من موقع دلفي الأثري حيث يرتفع الطريق المقدس بين الخزائن والنُصب نحو معبد أبولو. الصعود سهل في مواضع وأصعب في أخرى، لذا فالحذاء المريح والماء والحماية من الشمس ضرورية من أواخر الربيع حتى أوائل الخريف.",
+          "يوفر المسرح القديم فوق المعبد واحدة من أروع الإطلالات على الموقع والوادي. يمكن لذوي الحركة المحدودة زيارة أجزاء مهمة، رغم وجود ممرات حجرية غير مستوية ومنحدرات.",
+          "متحف دلفي الأثري هو المحطة التالية الطبيعية. تضم مجموعته سائق العربة الشهير وقطعاً نحتية من الموقع، وتمنح سياقاً يربط الآثار بالناس والطقوس التي شكّلت دلفي.",
+        ]},
+        { subheading: "الظهيرة: غداء بطابع جبلي", paragraphs: [
+          "يمكن ترتيب الغداء في قرية دلفي أو في أراخوفا القريبة. دلفي عملية بعد الزيارة، بينما تضيف أراخوفا أجواء قرية جبلية وعمارة حجرية وإطلالات على بارناسوس.",
+          "أراخوفا إضافة جميلة لكنها ليست ضرورية للجميع. من يرغب بوقت أطول بين الآثار قد يفضّل غداءً هادئاً في دلفي وعودة مريحة. البرنامج الخاص يتيح الخيارين.",
+        ]},
+        { subheading: "بعد الظهر: توقفات اختيارية والعودة إلى أثينا", paragraphs: [
+          "حسب الموسم واهتماماتك، يمكن للسائق إضافة توقف لمشاهدة المناظر أو وقت في أراخوفا أو استراحة قبل العودة. في مرسيدس V-Class يمكنك الاسترخاء والوصول إلى فندقك في أثينا مساءً بارتياح.",
+          "لبرنامج يوم كامل اعتيادي، توقّع نحو 10 إلى 12 ساعة من الباب إلى الباب. على ضيوف الرحلات البحرية أو أصحاب الرحلات الجوية الضيقة إضافة هامش زمني. تُستمتع دلفي أكثر حين لا تكون العودة متعجلة.",
+        ]},
+        { heading: "ما الذي يجب ترتيبه قبل الانطلاق", paragraphs: [
+          "التفاصيل المشتركة قبل الرحلة تجعل اليوم متقناً. أكّد عنوان الاستقبال ووقت الانطلاق وعدد الركاب واحتياجات الأمتعة. عند السفر مع أطفال اطلب مقاعد الأطفال المناسبة عند الحجز.",
+          "من المفيد أيضاً تحديد ما إذا كنت تريد برنامجاً لدلفي فقط أم يشمل أراخوفا. اذكر متطلبات الحركة وتفضيلات الطعام وأي مواعيد ثابتة في أثينا مساءً.",
+          "تذاكر الدخول وخدمات المرشدين المرخصين منفصلة عن النقل. بعض الضيوف يفضلون الاستكشاف بحرية وآخرون يقدّرون مرشداً لسياق تاريخي أعمق، وهذا يؤثر على الوقت المخصص للموقع والمتحف.",
+        ]},
+        { heading: "ما أفضل وقت لزيارة دلفي؟", paragraphs: [
+          "من أبريل إلى يونيو ومن سبتمبر إلى أكتوبر فترات مثالية: مناظر جميلة ونهار طويل وظروف مشي أكثر راحة. الصيف يمنح أياماً طويلة لكن يُنصح بالانطلاق مبكراً وبإيقاع معتدل بسبب الحرارة.",
+          "الشتاء يكافئ من يقدّر المواقع الهادئة والأجواء التأملية. قد تتغير الأحوال في منطقة بارناسوس، لذا خصّص وقتاً إضافياً وارتدِ طبقات. الرحلة الخاصة بسائق تمنح طمأنينة عندما يتطلب الطقس تعديلات.",
+        ]},
+        { heading: "نقل مميز ليوم يستحق الوقت", paragraphs: [
+          "تقدّم H&A VIP Tours رحلات خاصة إلى دلفي مصممة على طريقتك: استقبال مباشر من الفندق، مرسيدس V-Class فاخرة، خدمة احترافية هادئة، وجدول مخصص لأولوياتك. الحجز عبر واتساب متاح على مدار الساعة.",
+          "دلفي تكافئ من يمنحها مساحة. غادر أثينا مبكراً، اسلك الطريق الجبلي بهدوء، ودع الإطلالة الأخيرة على الوادي تحدد إيقاع بقية رحلتك في اليونان.",
+        ]},
+      ],
+    },
+    he: {
+      title: "טיול יום פרטי לדלפי מאתונה: יום שלם עם מרצדס V-Class",
+      excerpt: "יום שלם ביוון המרכזית, במורדות הר פרנסוס. איסוף מהמלון, מרצדס V-Class יוקרתית ומסלול נינוח הכולל את דלפי, המוזיאון ואראחובה.",
+      imageAlt: "איור צבעוני של מרצדס V-Class שחורה בדרך הרים אל אתר דלפי העתיק בשקיעה",
+      metaTitle: "טיול יום פרטי לדלפי מאתונה – מרצדס V-Class | H&A VIP Tours",
+      metaDescription: "טיול יום פרטי עם נהג מאתונה לדלפי במרצדס V-Class. איסוף מהמלון, עצירה באראחובה, שעות גמישות. הזמנה בוואטסאפ 24/7.",
+      sections: [
+        { paragraphs: [
+          "הנסיעה לדלפי אינה רק העברה בין אתונה לאתר עתיק. זהו יום שלם ביוון המרכזית, עם דרכי הרים, נופים משתנים ויעד שראוי לזמן ללא לחץ. מסלול פרטי מעניק את האיזון הנכון בין נוחות, קצב ותשומת לב אישית.",
+          "דלפי שוכנת במורדות הר פרנסוס, כ-185 ק\"מ צפון-מערבית לאתונה. הדרך ארוכה מספיק כדי שאיכות הרכב, המרחב והתזמון יעצבו את החוויה. הסעה פרטית יוקרתית במרצדס V-Class מאפשרת לזוגות, משפחות, קבוצות קטנות ואנשי עסקים לעצב את היום לפי רצונם.",
+        ]},
+        { heading: "למה יום פרטי בדלפי הוא חוויה שונה", paragraphs: [
+          "דלפי מתוארת כמרכז הרוחני של העולם היווני העתיק, אך הנוף מרשים לא פחות מהחורבות. האתר צופה אל עמק פלייסטוס וההרים שמעבר. הגעה רגועה מאפשרת ליהנות ממקדש אפולו, מהדרך הקדושה, מהתיאטרון ומהמוזיאון בלי להביט בשעון.",
+          "טיול יום פרטי בעל ערך במיוחד לאורחים במרכז אתונה, לאורך הריביירה האתונאית או ליד פיראוס לפני שיוט או אחריו. הנהג אוסף אתכם ישירות מהמלון, מהדירה או מנקודת המפגש, בלי לתאם שלבים ובלי לוח זמנים קבוצתי.",
+          "המרצדס V-Class מתאימה למסלול: תא נוסעים מרווח, מושבים נוחים, מיזוג ומקום לתיקים, מצלמות, עגלות וחפצים אישיים. משפחות יכולות לבקש מושבי בטיחות מראש.",
+        ]},
+        { heading: "המסלול מאתונה לדלפי", paragraphs: [
+          "המסלול הנפוץ יוצא מאתונה בכביש המהיר A1 צפונה, ממשיך דרך תבאי ולבדיה ומטפס אל אראחובה ודלפי. משך הנסיעה הוא בדרך כלל 2.5 עד 3 שעות לכל כיוון, בהתאם לנקודת האיסוף, לתנועה ולעצירות.",
+          "החלק הראשון הוא נסיעה יעילה בכביש מהיר, ואילו ההתקרבות לדלפי נעשית ציורית ומפותלת יותר. נהג מקצועי שמכיר את הדרך שומר על יום רגוע, כך שתוכלו להירגע במקום להתעסק בזמנים, ניווט וחניה.",
+          "שעת יציאה מעשית היא בדרך כלל בין 7:30 ל-8:30 בבוקר. בקיץ עדיפה יציאה מוקדמת בשל החום וכמות המבקרים. באביב ובסתיו יציאה מעט מאוחרת מתאימה לארוחת בוקר נינוחה. הלוח הנכון תלוי במיקום המלון, בקצב שלכם ובשאלה אם תרצו לכלול את אראחובה.",
+        ]},
+        { heading: "מסלול מחושב ליום שלם בדלפי", paragraphs: [
+          "מסלול פרטי צריך מספיק מבנה כדי לשמור על הזמן שלכם, ומספיק גמישות. רוב האורחים נהנים מארבע עד חמש שעות בדלפי ובסביבתה, בנוסף לזמן הנסיעה.",
+        ]},
+        { subheading: "בוקר: האתר הארכיאולוגי והמוזיאון", paragraphs: [
+          "התחילו באתר הארכיאולוגי של דלפי, שם הדרך הקדושה מטפסת בין אוצרות ומונומנטים אל מקדש אפולו. העלייה מתונה במקומות ותובענית באחרים, ולכן נעליים נוחות, מים והגנה מהשמש חיוניים מסוף האביב ועד תחילת הסתיו.",
+          "התיאטרון העתיק מעל המקדש מציע את אחד המראות המרשימים ביותר על האתר והעמק. אורחים עם ניידות מוגבלת יכולים לחוות אזורים חשובים, אף שהשטח כולל אבן לא אחידה ושיפועים.",
+          "המוזיאון הארכיאולוגי של דלפי הוא התחנה הטבעית הבאה. האוסף, ובו רכּב המרכבה מדלפי ושברי פסלים מהאתר, מעניק הקשר ומחבר בין המונומנטים לאנשים ולטקסים שעיצבו את דלפי.",
+        ]},
+        { subheading: "צהריים: ארוחה באווירה הררית", paragraphs: [
+          "אפשר לארגן ארוחת צהריים בכפר דלפי או באראחובה הסמוכה. דלפי נוחה מיד אחרי הביקור, ואילו אראחובה מוסיפה אווירת כפר הררי, אדריכלות אבן ונופים אל פרנסוס.",
+          "אראחובה היא תוספת מקסימה אך לא הכרחית לכולם. מי שרוצה זמן נוסף בין החורבות יעדיף ארוחה נינוחה בדלפי וחזרה רגועה. התוכנית הפרטית מאפשרת את שתי האפשרויות.",
+        ]},
+        { subheading: "אחר הצהריים: עצירות אופציונליות וחזרה לאתונה", paragraphs: [
+          "בהתאם לעונה ולתחומי העניין, הנהג יכול לשלב עצירת תצפית, זמן באראחובה או הפסקת רענון לפני החזרה. במרצדס V-Class אפשר להירגע ולהגיע למלון באתונה בנוחות בשעות הערב המוקדמות.",
+          "ליום מלא סטנדרטי צפו לכ-10 עד 12 שעות מדלת לדלת. אורחי שיוט או נוסעים עם טיסה צמודה כדאי שישאירו מרווח. את דלפי נהנים יותר כשהחזרה אינה נחפזת.",
+        ]},
+        { heading: "מה כדאי לסדר לפני היציאה", paragraphs: [
+          "פרטים שנמסרים מראש הופכים את היום למושלם. אשרו את כתובת האיסוף המדויקת, שעת היציאה, מספר הנוסעים וצורכי המזוודות. בנסיעה עם ילדים בקשו מושבי בטיחות מתאימים בעת ההזמנה.",
+          "כדאי גם להחליט אם תרצו מסלול המוקדש לדלפי בלבד או הכולל את אראחובה. ציינו מגבלות ניידות, העדפות אוכל או תוכניות קבועות בערב באתונה.",
+          "כרטיסי כניסה ומדריכים מורשים הם שירותים נפרדים מההסעה. יש המעדיפים לסייר עצמאית ויש המעריכים מדריך להקשר היסטורי מעמיק, וזה משפיע על הזמן שתקצו לאתר ולמוזיאון.",
+        ]},
+        { heading: "מתי הזמן הטוב ביותר לבקר בדלפי?", paragraphs: [
+          "אפריל עד יוני וספטמבר עד אוקטובר הם תקופות אידיאליות: נוף יפה, שעות אור רבות ותנאי הליכה נוחים. הקיץ מציע ימים ארוכים, אך מומלץ לצאת מוקדם ולשמור על קצב מתון בגלל החום.",
+          "החורף מתגמל מי שמעריך אתרים שקטים ואווירה מהורהרת. התנאים באזור פרנסוס משתנים, לכן הקצו זמן נוסף והתלבשו בשכבות. נסיעה פרטית עם נהג מעניקה ביטחון כשמזג האוויר מחייב התאמות.",
+        ]},
+        { heading: "הסעה יוקרתית ליום שראוי לזמן", paragraphs: [
+          "H&A VIP Tours מציעה נסיעות פרטיות לדלפי המותאמות לדרך שבה אתם אוהבים לטייל: איסוף ישיר מהמלון, מרצדס V-Class יוקרתית, שירות מקצועי דיסקרטי ולוח זמנים אישי. ההזמנה בוואטסאפ זמינה 24/7.",
+          "דלפי מתגמלת את מי שנותן לה מרחב. צאו מוקדם מאתונה, סעו בדרך ההרים בנחת, ותנו למבט האחרון על העמק לקבוע את הקצב לשאר המסע שלכם ביוון.",
+        ]},
+      ],
+    },
+  },
 };
+
