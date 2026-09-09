@@ -10,6 +10,7 @@ import athensHistoricCenterMap from "@/assets/athens-historic-center-map.webp";
 import sounionPrivateTour from "@/assets/sounion-private-tour.webp";
 import syntagmaSounionRouteMap from "@/assets/syntagma-sounion-route-map.webp";
 import delphiPrivateDayTrip from "@/assets/delphi-private-day-trip.webp";
+import athensDelphiRouteMap from "@/assets/athens-delphi-route-map.webp";
 
 import { blogPostTranslations, type BlogPostTranslation } from "./blogPostTranslations";
 
@@ -87,6 +88,9 @@ export const blogPosts: BlogPost[] = [
           "This is not a route best judged only by distance. The early section is efficient highway driving, while the approach to Delphi becomes more scenic and more winding. A professional chauffeur who knows the journey can keep the day calm, allowing you to relax between sites rather than concentrate on timing, directions, or parking logistics.",
           "A practical departure is usually between 7:30 and 8:30 a.m. An earlier start can be a better choice in summer, when temperatures rise quickly around the archaeological site and visitor numbers increase. In spring and fall, a slightly later departure may suit travelers who prefer a relaxed breakfast before leaving Athens. The right schedule depends on your hotel location, pace, and whether you wish to include Arachova or other cultural stops.",
         ],
+        image: athensDelphiRouteMap,
+        imageAlt:
+          "Google Maps route from Athens to Delphi, approximately 184 km and 2 hours 30 minutes via Thebes and Arachova",
       },
       {
         heading: "A thoughtful itinerary for a full day in Delphi",

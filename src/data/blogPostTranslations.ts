@@ -2861,7 +2861,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
           "Μια ιδιωτική ημερήσια εκδρομή είναι ιδιαίτερα πολύτιμη για επισκέπτες στο κέντρο της Αθήνας, στην Αθηναϊκή Ριβιέρα ή κοντά στον Πειραιά πριν ή μετά από κρουαζιέρα. Ο οδηγός σας σας παραλαμβάνει απευθείας από το ξενοδοχείο, την κατοικία ή το συμφωνημένο σημείο συνάντησης, χωρίς μεταφορές σε στάδια και χωρίς σταθερό ομαδικό πρόγραμμα.",
           "Η Mercedes V-Class ταιριάζει ιδανικά στη διαδρομή. Η ευρύχωρη καμπίνα προσφέρει άνετα καθίσματα, κλιματισμό και χώρο για τσάντες ημέρας, φωτογραφικές μηχανές, καρότσια και προσωπικά αντικείμενα. Οι οικογένειες μπορούν να ζητήσουν παιδικά καθίσματα εκ των προτέρων.",
         ]},
-        { heading: "Η διαδρομή Αθήνα – Δελφοί", paragraphs: [
+        { heading: "Η διαδρομή Αθήνα – Δελφοί", imageAlt: "Διαδρομή Google Maps από την Αθήνα στους Δελφούς, περίπου 184 χλμ. και 2 ώρες 30 λεπτά μέσω Θήβας και Αράχωβας", paragraphs: [
           "Η συνηθέστερη διαδρομή φεύγει από την Αθήνα μέσω της Εθνικής Οδού Α1 προς τη βόρεια Αττική και συνεχίζει μέσω Θήβας και Λιβαδειάς, ανεβαίνοντας προς Αράχωβα και Δελφούς. Ο χρόνος ταξιδιού είναι συνήθως 2,5 έως 3 ώρες ανά κατεύθυνση, ανάλογα με το σημείο παραλαβής, την κίνηση και τις στάσεις.",
           "Το πρώτο τμήμα είναι γρήγορη οδήγηση σε αυτοκινητόδρομο, ενώ η προσέγγιση στους Δελφούς γίνεται πιο γραφική και ελικοειδής. Ένας επαγγελματίας οδηγός που γνωρίζει τη διαδρομή κρατά τη μέρα ήρεμη, ώστε εσείς να χαλαρώνετε αντί να ασχολείστε με χρονισμό, κατευθύνσεις ή πάρκινγκ.",
           "Μια πρακτική ώρα αναχώρησης είναι συνήθως μεταξύ 7:30 και 8:30 το πρωί. Το καλοκαίρι μια νωρίτερη εκκίνηση είναι προτιμότερη λόγω ζέστης και επισκεψιμότητας. Την άνοιξη και το φθινόπωρο μια ελαφρώς αργότερη αναχώρηση ταιριάζει σε όσους θέλουν ήρεμο πρωινό. Το σωστό πρόγραμμα εξαρτάται από το ξενοδοχείο σας, τον ρυθμό σας και το αν θέλετε στάση στην Αράχωβα.",
@@ -2913,7 +2913,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
           "Una giornata privata è preziosa soprattutto per chi soggiorna nel centro di Atene, lungo la Riviera ateniese o vicino al Pireo prima o dopo una crociera. L'autista vi preleva direttamente dall'hotel, dalla residenza o dal punto d'incontro concordato, senza tappe da coordinare né orari di gruppo.",
           "La Mercedes V-Class è ideale per questo percorso: abitacolo spazioso, sedute comode, climatizzazione e spazio per borse, macchine fotografiche, passeggini ed effetti personali. Le famiglie possono richiedere seggiolini per bambini in anticipo.",
         ]},
-        { heading: "Il percorso da Atene a Delfi", paragraphs: [
+        { heading: "Il percorso da Atene a Delfi", imageAlt: "Percorso Google Maps da Atene a Delfi, circa 184 km e 2 ore e 30 minuti via Tebe e Arachova", paragraphs: [
           "Il tragitto più comune lascia Atene sull'autostrada A1 verso l'Attica settentrionale, prosegue per Tebe e Livadia e sale verso Arachova e Delfi. Il tempo di percorrenza è generalmente di 2,5-3 ore per tratta, secondo il punto di prelievo, il traffico e le soste scelte.",
           "Il primo tratto è autostradale e scorrevole, mentre l'avvicinamento a Delfi diventa più panoramico e tortuoso. Un autista professionista che conosce il percorso mantiene la giornata serena, lasciandovi rilassare invece di pensare a orari, indicazioni o parcheggi.",
           "Una partenza pratica è di solito tra le 7:30 e le 8:30. In estate conviene partire prima, per il caldo e l'afflusso di visitatori. In primavera e autunno una partenza leggermente più tardi consente una colazione tranquilla. L'orario giusto dipende dalla posizione dell'hotel, dal ritmo e dall'eventuale sosta ad Arachova.",
@@ -2965,7 +2965,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
           "Un día privado resulta especialmente valioso para quienes se alojan en el centro de Atenas, en la Riviera ateniense o cerca de El Pireo antes o después de un crucero. Su chófer le recoge directamente en el hotel, la residencia o el punto acordado, sin etapas que coordinar ni horarios de grupo.",
           "El Mercedes V-Class encaja perfectamente en esta ruta: cabina amplia, asientos cómodos, climatización y espacio para bolsos, cámaras, carritos y objetos personales. Las familias pueden solicitar sillitas infantiles con antelación.",
         ]},
-        { heading: "La ruta de Atenas a Delfos", paragraphs: [
+        { heading: "La ruta de Atenas a Delfos", imageAlt: "Ruta de Google Maps de Atenas a Delfos, aproximadamente 184 km y 2 horas 30 minutos por Tebas y Arachova", paragraphs: [
           "La ruta habitual sale de Atenas por la autopista A1 hacia el norte del Ática, continúa por Tebas y Livadia y asciende hacia Arachova y Delfos. El tiempo de viaje suele ser de 2,5 a 3 horas por trayecto, según el punto de recogida, el tráfico y las paradas elegidas.",
           "El primer tramo es autopista rápida, mientras que la aproximación a Delfos se vuelve más panorámica y sinuosa. Un chófer profesional que conoce el camino mantiene la jornada tranquila para que usted se relaje en lugar de pensar en horarios, indicaciones o aparcamiento.",
           "Una salida práctica suele ser entre las 7:30 y las 8:30. En verano conviene salir antes, por el calor y la afluencia. En primavera y otoño una salida algo más tardía permite un desayuno relajado. El horario ideal depende de su hotel, su ritmo y de si desea incluir Arachova.",
@@ -3017,7 +3017,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
           "Une journée privée est précieuse pour les voyageurs logés dans le centre d'Athènes, sur la Riviera athénienne ou près du Pirée avant ou après une croisière. Votre chauffeur vient vous chercher directement à votre hôtel, votre résidence ou au point de rendez-vous convenu, sans étapes à coordonner ni horaires de groupe.",
           "Le Mercedes V-Class convient parfaitement : habitacle spacieux, sièges confortables, climatisation et place pour les sacs, appareils photo, poussettes et effets personnels. Les familles peuvent demander des sièges enfants à l'avance.",
         ]},
-        { heading: "L'itinéraire Athènes – Delphes", paragraphs: [
+        { heading: "L'itinéraire Athènes – Delphes", imageAlt: "Itinéraire Google Maps d'Athènes à Delphes, environ 184 km et 2 h 30 via Thèbes et Arachova", paragraphs: [
           "La route la plus courante quitte Athènes par l'autoroute A1 vers l'Attique du nord, puis traverse Thèbes et Livadia avant de monter vers Arachova et Delphes. Le trajet dure généralement 2h30 à 3h par sens, selon le lieu de prise en charge, la circulation et les arrêts choisis.",
           "La première partie est de l'autoroute fluide, tandis que l'approche de Delphes devient plus panoramique et sinueuse. Un chauffeur professionnel qui connaît la route garde la journée sereine et vous laisse vous détendre plutôt que gérer horaires, itinéraire ou stationnement.",
           "Un départ pratique se situe généralement entre 7h30 et 8h30. En été, partir plus tôt est préférable en raison de la chaleur et de l'affluence. Au printemps et à l'automne, un départ un peu plus tardif permet un petit-déjeuner tranquille. L'horaire idéal dépend de votre hôtel, de votre rythme et d'un éventuel arrêt à Arachova.",
@@ -3069,7 +3069,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
           "Ein privater Tagesausflug ist besonders wertvoll für Gäste im Zentrum Athens, an der Athener Riviera oder in Piräus vor oder nach einer Kreuzfahrt. Ihr Chauffeur holt Sie direkt am Hotel, an der Unterkunft oder am vereinbarten Treffpunkt ab – ohne Etappen zu koordinieren und ohne festen Gruppenplan.",
           "Der Mercedes V-Class passt ideal zu dieser Route: großzügiger Innenraum, bequeme Sitze, Klimatisierung und Platz für Taschen, Kameras, Kinderwagen und persönliche Dinge. Kindersitze können vorab angefragt werden.",
         ]},
-        { heading: "Die Strecke von Athen nach Delphi", paragraphs: [
+        { heading: "Die Strecke von Athen nach Delphi", imageAlt: "Google-Maps-Route von Athen nach Delphi, ca. 184 km und 2 Stunden 30 Minuten über Theben und Arachova", paragraphs: [
           "Die übliche Route verlässt Athen über die Autobahn A1 Richtung Nordattika und führt über Theben und Livadia hinauf nach Arachova und Delphi. Die Fahrzeit beträgt in der Regel 2,5 bis 3 Stunden pro Richtung, je nach Abholort, Verkehr und gewählten Stopps.",
           "Der erste Abschnitt ist zügige Autobahnfahrt, die Annäherung an Delphi wird landschaftlich reizvoller und kurviger. Ein erfahrener Chauffeur hält den Tag ruhig, sodass Sie sich entspannen können, statt sich um Timing, Navigation oder Parkplätze zu kümmern.",
           "Eine praktische Abfahrt liegt meist zwischen 7:30 und 8:30 Uhr. Im Sommer ist ein früherer Start wegen Hitze und Besucherandrang sinnvoll. Im Frühjahr und Herbst passt eine etwas spätere Abfahrt mit entspanntem Frühstück. Der richtige Zeitplan hängt von Hotel, Tempo und einem möglichen Stopp in Arachova ab.",
@@ -3121,7 +3121,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
           "الرحلة الخاصة مفيدة خصوصاً للنزلاء في وسط أثينا أو على الريفييرا الأثينية أو قرب بيرايوس قبل رحلة بحرية أو بعدها. يستقبلك السائق مباشرة من الفندق أو مكان الإقامة أو نقطة اللقاء المتفق عليها، دون تنسيق مراحل أو التقيّد ببرنامج جماعي.",
           "سيارة مرسيدس V-Class مثالية لهذا الطريق: مقصورة واسعة ومقاعد مريحة وتكييف ومساحة للحقائب والكاميرات وعربات الأطفال. يمكن طلب مقاعد الأطفال مسبقاً.",
         ]},
-        { heading: "طريق أثينا – دلفي", paragraphs: [
+        { heading: "طريق أثينا – دلفي", imageAlt: "مسار خرائط جوجل من أثينا إلى دلفي، حوالي 184 كم وساعتين و30 دقيقة عبر طيبة وأراخوفا", paragraphs: [
           "يغادر الطريق المعتاد أثينا عبر الطريق السريع A1 نحو شمال أتيكا، ثم يمر بطيبة وليفاديا قبل الصعود نحو أراخوفا ودلفي. تستغرق الرحلة عادة من 2.5 إلى 3 ساعات في كل اتجاه حسب نقطة الاستقبال وحركة المرور والتوقفات.",
           "القسم الأول قيادة سريعة على الطريق السريع، بينما يصبح الاقتراب من دلفي أكثر جمالاً والتواءً. السائق المحترف الذي يعرف الطريق يبقي اليوم هادئاً لتسترخي بدلاً من الانشغال بالتوقيت والاتجاهات ومواقف السيارات.",
           "الانطلاق العملي يكون عادة بين 7:30 و8:30 صباحاً. في الصيف يُفضّل الانطلاق مبكراً بسبب الحرارة وازدحام الزوار. في الربيع والخريف يناسب البعض انطلاق أكثر تأخراً بعد إفطار هادئ. التوقيت المناسب يعتمد على موقع فندقك وإيقاعك ورغبتك في زيارة أراخوفا.",
@@ -3173,7 +3173,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
           "טיול יום פרטי בעל ערך במיוחד לאורחים במרכז אתונה, לאורך הריביירה האתונאית או ליד פיראוס לפני שיוט או אחריו. הנהג אוסף אתכם ישירות מהמלון, מהדירה או מנקודת המפגש, בלי לתאם שלבים ובלי לוח זמנים קבוצתי.",
           "המרצדס V-Class מתאימה למסלול: תא נוסעים מרווח, מושבים נוחים, מיזוג ומקום לתיקים, מצלמות, עגלות וחפצים אישיים. משפחות יכולות לבקש מושבי בטיחות מראש.",
         ]},
-        { heading: "המסלול מאתונה לדלפי", paragraphs: [
+        { heading: "המסלול מאתונה לדלפי", imageAlt: "מסלול Google Maps מאתונה לדלפי, כ-184 ק\"מ ושעתיים ו-30 דקות דרך תבס וארחובה", paragraphs: [
           "המסלול הנפוץ יוצא מאתונה בכביש המהיר A1 צפונה, ממשיך דרך תבאי ולבדיה ומטפס אל אראחובה ודלפי. משך הנסיעה הוא בדרך כלל 2.5 עד 3 שעות לכל כיוון, בהתאם לנקודת האיסוף, לתנועה ולעצירות.",
           "החלק הראשון הוא נסיעה יעילה בכביש מהיר, ואילו ההתקרבות לדלפי נעשית ציורית ומפותלת יותר. נהג מקצועי שמכיר את הדרך שומר על יום רגוע, כך שתוכלו להירגע במקום להתעסק בזמנים, ניווט וחניה.",
           "שעת יציאה מעשית היא בדרך כלל בין 7:30 ל-8:30 בבוקר. בקיץ עדיפה יציאה מוקדמת בשל החום וכמות המבקרים. באביב ובסתיו יציאה מעט מאוחרת מתאימה לארוחת בוקר נינוחה. הלוח הנכון תלוי במיקום המלון, בקצב שלכם ובשאלה אם תרצו לכלול את אראחובה.",
