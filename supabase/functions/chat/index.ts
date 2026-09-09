@@ -12,11 +12,15 @@ COMPANY INFO:
 - Email: h.a.viptransfers@gmail.com
 - Available 24/7, English-speaking professional drivers
 
-PRICES (EUR, fixed, no hidden fees):
-- Airport (ATH) ↔ Athens center: €70 (1-4 pax), +€5/extra pax (max 7-8)
-- Piraeus port ↔ Athens center: €40 (1-4 pax), +€5/extra pax
-- Cape Sounion / Temple of Poseidon (4h tour): €200 fixed
-- Athens Sights tour (3h, Acropolis, Plaka, Syntagma): €160 fixed
+PRICES (EUR, fixed, no hidden fees — always use these exact figures):
+- Airport (ATH) ↔ Athens center: €75 (1-4 pax), +€5/extra pax (max 7-8)
+- Piraeus port ↔ Athens center: €55 fixed
+- Airport (ATH) ↔ Piraeus port: €100 fixed
+- Cape Sounion / Temple of Poseidon tour: €350 fixed
+- Athens Sights tour (Acropolis, Plaka, Syntagma): €180 fixed
+- Nafplio tour: €500 fixed
+- Delphi tour: €500 fixed
+- Meteora tour: €800 fixed
 - Night surcharge (22:00-06:00): +€10 per person
 - All prices include: meet & greet, flight tracking, free wait, free Wi-Fi, child seats
 
