@@ -1,4 +1,4 @@
-import tourAcropolis from "@/assets/tour-acropolis.webp";
+
 import athensAirportHotelTransfer from "@/assets/athens-airport-hotel-transfer.webp";
 import mercedesVClassChauffeurAthens from "@/assets/mercedes-v-class-chauffeur-athens.webp";
 import piraeusPortAirportTransfer from "@/assets/piraeus-port-airport-transfer.webp";
