@@ -9,6 +9,8 @@ import athensPrivateDriverTour from "@/assets/athens-private-driver-tour.webp";
 import athensHistoricCenterMap from "@/assets/athens-historic-center-map.webp";
 import sounionPrivateTour from "@/assets/sounion-private-tour.webp";
 import syntagmaSounionRouteMap from "@/assets/syntagma-sounion-route-map.webp";
+import delphiPrivateDayTrip from "@/assets/delphi-private-day-trip.webp";
+
 import { blogPostTranslations, type BlogPostTranslation } from "./blogPostTranslations";
 
 export interface BlogSection {
