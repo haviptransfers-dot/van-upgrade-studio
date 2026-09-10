@@ -3,7 +3,7 @@ import athensAirportHotelTransfer from "@/assets/athens-airport-hotel-transfer.w
 import mercedesVClassChauffeurAthens from "@/assets/mercedes-v-class-chauffeur-athens.webp";
 import piraeusPortAirportTransfer from "@/assets/piraeus-port-airport-transfer.webp";
 import piraeusAirportRouteMap from "@/assets/piraeus-airport-route-map.webp";
-import piraeusCruiseTransfer from "@/assets/piraeus-cruise-transfer.webp";
+import piraeusCruiseTransfer from "@/assets/piraeus-cruise-transfer.jpg.asset.json";
 import piraeusCruiseRouteMap from "@/assets/piraeus-cruise-route-map.webp";
 import privateAthensTourWithDriver from "@/assets/private-athens-tour-with-driver.jpg.asset.json";
 import athensHistoricCenterMap from "@/assets/athens-historic-center-map.webp";
@@ -678,9 +678,9 @@ export const blogPosts: BlogPost[] = [
     title: "Μεταφορά Κρουαζιέρας Πειραιά: Ιδιωτική Premium Μεταφορά με Mercedes V-Class",
     excerpt:
       "Το πλοίο έδεσε και οι αποσκευές παραδόθηκαν. Δείτε γιατί μια προκρατημένη ιδιωτική μεταφορά κρουαζιέρας από τον Πειραιά με Mercedes V-Class αλλάζει την πρώτη ή την τελευταία σας ημέρα στην Αθήνα.",
-    image: piraeusCruiseTransfer,
+    image: hostedAssetUrl(piraeusCruiseTransfer),
     imageAlt:
-      "Εικονογράφηση H&A Tours με Mercedes V-Class, κρουαζιερόπλοιο στον Πειραιά και την Ακρόπολη — ιδιωτική μεταφορά κρουαζιέρας",
+      "Επαγγελματίας οδηγός ανοίγει την πόρτα μαύρου Mercedes V-Class στο λιμάνι του Πειραιά, με κρουαζιερόπλοιο και αεροπλάνο στον ορίζοντα — ιδιωτική μεταφορά κρουαζιέρας",
     date: "2026-09-06",
     metaTitle:
       "Μεταφορά Κρουαζιέρας Πειραιά | Ιδιωτική Μεταφορά με Mercedes V-Class — H&A VIP Transfers",
