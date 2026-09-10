@@ -7,7 +7,7 @@ import piraeusCruiseTransfer from "@/assets/piraeus-cruise-transfer.webp";
 import piraeusCruiseRouteMap from "@/assets/piraeus-cruise-route-map.webp";
 import athensPrivateDriverTour from "@/assets/athens-private-driver-tour.webp";
 import athensHistoricCenterMap from "@/assets/athens-historic-center-map.webp";
-import sounionPrivateTour from "@/assets/sounion-private-tour.webp";
+import sounionPrivateTour from "@/assets/sounion-private-tour.jpg.asset.json";
 import syntagmaSounionRouteMap from "@/assets/syntagma-sounion-route-map.webp";
 import delphiDayTripCover from "@/assets/delphi-day-trip-cover.jpg.asset.json";
 import athensDelphiRouteMap from "@/assets/athens-delphi-route-map.webp";
@@ -385,9 +385,9 @@ export const blogPosts: BlogPost[] = [
     title: "Private Transfer from Athens to Cape Sounio: Temple of Poseidon by Mercedes V-Class",
     excerpt:
       "An unhurried coastal journey to the Temple of Poseidon, arranged around your departure time and pace. Discover why a private chauffeur-driven Mercedes V-Class is the finest way to experience Cape Sounion.",
-    image: sounionPrivateTour,
+    image: hostedAssetUrl(sounionPrivateTour),
     imageAlt:
-      "Stylized illustration of a black Mercedes V-Class driving along a colorful coastal road toward the Temple of Poseidon at Cape Sounion at sunset",
+      "Elegant couple with a black Mercedes V-Class at Cape Sounion, the Temple of Poseidon silhouetted against a golden sunset over the Aegean Sea",
     date: "2026-09-08",
     metaTitle: "Private Transfer Athens to Cape Sounio – Temple of Poseidon | H&A VIP Tours",
     metaDescription:
