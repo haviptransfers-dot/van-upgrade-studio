@@ -1,7 +1,7 @@
 
 import athensAirportHotelTransfer from "@/assets/athens-airport-hotel-transfer.webp";
 import mercedesVClassChauffeurAthens from "@/assets/mercedes-v-class-chauffeur-athens.webp";
-import piraeusPortAirportTransfer from "@/assets/piraeus-port-airport-transfer.webp";
+import privateTransferPiraeusPort from "@/assets/private-transfer-piraeus-port.jpg.asset.json";
 import piraeusAirportRouteMap from "@/assets/piraeus-airport-route-map.webp";
 import piraeusCruiseTransfer from "@/assets/piraeus-cruise-transfer.jpg.asset.json";
 import piraeusCruiseRouteMap from "@/assets/piraeus-cruise-route-map.webp";
@@ -598,9 +598,9 @@ export const blogPosts: BlogPost[] = [
     title: "Private Transfer from Piraeus Port",
     excerpt:
       "Departing from Piraeus after a cruise or a stay at the port? Discover why a pre-booked private transfer to Athens Airport is the calmest way to end your trip.",
-    image: piraeusPortAirportTransfer,
+    image: hostedAssetUrl(privateTransferPiraeusPort),
     imageAlt:
-      "Stylized H&A Tours illustration of a Mercedes V-Class connecting Piraeus port, the city and Athens Airport",
+      "Black Mercedes V-Class on the coastal road from Piraeus Port with a cruise ship, the Acropolis at sunset and H&A TOURS LTD branding",
     date: "2026-09-05",
     metaTitle: "Private Transfer from Piraeus Port to Athens Airport | H&A VIP Transfers",
     metaDescription:
