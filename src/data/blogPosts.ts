@@ -5,7 +5,7 @@ import piraeusPortAirportTransfer from "@/assets/piraeus-port-airport-transfer.w
 import piraeusAirportRouteMap from "@/assets/piraeus-airport-route-map.webp";
 import piraeusCruiseTransfer from "@/assets/piraeus-cruise-transfer.webp";
 import piraeusCruiseRouteMap from "@/assets/piraeus-cruise-route-map.webp";
-import athensPrivateDriverTour from "@/assets/athens-private-driver-tour.webp";
+import privateAthensTourWithDriver from "@/assets/private-athens-tour-with-driver.jpg.asset.json";
 import athensHistoricCenterMap from "@/assets/athens-historic-center-map.webp";
 import sounionPrivateTour from "@/assets/sounion-private-tour.jpg.asset.json";
 import syntagmaSounionRouteMap from "@/assets/syntagma-sounion-route-map.webp";
@@ -753,8 +753,8 @@ export const blogPosts: BlogPost[] = [
     slug: "athens-private-tour-with-driver",
     title: "Private Tour of Athens with Driver: Discover the City in a Mercedes V-Class",
     excerpt: "A planned private tour with a driver turns a busy day in Athens into a private experience built around your priorities — professional chauffeur, premium vehicle, flexible itinerary.",
-    image: athensPrivateDriverTour,
-    imageAlt: "H&A Tours Ltd illustration — Athens historic center private tour with a black Mercedes V-Class, the Parthenon and Lycabettus Hill at sunset",
+    image: hostedAssetUrl(privateAthensTourWithDriver),
+    imageAlt: "Private tour of Athens with a professional driver gesturing toward the Acropolis, with a couple enjoying the view on a sunny day",
     date: "2026-09-07",
     metaTitle: "Private Tour of Athens with Driver | Mercedes V-Class | H&A VIP Tours",
     metaDescription: "Discover Athens at your own pace with a private tour and professional chauffeur in a luxury Mercedes V-Class. Custom itinerary, hotel & cruise terminal pickup, child seats on request.",
