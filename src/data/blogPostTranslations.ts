@@ -1,4 +1,5 @@
 import type { BlogSection } from "./blogPosts";
+import { childSeatsTranslations } from "./blogPostChildSeatsTranslations";
 
 export interface BlogPostTranslation {
   title: string;
@@ -11,6 +12,7 @@ export interface BlogPostTranslation {
 
 // slug -> language code (matching i18n locales: el, it, es, fr, de, ar, he) -> translation
 export const blogPostTranslations: Record<string, Record<string, BlogPostTranslation>> = {
+  "child-car-seats-private-transfers-greece": childSeatsTranslations,
   "private-transfer-athens-airport-to-hotel": {
     el: {
       title: "Ιδιωτική Μεταφορά από το Αεροδρόμιο της Αθήνας στο Ξενοδοχείο",
