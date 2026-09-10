@@ -9,7 +9,7 @@ import athensPrivateDriverTour from "@/assets/athens-private-driver-tour.webp";
 import athensHistoricCenterMap from "@/assets/athens-historic-center-map.webp";
 import sounionPrivateTour from "@/assets/sounion-private-tour.webp";
 import syntagmaSounionRouteMap from "@/assets/syntagma-sounion-route-map.webp";
-import delphiPrivateDayTrip from "@/assets/delphi-private-day-trip.webp";
+import delphiDayTripCover from "@/assets/delphi-day-trip-cover.jpg.asset.json";
 import athensDelphiRouteMap from "@/assets/athens-delphi-route-map.webp";
 import privateMeteoraTourFromAthens from "@/assets/private-meteora-tour-from-athens.webp.asset.json";
 import athensMeteoraRouteMap from "@/assets/athens-meteora-route-map.webp";
@@ -290,9 +290,9 @@ export const blogPosts: BlogPost[] = [
     title: "Private Delphi Day Trip from Athens: A Full Day by Mercedes V-Class",
     excerpt:
       "A full day through central Greece to the slopes of Mount Parnassus. Direct hotel pickup, a luxury Mercedes V-Class, and an unhurried itinerary built around Delphi, its museum and Arachova.",
-    image: delphiPrivateDayTrip,
+    image: delphiDayTripCover.url,
     imageAlt:
-      "Colorful illustration of a black Mercedes V-Class on a mountain road to the ancient sanctuary of Delphi below Mount Parnassus at sunset",
+      "Ancient Tholos of Delphi ruins with Doric columns set against the mountains of Mount Parnassus and the Pleistos Valley", 
     date: "2026-09-09",
     metaTitle: "Private Delphi Day Trip from Athens – Mercedes V-Class | H&A VIP Tours",
     metaDescription:
