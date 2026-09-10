@@ -13,7 +13,7 @@ import delphiDayTripCover from "@/assets/delphi-day-trip-cover.jpg.asset.json";
 import athensDelphiRouteMap from "@/assets/athens-delphi-route-map.webp";
 import privateMeteoraTourFromAthens from "@/assets/private-meteora-tour-from-athens.webp.asset.json";
 import athensMeteoraRouteMap from "@/assets/athens-meteora-route-map.webp";
-import childSeatsFamilySafe from "@/assets/child-seats-family-safe.webp";
+import childSeatsFamilySafe from "@/assets/child-seats-family-safe.jpg.asset.json";
 import besafeIziTwistSupportLeg from "@/assets/besafe-izi-twist-support-leg.webp";
 import besafeIziTwistRearFacing from "@/assets/besafe-izi-twist-rear-facing.webp";
 import besafeIziModularToddler from "@/assets/besafe-izi-modular-toddler.webp";
@@ -68,9 +68,9 @@ export const blogPosts: BlogPost[] = [
       "Why Child Car Seats Are Non-Negotiable in Private Transfers in Greece: Safety, Law & Comfort with H&A TOURS LTD",
     excerpt:
       "Certified BeSafe child seats for every age, installed by us and always free on request. Greek law, real safety data, and how our Mercedes V-Class keeps families comfortable on long routes.",
-    image: childSeatsFamilySafe,
+    image: childSeatsFamilySafe.url,
     imageAlt:
-      "Illustration of a black Mercedes V-Class with child seats at Athens International Airport, chauffeur holding an H&A Tours Ltd Family Safe sign next to a family with two children",
+      "Black Mercedes V-Class at Athens International Airport with a family, two children, luggage and an H&A Tours Ltd Family Safe sign held by the chauffeur",
     date: "2026-09-11",
     metaTitle: "Child Car Seats in Private Transfers in Greece – Safety & Law | H&A TOURS LTD",
     metaDescription:
