@@ -1,5 +1,5 @@
 
-import athensAirportHotelTransfer from "@/assets/athens-airport-hotel-transfer.webp";
+import athensAirportHotelTransfer from "@/assets/athens-airport-hotel-transfer.jpg.asset.json";
 import mercedesVClassChauffeurAthens from "@/assets/mercedes-v-class-chauffeur-athens.jpg.asset.json";
 import privateTransferPiraeusPort from "@/assets/private-transfer-piraeus-port.jpg.asset.json";
 import piraeusAirportRouteMap from "@/assets/piraeus-airport-route-map.webp";
@@ -458,9 +458,9 @@ export const blogPosts: BlogPost[] = [
     title: "Private Transfer from Athens Airport to Hotel",
     excerpt:
       "Skip taxi queues and travel from Athens Airport to your hotel in comfort. Discover why a private Mercedes V-Class transfer is the smartest start to your Athens stay.",
-    image: athensAirportHotelTransfer,
+    image: hostedAssetUrl(athensAirportHotelTransfer),
     imageAlt:
-      "Stylized illustration of a private car transfer from Athens Airport to a hotel at sunset",
+      "Black Mercedes V-Class on a scenic Athens road at golden hour with the Acropolis and a private tour guide pointing toward the ancient monuments",
     date: "2026-09-03",
     metaTitle:
       "Private Transfer from Athens Airport to Hotel | H&A VIP Transfers",
