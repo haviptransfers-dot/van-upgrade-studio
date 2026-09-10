@@ -13,6 +13,12 @@ import delphiPrivateDayTrip from "@/assets/delphi-private-day-trip.webp";
 import athensDelphiRouteMap from "@/assets/athens-delphi-route-map.webp";
 import meteoraPrivateDayTrip from "@/assets/meteora-private-day-trip.webp";
 import athensMeteoraRouteMap from "@/assets/athens-meteora-route-map.webp";
+import childSeatsFamilySafe from "@/assets/child-seats-family-safe.webp";
+import besafeIziTwistSupportLeg from "@/assets/besafe-izi-twist-support-leg.webp";
+import besafeIziTwistRearFacing from "@/assets/besafe-izi-twist-rear-facing.webp";
+import besafeIziModularToddler from "@/assets/besafe-izi-modular-toddler.webp";
+import besafeIdriveToddler from "@/assets/besafe-idrive-toddler.webp";
+import monzaBoosterSeats from "@/assets/monza-booster-seats.webp";
 
 import { blogPostTranslations, type BlogPostTranslation } from "./blogPostTranslations";
 
@@ -56,6 +62,150 @@ export function localizePost(post: BlogPost, lang: string): BlogPost {
 export const WHATSAPP_URL = "https://wa.me/306949393700";
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "child-car-seats-private-transfers-greece",
+    title:
+      "Why Child Car Seats Are Non-Negotiable in Private Transfers in Greece: Safety, Law & Comfort with H&A TOURS LTD",
+    excerpt:
+      "Certified BeSafe child seats for every age, installed by us and always free on request. Greek law, real safety data, and how our Mercedes V-Class keeps families comfortable on long routes.",
+    image: childSeatsFamilySafe,
+    imageAlt:
+      "Illustration of a black Mercedes V-Class with child seats at Athens International Airport, chauffeur holding an H&A Tours Ltd Family Safe sign next to a family with two children",
+    date: "2026-09-11",
+    metaTitle: "Child Car Seats in Private Transfers in Greece – Safety & Law | H&A TOURS LTD",
+    metaDescription:
+      "Greek law, i-Size rules and real safety data for child car seats in private transfers. BeSafe seats for babies, toddlers and big kids, installed free in our Mercedes V-Class.",
+    sections: [
+      {
+        paragraphs: [
+          "Traveling with children is a joy, but also a responsibility. When you book a private transfer from Athens to Meteora, Delphi, Sounio, or a simple airport transfer, one question matters more than Wi-Fi, water, or luxury leather seats: is my child truly safe?",
+          "At H&A TOURS LTD, the answer is always yes. Here is why child car seats are not just an extra – they are essential.",
+        ],
+      },
+      {
+        heading: "1. The reality of road safety in Greece",
+        paragraphs: [
+          "Greece welcomes millions of families every year. The routes are beautiful – Athens Riviera to Sounio (69 km), Athens to Delphi (180 km), Athens to Meteora (355 km) – but they are also highways with high speeds, sharp mountain turns, and heavy summer traffic. According to EU statistics, the correct use of a certified child car seat reduces the risk of fatal injury by up to 71% for infants and 54% for toddlers.",
+          "A simple adult seatbelt is designed for a 75 kg adult. For a 10 kg baby, in a 50 km/h collision, the force becomes over 300 kg. No parent's arms can hold that. Only an i-Size certified seat can.",
+        ],
+      },
+      {
+        heading: "2. The law: what every tourist parent should know",
+        paragraphs: ["Greek traffic law (KOK) and EU regulation R129 (i-Size) are strict:"],
+        bullets: [
+          "Children under 12 years or 135 cm in height must use an appropriate child restraint system.",
+          "Children under 150 cm cannot sit in the front seat with an active airbag.",
+          "Fines for non-compliance start at €350, but the real cost is safety.",
+          "Professional transfer companies are legally required to provide suitable seats upon request.",
+        ],
+      },
+      {
+        paragraphs: [
+          "Many taxis or low-cost shuttles in Athens do not carry proper seats. They offer a booster for a six-month-old baby, which is both illegal and dangerous. At H&A TOURS LTD, we never compromise.",
+        ],
+      },
+      {
+        heading: "3. Our fleet solution: not one seat, but a complete system",
+        paragraphs: [
+          "Inside our Mercedes V-Class we invested in a full range of seats, because one seat does not fit all.",
+        ],
+        image: besafeIziTwistSupportLeg,
+        imageAlt:
+          "BeSafe iZi Twist B i-Size rear-facing baby seat installed on the cognac leather bench of a Mercedes V-Class with support leg and green indicator",
+      },
+      {
+        subheading: "Babies 0–18 months (40–105 cm): BeSafe iZi Twist B i-Size",
+        paragraphs: [
+          "360° rotation and rear-facing for as long as possible – up to five times safer. A support leg with a green indicator confirms correct installation: ISOFIX plus support leg means zero error. The soft grey fabric and side-impact protection keep your newborn asleep from Athens International Airport to your hotel.",
+        ],
+        image: besafeIziTwistRearFacing,
+        imageAlt: "Rear-facing BeSafe baby seat rotated toward the sliding door of a Mercedes V-Class",
+      },
+      {
+        subheading: "Toddlers 1–7 years (76–105 cm): BeSafe iZi Modular & i-Drive",
+        paragraphs: [
+          "Forward-facing with a 5-point harness and an adjustable headrest with SIP+ side impact protection. The mesh fabric keeps children cool in the Greek summer, when temperatures pass 35°C.",
+        ],
+        image: besafeIziModularToddler,
+        imageAlt: "BeSafe iZi Modular toddler seat with breathable grey mesh fabric in a Mercedes V-Class",
+      },
+      {
+        paragraphs: [
+          "The i-Drive seat is our second toddler option, with a deep shell, padded harness and i-Size approval.",
+        ],
+        image: besafeIdriveToddler,
+        imageAlt: "Black i-Size i-Drive toddler car seat with 5-point harness fitted in a Mercedes V-Class",
+      },
+      {
+        subheading: "Big kids 4–12 years (100–150 cm): Monza booster with ISOFIX",
+        paragraphs: [
+          "Two boosters can be installed side by side in our V-Class – perfect for families with two children. The belt sits correctly over the shoulder and pelvis, not the neck and stomach.",
+          "All our seats are BeSafe – a Norwegian brand tested beyond EU standards (Plus Test) – and they are always cleaned and checked before each transfer.",
+        ],
+        image: monzaBoosterSeats,
+        imageAlt: "Two Monza ISOFIX booster seats installed side by side on the quilted cognac leather bench of a Mercedes V-Class",
+      },
+      {
+        heading: "4. Why 360° rotation matters in a luxury van",
+        paragraphs: [
+          "Our V-Class has luxurious cognac diamond-stitched leather seats, and the BeSafe base rotates a full 360°. That means:",
+        ],
+        bullets: [
+          "We can put your baby in without you hitting your head on the van roof.",
+          "No twisting of your back after a long flight.",
+          "We can easily switch from rear-facing to forward-facing.",
+          "Your child can see you during the ride, which reduces anxiety.",
+        ],
+      },
+      {
+        paragraphs: ["It is a small detail that shows we thought like parents, not just drivers."],
+      },
+      {
+        heading: "5. Comfort equals safety – a tired child is an unsafe child",
+        paragraphs: [
+          "A four-hour transfer to Meteora is long. If the seat is uncomfortable, children cry, unbuckle, and lean out of position. Our seats are deeply padded, reclinable, and positioned on the middle row of the van – the safest and smoothest part of the vehicle. The high seating position lets kids see the Acropolis, the sea at Sounio, or the monasteries hanging on the rocks, without needing to stand up.",
+          "Parents can sit right next to them, on the same leather bench, not far away in a third row.",
+        ],
+      },
+      {
+        heading: "6. Hygiene and installation: the H&A TOURS difference",
+        paragraphs: [
+          "We have seen child seats in other vehicles – dusty, with loose ISOFIX, with expired straps. Ours are different:",
+        ],
+        bullets: [
+          "Professionally installed by us, not by the client: ISOFIX, top tether and support leg with green indicator.",
+          "Cleaned and disinfected after each use.",
+          "Checked for expiration dates and recalls.",
+          "Always provided free upon request – no hidden €30 charge like other companies.",
+        ],
+      },
+      {
+        paragraphs: [
+          "When you book, just tell us the ages, weights and heights. We will have the correct combination waiting at the airport, with a name sign.",
+        ],
+      },
+      {
+        heading: "7. The private transfer advantage for families",
+        paragraphs: ["Why not a bus or a rental car?"],
+        bullets: [
+          "Bus: no child seats at all.",
+          "Rental car: one dirty seat that you must install yourself in 40°C heat in a parking lot, then drive stressed on unfamiliar roads.",
+          "H&A TOURS private van: door to door, the driver helps with luggage and strollers, seats are pre-installed and certified, and you can stop for changing, feeding, or photos at the Corinth Canal on the way to Delphi or Meteora.",
+        ],
+      },
+      {
+        paragraphs: ["Your holiday starts the moment you land, not after you figure out the highway."],
+      },
+      {
+        heading: "8. Final word from a father and a professional",
+        paragraphs: [
+          "We created H&A TOURS LTD to offer what we would want for our own family: premium safety without losing luxury. A black Mercedes van outside Amanzoe, brown quilted leather inside, and a child sleeping safely in a BeSafe seat – that is our image of a perfect Greek family holiday.",
+          "Don't ask if you need a child seat. Ask whether the company you book actually owns the right one. We do. All of them.",
+          "Book your family-safe transfer now: Athens Airport, Piraeus Port, or any hotel – to Sounio, Delphi, Meteora, Nafplio, Olympia, and all around Greece. H&A TOURS LTD – Family Safe, Luxury Transfers in Greece.",
+        ],
+      },
+    ],
+  },
   {
     slug: "private-meteora-day-trip-from-athens",
     title: "Private Meteora Day Trip from Athens: Monasteries in the Sky by Mercedes V-Class",
