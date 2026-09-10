@@ -1,6 +1,6 @@
 
 import athensAirportHotelTransfer from "@/assets/athens-airport-hotel-transfer.webp";
-import mercedesVClassChauffeurAthens from "@/assets/mercedes-v-class-chauffeur-athens.webp";
+import mercedesVClassChauffeurAthens from "@/assets/mercedes-v-class-chauffeur-athens.jpg.asset.json";
 import privateTransferPiraeusPort from "@/assets/private-transfer-piraeus-port.jpg.asset.json";
 import piraeusAirportRouteMap from "@/assets/piraeus-airport-route-map.webp";
 import piraeusCruiseTransfer from "@/assets/piraeus-cruise-transfer.jpg.asset.json";
@@ -516,8 +516,8 @@ export const blogPosts: BlogPost[] = [
     title: "Mercedes V-Class Chauffeur Service in Athens",
     excerpt:
       "Discover why a Mercedes V-Class chauffeur service is the ideal way to move through Athens — from airport transfers and port connections to custom private tours.",
-    image: mercedesVClassChauffeurAthens,
-    imageAlt: "Black Mercedes V-Class chauffeur vehicle with Athens Acropolis in the background",
+    image: hostedAssetUrl(mercedesVClassChauffeurAthens),
+    imageAlt: "Black Mercedes V-Class with professional chauffeur and H&A TOURS LTD branding, Acropolis of Athens in the background",
     date: "2026-09-04",
     metaTitle: "Mercedes V-Class Chauffeur Service in Athens | H&A VIP Transfers",
     metaDescription:
