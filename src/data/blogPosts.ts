@@ -11,7 +11,7 @@ import sounionPrivateTour from "@/assets/sounion-private-tour.webp";
 import syntagmaSounionRouteMap from "@/assets/syntagma-sounion-route-map.webp";
 import delphiPrivateDayTrip from "@/assets/delphi-private-day-trip.webp";
 import athensDelphiRouteMap from "@/assets/athens-delphi-route-map.webp";
-import meteoraPrivateDayTrip from "@/assets/meteora-private-day-trip.webp";
+import privateMeteoraTourFromAthens from "@/assets/private-meteora-tour-from-athens.webp.asset.json";
 import athensMeteoraRouteMap from "@/assets/athens-meteora-route-map.webp";
 import childSeatsFamilySafe from "@/assets/child-seats-family-safe.webp";
 import besafeIziTwistSupportLeg from "@/assets/besafe-izi-twist-support-leg.webp";
@@ -211,9 +211,9 @@ export const blogPosts: BlogPost[] = [
     title: "Private Meteora Day Trip from Athens: Monasteries in the Sky by Mercedes V-Class",
     excerpt:
       "A full-day private journey from Athens to the monasteries of Meteora. Luxury Mercedes V-Class, hotel pickup, flexible timing, and a schedule built around your priorities.",
-    image: meteoraPrivateDayTrip,
+    image: privateMeteoraTourFromAthens.url,
     imageAlt:
-      "Colorful illustration of a black Mercedes V-Class driving toward the Meteora monasteries on sandstone pillars at sunset",
+      "Woman in a sun hat standing beside a black Mercedes V-Class overlooking the Meteora monasteries on sandstone pillars at sunset",
     date: "2026-09-10",
     metaTitle: "Private Meteora Day Trip from Athens – Mercedes V-Class | H&A VIP Tours",
     metaDescription:
