@@ -45,7 +45,7 @@ const BlogPost = () => {
             headline: post.title,
             description: post.metaDescription,
             datePublished: post.date,
-            image: `${SITE_URL}${post.image}`,
+            image: post.image,
             author: { "@type": "Organization", name: "H&A VIP Transfers" },
           })}
         </script>

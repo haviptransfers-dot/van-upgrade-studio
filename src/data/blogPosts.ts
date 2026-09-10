@@ -22,6 +22,10 @@ import monzaBoosterSeats from "@/assets/monza-booster-seats.webp";
 
 import { blogPostTranslations, type BlogPostTranslation } from "./blogPostTranslations";
 
+const ASSET_HOST = "https://van-move-boost.lovable.app";
+
+const hostedAssetUrl = (asset: { url: string }) => `${ASSET_HOST}${asset.url}`;
+
 export interface BlogSection {
   heading?: string; // H2
   subheading?: string; // H3
@@ -68,7 +72,7 @@ export const blogPosts: BlogPost[] = [
       "Why Child Car Seats Are Non-Negotiable in Private Transfers in Greece: Safety, Law & Comfort with H&A TOURS LTD",
     excerpt:
       "Certified BeSafe child seats for every age, installed by us and always free on request. Greek law, real safety data, and how our Mercedes V-Class keeps families comfortable on long routes.",
-    image: childSeatsFamilySafe.url,
+    image: hostedAssetUrl(childSeatsFamilySafe),
     imageAlt:
       "Black Mercedes V-Class at Athens International Airport with a family, two children, luggage and an H&A Tours Ltd Family Safe sign held by the chauffeur",
     date: "2026-09-11",
@@ -211,7 +215,7 @@ export const blogPosts: BlogPost[] = [
     title: "Private Meteora Day Trip from Athens: Monasteries in the Sky by Mercedes V-Class",
     excerpt:
       "A full-day private journey from Athens to the monasteries of Meteora. Luxury Mercedes V-Class, hotel pickup, flexible timing, and a schedule built around your priorities.",
-    image: privateMeteoraTourFromAthens.url,
+    image: hostedAssetUrl(privateMeteoraTourFromAthens),
     imageAlt:
       "Woman in a sun hat standing beside a black Mercedes V-Class overlooking the Meteora monasteries on sandstone pillars at sunset",
     date: "2026-09-10",
@@ -290,7 +294,7 @@ export const blogPosts: BlogPost[] = [
     title: "Private Delphi Day Trip from Athens: A Full Day by Mercedes V-Class",
     excerpt:
       "A full day through central Greece to the slopes of Mount Parnassus. Direct hotel pickup, a luxury Mercedes V-Class, and an unhurried itinerary built around Delphi, its museum and Arachova.",
-    image: delphiDayTripCover.url,
+    image: hostedAssetUrl(delphiDayTripCover),
     imageAlt:
       "Ancient Tholos of Delphi ruins with Doric columns set against the mountains of Mount Parnassus and the Pleistos Valley", 
     date: "2026-09-09",
