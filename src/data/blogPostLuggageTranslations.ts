@@ -1,4 +1,4 @@
-import type { BlogPostTranslation } from "./blogPosts";
+import type { BlogPostTranslation } from "./blogPostTranslations";
 
 export const luggageTranslations: Record<string, BlogPostTranslation> = {
   el: {
