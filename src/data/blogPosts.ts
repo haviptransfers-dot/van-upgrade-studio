@@ -2,6 +2,7 @@
 import athensAirportHotelTransfer from "@/assets/athens-airport-hotel-transfer.jpg.asset.json";
 import mercedesVClassChauffeurAthens from "@/assets/mercedes-v-class-chauffeur-athens.jpg.asset.json";
 import privateTransferPiraeusPort from "@/assets/private-transfer-piraeus-port.jpg.asset.json";
+import privateTransferAthensLuggage from "@/assets/private-transfer-athens-luggage.jpg.asset.json";
 import piraeusAirportRouteMap from "@/assets/piraeus-airport-route-map.webp";
 import piraeusCruiseTransfer from "@/assets/piraeus-cruise-transfer.jpg.asset.json";
 import piraeusCruiseRouteMap from "@/assets/piraeus-cruise-route-map.webp";
@@ -19,6 +20,7 @@ import besafeIziTwistRearFacing from "@/assets/besafe-izi-twist-rear-facing.webp
 import besafeIziModularToddler from "@/assets/besafe-izi-modular-toddler.webp";
 import besafeIdriveToddler from "@/assets/besafe-idrive-toddler.webp";
 import monzaBoosterSeats from "@/assets/monza-booster-seats.webp";
+
 
 import { blogPostTranslations, type BlogPostTranslation } from "./blogPostTranslations";
 
