@@ -120,7 +120,7 @@ const BlogPost = () => {
               )}
               {section.paragraphs?.map((p, j) => (
                 <p key={j} className="text-foreground/80 leading-relaxed mb-4">
-                  {p}
+                  <LinkedText text={p} />
                 </p>
               ))}
               {section.bullets && (
@@ -128,7 +128,7 @@ const BlogPost = () => {
                   {section.bullets.map((b, j) => (
                     <li key={j} className="flex items-start gap-3 text-foreground/80">
                       <Star className="w-4 h-4 text-primary flex-shrink-0 mt-1" />
-                      <span>{b}</span>
+                      <span><LinkedText text={b} /></span>
                     </li>
                   ))}
                 </ul>
