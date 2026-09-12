@@ -1,5 +1,6 @@
 import type { BlogSection } from "./blogPosts";
 import { childSeatsTranslations } from "./blogPostChildSeatsTranslations";
+import { luggageTranslations } from "./blogPostLuggageTranslations";
 
 export interface BlogPostTranslation {
   title: string;
