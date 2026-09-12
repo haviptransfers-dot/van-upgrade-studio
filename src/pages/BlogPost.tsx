@@ -6,6 +6,37 @@ import { Button } from "@/components/ui/button";
 import { blogPosts, localizePost, WHATSAPP_URL } from "@/data/blogPosts";
 import logoImg from "@/assets/logo.webp";
 
+/** Renders plain text with optional [label](url) markdown links as real anchors. */
+function LinkedText({ text }: { text: string }) {
+  const parts: React.ReactNode[] = [];
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+  let key = 0;
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(<span key={key++}>{text.slice(lastIndex, match.index)}</span>);
+    }
+    parts.push(
+      <a
+        key={key++}
+        href={match[2]}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary underline underline-offset-2 hover:text-primary/80"
+      >
+        {match[1]}
+      </a>
+    );
+    lastIndex = regex.lastIndex;
+  }
+  if (lastIndex < text.length) {
+    parts.push(<span key={key++}>{text.slice(lastIndex)}</span>);
+  }
+  return <>{parts}</>;
+}
+
+
 const SITE_URL = "https://haviptransfers.gr";
 
 const BlogPost = () => {
