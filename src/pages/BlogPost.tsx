@@ -157,6 +157,28 @@ const BlogPost = () => {
             </Button>
           </a>
         </div>
+
+        {/* Google Preferred Sources — big button */}
+        <div className="mt-8 bg-card border border-primary/20 rounded-lg p-8 md:p-10 text-center">
+          <h2 className="font-display text-2xl font-bold mb-3">{t("preferredSources.blogTitle")}</h2>
+          <p className="text-muted-foreground mb-6 max-w-xl mx-auto">{t("preferredSources.blogText")}</p>
+          <div className="flex flex-col items-center gap-4">
+            <div
+              google-add-preferred-source-btn
+              data-theme="dark"
+              data-lang={i18n.language === "en" ? "en" : i18n.language === "el" ? "el" : "en"}
+              className="[&>button]:!mx-auto"
+            />
+            <a
+              href="https://www.google.com/preferences/source?q=haviptransfers.gr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-primary underline underline-offset-2 hover:text-primary/80"
+            >
+              {t("preferredSources.button")}
+            </a>
+          </div>
+        </div>
       </main>
 
       <footer className="border-t border-border py-8 px-4">
