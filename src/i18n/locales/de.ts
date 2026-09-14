@@ -335,5 +335,14 @@ export default {
     ctaWhatsapp: "Über WhatsApp buchen",
     metaTitle: "Reiseführer & Blog | H&A VIP Transfers Athen",
     metaDescription: "Reiseführer, Tipps und Insiderwissen zu Flughafentransfers, Hafentransfers und privaten Touren in Griechenland.",
+  },
+  preferredSources: {
+    blogTitle: "Hat Ihnen dieser Artikel gefallen?",
+    blogText: "Fügen Sie H&A VIP Tours als bevorzugte Quelle bei Google hinzu, um mehr Reisetipps für Athen zu erhalten.",
+    button: "Als bevorzugte Quelle bei Google hinzufügen",
+    footerLink: "Zu Google-Bevorzugten hinzufügen",
+    supportTitle: "Unterstützen Sie ein lokales Unternehmen",
+    supportText: "H&A VIP Tours ist ein lokales, familiengeführtes Transferunternehmen in Athen. Fügen Sie uns als bevorzugte Quelle bei Google hinzu, um über unsere neuesten Reiseführer und Angebote auf dem Laufenden zu bleiben.",
+    aboutTitle: "Über H&A VIP Tours",
   }
 };

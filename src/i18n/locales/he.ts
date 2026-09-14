@@ -335,5 +335,14 @@ export default {
     ctaWhatsapp: "הזמנה דרך WhatsApp",
     metaTitle: "מדריכי טיולים ובלוג | H&A VIP Transfers אתונה",
     metaDescription: "מדריכי טיולים, טיפים ומידע שימושי על הסעות משדה התעופה, מהנמל וסיורים פרטיים ביוון.",
+  },
+  preferredSources: {
+    blogTitle: "האם אהבת את המאמר?",
+    blogText: "הוסף את H&A VIP Tours כמקור מועדף בגוגל לעוד טיפים לטיול באתונה.",
+    button: "הוסף כמקור מועדף בגוגל",
+    footerLink: "הוסף למקורות המועדפים של גוגל",
+    supportTitle: "תמוך בעסק מקומי",
+    supportText: "H&A VIP Tours היא חברת העברות מקומית ומשפחתית באתונה. הוסף אותנו כמקור מועדף בגוגל כדי להישאר מעודכן במדריכי הנסיעה וההצעות העדכניים ביותר שלנו.",
+    aboutTitle: "אודות H&A VIP Tours",
   }
 };
