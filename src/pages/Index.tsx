@@ -284,10 +284,10 @@ const Index = () => {
       </section>
 
       <Suspense fallback={<LazyFallback />}>
+        <ChildSeats />
         <Showcase />
         <PhotoWall />
         <PrivateTours />
-        <ChildSeats />
       </Suspense>
 
       {/* Fleet */}
