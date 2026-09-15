@@ -163,7 +163,7 @@ const BlogPost = () => {
           <h2 className="font-display text-2xl font-bold mb-3">{t("preferredSources.blogTitle")}</h2>
           <p className="text-muted-foreground mb-6 max-w-xl mx-auto">{t("preferredSources.blogText")}</p>
           <div
-            google-add-preferred-source-btn
+            {...{ "google-add-preferred-source-btn": "" }}
             data-theme="dark"
             data-lang={i18n.language === "en" ? "en" : i18n.language === "el" ? "el" : "en"}
             className="min-h-[44px] flex items-center justify-center"
