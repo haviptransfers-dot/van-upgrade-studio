@@ -71,7 +71,7 @@ const About = () => {
           <h2 className="font-display text-2xl md:text-3xl font-bold mb-4">{t("preferredSources.supportTitle")}</h2>
           <p className="text-muted-foreground mb-8 max-w-xl mx-auto">{t("preferredSources.supportText")}</p>
           <div
-            google-add-preferred-source-btn
+            {...{ "google-add-preferred-source-btn": "" }}
             data-theme="dark"
             data-lang={i18n.language === "en" ? "en" : i18n.language === "el" ? "el" : "en"}
             className="min-h-[44px] flex items-center justify-center"
