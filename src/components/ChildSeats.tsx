@@ -8,6 +8,8 @@ import seatBesafe360 from "@/assets/child-seat-besafe-360.jpg.asset.json";
 import seatIdrive from "@/assets/child-seat-idrive.jpg.asset.json";
 import seatBooster from "@/assets/child-seat-booster-monza.jpg.asset.json";
 
+const ASSET_HOST = "https://van-move-boost.lovable.app";
+
 const WHATSAPP_URL = "https://wa.me/306949393700";
 
 const fadeUp = {
@@ -30,9 +32,9 @@ const ChildSeats = () => {
   ];
 
   const categories = [
-    { name: t("childSeats.group0.name"), range: t("childSeats.group0.range"), img: seatBesafe360.url },
-    { name: t("childSeats.group1.name"), range: t("childSeats.group1.range"), img: seatIdrive.url },
-    { name: t("childSeats.booster.name"), range: t("childSeats.booster.range"), img: seatBooster.url },
+    { name: t("childSeats.group0.name"), range: t("childSeats.group0.range"), img: `${ASSET_HOST}${seatBesafe360.url}` },
+    { name: t("childSeats.group1.name"), range: t("childSeats.group1.range"), img: `${ASSET_HOST}${seatIdrive.url}` },
+    { name: t("childSeats.booster.name"), range: t("childSeats.booster.range"), img: `${ASSET_HOST}${seatBooster.url}` },
   ];
 
   const whatsappUrl = `${WHATSAPP_URL}?text=${encodeURIComponent(t("childSeats.whatsappMsg"))}`;
@@ -80,21 +82,21 @@ const ChildSeats = () => {
             className="grid grid-cols-3 grid-rows-2 gap-3 h-72 sm:h-96"
           >
             <img
-              src={seatIsIsize.url}
+              src={`${ASSET_HOST}${seatIsIsize.url}`}
               alt="Certified BeSafe i-Size child seat installed in a Mercedes V Class"
               loading="lazy"
               decoding="async"
               className="col-span-2 row-span-2 w-full h-full object-cover rounded-lg border border-primary/20 shadow-2xl"
             />
             <img
-              src={seatIdrive.url}
+              src={`${ASSET_HOST}${seatIdrive.url}`}
               alt="i-Size child seat with harness in the back seat of a Mercedes"
               loading="lazy"
               decoding="async"
               className="w-full h-full object-cover rounded-lg border border-primary/20 shadow-xl"
             />
             <img
-              src={seatBesafe360.url}
+              src={`${ASSET_HOST}${seatBesafe360.url}`}
               alt="BeSafe 360 swivel child seat installed in a Mercedes V Class"
               loading="lazy"
               decoding="async"
