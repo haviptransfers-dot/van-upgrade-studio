@@ -72,7 +72,6 @@ const TrustBadge = () => (
       </div>
       <span className="text-sm font-semibold text-foreground">5.0</span>
     </div>
-    <span className="text-xs text-muted-foreground hidden sm:inline">· 52 reviews</span>
   </a>
 );
 
@@ -122,7 +121,7 @@ const Reviews = () => {
                   <Star key={i} className="w-5 h-5 md:w-6 md:h-6 fill-primary text-primary" />
                 ))}
               </div>
-              <p className="text-sm text-foreground/80 font-medium">52 verified reviews</p>
+              <p className="text-sm text-foreground/80 font-medium">Verified reviews</p>
               <p className="text-xs text-muted-foreground">Based on real customer experiences</p>
             </div>
           </div>
