@@ -260,6 +260,10 @@ const Index = () => {
         </a>
       </section>
 
+      <Suspense fallback={<LazyFallback />}>
+        <ChildSeats />
+      </Suspense>
+
       {/* Services */}
       <section id="services" className="relative py-16 md:py-24 px-4 overflow-hidden bg-card/70 backdrop-blur-sm">
         <div className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-10" style={{ backgroundImage: `url(${bgServices})` }} aria-hidden="true" />
@@ -316,7 +320,6 @@ const Index = () => {
       <Suspense fallback={<LazyFallback />}>
         <Gallery />
         <PriceCalculator />
-        <ChildSeats />
         <ReviewsComponent />
         <FAQ />
       </Suspense>
