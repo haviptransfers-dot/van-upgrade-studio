@@ -47,6 +47,7 @@ const Showcase = lazy(() => import("@/components/Showcase"));
 const PhotoWall = lazy(() => import("@/components/PhotoWall"));
 const PrivateTours = lazy(() => import("@/components/PrivateTours"));
 const PriceCalculator = lazy(() => import("@/components/PriceCalculator"));
+const ChildSeats = lazy(() => import("@/components/ChildSeats"));
 const ReviewsComponent = lazy(() => import("@/components/Reviews"));
 const ChatBot = lazy(() => import("@/components/ChatBot"));
 const FAQ = lazy(() => import("@/components/FAQ"));
@@ -315,6 +316,7 @@ const Index = () => {
       <Suspense fallback={<LazyFallback />}>
         <Gallery />
         <PriceCalculator />
+        <ChildSeats />
         <ReviewsComponent />
         <FAQ />
       </Suspense>
