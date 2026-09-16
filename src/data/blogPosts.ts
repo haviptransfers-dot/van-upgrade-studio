@@ -23,6 +23,7 @@ import besafeIdriveToddler from "@/assets/besafe-idrive-toddler.webp";
 import monzaBoosterSeats from "@/assets/monza-booster-seats.webp";
 
 
+import nightArrivalAirportTransfer from "@/assets/night-arrival-airport-transfer.jpg.asset.json";
 import { blogPostTranslations, type BlogPostTranslation } from "./blogPostTranslations";
 
 const ASSET_HOST = "https://van-move-boost.lovable.app";
