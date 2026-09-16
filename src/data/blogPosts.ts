@@ -77,7 +77,7 @@ export const blogPosts: BlogPost[] = [
     image: hostedAssetUrl(privateChauffeurBusinessAthens),
     imageAlt:
       "Professional chauffeur opening a black Mercedes V-Class for a business traveler with the Acropolis of Athens in the background",
-    date: "2026-09-13",
+    date: "2026-08-15",
     metaTitle: "Private Chauffeur for Business Travel in Athens",
     metaDescription:
       "Book a private chauffeur in Athens for business travel. Mercedes V-Class transfers for airports, hotels, meetings and ports with 24/7 WhatsApp support.",
@@ -152,7 +152,7 @@ export const blogPosts: BlogPost[] = [
     image: hostedAssetUrl(privateTransferAthensLuggage),
     imageAlt:
       "Professional chauffeur loading suitcases into a black Mercedes V-Class with the Acropolis of Athens visible in the background",
-    date: "2026-09-12",
+    date: "2026-07-15",
     metaTitle:
       "Private Transfer in Athens for Multiple Suitcases | H&A VIP Tours",
     metaDescription:
@@ -241,7 +241,7 @@ export const blogPosts: BlogPost[] = [
     image: hostedAssetUrl(childSeatsFamilySafe),
     imageAlt:
       "Black Mercedes V-Class at Athens International Airport with a family, two children, luggage and an H&A Tours Ltd Family Safe sign held by the chauffeur",
-    date: "2026-09-11",
+    date: "2026-06-15",
     metaTitle: "Child Car Seats in Private Transfers in Greece – Safety & Law | H&A TOURS LTD",
     metaDescription:
       "Greek law, i-Size rules and real safety data for child car seats in private transfers. BeSafe seats for babies, toddlers and big kids, installed free in our Mercedes V-Class.",
@@ -384,7 +384,7 @@ export const blogPosts: BlogPost[] = [
     image: hostedAssetUrl(privateMeteoraTourFromAthens),
     imageAlt:
       "Woman in a sun hat standing beside a black Mercedes V-Class overlooking the Meteora monasteries on sandstone pillars at sunset",
-    date: "2026-09-10",
+    date: "2026-05-15",
     metaTitle: "Private Meteora Day Trip from Athens – Mercedes V-Class | H&A VIP Tours",
     metaDescription:
       "Private chauffeur-driven day trip from Athens to Meteora in a luxury Mercedes V-Class. Hotel pickup, monastery visits, flexible timing and 24/7 WhatsApp booking.",
@@ -463,7 +463,7 @@ export const blogPosts: BlogPost[] = [
     image: hostedAssetUrl(delphiDayTripCover),
     imageAlt:
       "Ancient Tholos of Delphi ruins with Doric columns set against the mountains of Mount Parnassus and the Pleistos Valley", 
-    date: "2026-09-09",
+    date: "2026-04-15",
     metaTitle: "Private Delphi Day Trip from Athens – Mercedes V-Class | H&A VIP Tours",
     metaDescription:
       "Private chauffeur-driven day trip from Athens to Delphi in a Mercedes V-Class. Hotel pickup, Arachova stop, flexible timing and an unhurried itinerary. Book via WhatsApp 24/7.",
@@ -554,7 +554,7 @@ export const blogPosts: BlogPost[] = [
     image: hostedAssetUrl(sounionPrivateTour),
     imageAlt:
       "Elegant couple with a black Mercedes V-Class at Cape Sounion, the Temple of Poseidon silhouetted against a golden sunset over the Aegean Sea",
-    date: "2026-09-08",
+    date: "2026-03-15",
     metaTitle: "Private Transfer Athens to Cape Sounio – Temple of Poseidon | H&A VIP Tours",
     metaDescription:
       "Private chauffeur-driven transfer from Athens to Cape Sounion and the Temple of Poseidon in a Mercedes V-Class. Sunset tours, coastal stops, flexible timing. Book via WhatsApp 24/7.",
@@ -627,7 +627,7 @@ export const blogPosts: BlogPost[] = [
     image: hostedAssetUrl(athensAirportHotelTransfer),
     imageAlt:
       "Black Mercedes V-Class on a scenic Athens road at golden hour with the Acropolis and a private tour guide pointing toward the ancient monuments",
-    date: "2026-09-03",
+    date: "2025-10-15",
     metaTitle:
       "Private Transfer from Athens Airport to Hotel | H&A VIP Transfers",
     metaDescription:
@@ -684,7 +684,7 @@ export const blogPosts: BlogPost[] = [
       "Discover why a Mercedes V-Class chauffeur service is the ideal way to move through Athens — from airport transfers and port connections to custom private tours.",
     image: hostedAssetUrl(mercedesVClassChauffeurAthens),
     imageAlt: "Black Mercedes V-Class with professional chauffeur and H&A TOURS LTD branding, Acropolis of Athens in the background",
-    date: "2026-09-04",
+    date: "2025-11-15",
     metaTitle: "Mercedes V-Class Chauffeur Service in Athens | H&A VIP Transfers",
     metaDescription:
       "Book a premium Mercedes V-Class chauffeur service in Athens. Airport, port, hotel transfers and custom private tours with a professional driver.",
@@ -767,7 +767,7 @@ export const blogPosts: BlogPost[] = [
     image: hostedAssetUrl(privateTransferPiraeusPort),
     imageAlt:
       "Black Mercedes V-Class on the coastal road from Piraeus Port with a cruise ship, the Acropolis at sunset and H&A TOURS LTD branding",
-    date: "2026-09-05",
+    date: "2025-12-15",
     metaTitle: "Private Transfer from Piraeus Port to Athens Airport | H&A VIP Transfers",
     metaDescription:
       "Book a private transfer from Piraeus Port to Athens Airport. Mercedes V-Class, cruise pickup coordination, 24/7 WhatsApp support, fixed scheduling.",
@@ -847,7 +847,7 @@ export const blogPosts: BlogPost[] = [
     image: hostedAssetUrl(piraeusCruiseTransfer),
     imageAlt:
       "Επαγγελματίας οδηγός ανοίγει την πόρτα μαύρου Mercedes V-Class στο λιμάνι του Πειραιά, με κρουαζιερόπλοιο και αεροπλάνο στον ορίζοντα — ιδιωτική μεταφορά κρουαζιέρας",
-    date: "2026-09-06",
+    date: "2026-01-15",
     metaTitle:
       "Μεταφορά Κρουαζιέρας Πειραιά | Ιδιωτική Μεταφορά με Mercedes V-Class — H&A VIP Transfers",
     metaDescription:
@@ -921,7 +921,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "A planned private tour with a driver turns a busy day in Athens into a private experience built around your priorities — professional chauffeur, premium vehicle, flexible itinerary.",
     image: hostedAssetUrl(privateAthensTourWithDriver),
     imageAlt: "Private tour of Athens with a professional driver gesturing toward the Acropolis, with a couple enjoying the view on a sunny day",
-    date: "2026-09-07",
+    date: "2026-02-15",
     metaTitle: "Private Tour of Athens with Driver | Mercedes V-Class | H&A VIP Tours",
     metaDescription: "Discover Athens at your own pace with a private tour and professional chauffeur in a luxury Mercedes V-Class. Custom itinerary, hotel & cruise terminal pickup, child seats on request.",
     sections: [
