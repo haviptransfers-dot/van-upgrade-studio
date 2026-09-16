@@ -2,6 +2,7 @@ import type { BlogSection } from "./blogPosts";
 import { childSeatsTranslations } from "./blogPostChildSeatsTranslations";
 import { luggageTranslations } from "./blogPostLuggageTranslations";
 import { businessChauffeurTranslations } from "./blogPostBusinessChauffeurTranslations";
+import { nightTransferTranslations } from "./blogPostNightTransferTranslations";
 
 export interface BlogPostTranslation {
   title: string;
@@ -14,6 +15,7 @@ export interface BlogPostTranslation {
 
 // slug -> language code (matching i18n locales: el, it, es, fr, de, ar, he) -> translation
 export const blogPostTranslations: Record<string, Record<string, BlogPostTranslation>> = {
+  "night-transfer-athens-airport-late-arrival": nightTransferTranslations,
   "private-chauffeur-service-business-travel-athens": businessChauffeurTranslations,
   "child-car-seats-private-transfers-greece": childSeatsTranslations,
   "private-transfer-athens-multiple-suitcases": luggageTranslations,
