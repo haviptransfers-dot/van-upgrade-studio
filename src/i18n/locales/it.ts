@@ -101,6 +101,7 @@ export default {
       port_to_athens: "Pireo ad Atene",
       athens_to_port: "Atene al Pireo",
       airport_to_port: "Aeroporto al Pireo",
+      port_to_airport: "Pireo all'Aeroporto",
       sounio: "Sounio – Tempio di Poseidone (5h)",
       athens_sights: "Tour di Atene (3h)",
     },

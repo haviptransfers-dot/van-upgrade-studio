@@ -10,6 +10,7 @@ type ServiceKey =
   | "port_to_athens"
   | "athens_to_port"
   | "airport_to_port"
+  | "port_to_airport"
   | "sounio"
   | "athens_sights"
   | "nafplio"
@@ -19,7 +20,6 @@ type ServiceKey =
 const fixedPrices: Partial<Record<ServiceKey, number>> = {
   sounio: 350,
   athens_sights: 180,
-  airport_to_port: 100,
   port_to_athens: 55,
   athens_to_port: 55,
   nafplio: 500,
@@ -27,9 +27,12 @@ const fixedPrices: Partial<Record<ServiceKey, number>> = {
   delphi: 500,
 };
 
-const perPaxPrices: Partial<Record<ServiceKey, { base: number; extra: number; baseMax: number }>> = {
-  airport_to_athens: { base: 75, extra: 5, baseMax: 4 },
-  athens_to_airport: { base: 75, extra: 5, baseMax: 4 },
+// Passenger-tier pricing: price depends on head count (up to 4 vs 5+).
+const tieredPrices: Partial<Record<ServiceKey, { upTo4: number; fiveToSeven: number }>> = {
+  airport_to_athens: { upTo4: 85, fiveToSeven: 100 },
+  athens_to_airport: { upTo4: 85, fiveToSeven: 100 },
+  airport_to_port: { upTo4: 100, fiveToSeven: 110 },
+  port_to_airport: { upTo4: 100, fiveToSeven: 110 },
 };
 
 const PriceCalculator = () => {
@@ -44,6 +47,7 @@ const PriceCalculator = () => {
     { key: "port_to_athens", label: `⚓ → 🏛 ${t("calc.services.port_to_athens")}` },
     { key: "athens_to_port", label: `🏛 → ⚓ ${t("calc.services.athens_to_port")}` },
     { key: "airport_to_port", label: `✈ → ⚓ ${t("calc.services.airport_to_port")}` },
+    { key: "port_to_airport", label: `⚓ → ✈ ${t("calc.services.port_to_airport", { defaultValue: "Piraeus to Airport" })}` },
     { key: "sounio", label: `🏛 ${t("calc.services.sounio")}` },
     { key: "athens_sights", label: `🗺 ${t("calc.services.athens_sights")}` },
     { key: "nafplio", label: `🏖 ${t("calc.services.nafplio", { defaultValue: "Nafplio Tour" })}` },
@@ -58,9 +62,8 @@ const PriceCalculator = () => {
     if (isFixed) {
       baseVal = fixedPrices[service]!;
     } else {
-      const p = perPaxPrices[service]!;
-      const extraPax = Math.max(0, pax - p.baseMax);
-      baseVal = p.base + extraPax * p.extra;
+      const tier = tieredPrices[service]!;
+      baseVal = pax <= 4 ? tier.upTo4 : tier.fiveToSeven;
     }
     const nExtra = night ? pax * 10 : 0;
     return { base: baseVal, nightExtra: nExtra, total: baseVal + nExtra };

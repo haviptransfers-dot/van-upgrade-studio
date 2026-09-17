@@ -101,6 +101,7 @@ export default {
       port_to_athens: "من بيريوس إلى أثينا",
       athens_to_port: "من أثينا إلى بيريوس",
       airport_to_port: "من المطار إلى بيريوس",
+      port_to_airport: "من بيريوس إلى المطار",
       sounio: "سونيون – معبد بوسيدون (5 ساعات)",
       athens_sights: "جولة معالم أثينا (3 ساعات)",
     },

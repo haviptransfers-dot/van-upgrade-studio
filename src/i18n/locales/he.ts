@@ -101,6 +101,7 @@ export default {
       port_to_athens: "מפיראוס לאתונה",
       athens_to_port: "מאתונה לפיראוס",
       airport_to_port: "משדה התעופה לפיראוס",
+      port_to_airport: "מפיראוס לשדה התעופה",
       sounio: "סוניון – מקדש פוסידון (5 שעות)",
       athens_sights: "סיור אתרי אתונה (3 שעות)",
     },

@@ -13,9 +13,9 @@ COMPANY INFO:
 - Available 24/7, English-speaking professional drivers
 
 PRICES (EUR, fixed, no hidden fees — always use these exact figures):
-- Airport (ATH) ↔ Athens center: €75 (1-4 pax), +€5/extra pax (max 7-8)
+- Airport (ATH) ↔ Athens center: €85 (1-4 pax), €100 (5-7 pax)
 - Piraeus port ↔ Athens center: €55 fixed
-- Airport (ATH) ↔ Piraeus port: €100 fixed
+- Airport (ATH) ↔ Piraeus port: €100 (1-4 pax), €110 (5-7 pax)
 - Cape Sounion / Temple of Poseidon tour: €350 fixed
 - Athens Sights tour (Acropolis, Plaka, Syntagma): €180 fixed
 - Nafplio tour: €500 fixed
