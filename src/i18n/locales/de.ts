@@ -127,6 +127,16 @@ export default {
     safety: "Die Sicherheit Ihrer Familie ist unsere Priorität",
     whatsappMsg: "Hallo! Ich möchte einen Kindersitz für meine Fahrt anfragen.",
   },
+  payments: {
+    eyebrow: "Sichere Zahlung",
+    title1: "Zahlungs",
+    title2: "methoden",
+    subtitle: "Bezahlen Sie, wie es Ihnen am besten passt.",
+    online: { title: "Online-Kartenzahlung", desc: "Sie erhalten nach der Buchung einen sicheren Zahlungslink per E-Mail." },
+    bank: { title: "Banküberweisung / Einzahlung", beneficiary: "Zahlungsempfänger", bank: "Bank", reference: "Verwendungszweck", referenceVal: "Buchungsnummer + Vollständiger Name", copy: "IBAN kopieren", copied: "Kopiert!" },
+    pos: { title: "POS im Fahrzeug", desc: "Zahlen Sie mit Karte (Visa/Mastercard) direkt im Fahrzeug mit unserem mobilen POS." },
+    cash: { title: "Bargeld", desc: "Zahlen Sie bar (EUR) direkt beim Fahrer." },
+  },
   footer: { rights: "Alle Rechte vorbehalten." },
   photoWall: { eyebrow: "Unterwegs", title: "Mühelose Fahrten", subtitle: "Sanft, leise und immer pünktlich — wohin Sie Griechenland auch führt." },
   chat: {

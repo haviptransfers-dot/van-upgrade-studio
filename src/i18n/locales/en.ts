@@ -127,6 +127,16 @@ export default {
     safety: "Your family's safety is our priority",
     whatsappMsg: "Hi! I'd like to request a child seat for my upcoming transfer.",
   },
+  payments: {
+    eyebrow: "Secure Payment",
+    title1: "Payment",
+    title2: "Methods",
+    subtitle: "Complete your payment with whichever option suits you best.",
+    online: { title: "Online Card Payment", desc: "You'll receive a secure payment link in your email after booking." },
+    bank: { title: "Bank Transfer / Deposit", beneficiary: "Beneficiary", bank: "Bank", reference: "Payment reference", referenceVal: "Booking number + Full name", copy: "Copy IBAN", copied: "Copied!" },
+    pos: { title: "POS in the Vehicle", desc: "Pay by card (Visa/Mastercard) directly in the vehicle with our portable POS." },
+    cash: { title: "Cash", desc: "Pay in cash (EUR) directly to your driver." },
+  },
   footer: { rights: "All rights reserved." },
   photoWall: { eyebrow: "On The Road", title: "Effortless Journeys", subtitle: "Smooth, silent, and always on time — wherever Greece takes you." },
   chat: {

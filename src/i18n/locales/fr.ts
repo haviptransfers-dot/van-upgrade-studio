@@ -127,6 +127,16 @@ export default {
     safety: "La sécurité de votre famille est notre priorité",
     whatsappMsg: "Bonjour ! Je souhaite réserver un siège enfant pour mon transfert.",
   },
+  payments: {
+    eyebrow: "Paiement Sécurisé",
+    title1: "Moyens de",
+    title2: "Paiement",
+    subtitle: "Réglez votre paiement comme il vous convient le mieux.",
+    online: { title: "Paiement en Ligne par Carte", desc: "Vous recevrez un lien de paiement sécurisé par e-mail après la réservation." },
+    bank: { title: "Virement / Dépôt Bancaire", beneficiary: "Bénéficiaire", bank: "Banque", reference: "Référence du paiement", referenceVal: "Numéro de réservation + Nom complet", copy: "Copier l'IBAN", copied: "Copié !" },
+    pos: { title: "TPE à Bord", desc: "Payez par carte (Visa/Mastercard) directement dans le véhicule avec notre TPE portable." },
+    cash: { title: "Espèces", desc: "Payez en espèces (EUR) directement au chauffeur." },
+  },
   footer: { rights: "Tous droits réservés." },
   photoWall: { eyebrow: "Sur la Route", title: "Voyages Sans Effort", subtitle: "Doux, silencieux et toujours à l'heure — où que la Grèce vous mène." },
   chat: {

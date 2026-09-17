@@ -127,6 +127,16 @@ export default {
     safety: "La seguridad de su familia es nuestra prioridad",
     whatsappMsg: "¡Hola! Me gustaría solicitar una silla infantil para mi traslado.",
   },
+  payments: {
+    eyebrow: "Pago Seguro",
+    title1: "Métodos de",
+    title2: "Pago",
+    subtitle: "Complete su pago de la forma que le convenga.",
+    online: { title: "Pago Online con Tarjeta", desc: "Recibirá un enlace de pago seguro en su correo tras la reserva." },
+    bank: { title: "Transferencia / Ingreso Bancario", beneficiary: "Beneficiario", bank: "Banco", reference: "Concepto del pago", referenceVal: "Número de reserva + Nombre completo", copy: "Copiar IBAN", copied: "¡Copiado!" },
+    pos: { title: "TPV en el Vehículo", desc: "Pague con tarjeta (Visa/Mastercard) directamente en el vehículo con nuestro TPV portátil." },
+    cash: { title: "Efectivo", desc: "Pague en efectivo (EUR) directamente al conductor." },
+  },
   footer: { rights: "Todos los derechos reservados." },
   photoWall: { eyebrow: "En la Carretera", title: "Viajes Sin Esfuerzo", subtitle: "Suaves, silenciosos y siempre puntuales — donde sea que Grecia te lleve." },
   chat: {
