@@ -132,6 +132,7 @@ export default {
     title1: "Métodos de",
     title2: "Pago",
     subtitle: "Complete su pago de la forma que le convenga.",
+    bannerTap: "Toque aquí para ver cómo puede pagar",
     online: { title: "Pago Online con Tarjeta", desc: "Recibirá un enlace de pago seguro en su correo tras la reserva." },
     bank: { title: "Transferencia / Ingreso Bancario", beneficiary: "Beneficiario", bank: "Banco", reference: "Concepto del pago", referenceVal: "Número de reserva + Nombre completo", copy: "Copiar IBAN", copied: "¡Copiado!" },
     pos: { title: "TPV en el Vehículo", desc: "Pague con tarjeta (Visa/Mastercard) directamente en el vehículo con nuestro TPV portátil." },

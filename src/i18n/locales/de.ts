@@ -132,6 +132,7 @@ export default {
     title1: "Zahlungs",
     title2: "methoden",
     subtitle: "Bezahlen Sie, wie es Ihnen am besten passt.",
+    bannerTap: "Tippen Sie hier, um Ihre Zahlungsmöglichkeiten zu sehen",
     online: { title: "Online-Kartenzahlung", desc: "Sie erhalten nach der Buchung einen sicheren Zahlungslink per E-Mail." },
     bank: { title: "Banküberweisung / Einzahlung", beneficiary: "Zahlungsempfänger", bank: "Bank", reference: "Verwendungszweck", referenceVal: "Buchungsnummer + Vollständiger Name", copy: "IBAN kopieren", copied: "Kopiert!" },
     pos: { title: "POS im Fahrzeug", desc: "Zahlen Sie mit Karte (Visa/Mastercard) direkt im Fahrzeug mit unserem mobilen POS." },

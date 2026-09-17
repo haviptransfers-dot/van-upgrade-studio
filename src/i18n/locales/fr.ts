@@ -132,6 +132,7 @@ export default {
     title1: "Moyens de",
     title2: "Paiement",
     subtitle: "Réglez votre paiement comme il vous convient le mieux.",
+    bannerTap: "Appuyez ici pour voir comment vous pouvez payer",
     online: { title: "Paiement en Ligne par Carte", desc: "Vous recevrez un lien de paiement sécurisé par e-mail après la réservation." },
     bank: { title: "Virement / Dépôt Bancaire", beneficiary: "Bénéficiaire", bank: "Banque", reference: "Référence du paiement", referenceVal: "Numéro de réservation + Nom complet", copy: "Copier l'IBAN", copied: "Copié !" },
     pos: { title: "TPE à Bord", desc: "Payez par carte (Visa/Mastercard) directement dans le véhicule avec notre TPE portable." },

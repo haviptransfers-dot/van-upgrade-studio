@@ -132,6 +132,7 @@ export default {
     title1: "Payment",
     title2: "Methods",
     subtitle: "Complete your payment with whichever option suits you best.",
+    bannerTap: "Tap here to see what you can pay with and how",
     online: { title: "Online Card Payment", desc: "You'll receive a secure payment link in your email after booking." },
     bank: { title: "Bank Transfer / Deposit", beneficiary: "Beneficiary", bank: "Bank", reference: "Payment reference", referenceVal: "Booking number + Full name", copy: "Copy IBAN", copied: "Copied!" },
     pos: { title: "POS in the Vehicle", desc: "Pay by card (Visa/Mastercard) directly in the vehicle with our portable POS." },
