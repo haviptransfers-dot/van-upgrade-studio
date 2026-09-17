@@ -101,6 +101,7 @@ export default {
       port_to_athens: "Piraeus to Athens",
       athens_to_port: "Athens to Piraeus",
       airport_to_port: "Airport to Piraeus",
+      port_to_airport: "Piraeus to Airport",
       sounio: "Sounio – Temple of Poseidon (5h)",
       athens_sights: "Athens Sights Tour (3h)",
     },
