@@ -127,6 +127,16 @@ export default {
     safety: "La sicurezza della vostra famiglia è la nostra priorità",
     whatsappMsg: "Ciao! Vorrei richiedere un seggiolino auto per il mio transfer.",
   },
+  payments: {
+    eyebrow: "Pagamento Sicuro",
+    title1: "Metodi di",
+    title2: "Pagamento",
+    subtitle: "Completa il pagamento nel modo che preferisci.",
+    online: { title: "Pagamento Online con Carta", desc: "Riceverai un link di pagamento sicuro via email dopo la prenotazione." },
+    bank: { title: "Bonifico / Versamento Bancario", beneficiary: "Beneficiario", bank: "Banca", reference: "Causale del pagamento", referenceVal: "Numero di prenotazione + Nome e Cognome", copy: "Copia IBAN", copied: "Copiato!" },
+    pos: { title: "POS a Bordo", desc: "Paga con carta (Visa/Mastercard) direttamente a bordo con il nostro POS portatile." },
+    cash: { title: "Contanti", desc: "Paga in contanti (EUR) direttamente all'autista." },
+  },
   footer: { rights: "Tutti i diritti riservati." },
   photoWall: { eyebrow: "In Viaggio", title: "Viaggi Senza Sforzo", subtitle: "Fluidi, silenziosi e sempre puntuali — ovunque la Grecia ti porti." },
   chat: {
