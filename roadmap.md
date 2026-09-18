@@ -1,3 +1,4 @@
 - [x] Add a Payment Methods section (online payment link, bank transfer IBAN, POS in vehicle, cash) — display only, no checkout system.
 - [ ] Add a Child & Baby Seats section between Explore Our Tours and Google Reviews, using the four supplied real photos.
 - [ ] Remove the "52 reviews" count from the hero trust badge (keep the rest).
+- [ ] Add the multilingual Family Travel page, navigation, schemas, and internal links.
