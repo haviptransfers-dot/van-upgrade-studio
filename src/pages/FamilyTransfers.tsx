@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Baby, BriefcaseBusiness, Car, Check, Clock3, MapPin, MessageCircle, Phone, ShieldCheck, UserRoundCheck } from "lucide-react";
+import { Baby, BriefcaseBusiness, Car, Clock3, MapPin, MessageCircle, Phone, ShieldCheck, UserRoundCheck } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
