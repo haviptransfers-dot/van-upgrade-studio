@@ -28,7 +28,7 @@ const SeoPage = ({ routeKey, path }: SeoPageProps) => {
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
       </Helmet>
-      <Index />
+      <Index routeKey={routeKey} />
     </>
   );
 };

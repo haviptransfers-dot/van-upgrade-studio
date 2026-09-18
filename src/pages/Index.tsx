@@ -1,8 +1,9 @@
 import { lazy, Suspense, useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
-import { Phone, Mail, Clock, Users, Shield, Star, ChevronDown, MessageCircle, Plane, Ship, Camera, Building, ArrowRight } from "lucide-react";
+import { Phone, Mail, Clock, Users, Shield, Star, ChevronDown, MessageCircle, Plane, Ship, Camera, Building, ArrowRight, Menu, X } from "lucide-react";
 import { blogPosts, localizePost } from "@/data/blogPosts";
 import { Button } from "@/components/ui/button";
 import {
@@ -63,12 +64,17 @@ const fadeUp = {
   }),
 };
 
-const Index = () => {
+interface IndexProps {
+  routeKey?: string;
+}
+
+const Index = ({ routeKey }: IndexProps) => {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const whatsappUrl = "https://wa.me/306949393700";
 
   const [heroCycleIndex, setHeroCycleIndex] = useState(0);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   useEffect(() => {
     // Preload all hero images to avoid black gaps between slides
     heroCycleImages.forEach((src) => {
@@ -107,6 +113,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-transparent relative">
+      {!routeKey && (
+        <Helmet>
+          <link rel="canonical" href="https://haviptransfers.gr/" />
+        </Helmet>
+      )}
       <AnimatedBackground />
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
@@ -120,6 +131,7 @@ const Index = () => {
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium">
             <a href="#services" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.services")}</a>
+            <Link to="/family-transfers-athens-child-seats" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.family", { defaultValue: "Family Travel" })}</Link>
             <a href="#fleet" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.fleet")}</a>
             <a href="#gallery" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.gallery")}</a>
             <a href="#about" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.about")}</a>
@@ -139,17 +151,33 @@ const Index = () => {
                 <span className="hidden sm:inline">{t("nav.bookNow")}</span>
               </Button>
             </a>
+            <Button
+              type="button"
+              size="icon"
+              variant="outline"
+              className="border-primary/30 text-primary md:hidden"
+              onClick={() => setMobileMenuOpen((open) => !open)}
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-navigation"
+              aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+            >
+              {mobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+            </Button>
           </div>
-          <div className="w-full flex items-center justify-center gap-4 mt-1.5 md:hidden">
-            <LanguageSwitcher />
-            <Link to="/blog" className="relative text-xs font-medium uppercase tracking-wider text-foreground/70 hover:text-primary transition-colors">
-              {t("blog.nav")}
-              <span className="absolute -top-1 -right-2.5 flex h-2 w-2" aria-hidden="true">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-notification opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-notification"></span>
-              </span>
-            </Link>
-          </div>
+          {mobileMenuOpen && (
+            <div id="mobile-navigation" className="order-last mt-3 w-full border-t border-border pt-3 md:hidden">
+              <div className="flex flex-col items-center gap-3 text-sm">
+                <a href="#services" onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("nav.services")}</a>
+                <Link to="/family-transfers-athens-child-seats" onClick={() => setMobileMenuOpen(false)} className="text-primary">{t("nav.family", { defaultValue: "Family Travel" })}</Link>
+                <a href="#fleet" onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("nav.fleet")}</a>
+                <a href="#gallery" onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("nav.gallery")}</a>
+                <a href="#about" onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("nav.about")}</a>
+                <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("nav.contact")}</a>
+                <Link to="/blog" onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("blog.nav")}</Link>
+                <LanguageSwitcher />
+              </div>
+            </div>
+          )}
           <div className="hidden md:block">
             <LanguageSwitcher />
           </div>
@@ -281,6 +309,16 @@ const Index = () => {
               </motion.div>
             ))}
           </motion.div>
+          <div className="mt-10 text-center">
+            <Link to="/family-transfers-athens-child-seats" className="inline-flex items-center gap-2 text-sm font-medium text-primary underline-offset-4 hover:underline">
+              {routeKey === "airport"
+                ? t("familyLinks.airport", { defaultValue: "Traveling with children? Explore family transfers with child seats" })
+                : routeKey === "piraeus"
+                  ? t("familyLinks.piraeus", { defaultValue: "Family transfers with child seats from Piraeus Port" })
+                  : t("familyLinks.home", { defaultValue: "Traveling with children? Explore family transfers with child seats" })}
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
         </div>
       </section>
 

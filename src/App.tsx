@@ -15,6 +15,7 @@ import { seoRoutes } from "./seoRoutes.ts";
 import Blog from "./pages/Blog.tsx";
 import BlogPost from "./pages/BlogPost.tsx";
 import About from "./pages/About.tsx";
+import FamilyTransfers from "./pages/FamilyTransfers.tsx";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/about" element={<About />} />
+          <Route path="/family-transfers-athens-child-seats" element={<FamilyTransfers />} />
           {seoRoutes
             .filter((r) => r.path !== "/delphi-private-tour" && r.path !== "/athens-city-tour" && r.path !== "/cape-sounion-tour" && r.path !== "/meteora-private-tour" && r.path !== "/nafplio-private-tour")
             .map((r) => (
