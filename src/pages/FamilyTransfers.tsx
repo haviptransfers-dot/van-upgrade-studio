@@ -12,7 +12,7 @@ import seatIdrive from "@/assets/child-seat-idrive.jpg.asset.json";
 import seatBooster from "@/assets/child-seat-booster-monza.jpg.asset.json";
 import seatHero from "@/assets/child-seat-besafe-isize.jpg.asset.json";
 
-const SITE_URL = "https://van-move-boost.lovable.app";
+const SITE_URL = "https://haviptransfers.gr";
 const ASSET_HOST = "https://van-move-boost.lovable.app";
 const PAGE_PATH = "/family-transfers-athens-child-seats";
 const PHONE = "+306949393700";

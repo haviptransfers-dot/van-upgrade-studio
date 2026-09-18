@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
@@ -112,6 +113,11 @@ const Index = ({ routeKey }: IndexProps) => {
 
   return (
     <div className="min-h-screen bg-transparent relative">
+      {!routeKey && (
+        <Helmet>
+          <link rel="canonical" href="https://haviptransfers.gr/" />
+        </Helmet>
+      )}
       <AnimatedBackground />
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
