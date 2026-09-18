@@ -1,12 +1,18 @@
 export default {
   nav: {
     services: "Servizi",
+    family: "Viaggi in Famiglia",
     fleet: "La Nostra Flotta",
     gallery: "Galleria",
     about: "Chi Siamo",
     contact: "Contatti",
     bookNow: "Prenota Ora",
     tagline: "Transfer VIP Atene",
+  },
+  familyLinks: {
+    home: "Viaggi con bambini? Scopri i transfer familiari con seggiolini",
+    airport: "Viaggi con bambini? Scopri i transfer familiari con seggiolini",
+    piraeus: "Transfer familiari con seggiolini dal porto del Pireo",
   },
   hero: {
     eyebrow: "Transfer Privati Premium",
