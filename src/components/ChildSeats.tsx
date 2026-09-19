@@ -121,6 +121,14 @@ const ChildSeats = () => {
             decoding="async"
             className="w-full h-56 sm:h-72 md:h-96 object-cover rounded-xl border border-primary/25 shadow-2xl"
           />
+          <div className="mt-5 max-w-3xl mx-auto text-center">
+            <p className="text-primary font-display text-base md:text-lg font-semibold mb-2 tracking-wide">
+              {t("childSeats.besafeTitle")}
+            </p>
+            <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
+              {t("childSeats.besafeText")}
+            </p>
+          </div>
         </motion.div>
 
 
