@@ -114,7 +114,7 @@ const FamilyTransfers = () => {
               alt="Two BeSafe child seats installed side by side in the back of a Mercedes V Class with orange leather interior"
               loading="lazy"
               decoding="async"
-              className="w-full h-56 sm:h-72 md:h-96 object-cover rounded-xl border border-primary/25 shadow-2xl"
+              className="w-full h-auto rounded-xl border border-primary/25 shadow-2xl"
             />
             <div className="mt-8 max-w-3xl mx-auto text-center">
               <p className="text-primary font-display text-lg md:text-xl font-semibold mb-3 tracking-wide">
