@@ -101,6 +101,32 @@ const FamilyTransfers = () => {
           </div>
         </section>
 
+        <section className="border-y border-border bg-card/60 px-4 py-16 md:py-20">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="container mx-auto max-w-5xl"
+          >
+            <img
+              src={`${ASSET_HOST}${seatBesafePair.url}`}
+              alt="Two BeSafe child seats installed side by side in the back of a Mercedes V Class with orange leather interior"
+              loading="lazy"
+              decoding="async"
+              className="w-full h-56 sm:h-72 md:h-96 object-cover rounded-xl border border-primary/25 shadow-2xl"
+            />
+            <div className="mt-8 max-w-3xl mx-auto text-center">
+              <p className="text-primary font-display text-lg md:text-xl font-semibold mb-3 tracking-wide">
+                {t("childSeats.besafeTitle")}
+              </p>
+              <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
+                {t("childSeats.besafeText")}
+              </p>
+            </div>
+          </motion.div>
+        </section>
+
         <section className="border-y border-border bg-card/80 px-4 py-16 md:py-24">
           <div className="container mx-auto max-w-6xl">
             <h2 className="mb-12 text-center font-display text-3xl font-bold md:text-5xl">{copy.whyTitle}</h2>
