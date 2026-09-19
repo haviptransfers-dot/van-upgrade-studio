@@ -7,6 +7,7 @@ import seatIsIsize from "@/assets/child-seat-besafe-isize.jpg.asset.json";
 import seatBesafe360 from "@/assets/child-seat-besafe-360.jpg.asset.json";
 import seatIdrive from "@/assets/child-seat-idrive.jpg.asset.json";
 import seatBooster from "@/assets/child-seat-booster-monza.jpg.asset.json";
+import seatBesafePair from "@/assets/child-seats-besafe-pair.jpg.asset.json";
 
 const ASSET_HOST = "https://van-move-boost.lovable.app";
 
@@ -104,6 +105,24 @@ const ChildSeats = () => {
             />
           </motion.div>
         </div>
+
+        {/* Wide BeSafe pair photo */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="mb-12 md:mb-16"
+        >
+          <img
+            src={`${ASSET_HOST}${seatBesafePair.url}`}
+            alt="Two BeSafe child seats installed side by side in the back of a Mercedes V Class with orange leather interior"
+            loading="lazy"
+            decoding="async"
+            className="w-full h-56 sm:h-72 md:h-96 object-cover rounded-xl border border-primary/25 shadow-2xl"
+          />
+        </motion.div>
+
 
         {/* Categories card */}
         <motion.div
