@@ -11,6 +11,7 @@ import seat360 from "@/assets/child-seat-besafe-360.jpg.asset.json";
 import seatIdrive from "@/assets/child-seat-idrive.jpg.asset.json";
 import seatBooster from "@/assets/child-seat-booster-monza.jpg.asset.json";
 import seatHero from "@/assets/child-seat-besafe-isize.jpg.asset.json";
+import seatBesafePair from "@/assets/child-seats-besafe-pair.jpg.asset.json";
 
 const SITE_URL = "https://haviptransfers.gr";
 const ASSET_HOST = "https://van-move-boost.lovable.app";
@@ -20,7 +21,7 @@ const PAGE_TITLE = "Athens Transfers with Child Car Seats | Family Travel";
 const PAGE_DESCRIPTION = "Private Athens airport & port transfers with certified child car seats for all ages. Mercedes V-Class, professional drivers, stroller space. Book your family transfer.";
 
 const FamilyTransfers = () => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const copy = getFamilyTravelCopy(i18n.language);
   const whatsappUrl = `https://wa.me/306949393700?text=${encodeURIComponent(copy.whatsappMessage)}`;
   const seatImages = [seat360, seatIdrive, seatBooster];
