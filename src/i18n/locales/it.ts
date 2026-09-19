@@ -132,6 +132,8 @@ export default {
     request: "Richiedi un Seggiolino",
     safety: "La sicurezza della vostra famiglia è la nostra priorità",
     whatsappMsg: "Ciao! Vorrei richiedere un seggiolino auto per il mio transfer.",
+    besafeTitle: "BeSafe — Il pioniere scandinavo della sicurezza infantile in auto",
+    besafeText: "È il primo produttore di seggiolini auto per bambini in Scandinavia e i suoi seggiolini sono venduti in oltre 40 paesi. Il reparto di ricerca e sviluppo di BeSafe nei Paesi Bassi si concentra continuamente sullo sviluppo di prodotti innovativi per migliorare la sicurezza dei bambini su strada.",
   },
   payments: {
     eyebrow: "Pagamento Sicuro",

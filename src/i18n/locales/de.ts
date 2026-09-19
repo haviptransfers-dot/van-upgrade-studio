@@ -132,6 +132,8 @@ export default {
     request: "Kindersitz Anfragen",
     safety: "Die Sicherheit Ihrer Familie ist unsere Priorität",
     whatsappMsg: "Hallo! Ich möchte einen Kindersitz für meine Fahrt anfragen.",
+    besafeTitle: "BeSafe — Skandinavischer Pionier in der Kinderautosicherheit",
+    besafeText: "BeSafe ist der erste Hersteller von Kindersitzen in Skandinavien, und die Sitze werden in über 40 Länder verkauft. Die Forschungs- und Entwicklungsabteilung von BeSafe in den Niederlanden konzentriert sich kontinuierlich auf die Entwicklung innovativer Produkte zur Verbesserung der Kindersicherheit auf der Straße.",
   },
   payments: {
     eyebrow: "Sichere Zahlung",

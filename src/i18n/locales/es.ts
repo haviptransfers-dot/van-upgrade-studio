@@ -132,6 +132,8 @@ export default {
     request: "Solicitar Silla Infantil",
     safety: "La seguridad de su familia es nuestra prioridad",
     whatsappMsg: "¡Hola! Me gustaría solicitar una silla infantil para mi traslado.",
+    besafeTitle: "BeSafe — Pionero escandinavo en seguridad infantil del automóvil",
+    besafeText: "Es el primer fabricante de sillas de coche para niños en Escandinavia, y sus sillas se venden en más de 40 países. El departamento de investigación y desarrollo de BeSafe en los Países Bajos se centra continuamente en desarrollar productos innovadores para mejorar la seguridad de los niños en la carretera.",
   },
   payments: {
     eyebrow: "Pago Seguro",

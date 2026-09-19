@@ -132,6 +132,8 @@ export default {
     request: "Demander un Siège Enfant",
     safety: "La sécurité de votre famille est notre priorité",
     whatsappMsg: "Bonjour ! Je souhaite réserver un siège enfant pour mon transfert.",
+    besafeTitle: "BeSafe — Le pionnier scandinave de la sécurité automobile pour enfants",
+    besafeText: "C'est le premier fabricant de sièges auto pour enfants en Scandinavie, et ses sièges sont vendus dans plus de 40 pays. Le département de recherche et développement de BeSafe aux Pays-Bas se concentre en permanence sur le développement de produits innovants pour améliorer la sécurité des enfants sur la route.",
   },
   payments: {
     eyebrow: "Paiement Sécurisé",

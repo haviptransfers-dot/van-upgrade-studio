@@ -132,6 +132,8 @@ export default {
     request: "Request Child Seat",
     safety: "Your family's safety is our priority",
     whatsappMsg: "Hi! I'd like to request a child seat for my upcoming transfer.",
+    besafeTitle: "BeSafe — Scandinavian pioneer in child car safety",
+    besafeText: "BeSafe is the first producer of child car seats in Scandinavia, and its seats are sold in more than 40 countries. The BeSafe research and development department in the Netherlands continuously focuses on developing innovative products to improve children's safety on the road.",
   },
   payments: {
     eyebrow: "Secure Payment",
