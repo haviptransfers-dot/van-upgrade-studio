@@ -1,6 +1,12 @@
 export default {
   nav: {
     services: "الخدمات",
+    tagline: "نقل VIP",
+    fleet: "الأسطول",
+    gallery: "المعرض",
+    about: "من نحن",
+    contact: "اتصل بنا",
+    bookNow: "احجز الآن",
   },
   hero: {
 
