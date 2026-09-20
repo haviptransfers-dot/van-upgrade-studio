@@ -1,19 +1,6 @@
 export default {
   nav: {
     services: "Servicios",
-    family: "Viajes en Familia",
-    fleet: "Nuestra Flota",
-    gallery: "Galería",
-    about: "Nosotros",
-    contact: "Contacto",
-    bookNow: "Reservar",
-    tagline: "Transfers VIP Atenas",
-  },
-  familyLinks: {
-    home: "¿Viaja con niños? Descubra los traslados familiares con sillas infantiles",
-    airport: "¿Viaja con niños? Descubra los traslados familiares con sillas infantiles",
-    piraeus: "Traslados familiares con sillas infantiles desde el puerto del Pireo",
-  },
   hero: {
     eyebrow: "Transfers Privados Premium",
     title1: "Transfers de Lujo",

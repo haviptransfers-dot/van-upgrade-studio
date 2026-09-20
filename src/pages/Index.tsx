@@ -130,7 +130,6 @@ const Index = ({ routeKey }: IndexProps) => {
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium">
             <a href="#services" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.services")}</a>
-            <Link to="/family-transfers-athens-child-seats" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.family", { defaultValue: "Family Travel" })}</Link>
             <a href="#fleet" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.fleet")}</a>
             <a href="#gallery" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.gallery")}</a>
             <a href="#about" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.about")}</a>
@@ -167,7 +166,6 @@ const Index = ({ routeKey }: IndexProps) => {
             <div id="mobile-navigation" className="order-last mt-3 w-full border-t border-border pt-3 md:hidden">
               <div className="flex flex-col items-center gap-3 text-sm">
                 <a href="#services" onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("nav.services")}</a>
-                <Link to="/family-transfers-athens-child-seats" onClick={() => setMobileMenuOpen(false)} className="text-primary">{t("nav.family", { defaultValue: "Family Travel" })}</Link>
                 <a href="#fleet" onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("nav.fleet")}</a>
                 <a href="#gallery" onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("nav.gallery")}</a>
                 <a href="#about" onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("nav.about")}</a>
