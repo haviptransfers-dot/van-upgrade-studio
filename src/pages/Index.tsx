@@ -335,18 +335,28 @@ const Index = ({ routeKey }: IndexProps) => {
                 ))}
               </motion.ul>
               {(() => {
-                const mp = blogPosts.find((p) => p.slug === "mercedes-v-class-chauffeur-service-athens");
-                if (!mp) return null;
-                const lp = localizePost(mp, i18n.language);
+                const slugs = [
+                  "mercedes-v-class-chauffeur-service-athens",
+                  "child-car-seats-private-transfers-greece",
+                ];
+                const links = slugs
+                  .map((s) => blogPosts.find((p) => p.slug === s))
+                  .filter((p): p is NonNullable<typeof p> => Boolean(p))
+                  .map((p) => localizePost(p, i18n.language));
+                if (!links.length) return null;
                 return (
-                  <motion.p variants={fadeUp} custom={4} className="mt-6">
-                    <Link
-                      to={`/blog/${lp.slug}`}
-                      className="inline-flex items-center gap-2 text-primary underline underline-offset-4 hover:text-primary/80 text-sm md:text-base"
-                    >
-                      {lp.title}
-                    </Link>
-                  </motion.p>
+                  <motion.div variants={fadeUp} custom={4} className="mt-6 space-y-2">
+                    {links.map((lp) => (
+                      <p key={lp.slug}>
+                        <Link
+                          to={`/blog/${lp.slug}`}
+                          className="inline-flex items-center gap-2 text-primary underline underline-offset-4 hover:text-primary/80 text-sm md:text-base"
+                        >
+                          {lp.title}
+                        </Link>
+                      </p>
+                    ))}
+                  </motion.div>
                 );
               })()}
             </motion.div>
