@@ -16,11 +16,6 @@ import athensDelphiRouteMap from "@/assets/athens-delphi-route-map.webp";
 import privateMeteoraTourFromAthens from "@/assets/private-meteora-tour-from-athens.webp.asset.json";
 import athensMeteoraRouteMap from "@/assets/athens-meteora-route-map.webp";
 import childSeatsFamilySafe from "@/assets/child-seats-family-safe.jpg.asset.json";
-import besafeIziTwistSupportLeg from "@/assets/besafe-izi-twist-support-leg.webp";
-import besafeIziTwistRearFacing from "@/assets/besafe-izi-twist-rear-facing.webp";
-import besafeIziModularToddler from "@/assets/besafe-izi-modular-toddler.webp";
-import besafeIdriveToddler from "@/assets/besafe-idrive-toddler.webp";
-import monzaBoosterSeats from "@/assets/monza-booster-seats.webp";
 
 
 import nightArrivalAirportTransfer from "@/assets/night-arrival-airport-transfer.jpg.asset.json";
@@ -363,42 +358,36 @@ export const blogPosts: BlogPost[] = [
         paragraphs: [
           "Inside our Mercedes V-Class we invested in a full range of seats, because one seat does not fit all.",
         ],
-        image: besafeIziTwistSupportLeg,
-        imageAlt:
-          "BeSafe iZi Twist B i-Size rear-facing baby seat installed on the cognac leather bench of a Mercedes V-Class with support leg and green indicator",
       },
+
       {
         subheading: "Babies 0–18 months (40–105 cm): BeSafe iZi Twist B i-Size",
         paragraphs: [
           "360° rotation and rear-facing for as long as possible – up to five times safer. A support leg with a green indicator confirms correct installation: ISOFIX plus support leg means zero error. The soft grey fabric and side-impact protection keep your newborn asleep from Athens International Airport to your hotel.",
         ],
-        image: besafeIziTwistRearFacing,
-        imageAlt: "Rear-facing BeSafe baby seat rotated toward the sliding door of a Mercedes V-Class",
       },
+
       {
         subheading: "Toddlers 1–7 years (76–105 cm): BeSafe iZi Modular & i-Drive",
         paragraphs: [
           "Forward-facing with a 5-point harness and an adjustable headrest with SIP+ side impact protection. The mesh fabric keeps children cool in the Greek summer, when temperatures pass 35°C.",
         ],
-        image: besafeIziModularToddler,
-        imageAlt: "BeSafe iZi Modular toddler seat with breathable grey mesh fabric in a Mercedes V-Class",
       },
+
       {
         paragraphs: [
           "The i-Drive seat is our second toddler option, with a deep shell, padded harness and i-Size approval.",
         ],
-        image: besafeIdriveToddler,
-        imageAlt: "Black i-Size i-Drive toddler car seat with 5-point harness fitted in a Mercedes V-Class",
       },
+
       {
         subheading: "Big kids 4–12 years (100–150 cm): Monza booster with ISOFIX",
         paragraphs: [
           "Two boosters can be installed side by side in our V-Class – perfect for families with two children. The belt sits correctly over the shoulder and pelvis, not the neck and stomach.",
           "All our seats are BeSafe – a Norwegian brand tested beyond EU standards (Plus Test) – and they are always cleaned and checked before each transfer.",
         ],
-        image: monzaBoosterSeats,
-        imageAlt: "Two Monza ISOFIX booster seats installed side by side on the quilted cognac leather bench of a Mercedes V-Class",
       },
+
       {
         heading: "4. Why 360° rotation matters in a luxury van",
         paragraphs: [
