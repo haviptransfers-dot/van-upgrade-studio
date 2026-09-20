@@ -1,7 +1,9 @@
 export default {
   nav: {
     services: "Servizi",
+  },
   hero: {
+
     eyebrow: "Transfer Privati Premium",
     title1: "Transfer di Lusso",
     title2: "ad Atene",
