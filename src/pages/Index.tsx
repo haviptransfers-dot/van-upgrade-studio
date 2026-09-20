@@ -334,6 +334,21 @@ const Index = ({ routeKey }: IndexProps) => {
                   </li>
                 ))}
               </motion.ul>
+              {(() => {
+                const mp = blogPosts.find((p) => p.slug === "mercedes-v-class-chauffeur-service-athens");
+                if (!mp) return null;
+                const lp = localizePost(mp, i18n.language);
+                return (
+                  <motion.p variants={fadeUp} custom={4} className="mt-6">
+                    <Link
+                      to={`/blog/${lp.slug}`}
+                      className="inline-flex items-center gap-2 text-primary underline underline-offset-4 hover:text-primary/80 text-sm md:text-base"
+                    >
+                      {lp.title}
+                    </Link>
+                  </motion.p>
+                );
+              })()}
             </motion.div>
           </div>
         </div>
