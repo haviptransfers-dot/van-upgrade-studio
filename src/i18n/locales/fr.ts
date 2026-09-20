@@ -1,20 +1,9 @@
 export default {
   nav: {
     services: "Services",
-    family: "Voyage en Famille",
-    fleet: "Notre Flotte",
-    gallery: "Galerie",
-    about: "À propos",
-    contact: "Contact",
-    bookNow: "Réserver",
-    tagline: "Transferts VIP Athènes",
-  },
-  familyLinks: {
-    home: "Vous voyagez avec des enfants ? Découvrez nos transferts avec sièges enfant",
-    airport: "Vous voyagez avec des enfants ? Découvrez nos transferts avec sièges enfant",
-    piraeus: "Transferts familiaux avec sièges enfant depuis le port du Pirée",
   },
   hero: {
+
     eyebrow: "Transferts Privés Premium",
     title1: "Transferts de Luxe",
     title2: "à Athènes",

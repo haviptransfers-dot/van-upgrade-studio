@@ -1,20 +1,9 @@
 export default {
   nav: {
     services: "Services",
-    family: "Family Travel",
-    fleet: "Our Fleet",
-    gallery: "Gallery",
-    about: "About",
-    contact: "Contact",
-    bookNow: "Book Now",
-    tagline: "VIP Transfers Athens",
-  },
-  familyLinks: {
-    home: "Traveling with children? Explore family transfers with child seats",
-    airport: "Traveling with children? Explore family transfers with child seats",
-    piraeus: "Family transfers with child seats from Piraeus Port",
   },
   hero: {
+
     eyebrow: "Premium Private Transfers",
     title1: "Luxury Transfers",
     title2: "in Athens",

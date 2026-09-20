@@ -1,20 +1,9 @@
 export default {
   nav: {
     services: "Leistungen",
-    family: "Familienreisen",
-    fleet: "Unsere Flotte",
-    gallery: "Galerie",
-    about: "Über uns",
-    contact: "Kontakt",
-    bookNow: "Jetzt buchen",
-    tagline: "VIP-Transfers Athen",
-  },
-  familyLinks: {
-    home: "Reisen Sie mit Kindern? Entdecken Sie Familientransfers mit Kindersitzen",
-    airport: "Reisen Sie mit Kindern? Entdecken Sie Familientransfers mit Kindersitzen",
-    piraeus: "Familientransfers mit Kindersitzen ab Hafen Piräus",
   },
   hero: {
+
     eyebrow: "Premium Privattransfers",
     title1: "Luxustransfers",
     title2: "in Athen",
