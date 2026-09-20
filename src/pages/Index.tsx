@@ -308,16 +308,6 @@ const Index = ({ routeKey }: IndexProps) => {
               </motion.div>
             ))}
           </motion.div>
-          <div className="mt-10 text-center">
-            <Link to="/family-transfers-athens-child-seats" className="inline-flex items-center gap-2 text-sm font-medium text-primary underline-offset-4 hover:underline">
-              {routeKey === "airport"
-                ? t("familyLinks.airport", { defaultValue: "Traveling with children? Explore family transfers with child seats" })
-                : routeKey === "piraeus"
-                  ? t("familyLinks.piraeus", { defaultValue: "Family transfers with child seats from Piraeus Port" })
-                  : t("familyLinks.home", { defaultValue: "Traveling with children? Explore family transfers with child seats" })}
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
         </div>
       </section>
 
