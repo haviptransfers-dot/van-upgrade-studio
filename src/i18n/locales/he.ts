@@ -1,6 +1,12 @@
 export default {
   nav: {
     services: "שירותים",
+    tagline: "העברות VIP",
+    fleet: "צי רכב",
+    gallery: "גלריה",
+    about: "אודות",
+    contact: "צור קשר",
+    bookNow: "הזמינו עכשיו",
   },
   hero: {
 

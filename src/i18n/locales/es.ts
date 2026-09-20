@@ -1,6 +1,12 @@
 export default {
   nav: {
     services: "Servicios",
+    tagline: "Traslados VIP",
+    fleet: "Flota",
+    gallery: "Galería",
+    about: "Nosotros",
+    contact: "Contacto",
+    bookNow: "Reservar",
   },
   hero: {
 

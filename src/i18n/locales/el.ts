@@ -1,6 +1,12 @@
 export default {
   nav: {
     services: "Υπηρεσίες",
+    tagline: "Υπηρεσίες Πολυτελείας",
+    fleet: "Στόλος",
+    gallery: "Γκαλερί",
+    about: "Σχετικά",
+    contact: "Επικοινωνία",
+    bookNow: "Κράτηση",
   },
   hero: {
 
