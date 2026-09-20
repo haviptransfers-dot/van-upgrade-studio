@@ -48,7 +48,6 @@ const Showcase = lazy(() => import("@/components/Showcase"));
 const PhotoWall = lazy(() => import("@/components/PhotoWall"));
 const PrivateTours = lazy(() => import("@/components/PrivateTours"));
 const PriceCalculator = lazy(() => import("@/components/PriceCalculator"));
-const ChildSeats = lazy(() => import("@/components/ChildSeats"));
 const PaymentMethods = lazy(() => import("@/components/PaymentMethods"));
 const ReviewsComponent = lazy(() => import("@/components/Reviews"));
 const ChatBot = lazy(() => import("@/components/ChatBot"));
@@ -323,7 +322,6 @@ const Index = ({ routeKey }: IndexProps) => {
       </section>
 
       <Suspense fallback={<LazyFallback />}>
-        <ChildSeats />
         <Showcase />
         <PhotoWall />
         <PrivateTours />
