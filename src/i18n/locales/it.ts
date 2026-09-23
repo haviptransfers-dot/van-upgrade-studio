@@ -137,7 +137,7 @@ export default {
     subtitle: "Completa il pagamento nel modo che preferisci.",
     bannerTap: "Tocca qui per vedere come puoi pagare",
     online: { title: "Pagamento Online con Carta", desc: "Riceverai un link di pagamento sicuro via email dopo la prenotazione." },
-    bank: { title: "Bonifico / Versamento Bancario", beneficiary: "Beneficiario", bank: "Banca", reference: "Causale del pagamento", referenceVal: "Numero di prenotazione + Nome e Cognome", copy: "Copia IBAN", copied: "Copiato!" },
+    bank: { title: "Bonifico / Versamento Bancario", desc: "Ti invieremo i nostri dati bancari insieme all'e-mail di conferma della prenotazione." },
     pos: { title: "POS a Bordo", desc: "Paga con carta (Visa/Mastercard) direttamente a bordo con il nostro POS portatile." },
     cash: { title: "Contanti", desc: "Paga in contanti (EUR) direttamente all'autista." },
   },
