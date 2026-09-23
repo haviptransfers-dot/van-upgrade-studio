@@ -1,10 +1,8 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Banknote, Check, ChevronDown, Copy, CreditCard, Landmark, Smartphone } from "lucide-react";
+import { Banknote, ChevronDown, CreditCard, Landmark, Smartphone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-const IBAN = "GR06 0260 6530 0009 4020 0732 759";
-const BIC = "ERBKGRAA";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -17,18 +15,8 @@ const fadeUp = {
 
 const PaymentMethods = () => {
   const { t } = useTranslation();
-  const [copied, setCopied] = useState(false);
   const [open, setOpen] = useState(false);
 
-  const copyIban = async () => {
-    try {
-      await navigator.clipboard.writeText(IBAN.replace(/\s/g, ""));
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      // clipboard unavailable — user can select the text manually
-    }
-  };
 
   const cardClass =
     "bg-card border border-border rounded-lg p-6 md:p-8 hover:border-primary/40 transition-colors";
@@ -118,41 +106,11 @@ const PaymentMethods = () => {
                       <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                         <Landmark className="w-5 h-5 text-primary" />
                       </div>
-                      <div className="w-full">
-                        <h3 className="font-display text-lg font-semibold mb-3">{t("payments.bank.title")}</h3>
-                        <dl className="space-y-1.5 text-sm">
-                          <div className="flex justify-between gap-3">
-                            <dt className="text-muted-foreground">{t("payments.bank.beneficiary")}</dt>
-                            <dd className="font-medium text-right">H &amp; A TOURS EE</dd>
-                          </div>
-                          <div className="flex justify-between gap-3">
-                            <dt className="text-muted-foreground">{t("payments.bank.bank")}</dt>
-                            <dd className="font-medium text-right">Eurobank</dd>
-                          </div>
-                          <div className="flex items-center justify-between gap-3">
-                            <dt className="text-muted-foreground">IBAN</dt>
-                            <dd className="font-medium text-right text-xs md:text-sm tracking-wide">
-                              {IBAN}
-                              <button
-                                type="button"
-                                onClick={copyIban}
-                                aria-label={t("payments.bank.copy")}
-                                className="inline-flex items-center gap-1 ml-2 text-primary hover:text-primary/80 transition-colors align-middle"
-                              >
-                                {copied ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
-                              </button>
-                            </dd>
-                          </div>
-                          <div className="flex justify-between gap-3">
-                            <dt className="text-muted-foreground">BIC</dt>
-                            <dd className="font-medium text-right">{BIC}</dd>
-                          </div>
-                        </dl>
-                        <p className="text-xs text-muted-foreground mt-3 pt-3 border-t border-border/60">
-                          {t("payments.bank.reference")}: <span className="text-foreground/80">{t("payments.bank.referenceVal")}</span>
-                          {copied && <span className="text-primary ml-2">{t("payments.bank.copied")}</span>}
-                        </p>
+                      <div>
+                        <h3 className="font-display text-lg font-semibold mb-2">{t("payments.bank.title")}</h3>
+                        <p className="text-muted-foreground text-sm leading-relaxed">{t("payments.bank.desc")}</p>
                       </div>
+
                     </div>
                   </motion.div>
 
