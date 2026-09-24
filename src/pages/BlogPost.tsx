@@ -97,9 +97,6 @@ const BlogPost = () => {
       </header>
 
       <main className="container mx-auto max-w-3xl px-4 py-12 md:py-16">
-        <p className="text-primary uppercase tracking-[0.2em] text-xs mb-3">
-          {new Date(post.date).toLocaleDateString(i18n.language, { year: "numeric", month: "long", day: "numeric" })}
-        </p>
         <h1 className="font-display text-3xl md:text-5xl font-bold mb-8 leading-tight">{post.title}</h1>
         <img
           src={post.image}
