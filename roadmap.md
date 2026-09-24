@@ -3,4 +3,4 @@
 - [x] Remove the "52 reviews" count from the hero trust badge (keep the rest).
 - [x] Add the multilingual Family Travel page, navigation, schemas, and internal links.
 
-- [ ] Add the multilingual Athens Airport to Piraeus Port Travel Guide, cover photo, SEO, and sitemap entry.
+- [x] Add the multilingual Athens Airport to Piraeus Port Travel Guide, cover photo, SEO, and sitemap entry.
