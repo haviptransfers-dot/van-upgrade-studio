@@ -5,6 +5,7 @@ import { businessChauffeurTranslations } from "./blogPostBusinessChauffeurTransl
 import { nightTransferTranslations } from "./blogPostNightTransferTranslations";
 import { airportPiraeusTranslations } from "./blogPostAirportPiraeusTranslations";
 import { weddingTranslations } from "./blogPostWeddingTranslations";
+import { bachelorTranslations } from "./blogPostBachelorTranslations";
 
 export interface BlogPostTranslation {
   title: string;
