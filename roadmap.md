@@ -2,3 +2,5 @@
 - [x] Add a Child & Baby Seats section below the homepage Services cards, using the four supplied real photos.
 - [x] Remove the "52 reviews" count from the hero trust badge (keep the rest).
 - [x] Add the multilingual Family Travel page, navigation, schemas, and internal links.
+
+- [x] Add the multilingual Athens Airport to Piraeus Port Travel Guide, cover photo, SEO, and sitemap entry.

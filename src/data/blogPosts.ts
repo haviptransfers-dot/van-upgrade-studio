@@ -16,6 +16,7 @@ import athensDelphiRouteMap from "@/assets/athens-delphi-route-map.webp";
 import privateMeteoraTourFromAthens from "@/assets/private-meteora-tour-from-athens.webp.asset.json";
 import athensMeteoraRouteMap from "@/assets/athens-meteora-route-map.webp";
 import childSeatsFamilySafe from "@/assets/child-seats-family-safe.jpg.asset.json";
+import athensAirportPiraeusPortTransfer from "@/assets/athens-airport-piraeus-port-transfer.webp.asset.json";
 
 
 import nightArrivalAirportTransfer from "@/assets/night-arrival-airport-transfer.jpg.asset.json";
@@ -65,6 +66,78 @@ export function localizePost(post: BlogPost, lang: string): BlogPost {
 export const WHATSAPP_URL = "https://wa.me/306949393700";
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "athens-airport-to-piraeus-port-transport-options",
+    title: "Athens Airport to Piraeus Port: Every Way to Get There in 2026",
+    excerpt:
+      "Metro, X96 bus, taxi, or a private Mercedes V-Class? Compare travel time, price, luggage capacity, and comfort for the 45 km journey from Athens Airport to Piraeus Port.",
+    image: hostedAssetUrl(athensAirportPiraeusPortTransfer),
+    imageAlt:
+      "Family with luggage boarding a black Mercedes V-Class with a chauffeur, with Athens Airport and a cruise ship at Piraeus in the background",
+    date: "2026-10-16",
+    metaTitle: "Athens Airport to Piraeus Port: Transport & Prices 2026",
+    metaDescription:
+      "Compare the Metro, X96 bus, taxi and private Mercedes V-Class from Athens Airport to Piraeus Port, including 2026 prices, travel times and cruise tips.",
+    sections: [
+      {
+        paragraphs: [
+          "Landing at Athens International Airport (ATH) and heading straight to Piraeus Port for a cruise or ferry? The journey is approximately 45 km, with four main transport options. As local drivers who make this route every day in our Mercedes V-Class, here is our honest 2026 comparison.",
+        ],
+      },
+      {
+        heading: "At a glance: travel time and cost",
+        bullets: [
+          "Metro (Line 3 + Line 1): 90–110 minutes, €10 per person, difficult with cruise luggage",
+          "Bus X96: 90–120 minutes, €6 per person, very limited luggage space",
+          "Taxi sedan: 45–70 minutes, €54–€75 plus possible extras, maximum 3 suitcases; groups need 2 taxis",
+          "Private V-Class — H&A Tours: 45–60 minutes, €100 for 1–4 passengers / €110 for 5–7 passengers, one large suitcase per person plus hand luggage",
+          "Night rate (22:00–06:00): +€10 per person",
+        ],
+      },
+      {
+        heading: "1. Metro: the cheapest option, but not ideal for cruises",
+        paragraphs: [
+          "Take Metro Line 3 from Athens Airport to Monastiraki, a journey of about 45 minutes, then change to Line 1 for Piraeus, which takes around 25 minutes. You will need to carry your luggage between platforms and may encounter stairs. Walking from Piraeus Metro station to cruise gates such as E2, E7, or E12 adds another 10–20 minutes with luggage. We do not recommend this option if you have more than one suitcase.",
+        ],
+      },
+      {
+        heading: "2. Bus X96 — Piraeus Airport Express",
+        paragraphs: [
+          "The X96 runs 24 hours a day, approximately every 20–30 minutes, from Athens Airport to Piraeus Port. It is inexpensive, but the journey often takes more than 90 minutes in Athens traffic. It can be crowded during summer and its stops are not directly beside every cruise terminal.",
+        ],
+      },
+      {
+        heading: "3. Taxi: the official fixed fare",
+        paragraphs: [
+          "The official fixed taxi fare is €54 from 05:00 to 00:00 and €75 from 00:00 to 05:00. This applies to a standard sedan carrying up to three suitcases. A party of 4–7 passengers with cruise luggage normally requires two taxis, costing €108–€150, and the group travels separately.",
+        ],
+      },
+      {
+        heading: "4. Private transfer with Mercedes V-Class — best for groups and cruises",
+        paragraphs: [
+          "This is the option our clients most often choose when travelling directly to Piraeus.",
+        ],
+        bullets: [
+          "Door-to-gate service: we drop you exactly at your ship's gate, not merely at the port entrance. Piraeus stretches for roughly 2 km, and gate E12 is far from E2.",
+          "Fits all your luggage: our V-Class is configured for cruise travel — up to 7 passengers, with one large 23 kg suitcase per person plus cabin bags.",
+          "No stress on arrival: your driver waits in Arrivals with your name, flight tracking is included, you receive 60 minutes of free waiting time, and flight delays carry no extra charge.",
+          "Fixed and clear price: €100 for 1–4 passengers and €110 for 5–7 passengers. There are no hidden fees and tolls are included. The night rate is +€10 per person.",
+        ],
+      },
+      {
+        heading: "H&A Tours local tip",
+        paragraphs: [
+          "For cruises departing after 17:00, leave Athens Airport at least four hours before departure. The highway can be heavily congested between 16:00 and 19:00. Always confirm your exact gate — E12, E7, or another terminal — with your cruise company before you land.",
+        ],
+      },
+      {
+        heading: "Choose the journey that fits your cruise day",
+        paragraphs: [
+          "Public transport is useful when budget matters most and you travel light. For families, groups, and passengers carrying cruise luggage, a pre-booked private V-Class offers the shortest, most direct route from the airport arrivals hall to the correct ship gate, with the vehicle and luggage space confirmed in advance.",
+        ],
+      },
+    ],
+  },
   {
     slug: "night-transfer-athens-airport-late-arrival",
     title: "Night Transfer from Athens Airport: A Calm, Private Late Arrival by Mercedes V-Class",
