@@ -63,9 +63,6 @@ const Blog = () => {
                 />
               </div>
               <div className="p-6">
-                <p className="text-xs text-muted-foreground mb-2">
-                  {new Date(post.date).toLocaleDateString(i18n.language, { year: "numeric", month: "long", day: "numeric" })}
-                </p>
                 <h2 className="font-display text-xl font-semibold mb-2 group-hover:text-primary transition-colors">{post.title}</h2>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">{post.excerpt}</p>
                 <span className="inline-flex items-center gap-1 text-primary text-sm font-medium">
