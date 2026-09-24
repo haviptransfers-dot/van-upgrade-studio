@@ -18,6 +18,8 @@ import athensMeteoraRouteMap from "@/assets/athens-meteora-route-map.webp";
 import childSeatsFamilySafe from "@/assets/child-seats-family-safe.jpg.asset.json";
 import athensAirportPiraeusPortTransfer from "@/assets/athens-airport-piraeus-port-transfer.webp.asset.json";
 import weddingTransferBrideVClass from "@/assets/wedding-transfer-bride-v-class.jpg.asset.json";
+import bachelorettePartyVClass from "@/assets/bachelorette-party-v-class.webp.asset.json";
+import bachelorPartyVClass from "@/assets/bachelor-party-v-class.webp.asset.json";
 
 
 import nightArrivalAirportTransfer from "@/assets/night-arrival-airport-transfer.jpg.asset.json";
@@ -67,6 +69,74 @@ export function localizePost(post: BlogPost, lang: string): BlogPost {
 export const WHATSAPP_URL = "https://wa.me/306949393700";
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "bachelor-bachelorette-party-transfers-greece",
+    title: "Bachelor & Bachelorette Party Transfers in Greece – Party Safe, Travel in Style",
+    excerpt:
+      "The party starts the moment you step into the van. Private bachelor and bachelorette party transfers in Greece with our black Mercedes V-Class and caramel leather interior.",
+    image: hostedAssetUrl(bachelorettePartyVClass),
+    imageAlt:
+      "Six friends wearing Team Bride and Bride to Be sashes laughing together beside a black Mercedes V-Class with caramel leather interior in the evening",
+    date: "2026-12-16",
+    metaTitle: "Bachelor & Bachelorette Party Transfers in Greece | H&A Tours",
+    metaDescription:
+      "Private party transfers in a black Mercedes V-Class: bar and club hopping in Athens or Mykonos, beach days, winery trips and airport pickups for your whole crew. All-night availability, fixed price.",
+    sections: [
+      {
+        paragraphs: [
+          "The party starts the moment you step into the van.",
+          "Planning a bachelor or bachelorette party in Greece? Don't let logistics ruin the fun. At H&A Tours, we provide the ultimate party transfer solution – so your whole crew can celebrate together, safely, and in absolute style.",
+          "Forget taxis, forget someone staying sober to drive. Our signature black [Mercedes V-Class](https://haviptransfers.gr/blog/mercedes-v-class-chauffeur-service-athens) with luxurious caramel leather interior is your private party shuttle.",
+        ],
+      },
+      {
+        heading: "The Perfect Party Van for 6 Friends",
+        paragraphs: [
+          "Our photos say it all. Whether it's 6 girls with \"Team Bride\" sashes or 6 guys celebrating the groom-to-be, our van is made for groups.",
+        ],
+        bullets: [
+          "Space for 6: true 6-seater comfort plus driver. No squeezing. Everyone has a premium leather seat, AC, and space for drinks and bags.",
+          "Caramel Interior, Party Exterior: the stunning caramel interior feels like a VIP lounge, while the sleek black exterior turns heads when you arrive at the club, bar, or beach.",
+          "Safe & Together: from hotel to dinner, from dinner to clubs, from clubs back to the hotel – we are on standby all night. Your group stays together, safe, and on schedule.",
+          "Soundtrack On: Bluetooth connectivity to play your party playlist.",
+        ],
+      },
+      {
+        image: hostedAssetUrl(bachelorPartyVClass),
+        imageAlt:
+          "Group of six laughing friends with drinks standing beside a black Mercedes V-Class with caramel leather interior at a bachelor party",
+        paragraphs: [
+          "From bachelorette brunches to bachelor nights out — the party van is ready for both crews.",
+        ],
+      },
+      {
+        heading: "Our Bachelor & Bachelorette Services",
+        bullets: [
+          "1. Bar & Club Hopping in Athens / Mykonos: we know the best spots. We drive, you party. No parking stress in the city center.",
+          "2. Beach Day Transfers: full-day transfer for your beach party crew to Vouliagmeni, Astir Beach, or any beach club.",
+          "3. Wine Tasting & Day Trips: for a more classy bachelorette – private transfers to wineries or spa resorts.",
+          "4. Airport Transfers for the Crew: pick up all your friends arriving from different flights in one go.",
+        ],
+      },
+      {
+        heading: "Why H&A Tours is the #1 Choice for Party Transfers",
+        bullets: [
+          "Professional Driver: discreet, punctual, and knows how to handle a party group. He waits while you celebrate.",
+          "All-Night Availability: we don't just drop you off. We stay available for the entire night with flexible pick-up times.",
+          "Fixed Price, No Surprises: clear quote for the whole night, including waiting time. Split it between 6 – it's cheaper than 2 taxis.",
+          "Immaculate & Photogenic: our black van is spotless and looks amazing in your party photos and Instagram stories.",
+        ],
+      },
+      {
+        heading: "Book Your Bachelor / Bachelorette Party Van",
+        paragraphs: [
+          "Keep the group together. Keep the party going. Let H&A Tours be your designated driver in style.",
+          "Bachelor party season in Greece is busy. Our black V-Class is our most requested party vehicle — after [wedding transfers](https://haviptransfers.gr/blog/wedding-transfers-greece-mercedes-v-class), it is our fastest-growing service.",
+          "Contact H&A Tours now to lock your date and get a custom quote for your night.",
+        ],
+      },
+    ],
+  },
   {
     slug: "wedding-transfers-greece-mercedes-v-class",
     title: "Wedding Transfers in Greece – Luxury, Elegance & Comfort",
