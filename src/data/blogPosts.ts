@@ -17,6 +17,7 @@ import privateMeteoraTourFromAthens from "@/assets/private-meteora-tour-from-ath
 import athensMeteoraRouteMap from "@/assets/athens-meteora-route-map.webp";
 import childSeatsFamilySafe from "@/assets/child-seats-family-safe.jpg.asset.json";
 import athensAirportPiraeusPortTransfer from "@/assets/athens-airport-piraeus-port-transfer.webp.asset.json";
+import weddingTransferBrideVClass from "@/assets/wedding-transfer-bride-v-class.jpg.asset.json";
 
 
 import nightArrivalAirportTransfer from "@/assets/night-arrival-airport-transfer.jpg.asset.json";
@@ -66,6 +67,68 @@ export function localizePost(post: BlogPost, lang: string): BlogPost {
 export const WHATSAPP_URL = "https://wa.me/306949393700";
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "wedding-transfers-greece-mercedes-v-class",
+    title: "Wedding Transfers in Greece – Luxury, Elegance & Comfort",
+    excerpt:
+      "Arrive at the most important day of your life in style. Private wedding transfers across Greece for the bride, the couple and your guests in our black Mercedes V-Class with caramel leather interior.",
+    image: hostedAssetUrl(weddingTransferBrideVClass),
+    imageAlt:
+      "Bride in a white wedding dress stepping into a black Mercedes V-Class with caramel leather interior, assisted by the groom outside a flower-decorated wedding venue",
+    date: "2026-11-16",
+    metaTitle: "Wedding Transfers in Greece – Luxury Mercedes V-Class | H&A Tours",
+    metaDescription:
+      "Private wedding transfers across Greece: bridal transfer, couple's transfer and guest shuttle in a black Mercedes V-Class with a professional chauffeur. Full-day availability.",
+    sections: [
+      {
+        paragraphs: [
+          "Arrive at the most important day of your life in style. At H&A Tours, we know that every detail matters on your wedding day. Our premium wedding transfer service is designed to offer not just transportation, but a seamless, elegant, and stress-free experience for the couple, families, and guests.",
+          "We proudly serve weddings across Greece with our signature luxury fleet.",
+        ],
+      },
+      {
+        heading: "Our Fleet: Black Mercedes V-Class with Caramel Leather Interior",
+        paragraphs: [
+          "Forget the typical white limousine. Our luxurious black [Mercedes V-Class](https://haviptransfers.gr/blog/mercedes-v-class-chauffeur-service-athens) with its stunning caramel leather interior offers the perfect combination of sophistication, space, and comfort.",
+        ],
+        bullets: [
+          "For the Bride: spacious enough for a voluminous wedding dress to stay perfect, with wide sliding doors so you step in and out gracefully.",
+          "Premium Comfort: diamond-stitched leather seats, climate control, ambient lighting, and absolute privacy.",
+          "Elegant Exterior: the glossy black finish is timeless, modern, and photographs beautifully at any venue — from a church in Athens to an estate in the countryside.",
+        ],
+      },
+      {
+        paragraphs: [
+          "As seen in our latest photoshoot: the moment the bride steps out of the van is already part of the wedding story.",
+        ],
+      },
+      {
+        heading: "Complete Wedding Transportation Services",
+        bullets: [
+          "1. Bridal Transfer: private, punctual, and discreet transfer for the bride and her father to the ceremony.",
+          "2. Couple's Transfer: from the ceremony to the reception venue, and to your hotel after the celebration.",
+          "3. Guest Shuttle Service: all your guests arrive safely and on time. Our van is ideal for shuttling family and close friends between hotels, church, and venue — no one gets lost, no one waits.",
+          "4. Bachelor / Bachelorette Transfers: our van is also perfect for the pre-wedding party crew (covered in our next article).",
+        ],
+      },
+      {
+        heading: "Why Couples Choose H&A Tours for Their Wedding",
+        bullets: [
+          "Professionalism: an experienced, well-dressed driver who knows the importance of timing on a wedding day.",
+          "Immaculate Vehicle: always perfectly cleaned, inside and out, and can be decorated with a subtle white ribbon upon request.",
+          "Reliability: we plan the route in advance and are always there 15 minutes early.",
+          "Full-Day Availability: we stay on standby for the entire event.",
+        ],
+      },
+      {
+        heading: "Book Your Wedding Transfer",
+        paragraphs: [
+          "Your wedding day deserves a flawless arrival. Let us take care of the road, so you can focus on the moment.",
+          "Availability for the 2026 wedding season is limited, especially for Saturdays. Contact H&A Tours today for a personalized quote and let us create a transportation plan tailored to your wedding day timeline.",
+        ],
+      },
+    ],
+  },
   {
     slug: "athens-airport-to-piraeus-port-transport-options",
     title: "Athens Airport to Piraeus Port: Every Way to Get There",
