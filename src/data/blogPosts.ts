@@ -68,7 +68,7 @@ export const WHATSAPP_URL = "https://wa.me/306949393700";
 export const blogPosts: BlogPost[] = [
   {
     slug: "athens-airport-to-piraeus-port-transport-options",
-    title: "Athens Airport to Piraeus Port: Every Way to Get There in 2026",
+    title: "Athens Airport to Piraeus Port: Every Way to Get There",
     excerpt:
       "Metro, X96 bus, taxi, or a private Mercedes V-Class? Compare travel time, price, luggage capacity, and comfort for the 45 km journey from Athens Airport to Piraeus Port.",
     image: hostedAssetUrl(athensAirportPiraeusPortTransfer),
