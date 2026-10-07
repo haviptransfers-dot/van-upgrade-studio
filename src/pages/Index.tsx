@@ -485,8 +485,8 @@ const Index = ({ routeKey }: IndexProps) => {
               },
               {
                 label: "Instagram",
-                value: "@antonis_ieronymakhs",
-                href: "https://instagram.com/antonis_ieronymakhs",
+                value: "@antonhs_ieronymakhs",
+                href: "https://instagram.com/antonhs_ieronymakhs",
                 icon: (
                   <svg viewBox="0 0 24 24" className="w-10 h-10" aria-hidden="true">
                     <defs>
@@ -561,7 +561,7 @@ const Index = ({ routeKey }: IndexProps) => {
               {t("preferredSources.footerLink")}
             </a>
             <a
-              href="https://instagram.com/antonis_ieronymakhs"
+              href="https://instagram.com/antonhs_ieronymakhs"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
