@@ -41,9 +41,69 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://haviptransfers.gr/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://haviptransfers.gr/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://haviptransfers.gr/blog/chauffeur-transfer-versus-athens-taxi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://haviptransfers.gr/blog/bachelor-bachelorette-party-transfers-greece</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://haviptransfers.gr/blog/wedding-transfers-greece-mercedes-v-class</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://haviptransfers.gr/blog/athens-airport-to-piraeus-port-transport-options</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://haviptransfers.gr/blog/night-transfer-athens-airport-late-arrival</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://haviptransfers.gr/blog/private-chauffeur-service-business-travel-athens</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://haviptransfers.gr/blog/private-transfer-athens-multiple-suitcases</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://haviptransfers.gr/blog/child-car-seats-private-transfers-greece</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://haviptransfers.gr/blog/private-meteora-day-trip-from-athens</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://haviptransfers.gr/blog/private-delphi-day-trip-from-athens</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://haviptransfers.gr/blog/private-transfer-athens-to-cape-sounio</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://haviptransfers.gr/blog/private-transfer-athens-airport-to-hotel</loc>
@@ -65,17 +125,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-<url><loc>https://haviptransfers.gr/blog/athens-private-tour-with-driver</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://haviptransfers.gr/blog/private-transfer-athens-to-cape-sounio</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://haviptransfers.gr/blog/private-delphi-day-trip-from-athens</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://haviptransfers.gr/blog/private-meteora-day-trip-from-athens</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-
-<url><loc>https://haviptransfers.gr/blog/child-car-seats-private-transfers-greece</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://haviptransfers.gr/blog/private-transfer-athens-multiple-suitcases</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://haviptransfers.gr/blog/night-transfer-athens-airport-late-arrival</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://haviptransfers.gr/blog/private-chauffeur-service-business-travel-athens</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://haviptransfers.gr/blog/athens-airport-to-piraeus-port-transport-options</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://haviptransfers.gr/blog/wedding-transfers-greece-mercedes-v-class</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://haviptransfers.gr/blog/bachelor-bachelorette-party-transfers-greece</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://haviptransfers.gr/blog/chauffeur-transfer-versus-athens-taxi</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url>
+    <loc>https://haviptransfers.gr/blog/athens-private-tour-with-driver</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
