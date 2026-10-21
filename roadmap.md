@@ -12,3 +12,4 @@
 - [ ] Final push: cap the hero at 800px, defer floating WhatsApp until three seconds or scroll, verify active-language imports and all image dimensions.
 - [ ] GitHub delivery — existing Lovable Git sync controls repository updates; direct pushes are unavailable.
 - [ ] Verify production PageSpeed 90+ and initial page transfer below 1 MB — requires publication and a production audit.
+- [ ] Optimize critical CSS, font loading and first-screen JavaScript without changing the design; validate navigation and language switching.
