@@ -1,3 +1,4 @@
+import OptimizedImage from "@/components/OptimizedImage";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -29,7 +30,7 @@ const About = () => {
       <header className="border-b border-border bg-background/90 backdrop-blur-md sticky top-0 z-50">
         <div className="container mx-auto flex items-center justify-between py-3 px-4">
           <Link to="/" className="flex items-center gap-2">
-            <img src={logoImg} alt="H&A Tours" className="h-9 w-9 object-contain" width={36} height={36} />
+            <OptimizedImage src={logoImg} alt="H&A Tours" loading="eager" sizes="36px" className="h-9 w-9 object-contain" width={36} height={36} />
             <span className="font-display text-base font-bold text-primary">H&A TOURS</span>
           </Link>
           <Link to="/" className="flex items-center gap-2 text-sm text-foreground/70 hover:text-primary transition-colors">
@@ -96,7 +97,7 @@ const About = () => {
       <footer className="border-t border-border py-8 px-4">
         <div className="container mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <img src={logoImg} alt="H&A Tours" className="h-8 w-8 object-contain" loading="lazy" />
+            <OptimizedImage src={logoImg} alt="H&A Tours" className="h-8 w-8 object-contain" loading="lazy" />
             <span className="font-display text-sm font-bold text-primary">H&A TOURS</span>
           </div>
           <a

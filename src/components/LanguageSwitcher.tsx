@@ -1,3 +1,4 @@
+import OptimizedImage from "@/components/OptimizedImage";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 
@@ -29,9 +30,9 @@ const LanguageSwitcher = () => {
             )}
             aria-label={`Switch language to ${l.label}`}
           >
-            <img
-              src={`https://flagcdn.com/20x15/${l.country}.png`}
-              srcSet={`https://flagcdn.com/40x30/${l.country}.png 2x`}
+            <OptimizedImage
+              src={`${l.country}.png`}
+              sizes="20px"
               width={20}
               height={15}
               alt=""

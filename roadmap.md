@@ -4,3 +4,6 @@
 - [x] Add the multilingual Family Travel page, navigation, schemas, and internal links.
 
 - [x] Add the multilingual Athens Airport to Piraeus Port Travel Guide, cover photo, SEO, and sitemap entry.
+- [ ] Optimize all photos and responsive image delivery without changing the design.
+- [ ] Split page/language loading and defer below-screen sections, reviews, assistant, and third-party scripts.
+- [ ] Test mobile loading, booking controls, languages, image delivery, and report measured performance limits.

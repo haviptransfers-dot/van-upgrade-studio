@@ -1,3 +1,4 @@
+import OptimizedImage from "@/components/OptimizedImage";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -87,7 +88,7 @@ const PrivateTours = () => {
                 className="relative overflow-hidden rounded-lg group cursor-pointer text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                 aria-label={`View details for ${name}`}
               >
-                <img
+                <OptimizedImage
                   src={tour.src}
                   alt={`Private tour to ${name}`}
                   loading="lazy"
@@ -125,7 +126,7 @@ const PrivateTours = () => {
           {activeTour && (
             <>
               <div className="relative h-56 w-full">
-                <img
+                <OptimizedImage
                   src={activeTour.src}
                   alt={`Private tour to ${activeName}`}
                   className="absolute inset-0 w-full h-full object-cover"

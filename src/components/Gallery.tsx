@@ -1,3 +1,4 @@
+import OptimizedImage from "@/components/OptimizedImage";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import gallery1 from "@/assets/gallery-1.webp";
@@ -56,7 +57,7 @@ const Gallery = () => {
             custom={i}
             className="overflow-hidden rounded-lg group"
           >
-            <img
+            <OptimizedImage
               src={img.src}
               alt={img.alt}
               loading="lazy"

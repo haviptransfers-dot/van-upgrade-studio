@@ -1,3 +1,4 @@
+import DeferredBackground from "@/components/DeferredBackground";
 import { motion } from "framer-motion";
 import showcase1 from "@/assets/showcase-1.webp";
 import showcase2 from "@/assets/showcase-2.webp";
@@ -39,12 +40,7 @@ const Showcase = () => {
           key={slide.title}
           className="relative h-[60vh] min-h-[440px] md:h-screen w-full overflow-hidden bg-background"
         >
-          <div
-            className="absolute inset-0 bg-cover bg-center md:bg-fixed"
-            style={{ backgroundImage: `url(${slide.src})` }}
-            aria-label={slide.alt}
-            role="img"
-          />
+          <DeferredBackground src={slide.src} label={slide.alt} className="absolute inset-0 bg-cover bg-center md:bg-fixed" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-background/20" />
           <div className="relative z-10 h-full flex items-end md:items-center justify-center md:justify-start px-6 md:px-20 pb-12 md:pb-0">
             <motion.div

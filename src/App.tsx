@@ -3,18 +3,19 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { lazy, Suspense } from "react";
 import Index from "./pages/Index.tsx";
-import NotFound from "./pages/NotFound.tsx";
-import SeoPage from "./pages/SeoPage.tsx";
-import DelphiTour from "./pages/DelphiTour.tsx";
-import AthensTour from "./pages/AthensTour.tsx";
-import CapeSounionTour from "./pages/CapeSounionTour.tsx";
-import MeteoraTour from "./pages/MeteoraTour.tsx";
-import NafplioTour from "./pages/NafplioTour.tsx";
 import { seoRoutes } from "./seoRoutes.ts";
-import Blog from "./pages/Blog.tsx";
-import BlogPost from "./pages/BlogPost.tsx";
-import About from "./pages/About.tsx";
+const NotFound = lazy(() => import("./pages/NotFound"));
+const SeoPage = lazy(() => import("./pages/SeoPage"));
+const DelphiTour = lazy(() => import("./pages/DelphiTour"));
+const AthensTour = lazy(() => import("./pages/AthensTour"));
+const CapeSounionTour = lazy(() => import("./pages/CapeSounionTour"));
+const MeteoraTour = lazy(() => import("./pages/MeteoraTour"));
+const NafplioTour = lazy(() => import("./pages/NafplioTour"));
+const Blog = lazy(() => import("./pages/Blog"));
+const BlogPost = lazy(() => import("./pages/BlogPost"));
+const About = lazy(() => import("./pages/About"));
 
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <Suspense fallback={<div className="min-h-screen bg-background" aria-busy="true" />}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/delphi-private-tour" element={<DelphiTour />} />
@@ -47,6 +49,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        </Suspense>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

@@ -27,23 +27,13 @@
       />
     </noscript>
 
-    <!-- Preload mobile hero image for faster LCP on phones -->
-    <link
-      rel="preload"
-      as="image"
-      href="/src/assets/hero-van-mobile.webp"
-      type="image/webp"
-      media="(max-width: 768px)"
-      fetchpriority="high"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="/src/assets/hero-van.webp"
-      type="image/webp"
-      media="(min-width: 769px)"
-      fetchpriority="high"
-    />
+    <!-- The exact responsive first hero preload is inserted by Vite. -->
+    <!-- HERO_PRELOAD -->
+    <style>
+      :root { --background: 0 0% 5%; --foreground: 0 0% 92%; --primary: 43 80% 50%; }
+      html, body, #root { margin: 0; min-height: 100%; background: hsl(var(--background)); color: hsl(var(--foreground)); }
+      body { font-family: Montserrat, sans-serif; }
+    </style>
 
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="geo.region" content="GR-A1" />
@@ -117,7 +107,17 @@
 
 
     <!-- Google Preferred Sources button script -->
-    <script async src="https://news.google.com/swg/js/v1/publisher.js"></script>
+    <script>
+      window.addEventListener('load', function () {
+        if (!/^\/(blog\/|about)/.test(location.pathname)) return;
+        setTimeout(function () {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://news.google.com/swg/js/v1/publisher.js';
+          document.head.appendChild(script);
+        }, 3000);
+      });
+    </script>
 
     <!-- Defer Google Analytics so it doesn't block LCP/TBT -->
     <script>
@@ -136,7 +136,18 @@
       });
     </script>
 
-    <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"638bf34632e1a18900f03714fd066950"})});</script>
+    <script type="text/plain" id="metricool-tracking">function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"638bf34632e1a18900f03714fd066950"})});</script>
+    <script>
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          var source = document.getElementById('metricool-tracking');
+          if (!source) return;
+          var script = document.createElement('script');
+          script.textContent = source.textContent;
+          document.head.appendChild(script);
+        }, 3000);
+      });
+    </script>
   </head>
 
   <body>
