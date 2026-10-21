@@ -7,6 +7,8 @@ export const hostedImageUrl = (url: string) => url.startsWith("/") ? `https://va
 
 export function imageEntry(src: string) {
   const filename = src.split("/").pop()?.split("?")[0] ?? "";
+  // Keep the already-small original brand mark lossless and unchanged.
+  if (filename === "logo.webp" || filename.startsWith("logo-")) return undefined;
   const key = Object.keys(images).find((name) => name === filename) ?? Object.keys(images).find((name) => filename.startsWith(`${name.slice(0, name.lastIndexOf("."))}-`));
   return key ? images[key] : undefined;
 }
