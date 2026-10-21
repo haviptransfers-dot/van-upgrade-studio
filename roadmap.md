@@ -9,4 +9,6 @@
 - [x] Test mobile loading, booking controls, languages, image delivery, and report measured performance limits.
 - [ ] Make chat click-only, use three static review images, and delay the floating WhatsApp button until the hero paints.
 - [ ] Keep every delivered photo below 150 KB and verify initial loading requests.
+- [ ] Final push: cap the hero at 800px, defer floating WhatsApp until three seconds or scroll, verify active-language imports and all image dimensions.
+- [ ] GitHub delivery — existing Lovable Git sync controls repository updates; direct pushes are unavailable.
 - [ ] Verify production PageSpeed 90+ and initial page transfer below 1 MB — requires publication and a production audit.

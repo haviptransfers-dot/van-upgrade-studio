@@ -13,10 +13,11 @@ export function imageEntry(src: string) {
   return key ? images[key] : undefined;
 }
 
-export default function OptimizedImage({ src = "", sizes = "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 800px", loading = "lazy", ...props }: ImgHTMLAttributes<HTMLImageElement>) {
+export default function OptimizedImage({ src = "", sizes = "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 800px", loading = "lazy", maxWidth, ...props }: ImgHTMLAttributes<HTMLImageElement> & { maxWidth?: number }) {
   const entry = imageEntry(src);
-  const largest = entry?.variants[entry.variants.length - 1];
+  const variants = entry?.variants.filter((variant) => maxWidth === undefined || variant.width <= maxWidth);
+  const largest = variants?.[variants.length - 1];
   return <img {...props} src={largest ? hostedImageUrl(largest.url) : src} width={props.width ?? entry?.width ?? 800} height={props.height ?? entry?.height ?? 600}
-    srcSet={entry?.variants.map((variant) => `${hostedImageUrl(variant.url)} ${variant.width}w`).join(", ") ?? props.srcSet}
+    srcSet={variants?.map((variant) => `${hostedImageUrl(variant.url)} ${variant.width}w`).join(", ") ?? props.srcSet}
     sizes={sizes} loading={loading} decoding={props.decoding ?? "async"} />;
 }
