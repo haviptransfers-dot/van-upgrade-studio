@@ -6,3 +6,5 @@
 - Use the same width-limited responsive hero variants in HTML preload and image rendering to prevent duplicate large-image downloads.
 - Store the three review-card snapshots as lazy hosted images with full review text alternatives; this removes runtime review-card animation without losing readable review content.
 - Preserve the production Metricool snippet verbatim; postpone its execution with a separate scheduling wrapper rather than altering its tracking code.
+- Render a generated homepage first-screen snapshot with extracted critical CSS before React mounts; keep its markup and CSS aligned with hero/navigation changes to avoid visual shifts on handover. Load the complete stylesheet non-blockingly and mount React once it is ready.
+- Serve the existing font families from hosted WOFF2 subset pointers with swap, eliminating the external font-stylesheet request without changing typography.

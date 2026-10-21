@@ -12,23 +12,11 @@
     <meta name="author" content="H&A VIP Tours" />
 
     <!-- Preconnect for fonts (improves LCP) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@400;500;600&display=swap"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@400;500;600&display=swap"
-      />
-    </noscript>
 
     <!-- The exact responsive first hero preload is inserted by Vite. -->
     <!-- HERO_PRELOAD -->
+    <!-- CRITICAL_CSS -->
     <style>
       :root { --background: 0 0% 5%; --foreground: 0 0% 92%; --primary: 43 80% 50%; }
       html, body, #root { margin: 0; min-height: 100%; background: hsl(var(--background)); color: hsl(var(--foreground)); }
@@ -150,6 +138,8 @@
   </head>
 
   <body>
+    <script>if (location.pathname === '/') document.body.classList.add('first-paint');</script>
+    <!-- FIRST_SCREEN -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
