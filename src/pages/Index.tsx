@@ -16,7 +16,7 @@ import TrustBadge from "@/components/TrustBadge";
 import OptimizedImage from "@/components/OptimizedImage";
 import DeferredBackground from "@/components/DeferredBackground";
 import DeferredSection from "@/components/DeferredSection";
-import { useDeferred } from "@/hooks/use-deferred";
+import ClickToChat from "@/components/ClickToChat";
 import interiorImg from "@/assets/fleet-vito.webp";
 import logoImg from "@/assets/logo.webp";
 import bgServices from "@/assets/showcase-1.webp";
@@ -54,7 +54,6 @@ const PrivateTours = lazy(() => import("@/components/PrivateTours"));
 const PriceCalculator = lazy(() => import("@/components/PriceCalculator"));
 const PaymentMethods = lazy(() => import("@/components/PaymentMethods"));
 const ReviewsComponent = lazy(() => import("@/components/Reviews"));
-const ChatBot = lazy(() => import("@/components/ChatBot"));
 const FAQ = lazy(() => import("@/components/FAQ"));
 
 const fadeUp = {
@@ -76,7 +75,15 @@ const Index = ({ routeKey }: IndexProps) => {
   const whatsappUrl = "https://wa.me/306949393700";
 
   const [heroCycleIndex, setHeroCycleIndex] = useState(0);
-  const deferredReady = useDeferred();
+  const [heroPainted, setHeroPainted] = useState(false);
+  const [backgroundReady, setBackgroundReady] = useState(false);
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > window.innerHeight / 2) setBackgroundReady(true);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   useEffect(() => {
     const id = setInterval(() => {
@@ -117,7 +124,7 @@ const Index = ({ routeKey }: IndexProps) => {
           <link rel="canonical" href="https://haviptransfers.gr/" />
         </Helmet>
       )}
-      {deferredReady && <Suspense fallback={null}><AnimatedBackground /></Suspense>}
+      {backgroundReady && <Suspense fallback={null}><AnimatedBackground /></Suspense>}
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
         <div className="container mx-auto flex flex-wrap items-center justify-between py-2 md:py-3 px-4">
@@ -193,6 +200,7 @@ const Index = ({ routeKey }: IndexProps) => {
             loading="eager"
             sizes="100vw"
             decoding="async"
+            onLoad={() => requestAnimationFrame(() => requestAnimationFrame(() => setHeroPainted(true)))}
             className="absolute inset-0 w-full h-full object-cover"
           />
           <AnimatePresence mode="sync">
@@ -344,7 +352,7 @@ const Index = ({ routeKey }: IndexProps) => {
       <DeferredSection anchor="gallery" placeholderClass="min-h-[1100px]"><Gallery /></DeferredSection>
       <DeferredSection anchor="calculator"><PriceCalculator /></DeferredSection>
       <DeferredSection placeholderClass="min-h-[100px]"><PaymentMethods /></DeferredSection>
-      <DeferredSection>{deferredReady && <ReviewsComponent />}</DeferredSection>
+      <DeferredSection><ReviewsComponent /></DeferredSection>
       <DeferredSection><FAQ /></DeferredSection>
 
       {/* Why Choose Us */}
@@ -573,19 +581,17 @@ const Index = ({ routeKey }: IndexProps) => {
         </div>
       </footer>
 
-      <a
+      {heroPainted && <a
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors hover:scale-110"
+        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-whatsapp rounded-full flex items-center justify-center shadow-lg hover:bg-whatsapp-hover transition-colors hover:scale-110"
       >
-        <MessageCircle className="w-7 h-7 text-white" />
-      </a>
+        <MessageCircle className="w-7 h-7 text-whatsapp-foreground" />
+      </a>}
 
-      <Suspense fallback={null}>
-        {deferredReady && <ChatBot />}
-      </Suspense>
+      <ClickToChat />
     </div>
   );
 };

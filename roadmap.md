@@ -7,4 +7,6 @@
 - [x] Optimize all photos and responsive image delivery without changing the design.
 - [x] Split page/language loading and defer below-screen sections, reviews, assistant, and third-party scripts.
 - [x] Test mobile loading, booking controls, languages, image delivery, and report measured performance limits.
-- [ ] Verify production PageSpeed 90+, page size <1200 KiB and JavaScript <400 KiB — blocked until the optimized version is published; development audit includes Vite/debug files.
+- [ ] Make chat click-only, use three static review images, and delay the floating WhatsApp button until the hero paints.
+- [ ] Keep every delivered photo below 150 KB and verify initial loading requests.
+- [ ] Verify production PageSpeed 90+ and initial page transfer below 1 MB — requires publication and a production audit.

@@ -29,6 +29,9 @@
 
     --notification: 43 90% 55%;
     --notification-foreground: 0 0% 5%;
+    --whatsapp: 142 71% 45%;
+    --whatsapp-hover: 142 76% 36%;
+    --whatsapp-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
