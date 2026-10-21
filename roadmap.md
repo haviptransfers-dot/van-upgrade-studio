@@ -7,10 +7,10 @@
 - [x] Optimize all photos and responsive image delivery without changing the design.
 - [x] Split page/language loading and defer below-screen sections, reviews, assistant, and third-party scripts.
 - [x] Test mobile loading, booking controls, languages, image delivery, and report measured performance limits.
-- [ ] Make chat click-only, use three static review images, and delay the floating WhatsApp button until the hero paints.
-- [ ] Keep every delivered photo below 150 KB and verify initial loading requests.
-- [ ] Final push: cap the hero at 800px, defer floating WhatsApp until three seconds or scroll, verify active-language imports and all image dimensions.
-- [ ] GitHub delivery — existing Lovable Git sync controls repository updates; direct pushes are unavailable.
+- [x] Make chat click-only, use three static review images, and delay the floating WhatsApp button until the hero paints.
+- [x] Keep every delivered photo below 150 KB and verify initial loading requests.
+- [x] Final push: cap the hero at 800px, defer floating WhatsApp until three seconds or scroll, verify active-language imports and all image dimensions.
+- [ ] GitHub delivery — blocked on the project's managed GitHub sync; direct pushes are unavailable.
 - [ ] Verify production PageSpeed 90+ and initial page transfer below 1 MB — requires publication and a production audit.
-- [ ] Optimize critical CSS, font loading and first-screen JavaScript without changing the design; validate navigation and language switching.
-- [ ] Render the first-screen content before React, deliver an 800px/80KB hero with matching preload, and eliminate blocking stylesheet delivery.
+- [x] Optimize critical CSS, font loading and first-screen JavaScript without changing the design; validate navigation and language switching.
+- [x] Render the first-screen content before React, deliver an 800px/80KB hero with matching preload, and eliminate blocking stylesheet delivery.
