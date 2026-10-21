@@ -1,7 +1,10 @@
-import { motion } from "framer-motion";
-import { Star, Quote } from "lucide-react";
+import { Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
+import { hostedImageUrl } from "./OptimizedImage";
+import review1 from "@/assets/review-1.webp.asset.json";
+import review2 from "@/assets/review-2.webp.asset.json";
+import review3 from "@/assets/review-3.webp.asset.json";
 
 const GOOGLE_REVIEWS_URL =
   "https://www.google.com/maps/place/H%26A+Tours+EE+%E2%80%93+VIP+VAN+Transfers+Athens+%2F+Airport+Transfer/@37.8984517,23.7510804,15z/data=!4m8!3m7!1s0x14a1bf29f6b3d8db:0x68e02440ef866866!8m2!3d37.895034!4d23.7553906!9m1!1b1!16s%2Fg%2F11xkp5z_zr";
@@ -28,53 +31,24 @@ const reviews = [
     text: "The transfer to the airport went very smoothly and without any problems. The driver was punctual, polite, and professional, and the car was clean and comfortable. The entire journey was calm and stress-free — especially important before a flight. Highly recommended.",
     date: "6 weeks ago",
   },
-  {
-    name: "Hayri Kasar",
-    flag: "🇹🇷",
-    country: "Türkiye",
-    text: "Your driver was a very kind and helpful person. Smooth ride and great experience overall.",
-    date: "6 weeks ago",
-  },
-  {
-    name: "Konstantina Kampanou",
-    flag: "🇬🇷",
-    country: "Greece",
-    text: "Φοβερό αμάξι και ο οδηγός ο Αντώνης φιλικός!! Amazing car and Antonis the driver was super friendly!",
-    date: "2 weeks ago",
-  },
-  {
-    name: "Leyre Morla",
-    flag: "🇪🇸",
-    country: "Spain",
-    text: "Muy atento y puntual!! Very attentive and punctual — perfect transfer experience in Athens.",
-    date: "6 weeks ago",
-  },
+
 ];
 
 export { default as TrustBadge } from "./TrustBadge";
+
+const snapshots = [review1, review2, review3];
 
 const Reviews = () => {
   const { t } = useTranslation();
 
   return (
     <section className="relative py-16 md:py-24 px-4 overflow-hidden bg-background">
-      <div
-        className="absolute inset-0 opacity-40"
-        style={{
-          background:
-            "radial-gradient(ellipse at top, hsl(43 80% 50% / 0.15), transparent 60%), radial-gradient(ellipse at bottom, hsl(43 80% 50% / 0.08), transparent 60%)",
-        }}
-        aria-hidden="true"
-      />
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
       <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
 
       <div className="container mx-auto max-w-6xl relative z-10">
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+        <div
           className="text-center mb-12 md:mb-16"
         >
           <p className="text-primary uppercase tracking-[0.3em] text-[10px] md:text-sm mb-3">
@@ -101,57 +75,19 @@ const Reviews = () => {
               <p className="text-xs text-muted-foreground">Based on real customer experiences</p>
             </div>
           </div>
-        </motion.div>
+        </div>
 
         {/* Review cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 mb-12 md:mb-16">
           {reviews.map((review, i) => (
-            <motion.a
-              key={review.name}
-              href={GOOGLE_REVIEWS_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.08, duration: 0.5 }}
-              className="bg-card/60 backdrop-blur-sm border border-border rounded-xl p-5 md:p-6 hover:border-primary/40 transition-colors group relative block cursor-pointer"
-            >
-              <Quote className="absolute top-4 right-4 w-6 h-6 text-primary/20 group-hover:text-primary/30 transition-colors" />
-              
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-base font-semibold text-primary">
-                  {review.name.charAt(0)}
-                </div>
-                <div>
-                  <p className="font-semibold text-sm text-foreground">{review.name}</p>
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-sm">{review.flag}</span>
-                    <span className="text-xs text-muted-foreground">{review.country}</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex gap-0.5 mb-3">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3.5 h-3.5 fill-primary text-primary" />
-                ))}
-              </div>
-
-              <p className="text-sm text-foreground/80 leading-relaxed mb-3">
-                "{review.text}"
-              </p>
-
-              <p className="text-xs text-muted-foreground">{review.date}</p>
-            </motion.a>
+            <a key={review.name} href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener noreferrer" className="block" aria-label={`Read ${review.name}'s review on Google`}>
+              <img src={hostedImageUrl(snapshots[i].url)} width={i === 1 ? 348 : 347} height={320} loading="lazy" decoding="async" className="w-full h-auto rounded-lg" alt={`${review.name}, ${review.country}, 5 out of 5 stars: ${review.text}`} />
+            </a>
           ))}
         </div>
 
         {/* CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+        <div
           className="text-center"
         >
           <a
@@ -162,7 +98,7 @@ const Reviews = () => {
           >
             <Button
               size="lg"
-              className="gap-3 bg-primary text-primary-foreground hover:bg-primary/90 px-6 md:px-8 text-sm md:text-base h-auto py-3 shadow-[0_8px_30px_-8px_hsl(43_80%_50%_/_0.6)]"
+              className="gap-3 bg-primary text-primary-foreground hover:bg-primary/90 px-6 md:px-8 text-sm md:text-base h-auto py-3 shadow-lg"
             >
               <svg viewBox="0 0 24 24" className="w-5 h-5 flex-shrink-0" aria-hidden="true">
                 <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
@@ -173,10 +109,8 @@ const Reviews = () => {
               {t("reviews.readAll", "Read All Reviews on Google")}
             </Button>
           </a>
-          <p className="text-xs text-muted-foreground mt-3">
-            {t("reviews.verified", "Verified by Google · Updated in real time")}
-          </p>
-        </motion.div>
+
+        </div>
       </div>
     </section>
   );
