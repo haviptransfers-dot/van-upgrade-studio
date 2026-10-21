@@ -47,6 +47,11 @@ export default {
           DEFAULT: "hsl(var(--notification))",
           foreground: "hsl(var(--notification-foreground))",
         },
+        whatsapp: {
+          DEFAULT: "hsl(var(--whatsapp))",
+          hover: "hsl(var(--whatsapp-hover))",
+          foreground: "hsl(var(--whatsapp-foreground))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
