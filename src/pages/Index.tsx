@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useLayoutEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -74,6 +74,10 @@ const Index = ({ routeKey }: IndexProps) => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const whatsappUrl = "https://wa.me/306949393700";
+  useLayoutEffect(() => {
+    document.getElementById("first-screen")?.remove();
+    document.body.classList.remove("first-paint");
+  }, []);
 
   const [heroCycleIndex, setHeroCycleIndex] = useState(0);
   const [heroPainted, setHeroPainted] = useState(false);
@@ -225,33 +229,25 @@ const Index = ({ routeKey }: IndexProps) => {
         </div>
         <div className="relative z-10 text-center px-4 max-w-4xl">
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
+            initial={false}
             className="text-primary uppercase tracking-[0.3em] text-sm mb-4 font-medium"
           >
             {t("hero.eyebrow")}
           </motion.p>
           <motion.h1
             initial={false}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.8 }}
             className="font-display text-[2.25rem] sm:text-5xl md:text-7xl font-bold mb-5 md:mb-6 leading-[1.1]"
           >
             {t("hero.title1")} <span className="text-primary">{t("hero.title2")}</span>
           </motion.h1>
           <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.7 }}
+            initial={false}
             className="text-foreground/60 text-base md:text-xl mb-8 md:mb-10 max-w-2xl mx-auto"
           >
             {t("hero.subtitle")}
           </motion.p>
           <motion.div
             initial={false}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.9 }}
             className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center"
           >
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
@@ -288,8 +284,6 @@ const Index = ({ routeKey }: IndexProps) => {
           </motion.div>
           <motion.div
             initial={false}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.1 }}
             className="mt-6 flex justify-center"
           >
             <TrustBadge />
