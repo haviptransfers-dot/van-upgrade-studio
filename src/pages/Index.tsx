@@ -4,7 +4,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import { Phone, Mail, Clock, Users, Shield, Star, ChevronDown, MessageCircle, Plane, Ship, Camera, Building, Menu, X } from "lucide-react";
-import { blogPosts, localizePost } from "@/data/blogPosts";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -13,7 +12,11 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import ReviewsLazy, { TrustBadge } from "@/components/Reviews";
+import TrustBadge from "@/components/TrustBadge";
+import OptimizedImage from "@/components/OptimizedImage";
+import DeferredBackground from "@/components/DeferredBackground";
+import DeferredSection from "@/components/DeferredSection";
+import { useDeferred } from "@/hooks/use-deferred";
 import interiorImg from "@/assets/fleet-vito.webp";
 import logoImg from "@/assets/logo.webp";
 import bgServices from "@/assets/showcase-1.webp";
@@ -28,7 +31,8 @@ import tourNafplio from "@/assets/tour-nafplio.webp";
 import heroSunsetCar from "@/assets/hero-sunset-car.webp";
 import fleetTrio from "@/assets/fleet-trio.webp";
 
-import AnimatedBackground from "@/components/AnimatedBackground";
+const AnimatedBackground = lazy(() => import("@/components/AnimatedBackground"));
+const FleetArticleLinks = lazy(() => import("@/components/FleetArticleLinks"));
 
 const heroCycleImages = [
   heroSunsetCar,
@@ -52,7 +56,6 @@ const PaymentMethods = lazy(() => import("@/components/PaymentMethods"));
 const ReviewsComponent = lazy(() => import("@/components/Reviews"));
 const ChatBot = lazy(() => import("@/components/ChatBot"));
 const FAQ = lazy(() => import("@/components/FAQ"));
-const LazyFallback = () => <div className="min-h-[200px]" aria-hidden="true" />;
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -68,19 +71,16 @@ interface IndexProps {
 }
 
 const Index = ({ routeKey }: IndexProps) => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const whatsappUrl = "https://wa.me/306949393700";
 
   const [heroCycleIndex, setHeroCycleIndex] = useState(0);
+  const deferredReady = useDeferred();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   useEffect(() => {
-    // Preload all hero images to avoid black gaps between slides
-    heroCycleImages.forEach((src) => {
-      const img = new Image();
-      img.src = src;
-    });
     const id = setInterval(() => {
+      if (document.hidden || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
       setHeroCycleIndex((i) => (i + 1) % heroCycleImages.length);
     }, SLIDE_DURATION * 1000);
     return () => clearInterval(id);
@@ -117,12 +117,12 @@ const Index = ({ routeKey }: IndexProps) => {
           <link rel="canonical" href="https://haviptransfers.gr/" />
         </Helmet>
       )}
-      <AnimatedBackground />
+      {deferredReady && <Suspense fallback={null}><AnimatedBackground /></Suspense>}
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
         <div className="container mx-auto flex flex-wrap items-center justify-between py-2 md:py-3 px-4">
           <div className="flex items-center gap-2 md:gap-3 min-w-0">
-            <img src={logoImg} alt="H&A Tours" className="h-9 w-9 md:h-10 md:w-10 object-contain flex-shrink-0" width={40} height={40} decoding="async" />
+            <OptimizedImage src={logoImg} alt="H&A Tours" className="h-9 w-9 md:h-10 md:w-10 object-contain flex-shrink-0" width={40} height={40} sizes="40px" loading="eager" decoding="async" />
             <div className="min-w-0">
               <span className="font-display text-base md:text-lg font-bold text-primary whitespace-nowrap">H&A TOURS</span>
               <p className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-muted-foreground">{t("nav.tagline")}</p>
@@ -185,11 +185,13 @@ const Index = ({ routeKey }: IndexProps) => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 overflow-hidden bg-background">
           {/* Static base layer — first image always painted to avoid black gap */}
-          <img
+          <OptimizedImage
             src={heroCycleImages[0]}
             alt=""
             aria-hidden="true"
             fetchPriority="high"
+            loading="eager"
+            sizes="100vw"
             decoding="async"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -203,9 +205,10 @@ const Index = ({ routeKey }: IndexProps) => {
                 opacity: { duration: FADE_DURATION, ease: "easeInOut" },
                 scale: { duration: SLIDE_DURATION + FADE_DURATION * 2, ease: "linear" },
               }}
-              className="absolute inset-0 bg-cover bg-center will-change-transform"
-              style={{ backgroundImage: `url(${heroCycleImages[heroCycleIndex]})` }}
-            />
+              className="absolute inset-0 will-change-transform"
+            >
+              <OptimizedImage src={heroCycleImages[heroCycleIndex]} alt="" aria-hidden="true" loading="eager" sizes="100vw" className="w-full h-full object-cover" />
+            </motion.div>
           </AnimatePresence>
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/30 to-background" />
         </div>
@@ -219,7 +222,7 @@ const Index = ({ routeKey }: IndexProps) => {
             {t("hero.eyebrow")}
           </motion.p>
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
             className="font-display text-[2.25rem] sm:text-5xl md:text-7xl font-bold mb-5 md:mb-6 leading-[1.1]"
@@ -235,7 +238,7 @@ const Index = ({ routeKey }: IndexProps) => {
             {t("hero.subtitle")}
           </motion.p>
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9 }}
             className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center"
@@ -273,7 +276,7 @@ const Index = ({ routeKey }: IndexProps) => {
             </DropdownMenu>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0 }}
+            initial={false}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.1 }}
             className="mt-6 flex justify-center"
@@ -288,7 +291,7 @@ const Index = ({ routeKey }: IndexProps) => {
 
       {/* Services */}
       <section id="services" className="relative py-16 md:py-24 px-4 overflow-hidden bg-card/70 backdrop-blur-sm">
-        <div className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-10" style={{ backgroundImage: `url(${bgServices})` }} aria-hidden="true" />
+        <DeferredBackground src={bgServices} className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-10" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background/40" aria-hidden="true" />
         <div className="container mx-auto max-w-6xl relative z-10">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-12 md:mb-16">
@@ -309,18 +312,16 @@ const Index = ({ routeKey }: IndexProps) => {
         </div>
       </section>
 
-      <Suspense fallback={<LazyFallback />}>
-        <Showcase />
-        <PhotoWall />
-        <PrivateTours />
-      </Suspense>
+      <DeferredSection placeholderClass="h-[240vh] min-h-[1760px] md:h-[400vh]"><Showcase /></DeferredSection>
+      <DeferredSection placeholderClass="h-[60vh] min-h-[440px] md:h-screen"><PhotoWall /></DeferredSection>
+      <DeferredSection anchor="tours" placeholderClass="min-h-[900px]"><PrivateTours /></DeferredSection>
 
       {/* Fleet */}
       <section id="fleet" className="py-16 md:py-24 px-4 bg-card/70 backdrop-blur-sm">
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
-              <img src={interiorImg} alt="Mercedes V Class" className="rounded-lg shadow-2xl" loading="lazy" decoding="async" width={800} height={600} />
+              <OptimizedImage src={interiorImg} alt="Mercedes V Class" className="rounded-lg shadow-2xl" loading="lazy" decoding="async" width={800} height={600} />
             </motion.div>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }}>
               <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-xs md:text-sm mb-3">{t("fleet.eyebrow")}</motion.p>
@@ -334,47 +335,21 @@ const Index = ({ routeKey }: IndexProps) => {
                   </li>
                 ))}
               </motion.ul>
-              {(() => {
-                const slugs = [
-                  "mercedes-v-class-chauffeur-service-athens",
-                  "child-car-seats-private-transfers-greece",
-                ];
-                const links = slugs
-                  .map((s) => blogPosts.find((p) => p.slug === s))
-                  .filter((p): p is NonNullable<typeof p> => Boolean(p))
-                  .map((p) => localizePost(p, i18n.language));
-                if (!links.length) return null;
-                return (
-                  <motion.div variants={fadeUp} custom={4} className="mt-6 space-y-2">
-                    {links.map((lp) => (
-                      <p key={lp.slug}>
-                        <Link
-                          to={`/blog/${lp.slug}`}
-                          className="inline-flex items-center gap-2 text-primary underline underline-offset-4 hover:text-primary/80 text-sm md:text-base"
-                        >
-                          {lp.title}
-                        </Link>
-                      </p>
-                    ))}
-                  </motion.div>
-                );
-              })()}
+              <DeferredSection placeholderClass="min-h-[80px]"><FleetArticleLinks /></DeferredSection>
             </motion.div>
           </div>
         </div>
       </section>
 
-      <Suspense fallback={<LazyFallback />}>
-        <Gallery />
-        <PriceCalculator />
-        <PaymentMethods />
-        <ReviewsComponent />
-        <FAQ />
-      </Suspense>
+      <DeferredSection anchor="gallery" placeholderClass="min-h-[1100px]"><Gallery /></DeferredSection>
+      <DeferredSection anchor="calculator"><PriceCalculator /></DeferredSection>
+      <DeferredSection placeholderClass="min-h-[100px]"><PaymentMethods /></DeferredSection>
+      <DeferredSection>{deferredReady && <ReviewsComponent />}</DeferredSection>
+      <DeferredSection><FAQ /></DeferredSection>
 
       {/* Why Choose Us */}
       <section id="about" className="relative py-16 md:py-24 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-20" style={{ backgroundImage: `url(${bgWhy})` }} aria-hidden="true" />
+        <DeferredBackground src={bgWhy} className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/85 to-background" aria-hidden="true" />
         <div className="container mx-auto max-w-6xl relative z-10">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-12 md:mb-16">
@@ -397,7 +372,7 @@ const Index = ({ routeKey }: IndexProps) => {
 
       {/* CTA */}
       <section className="relative py-14 md:py-20 px-4 border-y border-primary/20 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-25" style={{ backgroundImage: `url(${bgCta})` }} aria-hidden="true" />
+        <DeferredBackground src={bgCta} className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-25" />
         <div className="absolute inset-0 bg-primary/10" aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background/70" aria-hidden="true" />
         <div className="container mx-auto max-w-3xl text-center relative z-10">
@@ -425,7 +400,7 @@ const Index = ({ routeKey }: IndexProps) => {
 
       {/* Contact */}
       <section id="contact" className="relative py-16 md:py-24 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-20" style={{ backgroundImage: `url(${bgContact})` }} aria-hidden="true" />
+        <DeferredBackground src={bgContact} className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/85 to-background" aria-hidden="true" />
         <div className="container mx-auto max-w-4xl relative z-10">
           <div className="text-center mb-10 md:mb-12">
@@ -548,7 +523,7 @@ const Index = ({ routeKey }: IndexProps) => {
       <footer className="border-t border-border py-8 px-4">
         <div className="container mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <img src={logoImg} alt="H&A Tours" className="h-8 w-8 object-contain" loading="lazy" />
+            <OptimizedImage src={logoImg} alt="H&A Tours" className="h-8 w-8 object-contain" width={32} height={32} sizes="32px" loading="lazy" />
             <span className="font-display text-sm font-bold text-primary">H&A TOURS</span>
           </div>
           <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6">
@@ -609,7 +584,7 @@ const Index = ({ routeKey }: IndexProps) => {
       </a>
 
       <Suspense fallback={null}>
-        <ChatBot />
+        {deferredReady && <ChatBot />}
       </Suspense>
     </div>
   );

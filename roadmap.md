@@ -4,3 +4,7 @@
 - [x] Add the multilingual Family Travel page, navigation, schemas, and internal links.
 
 - [x] Add the multilingual Athens Airport to Piraeus Port Travel Guide, cover photo, SEO, and sitemap entry.
+- [x] Optimize all photos and responsive image delivery without changing the design.
+- [x] Split page/language loading and defer below-screen sections, reviews, assistant, and third-party scripts.
+- [x] Test mobile loading, booking controls, languages, image delivery, and report measured performance limits.
+- [ ] Verify production PageSpeed 90+, page size <1200 KiB and JavaScript <400 KiB — blocked until the optimized version is published; development audit includes Vite/debug files.

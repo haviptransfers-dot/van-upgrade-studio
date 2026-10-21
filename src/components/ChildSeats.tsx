@@ -1,3 +1,4 @@
+import OptimizedImage from "@/components/OptimizedImage";
 import { motion } from "framer-motion";
 import { Baby, Car, MessageCircle, ShieldCheck, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -81,21 +82,21 @@ const ChildSeats = () => {
             transition={{ duration: 0.7 }}
             className="grid grid-cols-3 grid-rows-2 gap-3 h-72 sm:h-96"
           >
-            <img
+            <OptimizedImage
               src={`${ASSET_HOST}${seatIsIsize.url}`}
               alt="Certified BeSafe i-Size child seat installed in a Mercedes V Class"
               loading="lazy"
               decoding="async"
               className="col-span-2 row-span-2 w-full h-full object-cover rounded-lg border border-primary/20 shadow-2xl"
             />
-            <img
+            <OptimizedImage
               src={`${ASSET_HOST}${seatIdrive.url}`}
               alt="i-Size child seat with harness in the back seat of a Mercedes"
               loading="lazy"
               decoding="async"
               className="w-full h-full object-cover rounded-lg border border-primary/20 shadow-xl"
             />
-            <img
+            <OptimizedImage
               src={`${ASSET_HOST}${seatBesafe360.url}`}
               alt="BeSafe 360 swivel child seat installed in a Mercedes V Class"
               loading="lazy"
@@ -126,7 +127,7 @@ const ChildSeats = () => {
               {categories.map((c) => (
                 <div key={c.name} className="flex flex-col items-center text-center md:px-6">
                   <div className="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border border-primary/25 mb-4">
-                    <img src={c.img} alt={`${c.name} child seat`} loading="lazy" decoding="async" className="w-full h-full object-cover" />
+                    <OptimizedImage src={c.img} alt={`${c.name} child seat`} loading="lazy" decoding="async" className="w-full h-full object-cover" />
                   </div>
                   <p className="font-display text-base md:text-lg font-semibold">{c.name}</p>
                   <p className="text-xs md:text-sm text-muted-foreground mt-1">{c.range}</p>

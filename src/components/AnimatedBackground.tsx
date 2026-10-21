@@ -1,3 +1,4 @@
+import OptimizedImage from "./OptimizedImage";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import img1 from "@/assets/tour-acropolis.webp";
@@ -16,6 +17,7 @@ const AnimatedBackground = () => {
 
   useEffect(() => {
     const id = setInterval(() => {
+      if (document.hidden || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
       setIndex((i) => (i + 1) % images.length);
     }, 18000);
     return () => clearInterval(id);
@@ -33,9 +35,8 @@ const AnimatedBackground = () => {
           animate={{ opacity: 0.16, scale: 1.1 }}
           exit={{ opacity: 0, scale: 1.12 }}
           transition={{ opacity: { duration: 5, ease: "easeInOut" }, scale: { duration: 22, ease: "linear" } }}
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${images[index]})` }}
-        />
+          className="absolute inset-0"
+        ><OptimizedImage src={images[index]} sizes="100vw" alt="" className="w-full h-full object-cover" /></motion.div>
       </AnimatePresence>
 
       <div className="absolute inset-0 bg-background/80" />

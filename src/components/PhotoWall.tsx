@@ -1,3 +1,4 @@
+import OptimizedImage from "@/components/OptimizedImage";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import wall3 from "@/assets/wall-3.webp";
@@ -7,7 +8,7 @@ const PhotoWall = () => {
 
   return (
     <section className="relative h-[60vh] min-h-[440px] md:h-screen w-full overflow-hidden bg-background">
-      <img
+      <OptimizedImage
         src={wall3}
         alt="Mercedes V Class cruising on the highway"
         loading="lazy"

@@ -1,3 +1,4 @@
+import OptimizedImage from "@/components/OptimizedImage";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
@@ -106,10 +107,10 @@ const DelphiTour = () => {
 
         {/* Hero */}
         <section className="relative h-[70vh] min-h-[480px] w-full overflow-hidden">
-          <img
+          <OptimizedImage
             src={tourDelphi}
             alt={t("delphiTour.title")}
-            className="absolute inset-0 w-full h-full object-cover"
+            loading="eager" fetchPriority="high" sizes="100vw" className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background" />
           <div className="relative z-10 h-full container mx-auto max-w-4xl px-4 flex flex-col items-center justify-center text-center">
