@@ -10,7 +10,7 @@ function performanceHtml() {
     name: "performance-html",
     transformIndexHtml(html: string) {
       const manifest = JSON.parse(readFileSync(path.resolve(__dirname, "src/assets/imageManifest.json"), "utf8"));
-      const variants = manifest["hero-sunset-car.webp"].variants as { url: string; width: number }[];
+      const variants = (manifest["hero-sunset-car.webp"].variants as { url: string; width: number }[]).filter((variant) => variant.width <= 800);
       const hero = variants[variants.length - 1];
       if (!hero) return html;
       const hosted = (url: string) => `https://van-move-boost.lovable.app${url}`;
