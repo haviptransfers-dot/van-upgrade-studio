@@ -17,6 +17,7 @@ import OptimizedImage from "@/components/OptimizedImage";
 import DeferredBackground from "@/components/DeferredBackground";
 import DeferredSection from "@/components/DeferredSection";
 import ClickToChat from "@/components/ClickToChat";
+import { useAfterFirstPaint } from "@/hooks/use-after-first-paint";
 import interiorImg from "@/assets/fleet-vito.webp";
 import logoImg from "@/assets/logo.webp";
 import bgServices from "@/assets/showcase-1.webp";
@@ -76,6 +77,7 @@ const Index = ({ routeKey }: IndexProps) => {
 
   const [heroCycleIndex, setHeroCycleIndex] = useState(0);
   const [heroPainted, setHeroPainted] = useState(false);
+  const whatsappReady = useAfterFirstPaint(heroPainted);
   const [backgroundReady, setBackgroundReady] = useState(false);
   useEffect(() => {
     const onScroll = () => {
@@ -199,6 +201,7 @@ const Index = ({ routeKey }: IndexProps) => {
             fetchPriority="high"
             loading="eager"
             sizes="100vw"
+            maxWidth={800}
             decoding="async"
             onLoad={() => requestAnimationFrame(() => requestAnimationFrame(() => setHeroPainted(true)))}
             className="absolute inset-0 w-full h-full object-cover"
@@ -215,7 +218,7 @@ const Index = ({ routeKey }: IndexProps) => {
               }}
               className="absolute inset-0 will-change-transform"
             >
-              <OptimizedImage src={heroCycleImages[heroCycleIndex]} alt="" aria-hidden="true" loading="eager" sizes="100vw" className="w-full h-full object-cover" />
+              <OptimizedImage src={heroCycleImages[heroCycleIndex]} maxWidth={800} alt="" aria-hidden="true" loading="eager" sizes="100vw" className="w-full h-full object-cover" />
             </motion.div>
           </AnimatePresence>
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/30 to-background" />
@@ -581,7 +584,7 @@ const Index = ({ routeKey }: IndexProps) => {
         </div>
       </footer>
 
-      {heroPainted && <a
+      {whatsappReady && <a
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
