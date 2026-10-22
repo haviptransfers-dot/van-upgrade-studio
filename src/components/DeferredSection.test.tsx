@@ -15,7 +15,9 @@ describe("below-screen loading boundary", () => {
     });
     render(<DeferredSection rootMargin="0px"><div>Loaded section</div></DeferredSection>);
     expect(screen.queryByText("Loaded section")).toBeNull();
-    act(() => intersect([{ isIntersecting: true } as IntersectionObserverEntry], {} as IntersectionObserver));
+    act(() => intersect([{ isIntersecting: true, intersectionRatio: 0 } as IntersectionObserverEntry], {} as IntersectionObserver));
+    expect(screen.queryByText("Loaded section")).toBeNull();
+    act(() => intersect([{ isIntersecting: true, intersectionRatio: 0.1 } as IntersectionObserverEntry], {} as IntersectionObserver));
     expect(screen.getByText("Loaded section")).toBeTruthy();
     expect(disconnect).toHaveBeenCalled();
   });

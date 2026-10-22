@@ -24,11 +24,11 @@ export default function DeferredSection({ children, placeholderClass = "min-h-[6
     activateHash();
     window.addEventListener("hashchange", activateHash);
     const observer = new IntersectionObserver((entries) => {
-      if (entries.some((entry) => entry.isIntersecting)) {
+      if (entries.some((entry) => entry.isIntersecting && (rootMargin !== "0px" || entry.intersectionRatio > 0))) {
         setReady(true);
         observer.disconnect();
       }
-    }, { rootMargin });
+    }, { rootMargin, threshold: rootMargin === "0px" ? 0.01 : 0 });
     observer.observe(element);
     return () => {
       observer.disconnect();
