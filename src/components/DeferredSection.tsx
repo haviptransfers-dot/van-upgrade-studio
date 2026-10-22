@@ -1,9 +1,11 @@
 import { Suspense, useEffect, useRef, useState, type ReactNode } from "react";
 
-export default function DeferredSection({ children, placeholderClass = "min-h-[600px]", anchor }: {
+export default function DeferredSection({ children, placeholderClass = "min-h-[600px]", anchor, anchors = [], rootMargin = "600px" }: {
   children: ReactNode;
   placeholderClass?: string;
   anchor?: string;
+  anchors?: string[];
+  rootMargin?: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [ready, setReady] = useState(false);
@@ -11,7 +13,7 @@ export default function DeferredSection({ children, placeholderClass = "min-h-[6
     const element = ref.current;
     if (!element) return;
     const activateHash = () => {
-      if (anchor && window.location.hash === `#${anchor}`) {
+      if ([anchor, ...anchors].some((id) => id && window.location.hash === `#${id}`)) {
         setReady(true);
         window.setTimeout(() => element.scrollIntoView(), 100);
       }
@@ -23,13 +25,13 @@ export default function DeferredSection({ children, placeholderClass = "min-h-[6
         setReady(true);
         observer.disconnect();
       }
-    }, { rootMargin: "600px" });
+    }, { rootMargin });
     observer.observe(element);
     return () => {
       observer.disconnect();
       window.removeEventListener("hashchange", activateHash);
     };
-  }, [anchor]);
+  }, [anchor, anchors.join("|"), rootMargin]);
   const placeholder = <div className={placeholderClass} aria-hidden="true" />;
   return <div ref={ref} id={ready ? undefined : anchor}>
     {ready ? <Suspense fallback={placeholder}>{children}</Suspense> : placeholder}

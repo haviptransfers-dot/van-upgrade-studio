@@ -3,9 +3,10 @@
 - Use the generated image manifest through OptimizedImage and DeferredBackground for responsive WebP delivery; this keeps intrinsic sizes and optimized variants consistent across pages. Resolve hosted image pointers through the stable published asset origin so direct local preview tests also render CDN photos.
 - Keep non-homepage routes and non-English language resources dynamically imported; visitors should not download unrelated page or language content.
 - Defer below-fold homepage modules until they approach the viewport; load chat only through the click-to-chat boundary and reveal floating WhatsApp after both the hero paint and a timer-or-scroll gate, so unrelated interactions cannot load chat or interrupt the hero.
+- Keep the homepage section tree and slideshow animation engine behind separate lazy boundaries; animate the first photo with CSS and activate lower content only at the viewport or a matching navigation anchor, reducing first-screen React work without removing animations.
 - Use the same width-limited responsive hero variants in HTML preload and image rendering to prevent duplicate large-image downloads.
 - Store the three review-card snapshots as lazy hosted images with full review text alternatives; this removes runtime review-card animation without losing readable review content.
 - Preserve the production Metricool snippet verbatim; postpone its execution with a separate scheduling wrapper rather than altering its tracking code.
 - Render a generated homepage first-screen snapshot with extracted critical CSS before React mounts; keep its markup and CSS aligned with hero/navigation changes to avoid visual shifts on handover. Load the complete stylesheet non-blockingly and mount React once it is ready.
-- Serve the existing font families from hosted WOFF2 subset pointers with swap, eliminating the external font-stylesheet request without changing typography.
+- Serve the existing font families from hosted WOFF2 subset pointers with swap and preload the exact Latin heading/body subsets, eliminating external font-stylesheet requests and late font discovery without changing typography.
 - Deliver speed-critical Blog articles as build-generated static HTML through a Vite plugin with matching development middleware; this avoids React bootstrap while keeping Blog and RSS metadata shared.

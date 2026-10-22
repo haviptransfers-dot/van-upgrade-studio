@@ -1,4 +1,4 @@
-/* Fonts are preloaded in index.html for better performance */
+/* Hosted fonts are prioritized by the HTML delivery plugin. */
 
 @tailwind base;
 @tailwind components;
@@ -73,6 +73,13 @@
     content-visibility: auto;
     contain-intrinsic-size: auto 650px;
   }
+}
+
+/* Preserve the first slide's slow zoom without loading an animation engine. */
+.hero-base-zoom { animation: hero-base-zoom 16s linear forwards; }
+@keyframes hero-base-zoom {
+  from { transform: scale(1.05); }
+  to { transform: scale(1.2); }
 }
 
 @media (prefers-reduced-motion: reduce) {
