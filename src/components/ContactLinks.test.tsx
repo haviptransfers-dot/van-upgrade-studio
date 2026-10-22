@@ -2,7 +2,10 @@ import { render, screen, cleanup } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("react-i18next", () => ({
-  useTranslation: () => ({ t: (key: string) => key }),
+  useTranslation: () => ({
+    t: (key: string, options?: { returnObjects?: boolean }) =>
+      options?.returnObjects ? [] : key,
+  }),
 }));
 
 import HomeSections from "./HomeSections";
