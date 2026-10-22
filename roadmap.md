@@ -15,5 +15,5 @@
 - [x] Optimize critical CSS, font loading and first-screen JavaScript without changing the design; validate navigation and language switching.
 - [x] Render the first-screen content before React, deliver an 800px/80KB hero with matching preload, and eliminate blocking stylesheet delivery.
 - [x] Add the Athens-to-Nafplio blog article with the two supplied 800×533 WebP photos, static article delivery, active-language loading, supplied SEO and FAQ facts.
-- [ ] Verify the published Nafplio and homepage speed — requires publication and a production audit.
-- [ ] Reduce first-screen animation work, defer remaining homepage sections, and prioritize heading fonts; verify navigation and delayed loading.
+- [ ] Verify the published Nafplio article speed — article is published; a separate production article audit remains outstanding.
+- [x] Reduce first-screen animation work, defer remaining homepage sections, and prioritize heading fonts; verify navigation and delayed loading.
