@@ -19,6 +19,7 @@ describe("contact phone card", () => {
   it("offers call and Viber on the same number", () => {
     vi.stubGlobal("IntersectionObserver", class {
       observe() {}
+      unobserve() {}
       disconnect() {}
     });
     render(<HomeSections />);
