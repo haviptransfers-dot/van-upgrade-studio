@@ -1,5 +1,6 @@
 import type { Plugin } from "vite";
 import { readFileSync } from "node:fs";
+import path from "node:path";
 import { marked } from "marked";
 import { nafplioPost as post, nafplioFaq } from "./src/data/nafplio";
 import montserrat from "./src/assets/fonts/montserrat-latin.woff2.asset.json";
@@ -10,9 +11,9 @@ const canonical = `https://haviptransfers.gr${nafplioPath}`;
 const esc = (value: string) => value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
 export function renderNafplio() {
-  const root = readFileSync(new URL("./src/index.css", import.meta.url), "utf8").match(/:root\s*\{([\s\S]*?)\}/)?.[1] ?? "";
-  const markdown = readFileSync(new URL("./src/data/nafplio-article.md", import.meta.url), "utf8");
-  const body = marked.parse(markdown, { async: false }).replaceAll('href="https://haviptransfers.gr/', 'href="/');
+  const root = readFileSync(path.resolve("src/index.css"), "utf8").match(/:root\s*\{([\s\S]*?)\}/)?.[1] ?? "";
+  const markdown = readFileSync(path.resolve("src/data/nafplio-article.md"), "utf8");
+  const body = marked.parse(markdown, { async: false }).replace(/href="https:\/\/haviptransfers\.gr\//g, 'href="/');
   const faqSchema = {
     "@context": "https://schema.org", "@type": "FAQPage",
     mainEntity: nafplioFaq.map(({ question, answer }) => ({ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } })),
