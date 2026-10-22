@@ -19,11 +19,14 @@ function performanceHtml() {
       const hosted = (url: string) => `https://van-move-boost.lovable.app${url}`;
       const srcset = variants.map((v) => `${hosted(v.url)} ${v.width}w`).join(", ");
       const critical = readFileSync(path.resolve(__dirname, "src/critical-screen.css"), "utf8");
+      const fontPreloads = [...critical.matchAll(/src: url\(([^)]+\/(?:playfair-display|montserrat)-latin\.woff2)\)/g)]
+        .map((match) => `<link rel="preload" as="font" type="font/woff2" href="${match[1]}" crossorigin />`).join("");
       const screen = readFileSync(path.resolve(__dirname, "src/first-screen.html"), "utf8")
-        .replaceAll("__HERO_SRCSET__", srcset).replaceAll("__HERO_SRC__", hosted(hero.url));
+        .replaceAll("__HERO_SRCSET__", srcset).replaceAll("__HERO_SRC__", hosted(hero.url))
+        .replace('class="absolute inset-0 w-full h-full object-cover"', 'class="absolute inset-0 w-full h-full object-cover hero-base-zoom"');
       return html
         .replace("<!-- HERO_PRELOAD -->", `<link rel="preconnect" href="https://van-move-boost.lovable.app" crossorigin /><link rel="preload" as="image" href="${hosted(hero.url)}" imagesrcset="${srcset}" imagesizes="100vw" type="image/webp" fetchpriority="high" />`)
-        .replace("<!-- CRITICAL_CSS -->", `<style>${critical}</style>`)
+        .replace("<!-- CRITICAL_CSS -->", `${fontPreloads}<style>${critical}</style>`)
         .replace("<!-- FIRST_SCREEN -->", `<div id="first-screen">${screen}</div>`)
         .replace(/<link\b[^>]*rel="stylesheet"[^>]*>/g, (tag) => {
           const href = tag.match(/href="([^"]+)"/)?.[1];
