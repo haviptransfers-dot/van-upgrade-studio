@@ -74,7 +74,7 @@ export default {
   contact: {
     eyebrow: "تواصل معنا",
     title: "اتصل بنا",
-    phone: "هاتف / واتساب",
+    phone: "هاتف / واتساب / فايبر",
     email: "البريد الإلكتروني",
     based: "مقرنا",
     location: "أثينا، اليونان",

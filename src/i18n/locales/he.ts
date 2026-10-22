@@ -74,7 +74,7 @@ export default {
   contact: {
     eyebrow: "צרו קשר",
     title: "יצירת קשר",
-    phone: "טלפון / וואטסאפ",
+    phone: "טלפון / וואטסאפ / וייבר",
     email: "אימייל",
     based: "ממוקמים ב",
     location: "אתונה, יוון",

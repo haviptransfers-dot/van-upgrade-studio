@@ -74,7 +74,7 @@ export default {
   contact: {
     eyebrow: "Επικοινωνήστε",
     title: "Επικοινωνία",
-    phone: "Τηλέφωνο / WhatsApp",
+    phone: "Τηλέφωνο / WhatsApp / Viber",
     email: "Email",
     based: "Έδρα",
     location: "Αθήνα, Ελλάδα",

@@ -74,7 +74,7 @@ export default {
   contact: {
     eyebrow: "Mettiti in Contatto",
     title: "Contattaci",
-    phone: "Telefono / WhatsApp",
+    phone: "Telefono / WhatsApp / Viber",
     email: "Email",
     based: "Sede",
     location: "Atene, Grecia",

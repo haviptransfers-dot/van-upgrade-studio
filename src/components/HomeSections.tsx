@@ -1,4 +1,4 @@
-import { lazy, useEffect } from "react";
+import { lazy, useEffect, type ReactNode } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Plane, Ship, Camera, Building, Shield, Users, Clock, Star, MessageCircle, Mail } from "lucide-react";
@@ -22,6 +22,14 @@ const PriceCalculator = lazy(() => import("@/components/PriceCalculator"));
 const PaymentMethods = lazy(() => import("@/components/PaymentMethods"));
 const ReviewsComponent = lazy(() => import("@/components/Reviews"));
 const FAQ = lazy(() => import("@/components/FAQ"));
+
+type ContactCard = {
+  label: string;
+  value: string;
+  href?: string;
+  links?: { label: string; href: string }[];
+  icon: ReactNode;
+};
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -175,11 +183,14 @@ export default function HomeSections() {
             <h2 className="font-display text-3xl md:text-5xl font-bold">{t("contact.title")}</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            {[
+            {([
               {
                 label: t("contact.phone"),
                 value: "+30 694 939 3700",
                 href: "tel:+306949393700",
+                links: [
+                  { label: "Viber", href: "viber://chat?number=%2B306949393700" },
+                ],
                 icon: (
                   <svg viewBox="0 0 24 24" className="w-10 h-10" aria-hidden="true">
                     <path fill="#22c55e" d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.7-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1C8.7 6.4 8.5 5.2 8.5 4c0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1z"/>
@@ -267,8 +278,19 @@ export default function HomeSections() {
                   </svg>
                 ),
               },
-            ].map((c) =>
-              c.href ? (
+            ] as ContactCard[]).map((c) =>
+              c.links ? (
+                <div key={c.label} className="bg-card border border-border rounded-lg p-5 md:p-6 text-center hover:border-primary/40 transition-colors overflow-hidden">
+                  <div className="flex justify-center mb-3">{c.icon}</div>
+                  <p className="text-sm text-muted-foreground mb-1">{c.label}</p>
+                  <a href={c.href} className="block font-medium text-foreground text-sm break-all hover:text-primary transition-colors">{c.value}</a>
+                  <div className="mt-3 flex flex-wrap justify-center gap-2">
+                    {c.links.map((l) => (
+                      <a key={l.href} href={l.href} className="text-xs px-3 py-1 rounded-full border border-primary/30 text-primary hover:bg-primary/10 transition-colors">{l.label}</a>
+                    ))}
+                  </div>
+                </div>
+              ) : c.href ? (
                 <a key={c.label} href={c.href} className="bg-card border border-border rounded-lg p-5 md:p-6 text-center hover:border-primary/40 transition-colors block overflow-hidden">
                   <div className="flex justify-center mb-3">{c.icon}</div>
                   <p className="text-sm text-muted-foreground mb-1">{c.label}</p>

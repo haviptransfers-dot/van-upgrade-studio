@@ -74,7 +74,7 @@ export default {
   contact: {
     eyebrow: "Kontaktieren Sie uns",
     title: "Kontakt",
-    phone: "Telefon / WhatsApp",
+    phone: "Telefon / WhatsApp / Viber",
     email: "E-Mail",
     based: "Standort",
     location: "Athen, Griechenland",
