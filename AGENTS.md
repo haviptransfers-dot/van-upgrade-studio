@@ -8,3 +8,4 @@
 - Preserve the production Metricool snippet verbatim; postpone its execution with a separate scheduling wrapper rather than altering its tracking code.
 - Render a generated homepage first-screen snapshot with extracted critical CSS before React mounts; keep its markup and CSS aligned with hero/navigation changes to avoid visual shifts on handover. Load the complete stylesheet non-blockingly and mount React once it is ready.
 - Serve the existing font families from hosted WOFF2 subset pointers with swap, eliminating the external font-stylesheet request without changing typography.
+- Deliver speed-critical Blog articles as build-generated static HTML through a Vite plugin with matching development middleware; this avoids React bootstrap while keeping Blog and RSS metadata shared.

@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 import { rssPlugin } from "./rssPlugin";
+import { nafplioPlugin } from "./nafplioPlugin";
 import { readFileSync } from "node:fs";
 
 function performanceHtml() {
@@ -42,7 +43,7 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
-  plugins: [react(), rssPlugin(), performanceHtml(), mode === "development" && componentTagger()].filter(Boolean),
+  plugins: [react(), rssPlugin(), nafplioPlugin(), performanceHtml(), mode === "development" && componentTagger()].filter(Boolean),
   build: {
     minify: "esbuild",
     cssMinify: true,

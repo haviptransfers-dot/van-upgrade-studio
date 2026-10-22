@@ -25,6 +25,7 @@ import chauffeurVsTaxiAthens from "@/assets/chauffeur-vs-taxi-athens.jpg.asset.j
 
 import nightArrivalAirportTransfer from "@/assets/night-arrival-airport-transfer.jpg.asset.json";
 import { blogPostTranslations, type BlogPostTranslation } from "./blogPostTranslations";
+import { nafplioPost } from "./nafplio";
 
 const ASSET_HOST = "https://van-move-boost.lovable.app";
 
@@ -40,6 +41,7 @@ export interface BlogSection {
 }
 
 export interface BlogPost {
+  staticDocument?: boolean;
   slug: string;
   title: string;
   excerpt: string;
@@ -70,6 +72,7 @@ export function localizePost(post: BlogPost, lang: string): BlogPost {
 export const WHATSAPP_URL = "https://wa.me/306949393700";
 
 export const blogPosts: BlogPost[] = [
+  nafplioPost,
   {
     slug: "chauffeur-transfer-versus-athens-taxi",
     title: "Chauffeur Transfer Versus Athens Taxi",
