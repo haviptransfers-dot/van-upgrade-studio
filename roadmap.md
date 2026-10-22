@@ -11,9 +11,9 @@
 - [x] Keep every delivered photo below 150 KB and verify initial loading requests.
 - [x] Final push: cap the hero at 800px, defer floating WhatsApp until three seconds or scroll, verify active-language imports and all image dimensions.
 - [ ] GitHub delivery — blocked on the project's managed GitHub sync; direct pushes are unavailable.
-- [ ] Verify production PageSpeed 90+ and initial page transfer below 1 MB — latest audit: mobile 83, desktop 99, 382 KiB; mobile LCP still above target.
+- [x] Measure the published homepage after optimization — Lighthouse mobile 96 / desktop 96, 318 KiB; mobile FCP 1.2s, LCP 2.6s, TBT 80ms, CLS 0. Score and weight targets pass; LCP <2.5s remains unmet, and field Core Web Vitals are unverified.
 - [x] Optimize critical CSS, font loading and first-screen JavaScript without changing the design; validate navigation and language switching.
 - [x] Render the first-screen content before React, deliver an 800px/80KB hero with matching preload, and eliminate blocking stylesheet delivery.
 - [x] Add the Athens-to-Nafplio blog article with the two supplied 800×533 WebP photos, static article delivery, active-language loading, supplied SEO and FAQ facts.
-- [ ] Verify the published Nafplio article speed — article is published; a separate production article audit remains outstanding.
+- [x] Verify the published Nafplio article speed — Lighthouse mobile 97, FCP 1.0s, LCP 2.6s, 154 KiB.
 - [x] Reduce first-screen animation work, defer remaining homepage sections, and prioritize heading fonts; verify navigation and delayed loading.
