@@ -14,3 +14,4 @@
 - [ ] Verify production PageSpeed 90+ and initial page transfer below 1 MB — requires publication and a production audit.
 - [x] Optimize critical CSS, font loading and first-screen JavaScript without changing the design; validate navigation and language switching.
 - [x] Render the first-screen content before React, deliver an 800px/80KB hero with matching preload, and eliminate blocking stylesheet delivery.
+- [ ] Add the Athens-to-Nafplio blog article with the two supplied 800×533 WebP photos, static article delivery, active-language loading, supplied SEO and FAQ facts; preserve homepage speed — blocked on the missing full article text.
