@@ -52,6 +52,7 @@ const Blog = () => {
             <Link
               key={post.slug}
               to={`/blog/${post.slug}`}
+              reloadDocument={post.staticDocument}
               className="bg-card border border-border rounded-lg overflow-hidden hover:border-primary/40 transition-colors group"
             >
               <div className="aspect-[16/10] overflow-hidden">
@@ -59,6 +60,8 @@ const Blog = () => {
                   src={post.image}
                   alt={post.imageAlt}
                   loading="lazy"
+                  width={800}
+                  height={post.staticDocument ? 533 : undefined}
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
