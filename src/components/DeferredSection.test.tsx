@@ -24,13 +24,13 @@ describe("below-screen loading boundary", () => {
     vi.useFakeTimers();
     vi.stubGlobal("IntersectionObserver", class { observe() {} disconnect() {} });
     const scroll = vi.fn();
-    vi.spyOn(HTMLElement.prototype, "scrollIntoView").mockImplementation(scroll);
+    Object.defineProperty(HTMLElement.prototype, "scrollIntoView", { configurable: true, value: scroll });
     render(<DeferredSection anchor="services" anchors={["fleet"]} rootMargin="0px"><section id="fleet">Fleet content</section></DeferredSection>);
     expect(screen.queryByText("Fleet content")).toBeNull();
     act(() => { window.location.hash = "fleet"; window.dispatchEvent(new Event("hashchange")); });
     expect(screen.getByText("Fleet content")).toBeTruthy();
     act(() => vi.advanceTimersByTime(100));
     expect(scroll).toHaveBeenCalled();
-    vi.restoreAllMocks();
+    Reflect.deleteProperty(HTMLElement.prototype, "scrollIntoView");
   });
 });
