@@ -15,7 +15,10 @@ export default function DeferredSection({ children, placeholderClass = "min-h-[6
     const activateHash = () => {
       if ([anchor, ...anchors].some((id) => id && window.location.hash === `#${id}`)) {
         setReady(true);
-        window.setTimeout(() => element.scrollIntoView(), 100);
+        window.setTimeout(() => {
+          const target = document.getElementById(window.location.hash.slice(1));
+          (target ?? element).scrollIntoView();
+        }, 100);
       }
     };
     activateHash();
