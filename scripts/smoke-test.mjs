@@ -98,8 +98,46 @@ for (const path of publicPaths) {
   }
 }
 
-console.log(filenamesummary());
-function filenamesummary() {
-  return failures.length ? `\n${failures.length} smoke check(s) FAILED` : "\nAll smoke checks passed";
+// --- 4. rendered SEO head tags: title, canonical, hreflang ---
+const expectedUrl = (path) => (path === "/" ? `${SITE}/` : `${SITE}${path}`);
+let browser;
+try {
+  browser = await chromium.launch({ headless: true });
+  const page = await browser.newPage();
+  let homeTitle = "";
+  for (const path of publicPaths) {
+    try {
+      await page.goto(`${BASE}${path}`, { waitUntil: "domcontentloaded", timeout: 30000 });
+      // Titles/canonicals are client-rendered; wait for the canonical to appear.
+      await page.waitForSelector('link[rel="canonical"]', { state: "attached", timeout: 15000 });
+      const head = await page.evaluate(() => ({
+        title: document.title,
+        canonical: document.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null,
+        hreflangs: Object.fromEntries(
+          [...document.querySelectorAll('link[rel="alternate"][hreflang]')].map((l) => [
+            l.getAttribute("hreflang"),
+            l.getAttribute("href"),
+          ]),
+        ),
+      }));
+      if (path === "/") homeTitle = head.title;
+      const titleOk =
+        head.title.length > 0 && head.title !== "Lovable App" && (path === "/" || head.title !== homeTitle);
+      check(titleOk, `${path} has a unique rendered <title>${titleOk ? "" : ` (got "${head.title}")`}`);
+      check(head.canonical === expectedUrl(path), `${path} canonical is ${expectedUrl(path)}${head.canonical === expectedUrl(path) ? "" : ` (got "${head.canonical}")`}`);
+      check(
+        head.hreflangs["en"] === expectedUrl(path) && head.hreflangs["x-default"] === expectedUrl(path),
+        `${path} hreflang en + x-default self-reference the page URL`,
+      );
+    } catch (e) {
+      check(false, `${path} renders SEO head tags (${e.message.split("\n")[0]})`);
+    }
+  }
+} catch (e) {
+  check(false, `headless browser available for rendered checks (${e.message.split("\n")[0]})`);
+} finally {
+  await browser?.close();
 }
+
+console.log(failures.length ? `\n${failures.length} smoke check(s) FAILED` : "\nAll smoke checks passed");
 if (failures.length) process.exit(1);
