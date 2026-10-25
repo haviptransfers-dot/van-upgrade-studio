@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Consolidate workflow permissions without duplicate jobs/configurations; auto-sync sitemap before npm tests and summarize every smoke outcome.
+- [done] Consolidated top-level contents-read permissions and the single smoke override; preserved one concurrency block and existing Dependabot file. npm test auto-syncs stale sitemap; all smoke outcomes get passed/failed/skipped summaries. Actionlint and 77 tests pass on Node 24.
 
 - [done] Restricted CI job permissions and configured weekly Dependabot action-update PRs; Node 24, Ubuntu 24.04 and duplicate-run cancellation retained. Actionlint and all 75 tests pass under Node 24.
 
