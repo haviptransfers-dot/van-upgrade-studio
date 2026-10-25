@@ -14,7 +14,84 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      ai_chat_leads: {
+        Row: {
+          created_at: string
+          destination: string | null
+          email: string | null
+          id: string
+          message: string
+          name: string | null
+          passengers: string | null
+          phone: string | null
+          pickup: string | null
+          travel_date: string | null
+        }
+        Insert: {
+          created_at?: string
+          destination?: string | null
+          email?: string | null
+          id?: string
+          message: string
+          name?: string | null
+          passengers?: string | null
+          phone?: string | null
+          pickup?: string | null
+          travel_date?: string | null
+        }
+        Update: {
+          created_at?: string
+          destination?: string | null
+          email?: string | null
+          id?: string
+          message?: string
+          name?: string | null
+          passengers?: string | null
+          phone?: string | null
+          pickup?: string | null
+          travel_date?: string | null
+        }
+        Relationships: []
+      }
+      booking_attempts: {
+        Row: {
+          contact_email: string | null
+          contact_name: string | null
+          contact_phone: string | null
+          created_at: string
+          id: string
+          night_rate: boolean
+          passengers: string | null
+          quoted_price: number | null
+          route: string
+          travel_date: string | null
+        }
+        Insert: {
+          contact_email?: string | null
+          contact_name?: string | null
+          contact_phone?: string | null
+          created_at?: string
+          id?: string
+          night_rate?: boolean
+          passengers?: string | null
+          quoted_price?: number | null
+          route: string
+          travel_date?: string | null
+        }
+        Update: {
+          contact_email?: string | null
+          contact_name?: string | null
+          contact_phone?: string | null
+          created_at?: string
+          id?: string
+          night_rate?: boolean
+          passengers?: string | null
+          quoted_price?: number | null
+          route?: string
+          travel_date?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion } from "framer-motion";
 import { X, Send, Loader2, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { captureLead } from "@/lib/leadCapture";
 import vanIcon from "@/assets/fleet-vito.webp";
 
 type Msg = { role: "user" | "assistant"; content: string };
@@ -58,6 +59,19 @@ const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
     setMessages(next);
     setInput("");
     setLoading(true);
+
+    // Save the lead + notify the business (fire-and-forget, never blocks chat)
+    captureLead({
+      type: "ai_chat_lead",
+      name: booking.name || undefined,
+      email: booking.email || undefined,
+      phone: booking.phone || undefined,
+      pickup: booking.pickup || undefined,
+      destination: booking.dropoff || undefined,
+      travelDate: booking.date || undefined,
+      passengers: booking.pax || undefined,
+      message: userMsg.content,
+    });
 
     // Tag user language so Claude replies in the right one
     const langHint = `[Reply in language code: ${i18n.language}]\n${userMsg.content}`;
@@ -156,6 +170,15 @@ const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
 
   const finishBooking = () => {
     setShowBooking(false);
+    captureLead({
+      type: "booking_attempt",
+      route: `${booking.service || "Transfer"}: ${booking.pickup || "?"} → ${booking.dropoff || "?"}`,
+      travelDate: booking.date || undefined,
+      passengers: booking.pax || undefined,
+      contactName: booking.name || undefined,
+      contactEmail: booking.email || undefined,
+      contactPhone: booking.phone || undefined,
+    });
     setMessages((prev) => [
       ...prev,
       {
