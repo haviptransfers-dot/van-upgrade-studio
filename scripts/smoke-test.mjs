@@ -57,9 +57,9 @@ try {
   const sitemap = await fetchWithRetry(`${BASE}/sitemap.xml`);
   check(sitemap.includes('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'), "sitemap.xml is a valid urlset");
   const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-  const missing = publicPaths.filter((p) => !locs.includes(`${BASE}${p}`));
+  const missing = publicPaths.filter((p) => !locs.includes(`${SITE}${p}`));
   check(missing.length === 0, `sitemap.xml lists all ${publicPaths.length} public pages${missing.length ? ` — missing: ${missing.join(", ")}` : ""}`);
-  check(locs.every((l) => l.startsWith(`${BASE}/`)), "sitemap.xml uses only the production domain");
+  check(locs.every((l) => l.startsWith(`${SITE}/`)), "sitemap.xml uses only the production domain");
 } catch (e) {
   check(false, `sitemap.xml reachable (${e.message})`);
 }
@@ -67,7 +67,7 @@ try {
 // --- 2. robots.txt ---
 try {
   const robots = await fetchWithRetry(`${BASE}/robots.txt`);
-  check(robots.includes(`Sitemap: ${BASE}/sitemap.xml`), "robots.txt references the sitemap");
+  check(robots.includes(`Sitemap: ${SITE}/sitemap.xml`), "robots.txt references the sitemap");
 } catch (e) {
   check(false, `robots.txt reachable (${e.message})`);
 }
