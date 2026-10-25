@@ -1,3 +1,9 @@
+/llms.txt   /llms.txt   200
+/.well-known/ai-catalog.json   /.well-known/ai-catalog.json   200
+/.well-known/*   /discovery-not-found.txt   404
+/transfers   /#services   301
+/tours   /#tours   301
+/contact   /#contact   301
 /rss.xml   /rss.xml   200
 /blog/athens-to-nafplio-private-tour   /blog/athens-to-nafplio-private-tour/index.html   200
 /blog/athens-to-nafplio-private-tour/   /blog/athens-to-nafplio-private-tour/index.html   200

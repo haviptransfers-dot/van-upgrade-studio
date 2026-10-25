@@ -10,3 +10,4 @@
 - Render a generated homepage first-screen snapshot with extracted critical CSS before React mounts; keep its markup and CSS aligned with hero/navigation changes to avoid visual shifts on handover. Load the complete stylesheet non-blockingly and mount React once it is ready.
 - Serve the existing font families from hosted WOFF2 subset pointers with swap and preload the exact Latin heading/body subsets, eliminating external font-stylesheet requests and late font discovery without changing typography.
 - Deliver speed-critical Blog articles as build-generated static HTML through a Vite plugin with matching development middleware; this avoids React bootstrap while keeping Blog and RSS metadata shared.
+- Keep AI discovery documents as static public files, not React routes; Lovable serves them before SPA fallback, while the existing Netlify deployment needs discovery exclusions before its wildcard redirect.
