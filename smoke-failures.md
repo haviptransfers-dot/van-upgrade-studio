@@ -1,4 +1,4 @@
-## Smoke test FAILED — 2026-10-25T09:19:30.026Z
+## Smoke test FAILED — 2026-10-25T09:46:59.003Z
 
 Base URL: http://localhost:8080
 
