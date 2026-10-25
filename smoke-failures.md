@@ -1,6 +1,6 @@
-## Smoke test FAILED — 2026-10-25T09:46:59.003Z
+## Smoke test FAILED — 2026-10-25T09:47:17.090Z
 
-Base URL: http://localhost:8080
+Base URL: https://haviptransfers.gr
 
 1 check(s) failed in 1 area(s): seo-head
 
