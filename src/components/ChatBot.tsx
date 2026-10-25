@@ -60,6 +60,19 @@ const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
     setInput("");
     setLoading(true);
 
+    // Save the lead + notify the business (fire-and-forget, never blocks chat)
+    captureLead({
+      type: "ai_chat_lead",
+      name: booking.name || undefined,
+      email: booking.email || undefined,
+      phone: booking.phone || undefined,
+      pickup: booking.pickup || undefined,
+      destination: booking.dropoff || undefined,
+      travelDate: booking.date || undefined,
+      passengers: booking.pax || undefined,
+      message: userMsg.content,
+    });
+
     // Tag user language so Claude replies in the right one
     const langHint = `[Reply in language code: ${i18n.language}]\n${userMsg.content}`;
     const apiMessages = next.map((m, i) =>
