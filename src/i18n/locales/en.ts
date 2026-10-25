@@ -380,4 +380,21 @@ export default {
     supportText: "H&A VIP Tours is a local, family-owned transfer company in Athens. Add us as a preferred source on Google to stay updated with our latest travel guides and offers.",
     aboutTitle: "About H&A VIP Tours",
   }
+  cookie: {
+    title: "We use cookies",
+    text: "We use necessary cookies to make the site work and, with your consent, analytics cookies to improve it.",
+    privacyLink: "Privacy Policy",
+    acceptAll: "Accept All",
+    rejectNonEssential: "Reject Non-Essential",
+    manage: "Manage",
+    save: "Save Choices",
+    necessary: "Necessary",
+    necessaryDesc: "Required for the chat and quote form to work.",
+    analytics: "Analytics",
+    analyticsDesc: "Help us understand how the site is used.",
+    marketing: "Marketing",
+    marketingDesc: "Used for personalized offers.",
+    alwaysOn: "Always on",
+    close: "Close",
+  },
 };
