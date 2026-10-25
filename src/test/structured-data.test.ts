@@ -1,14 +1,12 @@
-// @vitest-environment node
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { servicePages, structuredDataForPath, organization } from "../data/structuredData";
-import { sitemapXml } from "../../sitemapPlugin";
 
 describe("public sitemap and structured data", () => {
   it("lists every public route and article on haviptransfers.gr without synthetic lastmod", () => {
     const sources = readFileSync("src/data/blogPosts.ts", "utf8") + readFileSync("src/data/nafplio.ts", "utf8");
     const slugs = [...sources.matchAll(/slug:\s*"([^"]+)"/g)].map((match) => match[1]);
-    const xml = sitemapXml(slugs);
+    const xml = readFileSync("public/sitemap.xml", "utf8");
     expect((xml.match(/<loc>/g) ?? []).length).toBe(27);
     for (const slug of slugs) expect(xml).toContain(`<loc>https://haviptransfers.gr/blog/${slug}</loc>`);
     for (const page of servicePages) expect(xml).toContain(`<loc>https://haviptransfers.gr${page.path}</loc>`);
