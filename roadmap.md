@@ -1,26 +1,4 @@
-- [x] Add a Payment Methods section (online payment link, bank transfer IBAN, POS in vehicle, cash) — display only, no checkout system.
-- [x] Add a Child & Baby Seats section below the homepage Services cards, using the four supplied real photos.
-- [x] Remove the "52 reviews" count from the hero trust badge (keep the rest).
-- [x] Add the multilingual Family Travel page, navigation, schemas, and internal links.
+# Roadmap
 
-- [x] Add the multilingual Athens Airport to Piraeus Port Travel Guide, cover photo, SEO, and sitemap entry.
-- [x] Optimize all photos and responsive image delivery without changing the design.
-- [x] Split page/language loading and defer below-screen sections, reviews, assistant, and third-party scripts.
-- [x] Test mobile loading, booking controls, languages, image delivery, and report measured performance limits.
-- [x] Make chat click-only, use three static review images, and delay the floating WhatsApp button until the hero paints.
-- [x] Keep every delivered photo below 150 KB and verify initial loading requests.
-- [x] Final push: cap the hero at 800px, defer floating WhatsApp until three seconds or scroll, verify active-language imports and all image dimensions.
-- [ ] GitHub delivery — blocked on the project's managed GitHub sync; direct pushes are unavailable.
-- [x] Measure the published homepage after optimization — Lighthouse mobile 96 / desktop 96, 318 KiB; mobile FCP 1.2s, LCP 2.6s, TBT 80ms, CLS 0. Score and weight targets pass; LCP <2.5s remains unmet, and field Core Web Vitals are unverified.
-- [x] Optimize critical CSS, font loading and first-screen JavaScript without changing the design; validate navigation and language switching.
-- [x] Render the first-screen content before React, deliver an 800px/80KB hero with matching preload, and eliminate blocking stylesheet delivery.
-- [x] Add the Athens-to-Nafplio blog article with the two supplied 800×533 WebP photos, static article delivery, active-language loading, supplied SEO and FAQ facts.
-- [x] Verify the published Nafplio article speed — Lighthouse mobile 97, FCP 1.0s, LCP 2.6s, 154 KiB.
-- [x] Reduce first-screen animation work, defer remaining homepage sections, and prioritize heading fonts; verify navigation and delayed loading.
-- [ ] Add static AI discovery files, verify content types and existing HTTPS redirect, and deploy to haviptransfers.gr — deployment to its Netlify host remains pending.
-- [x] Address the October 25 mobile score of 84: stagger tracking after the first screen, defer tour-menu code, and wait for hero paint before handover; desktop/mobile tour navigation, contact links, language switching, tracking execution, and regression tests verified.
-- [ ] Remeasure the October 25 performance changes on haviptransfers.gr — blocked on publishing the updated site to its host; no new live score claimed.
-- [x] Verify all 27 public sitemap URLs and robots reference; automatically include blog additions, add homepage Organization and all seven transfer/tour Service + TouristTrip graphs with existing EUR base prices, served places and business-level rating; 14 tests and all seven preview pages verified. Publication remains required.
-- [x] Add automated sitemap/robots.txt checks: 10 tests verify the checked-in sitemap matches the build plugin output, covers all app routes and blog articles, uses only https haviptransfers.gr URLs with no duplicates or lastmod, and robots.txt references the sitemap; regenerated public/sitemap.xml to include the missing Nafplio article.
-- [open] Smoke test: verify rendered title/canonical/hreflang checks locally (Chromium libs missing in sandbox)
-- [open] Replace chat counter with atomic shared rate limiter (RPC, concurrent-safe)
+- [done] Smoke test extended: rendered title/canonical/hreflang checks on all 28 public pages (Playwright in CI; sandbox lacks Chromium system libs, so rendered checks verified in CI only — fetch checks pass locally)
+- [done] Atomic shared chat rate limiter: Postgres RPC with per-IP advisory lock replaces count-then-insert; deployed and verified (6 concurrent requests from an exhausted IP all denied, 0 rows consumed)
