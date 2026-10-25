@@ -1,5 +1,5 @@
 import { act, fireEvent, render, screen } from "@testing-library/react";
-import { describe, expect, it, vi } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const { loadChat } = vi.hoisted(() => ({ loadChat: vi.fn() }));
 vi.mock("./ChatBot", () => {
@@ -7,11 +7,24 @@ vi.mock("./ChatBot", () => {
   return { default: ({ initiallyOpen }: { initiallyOpen: boolean }) => <div role="dialog" aria-label="Chat">{initiallyOpen ? "Open" : "Closed"}</div> };
 });
 import ClickToChat from "./ClickToChat";
+import { CONSENT_EVENT, saveConsent, acceptAll } from "@/lib/cookieConsent";
 
 describe("click-only chat", () => {
-  it("does not import chat after waiting or unrelated interaction; imports it only on click and opens the panel", async () => {
+  beforeEach(() => window.localStorage.clear());
+
+  it("stays completely hidden until the visitor makes a cookie consent choice", () => {
+    render(<ClickToChat />);
+    expect(screen.queryByRole("button", { name: "Chat with us" })).toBeNull();
+    expect(loadChat).not.toHaveBeenCalled();
+  });
+
+  it("appears after consent is given, then imports chat only on click and opens the panel", async () => {
     vi.useFakeTimers();
     render(<ClickToChat />);
+    act(() => {
+      saveConsent(acceptAll());
+      window.dispatchEvent(new Event(CONSENT_EVENT));
+    });
     act(() => {
       vi.advanceTimersByTime(10000);
       window.dispatchEvent(new Event("pointerdown"));
