@@ -22,3 +22,5 @@
 - [ ] Remeasure the October 25 performance changes on haviptransfers.gr — blocked on publishing the updated site to its host; no new live score claimed.
 - [x] Verify all 27 public sitemap URLs and robots reference; automatically include blog additions, add homepage Organization and all seven transfer/tour Service + TouristTrip graphs with existing EUR base prices, served places and business-level rating; 14 tests and all seven preview pages verified. Publication remains required.
 - [x] Add automated sitemap/robots.txt checks: 10 tests verify the checked-in sitemap matches the build plugin output, covers all app routes and blog articles, uses only https haviptransfers.gr URLs with no duplicates or lastmod, and robots.txt references the sitemap; regenerated public/sitemap.xml to include the missing Nafplio article.
+- [open] Smoke test: verify rendered title/canonical/hreflang checks locally (Chromium libs missing in sandbox)
+- [open] Replace chat counter with atomic shared rate limiter (RPC, concurrent-safe)
