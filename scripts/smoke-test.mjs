@@ -102,7 +102,7 @@ for (const path of publicPaths) {
 const expectedUrl = (path) => (path === "/" ? `${SITE}/` : `${SITE}${path}`);
 let browser;
 try {
-  browser = await chromium.launch({ headless: true });
+  browser = await chromium.launch({ headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox"] });
   const page = await browser.newPage();
   let homeTitle = "";
   for (const path of publicPaths) {
