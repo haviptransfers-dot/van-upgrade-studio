@@ -9,6 +9,7 @@ import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
 import airportPickupVan from "@/assets/airport-pickup-van.jpg.asset.json";
 import driverHandshake from "@/assets/driver-handshake-airport.jpg.asset.json";
+import vanAthensChildSeat from "@/assets/van-athens-child-seat.jpg.asset.json";
 import vClassLookCollage from "@/assets/v-class-look-collage.jpg.asset.json";
 
 const ASSET_HOST = "https://van-move-boost.lovable.app";
@@ -32,6 +33,7 @@ const images = [
   { src: `${ASSET_HOST}${airportPickupVan.url}`, alt: "H&A Tours chauffeur opening the Mercedes V Class door for a traveler with luggage at Athens Airport" },
   { src: `${ASSET_HOST}${driverHandshake.url}`, alt: "H&A Tours driver welcoming a client with a handshake at Athens Airport, Acropolis in the background" },
   { src: `${ASSET_HOST}${vClassLookCollage.url}`, alt: "H&A Tours Mercedes V Class presentation with exterior, interior and detail views" },
+  { src: `${ASSET_HOST}${vanAthensChildSeat.url}`, alt: "Mother securing her child in a child seat inside the Mercedes V Class, Acropolis in the background" },
 ];
 
 const Gallery = () => {
