@@ -48,3 +48,13 @@ jobs:
 
       - name: Smoke test the live site
         run: node scripts/smoke-test.mjs https://haviptransfers.gr
+
+      - name: Notify on smoke test failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITLE="Smoke test failed on $(date -u +%Y-%m-%d) — ${GITHUB_SHA:0:7}"
+          gh issue create --title "$TITLE" --body-file smoke-failures.md \
+            --label "smoke-test" 2>/dev/null || \
+          gh issue create --title "$TITLE" --body-file smoke-failures.md
