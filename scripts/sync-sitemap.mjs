@@ -17,7 +17,7 @@ const blogSources =
   readFileSync("src/data/blogPosts.ts", "utf8") + readFileSync("src/data/nafplio.ts", "utf8");
 const slugs = [...blogSources.matchAll(/slug:\s*"([^"]+)"/g)].map((m) => m[1]);
 
-const paths = ["/", ...seoPaths, "/about", "/blog", ...slugs.map((slug) => `/blog/${slug}`)];
+const paths = ["/", ...seoPaths, "/about", "/blog", "/privacy-policy", ...slugs.map((slug) => `/blog/${slug}`)];
 const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${[...new Set(paths)]
   .map((pathname) => `  <url><loc>${DOMAIN}${pathname}</loc></url>`)
   .join("\n")}\n</urlset>\n`;
