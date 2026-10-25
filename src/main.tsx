@@ -15,6 +15,8 @@ async function mount() {
   if (!root) return;
   // Other routes must never inherit the homepage's static first screen.
   if (location.pathname !== "/") document.getElementById("first-screen")?.remove();
+  // Each page sets its own canonical once React mounts.
+  document.getElementById("static-canonical")?.remove();
   createRoot(root).render(
   <HelmetProvider>
     <App />
