@@ -6,6 +6,7 @@ import { X, Send, Loader2, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { captureLead } from "@/lib/leadCapture";
 import { formatCountdown } from "@/lib/formatCountdown";
+import { trackRateLimitWhatsAppClick } from "@/lib/quoteClickTracking";
 import vanIcon from "@/assets/fleet-vito.webp";
 
 type Msg = { role: "user" | "assistant"; content: string; rateLimitRetry?: number };
@@ -31,6 +32,7 @@ const RateLimitBubble = ({ retryAfter }: { retryAfter: number }) => {
       </span>
       <a
         href={WHATSAPP_URL}
+        onClick={trackRateLimitWhatsAppClick}
         target="_blank"
         rel="noopener noreferrer"
         className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
