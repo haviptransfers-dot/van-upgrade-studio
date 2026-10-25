@@ -51,17 +51,17 @@ const Reviews = () => {
         <div
           className="text-center mb-12 md:mb-16"
         >
-          <p className="text-primary uppercase tracking-[0.3em] text-[10px] md:text-sm mb-3">
+          <p className="text-muted-foreground text-xs md:text-sm mb-3">
             {t("reviews.eyebrow", "Trusted by Travelers Worldwide")}
           </p>
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-5 md:mb-6">
-            Google <span className="text-primary">{t("reviews.title", "Reviews")}</span>
+            Google <span>{t("reviews.title", "Reviews")}</span>
           </h2>
 
           {/* Big rating block */}
-          <div className="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-6 bg-card/60 backdrop-blur-sm border border-border rounded-2xl px-6 py-4 md:px-8 md:py-5">
+          <div className="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-6 py-4 md:py-5">
             <div className="text-center sm:text-left">
-              <span className="font-display text-5xl md:text-6xl font-bold text-primary">5.0</span>
+              <span className="font-display text-4xl md:text-5xl font-medium text-foreground">5.0</span>
               <p className="text-sm text-muted-foreground">out of 5</p>
             </div>
             <div className="w-px h-12 bg-border hidden sm:block" />
@@ -98,7 +98,8 @@ const Reviews = () => {
           >
             <Button
               size="lg"
-              className="gap-3 bg-primary text-primary-foreground hover:bg-primary/90 px-6 md:px-8 text-sm md:text-base h-auto py-3 shadow-lg"
+              variant="outline"
+              className="gap-3 border-border text-foreground hover:bg-secondary px-6 md:px-8 text-sm md:text-base h-auto py-3"
             >
               <svg viewBox="0 0 24 24" className="w-5 h-5 flex-shrink-0" aria-hidden="true">
                 <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />

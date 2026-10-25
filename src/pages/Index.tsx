@@ -79,7 +79,7 @@ const Index = ({ routeKey }: IndexProps) => {
   ];
 
   return (
-    <div className="min-h-screen bg-transparent relative">
+    <div className="homepage-visual min-h-screen bg-transparent relative">
       {!routeKey && (
         <Helmet>
           <link rel="canonical" href="https://haviptransfers.gr/" />
@@ -89,7 +89,7 @@ const Index = ({ routeKey }: IndexProps) => {
       )}
       {backgroundReady && <Suspense fallback={null}><AnimatedBackground /></Suspense>}
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
+      <nav className="home-navigation fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
         <div className="container mx-auto flex flex-wrap items-center justify-between py-2 md:py-3 px-4">
           <div className="flex items-center gap-2 md:gap-3 min-w-0">
             <OptimizedImage src={logoImg} alt="H&A Tours" className="h-9 w-9 md:h-10 md:w-10 object-contain flex-shrink-0" width={40} height={40} sizes="40px" loading="eager" decoding="async" />
@@ -152,7 +152,7 @@ const Index = ({ routeKey }: IndexProps) => {
       </nav>
 
       {/* Hero */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="home-hero relative flex items-center overflow-hidden">
         <div className="absolute inset-0 overflow-hidden bg-background">
           {/* Static base layer — first image always painted to avoid black gap */}
           <OptimizedImage
@@ -165,55 +165,55 @@ const Index = ({ routeKey }: IndexProps) => {
             maxWidth={800}
             decoding="async"
             onLoad={() => requestAnimationFrame(() => requestAnimationFrame(() => setHeroPainted(true)))}
-            className="absolute inset-0 w-full h-full object-cover hero-base-zoom"
+            className="home-hero-photo absolute inset-0 w-full h-full object-cover hero-base-zoom"
           />
           {heroCycleIndex > 0 && <Suspense fallback={null}>
             <HeroSlideshow index={heroCycleIndex} src={heroCycleImages[heroCycleIndex]} />
           </Suspense>}
-          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/30 to-background" />
+          <div className="home-hero-shade absolute inset-0" />
         </div>
-        <div className="relative z-10 text-center px-4 max-w-4xl">
+        <div className="home-hero-content relative z-10">
           <p
-            className="text-primary uppercase tracking-[0.3em] text-sm mb-4 font-medium"
+            className="home-hero-eyebrow text-foreground text-sm font-medium"
           >
             {t("hero.eyebrow")}
           </p>
           <h1
-            className="font-display text-[2.25rem] sm:text-5xl md:text-7xl font-bold mb-5 md:mb-6 leading-[1.1]"
+            className="home-hero-title font-display font-medium"
           >
-            {t("hero.title1")} <span className="text-primary">{t("hero.title2")}</span>
+            H&A Tours
           </h1>
           <p
-            className="text-foreground/60 text-base md:text-xl mb-8 md:mb-10 max-w-2xl mx-auto"
+            className="home-hero-description text-foreground"
           >
             {t("hero.subtitle")}
           </p>
           <div
-            className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center"
+            className="home-hero-actions flex flex-wrap"
           >
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="text-base px-8 gap-2 bg-primary text-primary-foreground hover:bg-primary/80">
+              <Button size="lg" className="home-hero-primary text-base px-8 gap-2 bg-primary text-primary-foreground hover:bg-primary/80">
                 <MessageCircle className="w-5 h-5" />
                 {t("hero.whatsapp")}
               </Button>
             </a>
             <a href="tel:+306949393700">
-              <Button size="lg" variant="outline" className="text-base px-8 gap-2 border-primary/30 text-primary hover:bg-primary/10">
+              <Button size="lg" variant="ghost" className="home-hero-secondary text-base gap-2 text-foreground hover:bg-foreground/10">
                 <Phone className="w-5 h-5" />
                 {t("hero.call")}
               </Button>
             </a>
-            {toursMenuReady ? <Suspense fallback={<Button size="lg" variant="outline" disabled className="text-base px-8 gap-2 border-primary/30 text-primary"><ChevronDown className="w-5 h-5" />{t("hero.exploreTours")}</Button>}>
+            {toursMenuReady ? <Suspense fallback={<Button size="lg" variant="outline" disabled className="home-hero-secondary text-base gap-2 text-foreground"><ChevronDown className="w-5 h-5" />{t("hero.exploreTours")}</Button>}>
               <ExploreToursMenu label={t("hero.exploreTours")} tours={tourLinks.map((tour) => ({ path: tour.path, label: t(tour.labelKey) }))} />
-            </Suspense> : <Button size="lg" variant="outline" onClick={() => setToursMenuReady(true)} className="text-base px-8 gap-2 border-primary/30 text-primary hover:bg-primary/10"><ChevronDown className="w-5 h-5" />{t("hero.exploreTours")}</Button>}
+            </Suspense> : <Button size="lg" variant="ghost" onClick={() => setToursMenuReady(true)} className="home-hero-secondary text-base gap-2 text-foreground hover:bg-foreground/10"><ChevronDown className="w-5 h-5" />{t("hero.exploreTours")}</Button>}
           </div>
           <div
-            className="mt-6 flex justify-center"
+            className="home-hero-trust flex"
           >
             <TrustBadge />
           </div>
         </div>
-        <a href="#services" aria-label="Scroll to services" className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-primary/60">
+        <a href="#services" aria-label="Scroll to services" className="home-hero-scroll absolute bottom-8 left-1/2 -translate-x-1/2 text-foreground/70">
           <ChevronDown className="w-8 h-8" />
         </a>
       </section>

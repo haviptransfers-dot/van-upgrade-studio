@@ -10,11 +10,11 @@ export default {
   },
   hero: {
 
-    eyebrow: "Transfer Privati Premium",
+    eyebrow: "Trasferimenti privati ad Atene",
     title1: "Transfer di Lusso",
     title2: "ad Atene",
     subtitle: "Vivi la Grecia con stile a bordo della nostra Mercedes Classe V. Transfer aeroportuali, prelievi al porto, tour privati e trasporti VIP.",
-    whatsapp: "Prenota su WhatsApp",
+    whatsapp: "Preventivo su WhatsApp",
     call: "Chiamaci",
     exploreTours: "Scopri i Nostri Tour",
   },

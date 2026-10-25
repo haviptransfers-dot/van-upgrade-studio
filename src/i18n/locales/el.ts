@@ -10,11 +10,11 @@ export default {
   },
   hero: {
 
-    eyebrow: "Premium Ιδιωτικές Μεταφορές",
+    eyebrow: "Ιδιωτικές μεταφορές στην Αθήνα",
     title1: "Πολυτελείς Μεταφορές",
     title2: "στην Αθήνα",
     subtitle: "Ζήστε την Ελλάδα με στιλ με τη Mercedes V Class μας. Μεταφορές αεροδρομίου, λιμανιού, ιδιωτικές εκδρομές & VIP μεταφορές.",
-    whatsapp: "Κράτηση μέσω WhatsApp",
+    whatsapp: "Προσφορά μέσω WhatsApp",
     call: "Καλέστε μας",
     exploreTours: "Ανακαλύψτε τις Εκδρομές μας",
   },
