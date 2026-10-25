@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] Fix sitemap regeneration and optional-env test failures under Node 24; make deployment smoke checks retry and report temporary outages without hiding content failures.
+
 - [done] Both GitHub workflow jobs upgraded to Node.js 24, latest Node-24-compatible actions, and Ubuntu 24.04; checks and notifications preserved. Workflow validation and all 59 tests pass under Node 24; hosted GitHub run awaits next trigger.
 
 - [done] Smoke test extended: rendered title/canonical/hreflang checks on all 28 public pages (Playwright in CI; sandbox lacks Chromium system libs, so rendered checks verified in CI only — fetch checks pass locally)
