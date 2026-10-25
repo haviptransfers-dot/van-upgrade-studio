@@ -19,6 +19,7 @@ export function renderNafplio() {
     mainEntity: nafplioFaq.map(({ question, answer }) => ({ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } })),
   };
   const articleSchema = { "@context": "https://schema.org", "@type": "BlogPosting", headline: post.title, description: post.metaDescription, image: post.image, datePublished: post.date, mainEntityOfPage: canonical, author: { "@type": "Organization", name: "H&A VIP Tours" } };
+  const orgSchema = { "@context": "https://schema.org", "@type": "Organization", name: "H&A VIP Tours", url: "https://haviptransfers.gr/", telephone: "+306949393700", email: "h.a.viptransfers@gmail.com", address: { "@type": "PostalAddress", addressLocality: "Athens", addressCountry: "GR" } };
   return `<!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${esc(post.metaTitle)}</title><meta name="description" content="${esc(post.metaDescription)}"><meta name="keywords" content="${esc(post.keywords)}">
@@ -34,7 +35,7 @@ export function renderNafplio() {
 <article>${body}<img class="article-map" src="${post.map}" alt="${esc(post.mapAlt)}" width="800" height="533" loading="lazy" decoding="async">
 <section aria-labelledby="faq"><h2 id="faq">Frequently Asked Questions</h2>${nafplioFaq.map(({ question, answer }) => `<h3>${esc(question)}</h3><p>${esc(answer)}</p>`).join("")}</section>
 <div class="booking"><a href="https://wa.me/306949393700" target="_blank" rel="noopener noreferrer">Book your Nafplio tour on WhatsApp</a></div></article></main><footer><a class="brand" href="/">H&A TOURS</a></footer>
-<script type="application/ld+json">${JSON.stringify(articleSchema)}</script><script type="application/ld+json">${JSON.stringify(faqSchema)}</script></body></html>`;
+<script type="application/ld+json">${JSON.stringify(articleSchema)}</script><script type="application/ld+json">${JSON.stringify(faqSchema)}</script><script type="application/ld+json">${JSON.stringify(orgSchema)}</script></body></html>`;
 }
 
 export function nafplioPlugin(): Plugin {
