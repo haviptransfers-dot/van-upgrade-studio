@@ -25,10 +25,12 @@ describe("CI workflow linting", () => {
 });
 
 describe("CI security configuration", () => {
-  it("denies unspecified workflow permissions and gives checks read-only contents access", () => {
-    expect(workflow).toMatch(/^permissions: \{\}$/m);
-    expect(permissions(checksJob)).toEqual(["contents: read"]);
-    expect(permissions(lintJob)).toEqual(["contents: read"]);
+  it("sets one read-only default, inherited by checks and lint", () => {
+    expect(workflow).toMatch(/^permissions:\n  contents: read$/m);
+    expect(workflow.match(/^permissions:/gm)).toHaveLength(1);
+    expect(permissions(checksJob)).toEqual([]);
+    expect(permissions(lintJob)).toEqual([]);
+    expect(workflow.match(/^    permissions:/gm)).toHaveLength(1);
   });
 
   it("grants issue-writing access only to smoke notifications", () => {
@@ -39,6 +41,8 @@ describe("CI security configuration", () => {
   it("cancels duplicate runs for the same workflow and ref", () => {
     expect(workflow).toContain('group: ${{ github.workflow }}-${{ github.ref }}');
     expect(workflow).toMatch(/concurrency:\n  group: .+\n  cancel-in-progress: true/);
+    expect(workflow.match(/^concurrency:/gm)).toHaveLength(1);
+    expect([...workflow.matchAll(/^  (workflow-lint|checks|smoke):$/gm)].map((match) => match[1])).toEqual(["workflow-lint", "checks", "smoke"]);
   });
 
   it("keeps both site jobs on Node 24 and Ubuntu 24.04", () => {
