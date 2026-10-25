@@ -5,13 +5,18 @@
 //   1. sitemap.xml — 200, valid urlset XML, contains every public page and blog article
 //   2. robots.txt — references Sitemap: <base>/sitemap.xml
 //   3. structured data — every public page serves parseable JSON-LD including Organization
+//   4. SEO head tags (rendered) — every public page has a unique <title>, a canonical
+//      URL on the production domain, and en/x-default hreflang self-references
 //
-// Service/TouristTrip schemas are client-rendered; their content is validated
+// Checks 1–3 read raw HTML; check 4 uses headless Chromium because titles and
+// canonicals are client-rendered. Service/TouristTrip schema content is validated
 // per page by src/test/structured-data.test.ts in the CI test suite.
 
 import { readFileSync } from "node:fs";
+import { chromium } from "playwright";
 
 const BASE = (process.argv[2] || "https://haviptransfers.gr").replace(/\/$/, "");
+const SITE = "https://haviptransfers.gr"; // canonical domain, expected regardless of the host under test
 const RETRIES = 3;
 const RETRY_DELAY_MS = 5000;
 
