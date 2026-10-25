@@ -10,11 +10,13 @@ vi.mock("@/components/OptimizedImage", () => ({ default: () => null }));
 afterEach(() => {
   cleanup();
   vi.unstubAllGlobals();
+  Reflect.deleteProperty(HTMLElement.prototype, "scrollTo");
   Reflect.deleteProperty(window, "gtag");
   localStorage.clear();
 });
 
 it("records only consented activations of the WhatsApp link after a 429 response", async () => {
+  Object.defineProperty(HTMLElement.prototype, "scrollTo", { value: vi.fn(), configurable: true });
   vi.stubGlobal("fetch", vi.fn().mockResolvedValue({ status: 429, json: async () => ({ retryAfterSeconds: 3600 }) }));
   const gtag = vi.fn();
   Object.defineProperty(window, "gtag", { value: gtag, configurable: true });
