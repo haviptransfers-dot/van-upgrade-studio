@@ -26,6 +26,7 @@ const validPaths = new Set<string>([
   "/",
   "/about",
   "/blog",
+  "/privacy-policy",
   ...seoRoutes.map((route) => route.path),
   ...blogSlugs.map((slug) => `/blog/${slug}`),
 ]);
