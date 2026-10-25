@@ -15,3 +15,4 @@
 - Generate the sitemap from explicit public routes and the existing blog catalog at build time and in development; omit lastmod without an authoritative content-change timestamp.
 - Share Service and TouristTrip data across transfer/tour pages, using existing base prices and attaching the business rating only to its Organization provider; never invent review counts or individual tour ratings.
 - Track rate-limit quote clicks only from the lazy chat through existing Google Analytics after checking current analytics consent; exclude personal data and URL/referrer details, never load trackers or delay WhatsApp navigation for measurement.
+- Run GitHub checks and deployment smoke jobs on Ubuntu 24.04 with Node.js 24 and Node-24-compatible checkout/setup actions; keep runtime upgrades separate from check logic.
