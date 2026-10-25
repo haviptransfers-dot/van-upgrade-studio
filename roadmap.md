@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Check the next hosted GitHub Actions run and repair any remaining failures; requires access to the run and job logs.
+- [done] Checked hosted Site Checks run #19 (40182822003): all three jobs succeeded; live smoke log confirms all checks passed, with no remaining failures.
 
 - [done] Repaired npm ci lockfile failure (missing Playwright), added prevention tests, verified a fresh Node 24 install, all 79 tests, and actionlint. Hosted GitHub result awaits the next run.
 
