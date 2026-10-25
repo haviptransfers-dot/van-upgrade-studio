@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { sitemapXml } from "../../sitemapPlugin";
+import { sitemapXml } from "../../sitemapXml";
 import { seoRoutes } from "../seoRoutes";
 
 const DOMAIN = "https://haviptransfers.gr";
