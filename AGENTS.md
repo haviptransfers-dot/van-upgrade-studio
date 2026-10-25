@@ -12,3 +12,5 @@
 - Serve the existing font families from hosted WOFF2 subset pointers with swap and preload the exact Latin heading/body subsets, eliminating external font-stylesheet requests and late font discovery without changing typography.
 - Deliver speed-critical Blog articles as build-generated static HTML through a Vite plugin with matching development middleware; this avoids React bootstrap while keeping Blog and RSS metadata shared.
 - Keep AI discovery documents as static public files, not React routes; Lovable serves them before SPA fallback, while the existing Netlify deployment needs discovery exclusions before its wildcard redirect.
+- Generate the sitemap from explicit public routes and the existing blog catalog at build time and in development; omit lastmod without an authoritative content-change timestamp.
+- Share Service and TouristTrip data across transfer/tour pages, using existing base prices and attaching the business rating only to its Organization provider; never invent review counts or individual tour ratings.

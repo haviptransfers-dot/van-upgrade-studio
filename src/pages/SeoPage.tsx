@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import Index from "./Index";
+import ServiceStructuredData from "@/components/ServiceStructuredData";
 
 interface SeoPageProps {
   routeKey: string;
@@ -16,6 +17,7 @@ const SeoPage = ({ routeKey, path }: SeoPageProps) => {
   const description = t(`seo.${routeKey}.description`);
   return (
     <>
+      <ServiceStructuredData path={path} />
       <Helmet>
         <html lang={i18n.language} />
         <title>{title}</title>

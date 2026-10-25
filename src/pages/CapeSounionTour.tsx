@@ -1,4 +1,5 @@
 import OptimizedImage from "@/components/OptimizedImage";
+import ServiceStructuredData from "@/components/ServiceStructuredData";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
@@ -76,6 +77,7 @@ const CapeSounionTour = () => {
 
   return (
     <>
+      <ServiceStructuredData path="/cape-sounion-tour" />
       <Helmet>
         <html lang={i18n.language} />
         <title>{title}</title>
