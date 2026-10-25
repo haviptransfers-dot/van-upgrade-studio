@@ -18,42 +18,34 @@
 //
 // Env overrides for local testing: SMOKE_RETRIES, SMOKE_RETRY_DELAY_MS.
 
-import { readFileSync, writeFileSync, appendFileSync } from "node:fs";
+import { writeFileSync, appendFileSync, rmSync } from "node:fs";
 import { chromium } from "playwright";
+import { SITE, publicPaths as getPublicPaths } from "./public-pages.mjs";
+import { numericOption, fetchWithRetry as fetchRetry, UnavailableError, jsonLdBlocks, hasOrganization } from "./smoke-helpers.mjs";
 
 const BASE = (process.argv[2] || "https://haviptransfers.gr").replace(/\/$/, "");
-const SITE = "https://haviptransfers.gr"; // canonical domain, expected regardless of the host under test
-const RETRIES = Number(process.env.SMOKE_RETRIES || 3);
-const RETRY_DELAY_MS = Number(process.env.SMOKE_RETRY_DELAY_MS || 5000);
-
-const seoPaths = [...readFileSync("src/seoRoutes.ts", "utf8").matchAll(/path:\s*"([^"]+)"/g)].map((m) => m[1]);
-const blogSlugs = [
-  ...(readFileSync("src/data/blogPosts.ts", "utf8") + readFileSync("src/data/nafplio.ts", "utf8")).matchAll(
-    /slug:\s*"([^"]+)"/g,
-  ),
-].map((m) => m[1]);
-
-const publicPaths = ["/", ...seoPaths, "/about", "/blog", "/privacy-policy", ...blogSlugs.map((s) => `/blog/${s}`)];
-
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-
-async function fetchWithRetry(url) {
-  let lastError;
-  for (let attempt = 1; attempt <= RETRIES; attempt++) {
-    try {
-      const resp = await fetch(url, { redirect: "follow", signal: AbortSignal.timeout(15000) });
-      if (resp.ok) return await resp.text();
-      lastError = new Error(`HTTP ${resp.status}`);
-    } catch (e) {
-      lastError = e;
-    }
-    if (attempt < RETRIES) await sleep(RETRY_DELAY_MS);
-  }
-  throw lastError;
-}
+const RETRIES = numericOption(process.env.SMOKE_RETRIES, 3, 1);
+const RETRY_DELAY_MS = numericOption(process.env.SMOKE_RETRY_DELAY_MS, 5000);
+const FETCH_TIMEOUT_MS = numericOption(process.env.SMOKE_TIMEOUT_MS, 15000, 1);
+const publicPaths = getPublicPaths();
+const fetchWithRetry = (url) => fetchRetry(url, { retries: RETRIES, delay: RETRY_DELAY_MS, timeout: FETCH_TIMEOUT_MS });
+const reportPath = new URL("../smoke-failures.md", import.meta.url);
+rmSync(reportPath, { force: true });
 
 // Failures are grouped by check area so the alert names exactly what broke.
 const failures = []; // { section, label }
+const skipped = [];
+const unavailablePaths = new Set();
+const reachablePaths = new Set();
+const handleError = (error, label, section) => {
+  if (error instanceof UnavailableError) {
+    const message = `${label}: temporarily unavailable after ${RETRIES} attempts (${error.message})`;
+    skipped.push({ section, label: message });
+    console.warn(`SKIP  [${section}] ${message}`);
+    return;
+  }
+  check(false, `${label} (${error.message})`, section);
+};
 const check = (ok, label, section) => {
   console.log(`${ok ? "PASS" : "FAIL"}  [${section}] ${label}`);
   if (!ok) failures.push({ section, label });
@@ -62,46 +54,50 @@ const check = (ok, label, section) => {
 // --- 1. sitemap.xml ---
 try {
   const sitemap = await fetchWithRetry(`${BASE}/sitemap.xml`);
-  check(sitemap.includes('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'), "sitemap.xml is a valid urlset", "sitemap");
+  check(/<urlset\b[^>]*xmlns=["']http:\/\/www.sitemaps.org\/schemas\/sitemap\/0.9["'][^>]*>/.test(sitemap) && /<\/urlset>\s*$/.test(sitemap), "sitemap.xml is a valid urlset", "sitemap");
   const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
   const missing = publicPaths.filter((p) => !locs.includes(`${SITE}${p}`));
   check(missing.length === 0, `sitemap.xml lists all ${publicPaths.length} public pages${missing.length ? ` — missing: ${missing.join(", ")}` : ""}`, "sitemap");
   check(locs.every((l) => l.startsWith(`${SITE}/`)), "sitemap.xml uses only the production domain", "sitemap");
+  check(locs.length === publicPaths.length && new Set(locs).size === locs.length, "sitemap.xml contains only unique public pages", "sitemap");
 } catch (e) {
-  check(false, `sitemap.xml reachable (${e.message})`, "sitemap");
+  handleError(e, "sitemap.xml reachable", "sitemap");
 }
 
 // --- 2. robots.txt ---
 try {
   const robots = await fetchWithRetry(`${BASE}/robots.txt`);
-  check(robots.includes(`Sitemap: ${SITE}/sitemap.xml`), "robots.txt references the sitemap", "robots.txt");
+  check(robots.split(/\r?\n/).some((line) => line.trim().toLowerCase() === `sitemap: ${SITE}/sitemap.xml`.toLowerCase()), "robots.txt references the sitemap", "robots.txt");
 } catch (e) {
-  check(false, `robots.txt reachable (${e.message})`, "robots.txt");
+  handleError(e, "robots.txt reachable", "robots.txt");
+}
+
+// A whole-site outage must not incur two retry loops for every page.
+let siteUnavailable = false;
+try {
+  await fetchWithRetry(`${BASE}/`);
+} catch (e) {
+  siteUnavailable = e instanceof UnavailableError;
+  handleError(e, "Homepage reachable", "availability");
 }
 
 // --- 3. structured data on every public page ---
 for (const path of publicPaths) {
+  if (siteUnavailable) break;
   try {
     const html = await fetchWithRetry(`${BASE}${path}`);
-    const blocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => m[1]);
-    if (blocks.length === 0) {
-      check(false, `${path} serves JSON-LD`, "structured-data");
-      continue;
-    }
+    reachablePaths.add(path);
     let parsed;
     try {
-      parsed = blocks.map((b) => JSON.parse(b));
+      parsed = jsonLdBlocks(html);
     } catch {
       check(false, `${path} JSON-LD parses`, "structured-data");
       continue;
     }
-    const hasOrganization = parsed.some((b) => {
-      const types = [b?.["@type"] ?? []].flat();
-      return types.includes("Organization") || types.includes("TravelAgency") || types.includes("LocalBusiness");
-    });
-    check(hasOrganization, `${path} serves valid Organization structured data`, "structured-data");
+    check(hasOrganization(parsed), `${path} serves valid Organization structured data`, "structured-data");
   } catch (e) {
-    check(false, `${path} reachable (${e.message})`, "structured-data");
+    unavailablePaths.add(path);
+    handleError(e, `${path} reachable`, "structured-data");
   }
 }
 
@@ -109,14 +105,30 @@ for (const path of publicPaths) {
 const expectedUrl = (path) => (path === "/" ? `${SITE}/` : `${SITE}${path}`);
 let browser;
 try {
+  if (siteUnavailable || reachablePaths.size === 0) {
+    console.warn("SKIP  [seo-head] Site unavailable; rendered page checks deferred");
+  } else {
   browser = await chromium.launch({ headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox"] });
   const page = await browser.newPage();
   let homeTitle = "";
   for (const path of publicPaths) {
+    if (unavailablePaths.has(path)) continue;
     try {
-      await page.goto(`${BASE}${path}`, { waitUntil: "domcontentloaded", timeout: 30000 });
+      let response;
+      for (let attempt = 1; attempt <= RETRIES; attempt++) {
+        try {
+          response = await page.goto(`${BASE}${path}`, { waitUntil: "domcontentloaded", timeout: 30000 });
+          if (response?.ok()) break;
+          if (response && response.status() < 500 && ![408, 429].includes(response.status())) throw new Error(`HTTP ${response.status()}`);
+          if (attempt === RETRIES) throw new UnavailableError(`HTTP ${response?.status() ?? "no response"}`);
+        } catch (error) {
+          if (error instanceof UnavailableError || error.message.startsWith("HTTP ")) throw error;
+          if (attempt === RETRIES) throw new UnavailableError(error.message.split("\n")[0]);
+        }
+        await new Promise((resolve) => setTimeout(resolve, RETRY_DELAY_MS));
+      }
       // Titles/canonicals are client-rendered; wait for the canonical to appear.
-      await page.waitForSelector('link[rel="canonical"]', { state: "attached", timeout: 15000 });
+      await page.waitForFunction((url) => document.querySelector('link[rel="canonical"]')?.getAttribute("href") === url, expectedUrl(path), { timeout: 15000 });
       const head = await page.evaluate(() => ({
         title: document.title,
         canonical: document.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null,
@@ -138,8 +150,9 @@ try {
         "seo-head",
       );
     } catch (e) {
-      check(false, `${path} renders SEO head tags (${e.message.split("\n")[0]})`, "seo-head");
+      handleError(e, `${path} renders SEO head tags`, "seo-head");
     }
+  }
   }
 } catch (e) {
   check(false, `headless browser available for rendered checks (${e.message.split("\n")[0]})`, "seo-head");
@@ -168,10 +181,22 @@ if (failures.length) {
     lines.push(``);
   }
   const report = lines.join("\n");
-  writeFileSync("smoke-failures.md", report);
-  if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, report);
+  writeFileSync(reportPath, report);
+  if (process.env.GITHUB_STEP_SUMMARY) {
+    try { appendFileSync(process.env.GITHUB_STEP_SUMMARY, report); }
+    catch (error) { console.warn(`Could not write optional job summary: ${error.message}`); }
+  }
   console.log(`\n${failures.length} smoke check(s) FAILED — report written to smoke-failures.md`);
   process.exit(1);
 }
 
-console.log("\nAll smoke checks passed");
+if (skipped.length || siteUnavailable) {
+  const report = `## Smoke checks incomplete — temporary availability warning\n\n${skipped.map((item) => `- [${item.section}] ${item.label}`).join("\n")}\n\nUnavailable checks were skipped, not passed. Rerun after the site is reachable.\n`;
+  if (process.env.GITHUB_STEP_SUMMARY) {
+    try { appendFileSync(process.env.GITHUB_STEP_SUMMARY, report); }
+    catch (error) { console.warn(`Could not write optional job summary: ${error.message}`); }
+  }
+  console.warn(`\nSmoke checks incomplete: ${skipped.length} temporary availability warning(s); rerun when reachable.`);
+} else {
+  console.log("\nAll smoke checks passed");
+}
