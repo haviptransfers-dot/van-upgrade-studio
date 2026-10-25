@@ -18,4 +18,5 @@
 - [x] Verify the published Nafplio article speed — Lighthouse mobile 97, FCP 1.0s, LCP 2.6s, 154 KiB.
 - [x] Reduce first-screen animation work, defer remaining homepage sections, and prioritize heading fonts; verify navigation and delayed loading.
 - [ ] Add static AI discovery files, verify content types and existing HTTPS redirect, and deploy to haviptransfers.gr — deployment to its Netlify host remains pending.
-- [ ] Address the October 25 mobile score of 84: stagger tracking after the first screen, defer tour-menu code, and verify booking/navigation without visual changes; live remeasurement requires publication.
+- [x] Address the October 25 mobile score of 84: stagger tracking after the first screen, defer tour-menu code, and wait for hero paint before handover; desktop/mobile tour navigation, contact links, language switching, tracking execution, and regression tests verified.
+- [ ] Remeasure the October 25 performance changes on haviptransfers.gr — blocked on publishing the updated site to its host; no new live score claimed.
