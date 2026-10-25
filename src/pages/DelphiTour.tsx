@@ -82,6 +82,8 @@ const DelphiTour = () => {
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="canonical" href={url} />
+        <link rel="alternate" hrefLang="en" href={url} />
+        <link rel="alternate" hrefLang="x-default" href={url} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={url} />

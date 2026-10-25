@@ -66,6 +66,8 @@ const BlogPost = () => {
         <title>{post.metaTitle}</title>
         <meta name="description" content={post.metaDescription} />
         <link rel="canonical" href={url} />
+        <link rel="alternate" hrefLang="en" href={url} />
+        <link rel="alternate" hrefLang="x-default" href={url} />
         <meta property="og:title" content={post.metaTitle} />
         <meta property="og:description" content={post.metaDescription} />
         <meta property="og:url" content={url} />

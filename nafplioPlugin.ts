@@ -23,7 +23,7 @@ export function renderNafplio() {
   return `<!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${esc(post.metaTitle)}</title><meta name="description" content="${esc(post.metaDescription)}"><meta name="keywords" content="${esc(post.keywords)}">
-<link rel="canonical" href="${canonical}"><meta property="og:title" content="${esc(post.metaTitle)}"><meta property="og:description" content="${esc(post.metaDescription)}"><meta property="og:type" content="article"><meta property="og:url" content="${canonical}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(post.metaTitle)}"><meta name="twitter:description" content="${esc(post.metaDescription)}">
+<link rel="canonical" href="${canonical}"><link rel="alternate" hreflang="en" href="${canonical}"><link rel="alternate" hreflang="x-default" href="${canonical}"><meta property="og:title" content="${esc(post.metaTitle)}"><meta property="og:description" content="${esc(post.metaDescription)}"><meta property="og:type" content="article"><meta property="og:url" content="${canonical}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(post.metaTitle)}"><meta name="twitter:description" content="${esc(post.metaDescription)}">
 <link rel="preconnect" href="https://van-move-boost.lovable.app" crossorigin><link rel="preload" as="image" href="${post.image}" type="image/webp" fetchpriority="high">
 <style>
 :root {${root}}
