@@ -1,10 +1,17 @@
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers":
-    "authorization, x-client-info, apikey, content-type, x-supabase-client-platform, x-supabase-client-platform-version, x-supabase-client-runtime, x-supabase-client-runtime-version",
-};
+import { corsHeaders } from "npm:@supabase/supabase-js@2/cors";
+import { createClient } from "npm:@supabase/supabase-js@2";
+import { createOpenAI } from "npm:@ai-sdk/openai";
+import { streamText, type ModelMessage } from "npm:ai";
+import { createLovableAiGatewayRunIdFetch, getLovableAiGatewayRunId } from "./run-id.ts";
+
+const GATEWAY_URL = "https://ai.gateway.lovable.dev/v1";
+const MODEL = "openai/gpt-6-astra";
+const RATE_LIMIT = 5; // requests per IP per hour
+const RATE_WINDOW_MS = 60 * 60 * 1000;
 
 const SYSTEM_PROMPT = `You are the friendly AI concierge for H&A VIP Tours, a luxury private transfer company in Athens, Greece.
+
+SCOPE: Answer ONLY questions about H&A VIP Tours services, prices, vehicles, booking, payment, and the travel content published on haviptransfers.gr (airport/port transfers, private tours, child seats, wedding and party transfers, travel guides). If the visitor asks about anything unrelated, politely decline and steer back to transfers and tours.
 
 COMPANY INFO:
 - Vehicle: Mercedes V Class / Vito (up to 7-8 passengers, leather seats, Wi-Fi, water, child seats on request)
@@ -33,97 +40,103 @@ LANGUAGE: Always reply in the SAME language the user writes in (Greek, English, 
 
 STYLE: Warm, concise, professional. Use short paragraphs. Use emojis sparingly (✈️ 🚗 ⚓ 🏛️). Never invent prices or services not listed above. If the user wants to book, gently collect: pickup location, drop-off, date, time, number of passengers, name, contact — then tell them they can confirm via the booking form, WhatsApp, or email.`;
 
+const jsonError = (status: number, message: string) =>
+  new Response(JSON.stringify({ error: message }), {
+    status,
+    headers: { ...corsHeaders, "Content-Type": "application/json" },
+  });
+
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") {
     return new Response("ok", { headers: corsHeaders });
   }
 
   try {
-    const ANTHROPIC_API_KEY = Deno.env.get("ANTHROPIC_API_KEY");
-    if (!ANTHROPIC_API_KEY) throw new Error("ANTHROPIC_API_KEY not configured");
+    const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
+    if (!LOVABLE_API_KEY) throw new Error("LOVABLE_API_KEY not configured");
 
+    // --- Rate limit: 5 requests per IP per hour ---
+    const ip =
+      req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+      req.headers.get("cf-connecting-ip") ||
+      "unknown";
+    const supabase = createClient(
+      Deno.env.get("SUPABASE_URL")!,
+      Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!,
+    );
+    const since = new Date(Date.now() - RATE_WINDOW_MS).toISOString();
+    const { count, error: countError } = await supabase
+      .from("chat_rate_limits")
+      .select("id", { count: "exact", head: true })
+      .eq("ip", ip)
+      .gte("created_at", since);
+    if (countError) console.error("rate limit check failed:", countError.message);
+    if ((count ?? 0) >= RATE_LIMIT) {
+      return jsonError(429, "Too many questions — please try again in a little while, or message us on WhatsApp at +30 694 939 3700.");
+    }
+    const { error: insertError } = await supabase.from("chat_rate_limits").insert({ ip });
+    if (insertError) console.error("rate limit insert failed:", insertError.message);
+
+    // --- Validate input ---
     const { messages } = await req.json();
     if (!Array.isArray(messages)) {
-      return new Response(JSON.stringify({ error: "messages must be an array" }), {
-        status: 400,
-        headers: { ...corsHeaders, "Content-Type": "application/json" },
-      });
+      return jsonError(400, "messages must be an array");
+    }
+    const history: ModelMessage[] = messages
+      .filter((m: { role?: string; content?: unknown }) => typeof m?.content === "string")
+      .map((m: { role: string; content: string }) => ({
+        role: m.role === "assistant" ? ("assistant" as const) : ("user" as const),
+        content: m.content.slice(0, 4000),
+      }))
+      .slice(-20);
+    if (history.length === 0) {
+      return jsonError(400, "messages must not be empty");
     }
 
-    const response = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: {
-        "x-api-key": ANTHROPIC_API_KEY,
-        "anthropic-version": "2023-06-01",
-        "content-type": "application/json",
-      },
-      body: JSON.stringify({
-        model: "claude-sonnet-4-6",
-        max_tokens: 1024,
-        system: SYSTEM_PROMPT,
-        stream: true,
-        messages: messages.map((m: { role: string; content: string }) => ({
-          role: m.role === "assistant" ? "assistant" : "user",
-          content: m.content,
-        })),
-      }),
+    // --- Stream from the Lovable AI Gateway ---
+    const runIdFetch = createLovableAiGatewayRunIdFetch(getLovableAiGatewayRunId(req));
+    const provider = createOpenAI({
+      baseURL: GATEWAY_URL,
+      apiKey: LOVABLE_API_KEY,
+      headers: { "Lovable-API-Key": LOVABLE_API_KEY, "X-Lovable-AIG-SDK": "vercel-ai-sdk" },
+      fetch: runIdFetch.fetch,
     });
 
-    if (!response.ok) {
-      const errText = await response.text();
-      console.error("Anthropic error:", response.status, errText);
-      if (response.status === 429) {
-        return new Response(JSON.stringify({ error: "Rate limited, please try again." }), {
-          status: 429,
-          headers: { ...corsHeaders, "Content-Type": "application/json" },
-        });
-      }
-      return new Response(JSON.stringify({ error: "AI service error" }), {
-        status: 500,
-        headers: { ...corsHeaders, "Content-Type": "application/json" },
-      });
-    }
+    const result = streamText({
+      model: provider.responses(MODEL),
+      instructions: SYSTEM_PROMPT,
+      messages: history,
+      abortSignal: req.signal,
+      providerOptions: {
+        openai: {
+          store: false,
+          forceReasoning: true,
+          reasoningEffort: "low",
+          reasoningSummary: "auto",
+          include: ["reasoning.encrypted_content"],
+        },
+      },
+    });
 
-    // Convert Anthropic SSE → OpenAI-style SSE so the client parser stays generic
+    // Re-emit as the OpenAI-style SSE the chat client already parses.
+    const encoder = new TextEncoder();
     const stream = new ReadableStream({
       async start(controller) {
-        const reader = response.body!.getReader();
-        const decoder = new TextDecoder();
-        const encoder = new TextEncoder();
-        let buffer = "";
-
         try {
-          while (true) {
-            const { done, value } = await reader.read();
-            if (done) break;
-            buffer += decoder.decode(value, { stream: true });
-            let nl: number;
-            while ((nl = buffer.indexOf("\n")) !== -1) {
-              const line = buffer.slice(0, nl).replace(/\r$/, "");
-              buffer = buffer.slice(nl + 1);
-              if (!line.startsWith("data: ")) continue;
-              const data = line.slice(6).trim();
-              if (!data) continue;
-              try {
-                const evt = JSON.parse(data);
-                if (evt.type === "content_block_delta" && evt.delta?.type === "text_delta") {
-                  const out = {
-                    choices: [{ delta: { content: evt.delta.text } }],
-                  };
-                  controller.enqueue(encoder.encode(`data: ${JSON.stringify(out)}\n\n`));
-                } else if (evt.type === "message_stop") {
-                  controller.enqueue(encoder.encode(`data: [DONE]\n\n`));
-                }
-              } catch {
-                // ignore unparseable
-              }
-            }
+          for await (const delta of result.textStream) {
+            controller.enqueue(
+              encoder.encode(`data: ${JSON.stringify({ choices: [{ delta: { content: delta } }] })}\n\n`),
+            );
           }
+          controller.enqueue(encoder.encode("data: [DONE]\n\n"));
         } catch (e) {
-          console.error("stream error:", e);
+          console.error("gateway stream error:", e);
         } finally {
           controller.close();
         }
+      },
+      cancel() {
+        req.signal.aborted || result.consumeStream().catch(() => {});
       },
     });
 
@@ -132,9 +145,6 @@ Deno.serve(async (req) => {
     });
   } catch (e) {
     console.error("chat error:", e);
-    return new Response(JSON.stringify({ error: e instanceof Error ? e.message : "Unknown" }), {
-      status: 500,
-      headers: { ...corsHeaders, "Content-Type": "application/json" },
-    });
+    return jsonError(500, e instanceof Error ? e.message : "Unknown error");
   }
 });
