@@ -7,6 +7,17 @@ on:
   workflow_dispatch:
 
 jobs:
+  workflow-lint:
+    name: Workflow syntax & configuration check
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+
+      - name: Lint workflow files with actionlint
+        uses: docker://rhysd/actionlint:1.7.12
+        with:
+          args: -color
+
   checks:
     runs-on: ubuntu-24.04
     steps:

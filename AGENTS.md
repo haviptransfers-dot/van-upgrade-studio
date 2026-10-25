@@ -16,3 +16,4 @@
 - Share Service and TouristTrip data across transfer/tour pages, using existing base prices and attaching the business rating only to its Organization provider; never invent review counts or individual tour ratings.
 - Track rate-limit quote clicks only from the lazy chat through existing Google Analytics after checking current analytics consent; exclude personal data and URL/referrer details, never load trackers or delay WhatsApp navigation for measurement.
 - Run GitHub checks and deployment smoke jobs on Ubuntu 24.04 with Node.js 24 and Node-24-compatible checkout/setup actions; keep runtime upgrades separate from check logic.
+- Lint every workflow file with a pinned actionlint image in its own fast CI job before the site checks and smoke test run, so Actions syntax, action-input and shell-script configuration errors surface before deployment instead of as failed runs.
