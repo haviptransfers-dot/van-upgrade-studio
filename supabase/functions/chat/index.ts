@@ -66,14 +66,20 @@ Deno.serve(async (req) => {
     );
     // Atomic check-and-record in one database call: an advisory lock per IP
     // serializes concurrent requests, so the limit holds across instances.
-    const { data: allowed, error: rateError } = await supabase.rpc("check_chat_rate_limit", {
+    const { data: rateResult, error: rateError } = await supabase.rpc("check_chat_rate_limit", {
       p_ip: ip,
       p_limit: RATE_LIMIT,
       p_window_ms: RATE_WINDOW_MS,
     });
     if (rateError) console.error("rate limit check failed:", rateError.message);
-    if (allowed === false) {
-      return jsonError(429, "Too many questions — please try again in a little while, or message us on WhatsApp at +30 694 939 3700.");
+    if (rateResult?.allowed === false) {
+      return new Response(
+        JSON.stringify({
+          error: "Too many questions — please try again in a little while, or message us on WhatsApp at +30 694 939 3700.",
+          retryAfterSeconds: rateResult.retry_after_seconds ?? Math.ceil(RATE_WINDOW_MS / 1000),
+        }),
+        { status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" } },
+      );
     }
 
     // --- Validate input ---
