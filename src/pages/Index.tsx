@@ -18,6 +18,7 @@ import tourDelphi from "@/assets/tour-delphi.webp";
 import tourNafplio from "@/assets/tour-nafplio.webp";
 import heroSunsetCar from "@/assets/hero-sunset-car.webp";
 import fleetTrio from "@/assets/fleet-trio.webp";
+import vanAcropolisChauffeur from "@/assets/van-acropolis-chauffeur.jpg.asset.json";
 
 const AnimatedBackground = lazy(() => import("@/components/AnimatedBackground"));
 const HomeSections = lazy(() => import("@/components/HomeSections"));
@@ -26,6 +27,7 @@ const ExploreToursMenu = lazy(() => import("@/components/ExploreToursMenu"));
 
 const heroCycleImages = [
   heroSunsetCar,
+  `https://van-move-boost.lovable.app${vanAcropolisChauffeur.url}`,
   tourAcropolis,
   tourSounio,
   fleetTrio,
