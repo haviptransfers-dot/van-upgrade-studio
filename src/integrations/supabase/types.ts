@@ -117,7 +117,7 @@ export type Database = {
     Functions: {
       check_chat_rate_limit: {
         Args: { p_ip: string; p_limit: number; p_window_ms: number }
-        Returns: boolean
+        Returns: Json
       }
     }
     Enums: {
