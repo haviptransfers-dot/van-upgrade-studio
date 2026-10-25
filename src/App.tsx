@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect, useState, type ComponentType } from "react";
 import Index from "./pages/Index.tsx";
 import { seoRoutes } from "./seoRoutes.ts";
 const NotFound = lazy(() => import("./pages/NotFound"));
@@ -12,6 +12,19 @@ const NafplioTour = lazy(() => import("./pages/NafplioTour"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
 const About = lazy(() => import("./pages/About"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+
+// Loads the cookie banner only when the browser is idle — never blocks first paint.
+const LazyCookieConsent = () => {
+  const [Banner, setBanner] = useState<ComponentType | null>(null);
+  useEffect(() => {
+    const load = () => import("./components/CookieConsent").then((m) => setBanner(() => m.default));
+    const w = window as Window & { requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => void };
+    if (w.requestIdleCallback) w.requestIdleCallback(load, { timeout: 4000 });
+    else window.setTimeout(load, 2500);
+  }, []);
+  return Banner ? <Banner /> : null;
+};
 
 
 const App = () => (
