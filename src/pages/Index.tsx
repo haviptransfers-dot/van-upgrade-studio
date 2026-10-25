@@ -1,15 +1,9 @@
 import { lazy, Suspense, useEffect, useLayoutEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Phone, ChevronDown, MessageCircle, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import TrustBadge from "@/components/TrustBadge";
 import OptimizedImage from "@/components/OptimizedImage";
@@ -28,6 +22,7 @@ import fleetTrio from "@/assets/fleet-trio.webp";
 const AnimatedBackground = lazy(() => import("@/components/AnimatedBackground"));
 const HomeSections = lazy(() => import("@/components/HomeSections"));
 const HeroSlideshow = lazy(() => import("@/components/HeroSlideshow"));
+const ExploreToursMenu = lazy(() => import("@/components/ExploreToursMenu"));
 
 const heroCycleImages = [
   heroSunsetCar,
@@ -47,15 +42,16 @@ interface IndexProps {
 
 const Index = ({ routeKey }: IndexProps) => {
   const { t } = useTranslation();
-  const navigate = useNavigate();
   const whatsappUrl = "https://wa.me/306949393700";
+  const [toursMenuReady, setToursMenuReady] = useState(false);
+  const [heroPainted, setHeroPainted] = useState(false);
   useLayoutEffect(() => {
+    if (!heroPainted) return;
     document.getElementById("first-screen")?.remove();
     document.body.classList.remove("first-paint");
-  }, []);
+  }, [heroPainted]);
 
   const [heroCycleIndex, setHeroCycleIndex] = useState(0);
-  const [heroPainted, setHeroPainted] = useState(false);
   const whatsappReady = useAfterFirstPaint(heroPainted);
   const [backgroundReady, setBackgroundReady] = useState(false);
   useEffect(() => {
@@ -205,25 +201,9 @@ const Index = ({ routeKey }: IndexProps) => {
                 {t("hero.call")}
               </Button>
             </a>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button size="lg" variant="outline" className="text-base px-8 gap-2 border-primary/30 text-primary hover:bg-primary/10">
-                  <ChevronDown className="w-5 h-5" />
-                  {t("hero.exploreTours")}
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="center" className="bg-card border-border min-w-[220px]">
-                {tourLinks.map((tour) => (
-                  <DropdownMenuItem
-                    key={tour.path}
-                    onClick={() => navigate(tour.path)}
-                    className="cursor-pointer text-foreground hover:text-primary focus:text-primary"
-                  >
-                    {t(tour.labelKey)}
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
+            {toursMenuReady ? <Suspense fallback={<Button size="lg" variant="outline" disabled className="text-base px-8 gap-2 border-primary/30 text-primary"><ChevronDown className="w-5 h-5" />{t("hero.exploreTours")}</Button>}>
+              <ExploreToursMenu label={t("hero.exploreTours")} tours={tourLinks.map((tour) => ({ path: tour.path, label: t(tour.labelKey) }))} />
+            </Suspense> : <Button size="lg" variant="outline" onClick={() => setToursMenuReady(true)} className="text-base px-8 gap-2 border-primary/30 text-primary hover:bg-primary/10"><ChevronDown className="w-5 h-5" />{t("hero.exploreTours")}</Button>}
           </div>
           <div
             className="mt-6 flex justify-center"
