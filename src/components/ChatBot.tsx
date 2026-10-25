@@ -170,6 +170,15 @@ const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
 
   const finishBooking = () => {
     setShowBooking(false);
+    captureLead({
+      type: "booking_attempt",
+      route: `${booking.service || "Transfer"}: ${booking.pickup || "?"} → ${booking.dropoff || "?"}`,
+      travelDate: booking.date || undefined,
+      passengers: booking.pax || undefined,
+      contactName: booking.name || undefined,
+      contactEmail: booking.email || undefined,
+      contactPhone: booking.phone || undefined,
+    });
     setMessages((prev) => [
       ...prev,
       {
