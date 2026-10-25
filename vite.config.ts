@@ -6,6 +6,8 @@ import { rssPlugin } from "./rssPlugin";
 import { nafplioPlugin } from "./nafplioPlugin";
 import { readFileSync } from "node:fs";
 import { nonCriticalScheduler } from "./src/lib/non-critical-scheduler";
+import { sitemapPlugin } from "./sitemapPlugin";
+import { organization } from "./src/data/structuredData";
 
 function performanceHtml() {
   return {
@@ -26,6 +28,7 @@ function performanceHtml() {
         .replaceAll("__HERO_SRCSET__", srcset).replaceAll("__HERO_SRC__", hosted(hero.url))
         .replace('class="absolute inset-0 w-full h-full object-cover"', 'class="absolute inset-0 w-full h-full object-cover hero-base-zoom"');
       return html
+        .replace("<!-- Structured data: LocalBusiness / TravelAgency -->", `<script id="organization-structured-data" type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", ...organization })}</script><!-- Structured data: LocalBusiness / TravelAgency -->`)
         .replaceAll("setTimeout(function () {", "window.scheduleNonCritical(function () {")
         .replaceAll("}, 3000);", "});")
         .replace("<!-- Google Preferred Sources button script -->", `<script>${nonCriticalScheduler}</script><!-- Google Preferred Sources button script -->`)
@@ -50,7 +53,7 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
-  plugins: [react(), rssPlugin(), nafplioPlugin(), performanceHtml(), mode === "development" && componentTagger()].filter(Boolean),
+  plugins: [react(), rssPlugin(), sitemapPlugin(), nafplioPlugin(), performanceHtml(), mode === "development" && componentTagger()].filter(Boolean),
   build: {
     minify: "esbuild",
     cssMinify: true,

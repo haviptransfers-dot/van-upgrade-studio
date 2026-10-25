@@ -1,4 +1,5 @@
 import OptimizedImage from "@/components/OptimizedImage";
+import ServiceStructuredData from "@/components/ServiceStructuredData";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
@@ -75,6 +76,7 @@ const DelphiTour = () => {
 
   return (
     <>
+      <ServiceStructuredData path="/delphi-private-tour" />
       <Helmet>
         <html lang={i18n.language} />
         <title>{title}</title>
