@@ -1,0 +1,100 @@
+// Post-deployment smoke test against the live site.
+// Usage: node scripts/smoke-test.mjs [baseUrl]   (default https://haviptransfers.gr)
+//
+// Checks, with retries to tolerate deploy propagation:
+//   1. sitemap.xml — 200, valid urlset XML, contains every public page and blog article
+//   2. robots.txt — references Sitemap: <base>/sitemap.xml
+//   3. structured data — every public page serves parseable JSON-LD including Organization
+//
+// Service/TouristTrip schemas are client-rendered; their content is validated
+// per page by src/test/structured-data.test.ts in the CI test suite.
+
+import { readFileSync } from "node:fs";
+
+const BASE = (process.argv[2] || "https://haviptransfers.gr").replace(/\/$/, "");
+const RETRIES = 3;
+const RETRY_DELAY_MS = 5000;
+
+const seoPaths = [...readFileSync("src/seoRoutes.ts", "utf8").matchAll(/path:\s*"([^"]+)"/g)].map((m) => m[1]);
+const blogSlugs = [
+  ...(readFileSync("src/data/blogPosts.ts", "utf8") + readFileSync("src/data/nafplio.ts", "utf8")).matchAll(
+    /slug:\s*"([^"]+)"/g,
+  ),
+].map((m) => m[1]);
+
+const publicPaths = ["/", ...seoPaths, "/about", "/blog", "/privacy-policy", ...blogSlugs.map((s) => `/blog/${s}`)];
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function fetchWithRetry(url) {
+  let lastError;
+  for (let attempt = 1; attempt <= RETRIES; attempt++) {
+    try {
+      const resp = await fetch(url, { redirect: "follow", signal: AbortSignal.timeout(15000) });
+      if (resp.ok) return await resp.text();
+      lastError = new Error(`HTTP ${resp.status}`);
+    } catch (e) {
+      lastError = e;
+    }
+    if (attempt < RETRIES) await sleep(RETRY_DELAY_MS);
+  }
+  throw lastError;
+}
+
+const failures = [];
+const check = (ok, label) => {
+  console.log(`${ok ? "PASS" : "FAIL"}  ${label}`);
+  if (!ok) failures.push(label);
+};
+
+// --- 1. sitemap.xml ---
+try {
+  const sitemap = await fetchWithRetry(`${BASE}/sitemap.xml`);
+  check(sitemap.includes('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'), "sitemap.xml is a valid urlset");
+  const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+  const missing = publicPaths.filter((p) => !locs.includes(`${BASE}${p}`));
+  check(missing.length === 0, `sitemap.xml lists all ${publicPaths.length} public pages${missing.length ? ` — missing: ${missing.join(", ")}` : ""}`);
+  check(locs.every((l) => l.startsWith(`${BASE}/`)), "sitemap.xml uses only the production domain");
+} catch (e) {
+  check(false, `sitemap.xml reachable (${e.message})`);
+}
+
+// --- 2. robots.txt ---
+try {
+  const robots = await fetchWithRetry(`${BASE}/robots.txt`);
+  check(robots.includes(`Sitemap: ${BASE}/sitemap.xml`), "robots.txt references the sitemap");
+} catch (e) {
+  check(false, `robots.txt reachable (${e.message})`);
+}
+
+// --- 3. structured data on every public page ---
+for (const path of publicPaths) {
+  try {
+    const html = await fetchWithRetry(`${BASE}${path}`);
+    const blocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => m[1]);
+    if (blocks.length === 0) {
+      check(false, `${path} serves JSON-LD`);
+      continue;
+    }
+    let parsed;
+    try {
+      parsed = blocks.map((b) => JSON.parse(b));
+    } catch {
+      check(false, `${path} JSON-LD parses`);
+      continue;
+    }
+    const hasOrganization = parsed.some((b) => {
+      const types = [b?.["@type"] ?? []].flat();
+      return types.includes("Organization") || types.includes("TravelAgency") || types.includes("LocalBusiness");
+    });
+    check(hasOrganization, `${path} serves valid Organization structured data`);
+  } catch (e) {
+    check(false, `${path} reachable (${e.message})`);
+  }
+}
+
+console.log(filenamesummary());
+function filenamesummary() {
+  return failures.length ? `\n${failures.length} smoke check(s) FAILED` : "\nAll smoke checks passed";
+}
+if (failures.length) process.exit(1);
