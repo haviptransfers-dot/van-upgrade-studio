@@ -65,19 +65,19 @@ export default function HomeSections() {
 
   return <>
       {/* Services */}
-      <section id="services" className="relative py-16 md:py-24 px-4 overflow-hidden bg-card/70 backdrop-blur-sm">
+      <section id="services" className="home-services relative py-16 md:py-24 px-4 overflow-hidden bg-card/70 backdrop-blur-sm">
         <DeferredBackground src={bgServices} className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-10" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background/40" aria-hidden="true" />
         <div className="container mx-auto max-w-6xl relative z-10">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-12 md:mb-16">
-            <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-xs md:text-sm mb-3">{t("services.eyebrow")}</motion.p>
+            <motion.p variants={fadeUp} custom={0} className="text-muted-foreground text-xs md:text-sm mb-3">{t("services.eyebrow")}</motion.p>
             <motion.h2 variants={fadeUp} custom={1} className="font-display text-3xl md:text-5xl font-bold">{t("services.title")}</motion.h2>
           </motion.div>
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
             {services.map((s, i) => (
-              <motion.div key={s.title} variants={fadeUp} custom={i} className="bg-card border border-border rounded-lg p-6 md:p-8 text-center hover:border-primary/40 transition-colors group">
-                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-5 group-hover:bg-primary/20 transition-colors">
-                  <s.icon className="w-6 h-6 text-primary" />
+              <motion.div key={s.title} variants={fadeUp} custom={i} className="home-service-item bg-card border border-border rounded-lg p-6 md:p-8 text-center hover:border-primary/40 transition-colors group">
+                <div className="home-service-icon w-14 h-14 flex items-center justify-center mx-auto mb-5 transition-colors">
+                  <s.icon className="w-6 h-6 text-foreground/80" />
                 </div>
                 <h3 className="font-display text-lg font-semibold mb-2">{s.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
@@ -99,7 +99,7 @@ export default function HomeSections() {
               <OptimizedImage src={interiorImg} alt="Mercedes V Class" className="rounded-lg shadow-2xl" loading="lazy" decoding="async" width={800} height={600} />
             </motion.div>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }}>
-              <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-xs md:text-sm mb-3">{t("fleet.eyebrow")}</motion.p>
+              <motion.p variants={fadeUp} custom={0} className="text-muted-foreground text-xs md:text-sm mb-3">{t("fleet.eyebrow")}</motion.p>
               <motion.h2 variants={fadeUp} custom={1} className="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">{t("fleet.title")}</motion.h2>
               <motion.p variants={fadeUp} custom={2} className="text-muted-foreground leading-relaxed mb-6 text-sm md:text-base">{t("fleet.desc")}</motion.p>
               <motion.ul variants={fadeUp} custom={3} className="space-y-3 text-foreground/80">
@@ -128,7 +128,7 @@ export default function HomeSections() {
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/85 to-background" aria-hidden="true" />
         <div className="container mx-auto max-w-6xl relative z-10">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-12 md:mb-16">
-            <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-xs md:text-sm mb-3">{t("why.eyebrow")}</motion.p>
+            <motion.p variants={fadeUp} custom={0} className="text-muted-foreground text-xs md:text-sm mb-3">{t("why.eyebrow")}</motion.p>
             <motion.h2 variants={fadeUp} custom={1} className="font-display text-3xl md:text-5xl font-bold">{t("why.title")}</motion.h2>
           </motion.div>
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
@@ -146,9 +146,9 @@ export default function HomeSections() {
       </section>
 
       {/* CTA */}
-      <section className="relative py-14 md:py-20 px-4 border-y border-primary/20 overflow-hidden">
+      <section className="relative py-14 md:py-20 px-4 border-y border-border overflow-hidden">
         <DeferredBackground src={bgCta} className="absolute inset-0 bg-cover bg-center md:bg-fixed opacity-25" />
-        <div className="absolute inset-0 bg-primary/10" aria-hidden="true" />
+        <div className="absolute inset-0 bg-background/20" aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background/70" aria-hidden="true" />
         <div className="container mx-auto max-w-3xl text-center relative z-10">
           <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">{t("cta.title")}</h2>
@@ -161,7 +161,7 @@ export default function HomeSections() {
               </Button>
             </a>
             <a href="mailto:h.a.viptransfers@gmail.com">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto text-base px-8 md:px-10 gap-2 border-primary/30 text-primary hover:bg-primary/10">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto text-base px-8 md:px-10 gap-2 border-foreground/20 text-foreground hover:bg-foreground/10">
                 <Mail className="w-5 h-5" />
                 {t("cta.email")}
               </Button>
@@ -179,7 +179,7 @@ export default function HomeSections() {
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/85 to-background" aria-hidden="true" />
         <div className="container mx-auto max-w-4xl relative z-10">
           <div className="text-center mb-10 md:mb-12">
-            <p className="text-primary uppercase tracking-[0.2em] text-xs md:text-sm mb-3">{t("contact.eyebrow")}</p>
+            <p className="text-muted-foreground text-xs md:text-sm mb-3">{t("contact.eyebrow")}</p>
             <h2 className="font-display text-3xl md:text-5xl font-bold">{t("contact.title")}</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
@@ -286,7 +286,7 @@ export default function HomeSections() {
                   <a href={c.href} className="block font-medium text-foreground text-sm break-all hover:text-primary transition-colors">{c.value}</a>
                   <div className="mt-3 flex flex-wrap justify-center gap-2">
                     {c.links.map((l) => (
-                      <a key={l.href} href={l.href} className="text-xs px-3 py-1 rounded-full border border-primary/30 text-primary hover:bg-primary/10 transition-colors">{l.label}</a>
+                      <a key={l.href} href={l.href} className="text-xs px-3 py-1 rounded-full border border-foreground/20 text-foreground hover:bg-foreground/10 transition-colors">{l.label}</a>
                     ))}
                   </div>
                 </div>

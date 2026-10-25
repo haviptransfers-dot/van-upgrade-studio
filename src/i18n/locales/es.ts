@@ -10,11 +10,11 @@ export default {
   },
   hero: {
 
-    eyebrow: "Transfers Privados Premium",
+    eyebrow: "Traslados privados en Atenas",
     title1: "Transfers de Lujo",
     title2: "en Atenas",
     subtitle: "Vive Grecia con estilo en nuestro Mercedes Clase V. Traslados al aeropuerto, recogidas en puerto, tours privados y transporte VIP.",
-    whatsapp: "Reservar por WhatsApp",
+    whatsapp: "Presupuesto por WhatsApp",
     call: "Llámanos",
     exploreTours: "Descubra Nuestros Tours",
   },

@@ -10,11 +10,11 @@ export default {
   },
   hero: {
 
-    eyebrow: "Premium Private Transfers",
+    eyebrow: "Private transfers in Athens",
     title1: "Luxury Transfers",
     title2: "in Athens",
     subtitle: "Experience Greece in style with our Mercedes V Class. Airport transfers, port pickups, private tours & VIP transportation.",
-    whatsapp: "WhatsApp Booking",
+    whatsapp: "Get a Quote on WhatsApp",
     call: "Call Us",
     exploreTours: "Explore Our Tours",
   },

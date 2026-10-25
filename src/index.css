@@ -90,3 +90,61 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Shared visual roles keep the first-paint snapshot and homepage aligned. */
+:root {
+  --hero-shade: linear-gradient(90deg, hsl(var(--background) / .88), hsl(var(--background) / .62) 42%, hsl(var(--background) / .08) 78%), linear-gradient(0deg, hsl(var(--background)), hsl(var(--background) / 0) 24%);
+  --hero-shade-mobile: linear-gradient(0deg, hsl(var(--background)) 2%, hsl(var(--background) / .9) 34%, hsl(var(--background) / .2) 72%, hsl(var(--background) / .24));
+}
+.home-navigation { border-color: hsl(var(--foreground) / .12); }
+.home-navigation p { letter-spacing: 0; text-transform: none; }
+.home-hero { height: calc(100svh - 72px); min-height: 650px; max-height: 960px; padding: 112px 48px 88px; }
+.home-hero-content { width: 100%; max-width: 1280px; margin: 0 auto; }
+.home-hero-title { font-size: 72px; line-height: 1.1; letter-spacing: 0; margin: 16px 0 24px; }
+.home-hero-eyebrow { line-height: 1.5; letter-spacing: 0; }
+.home-hero-description { max-width: 440px; font-size: 16px; line-height: 1.8; margin: 0 0 32px; }
+.home-hero-shade { background: var(--hero-shade); }
+.home-hero-photo { object-position: 60% center; }
+.home-hero-actions { max-width: 530px; align-items: center; gap: 8px 12px; }
+.home-hero-actions > a:first-child { flex-basis: 100%; margin-bottom: 4px; }
+.home-hero-primary { min-height: 52px; height: auto; padding: 12px 24px; white-space: normal; line-height: 1.5; }
+.home-hero-secondary { min-height: 44px; height: auto; padding: 8px 12px; border: 0; background: transparent; color: hsl(var(--foreground)); white-space: normal; line-height: 1.5; }
+.home-hero-secondary:hover { background: hsl(var(--foreground) / .1); color: hsl(var(--foreground)); }
+.home-hero-trust { margin-top: 24px; }
+.home-trust-badge { min-height: 36px; }
+.homepage-visual h2, .homepage-visual h3 { letter-spacing: 0; }
+.homepage-visual h2 { font-weight: 500; line-height: 1.2; }
+.homepage-visual section[id] { scroll-margin-top: 88px; }
+.home-services { padding-top: 36px; }
+.home-service-item { border-color: hsl(var(--foreground) / .13); }
+@media (min-width: 1024px) { .home-navigation > div { gap: 12px; } .home-navigation .gap-8 { gap: 20px; } }
+@media (max-width: 1023px) and (min-width: 768px) {
+ .home-navigation .md\:flex { display: none; }
+ .home-navigation .md\:hidden { display: inline-flex; }
+ .home-navigation #mobile-navigation { display: block; }
+ .home-navigation > div > .md\:block { display: none; }
+}
+@media (max-width: 767px) {
+ .home-hero { height: calc(100svh - 64px); min-height: 650px; max-height: 820px; padding: 80px 24px 56px; align-items: flex-end; }
+ .home-hero-content { max-width: 520px; }
+ .home-hero-title { font-size: 48px; margin: 10px 0 16px; }
+ .home-hero-description { max-width: 440px; font-size: 14px; line-height: 1.7; margin-bottom: 20px; }
+ .home-hero-eyebrow { font-size: 13px; }
+ .home-hero-photo { object-fit: contain; object-position: center top; padding-top: 60px; }
+ .home-hero-shade { background: var(--hero-shade-mobile); }
+ .home-hero-primary { width: 100%; font-size: 14px; min-height: 48px; }
+ .home-hero-actions > a:first-child { width: 100%; }
+ .home-hero-actions { gap: 4px 8px; }
+ .home-hero-secondary { font-size: 13px; padding-left: 0; padding-right: 12px; }
+ .home-hero-trust { margin-top: 12px; }
+ .home-hero-scroll { bottom: 10px; }
+ .home-hero-scroll svg { width: 20px; height: 20px; }
+}
+@media (max-height: 700px) and (min-width: 768px) { .home-hero { min-height: 550px; padding-top: 88px; padding-bottom: 60px; } }
+@media (max-height: 600px) and (max-width: 767px) {
+ .home-hero { min-height: 479px; padding: 72px 24px 24px; }
+ .home-hero-title { font-size: 40px; margin: 8px 0 10px; }
+ .home-hero-description { line-height: 1.5; margin-bottom: 12px; }
+ .home-hero-trust { margin-top: 4px; }
+ .home-hero-scroll { display: none; }
+}

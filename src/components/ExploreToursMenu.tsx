@@ -7,7 +7,7 @@ export default function ExploreToursMenu({ label, tours }: { label: string; tour
   const navigate = useNavigate();
   return <DropdownMenu defaultOpen>
     <DropdownMenuTrigger asChild>
-      <Button size="lg" variant="outline" className="text-base px-8 gap-2 border-primary/30 text-primary hover:bg-primary/10">
+      <Button size="lg" variant="ghost" className="home-hero-secondary text-base gap-2 text-foreground hover:bg-foreground/10">
         <ChevronDown className="w-5 h-5" />{label}
       </Button>
     </DropdownMenuTrigger>
