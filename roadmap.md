@@ -1,5 +1,7 @@
 # Roadmap
 
+- [done] Restricted CI job permissions and configured weekly Dependabot action-update PRs; Node 24, Ubuntu 24.04 and duplicate-run cancellation retained. Actionlint and all 75 tests pass under Node 24.
+
 - [done] Sitemap regeneration works from any working directory without optional env; smoke retries transient outages and marks checks incomplete without hiding permanent/content failures. All 70 tests pass on Node 24; live sitemap/robots/JSON-LD checks pass. Rendered SEO checks await GitHub Chromium (sandbox browser unavailable).
 
 - [done] Both GitHub workflow jobs upgraded to Node.js 24, latest Node-24-compatible actions, and Ubuntu 24.04; checks and notifications preserved. Workflow validation and all 59 tests pass under Node 24; hosted GitHub run awaits next trigger.
