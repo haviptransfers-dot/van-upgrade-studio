@@ -7,6 +7,11 @@ import gallery3 from "@/assets/gallery-3.webp";
 import gallery4 from "@/assets/gallery-4.webp";
 import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
+import airportPickupVan from "@/assets/airport-pickup-van.jpg.asset.json";
+import driverHandshake from "@/assets/driver-handshake-airport.jpg.asset.json";
+import vClassLookCollage from "@/assets/v-class-look-collage.jpg.asset.json";
+
+const ASSET_HOST = "https://van-move-boost.lovable.app";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -24,6 +29,9 @@ const images = [
   { src: gallery4, alt: "H&A Tours van with Athens Acropolis view" },
   { src: gallery5, alt: "Mercedes V Class open sliding door showing cognac leather seats with ambient lighting" },
   { src: gallery6, alt: "Mercedes V Class interior with diamond-stitched black leather seats and blue ambient floor lighting" },
+  { src: `${ASSET_HOST}${airportPickupVan.url}`, alt: "H&A Tours chauffeur opening the Mercedes V Class door for a traveler with luggage at Athens Airport" },
+  { src: `${ASSET_HOST}${driverHandshake.url}`, alt: "H&A Tours driver welcoming a client with a handshake at Athens Airport, Acropolis in the background" },
+  { src: `${ASSET_HOST}${vClassLookCollage.url}`, alt: "H&A Tours Mercedes V Class presentation with exterior, interior and detail views" },
 ];
 
 const Gallery = () => {

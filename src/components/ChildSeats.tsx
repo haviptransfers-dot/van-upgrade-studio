@@ -4,7 +4,7 @@ import { Baby, Car, MessageCircle, ShieldCheck, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 
-import seatIsIsize from "@/assets/child-seat-besafe-isize.jpg.asset.json";
+import vanAthensChildSeat from "@/assets/van-athens-child-seat.jpg.asset.json";
 import seatBesafe360 from "@/assets/child-seat-besafe-360.jpg.asset.json";
 import seatIdrive from "@/assets/child-seat-idrive.jpg.asset.json";
 import seatBooster from "@/assets/child-seat-booster-monza.jpg.asset.json";
@@ -83,8 +83,8 @@ const ChildSeats = () => {
             className="grid grid-cols-3 grid-rows-2 gap-3 h-72 sm:h-96"
           >
             <OptimizedImage
-              src={`${ASSET_HOST}${seatIsIsize.url}`}
-              alt="Certified BeSafe i-Size child seat installed in a Mercedes V Class"
+              src={`${ASSET_HOST}${vanAthensChildSeat.url}`}
+              alt="Mother securing her smiling child in a child seat inside the Mercedes V Class, with the Athens Acropolis in the background"
               loading="lazy"
               decoding="async"
               className="col-span-2 row-span-2 w-full h-full object-cover rounded-lg border border-primary/20 shadow-2xl"
