@@ -14,6 +14,8 @@ vi.mock("react-i18next", () => ({ useTranslation: () => ({ t: (key: string) => k
 vi.mock("@/lib/leadCapture", () => ({ captureLead: vi.fn() }));
 vi.mock("@/components/OptimizedImage", () => ({ default: () => null }));
 
+afterAll(() => vi.unstubAllEnvs());
+
 afterEach(() => {
   cleanup();
   vi.unstubAllGlobals();

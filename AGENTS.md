@@ -13,6 +13,7 @@
 - Deliver speed-critical Blog articles as build-generated static HTML through a Vite plugin with matching development middleware; this avoids React bootstrap while keeping Blog and RSS metadata shared.
 - Keep AI discovery documents as static public files, not React routes; Lovable serves them before SPA fallback, while the existing Netlify deployment needs discovery exclusions before its wildcard redirect.
 - Generate the sitemap from explicit public routes and the existing blog catalog at build time and in development; omit lastmod without an authoritative content-change timestamp.
+- Share filesystem-relative public-page discovery between CI sitemap regeneration and smoke checks; retry transient network/HTTP availability failures and mark exhausted checks incomplete, while failing permanent HTTP/content/SEO errors. Optional reporting environment variables must not be required.
 - Share Service and TouristTrip data across transfer/tour pages, using existing base prices and attaching the business rating only to its Organization provider; never invent review counts or individual tour ratings.
 - Track rate-limit quote clicks only from the lazy chat through existing Google Analytics after checking current analytics consent; exclude personal data and URL/referrer details, never load trackers or delay WhatsApp navigation for measurement.
 - Run GitHub checks and deployment smoke jobs on Ubuntu 24.04 with Node.js 24 and Node-24-compatible checkout/setup actions; keep runtime upgrades separate from check logic.
