@@ -21,6 +21,8 @@ const Blog = () => {
         <title>{t("blog.metaTitle")}</title>
         <meta name="description" content={t("blog.metaDescription")} />
         <link rel="canonical" href={`${SITE_URL}/blog`} />
+        <link rel="alternate" hrefLang="en" href={`${SITE_URL}/blog`} />
+        <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}/blog`} />
         <meta property="og:title" content={t("blog.metaTitle")} />
         <meta property="og:description" content={t("blog.metaDescription")} />
         <meta property="og:url" content={`${SITE_URL}/blog`} />
