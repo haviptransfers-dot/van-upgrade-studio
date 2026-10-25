@@ -171,6 +171,9 @@ export default {
     bookingCancel: "Abbrechen",
     paymentInfo: "💳 Zahlungsoptionen: bar an den Fahrer (EUR), Karte an den Fahrer per mobilem POS (Visa/Mastercard) oder Banküberweisung im Voraus auf Anfrage. Keine Anzahlung für Standardtransfers.",
     error: "Entschuldigung, etwas ist schiefgegangen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns über WhatsApp.",
+    rateLimited: "Sie haben das Limit erreicht — Sie können in {{time}} wieder fragen, oder jetzt per WhatsApp ein sofortiges Angebot erhalten.",
+    rateLimitedDone: "Sie können jetzt wieder fragen — oder per WhatsApp ein sofortiges Angebot erhalten.",
+    whatsappCta: "Auf WhatsApp chatten",
   },
   faq: {
     eyebrow: "Häufige Fragen",

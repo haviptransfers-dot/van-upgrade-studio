@@ -7,10 +7,39 @@ import { Button } from "@/components/ui/button";
 import { captureLead } from "@/lib/leadCapture";
 import vanIcon from "@/assets/fleet-vito.webp";
 
-type Msg = { role: "user" | "assistant"; content: string };
+type Msg = { role: "user" | "assistant"; content: string; rateLimitRetry?: number };
 
 const CHAT_URL = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/chat`;
 const PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
+const WHATSAPP_URL = "https://wa.me/306949393700";
+
+// Shown when the chat rate limit (5 questions/hour) is reached: live countdown
+// until the next question is allowed, plus a WhatsApp shortcut for instant help.
+const RateLimitBubble = ({ retryAfter }: { retryAfter: number }) => {
+  const { t } = useTranslation();
+  const [left, setLeft] = useState(retryAfter);
+  useEffect(() => {
+    if (left <= 0) return;
+    const id = setInterval(() => setLeft((s) => Math.max(0, s - 1)), 1000);
+    return () => clearInterval(id);
+  }, [left]);
+  return (
+    <span className="block">
+      <span className="block">
+        {left > 0 ? t("chat.rateLimited", { time: formatCountdown(left) }) : t("chat.rateLimitedDone")}
+      </span>
+      <a
+        href={WHATSAPP_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
+      >
+        <MessageCircle className="w-3.5 h-3.5" />
+        {t("chat.whatsappCta")}
+      </a>
+    </span>
+  );
+};
 
 const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
   const { t, i18n } = useTranslation();
@@ -88,6 +117,20 @@ const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
         },
         body: JSON.stringify({ messages: apiMessages }),
       });
+
+      if (resp.status === 429) {
+        let retryAfter = 3600;
+        try {
+          const body = await resp.json();
+          if (typeof body?.retryAfterSeconds === "number" && body.retryAfterSeconds > 0) {
+            retryAfter = Math.ceil(body.retryAfterSeconds);
+          }
+        } catch {
+          /* keep default */
+        }
+        setMessages((prev) => [...prev, { role: "assistant", content: "", rateLimitRetry: retryAfter }]);
+        return;
+      }
 
       if (!resp.ok || !resp.body) throw new Error("stream failed");
 
@@ -378,7 +421,11 @@ const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
                             : "bg-muted text-foreground rounded-bl-sm"
                         }`}
                       >
-                        {m.content || (loading && i === messages.length - 1 ? <Loader2 className="w-4 h-4 animate-spin" /> : "")}
+                        {m.rateLimitRetry != null ? (
+                          <RateLimitBubble retryAfter={m.rateLimitRetry} />
+                        ) : (
+                          m.content || (loading && i === messages.length - 1 ? <Loader2 className="w-4 h-4 animate-spin" /> : "")
+                        )}
                       </div>
                     </div>
                   ))}

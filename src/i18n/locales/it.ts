@@ -171,6 +171,9 @@ export default {
     bookingCancel: "Annulla",
     paymentInfo: "💳 Metodi di pagamento: contanti al conducente (EUR), carta al conducente tramite POS portatile (Visa/Mastercard), o bonifico bancario in anticipo su richiesta. Nessun deposito richiesto per i trasferimenti standard.",
     error: "Spiacente, qualcosa è andato storto. Riprova o contattaci tramite WhatsApp.",
+    rateLimited: "Hai raggiunto il limite — potrai chiedere di nuovo tra {{time}}, oppure continua ora su WhatsApp per un preventivo immediato.",
+    rateLimitedDone: "Ora puoi chiedere di nuovo — oppure continua su WhatsApp per un preventivo immediato.",
+    whatsappCta: "Chatta su WhatsApp",
   },
   faq: {
     eyebrow: "Domande Frequenti",
