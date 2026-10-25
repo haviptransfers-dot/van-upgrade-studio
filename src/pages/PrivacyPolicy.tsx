@@ -34,6 +34,9 @@ const PrivacyPolicy = () => (
   <main className="min-h-screen bg-background text-foreground px-4 py-16 md:py-24">
     <Helmet>
       <title>Privacy Policy | H&A VIP Tours Athens</title>
+      <link rel="canonical" href="https://haviptransfers.gr/privacy-policy" />
+      <link rel="alternate" hrefLang="en" href="https://haviptransfers.gr/privacy-policy" />
+      <link rel="alternate" hrefLang="x-default" href="https://haviptransfers.gr/privacy-policy" />
       <meta
         name="description"
         content="How H&A VIP Tours collects, uses and protects your personal data — cookies, analytics and your GDPR rights."

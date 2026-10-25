@@ -83,6 +83,8 @@ const Index = ({ routeKey }: IndexProps) => {
       {!routeKey && (
         <Helmet>
           <link rel="canonical" href="https://haviptransfers.gr/" />
+          <link rel="alternate" hrefLang="en" href="https://haviptransfers.gr/" />
+          <link rel="alternate" hrefLang="x-default" href="https://haviptransfers.gr/" />
         </Helmet>
       )}
       {backgroundReady && <Suspense fallback={null}><AnimatedBackground /></Suspense>}
