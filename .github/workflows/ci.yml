@@ -1,0 +1,27 @@
+name: Site Checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sitemap & robots.txt — regenerate sitemap if out of date
+        run: node scripts/sync-sitemap.mjs
+
+      - name: Sitemap, robots.txt, structured data & broken links
+        run: npm run test
