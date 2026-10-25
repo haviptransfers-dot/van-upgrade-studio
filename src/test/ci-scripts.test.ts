@@ -1,13 +1,41 @@
 // @vitest-environment node
 import { execFileSync, spawn } from "node:child_process";
 import { createServer } from "node:http";
-import { readFileSync } from "node:fs";
+import { readFileSync, mkdtempSync, mkdirSync, copyFileSync, writeFileSync, rmSync } from "node:fs";
+import { join, dirname } from "node:path";
+import { tmpdir } from "node:os";
 import { describe, expect, it, vi } from "vitest";
 import { generateSitemap, publicPaths, ROOT } from "../../scripts/public-pages.mjs";
 import { fetchWithRetry, hasOrganization, jsonLdBlocks, numericOption, UnavailableError } from "../../scripts/smoke-helpers.mjs";
 import { sitemapXml } from "../../sitemapXml";
+import { smokeSummary } from "../../scripts/smoke-summary.mjs";
 
 describe("CI script regressions", () => {
+  it("automatically repairs an outdated sitemap before npm test", () => {
+    const staging = mkdtempSync(join(tmpdir(), "sitemap-autofix-"));
+    try {
+      for (const path of ["scripts/sync-sitemap.mjs", "scripts/public-pages.mjs", "src/seoRoutes.ts", "src/data/blogPosts.ts", "src/data/nafplio.ts"]) {
+        mkdirSync(dirname(join(staging, path)), { recursive: true });
+        copyFileSync(join(ROOT, path), join(staging, path));
+      }
+      mkdirSync(join(staging, "public"));
+      writeFileSync(join(staging, "public/sitemap.xml"), "outdated sitemap");
+      const pkg = JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8"));
+      expect(pkg.scripts.pretest).toBe("node scripts/sync-sitemap.mjs");
+      execFileSync(process.execPath, [join(staging, "scripts/sync-sitemap.mjs")]);
+      expect(readFileSync(join(staging, "public/sitemap.xml"), "utf8")).toBe(generateSitemap());
+    } finally { rmSync(staging, { recursive: true, force: true }); }
+  });
+
+  it("summarizes passed, failed and skipped outcomes without optional environment variables", () => {
+    const result = { section: "sitemap", label: "valid sitemap" };
+    expect(smokeSummary("https://example.test", [result], [], [])).toContain("## Smoke test PASSED");
+    const failed = smokeSummary("https://example.test", [result], [{ section: "robots.txt", label: "wrong reference" }], []);
+    expect(failed).toContain("## Smoke test FAILED");
+    expect(failed).toContain("| 1 | 1 | 0 |");
+    expect(failed).toContain("[robots.txt] wrong reference");
+    expect(smokeSummary("https://example.test", [], [], [result])).toContain("## Smoke test SKIPPED (incomplete)");
+  });
   it("generates the same production sitemap as the build, including Nafplio", () => {
     const paths = publicPaths();
     const slugs = paths.filter((path: string) => path.startsWith("/blog/")).map((path: string) => path.slice(6));
@@ -60,13 +88,15 @@ describe("CI script regressions", () => {
   });
 
   it("exits successfully with explicit incomplete status during a whole-site outage", async () => {
+    const staging = mkdtempSync(join(tmpdir(), "smoke-summary-"));
+    const summary = join(staging, "summary.md");
     const server = createServer((_req, res) => { res.writeHead(503); res.end("Temporarily unavailable"); });
     await new Promise<void>((resolve) => server.listen(0, "127.0.0.1", resolve));
     try {
       const address = server.address();
       if (!address || typeof address === "string") throw new Error("Test server address missing");
       const child = spawn(process.execPath, [`${ROOT}scripts/smoke-test.mjs`, `http://127.0.0.1:${address.port}`], {
-        cwd: "/tmp", env: { ...process.env, GITHUB_STEP_SUMMARY: "", SMOKE_RETRIES: "1", SMOKE_RETRY_DELAY_MS: "0" },
+        cwd: "/tmp", env: { ...process.env, GITHUB_STEP_SUMMARY: summary, SMOKE_RETRIES: "1", SMOKE_RETRY_DELAY_MS: "0" },
       });
       let output = "";
       child.stdout.on("data", (chunk) => { output += chunk; });
@@ -75,8 +105,14 @@ describe("CI script regressions", () => {
       expect(exit).toBe(0);
       expect(output).toContain("Smoke checks incomplete");
       expect(output).not.toContain("All smoke checks passed");
+      const report = readFileSync(summary, "utf8");
+      expect(report).toContain("## Smoke test SKIPPED (incomplete)");
+      expect(report).toContain("| Passed | Failed | Skipped |");
+      expect(report).toContain("[structured-data]");
+      expect(report).toContain("[seo-head]");
     } finally {
       await new Promise<void>((resolve, reject) => server.close((error) => error ? reject(error) : resolve()));
+      rmSync(staging, { recursive: true, force: true });
     }
   });
 });

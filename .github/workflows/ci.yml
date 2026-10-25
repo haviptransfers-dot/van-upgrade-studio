@@ -6,7 +6,8 @@ on:
     branches: [main]
   workflow_dispatch:
 
-permissions: {}
+permissions:
+  contents: read
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -16,8 +17,6 @@ jobs:
   workflow-lint:
     name: Workflow syntax & configuration check
     runs-on: ubuntu-24.04
-    permissions:
-      contents: read
     steps:
       - uses: actions/checkout@v7.0.1
 
@@ -28,8 +27,6 @@ jobs:
 
   checks:
     runs-on: ubuntu-24.04
-    permissions:
-      contents: read
     steps:
       - uses: actions/checkout@v7.0.1
 

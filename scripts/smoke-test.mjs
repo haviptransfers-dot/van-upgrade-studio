@@ -22,6 +22,7 @@ import { writeFileSync, appendFileSync, rmSync } from "node:fs";
 import { chromium } from "playwright";
 import { SITE, publicPaths as getPublicPaths } from "./public-pages.mjs";
 import { numericOption, fetchWithRetry as fetchRetry, UnavailableError, jsonLdBlocks, hasOrganization } from "./smoke-helpers.mjs";
+import { smokeSummary } from "./smoke-summary.mjs";
 
 const BASE = (process.argv[2] || "https://haviptransfers.gr").replace(/\/$/, "");
 const RETRIES = numericOption(process.env.SMOKE_RETRIES, 3, 1);
@@ -34,6 +35,7 @@ rmSync(reportPath, { force: true });
 
 // Failures are grouped by check area so the alert names exactly what broke.
 const failures = []; // { section, label }
+const passed = [];
 const skipped = [];
 const unavailablePaths = new Set();
 const reachablePaths = new Set();
@@ -48,7 +50,7 @@ const handleError = (error, label, section) => {
 };
 const check = (ok, label, section) => {
   console.log(`${ok ? "PASS" : "FAIL"}  [${section}] ${label}`);
-  if (!ok) failures.push({ section, label });
+  (ok ? passed : failures).push({ section, label });
 };
 
 // --- 1. sitemap.xml ---
@@ -83,7 +85,10 @@ try {
 
 // --- 3. structured data on every public page ---
 for (const path of publicPaths) {
-  if (siteUnavailable) break;
+  if (siteUnavailable) {
+    skipped.push({ section: "structured-data", label: `${path}: site temporarily unavailable` });
+    continue;
+  }
   try {
     const html = await fetchWithRetry(`${BASE}${path}`);
     reachablePaths.add(path);
@@ -107,12 +112,16 @@ let browser;
 try {
   if (siteUnavailable || reachablePaths.size === 0) {
     console.warn("SKIP  [seo-head] Site unavailable; rendered page checks deferred");
+    for (const path of publicPaths) skipped.push({ section: "seo-head", label: `${path}: rendered checks deferred because site is unavailable` });
   } else {
   browser = await chromium.launch({ headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox"] });
   const page = await browser.newPage();
   let homeTitle = "";
   for (const path of publicPaths) {
-    if (unavailablePaths.has(path)) continue;
+    if (unavailablePaths.has(path)) {
+      skipped.push({ section: "seo-head", label: `${path}: rendered checks deferred because page is unavailable` });
+      continue;
+    }
     try {
       let response;
       for (let attempt = 1; attempt <= RETRIES; attempt++) {
@@ -160,42 +169,19 @@ try {
   await browser?.close();
 }
 
-// --- Failure report (drives the GitHub Actions notification) ---
+// Always publish an explicit passed/failed/skipped summary, including successes.
+const report = smokeSummary(BASE, passed, failures, skipped);
+if (process.env.GITHUB_STEP_SUMMARY) {
+  try { appendFileSync(process.env.GITHUB_STEP_SUMMARY, report); }
+  catch (error) { console.warn(`Could not write optional job summary: ${error.message}`); }
+}
 if (failures.length) {
-  const bySection = new Map();
-  for (const f of failures) {
-    if (!bySection.has(f.section)) bySection.set(f.section, []);
-    bySection.get(f.section).push(f);
-  }
-  const lines = [
-    `## Smoke test FAILED — ${new Date().toISOString()}`,
-    ``,
-    `Base URL: ${BASE}`,
-    ``,
-    `${failures.length} check(s) failed in ${bySection.size} area(s): ${[...bySection.keys()].join(", ")}`,
-    ``,
-  ];
-  for (const [section, items] of bySection) {
-    lines.push(`### ${section}`);
-    for (const item of items) lines.push(`- ${item.label}`);
-    lines.push(``);
-  }
-  const report = lines.join("\n");
   writeFileSync(reportPath, report);
-  if (process.env.GITHUB_STEP_SUMMARY) {
-    try { appendFileSync(process.env.GITHUB_STEP_SUMMARY, report); }
-    catch (error) { console.warn(`Could not write optional job summary: ${error.message}`); }
-  }
   console.log(`\n${failures.length} smoke check(s) FAILED — report written to smoke-failures.md`);
   process.exit(1);
 }
 
 if (skipped.length || siteUnavailable) {
-  const report = `## Smoke checks incomplete — temporary availability warning\n\n${skipped.map((item) => `- [${item.section}] ${item.label}`).join("\n")}\n\nUnavailable checks were skipped, not passed. Rerun after the site is reachable.\n`;
-  if (process.env.GITHUB_STEP_SUMMARY) {
-    try { appendFileSync(process.env.GITHUB_STEP_SUMMARY, report); }
-    catch (error) { console.warn(`Could not write optional job summary: ${error.message}`); }
-  }
   console.warn(`\nSmoke checks incomplete: ${skipped.length} temporary availability warning(s); rerun when reachable.`);
 } else {
   console.log("\nAll smoke checks passed");
