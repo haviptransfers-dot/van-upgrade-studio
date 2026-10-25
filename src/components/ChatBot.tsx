@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion } from "framer-motion";
 import { X, Send, Loader2, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { captureLead } from "@/lib/leadCapture";
 import vanIcon from "@/assets/fleet-vito.webp";
 
 type Msg = { role: "user" | "assistant"; content: string };

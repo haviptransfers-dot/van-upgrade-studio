@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { MessageCircle, Minus, Plus, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { captureLead } from "@/lib/leadCapture";
 
 type ServiceKey =
   | "airport_to_athens"
