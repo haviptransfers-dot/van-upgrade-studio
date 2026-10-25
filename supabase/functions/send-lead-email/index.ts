@@ -3,7 +3,9 @@ import { createClient } from "npm:@supabase/supabase-js@2";
 import { z } from "npm:zod@3";
 
 const GATEWAY_URL = "https://connector-gateway.lovable.dev/resend";
-const NOTIFY_EMAIL = "h.a.viptransfers@gmail.com";
+// Resend test mode only delivers to the account owner's exact address.
+// Gmail ignores dots, so this reaches the same h.a.viptransfers@gmail.com inbox.
+const NOTIFY_EMAIL = "haviptransfers@gmail.com";
 // onboarding@resend.dev only delivers to the Resend account owner.
 // To email any address, verify a domain in Resend and change this sender.
 const FROM_EMAIL = "H&A Tours Website <onboarding@resend.dev>";
