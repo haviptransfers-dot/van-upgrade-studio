@@ -149,7 +149,11 @@ try {
 
 // --- Failure report (drives the GitHub Actions notification) ---
 if (failures.length) {
-  const bySection = Map.groupBy(failures, (f) => f.section);
+  const bySection = new Map();
+  for (const f of failures) {
+    if (!bySection.has(f.section)) bySection.set(f.section, []);
+    bySection.get(f.section).push(f);
+  }
   const lines = [
     `## Smoke test FAILED — ${new Date().toISOString()}`,
     ``,
