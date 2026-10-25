@@ -171,6 +171,9 @@ export default {
     bookingCancel: "Cancelar",
     paymentInfo: "💳 Formas de pago: efectivo al conductor (EUR), tarjeta al conductor vía POS portátil (Visa/Mastercard) o transferencia bancaria por adelantado bajo petición. No se requiere depósito para traslados estándar.",
     error: "Lo siento, algo salió mal. Por favor, inténtalo de nuevo o contáctanos por WhatsApp.",
+    rateLimited: "Has alcanzado el límite — puedes volver a preguntar en {{time}}, o continuar ahora por WhatsApp para un presupuesto al instante.",
+    rateLimitedDone: "Ya puedes volver a preguntar — o continúa por WhatsApp para un presupuesto al instante.",
+    whatsappCta: "Chatear por WhatsApp",
   },
   faq: {
     eyebrow: "Preguntas Frecuentes",

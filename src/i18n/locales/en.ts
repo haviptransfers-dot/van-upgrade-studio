@@ -171,6 +171,9 @@ export default {
     bookingCancel: "Cancel",
     paymentInfo: "💳 Payment options: cash to driver (EUR), card to driver via portable POS (Visa/Mastercard), or bank transfer in advance on request. No deposit required for standard transfers.",
     error: "Sorry, something went wrong. Please try again or contact us via WhatsApp.",
+    rateLimited: "You've reached the limit — you can ask again in {{time}}, or continue now on WhatsApp for an instant quote.",
+    rateLimitedDone: "You can ask again now — or continue on WhatsApp for an instant quote.",
+    whatsappCta: "Chat on WhatsApp",
   },
   faq: {
     eyebrow: "Common Questions",

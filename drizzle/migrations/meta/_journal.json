@@ -22,6 +22,13 @@
       "when": 1792919511295,
       "tag": "0002_atomic_chat_rate_limit",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1792920328092,
+      "tag": "0003_chat_rate_limit_retry_after",
+      "breakpoints": true
     }
   ]
 }

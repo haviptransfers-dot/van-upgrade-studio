@@ -171,6 +171,9 @@ export default {
     bookingCancel: "Annuler",
     paymentInfo: "💳 Modes de paiement : espèces au chauffeur (EUR), carte au chauffeur via POS mobile (Visa/Mastercard), ou virement bancaire à l'avance sur demande. Aucun acompte requis pour les transferts standards.",
     error: "Désolé, quelque chose s'est mal passé. Veuillez réessayer ou nous contacter via WhatsApp.",
+    rateLimited: "Vous avez atteint la limite — vous pourrez reposer une question dans {{time}}, ou continuer maintenant sur WhatsApp pour un devis immédiat.",
+    rateLimitedDone: "Vous pouvez à nouveau poser une question — ou continuer sur WhatsApp pour un devis immédiat.",
+    whatsappCta: "Discuter sur WhatsApp",
   },
   faq: {
     eyebrow: "Questions Fréquentes",
