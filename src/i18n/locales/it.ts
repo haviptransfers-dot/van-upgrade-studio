@@ -379,7 +379,7 @@ export default {
     supportTitle: "Sostieni un'azienda locale",
     supportText: "H&A VIP Tours è un'azienda di trasferimenti locale e a conduzione familiare ad Atene. Aggiungici come fonte preferita su Google per rimanere aggiornato sulle nostre guide di viaggio e offerte.",
     aboutTitle: "Chi siamo - H&A VIP Tours",
-  }
+  },
   cookie: {
     title: "Usiamo i cookie",
     text: "Usiamo cookie necessari per il funzionamento del sito e, con il tuo consenso, cookie analitici per migliorarlo.",
