@@ -87,10 +87,12 @@ Deno.serve(async (req) => {
     if (!Array.isArray(messages)) {
       return jsonError(400, "messages must be an array");
     }
+    // Only visitor-written messages are accepted: client-supplied "assistant"
+    // messages would let anyone script fake answers into the model's context.
     const history: ModelMessage[] = messages
-      .filter((m: { role?: string; content?: unknown }) => typeof m?.content === "string")
+      .filter((m: { role?: string; content?: unknown }) => m?.role === "user" && typeof m?.content === "string")
       .map((m: { role: string; content: string }) => ({
-        role: m.role === "assistant" ? ("assistant" as const) : ("user" as const),
+        role: "user" as const,
         content: m.content.slice(0, 4000),
       }))
       .slice(-20);
