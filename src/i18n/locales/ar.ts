@@ -379,5 +379,22 @@ export default {
     supportTitle: "ادعم شركة محلية",
     supportText: "H&A VIP Tours هي شركة نقل محلية عائلية في أثينا. أضفنا كمصدر مفضل على Google للبقاء على اطلاع بأحدث أدلتنا السياحية وعروضنا.",
     aboutTitle: "حول H&A VIP Tours",
-  }
+  },
+  cookie: {
+    title: "نستخدم ملفات تعريف الارتباط",
+    text: "نستخدم ملفات ضرورية لعمل الموقع و، بموافقتك، ملفات تحليلية لتحسينه.",
+    privacyLink: "سياسة الخصوصية",
+    acceptAll: "قبول الكل",
+    rejectNonEssential: "رفض غير الضرورية",
+    manage: "إدارة",
+    save: "حفظ الخيارات",
+    necessary: "ضرورية",
+    necessaryDesc: "مطلوبة لعمل الدردشة ونموذج عرض السعر.",
+    analytics: "تحليلية",
+    analyticsDesc: "تساعدنا على فهم استخدام الموقع.",
+    marketing: "تسويقية",
+    marketingDesc: "تُستخدم لعروض مخصصة.",
+    alwaysOn: "دائماً مفعّلة",
+    close: "إغلاق",
+  },
 };
