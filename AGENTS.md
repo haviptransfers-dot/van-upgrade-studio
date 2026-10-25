@@ -20,3 +20,4 @@
 - Lint every workflow file with a pinned actionlint image in its own fast CI job before the site checks and smoke test run, so Actions syntax, action-input and shell-script configuration errors surface before deployment instead of as failed runs.
 - Set one top-level contents-read permission inherited by checks/lint and one smoke override adding issues-write; keep one duplicate-run concurrency block and one weekly Dependabot GitHub Actions configuration, without automatic merges.
 - Regenerate stale sitemap before npm test and publish smoke passed/failed/skipped summaries on every outcome; transient outages skip with exit zero, while genuine content/configuration failures retain alerts.
+- Keep package-lock.json synchronized with every dependency change and verify npm ci before declaring CI repaired; clean GitHub runners cannot use packages installed only in the preview sandbox.
