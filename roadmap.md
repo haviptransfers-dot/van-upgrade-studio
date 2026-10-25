@@ -20,4 +20,4 @@
 - [ ] Add static AI discovery files, verify content types and existing HTTPS redirect, and deploy to haviptransfers.gr — deployment to its Netlify host remains pending.
 - [x] Address the October 25 mobile score of 84: stagger tracking after the first screen, defer tour-menu code, and wait for hero paint before handover; desktop/mobile tour navigation, contact links, language switching, tracking execution, and regression tests verified.
 - [ ] Remeasure the October 25 performance changes on haviptransfers.gr — blocked on publishing the updated site to its host; no new live score claimed.
-- [ ] Verify all public sitemap URLs and robots reference; add homepage Organization and transfer/tour Service + TouristTrip structured data using existing prices and business-level reviews.
+- [x] Verify all 27 public sitemap URLs and robots reference; automatically include blog additions, add homepage Organization and all seven transfer/tour Service + TouristTrip graphs with existing EUR base prices, served places and business-level rating; 14 tests and all seven preview pages verified. Publication remains required.
