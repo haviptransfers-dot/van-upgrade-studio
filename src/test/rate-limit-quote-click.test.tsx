@@ -1,11 +1,20 @@
 import { fireEvent, render, screen, waitFor, cleanup } from "@testing-library/react";
-import { afterEach, expect, it, vi } from "vitest";
+import { afterAll, afterEach, expect, it, vi } from "vitest";
 import { saveConsent, acceptAll, rejectNonEssential } from "@/lib/cookieConsent";
 import ChatBot from "@/components/ChatBot";
+
+// The test exercises the local 429 response, not hosted credentials. CI must
+// also work when no optional application environment variables are configured.
+vi.hoisted(() => {
+  vi.stubEnv("VITE_SUPABASE_URL", "");
+  vi.stubEnv("VITE_SUPABASE_PUBLISHABLE_KEY", "");
+});
 
 vi.mock("react-i18next", () => ({ useTranslation: () => ({ t: (key: string) => key, i18n: { language: "en" } }) }));
 vi.mock("@/lib/leadCapture", () => ({ captureLead: vi.fn() }));
 vi.mock("@/components/OptimizedImage", () => ({ default: () => null }));
+
+afterAll(() => vi.unstubAllEnvs());
 
 afterEach(() => {
   cleanup();

@@ -1,5 +1,7 @@
 # Roadmap
 
+- [done] Sitemap regeneration works from any working directory without optional env; smoke retries transient outages and marks checks incomplete without hiding permanent/content failures. All 70 tests pass on Node 24; live sitemap/robots/JSON-LD checks pass. Rendered SEO checks await GitHub Chromium (sandbox browser unavailable).
+
 - [done] Both GitHub workflow jobs upgraded to Node.js 24, latest Node-24-compatible actions, and Ubuntu 24.04; checks and notifications preserved. Workflow validation and all 59 tests pass under Node 24; hosted GitHub run awaits next trigger.
 
 - [done] Smoke test extended: rendered title/canonical/hreflang checks on all 28 public pages (Playwright in CI; sandbox lacks Chromium system libs, so rendered checks verified in CI only — fetch checks pass locally)
