@@ -115,7 +115,10 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      check_chat_rate_limit: {
+        Args: { p_ip: string; p_limit: number; p_window_ms: number }
+        Returns: boolean
+      }
     }
     Enums: {
       [_ in never]: never

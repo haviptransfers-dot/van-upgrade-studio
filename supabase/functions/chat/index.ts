@@ -64,18 +64,17 @@ Deno.serve(async (req) => {
       Deno.env.get("SUPABASE_URL")!,
       Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!,
     );
-    const since = new Date(Date.now() - RATE_WINDOW_MS).toISOString();
-    const { count, error: countError } = await supabase
-      .from("chat_rate_limits")
-      .select("id", { count: "exact", head: true })
-      .eq("ip", ip)
-      .gte("created_at", since);
-    if (countError) console.error("rate limit check failed:", countError.message);
-    if ((count ?? 0) >= RATE_LIMIT) {
+    // Atomic check-and-record in one database call: an advisory lock per IP
+    // serializes concurrent requests, so the limit holds across instances.
+    const { data: allowed, error: rateError } = await supabase.rpc("check_chat_rate_limit", {
+      p_ip: ip,
+      p_limit: RATE_LIMIT,
+      p_window_ms: RATE_WINDOW_MS,
+    });
+    if (rateError) console.error("rate limit check failed:", rateError.message);
+    if (allowed === false) {
       return jsonError(429, "Too many questions — please try again in a little while, or message us on WhatsApp at +30 694 939 3700.");
     }
-    const { error: insertError } = await supabase.from("chat_rate_limits").insert({ ip });
-    if (insertError) console.error("rate limit insert failed:", insertError.message);
 
     // --- Validate input ---
     const { messages } = await req.json();
