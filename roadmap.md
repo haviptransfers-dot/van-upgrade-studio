@@ -17,3 +17,4 @@
 - [x] Add the Athens-to-Nafplio blog article with the two supplied 800×533 WebP photos, static article delivery, active-language loading, supplied SEO and FAQ facts.
 - [x] Verify the published Nafplio article speed — Lighthouse mobile 97, FCP 1.0s, LCP 2.6s, 154 KiB.
 - [x] Reduce first-screen animation work, defer remaining homepage sections, and prioritize heading fonts; verify navigation and delayed loading.
+- [ ] Add static AI discovery files, verify content types and existing HTTPS redirect, and deploy to haviptransfers.gr — deployment to its Netlify host remains pending.
