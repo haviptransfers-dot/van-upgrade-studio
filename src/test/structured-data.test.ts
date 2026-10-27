@@ -14,12 +14,13 @@ describe("public sitemap and structured data", () => {
     expect(xml).not.toContain(":slug");
     expect(readFileSync("public/robots.txt", "utf8")).toContain("Sitemap: https://haviptransfers.gr/sitemap.xml");
   });
-  it("uses Organization on the homepage with the existing business score and no invented review count", () => {
+  it("uses Organization on the homepage with the existing business score and owner-confirmed review counts", () => {
     expect(structuredDataForPath("/")?.["@graph"][0]).toEqual(organization);
     expect(organization["@type"]).toBe("Organization");
     expect(organization.url).toBe("https://haviptransfers.gr/");
     expect(organization.aggregateRating.ratingValue).toBe(5);
-    expect(organization.aggregateRating).not.toHaveProperty("reviewCount");
+    expect(organization.aggregateRating.reviewCount).toBe(127);
+    expect(organization.aggregateRating.ratingCount).toBe(127);
   });
   it.each([
     ["/airport-transfer-athens", [85, 100]], ["/piraeus-port-transfer", [55]],
