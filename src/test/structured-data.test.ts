@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { servicePages, structuredDataForPath, organization } from "../data/structuredData";
 
@@ -21,6 +21,9 @@ describe("public sitemap and structured data", () => {
     expect(organization.aggregateRating.ratingValue).toBe(5);
     expect(organization.aggregateRating.reviewCount).toBe(127);
     expect(organization.aggregateRating.ratingCount).toBe(127);
+    expect(organization.image).toBe("https://haviptransfers.gr/logo.png");
+    expect(organization.logo).toBe("https://haviptransfers.gr/logo.png");
+    expect(existsSync("public/logo.png")).toBe(true);
   });
   it.each([
     ["/airport-transfer-athens", [85, 100]], ["/piraeus-port-transfer", [55]],
