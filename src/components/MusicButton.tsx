@@ -20,10 +20,13 @@ const MusicButton = () => {
     a.preload = "none";
     a.volume = 0.35; // deliberately quiet, as requested
     audioRef.current = a;
+    (window as Window & { __haAudio?: HTMLAudioElement }).__haAudio = a;
     return () => {
       a.pause();
       a.src = "";
       audioRef.current = null;
+      const w = window as Window & { __haAudio?: HTMLAudioElement };
+      if (w.__haAudio === a) delete w.__haAudio;
     };
   }, []);
 
