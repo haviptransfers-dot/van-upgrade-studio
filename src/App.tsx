@@ -27,9 +27,12 @@ const LazyCookieConsent = () => {
 };
 
 
+const MusicButton = lazy(() => import("./components/MusicButton"));
+
 const App = () => (
       <BrowserRouter>
         <Suspense fallback={<div className="min-h-screen bg-background" aria-busy="true" />}>
+        <MusicButton />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/delphi-private-tour" element={<DelphiTour />} />
