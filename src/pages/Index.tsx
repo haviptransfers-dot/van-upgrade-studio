@@ -52,6 +52,11 @@ const Index = ({ routeKey }: IndexProps) => {
     document.getElementById("first-screen")?.remove();
     document.body.classList.remove("first-paint");
   }, [heroPainted]);
+  // Safety net: never leave visitors on the static snapshot if the photo stalls.
+  useEffect(() => {
+    const id = window.setTimeout(() => setHeroPainted(true), 3000);
+    return () => window.clearTimeout(id);
+  }, []);
 
   const [heroCycleIndex, setHeroCycleIndex] = useState(0);
   const whatsappReady = useAfterFirstPaint(heroPainted);
@@ -167,6 +172,7 @@ const Index = ({ routeKey }: IndexProps) => {
             maxWidth={800}
             decoding="async"
             onLoad={() => requestAnimationFrame(() => requestAnimationFrame(() => setHeroPainted(true)))}
+            onError={() => setHeroPainted(true)}
             className="home-hero-photo absolute inset-0 w-full h-full object-cover hero-base-zoom"
           />
           {heroCycleIndex > 0 && <Suspense fallback={null}>
