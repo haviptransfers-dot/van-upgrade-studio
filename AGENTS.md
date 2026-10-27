@@ -21,3 +21,4 @@
 - Set one top-level contents-read permission inherited by checks/lint and one smoke override adding issues-write; keep one duplicate-run concurrency block and one weekly Dependabot GitHub Actions configuration, without automatic merges.
 - Regenerate stale sitemap before npm test and publish smoke passed/failed/skipped summaries on every outcome; transient outages skip with exit zero, while genuine content/configuration failures retain alerts.
 - Keep package-lock.json synchronized with every dependency change and verify npm ci before declaring CI repaired; clean GitHub runners cannot use packages installed only in the preview sandbox.
+- Point structured-data image/logo at a site-served absolute URL (public/logo.png) rather than a bundled asset import, and keep that file at the source mark's true fidelity instead of an upscaled render.
