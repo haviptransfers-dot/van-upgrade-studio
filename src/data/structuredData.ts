@@ -7,6 +7,8 @@ export const organization = {
   url: `${SITE_URL}/`,
   telephone: "+306949393700",
   email: "h.a.viptransfers@gmail.com",
+  image: `${SITE_URL}/logo.png`,
+  logo: `${SITE_URL}/logo.png`,
   address: { "@type": "PostalAddress", addressLocality: "Athens", addressCountry: "GR" },
   areaServed: { "@type": "Country", name: "Greece" },
   aggregateRating: { "@type": "AggregateRating", ratingValue: 5, bestRating: 5, worstRating: 1, reviewCount: 127, ratingCount: 127 },
