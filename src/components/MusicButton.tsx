@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Music, Pause } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { hostedImageUrl } from "./OptimizedImage";
 import musicAsset from "@/assets/holiday-music.mp3.asset.json";
 
 // Floating music toggle — always visible (fixed), never autoplays.
@@ -14,7 +15,7 @@ const MusicButton = () => {
   // Reuse one element; a route change remounts App-level content but this
   // button lives in App itself, so playback continues across pages.
   useEffect(() => {
-    const a = new Audio(musicAsset.url);
+    const a = new Audio(hostedImageUrl(musicAsset.url));
     a.loop = true;
     a.preload = "none";
     a.volume = 0.35; // deliberately quiet, as requested
