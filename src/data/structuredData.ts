@@ -9,7 +9,7 @@ export const organization = {
   email: "h.a.viptransfers@gmail.com",
   address: { "@type": "PostalAddress", addressLocality: "Athens", addressCountry: "GR" },
   areaServed: { "@type": "Country", name: "Greece" },
-  aggregateRating: { "@type": "AggregateRating", ratingValue: 5, bestRating: 5, worstRating: 1 },
+  aggregateRating: { "@type": "AggregateRating", ratingValue: 5, bestRating: 5, worstRating: 1, reviewCount: 127, ratingCount: 127 },
   sameAs: ["https://g.page/r/CWZohu9AJOBoEBM/review", "https://www.instagram.com/antonhs_ieronymakhs", "https://www.facebook.com/profile.php?id=61590718264708"],
 };
 
