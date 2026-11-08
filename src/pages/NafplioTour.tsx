@@ -40,8 +40,8 @@ const NafplioTour = () => {
       a: "The tour includes a private Mercedes-Benz V-Class with a professional English-speaking driver, door-to-door pickup from your Athens hotel or Airbnb, a scenic drive through the Peloponnese, visits to Nafplio old town, Palamidi Fortress, and Bourtzi castle views, and complimentary cold drinks on board. Entrance fees are not included.",
     },
     {
-      q: "How long is the Nafplio Private Tour?",
-      a: "The full day tour lasts approximately 7–8 hours, including driving time and your exploration of Nafplio.",
+      q: t("nafplioTour.durationQuestion", { tour: t("nafplioTour.title") }),
+      a: t("nafplioTour.durationAnswer", { duration: t("nafplioTour.durationVal") }),
     },
     {
       q: "How far is Nafplio from Athens?",
@@ -211,7 +211,7 @@ const NafplioTour = () => {
                 { icon: Clock, label: t("nafplioTour.duration"), val: t("nafplioTour.durationVal") },
                 { icon: Users, label: t("nafplioTour.type"), val: t("nafplioTour.typeVal") },
                 { icon: MapPin, label: t("nafplioTour.departure"), val: t("nafplioTour.departureVal") },
-                { icon: Wallet, label: t("nafplioTour.price"), val: t("nafplioTour.priceVal") },
+                { icon: Wallet, label: t("nafplioTour.price"), val: `${t("nafplioTour.priceVal")} ${t("calc.perVehicle")}` },
               ].map(({ icon: Icon, label, val }) => (
                 <div
                   key={label}
@@ -270,7 +270,7 @@ const NafplioTour = () => {
               {t("nafplioTour.badge")}
             </p>
             <h2 className="font-display text-2xl md:text-4xl font-bold mb-6">
-              {t("nafplioTour.title")} · {t("nafplioTour.priceVal")}
+              {t("nafplioTour.title")} · {t("nafplioTour.priceVal")} {t("calc.perVehicle")}
             </h2>
             <a href={bookUrl} target="_blank" rel="noopener noreferrer">
               <Button

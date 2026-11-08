@@ -39,8 +39,8 @@ const MeteoraTour = () => {
       a: "The tour includes a private Mercedes-Benz V-Class with a professional English-speaking driver, door-to-door pickup from your Athens hotel or Airbnb, a scenic drive through Thessaly, visits to the spectacular monasteries of Meteora, and complimentary cold drinks on board. Entrance fees are not included.",
     },
     {
-      q: "How long is the Meteora Private Tour?",
-      a: "The full day tour lasts approximately 10–11 hours, including driving time and your visits at the monasteries.",
+      q: t("meteoraTour.durationQuestion", { tour: t("meteoraTour.title") }),
+      a: t("meteoraTour.durationAnswer", { duration: t("meteoraTour.durationVal") }),
     },
     {
       q: "How far is Meteora from Athens?",
@@ -216,7 +216,7 @@ const MeteoraTour = () => {
                 { icon: Clock, label: t("meteoraTour.duration"), val: t("meteoraTour.durationVal") },
                 { icon: Users, label: t("meteoraTour.type"), val: t("meteoraTour.typeVal") },
                 { icon: MapPin, label: t("meteoraTour.departure"), val: t("meteoraTour.departureVal") },
-                { icon: Wallet, label: t("meteoraTour.price"), val: t("meteoraTour.priceVal") },
+                { icon: Wallet, label: t("meteoraTour.price"), val: `${t("meteoraTour.priceVal")} ${t("calc.perVehicle")}` },
               ].map(({ icon: Icon, label, val }) => (
                 <div
                   key={label}
@@ -277,7 +277,7 @@ const MeteoraTour = () => {
               {t("meteoraTour.badge")}
             </p>
             <h2 className="font-display text-2xl md:text-4xl font-bold mb-6">
-              {t("meteoraTour.title")} · {t("meteoraTour.priceVal")}
+              {t("meteoraTour.title")} · {t("meteoraTour.priceVal")} {t("calc.perVehicle")}
             </h2>
             <a href={bookUrl} target="_blank" rel="noopener noreferrer">
               <Button

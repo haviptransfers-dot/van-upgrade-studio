@@ -56,6 +56,7 @@ const PriceCalculator = () => {
     { key: "delphi", label: `🏛 ${t("calc.services.delphi", { defaultValue: "Delphi Tour" })}` },
   ];
 
+  const isTour = ["sounio", "athens_sights", "nafplio", "meteora", "delphi"].includes(service);
   const isFixed = fixedPrices[service] !== undefined;
 
   const { base, nightExtra, total } = useMemo(() => {
@@ -71,7 +72,7 @@ const PriceCalculator = () => {
   }, [service, pax, night, isFixed]);
 
   const whatsappMsg = encodeURIComponent(
-    `Hi! I'd like to book: ${t(`calc.services.${service}`)} · ${pax} pax${night ? " · Night" : ""} · €${total}`
+    `Hi! I'd like to book: ${t(`calc.services.${service}`)} · ${pax} pax${night ? " · Night" : ""} · €${total}${isTour ? ` ${t("calc.perVehicle")}` : ""}`
   );
   const whatsappUrl = `https://wa.me/306949393700?text=${whatsappMsg}`;
 
@@ -185,6 +186,7 @@ const PriceCalculator = () => {
           <div className="font-display text-4xl md:text-5xl text-primary leading-none mb-1">€{total}</div>
           <p className="text-[10px] tracking-[0.15em] uppercase text-muted-foreground mb-6">
             {night ? `${t("calc.base")} €${base} + ${t("calc.nightSurcharge")} €${nightExtra}` : t("calc.fixedPrice")}
+            {isTour && ` · ${t("calc.perVehicle")}`}
           </p>
           <a
             href={whatsappUrl}

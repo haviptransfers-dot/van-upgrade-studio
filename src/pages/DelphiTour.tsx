@@ -39,8 +39,8 @@ const DelphiTour = () => {
       a: "The tour includes a private Mercedes-Benz V-Class with a professional English-speaking driver, door-to-door pickup from your Athens hotel or Airbnb, a scenic drive through the Greek countryside, visit to the Archaeological Site of Delphi and the Delphi Museum, and complimentary cold drinks on board. Entrance fees are not included.",
     },
     {
-      q: "How long is the Delphi Private Tour?",
-      a: "The full day tour lasts approximately 8–9 hours, including driving time and your visit at the archaeological site and museum.",
+      q: t("delphiTour.durationQuestion", { tour: t("delphiTour.title") }),
+      a: t("delphiTour.durationAnswer", { duration: t("delphiTour.durationVal") }),
     },
     {
       q: "How far is Delphi from Athens?",
@@ -216,7 +216,7 @@ const DelphiTour = () => {
                 { icon: Clock, label: t("delphiTour.duration"), val: t("delphiTour.durationVal") },
                 { icon: Users, label: t("delphiTour.type"), val: t("delphiTour.typeVal") },
                 { icon: MapPin, label: t("delphiTour.departure"), val: t("delphiTour.departureVal") },
-                { icon: Wallet, label: t("delphiTour.price"), val: t("delphiTour.priceVal") },
+                { icon: Wallet, label: t("delphiTour.price"), val: `${t("delphiTour.priceVal")} ${t("calc.perVehicle")}` },
               ].map(({ icon: Icon, label, val }) => (
                 <div
                   key={label}
@@ -277,7 +277,7 @@ const DelphiTour = () => {
               {t("delphiTour.badge")}
             </p>
             <h2 className="font-display text-2xl md:text-4xl font-bold mb-6">
-              {t("delphiTour.title")} · {t("delphiTour.priceVal")}
+              {t("delphiTour.title")} · {t("delphiTour.priceVal")} {t("calc.perVehicle")}
             </h2>
             <a href={bookUrl} target="_blank" rel="noopener noreferrer">
               <Button
