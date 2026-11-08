@@ -1,5 +1,8 @@
 # Roadmap
 
+- [in progress] Audit tour durations, child-seat limits and tour price units across public pages and all languages; present discrepancies for owner confirmation without content changes.
+- [blocked: owner confirmations] Apply only confirmed content corrections and translation updates; preserve design, URLs, SEO metadata and amounts. No publication without approval.
+
 - [done] Replaced the van search-result icon with the existing H&A logo at 144×144; checked proportions, one icon tag and successful preview delivery.
 
 - [done] Checked hosted Site Checks run #19 (40182822003): all three jobs succeeded; live smoke log confirms all checks passed, with no remaining failures.
