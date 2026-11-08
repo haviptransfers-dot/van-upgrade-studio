@@ -11,7 +11,7 @@ import ar from "../i18n/locales/ar";
 const locales = { en, el, de, fr, it: itLocale, es, he, ar };
 const hours = (value: string) => Number(value.match(/\d+/)?.[0]);
 const lastHours = (value: string) => Number(value.match(/\d+(?![\s\S]*\d)/)?.[0]);
-const numericRanges = (value: string) => value.replaceAll(",", ".").match(/\d+(?:\.\d+)?[–-]\d+(?:\.\d+)?/g);
+const numericRanges = (value: string) => value.replace(/,/g, ".").match(/\d+(?:\.\d+)?[–-]\d+(?:\.\d+)?/g);
 
 describe.each(Object.entries(locales))("owner-confirmed facts in %s", (_language, locale) => {
   it("uses 8 hours for the complete Delphi tour", () => {
@@ -41,13 +41,13 @@ describe.each(Object.entries(locales))("owner-confirmed facts in %s", (_language
       .map((tour) => hours(tour.priceVal))).toEqual([180, 350, 500, 800, 500]);
   });
   it("retains 0–13 kg with approximate ages up to 2–3 years", () => {
-    expect(numericRanges(locale.childSeats.group0.range.replaceAll(" - ", "–"))).toEqual(["0–13", "2–3"]);
+    expect(numericRanges(locale.childSeats.group0.range.replace(/ - /g, "–"))).toEqual(["0–13", "2–3"]);
   });
   it("retains 9–18 kg with approximate ages from 2.5–3 to 4–5 years", () => {
-    expect(numericRanges(locale.childSeats.group1.range.replaceAll(" - ", "–"))).toEqual(["9–18", "2.5–3", "4–5"]);
+    expect(numericRanges(locale.childSeats.group1.range.replace(/ - /g, "–"))).toEqual(["9–18", "2.5–3", "4–5"]);
   });
   it("retains 15–36 kg with ages from 4 years and no invented upper age", () => {
-    expect(numericRanges(locale.childSeats.booster.range.replaceAll(" - ", "–"))).toEqual(["15–36"]);
+    expect(numericRanges(locale.childSeats.booster.range.replace(/ - /g, "–"))).toEqual(["15–36"]);
     expect(lastHours(locale.childSeats.booster.range)).toBe(4);
   });
 });
