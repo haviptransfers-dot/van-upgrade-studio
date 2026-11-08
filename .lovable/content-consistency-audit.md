@@ -30,6 +30,8 @@ Night surcharge already explicitly per person, preserve formula/amounts. Transfe
 
 ## Implementation locations after approval
 
+Owner confirmations received: all five tour prices per vehicle; Athens/Acropolis same tour. Approximate seat ages supplied: 0–13 kg up to 2–3 years; 9–18 kg from 2.5–3 to 4–5 years; remaining seats 4 years onward. No upper age limit supplied; do not invent one. Total tour durations unresolved; explained as pickup-to-return including driving and stops.
+
 - src/i18n/locales/{en,el,de,fr,es,it,he,ar}.ts: tours.items.*.long, *Tour.durationVal, athensTour intro, calculator.routes labels, faq.items.a7 and approved childSeats values.
 - src/pages/{DelphiTour,NafplioTour,MeteoraTour,AthensTour,CapeSounionTour}.tsx: hardcoded FAQ durations and translation coverage. Existing FAQ structured data mirrors visible FAQ answers; preserve titles/descriptions/canonicals/hreflang/other SEO.
 - src/components/PriceCalculator.tsx and relevant translation keys: approved tour-only pricing qualifier, no price/formula changes.
