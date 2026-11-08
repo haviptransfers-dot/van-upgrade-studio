@@ -7,7 +7,6 @@ import itLocale from "../i18n/locales/it";
 import es from "../i18n/locales/es";
 import he from "../i18n/locales/he";
 import ar from "../i18n/locales/ar";
-import { servicePages } from "../data/structuredData";
 
 const locales = { en, el, de, fr, it: itLocale, es, he, ar };
 const hours = (value: string) => Number(value.match(/\d+/)?.[0]);
@@ -40,7 +39,6 @@ describe.each(Object.entries(locales))("owner-confirmed facts in %s", (_language
   it("retains the five owner-confirmed tour amounts", () => {
     expect([locale.athensTour, locale.sounionTour, locale.delphiTour, locale.meteoraTour, locale.nafplioTour]
       .map((tour) => hours(tour.priceVal))).toEqual([180, 350, 500, 800, 500]);
-    expect(servicePages.filter((page) => page.type === "tour").length).toBeGreaterThanOrEqual(0);
   });
   it("retains 0–13 kg with approximate ages up to 2–3 years", () => {
     expect(numericRanges(locale.childSeats.group0.range.replaceAll(" - ", "–"))).toEqual(["0–13", "2–3"]);
