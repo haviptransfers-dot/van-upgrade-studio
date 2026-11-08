@@ -1,6 +1,6 @@
 # Roadmap
 
-- [in progress] Audit tour durations, child-seat limits and tour price units across public pages and all languages; present discrepancies for owner confirmation without content changes.
+- [done] Audited tour durations, child-seat limits and tour price units across pages and all eight languages; verified Delphi discrepancies on the live site and recorded findings without content changes.
 - [blocked: owner confirmations] Apply only confirmed content corrections and translation updates; preserve design, URLs, SEO metadata and amounts. No publication without approval.
 
 - [done] Replaced the van search-result icon with the existing H&A logo at 144×144; checked proportions, one icon tag and successful preview delivery.
