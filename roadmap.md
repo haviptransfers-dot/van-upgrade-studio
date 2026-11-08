@@ -1,7 +1,7 @@
 # Roadmap
 
 - [done] Audited tour durations, child-seat limits and tour price units across pages and all eight languages; verified Delphi discrepancies on the live site and recorded findings without content changes.
-- [blocked: owner confirmations] Apply only confirmed content corrections and translation updates; preserve design, URLs, SEO metadata and amounts. No publication without approval.
+- [in progress] Apply confirmed durations (Delphi 8h, Nafplio 8h, Meteora 12h, Athens/Acropolis 3h, Sounion 5h), per-vehicle tour pricing and approximate child-seat ages across eight languages. Preserve design, URLs, SEO metadata and amounts; no publication.
 
 - [done] Replaced the van search-result icon with the existing H&A logo at 144×144; checked proportions, one icon tag and successful preview delivery.
 
