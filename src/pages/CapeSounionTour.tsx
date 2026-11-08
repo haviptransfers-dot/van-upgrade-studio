@@ -41,8 +41,8 @@ const CapeSounionTour = () => {
       a: "The tour includes a private Mercedes-Benz V-Class with a professional English-speaking driver, door-to-door pickup from your Athens hotel or Airbnb, a scenic coastal drive along the Athens Riviera, a stop at the Temple of Poseidon, and complimentary cold drinks on board. Entrance fees are not included.",
     },
     {
-      q: "How long is the Cape Sounion tour?",
-      a: "The full tour takes approximately 4–5 hours, including driving time and your visit at the Temple of Poseidon.",
+      q: t("sounionTour.durationQuestion", { tour: t("sounionTour.title") }),
+      a: t("sounionTour.durationAnswer", { duration: t("sounionTour.durationVal") }),
     },
     {
       q: "How far is Cape Sounion from Athens?",
@@ -217,7 +217,7 @@ const CapeSounionTour = () => {
                 { icon: Clock, label: t("sounionTour.duration"), val: t("sounionTour.durationVal") },
                 { icon: Users, label: t("sounionTour.type"), val: t("sounionTour.typeVal") },
                 { icon: MapPin, label: t("sounionTour.departure"), val: t("sounionTour.departureVal") },
-                { icon: Wallet, label: t("sounionTour.price"), val: t("sounionTour.priceVal") },
+                { icon: Wallet, label: t("sounionTour.price"), val: `${t("sounionTour.priceVal")} ${t("calc.perVehicle")}` },
               ].map(({ icon: Icon, label, val }) => (
                 <div
                   key={label}
@@ -278,7 +278,7 @@ const CapeSounionTour = () => {
               {t("sounionTour.badge")}
             </p>
             <h2 className="font-display text-2xl md:text-4xl font-bold mb-6">
-              {t("sounionTour.title")} · {t("sounionTour.priceVal")}
+              {t("sounionTour.title")} · {t("sounionTour.priceVal")} {t("calc.perVehicle")}
             </h2>
             <a href={bookUrl} target="_blank" rel="noopener noreferrer">
               <Button

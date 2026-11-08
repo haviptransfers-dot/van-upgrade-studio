@@ -40,8 +40,8 @@ const AthensTour = () => {
       a: "The tour includes a private Mercedes-Benz V-Class with a professional English-speaking driver, door-to-door pickup from your hotel or Airbnb, visits to the Acropolis area, Plaka, Monastiraki, Panathenaic Stadium, and other iconic Athens landmarks, plus complimentary cold drinks on board.",
     },
     {
-      q: "How long is the Athens City Tour?",
-      a: "The tour lasts approximately 4–5 hours, giving you plenty of time to explore the highlights of Athens at a relaxed pace.",
+      q: t("athensTour.durationQuestion", { tour: t("athensTour.title") }),
+      a: t("athensTour.durationAnswer", { duration: t("athensTour.durationVal") }),
     },
     {
       q: "Is the Athens City Tour fully private?",
@@ -211,7 +211,7 @@ const AthensTour = () => {
                 { icon: Clock, label: t("athensTour.duration"), val: t("athensTour.durationVal") },
                 { icon: Users, label: t("athensTour.type"), val: t("athensTour.typeVal") },
                 { icon: MapPin, label: t("athensTour.departure"), val: t("athensTour.departureVal") },
-                { icon: Wallet, label: t("athensTour.price"), val: t("athensTour.priceVal") },
+                { icon: Wallet, label: t("athensTour.price"), val: `${t("athensTour.priceVal")} ${t("calc.perVehicle")}` },
               ].map(({ icon: Icon, label, val }) => (
                 <div
                   key={label}
@@ -270,7 +270,7 @@ const AthensTour = () => {
               {t("athensTour.badge")}
             </p>
             <h2 className="font-display text-2xl md:text-4xl font-bold mb-6">
-              {t("athensTour.title")} · {t("athensTour.priceVal")}
+              {t("athensTour.title")} · {t("athensTour.priceVal")} {t("calc.perVehicle")}
             </h2>
             <a href={bookUrl} target="_blank" rel="noopener noreferrer">
               <Button
