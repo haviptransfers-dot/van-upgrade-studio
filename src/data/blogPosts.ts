@@ -1,7 +1,7 @@
 import supplements from "./blogSupplements.json";
 
 import athensAirportHotelTransfer from "@/assets/athens-airport-hotel-transfer.jpg.asset.json";
-import mercedesVClassChauffeurAthens from "@/assets/mercedes-v-class-chauffeur-athens.jpg.asset.json";
+import mercedesVClassChauffeurAthens from "@/assets/mercedes-vito-vip-chauffeur-athens.jpg.asset.json";
 import privateTransferPiraeusPort from "@/assets/private-transfer-piraeus-port.jpg.asset.json";
 import privateTransferAthensLuggage from "@/assets/private-transfer-athens-luggage.jpg.asset.json";
 import privateChauffeurBusinessAthens from "@/assets/private-chauffeur-business-athens.jpg.asset.json";
@@ -18,9 +18,9 @@ import privateMeteoraTourFromAthens from "@/assets/private-meteora-tour-from-ath
 import athensMeteoraRouteMap from "@/assets/athens-meteora-route-map.webp";
 import childSeatsFamilySafe from "@/assets/child-seats-family-safe.jpg.asset.json";
 import athensAirportPiraeusPortTransfer from "@/assets/athens-airport-piraeus-port-transfer.webp.asset.json";
-import weddingTransferBrideVClass from "@/assets/wedding-transfer-bride-v-class.jpg.asset.json";
-import bachelorettePartyVClass from "@/assets/bachelorette-party-v-class.webp.asset.json";
-import bachelorPartyVClass from "@/assets/bachelor-party-v-class.webp.asset.json";
+import weddingTransferBrideVClass from "@/assets/wedding-transfer-bride-mercedes-vito-vip.jpg.asset.json";
+import bachelorettePartyVClass from "@/assets/bachelorette-party-mercedes-vito-vip.webp.asset.json";
+import bachelorPartyVClass from "@/assets/bachelor-party-mercedes-vito-vip.webp.asset.json";
 import chauffeurVsTaxiAthens from "@/assets/chauffeur-vs-taxi-athens.jpg.asset.json";
 
 

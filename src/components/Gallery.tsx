@@ -10,7 +10,7 @@ import gallery6 from "@/assets/gallery-6.jpg";
 import airportPickupVan from "@/assets/airport-pickup-van.jpg.asset.json";
 import driverHandshake from "@/assets/driver-handshake-airport.jpg.asset.json";
 import vanAthensChildSeat from "@/assets/van-athens-child-seat.jpg.asset.json";
-import vClassLookCollage from "@/assets/v-class-look-collage.jpg.asset.json";
+import vClassLookCollage from "@/assets/mercedes-vito-vip-look-collage.jpg.asset.json";
 
 const ASSET_HOST = "https://van-move-boost.lovable.app";
 
