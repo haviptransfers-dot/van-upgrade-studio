@@ -42,13 +42,13 @@ describe("sitemap.xml automated checks", () => {
     const declared = [...appSource.matchAll(/path="([^"]+)"/g)]
       .map((match) => match[1])
       .filter((route) => route !== "*" && !route.includes(":"));
-    for (const route of declared) expect(locs).toContain(`${DOMAIN}${route}`);
-    for (const route of seoRoutes) expect(locs).toContain(`${DOMAIN}${route.path}`);
+    for (const route of declared) expect(locs).toContain(`${DOMAIN}${route.replace(/\/+$/, "")}/`);
+    for (const route of seoRoutes) expect(locs).toContain(`${DOMAIN}${route.path.replace(/\/+$/, "")}/`);
   });
 
   it("covers every blog article", () => {
     expect(blogSlugs.length).toBeGreaterThan(0);
-    for (const slug of blogSlugs) expect(locs).toContain(`${DOMAIN}/blog/${slug}`);
+    for (const slug of blogSlugs) expect(locs).toContain(`${DOMAIN}/blog/${slug}/`);
   });
 
   it("excludes non-public and parameterized routes", () => {

@@ -38,9 +38,9 @@ describe("CI script regressions", () => {
   });
   it("generates the same production sitemap as the build, including Nafplio", () => {
     const paths = publicPaths();
-    const slugs = paths.filter((path: string) => path.startsWith("/blog/")).map((path: string) => path.slice(6));
+    const slugs = paths.filter((path: string) => path.startsWith("/blog/")).map((path: string) => path.slice(6).replace(/\/$/, ""));
     expect(generateSitemap()).toBe(sitemapXml(slugs));
-    expect(paths).toContain("/blog/athens-to-nafplio-private-tour");
+    expect(paths).toContain("/blog/athens-to-nafplio-private-tour/");
     expect(new Set(paths).size).toBe(paths.length);
   });
 
