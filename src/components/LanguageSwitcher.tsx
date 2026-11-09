@@ -1,10 +1,11 @@
 import OptimizedImage from "@/components/OptimizedImage";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
+import { useLocation } from "react-router-dom";
+import { localizedPath } from "@/lib/languagePaths";
 
 const langs = [
   { code: "el", label: "GR", country: "gr" },
-  { code: "en", label: "US", country: "us" },
   { code: "en", label: "EN", country: "gb" },
   { code: "de", label: "DE", country: "de" },
   { code: "es", label: "ES", country: "es" },
@@ -16,14 +17,16 @@ const langs = [
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
+  const location = useLocation();
   const current = i18n.language?.split("-")[0] || "en";
 
   return (
     <div className="flex items-center gap-0.5 md:gap-1 text-xs font-medium">
       {langs.map((l, i) => (
         <div key={l.country} className="flex items-center gap-0.5 md:gap-1">
-          <button
-            onClick={() => i18n.changeLanguage(l.code)}
+          <a
+            href={localizedPath(`${location.pathname}${location.search}${location.hash}`, l.code)}
+            hrefLang={l.code}
             className={cn(
               "transition-colors px-0.5 md:px-1 inline-flex items-center gap-1 md:gap-1.5",
               current === l.code ? "text-primary" : "text-foreground/50 hover:text-foreground"
@@ -41,7 +44,7 @@ const LanguageSwitcher = () => {
               className="inline-block rounded-sm w-3.5 h-2.5 md:w-5 md:h-[15px]"
             />
             <span className="hidden md:inline">{l.label}</span>
-          </button>
+          </a>
           {i < langs.length - 1 && <span className="hidden md:inline text-foreground/20">|</span>}
         </div>
       ))}

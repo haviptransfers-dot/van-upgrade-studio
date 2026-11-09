@@ -1,0 +1,27 @@
+export const LANGUAGES = ["en", "el", "de", "es", "fr", "it", "he", "ar"] as const;
+export type SiteLanguage = typeof LANGUAGES[number];
+export const SITE_ORIGIN = "https://haviptransfers.gr";
+export const MAX_PASSENGERS = 7;
+export const LEGACY_SLUGS: Record<string, string> = {
+  "mercedes-v-class-chauffeur-service-athens": "mercedes-vito-vip-chauffeur-service-athens",
+  "wedding-transfers-greece-mercedes-v-class": "wedding-transfers-greece-mercedes-vito-vip",
+};
+export function languageFromPath(path: string): SiteLanguage {
+  const candidate = path.split("/")[1];
+  return LANGUAGES.find((language) => language !== "en" && language === candidate) ?? "en";
+}
+export function basePath(path: string) {
+  const language = languageFromPath(path);
+  const unprefixed = language === "en" ? path : path.slice(language.length + 1);
+  return unprefixed.replace(/\/+$/, "") || "/";
+}
+export function localizedPath(path: string, language: string): string {
+  if (!path.startsWith("/") || path.startsWith("//")) return path;
+  const [pathname, suffix = ""] = path.split(/(?=[?#])/);
+  const base = basePath(pathname);
+  const slug = base.startsWith("/blog/") ? base.slice(6) : "";
+  const resolved = LEGACY_SLUGS[slug] ? `/blog/${LEGACY_SLUGS[slug]}` : base;
+  const prefix = language !== "en" && LANGUAGES.includes(language as SiteLanguage) ? `/${language}` : "";
+  return `${prefix}${resolved === "/" ? "/" : resolved}${suffix}`;
+}
+export function pageUrl(path: string, language: string) { return `${SITE_ORIGIN}${localizedPath(path, language)}`; }

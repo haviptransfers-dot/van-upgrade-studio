@@ -1,6 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
+import { languageFromPath } from "@/lib/languagePaths";
 import en from "./locales/en";
 const loaders = {
   de: () => import("./locales/de"),
@@ -24,7 +24,6 @@ const applyDir = (lng: string) => {
 };
 
 i18n
-  .use(LanguageDetector)
   .use(initReactI18next)
   .use({
     type: "backend" as const,
@@ -41,9 +40,9 @@ i18n
       en: { translation: en },
     },
     fallbackLng: "en",
+    lng: typeof location === "undefined" ? "en" : languageFromPath(location.pathname),
     supportedLngs: ["en", "de", "es", "fr", "it", "el", "he", "ar"],
     interpolation: { escapeValue: false },
-    detection: { order: ["localStorage", "navigator"], caches: ["localStorage"] },
   });
 
 applyDir(i18n.language);
