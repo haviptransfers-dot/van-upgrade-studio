@@ -46,7 +46,16 @@ export function multilingualPlugin(): Plugin {
       const index = bundle["index.html"];
       if (!index || index.type !== "asset") throw new Error("Missing HTML template");
       const template = typeof index.source === "string" ? index.source : new TextDecoder().decode(index.source);
-      const server = dev ?? await createServer({ server: { middlewareMode: true }, appType: "custom", plugins: [], configFile: "vite.config.ts" });
+      // Rendering only needs SSR transforms, not a second browser dependency scan.
+      // The scan competes with the active build's esbuild service and can crash it.
+      const server = dev ?? await createServer({
+        server: { middlewareMode: true, watch: null, hmr: false },
+        appType: "custom",
+        plugins: [],
+        configFile: "vite.config.ts",
+        optimizeDeps: { noDiscovery: true, include: [], entries: [] },
+        ssr: { optimizeDeps: { noDiscovery: true, include: [] } },
+      });
       try {
         const renderer = await server.ssrLoadModule("/src/static-entry.tsx") as Renderer;
         const emittedMedia = new Set<string>();
@@ -66,7 +75,7 @@ export function multilingualPlugin(): Plugin {
               this.emitFile({ type: "asset", fileName: target, source: await readFile(cleanUrl.slice(1)) });
               emittedMedia.add(target);
             }
-            html = html.replaceAll(sourceUrl, `/${target}`);
+            html = html.split(sourceUrl).join(`/${target}`);
           }
           const existing = bundle[fileName];
           if (existing?.type === "asset") existing.source = html;
