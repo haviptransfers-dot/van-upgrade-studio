@@ -63,10 +63,10 @@ const PriceCalculator = () => {
   const { base, nightExtra, total } = useMemo(() => {
     let baseVal = 0;
     if (isFixed) {
-      baseVal = fixedPrices[service]!;
+      baseVal = fixedPrices[service] ?? 0;
     } else {
-      const tier = tieredPrices[service]!;
-      baseVal = pax <= 4 ? tier.upTo4 : tier.fiveToSeven;
+      const tier = tieredPrices[service];
+      baseVal = tier ? (pax <= 4 ? tier.upTo4 : tier.fiveToSeven) : 0;
     }
     const nExtra = night ? pax * 10 : 0;
     return { base: baseVal, nightExtra: nExtra, total: baseVal + nExtra };

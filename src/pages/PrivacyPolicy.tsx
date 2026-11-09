@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import Link from "@/components/LocalizedLink";
 import { useTranslation } from "react-i18next";
 import PageHead from "@/components/PageHead";
 import LanguageSwitcher from "@/components/LanguageSwitcher";

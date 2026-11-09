@@ -1,6 +1,6 @@
 import { createServer, type Plugin, type ViteDevServer } from "vite";
 import { canonicalPaths } from "./canonicalPlugin";
-import { basePath, languageFromPath, LANGUAGES, LEGACY_SLUGS, localizedPath } from "./src/lib/languagePaths";
+import { basePath, languageFromPath, LEGACY_SLUGS, localizedPath } from "./src/lib/languagePaths";
 export const MAX_PRERENDER_PAGES = 1000;
 type Renderer = { renderPage(path: string): Promise<{ body: string; head: string }> };
 export async function multilingualHtml(template: string, pathname: string, renderer: Renderer) {
