@@ -145,8 +145,8 @@ try {
         await new Promise((resolve) => setTimeout(resolve, RETRY_DELAY_MS));
       }
       // Titles/canonicals are client-rendered; wait for the canonical to appear.
-      await page.waitForFunction((url) => document.querySelector('link[rel="canonical"]')?.getAttribute("href") === url, expectedUrl(path), { timeout: 15000 });
-      const head = await page.evaluate(() => ({
+      const headHandle = await page.waitForFunction((url) => {
+        const head = {
         title: document.title,
         canonical: document.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null,
         hreflangs: Object.fromEntries(
@@ -155,7 +155,13 @@ try {
             l.getAttribute("href"),
           ]),
         ),
-      }));
+        };
+        return head.canonical === url && head.title && Object.keys(head.hreflangs).length === 9 ? head : false;
+      }, expectedUrl(path), { timeout: 15000 });
+      // Read the same atomic snapshot that passed the readiness condition;
+      // React can remove initial tags between separate wait/evaluate calls.
+      const head = await headHandle.jsonValue();
+      await headHandle.dispose();
       if (path === "/") homeTitle = head.title;
       const titleOk =
         head.title.length > 0 && head.title !== "Lovable App" && (path === "/" || head.title !== homeTitle);
