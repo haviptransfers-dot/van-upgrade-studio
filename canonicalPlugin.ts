@@ -2,6 +2,7 @@ import type { Plugin } from "vite";
 import { readFileSync } from "node:fs";
 import { URL } from "node:url";
 import { seoRoutes } from "./src/seoRoutes";
+import { LANGUAGES, localizedPath } from "./src/lib/languagePaths";
 
 const SITE = "https://haviptransfers.gr";
 
@@ -9,11 +10,13 @@ export function canonicalPaths() {
   const catalog = readFileSync(new URL("./src/data/blogPosts.ts", import.meta.url), "utf8")
     + readFileSync(new URL("./src/data/nafplio.ts", import.meta.url), "utf8");
   const slugs = [...catalog.matchAll(/slug:\s*"([^"]+)"/g)].map((match) => match[1]);
-  return [...new Set(["/", ...seoRoutes.map((route) => route.path), "/about", "/blog", "/privacy-policy", ...slugs.map((slug) => `/blog/${slug}`)])];
+  const paths = [...new Set(["/", ...seoRoutes.map((route) => route.path), "/about", "/blog", "/privacy-policy", "/child-seats", ...slugs.map((slug) => `/blog/${slug}`)])];
+  return LANGUAGES.flatMap((language) => paths.map((path) => localizedPath(path, language)));
 }
 
 export function pageCanonicalHtml(html: string, requestPath: string, paths = canonicalPaths()) {
-  const pathname = requestPath.split(/[?#]/)[0].replace(/\/index\.html$/, "/").replace(/\/+$/, "") || "/";
+  let pathname = requestPath.split(/[?#]/)[0].replace(/\/index\.html$/, "/").replace(/\/+$/, "") || "/";
+  if (/^\/(el|de|es|fr|it|he|ar)$/.test(pathname)) pathname += "/";
   const withoutCanonical = html.replace(/<link\b(?=[^>]*\brel=["']canonical["'])[^>]*>\s*/gi, "");
   if (!paths.includes(pathname)) return withoutCanonical;
   const url = `${SITE}${pathname}`;
