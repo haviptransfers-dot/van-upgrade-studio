@@ -1,5 +1,6 @@
 import type { Plugin } from "vite";
 import { readFileSync } from "node:fs";
+import { URL } from "node:url";
 import { seoRoutes } from "./src/seoRoutes";
 
 const SITE = "https://haviptransfers.gr";
