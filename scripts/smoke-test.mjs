@@ -21,7 +21,7 @@
 import { writeFileSync, appendFileSync, rmSync } from "node:fs";
 import { chromium } from "playwright";
 import { SITE, publicPaths as getPublicPaths, expectedHreflangs } from "./public-pages.mjs";
-import { numericOption, fetchWithRetry as fetchRetry, UnavailableError, jsonLdBlocks, hasOrganization } from "./smoke-helpers.mjs";
+import { numericOption, fetchWithRetry as fetchRetry, UnavailableError, jsonLdBlocks, hasOrganization, allowSmokeRequest } from "./smoke-helpers.mjs";
 import { smokeSummary } from "./smoke-summary.mjs";
 
 const BASE = (process.argv[2] || "https://haviptransfers.gr").replace(/\/$/, "");
@@ -29,6 +29,8 @@ const RETRIES = numericOption(process.env.SMOKE_RETRIES, 3, 1);
 const RETRY_DELAY_MS = numericOption(process.env.SMOKE_RETRY_DELAY_MS, 5000);
 const FETCH_TIMEOUT_MS = numericOption(process.env.SMOKE_TIMEOUT_MS, 15000, 1);
 const publicPaths = getPublicPaths();
+const PAGE_INTERVAL_MS = numericOption(process.env.SMOKE_PAGE_INTERVAL_MS, 1000);
+const pace = () => new Promise((resolve) => setTimeout(resolve, PAGE_INTERVAL_MS));
 const fetchWithRetry = (url) => fetchRetry(url, { retries: RETRIES, delay: RETRY_DELAY_MS, timeout: FETCH_TIMEOUT_MS });
 const reportPath = new URL("../smoke-failures.md", import.meta.url);
 rmSync(reportPath, { force: true });
@@ -90,6 +92,7 @@ for (const path of publicPaths) {
     continue;
   }
   try {
+    await pace();
     const html = await fetchWithRetry(`${BASE}${path}`);
     reachablePaths.add(path);
     let parsed;
@@ -116,6 +119,10 @@ try {
   } else {
   browser = await chromium.launch({ headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox"] });
   const page = await browser.newPage();
+  await page.route("**/*", (route) => {
+    const request = route.request();
+    return allowSmokeRequest(request.url(), request.resourceType(), BASE) ? route.continue() : route.abort();
+  });
   let homeTitle = "";
   for (const path of publicPaths) {
     if (unavailablePaths.has(path)) {
@@ -123,6 +130,7 @@ try {
       continue;
     }
     try {
+      await pace();
       let response;
       for (let attempt = 1; attempt <= RETRIES; attempt++) {
         try {
@@ -137,8 +145,8 @@ try {
         await new Promise((resolve) => setTimeout(resolve, RETRY_DELAY_MS));
       }
       // Titles/canonicals are client-rendered; wait for the canonical to appear.
-      await page.waitForFunction((url) => document.querySelector('link[rel="canonical"]')?.getAttribute("href") === url, expectedUrl(path), { timeout: 15000 });
-      const head = await page.evaluate(() => ({
+      const headHandle = await page.waitForFunction((url) => {
+        const head = {
         title: document.title,
         canonical: document.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null,
         hreflangs: Object.fromEntries(
@@ -147,7 +155,13 @@ try {
             l.getAttribute("href"),
           ]),
         ),
-      }));
+        };
+        return head.canonical === url && head.title && Object.keys(head.hreflangs).length === 9 ? head : false;
+      }, expectedUrl(path), { timeout: 15000 });
+      // Read the same atomic snapshot that passed the readiness condition;
+      // React can remove initial tags between separate wait/evaluate calls.
+      const head = await headHandle.jsonValue();
+      await headHandle.dispose();
       if (path === "/") homeTitle = head.title;
       const titleOk =
         head.title.length > 0 && head.title !== "Lovable App" && (path === "/" || head.title !== homeTitle);
