@@ -1,3 +1,4 @@
+import PageHead from "@/components/PageHead";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import Index from "./Index";
@@ -18,16 +19,15 @@ const SeoPage = ({ routeKey, path }: SeoPageProps) => {
   return (
     <>
       <ServiceStructuredData path={path} />
+      <PageHead />
       <Helmet>
         <html lang={i18n.language} />
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="canonical" href={url} />
-        <link rel="alternate" hrefLang="en" href={url} />
-        <link rel="alternate" hrefLang="x-default" href={url} />
+
+
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:url" content={url} />
         <meta property="og:type" content="website" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />

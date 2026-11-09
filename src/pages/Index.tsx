@@ -1,7 +1,8 @@
+import PageHead from "@/components/PageHead";
 import { lazy, Suspense, useEffect, useLayoutEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import Link from "@/components/LocalizedLink";
 import { Phone, ChevronDown, MessageCircle, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -87,11 +88,11 @@ const Index = ({ routeKey }: IndexProps) => {
 
   return (
     <div className="homepage-visual min-h-screen bg-transparent relative">
+      {!routeKey && <PageHead title={t("seoContent.homeTitle")} description={t("seoContent.homeDescription")} />}
       {!routeKey && (
         <Helmet>
-          <link rel="canonical" href="https://haviptransfers.gr/" />
-          <link rel="alternate" hrefLang="en" href="https://haviptransfers.gr/" />
-          <link rel="alternate" hrefLang="x-default" href="https://haviptransfers.gr/" />
+
+
         </Helmet>
       )}
       {backgroundReady && <Suspense fallback={null}><AnimatedBackground /></Suspense>}
@@ -189,7 +190,7 @@ const Index = ({ routeKey }: IndexProps) => {
           <h1
             className="home-hero-title font-display font-medium"
           >
-            H&A Tours
+            {t(routeKey === "piraeus" ? "seoContent.piraeusH1" : "seoContent.homeH1")}
           </h1>
           <p
             className="home-hero-description text-foreground"
@@ -227,7 +228,7 @@ const Index = ({ routeKey }: IndexProps) => {
       </section>
 
       <DeferredSection anchor="services" anchors={["fleet", "gallery", "about", "contact", "calculator", "tours"]} rootMargin="0px" placeholderClass="min-h-[900px]">
-        <HomeSections />
+        <HomeSections port={routeKey === "piraeus"} />
       </DeferredSection>
 
       {whatsappReady && <a

@@ -1,3 +1,5 @@
+import RelatedTravelLinks from "@/components/RelatedTravelLinks";
+import PageHead from "@/components/PageHead";
 import OptimizedImage from "@/components/OptimizedImage";
 import ServiceStructuredData from "@/components/ServiceStructuredData";
 import { Helmet } from "react-helmet-async";
@@ -77,16 +79,15 @@ const DelphiTour = () => {
   return (
     <>
       <ServiceStructuredData path="/delphi-private-tour" />
+      <PageHead />
       <Helmet>
         <html lang={i18n.language} />
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="canonical" href={url} />
-        <link rel="alternate" hrefLang="en" href={url} />
-        <link rel="alternate" hrefLang="x-default" href={url} />
+
+
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:url" content={url} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={`${SITE_URL}${tourDelphi}`} />
         <script type="application/ld+json">
@@ -290,6 +291,7 @@ const DelphiTour = () => {
             </a>
           </div>
         </section>
+        <RelatedTravelLinks current={url.replace(SITE_URL, "")} />
       </div>
     </>
   );

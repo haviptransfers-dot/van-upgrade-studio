@@ -1,3 +1,5 @@
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import PageHead from "@/components/PageHead";
 import OptimizedImage from "@/components/OptimizedImage";
 import { Helmet } from "react-helmet-async";
 import Link from "@/components/LocalizedLink";
@@ -15,22 +17,21 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <PageHead />
       <Helmet>
         <html lang={i18n.language} />
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="canonical" href={url} />
-        <link rel="alternate" hrefLang="en" href={url} />
-        <link rel="alternate" hrefLang="x-default" href={url} />
+
+
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:url" content={url} />
         <meta property="og:type" content="website" />
       </Helmet>
 
       {/* Header */}
       <header className="border-b border-border bg-background/90 backdrop-blur-md sticky top-0 z-50">
-        <div className="container mx-auto flex items-center justify-between py-3 px-4">
+        <div className="container mx-auto flex flex-wrap gap-3 items-center justify-between py-3 px-4">
           <Link to="/" className="flex items-center gap-2">
             <OptimizedImage src={logoImg} alt="H&A Tours" loading="eager" sizes="36px" className="h-9 w-9 object-contain" width={36} height={36} />
             <span className="font-display text-base font-bold text-primary">H&A TOURS</span>
@@ -39,6 +40,7 @@ const About = () => {
             <ArrowLeft className="w-4 h-4" />
             {t("blog.backHome")}
           </Link>
+          <LanguageSwitcher />
         </div>
       </header>
 

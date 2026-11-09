@@ -1,6 +1,9 @@
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import PageHead from "@/components/PageHead";
 import OptimizedImage from "@/components/OptimizedImage";
 import { Helmet } from "react-helmet-async";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import Link from "@/components/LocalizedLink";
 import { useTranslation } from "react-i18next";
 import { ArrowLeft, MessageCircle, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -62,16 +65,15 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <PageHead />
       <Helmet>
         <html lang={i18n.language} />
         <title>{post.metaTitle}</title>
         <meta name="description" content={post.metaDescription} />
-        <link rel="canonical" href={url} />
-        <link rel="alternate" hrefLang="en" href={url} />
-        <link rel="alternate" hrefLang="x-default" href={url} />
+
+
         <meta property="og:title" content={post.metaTitle} />
         <meta property="og:description" content={post.metaDescription} />
-        <meta property="og:url" content={url} />
         <meta property="og:type" content="article" />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -88,7 +90,7 @@ const BlogPost = () => {
 
       {/* Header */}
       <header className="border-b border-border bg-background/90 backdrop-blur-md sticky top-0 z-50">
-        <div className="container mx-auto flex items-center justify-between py-3 px-4">
+        <div className="container mx-auto flex flex-wrap gap-3 items-center justify-between py-3 px-4">
           <Link to="/" className="flex items-center gap-2">
             <OptimizedImage src={logoImg} alt="H&A Tours" loading="eager" sizes="36px" className="h-9 w-9 object-contain" width={36} height={36} />
             <span className="font-display text-base font-bold text-primary">H&A TOURS</span>
@@ -97,6 +99,7 @@ const BlogPost = () => {
             <ArrowLeft className="w-4 h-4" />
             {t("blog.backToBlog")}
           </Link>
+          <LanguageSwitcher />
         </div>
       </header>
 
