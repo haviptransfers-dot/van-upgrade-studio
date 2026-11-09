@@ -1,6 +1,7 @@
 import OptimizedImage from "@/components/OptimizedImage";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { MAX_PASSENGERS } from "@/lib/languagePaths";
 import { AnimatePresence, motion } from "framer-motion";
 import { X, Send, Loader2, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -370,7 +371,7 @@ const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
                     required
                     type="number"
                     min={1}
-                    max={8}
+                    max={MAX_PASSENGERS}
                     placeholder={t("chat.bookingPax")}
                     value={booking.pax}
                     onChange={(e) => setBooking({ ...booking, pax: e.target.value })}
