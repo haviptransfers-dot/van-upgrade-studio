@@ -164,16 +164,16 @@ export const luggageTranslations: Record<string, BlogPostTranslation> = {
   ]
 },
   es: {
-  "title": "Traslado Privado en Atenas para Varias Maletas: Espacio, Comodidad y Planificación de Equipaje con el Mercedes Clase V",
-  "excerpt": "¿Llega a Atenas con varias maletas? Descubra por qué un traslado privado en Mercedes Clase V es la opción inteligente cuando la capacidad de equipaje, los horarios y una llegada tranquila son importantes.",
-  "imageAlt": "Chófer profesional cargando maletas en un Mercedes Clase V negro con la Acrópolis de Atenas visible al fondo",
+  "title": "Traslado Privado en Atenas para Varias Maletas: Espacio, Comodidad y Planificación de Equipaje con el Mercedes Vito VIP",
+  "excerpt": "¿Llega a Atenas con varias maletas? Descubra por qué un traslado privado en Mercedes Vito VIP es la opción inteligente cuando la capacidad de equipaje, los horarios y una llegada tranquila son importantes.",
+  "imageAlt": "Chófer profesional cargando maletas en un Mercedes Vito VIP negro con la Acrópolis de Atenas visible al fondo",
   "metaTitle": "Traslado Privado en Atenas para Varias Maletas | H&A VIP Tours",
-  "metaDescription": "Reserve un traslado privado en Atenas con espacio para varias maletas. Mercedes Clase V, chófer profesional, reservas por WhatsApp 24/7 y equipaje planificado con antelación.",
+  "metaDescription": "Reserve un traslado privado en Atenas con espacio para varias maletas. Mercedes Vito VIP, chófer profesional, reservas por WhatsApp 24/7 y equipaje planificado con antelación.",
   "sections": [
     {
       "paragraphs": [
         "Llegar a Atenas con varias maletas cambia lo que se espera de una buena llegada. Un traslado privado en Atenas en el que los viajeros puedan confiar no consiste simplemente en ir de una dirección a otra. Se trata de contar con espacio suficiente para cada maleta, un vehículo listo a la hora acordada y un chófer que entienda que una llegada tras un vuelo largo debe comenzar con calma.",
-        "Para parejas que viajan en una estancia prolongada, familias con carritos de bebé y equipo infantil, huéspedes de cruceros con ropa de etiqueta o viajeros de negocios con material de presentaciones, la capacidad de equipaje merece atención antes de reservar. Un traslado privado premium en un Mercedes Clase V ofrece el espacio, la privacidad y el servicio personalizado que hacen que el primer o último trayecto en Atenas se sienta organizado en lugar de apresurado."
+        "Para parejas que viajan en una estancia prolongada, familias con carritos de bebé y equipo infantil, huéspedes de cruceros con ropa de etiqueta o viajeros de negocios con material de presentaciones, la capacidad de equipaje merece atención antes de reservar. Un traslado privado premium en un Mercedes Vito VIP ofrece el espacio, la privacidad y el servicio personalizado que hacen que el primer o último trayecto en Atenas se sienta organizado en lugar de apresurado."
       ]
     },
     {
@@ -187,7 +187,7 @@ export const luggageTranslations: Record<string, BlogPostTranslation> = {
     {
       "heading": "Traslado privado en Atenas para varias maletas",
       "paragraphs": [
-        "Un [Mercedes Clase V](https://haviptransfers.gr/blog/mercedes-vito-vip-chauffeur-service-athens) es una excelente opción para el transporte privado al aeropuerto, hoteles y puertos, ya que combina un habitáculo de pasajeros refinado con una flexibilidad práctica de equipaje. Los huéspedes viajan juntos en un único vehículo privado, con un chófer profesional y un ambiente que favorece la conversación tranquila, el descanso o una rápida revisión del itinerario del día.",
+        "Un [Mercedes Vito VIP](https://haviptransfers.gr/blog/mercedes-vito-vip-chauffeur-service-athens) es una excelente opción para el transporte privado al aeropuerto, hoteles y puertos, ya que combina un habitáculo de pasajeros refinado con una flexibilidad práctica de equipaje. Los huéspedes viajan juntos en un único vehículo privado, con un chófer profesional y un ambiente que favorece la conversación tranquila, el descanso o una rápida revisión del itinerario del día.",
         "El beneficio no consiste simplemente en disponer de un vehículo más grande, sino en contar con un traslado planificado en torno a su grupo. Una pareja con cuatro maletas grandes tiene necesidades distintas a las de una familia de cinco personas con maletas compactas, un carrito de bebé y sillas infantiles. Un grupo pequeño que viaja ligero puede priorizar un espacio personal generoso, mientras que los pasajeros de crucero pueden necesitar que la zona de equipaje esté optimizada para varias maletas de tamaño completo.",
         "Por esta razón, el equipaje debe describirse con claridad en el momento de la reserva. Indique si las maletas son grandes, medianas o de mano, y mencione cualquier artículo inusual. Si trae un carrito de bebé plegable, una silla de ruedas, una bolsa de golf, un instrumento o un portatrajes, comuníquelo con antelación. Una información clara permite preparar el traslado adecuadamente, sin compromisos de última hora."
       ]
@@ -222,7 +222,7 @@ export const luggageTranslations: Record<string, BlogPostTranslation> = {
       "heading": "La comodidad va más allá del espacio para el equipaje",
       "paragraphs": [
         "La capacidad de equipaje es el punto de partida, pero no debe ir en detrimento de la experiencia del pasajero. Un traslado privado debe dejar espacio suficiente para que los huéspedes se sienten cómodamente, mantengan a mano lo esencial y viajen sin que las maletas invadan el habitáculo. Aquí es donde la configuración del vehículo importa tanto como su tamaño general.",
-        "El Mercedes Clase V está pensado para huéspedes que esperan un entorno de lujo junto con una utilidad práctica. Su espacioso interior es apto para llegadas al aeropuerto, cambios de hotel, jornadas privadas y conexiones portuarias, sin que el trayecto se convierta en un ejercicio de almacenamiento. Para un viaje privado más largo fuera del centro de Atenas, esa comodidad adicional resulta aún más significativa.",
+        "El Mercedes Vito VIP está pensado para huéspedes que esperan un entorno de lujo junto con una utilidad práctica. Su espacioso interior es apto para llegadas al aeropuerto, cambios de hotel, jornadas privadas y conexiones portuarias, sin que el trayecto se convierta en un ejercicio de almacenamiento. Para un viaje privado más largo fuera del centro de Atenas, esa comodidad adicional resulta aún más significativa.",
         "Existen, por supuesto, ciertos equilibrios. Cuantos más pasajeros y artículos voluminosos haya, más importante es seleccionar de antemano la configuración correcta. Un vehículo nunca debe elegirse simplemente porque, técnicamente, puede acomodar a un grupo. Debe elegirse para que ese grupo pueda viajar bien."
       ]
     },
@@ -238,23 +238,23 @@ export const luggageTranslations: Record<string, BlogPostTranslation> = {
       "heading": "Elegir el servicio en lugar de las suposiciones",
       "paragraphs": [
         "Cuando hay varias maletas involucradas, un traslado privado adquiere su mayor valor antes de que llegue el vehículo. La conversación previa a la reserva es donde se crea la experiencia adecuada: se confirma el número de huéspedes, se tiene en cuenta el equipaje, se organizan las sillas infantiles cuando son necesarias y se establece el horario de recogida en función de su itinerario.",
-        "H&A VIP Tours ofrece transporte privado premium en Atenas con vehículos Mercedes Clase V y reservas directas por WhatsApp las 24 horas, lo que facilita comunicar esos requisitos. Un breve mensaje con el número de pasajeros, los detalles del equipaje y el horario de viaje puede ayudar a diseñar un traslado que se sienta personal desde la primera respuesta.",
+        "H&A VIP Tours ofrece transporte privado premium en Atenas con vehículos Mercedes Vito VIP y reservas directas por WhatsApp las 24 horas, lo que facilita comunicar esos requisitos. Un breve mensaje con el número de pasajeros, los detalles del equipaje y el horario de viaje puede ayudar a diseñar un traslado que se sienta personal desde la primera respuesta.",
         "Sus maletas deben formar parte del plan, no una ocurrencia de última hora en la acera. Cuando el espacio, los tiempos y la comodidad de los huéspedes se organizan con antelación, el recorrido por Atenas comienza con la experiencia serena y privada que se propuso reservar."
       ]
     }
   ]
 },
   fr: {
-  "title": "Transfert privé à Athènes pour plusieurs valises : espace, confort et organisation des bagages en Mercedes Classe V",
-  "excerpt": "Vous arrivez à Athènes avec plusieurs bagages ? Découvrez pourquoi un transfert privé en Mercedes Classe V est le choix judicieux lorsque capacité de chargement, ponctualité et arrivée sereine comptent réellement.",
-  "imageAlt": "Chauffeur professionnel chargeant des valises dans une Mercedes Classe V noire avec l'Acropole d'Athènes visible en arrière-plan",
+  "title": "Transfert privé à Athènes pour plusieurs valises : espace, confort et organisation des bagages en Mercedes Vito VIP",
+  "excerpt": "Vous arrivez à Athènes avec plusieurs bagages ? Découvrez pourquoi un transfert privé en Mercedes Vito VIP est le choix judicieux lorsque capacité de chargement, ponctualité et arrivée sereine comptent réellement.",
+  "imageAlt": "Chauffeur professionnel chargeant des valises dans une Mercedes Vito VIP noire avec l'Acropole d'Athènes visible en arrière-plan",
   "metaTitle": "Transfert privé à Athènes pour plusieurs valises | H&A VIP Tours",
-  "metaDescription": "Réservez un transfert privé à Athènes avec suffisamment d'espace pour plusieurs valises. Mercedes Classe V, chauffeur professionnel, réservation 24/7 par WhatsApp et bagages planifiés à l'avance.",
+  "metaDescription": "Réservez un transfert privé à Athènes avec suffisamment d'espace pour plusieurs valises. Mercedes Vito VIP, chauffeur professionnel, réservation 24/7 par WhatsApp et bagages planifiés à l'avance.",
   "sections": [
     {
       "paragraphs": [
         "Arriver à Athènes avec plusieurs valises change ce à quoi doit ressembler une bonne arrivée. Un transfert privé à Athènes digne de confiance ne consiste pas simplement à se rendre d'une adresse à une autre. Il s'agit d'avoir suffisamment de place pour chaque bagage, un véhicule prêt à l'heure convenue, et un chauffeur qui comprend qu'une arrivée après un long voyage doit commencer dans le calme.",
-        "Pour les couples partant pour un long séjour, les familles voyageant avec poussette et équipement pour enfants, les passagers de croisière avec tenues habillées, ou les voyageurs d'affaires transportant du matériel de présentation, la capacité de chargement mérite une attention particulière avant la réservation. Un transfert privé haut de gamme en Mercedes Classe V offre l'espace, l'intimité et le service personnalisé qui rendent le premier ou le dernier trajet à Athènes organisé plutôt que précipité."
+        "Pour les couples partant pour un long séjour, les familles voyageant avec poussette et équipement pour enfants, les passagers de croisière avec tenues habillées, ou les voyageurs d'affaires transportant du matériel de présentation, la capacité de chargement mérite une attention particulière avant la réservation. Un transfert privé haut de gamme en Mercedes Vito VIP offre l'espace, l'intimité et le service personnalisé qui rendent le premier ou le dernier trajet à Athènes organisé plutôt que précipité."
       ]
     },
     {
@@ -268,7 +268,7 @@ export const luggageTranslations: Record<string, BlogPostTranslation> = {
     {
       "heading": "Transfert privé à Athènes pour plusieurs valises",
       "paragraphs": [
-        "Une [Mercedes Classe V](https://haviptransfers.gr/blog/mercedes-vito-vip-chauffeur-service-athens) est un excellent choix pour les transferts privés vers l'aéroport, l'hôtel et le port, car elle allie un habitacle raffiné à une réelle flexibilité de chargement. Les voyageurs se déplacent ensemble dans un seul véhicule privé, avec un chauffeur professionnel et un cadre propice à une conversation tranquille, au repos, ou à un rapide point sur le programme de la journée.",
+        "Une [Mercedes Vito VIP](https://haviptransfers.gr/blog/mercedes-vito-vip-chauffeur-service-athens) est un excellent choix pour les transferts privés vers l'aéroport, l'hôtel et le port, car elle allie un habitacle raffiné à une réelle flexibilité de chargement. Les voyageurs se déplacent ensemble dans un seul véhicule privé, avec un chauffeur professionnel et un cadre propice à une conversation tranquille, au repos, ou à un rapide point sur le programme de la journée.",
         "L'avantage ne réside pas simplement dans le fait de disposer d'un véhicule plus grand. Il s'agit d'un transfert pensé autour de votre groupe. Un couple avec quatre grandes valises n'a pas les mêmes besoins qu'une famille de cinq personnes avec des valises compactes, une poussette et des sièges enfants. Un petit groupe voyageant léger privilégiera peut-être un espace personnel généreux, tandis que des passagers de croisière auront besoin d'un espace bagages optimisé pour plusieurs valises de grande taille.",
         "C'est pourquoi les bagages doivent être décrits clairement au moment de la réservation. Précisez si les valises sont grandes, moyennes ou de type cabine, et mentionnez tout article inhabituel. Si vous transportez une poussette pliable, un fauteuil roulant, un sac de golf, un instrument de musique ou une housse à vêtements, indiquez-le à l'avance. Des informations claires permettent de préparer correctement le transfert, sans compromis de dernière minute."
       ]
@@ -303,7 +303,7 @@ export const luggageTranslations: Record<string, BlogPostTranslation> = {
       "heading": "Le confort va au-delà de l'espace bagages",
       "paragraphs": [
         "La capacité de chargement est le point de départ, mais elle ne doit pas se faire au détriment de l'expérience passager. Un transfert privé doit laisser suffisamment d'espace pour que les voyageurs soient assis confortablement, gardent leurs effets essentiels à portée de main, et voyagent sans que les bagages n'encombrent l'habitacle. C'est là que la configuration du véhicule compte autant que sa taille globale.",
-        "La Mercedes Classe V convient aux voyageurs qui attendent un cadre de luxe allié à une véritable praticité. Son intérieur spacieux accompagne les arrivées à l'aéroport, les changements d'hôtel, les excursions privées à la journée et les liaisons portuaires, sans transformer le trajet en simple opération de rangement. Pour un trajet privé plus long au-delà du centre d'Athènes, ce confort supplémentaire prend encore plus de sens.",
+        "La Mercedes Vito VIP convient aux voyageurs qui attendent un cadre de luxe allié à une véritable praticité. Son intérieur spacieux accompagne les arrivées à l'aéroport, les changements d'hôtel, les excursions privées à la journée et les liaisons portuaires, sans transformer le trajet en simple opération de rangement. Pour un trajet privé plus long au-delà du centre d'Athènes, ce confort supplémentaire prend encore plus de sens.",
         "Il existe bien sûr des compromis à faire. Plus le nombre de passagers et d'objets volumineux est important, plus il est essentiel de choisir la bonne configuration à l'avance. Un véhicule ne devrait jamais être choisi simplement parce qu'il peut techniquement accueillir un groupe. Il devrait être sélectionné pour que le groupe puisse voyager dans les meilleures conditions."
       ]
     },
@@ -319,23 +319,23 @@ export const luggageTranslations: Record<string, BlogPostTranslation> = {
       "heading": "Choisir le service plutôt que les suppositions",
       "paragraphs": [
         "Lorsque plusieurs bagages sont en jeu, un transfert privé prend toute sa valeur avant même l'arrivée du véhicule. C'est lors de l'échange de réservation que la bonne expérience se construit : le nombre de voyageurs est confirmé, les bagages sont pris en compte, les sièges enfants sont organisés si nécessaire, et l'horaire de prise en charge est établi en fonction de votre itinéraire.",
-        "H&A VIP Tours propose un transport privé haut de gamme à Athènes avec des véhicules Mercedes Classe V et une réservation directe par WhatsApp disponible 24 h/24 et 7 j/7, facilitant la communication de ces besoins. Un court message précisant le número de passagers, les détails des bagages et le programme de voyage peut aider à concevoir un transfert personnalisé dès la première réponse.",
+        "H&A VIP Tours propose un transport privé haut de gamme à Athènes avec des véhicules Mercedes Vito VIP et une réservation directe par WhatsApp disponible 24 h/24 et 7 j/7, facilitant la communication de ces besoins. Un court message précisant le número de passagers, les détails des bagages et le programme de voyage peut aider à concevoir un transfert personnalisé dès la première réponse.",
         "Vos bagages doivent faire partie du plan, et non une réflexion de dernière minute au bord du trottoir. Lorsque l'espace, le timing et le confort des voyageurs sont organisés à l'avance, le trajet à travers Athènes commence avec l'expérience privée et sereine que vous souhaitiez réserver."
       ]
     }
   ]
 },
   de: {
-  "title": "Privater Transfer in Athen für mehrere Koffer: Platz, Komfort und Gepäckplanung mit der Mercedes V-Klasse",
-  "excerpt": "Landen Sie in Athen mit mehreren Gepäckstücken? Erfahren Sie, warum ein privater Transfer mit der Mercedes V-Klasse die kluge Wahl ist, wenn Gepäckkapazität, Timing und eine entspannte Ankunft entscheidend sind.",
-  "imageAlt": "Professioneller Chauffeur verlädt Koffer in eine schwarze Mercedes V-Klasse, im Hintergrund die Akropolis von Athen",
+  "title": "Privater Transfer in Athen für mehrere Koffer: Platz, Komfort und Gepäckplanung mit der Mercedes Vito VIP",
+  "excerpt": "Landen Sie in Athen mit mehreren Gepäckstücken? Erfahren Sie, warum ein privater Transfer mit der Mercedes Vito VIP die kluge Wahl ist, wenn Gepäckkapazität, Timing und eine entspannte Ankunft entscheidend sind.",
+  "imageAlt": "Professioneller Chauffeur verlädt Koffer in eine schwarze Mercedes Vito VIP, im Hintergrund die Akropolis von Athen",
   "metaTitle": "Privater Transfer in Athen für mehrere Koffer | H&A VIP Tours",
-  "metaDescription": "Buchen Sie einen privaten Transfer in Athen mit ausreichend Platz für mehrere Koffer. Mercedes V-Klasse, professioneller Chauffeur, 24/7-Buchung per WhatsApp und im Voraus geplantes Gepäck.",
+  "metaDescription": "Buchen Sie einen privaten Transfer in Athen mit ausreichend Platz für mehrere Koffer. Mercedes Vito VIP, professioneller Chauffeur, 24/7-Buchung per WhatsApp und im Voraus geplantes Gepäck.",
   "sections": [
     {
       "paragraphs": [
         "Wenn man mit mehreren Koffern in Athen landet, verändert sich, wie eine gelungene Ankunft aussehen sollte. Ein privater Transfer in Athen, auf den sich Reisende verlassen können, bedeutet nicht einfach, von einer Adresse zur anderen zu gelangen. Es geht darum, genug Platz für jedes Gepäckstück zu haben, ein Fahrzeug, das pünktlich zur vereinbarten Zeit bereitsteht, und einen Fahrer, der versteht, dass eine lange Reise ruhig beginnen sollte.",
-        "Für Paare auf Langzeitaufenthalt, Familien mit Kinderwagen und Babyausstattung, Kreuzfahrtgäste mit Abendgarderobe oder Geschäftsreisende mit Präsentationsmaterial verdient die Gepäckkapazität schon vor der Buchung Aufmerksamkeit. Ein Premium-Privattransfer in einer Mercedes V-Klasse bietet den Platz, die Privatsphäre und den persönlichen Service, die die erste oder letzte Fahrt in Athen organisiert statt gehetzt wirken lassen."
+        "Für Paare auf Langzeitaufenthalt, Familien mit Kinderwagen und Babyausstattung, Kreuzfahrtgäste mit Abendgarderobe oder Geschäftsreisende mit Präsentationsmaterial verdient die Gepäckkapazität schon vor der Buchung Aufmerksamkeit. Ein Premium-Privattransfer in einer Mercedes Vito VIP bietet den Platz, die Privatsphäre und den persönlichen Service, die die erste oder letzte Fahrt in Athen organisiert statt gehetzt wirken lassen."
       ]
     },
     {
@@ -349,7 +349,7 @@ export const luggageTranslations: Record<string, BlogPostTranslation> = {
     {
       "heading": "Privater Transfer in Athen für mehrere Koffer",
       "paragraphs": [
-        "Eine [Mercedes V-Klasse](https://haviptransfers.gr/blog/mercedes-vito-vip-chauffeur-service-athens) ist eine ausgezeichnete Wahl für private Flughafen-, Hotel- und Hafentransfers, da sie eine gehobene Fahrgastkabine mit praktischer Gepäckflexibilität verbindet. Die Gäste reisen gemeinsam in einem privaten Fahrzeug, begleitet von einem professionellen Chauffeur, in einer Atmosphäre, die ruhige Gespräche, Entspannung oder eine kurze Vorbereitung auf den bevorstehenden Tag ermöglicht.",
+        "Eine [Mercedes Vito VIP](https://haviptransfers.gr/blog/mercedes-vito-vip-chauffeur-service-athens) ist eine ausgezeichnete Wahl für private Flughafen-, Hotel- und Hafentransfers, da sie eine gehobene Fahrgastkabine mit praktischer Gepäckflexibilität verbindet. Die Gäste reisen gemeinsam in einem privaten Fahrzeug, begleitet von einem professionellen Chauffeur, in einer Atmosphäre, die ruhige Gespräche, Entspannung oder eine kurze Vorbereitung auf den bevorstehenden Tag ermöglicht.",
         "Der Vorteil liegt nicht nur in einem größeren Fahrzeug. Es geht darum, einen Transfer zu haben, der auf Ihre Gruppe abgestimmt ist. Ein Paar mit vier großen Koffern hat andere Bedürfnisse als eine fünfköpfige Familie mit kompakten Koffern, Kinderwagen und Kindersitzen. Eine kleine, leicht reisende Gruppe legt vielleicht Wert auf großzügigen persönlichen Freiraum, während Kreuzfahrtpassagiere einen für mehrere großformatige Koffer optimierten Gepäckraum benötigen.",
         "Aus diesem Grund sollte das Gepäck bei der Buchung klar beschrieben werden. Geben Sie an, ob die Gepäckstücke groß, mittelgroß oder Handgepäckgröße haben, und erwähnen Sie ungewöhnliche Gegenstände. Wenn Sie einen faltbaren Kinderwagen, Rollstuhl, Golfbag, ein Instrument oder einen Kleidersack mitbringen, teilen Sie dies im Voraus mit. Klare Informationen ermöglichen eine sorgfältige Vorbereitung des Transfers, ohne Kompromisse in letzter Minute."
       ]
@@ -384,7 +384,7 @@ export const luggageTranslations: Record<string, BlogPostTranslation> = {
       "heading": "Komfort bedeutet mehr als Gepäckraum",
       "paragraphs": [
         "Die Gepäckkapazität ist der Ausgangspunkt, sollte jedoch nicht auf Kosten des Fahrgasterlebnisses gehen. Ein privater Transfer sollte den Gästen genug Platz zum bequemen Sitzen lassen, wichtige Dinge griffbereit halten und eine Fahrt ohne beengte Kabine ermöglichen. Hier zählt die Konfiguration des Fahrzeugs ebenso wie seine Gesamtgröße.",
-        "Die Mercedes V-Klasse eignet sich für Gäste, die neben praktischem Nutzen auch ein luxuriöses Ambiente erwarten. Ihr geräumiges Interieur unterstützt Flughafenankünfte, Hotelwechsel, private Tagesausflüge und Hafenverbindungen, ohne die Fahrt in eine reine Verstauübung zu verwandeln. Bei einer längeren privaten Fahrt über das Zentrum Athens hinaus wird dieser zusätzliche Komfort noch bedeutsamer.",
+        "Die Mercedes Vito VIP eignet sich für Gäste, die neben praktischem Nutzen auch ein luxuriöses Ambiente erwarten. Ihr geräumiges Interieur unterstützt Flughafenankünfte, Hotelwechsel, private Tagesausflüge und Hafenverbindungen, ohne die Fahrt in eine reine Verstauübung zu verwandeln. Bei einer längeren privaten Fahrt über das Zentrum Athens hinaus wird dieser zusätzliche Komfort noch bedeutsamer.",
         "Natürlich gibt es Kompromisse. Je mehr Passagiere und übergroße Gegenstände beteiligt sind, desto wichtiger ist es, die passende Lösung im Voraus zu wählen. Ein Fahrzeug sollte niemals nur deshalb ausgewählt werden, weil es eine Gruppe technisch aufnehmen kann. Es sollte so gewählt werden, dass die Gruppe gut reisen kann."
       ]
     },
@@ -400,7 +400,7 @@ export const luggageTranslations: Record<string, BlogPostTranslation> = {
       "heading": "Service statt Annahmen wählen",
       "paragraphs": [
         "Wenn mehrere Gepäckstücke im Spiel sind, entfaltet ein privater Transfer seinen größten Wert schon vor der Ankunft des Fahrzeugs. Im Buchungsgespräch entsteht das richtige Erlebnis: Die Anzahl der Gäste wird bestätigt, das Gepäck wird berücksichtigt, Kindersitze werden bei Bedarf organisiert, und der Abholzeitplan wird entsprechend Ihrer Reiseroute festgelegt.",
-        "H&A VIP Tours bietet erstklassigen privaten Transport in Athen mit Fahrzeugen der Mercedes V-Klasse und direkter 24/7-Buchung per WhatsApp, wodurch die Kommunikation dieser Anforderungen unkompliziert wird. Eine kurze Nachricht mit Angabe der Passagierzahl, der Gepäckdetails und des Reiseplans kann dazu beitragen, dass sich der Transfer schon ab der ersten Antwort persönlich anfühlt.",
+        "H&A VIP Tours bietet erstklassigen privaten Transport in Athen mit Fahrzeugen der Mercedes Vito VIP und direkter 24/7-Buchung per WhatsApp, wodurch die Kommunikation dieser Anforderungen unkompliziert wird. Eine kurze Nachricht mit Angabe der Passagierzahl, der Gepäckdetails und des Reiseplans kann dazu beitragen, dass sich der Transfer schon ab der ersten Antwort persönlich anfühlt.",
         "Ihr Gepäck sollte Teil des Plans sein, nicht ein nachträglicher Gedanke am Bordstein. Wenn Platz, Timing und Gästekomfort im Voraus arrangiert sind, beginnt die Fahrt durch Athen mit genau dem gelassenen, privaten Erlebnis, das Sie buchen wollten."
       ]
     }

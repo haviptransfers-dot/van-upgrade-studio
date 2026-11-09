@@ -351,7 +351,7 @@ export const chauffeurVsTaxiTranslations: Record<string, BlogPostTranslation> = 
     excerpt:
       "Eine späte Ankunft, mehrere Koffer, Kindersitze oder ein Termin, den Sie nicht verpassen dürfen, verändern den Wert Ihrer Fahrt. Erfahren Sie, wann Chauffeur und wann Taxi passt.",
     imageAlt:
-      "Geteiltes Bild: Ein Chauffeur öffnet einem Gast die Tür einer schwarzen Mercedes V-Klasse und ein gelbes Athener Taxi vor der Akropolis",
+      "Geteiltes Bild: Ein Chauffeur öffnet einem Gast die Tür einer schwarzen Mercedes Vito VIP und ein gelbes Athener Taxi vor der Akropolis",
     metaTitle: "Chauffeur-Transfer oder Taxi in Athen | H&A Tours",
     metaDescription:
       "Vergleich: privater Chauffeur-Transfer oder Taxi in Athen — Verfügbarkeit, Stauraum, Kindersitze, Privatsphäre und geplante Abholung.",
@@ -373,7 +373,7 @@ export const chauffeurVsTaxiTranslations: Record<string, BlogPostTranslation> = 
       {
         heading: "Wann der Premium-Privattransfer die bessere Wahl ist",
         paragraphs: [
-          "Der private Chauffeur-Service ist besonders wertvoll, wenn der Transfer selbst Teil des Reiseerlebnisses ist und nicht nur eine Art, Distanz zu überbrücken. Eine [Mercedes V-Klasse](https://haviptransfers.gr/blog/mercedes-vito-vip-chauffeur-service-athens) bietet eine spürbar andere Umgebung als ein Standard-Stadtauto: großzügige Sitze, eine ruhige Kabine, Platz für Gepäck und die Privatsphäre, sich auszuruhen, zu telefonieren oder sich bequem mit Ihren Begleitern zu unterhalten.",
+          "Der private Chauffeur-Service ist besonders wertvoll, wenn der Transfer selbst Teil des Reiseerlebnisses ist und nicht nur eine Art, Distanz zu überbrücken. Eine [Mercedes Vito VIP](https://haviptransfers.gr/blog/mercedes-vito-vip-chauffeur-service-athens) bietet eine spürbar andere Umgebung als ein Standard-Stadtauto: großzügige Sitze, eine ruhige Kabine, Platz für Gepäck und die Privatsphäre, sich auszuruhen, zu telefonieren oder sich bequem mit Ihren Begleitern zu unterhalten.",
         ],
       },
       {
@@ -409,7 +409,7 @@ export const chauffeurVsTaxiTranslations: Record<string, BlogPostTranslation> = 
         heading: "Komfort ist mehr als ein Luxusdetail",
         paragraphs: [
           "Athen belohnt Reisende, die ihre Energie bewahren. Ob Ihr Programm ein reserviertes Abendessen, einen vollen Tag voller Meetings oder einen frühen Start zu einem privaten Ausflug außerhalb der Stadt umfasst — entspannt anzukommen prägt den Rest des Tages.",
-          "In einer Mercedes V-Klasse haben Passagiere Platz, sich einzurichten, nicht nur hineinzupassen. Das ist besonders relevant mit mehreren Koffern, Kinderwagen, Handgepäck oder den praktischen Extras des Familienreisens. Der zusätzliche Raum erlaubt Ihrer Gruppe auch, privat zu reisen, ohne das gedrängte Gefühl, das die erste oder letzte Fahrt einer Reise unnötig anstrengend machen kann.",
+          "In einer Mercedes Vito VIP haben Passagiere Platz, sich einzurichten, nicht nur hineinzupassen. Das ist besonders relevant mit mehreren Koffern, Kinderwagen, Handgepäck oder den praktischen Extras des Familienreisens. Der zusätzliche Raum erlaubt Ihrer Gruppe auch, privat zu reisen, ohne das gedrängte Gefühl, das die erste oder letzte Fahrt einer Reise unnötig anstrengend machen kann.",
           "Komfort umfasst auch die leiseren Details: ein sauberes Fahrzeug, ein professioneller Auftritt, ein Fahrer, der den vereinbarten Zeitplan versteht, und keine Notwendigkeit, bei der Abholung die Grundlagen Ihrer Buchung zu erklären. Einzeln sind das kleine Dinge, aber zusammen schaffen sie ein gelasseneres Erlebnis.",
         ],
       },
@@ -418,7 +418,7 @@ export const chauffeurVsTaxiTranslations: Record<string, BlogPostTranslation> = 
         paragraphs: [
           "Ein Chauffeur ist nicht einfach ein Fahrer, dem ein Auto zugewiesen wurde. Im Premium-Privattransport unterstützt der Fahrer den Ablauf Ihres Programms. Die Abholhinweise sind klar, die Zeiten bestätigt, und der Service passt sich den Anforderungen Ihrer Gruppe an.",
           "Diese Unterstützung wird noch wertvoller, wenn Ihre Bedürfnisse über einen einzelnen Transfer hinausgehen. Sie möchten vielleicht Transfers zwischen Hotels, ein privates Fahrzeug für einen Abend oder eine maßgeschneiderte Tour in Ihrem Tempo. Statt Ihre Pläne in einen festen Fahrplan zu pressen, lässt der private Service den Fahrplan Ihre Pläne widerspiegeln.",
-          "H&A VIP Tours bietet diesen Premium-Privattransfer in Athen mit Mercedes V-Klasse-Fahrzeugen, professionellen Chauffeuren und direkter 24/7-WhatsApp-Buchung. Gäste können Flughafen-, Hafen-, Hotel- und private Fahrtwünsche direkt klären — inklusive Gepäck, Kindersitzen und Zeitangaben.",
+          "H&A VIP Tours bietet diesen Premium-Privattransfer in Athen mit Mercedes Vito VIP-Fahrzeugen, professionellen Chauffeuren und direkter 24/7-WhatsApp-Buchung. Gäste können Flughafen-, Hafen-, Hotel- und private Fahrtwünsche direkt klären — inklusive Gepäck, Kindersitzen und Zeitangaben.",
         ],
       },
       {

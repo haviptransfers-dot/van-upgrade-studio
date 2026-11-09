@@ -159,10 +159,10 @@ export const childSeatsTranslations: Record<string, BlogPostTranslation> = {
   },
   "de": {
     "title": "Warum Kindersitze bei privaten Transfers in Griechenland unverzichtbar sind: Sicherheit, Gesetz und Komfort mit H&A TOURS LTD",
-    "excerpt": "Zertifizierte BeSafe Kindersitze für jedes Alter, von uns montiert und auf Wunsch immer kostenlos. Griechisches Recht, echte Sicherheitsdaten und der Komfort unserer Mercedes V-Klasse.",
-    "imageAlt": "Illustration einer schwarzen Mercedes V-Klasse mit Kindersitzen am Flughafen Athen und einem Chauffeur mit H&A Tours Ltd Family Safe Schild neben einer Familie mit zwei Kindern",
+    "excerpt": "Zertifizierte BeSafe Kindersitze für jedes Alter, von uns montiert und auf Wunsch immer kostenlos. Griechisches Recht, echte Sicherheitsdaten und der Komfort unserer Mercedes Vito VIP.",
+    "imageAlt": "Illustration einer schwarzen Mercedes Vito VIP mit Kindersitzen am Flughafen Athen und einem Chauffeur mit H&A Tours Ltd Family Safe Schild neben einer Familie mit zwei Kindern",
     "metaTitle": "Kindersitze bei privaten Transfers in Griechenland – Sicherheit und Gesetz | H&A TOURS LTD",
-    "metaDescription": "Griechisches Recht, i-Size Regeln und echte Sicherheitsdaten zu Kindersitzen. BeSafe Sitze für Babys, Kleinkinder und größere Kinder, kostenlos in unserer Mercedes V-Klasse.",
+    "metaDescription": "Griechisches Recht, i-Size Regeln und echte Sicherheitsdaten zu Kindersitzen. BeSafe Sitze für Babys, Kleinkinder und größere Kinder, kostenlos in unserer Mercedes Vito VIP.",
     "sections": [
       {
         "paragraphs": [
