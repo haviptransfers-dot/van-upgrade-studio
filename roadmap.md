@@ -1,5 +1,7 @@
 # Roadmap
 
+- [done] Normalized 232 sitemap locs, 2088 alternates and all static/client canonical and og:url tags to trailing slashes; renamed 20 hosted originals/variants with identical bytes and updated all image references. All 184 tests passed; 232 initial documents, 20 image responses and desktop/mobile rendering verified. Publication requested in this turn; completion of deployment remains external.
+
 - [done] Implemented uploaded multilingual SEO requirements: 232 translated initial HTML documents across eight languages, matching canonical/hreflang and sitemap, approved homepage/Piraeus content, Vito VIP terminology, seven-passenger limit and owner-confirmed 63 reviews. All 176 tests pass; all 232 initial documents verified; browser language navigation and WhatsApp links verified. No publication. HTTP 301 rules verified locally and configured for Netlify; Lovable hosting behavior remains unverified.
 
 - [done] Removed duplicate business JSON-LD across all 28 pages; one shared Organization preserves business details and rating counts of 127, while service graphs and article authors reference its @id. Verified initial/rendered HTML and transfer→Blog→article navigation; all 164 tests pass. Not published.

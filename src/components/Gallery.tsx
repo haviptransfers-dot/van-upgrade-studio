@@ -10,7 +10,7 @@ import gallery6 from "@/assets/gallery-6.jpg";
 import airportPickupVan from "@/assets/airport-pickup-van.jpg.asset.json";
 import driverHandshake from "@/assets/driver-handshake-airport.jpg.asset.json";
 import vanAthensChildSeat from "@/assets/van-athens-child-seat.jpg.asset.json";
-import vClassLookCollage from "@/assets/v-class-look-collage.jpg.asset.json";
+import vitoVipLookCollage from "@/assets/mercedes-vito-vip-look-collage.jpg.asset.json";
 
 const ASSET_HOST = "https://van-move-boost.lovable.app";
 
@@ -32,7 +32,7 @@ const images: { src: string; alt: string; fit?: string }[] = [
   { src: gallery6, alt: "Mercedes Vito VIP interior with diamond-stitched black leather seats and blue ambient floor lighting" },
   { src: `${ASSET_HOST}${airportPickupVan.url}`, alt: "H&A Tours chauffeur opening the Mercedes Vito VIP door for a traveler with luggage at Athens Airport" },
   { src: `${ASSET_HOST}${driverHandshake.url}`, alt: "H&A Tours driver welcoming a client with a handshake at Athens Airport, Acropolis in the background" },
-  { src: `${ASSET_HOST}${vClassLookCollage.url}`, alt: "H&A Tours Mercedes Vito VIP presentation with exterior, interior and detail views", fit: "object-contain bg-background" },
+  { src: `${ASSET_HOST}${vitoVipLookCollage.url}`, alt: "H&A Tours Mercedes Vito VIP presentation with exterior, interior and detail views", fit: "object-contain bg-background" },
   { src: `${ASSET_HOST}${vanAthensChildSeat.url}`, alt: "Mother securing her child in a child seat inside the Mercedes Vito VIP, Acropolis in the background" },
 ];
 

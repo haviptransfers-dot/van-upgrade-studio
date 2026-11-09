@@ -7,7 +7,7 @@ describe("owner-confirmed language URLs and capacity", () => {
     expect(path).toBe(`${language === "en" ? "" : `/${language}`}/blog/athens-to-nafplio-private-tour`);
     expect(languageFromPath(path)).toBe(language);
     expect(basePath(path)).toBe("/blog/athens-to-nafplio-private-tour");
-    expect(pageUrl(path, language)).toBe(`https://haviptransfers.gr${path}`);
+    expect(pageUrl(path, language)).toBe(`https://haviptransfers.gr${path}/`);
   });
   it("uses unprefixed English and preserves queries and anchors during switching", () => {
     expect(localizedPath("/el/blog?view=all#posts", "en")).toBe("/blog?view=all#posts");

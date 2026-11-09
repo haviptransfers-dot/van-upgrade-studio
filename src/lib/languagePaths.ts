@@ -26,4 +26,7 @@ export function localizedPath(path: string, language: string): string {
   const prefix = language !== "en" && LANGUAGES.includes(language as SiteLanguage) ? `/${language}` : "";
   return `${prefix}${resolved === "/" ? "/" : resolved}${suffix}`;
 }
-export function pageUrl(path: string, language: string) { return `${SITE_ORIGIN}${localizedPath(path, language)}`; }
+export function pageUrl(path: string, language: string) {
+  const pathname = localizedPath(path, language).split(/[?#]/)[0];
+  return `${SITE_ORIGIN}${pathname.replace(/\/+$/, "")}/`;
+}

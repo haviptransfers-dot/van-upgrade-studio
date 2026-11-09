@@ -2,9 +2,7 @@ import type { Plugin } from "vite";
 import { readFileSync } from "node:fs";
 import { URL } from "node:url";
 import { seoRoutes } from "./src/seoRoutes";
-import { LANGUAGES, localizedPath } from "./src/lib/languagePaths";
-
-const SITE = "https://haviptransfers.gr";
+import { LANGUAGES, localizedPath, pageUrl, languageFromPath } from "./src/lib/languagePaths";
 
 export function canonicalPaths() {
   const catalog = readFileSync(new URL("./src/data/blogPosts.ts", import.meta.url), "utf8")
@@ -19,7 +17,7 @@ export function pageCanonicalHtml(html: string, requestPath: string, paths = can
   if (/^\/(el|de|es|fr|it|he|ar)$/.test(pathname)) pathname += "/";
   const withoutCanonical = html.replace(/<link\b(?=[^>]*\brel=["']canonical["'])[^>]*>\s*/gi, "");
   if (!paths.includes(pathname)) return withoutCanonical;
-  const url = `${SITE}${pathname}`;
+  const url = pageUrl(pathname, languageFromPath(pathname));
   return withoutCanonical
     .replace("</head>", `<link rel="canonical" id="static-canonical" href="${url}" />\n  </head>`)
     .replace(/(<meta\b[^>]*property="og:url"[^>]*content=")[^"]*(")/, `$1${url}$2`);
@@ -41,7 +39,7 @@ export function canonicalPlugin(): Plugin {
       const html = typeof index.source === "string" ? index.source : new TextDecoder().decode(index.source);
       for (const pathname of canonicalPaths()) {
         if (pathname === "/") continue;
-        const fileName = `${pathname.slice(1)}/index.html`;
+        const fileName = `${pathname.slice(1).replace(/\/+$/, "")}/index.html`;
         // Preserve independently generated article documents and their metadata.
         if (bundle[fileName]) continue;
         this.emitFile({ type: "asset", fileName, source: pageCanonicalHtml(html, pathname) });

@@ -8,12 +8,12 @@ const canonicals = (html: string) => [...html.matchAll(/<link\b[^>]*rel="canonic
 
 describe("self-referencing public page canonicals", () => {
   it.each(["/blog", "/about"])("sets %s to its own production URL", (pathname) => {
-    expect(canonicals(pageCanonicalHtml(template, pathname))).toEqual([`https://haviptransfers.gr${pathname}`]);
+    expect(canonicals(pageCanonicalHtml(template, pathname))).toEqual([`https://haviptransfers.gr${pathname.replace(/\/+$/, "")}/`]);
   });
 
   it("covers every sitemap page and every article with one canonical", () => {
     const urls = [...readFileSync("public/sitemap.xml", "utf8").matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
-    expect(canonicalPaths().map((pathname) => `https://haviptransfers.gr${pathname}`).sort()).toEqual(urls.sort());
+    expect(canonicalPaths().map((pathname) => `https://haviptransfers.gr${pathname.replace(/\/+$/, "")}/`).sort()).toEqual(urls.sort());
     for (const url of urls) {
       const html = pageCanonicalHtml(template, new URL(url).pathname);
       expect(canonicals(html)).toEqual([url]);
@@ -23,8 +23,8 @@ describe("self-referencing public page canonicals", () => {
 
   it("replaces inherited tags and strips queries and trailing slash aliases", () => {
     const inherited = pageCanonicalHtml(template, "/");
-    expect(canonicals(pageCanonicalHtml(inherited, "/blog/?lang=el"))).toEqual(["https://haviptransfers.gr/blog"]);
-    expect(canonicals(pageCanonicalHtml(inherited, "/about/index.html"))).toEqual(["https://haviptransfers.gr/about"]);
+    expect(canonicals(pageCanonicalHtml(inherited, "/blog/?lang=el"))).toEqual(["https://haviptransfers.gr/blog/"]);
+    expect(canonicals(pageCanonicalHtml(inherited, "/about/index.html"))).toEqual(["https://haviptransfers.gr/about/"]);
     expect(canonicals(pageCanonicalHtml(inherited, "/missing-page"))).toEqual([]);
   });
 
@@ -42,7 +42,7 @@ describe("self-referencing public page canonicals", () => {
     expect(emitted).toHaveLength(canonicalPaths().length - 2);
     expect(emitted.some((asset) => asset.fileName === article)).toBe(false);
     for (const asset of emitted) {
-      expect(canonicals(asset.source)).toEqual([`https://haviptransfers.gr/${asset.fileName.replace(/\/index\.html$/, "")}`]);
+      expect(canonicals(asset.source)).toEqual([`https://haviptransfers.gr/${asset.fileName.replace(/index\.html$/, "")}`]);
     }
   });
 });
