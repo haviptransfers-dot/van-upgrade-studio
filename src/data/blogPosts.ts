@@ -1,7 +1,7 @@
 import supplements from "./blogSupplements.json";
 
 import athensAirportHotelTransfer from "@/assets/athens-airport-hotel-transfer.jpg.asset.json";
-import mercedesVClassChauffeurAthens from "@/assets/mercedes-vito-vip-chauffeur-athens.jpg.asset.json";
+import mercedesVitoVipChauffeurAthens from "@/assets/mercedes-vito-vip-chauffeur-athens.jpg.asset.json";
 import privateTransferPiraeusPort from "@/assets/private-transfer-piraeus-port.jpg.asset.json";
 import privateTransferAthensLuggage from "@/assets/private-transfer-athens-luggage.jpg.asset.json";
 import privateChauffeurBusinessAthens from "@/assets/private-chauffeur-business-athens.jpg.asset.json";
@@ -18,9 +18,9 @@ import privateMeteoraTourFromAthens from "@/assets/private-meteora-tour-from-ath
 import athensMeteoraRouteMap from "@/assets/athens-meteora-route-map.webp";
 import childSeatsFamilySafe from "@/assets/child-seats-family-safe.jpg.asset.json";
 import athensAirportPiraeusPortTransfer from "@/assets/athens-airport-piraeus-port-transfer.webp.asset.json";
-import weddingTransferBrideVClass from "@/assets/wedding-transfer-bride-mercedes-vito-vip.jpg.asset.json";
-import bachelorettePartyVClass from "@/assets/bachelorette-party-mercedes-vito-vip.webp.asset.json";
-import bachelorPartyVClass from "@/assets/bachelor-party-mercedes-vito-vip.webp.asset.json";
+import weddingTransferBrideVitoVip from "@/assets/wedding-transfer-bride-mercedes-vito-vip.jpg.asset.json";
+import bachelorettePartyVitoVip from "@/assets/bachelorette-party-mercedes-vito-vip.webp.asset.json";
+import bachelorPartyVitoVip from "@/assets/bachelor-party-mercedes-vito-vip.webp.asset.json";
 import chauffeurVsTaxiAthens from "@/assets/chauffeur-vs-taxi-athens.jpg.asset.json";
 
 
@@ -170,7 +170,7 @@ export const blogPosts: BlogPost[] = [
     title: "Bachelor & Bachelorette Party Transfers in Greece – Party Safe, Travel in Style",
     excerpt:
       "The party starts the moment you step into the van. Private bachelor and bachelorette party transfers in Greece with our black Mercedes Vito VIP and caramel leather interior.",
-    image: hostedAssetUrl(bachelorettePartyVClass),
+    image: hostedAssetUrl(bachelorettePartyVitoVip),
     imageAlt:
       "Six friends wearing Team Bride and Bride to Be sashes laughing together beside a black Mercedes Vito VIP with caramel leather interior in the evening",
     date: "2026-12-16",
@@ -198,7 +198,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        image: hostedAssetUrl(bachelorPartyVClass),
+        image: hostedAssetUrl(bachelorPartyVitoVip),
         imageAlt:
           "Group of six laughing friends with drinks standing beside a black Mercedes Vito VIP with caramel leather interior at a bachelor party",
         paragraphs: [
@@ -238,7 +238,7 @@ export const blogPosts: BlogPost[] = [
     title: "Wedding Transfers in Greece – Luxury, Elegance & Comfort",
     excerpt:
       "Arrive at the most important day of your life in style. Private wedding transfers across Greece for the bride, the couple and your guests in our black Mercedes Vito VIP with caramel leather interior.",
-    image: hostedAssetUrl(weddingTransferBrideVClass),
+    image: hostedAssetUrl(weddingTransferBrideVitoVip),
     imageAlt:
       "Bride in a white wedding dress stepping into a black Mercedes Vito VIP with caramel leather interior, assisted by the groom outside a flower-decorated wedding venue",
     date: "2026-11-16",
@@ -963,7 +963,7 @@ export const blogPosts: BlogPost[] = [
     title: "Mercedes Vito VIP Chauffeur Service in Athens",
     excerpt:
       "Discover why a Mercedes Vito VIP chauffeur service is the ideal way to move through Athens — from airport transfers and port connections to custom private tours.",
-    image: hostedAssetUrl(mercedesVClassChauffeurAthens),
+    image: hostedAssetUrl(mercedesVitoVipChauffeurAthens),
     imageAlt: "Black Mercedes Vito VIP with professional chauffeur and H&A TOURS LTD branding, Acropolis of Athens in the background",
     date: "2025-11-15",
     metaTitle: "Mercedes Vito VIP Chauffeur Service in Athens | H&A VIP Transfers",
