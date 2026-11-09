@@ -1,3 +1,4 @@
+import { MAX_PASSENGERS } from "@/lib/languagePaths";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
@@ -129,7 +130,7 @@ const PriceCalculator = () => {
               </button>
               <div className="font-display text-3xl min-w-[3rem] text-center">{pax}</div>
               <button
-                onClick={() => setPax((p) => Math.min(8, p + 1))}
+                onClick={() => setPax((p) => Math.min(MAX_PASSENGERS, p + 1))}
                 aria-label="Increase passengers"
                 className="w-10 h-10 border border-border text-primary rounded-sm hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center"
               >

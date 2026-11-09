@@ -3,7 +3,7 @@ import ServiceStructuredData from "@/components/ServiceStructuredData";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from "@/components/LocalizedLink";
 import {
   Accordion,
   AccordionContent,
@@ -37,7 +37,7 @@ const AthensTour = () => {
   const faqItems = [
     {
       q: "What is included in the Athens City Tour?",
-      a: "The tour includes a private Mercedes-Benz V-Class with a professional English-speaking driver, door-to-door pickup from your hotel or Airbnb, visits to the Acropolis area, Plaka, Monastiraki, Panathenaic Stadium, and other iconic Athens landmarks, plus complimentary cold drinks on board.",
+      a: "The tour includes a private Mercedes Vito VIP with a professional English-speaking driver, door-to-door pickup from your hotel or Airbnb, visits to the Acropolis area, Plaka, Monastiraki, Panathenaic Stadium, and other iconic Athens landmarks, plus complimentary cold drinks on board.",
     },
     {
       q: t("athensTour.durationQuestion", { tour: t("athensTour.title") }),
@@ -53,7 +53,7 @@ const AthensTour = () => {
     },
     {
       q: "How many passengers can join the Athens City Tour?",
-      a: "Our Mercedes-Benz V-Class comfortably accommodates up to 7 passengers, perfect for families and small groups.",
+      a: "Our Mercedes Vito VIP comfortably accommodates up to 7 passengers, perfect for families and small groups.",
     },
     {
       q: "How do I book the Athens City Tour?",

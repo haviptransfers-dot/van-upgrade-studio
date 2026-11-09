@@ -47,7 +47,7 @@ export default {
     title: "Mercedes V-Klasse",
     desc: "Reisen Sie in höchstem Komfort mit unserem Mercedes V-Klasse — die erste Wahl für anspruchsvolle Reisende. Geräumiges Lederinterieur, Klimaanlage, kostenloses WLAN und Wasser bei jeder Fahrt.",
     features: [
-      "Bis zu 7-8 Passagiere",
+      "Bis zu 7 Passagiere",
       "Ledersitze & Ambientebeleuchtung",
       "Kostenloses WLAN & Wasser",
       "Professioneller englischsprachiger Fahrer",
@@ -60,7 +60,7 @@ export default {
     title: "Warum uns wählen",
     items: {
       licensed: { title: "Lizenziert & Versichert", desc: "Voll lizenzierter, professioneller Chauffeurservice" },
-      passengers: { title: "7-8 Passagiere", desc: "Geräumiger Mercedes V-Klasse für Gruppen & Familien" },
+      passengers: { title: "7 Passagiere", desc: "Geräumiger Mercedes V-Klasse für Gruppen & Familien" },
       available: { title: "24/7 Verfügbar", desc: "Rund-um-die-Uhr-Service, früh morgens & spät abends" },
       rated: { title: "5-Sterne-Bewertung", desc: "Hunderte zufriedener Reisender aus aller Welt" },
     },
@@ -199,13 +199,13 @@ export default {
     },
   },
   seo: {
-    airport: { title: "Athen Flughafentransfer (ATH) – Mercedes V Class | H&A VIP Tours", description: "Private Transfers zum Internationalen Flughafen Athen in einer luxuriösen Mercedes V Class. Flugverfolgung, Meet & Greet, Festpreise ab 70€. Buchung via WhatsApp 24/7." },
-    piraeus: { title: "Hafentransfer Piräus von Athen & Flughafen | H&A VIP Tours", description: "Luxuriöse private Transfers zu und von den Häfen Piräus, Rafina und Lavrio. Perfekt für Kreuzfahrt- und Fährreisende. Mercedes V Class, 7–8 Passagiere, Festpreise." },
-    athens: { title: "Private Stadtführung Athen – Akropolis & Highlights | H&A VIP Tours", description: "Private Stadttour durch Athen mit professionellem Fahrer. Besuchen Sie Akropolis, Plaka, Syntagma & Panathenäisches Stadion in einer Mercedes V Class." },
-    delphi: { title: "Private Tagestour nach Delphi ab Athen | H&A VIP Tours", description: "Private Ganztagestour von Athen nach Delphi, dem antiken Orakel des Apollo. Luxuriöse Mercedes V Class mit englischsprachigem Fahrer. Stopp in Arachova." },
-    meteora: { title: "Private Meteora-Tour ab Athen | H&A VIP Tours", description: "Private Tour zu den UNESCO-Klöstern von Meteora ab Athen in einer Mercedes V Class. Komfortable Ganztagesreise mit professionellem Fahrer." },
-    nafplio: { title: "Private Tagestour nach Nafplio ab Athen | H&A VIP Tours", description: "Private Tagestour von Athen nach Nafplio, Mykene und Epidauros. Entdecken Sie Griechenlands erste Hauptstadt in einer Mercedes V Class." },
-    sounion: { title: "Kap Sounion Sonnenuntergangstour – Poseidon-Tempel | H&A VIP Tours", description: "Private Sonnenuntergangstour von Athen zum Kap Sounion und dem Poseidon-Tempel. Malerische Fahrt entlang der athenischen Riviera in einer Mercedes V Class." },
+    airport: { title: "Athen Flughafentransfer (ATH) – Mercedes Vito VIP | H&A VIP Tours", description: "Private Transfers zum Internationalen Flughafen Athen in einer luxuriösen Mercedes Vito VIP. Flugverfolgung, Meet & Greet, Festpreise ab 70€. Buchung via WhatsApp 24/7." },
+    piraeus: { title: "Hafentransfer Piräus von Athen & Flughafen | H&A VIP Tours", description: "Luxuriöse private Transfers zu und von den Häfen Piräus, Rafina und Lavrio. Perfekt für Kreuzfahrt- und Fährreisende. Mercedes Vito VIP, 7 Passagiere, Festpreise." },
+    athens: { title: "Private Stadtführung Athen – Akropolis & Highlights | H&A VIP Tours", description: "Private Stadttour durch Athen mit professionellem Fahrer. Besuchen Sie Akropolis, Plaka, Syntagma & Panathenäisches Stadion in einer Mercedes Vito VIP." },
+    delphi: { title: "Private Tagestour nach Delphi ab Athen | H&A VIP Tours", description: "Private Ganztagestour von Athen nach Delphi, dem antiken Orakel des Apollo. Luxuriöse Mercedes Vito VIP mit englischsprachigem Fahrer. Stopp in Arachova." },
+    meteora: { title: "Private Meteora-Tour ab Athen | H&A VIP Tours", description: "Private Tour zu den UNESCO-Klöstern von Meteora ab Athen in einer Mercedes Vito VIP. Komfortable Ganztagesreise mit professionellem Fahrer." },
+    nafplio: { title: "Private Tagestour nach Nafplio ab Athen | H&A VIP Tours", description: "Private Tagestour von Athen nach Nafplio, Mykene und Epidauros. Entdecken Sie Griechenlands erste Hauptstadt in einer Mercedes Vito VIP." },
+    sounion: { title: "Kap Sounion Sonnenuntergangstour – Poseidon-Tempel | H&A VIP Tours", description: "Private Sonnenuntergangstour von Athen zum Kap Sounion und dem Poseidon-Tempel. Malerische Fahrt entlang der athenischen Riviera in einer Mercedes Vito VIP." },
   },
   delphiTour: {
     badge: "Exklusiv Private VIP-Erfahrung",

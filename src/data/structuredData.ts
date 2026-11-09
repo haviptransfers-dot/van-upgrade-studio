@@ -49,7 +49,7 @@ export function structuredDataForPath(path: string, includeOrganization = true) 
       // The displayed Google score is for the business, not a separate rating of every tour.
       ...(includeOrganization ? [organization] : []),
       { "@type": "Service", "@id": `${url}#service`, url, name: page.name, serviceType: page.type, provider: { "@id": organization["@id"] }, areaServed: places, offers },
-      { "@type": "TouristTrip", "@id": `${url}#trip`, url, name: page.name, description: `${page.type} in a private Mercedes V-Class, arranged by H&A Tours.`, provider: { "@id": organization["@id"] }, itinerary: { "@type": "ItemList", itemListElement: places.map((item, index) => ({ "@type": "ListItem", position: index + 1, item })) }, offers },
+      { "@type": "TouristTrip", "@id": `${url}#trip`, url, name: page.name, description: `${page.type} in a private Mercedes Vito VIP, arranged by H&A Tours.`, provider: { "@id": organization["@id"] }, itinerary: { "@type": "ItemList", itemListElement: places.map((item, index) => ({ "@type": "ListItem", position: index + 1, item })) }, offers },
     ],
   };
 }

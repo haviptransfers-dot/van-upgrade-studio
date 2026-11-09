@@ -3,7 +3,7 @@ import ServiceStructuredData from "@/components/ServiceStructuredData";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from "@/components/LocalizedLink";
 import {
   Accordion,
   AccordionContent,
@@ -38,7 +38,7 @@ const CapeSounionTour = () => {
   const faqItems = [
     {
       q: "What is included in the Cape Sounion private tour?",
-      a: "The tour includes a private Mercedes-Benz V-Class with a professional English-speaking driver, door-to-door pickup from your Athens hotel or Airbnb, a scenic coastal drive along the Athens Riviera, a stop at the Temple of Poseidon, and complimentary cold drinks on board. Entrance fees are not included.",
+      a: "The tour includes a private Mercedes Vito VIP with a professional English-speaking driver, door-to-door pickup from your Athens hotel or Airbnb, a scenic coastal drive along the Athens Riviera, a stop at the Temple of Poseidon, and complimentary cold drinks on board. Entrance fees are not included.",
     },
     {
       q: t("sounionTour.durationQuestion", { tour: t("sounionTour.title") }),
@@ -54,7 +54,7 @@ const CapeSounionTour = () => {
     },
     {
       q: "How many passengers can travel together?",
-      a: "Our Mercedes-Benz V-Class accommodates up to 7 passengers, making it ideal for families and small groups.",
+      a: "Our Mercedes Vito VIP accommodates up to 7 passengers, making it ideal for families and small groups.",
     },
     {
       q: "How do I book the Cape Sounion tour?",

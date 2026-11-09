@@ -1,6 +1,6 @@
 import OptimizedImage from "@/components/OptimizedImage";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import Link from "@/components/LocalizedLink";
 import { useTranslation } from "react-i18next";
 import { ArrowLeft, Heart } from "lucide-react";
 import logoImg from "@/assets/logo.webp";
@@ -51,7 +51,7 @@ const About = () => {
         <div className="space-y-8 text-foreground/80 leading-relaxed">
           <p>
             H&amp;A VIP Tours is a licensed, family-owned private transfer and tour company based in Athens, Greece.
-            We specialize in luxury Mercedes V Class transportation for airport transfers, port pickups, hotel
+            We specialize in luxury Mercedes Vito VIP transportation for airport transfers, port pickups, hotel
             drop-offs, and private day tours across Greece’s most iconic destinations.
           </p>
           <p>

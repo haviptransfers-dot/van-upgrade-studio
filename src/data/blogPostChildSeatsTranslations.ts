@@ -3,10 +3,10 @@ import type { BlogPostTranslation } from "./blogPostTranslations";
 export const childSeatsTranslations: Record<string, BlogPostTranslation> = {
   "el": {
     "title": "Γιατί τα Παιδικά Καθίσματα Είναι Αδιαπραγμάτευτα στις Ιδιωτικές Μεταφορές στην Ελλάδα: Ασφάλεια, Νόμος & Άνεση με την H&A TOURS LTD",
-    "excerpt": "Πιστοποιημένα καθίσματα BeSafe για κάθε ηλικία, τοποθετημένα από εμάς και πάντα δωρεάν κατόπιν αιτήματος. Ο ελληνικός νόμος, τα πραγματικά δεδομένα ασφάλειας και πώς η Mercedes V-Class κρατά τις οικογένειες άνετα.",
-    "imageAlt": "Εικονογράφηση μαύρης Mercedes V-Class με παιδικά καθίσματα στο Αεροδρόμιο Αθηνών και οδηγό με πινακίδα H&A Tours Ltd Family Safe δίπλα σε οικογένεια με δύο παιδιά",
+    "excerpt": "Πιστοποιημένα καθίσματα BeSafe για κάθε ηλικία, τοποθετημένα από εμάς και πάντα δωρεάν κατόπιν αιτήματος. Ο ελληνικός νόμος, τα πραγματικά δεδομένα ασφάλειας και πώς η Mercedes Vito VIP κρατά τις οικογένειες άνετα.",
+    "imageAlt": "Εικονογράφηση μαύρης Mercedes Vito VIP με παιδικά καθίσματα στο Αεροδρόμιο Αθηνών και οδηγό με πινακίδα H&A Tours Ltd Family Safe δίπλα σε οικογένεια με δύο παιδιά",
     "metaTitle": "Παιδικά Καθίσματα σε Ιδιωτικές Μεταφορές στην Ελλάδα – Ασφάλεια & Νόμος | H&A TOURS LTD",
-    "metaDescription": "Ελληνική νομοθεσία, κανόνες i-Size και πραγματικά δεδομένα ασφάλειας για τα παιδικά καθίσματα. Καθίσματα BeSafe για βρέφη, νήπια και μεγαλύτερα παιδιά, δωρεάν στη Mercedes V-Class.",
+    "metaDescription": "Ελληνική νομοθεσία, κανόνες i-Size και πραγματικά δεδομένα ασφάλειας για τα παιδικά καθίσματα. Καθίσματα BeSafe για βρέφη, νήπια και μεγαλύτερα παιδιά, δωρεάν στη Mercedes Vito VIP.",
     "sections": [
       {
         "paragraphs": [
@@ -42,10 +42,10 @@ export const childSeatsTranslations: Record<string, BlogPostTranslation> = {
   },
   "it": {
     "title": "Perché i seggiolini per bambini sono irrinunciabili nei transfer privati in Grecia: sicurezza, legge e comfort con H&A TOURS LTD",
-    "excerpt": "Seggiolini BeSafe certificati per ogni età, installati da noi e sempre gratuiti su richiesta. La legge greca, i dati reali sulla sicurezza e il comfort della nostra Mercedes V-Class.",
-    "imageAlt": "Illustrazione di una Mercedes V-Class nera con seggiolini all aeroporto di Atene e autista con cartello H&A Tours Ltd Family Safe accanto a una famiglia con due bambini",
+    "excerpt": "Seggiolini BeSafe certificati per ogni età, installati da noi e sempre gratuiti su richiesta. La legge greca, i dati reali sulla sicurezza e il comfort della nostra Mercedes Vito VIP.",
+    "imageAlt": "Illustrazione di una Mercedes Vito VIP nera con seggiolini all aeroporto di Atene e autista con cartello H&A Tours Ltd Family Safe accanto a una famiglia con due bambini",
     "metaTitle": "Seggiolini per bambini nei transfer privati in Grecia – Sicurezza e legge | H&A TOURS LTD",
-    "metaDescription": "Legge greca, regole i-Size e dati reali sulla sicurezza dei seggiolini. Seggiolini BeSafe per neonati, bambini e ragazzi, gratuiti nella nostra Mercedes V-Class.",
+    "metaDescription": "Legge greca, regole i-Size e dati reali sulla sicurezza dei seggiolini. Seggiolini BeSafe per neonati, bambini e ragazzi, gratuiti nella nostra Mercedes Vito VIP.",
     "sections": [
       {
         "paragraphs": [
@@ -81,10 +81,10 @@ export const childSeatsTranslations: Record<string, BlogPostTranslation> = {
   },
   "es": {
     "title": "Por qué las sillas infantiles son innegociables en los traslados privados en Grecia: seguridad, ley y confort con H&A TOURS LTD",
-    "excerpt": "Sillas BeSafe certificadas para cada edad, instaladas por nosotros y siempre gratuitas bajo petición. La ley griega, datos reales de seguridad y el confort de nuestra Mercedes V-Class.",
-    "imageAlt": "Ilustración de una Mercedes V-Class negra con sillas infantiles en el aeropuerto de Atenas y un chófer con un cartel H&A Tours Ltd Family Safe junto a una familia con dos niños",
+    "excerpt": "Sillas BeSafe certificadas para cada edad, instaladas por nosotros y siempre gratuitas bajo petición. La ley griega, datos reales de seguridad y el confort de nuestra Mercedes Vito VIP.",
+    "imageAlt": "Ilustración de una Mercedes Vito VIP negra con sillas infantiles en el aeropuerto de Atenas y un chófer con un cartel H&A Tours Ltd Family Safe junto a una familia con dos niños",
     "metaTitle": "Sillas infantiles en traslados privados en Grecia – Seguridad y ley | H&A TOURS LTD",
-    "metaDescription": "Ley griega, normas i-Size y datos reales de seguridad sobre sillas infantiles. Sillas BeSafe para bebés, niños pequeños y mayores, gratis en nuestra Mercedes V-Class.",
+    "metaDescription": "Ley griega, normas i-Size y datos reales de seguridad sobre sillas infantiles. Sillas BeSafe para bebés, niños pequeños y mayores, gratis en nuestra Mercedes Vito VIP.",
     "sections": [
       {
         "paragraphs": [
@@ -120,10 +120,10 @@ export const childSeatsTranslations: Record<string, BlogPostTranslation> = {
   },
   "fr": {
     "title": "Pourquoi les sièges auto pour enfants sont incontournables dans les transferts privés en Grèce : sécurité, loi et confort avec H&A TOURS LTD",
-    "excerpt": "Sièges BeSafe certifiés pour chaque âge, installés par nos soins et toujours gratuits sur demande. La loi grecque, les données réelles de sécurité et le confort de notre Mercedes V-Class.",
-    "imageAlt": "Illustration d une Mercedes V-Class noire avec sièges enfants à l aéroport d Athènes et un chauffeur tenant une pancarte H&A Tours Ltd Family Safe à côté d une famille avec deux enfants",
+    "excerpt": "Sièges BeSafe certifiés pour chaque âge, installés par nos soins et toujours gratuits sur demande. La loi grecque, les données réelles de sécurité et le confort de notre Mercedes Vito VIP.",
+    "imageAlt": "Illustration d une Mercedes Vito VIP noire avec sièges enfants à l aéroport d Athènes et un chauffeur tenant une pancarte H&A Tours Ltd Family Safe à côté d une famille avec deux enfants",
     "metaTitle": "Sièges auto enfants en transfert privé en Grèce – Sécurité et loi | H&A TOURS LTD",
-    "metaDescription": "Loi grecque, règles i-Size et données réelles de sécurité pour les sièges auto. Sièges BeSafe pour bébés, jeunes enfants et grands, gratuits dans notre Mercedes V-Class.",
+    "metaDescription": "Loi grecque, règles i-Size et données réelles de sécurité pour les sièges auto. Sièges BeSafe pour bébés, jeunes enfants et grands, gratuits dans notre Mercedes Vito VIP.",
     "sections": [
       {
         "paragraphs": [
@@ -198,10 +198,10 @@ export const childSeatsTranslations: Record<string, BlogPostTranslation> = {
   },
   "ar": {
     "title": "لماذا تُعد مقاعد الأطفال أمرًا لا يقبل التفاوض في النقل الخاص في اليونان: السلامة والقانون والراحة مع H&A TOURS LTD",
-    "excerpt": "مقاعد BeSafe معتمدة لكل الأعمار، نركّبها بأنفسنا ومجانية دائمًا عند الطلب. القانون اليوناني وبيانات السلامة الحقيقية وراحة مرسيدس V-Class.",
-    "imageAlt": "رسم توضيحي لسيارة مرسيدس V-Class سوداء بمقاعد أطفال في مطار أثينا وسائق يحمل لافتة H&A Tours Ltd Family Safe بجوار عائلة مع طفلين",
+    "excerpt": "مقاعد BeSafe معتمدة لكل الأعمار، نركّبها بأنفسنا ومجانية دائمًا عند الطلب. القانون اليوناني وبيانات السلامة الحقيقية وراحة مرسيدس Mercedes Vito VIP.",
+    "imageAlt": "رسم توضيحي لسيارة مرسيدس Mercedes Vito VIP سوداء بمقاعد أطفال في مطار أثينا وسائق يحمل لافتة H&A Tours Ltd Family Safe بجوار عائلة مع طفلين",
     "metaTitle": "مقاعد الأطفال في النقل الخاص في اليونان – السلامة والقانون | H&A TOURS LTD",
-    "metaDescription": "القانون اليوناني وقواعد i-Size وبيانات السلامة الحقيقية لمقاعد الأطفال. مقاعد BeSafe للرضّع والأطفال الصغار والكبار، مجانًا في مرسيدس V-Class.",
+    "metaDescription": "القانون اليوناني وقواعد i-Size وبيانات السلامة الحقيقية لمقاعد الأطفال. مقاعد BeSafe للرضّع والأطفال الصغار والكبار، مجانًا في مرسيدس Mercedes Vito VIP.",
     "sections": [
       {
         "paragraphs": [
@@ -237,10 +237,10 @@ export const childSeatsTranslations: Record<string, BlogPostTranslation> = {
   },
   "he": {
     "title": "למה מושבי בטיחות לילדים הם חובה בהסעות פרטיות ביוון: בטיחות, חוק ונוחות עם H&A TOURS LTD",
-    "excerpt": "מושבי BeSafe מאושרים לכל גיל, מותקנים על ידינו ותמיד ללא תשלום לפי בקשה. החוק היווני, נתוני בטיחות אמיתיים והנוחות של המרצדס V-Class שלנו.",
-    "imageAlt": "איור של מרצדס V-Class שחורה עם מושבי ילדים בנמל התעופה של אתונה ונהג מחזיק שלט H&A Tours Ltd Family Safe לצד משפחה עם שני ילדים",
+    "excerpt": "מושבי BeSafe מאושרים לכל גיל, מותקנים על ידינו ותמיד ללא תשלום לפי בקשה. החוק היווני, נתוני בטיחות אמיתיים והנוחות של המרצדס Mercedes Vito VIP שלנו.",
+    "imageAlt": "איור של מרצדס Mercedes Vito VIP שחורה עם מושבי ילדים בנמל התעופה של אתונה ונהג מחזיק שלט H&A Tours Ltd Family Safe לצד משפחה עם שני ילדים",
     "metaTitle": "מושבי בטיחות בהסעות פרטיות ביוון – בטיחות וחוק | H&A TOURS LTD",
-    "metaDescription": "החוק היווני, תקן i-Size ונתוני בטיחות אמיתיים למושבי ילדים. מושבי BeSafe לתינוקות, פעוטות וילדים גדולים, ללא תשלום במרצדס V-Class.",
+    "metaDescription": "החוק היווני, תקן i-Size ונתוני בטיחות אמיתיים למושבי ילדים. מושבי BeSafe לתינוקות, פעוטות וילדים גדולים, ללא תשלום במרצדס Mercedes Vito VIP.",
     "sections": [
       {
         "paragraphs": [

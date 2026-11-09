@@ -80,11 +80,11 @@ export const blogPosts: BlogPost[] = [
       "A late-evening arrival, several suitcases, child seats or an appointment you cannot miss change what your ride is worth. Compare a chauffeur transfer versus an Athens taxi before you land.",
     image: hostedAssetUrl(chauffeurVsTaxiAthens),
     imageAlt:
-      "Split image comparing a chauffeur opening the door of a black Mercedes V-Class for an arriving guest and a yellow Athens taxi parked in front of the Acropolis",
+      "Split image comparing a chauffeur opening the door of a black Mercedes Vito VIP for an arriving guest and a yellow Athens taxi parked in front of the Acropolis",
     date: "2027-01-16",
     metaTitle: "Chauffeur Transfer Versus Athens Taxi | H&A Tours",
     metaDescription:
-      "Chauffeur transfer versus Athens taxi compared: availability, luggage space, child seats, privacy and fixed scheduling — and when a private Mercedes V-Class transfer is the better choice.",
+      "Chauffeur transfer versus Athens taxi compared: availability, luggage space, child seats, privacy and fixed scheduling — and when a private Mercedes Vito VIP transfer is the better choice.",
     sections: [
       {
         paragraphs: [
@@ -103,7 +103,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "When a Premium Private Transfer Is the Better Choice",
         paragraphs: [
-          "Private chauffeur service is especially valuable when the transfer itself is part of the travel experience, not just a way to cover distance. A [Mercedes V-Class](https://haviptransfers.gr/blog/mercedes-v-class-chauffeur-service-athens) offers a noticeably different setting from a standard city car: generous seating, a calm cabin, space for luggage, and the privacy to rest, make a call, or speak with your travel companions comfortably.",
+          "Private chauffeur service is especially valuable when the transfer itself is part of the travel experience, not just a way to cover distance. A [Mercedes Vito VIP](https://haviptransfers.gr/blog/mercedes-vito-vip-chauffeur-service-athens) offers a noticeably different setting from a standard city car: generous seating, a calm cabin, space for luggage, and the privacy to rest, make a call, or speak with your travel companions comfortably.",
         ],
       },
       {
@@ -139,7 +139,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Comfort Is More Than a Luxury Detail",
         paragraphs: [
           "Athens rewards travelers who preserve their energy. Whether your plans include a dinner reservation, a full day of meetings, or an early start for a private visit beyond the city, arriving relaxed can shape the rest of the day.",
-          "In a Mercedes V-Class, passengers have room to settle in rather than simply fit in. This is particularly relevant with multiple suitcases, strollers, carry-ons, or the practical extras that come with family travel. The additional room also allows your group to travel privately, without the compressed feeling that can make the first or last journey of a trip unnecessarily tiring.",
+          "In a Mercedes Vito VIP, passengers have room to settle in rather than simply fit in. This is particularly relevant with multiple suitcases, strollers, carry-ons, or the practical extras that come with family travel. The additional room also allows your group to travel privately, without the compressed feeling that can make the first or last journey of a trip unnecessarily tiring.",
           "Comfort also includes the quieter details: a clean vehicle, a professional presentation, a driver who understands the agreed schedule, and no need to explain the basics of your booking at pickup. These are small things individually, but they create a more composed experience.",
         ],
       },
@@ -148,7 +148,7 @@ export const blogPosts: BlogPost[] = [
         paragraphs: [
           "A chauffeur is not merely a driver assigned to a car. In premium private transportation, the driver supports the flow of your schedule. Pickup instructions are clear, timing is confirmed, and the service is adapted to your party's requirements.",
           "That support becomes even more useful when your needs go beyond a single transfer. You may want transportation between hotels, a private vehicle for an evening out, or a custom tour arranged around your preferred pace. Instead of fitting your plans into a fixed transportation schedule, private service lets the schedule reflect your plans.",
-          "H&A VIP Tours provides this style of premium private transfer in Athens with Mercedes V-Class vehicles, professional chauffeurs, and direct 24/7 WhatsApp booking access. Guests can arrange airport, port, hotel, and private journey requirements directly, including luggage, child-seat, and timing details.",
+          "H&A VIP Tours provides this style of premium private transfer in Athens with Mercedes Vito VIP vehicles, professional chauffeurs, and direct 24/7 WhatsApp booking access. Guests can arrange airport, port, hotel, and private journey requirements directly, including luggage, child-seat, and timing details.",
         ],
       },
       {
@@ -166,20 +166,20 @@ export const blogPosts: BlogPost[] = [
     slug: "bachelor-bachelorette-party-transfers-greece",
     title: "Bachelor & Bachelorette Party Transfers in Greece – Party Safe, Travel in Style",
     excerpt:
-      "The party starts the moment you step into the van. Private bachelor and bachelorette party transfers in Greece with our black Mercedes V-Class and caramel leather interior.",
+      "The party starts the moment you step into the van. Private bachelor and bachelorette party transfers in Greece with our black Mercedes Vito VIP and caramel leather interior.",
     image: hostedAssetUrl(bachelorettePartyVClass),
     imageAlt:
-      "Six friends wearing Team Bride and Bride to Be sashes laughing together beside a black Mercedes V-Class with caramel leather interior in the evening",
+      "Six friends wearing Team Bride and Bride to Be sashes laughing together beside a black Mercedes Vito VIP with caramel leather interior in the evening",
     date: "2026-12-16",
     metaTitle: "Bachelor & Bachelorette Party Transfers in Greece | H&A Tours",
     metaDescription:
-      "Private party transfers in a black Mercedes V-Class: bar and club hopping in Athens or Mykonos, beach days, winery trips and airport pickups for your whole crew. All-night availability, fixed price.",
+      "Private party transfers in a black Mercedes Vito VIP: bar and club hopping in Athens or Mykonos, beach days, winery trips and airport pickups for your whole crew. All-night availability, fixed price.",
     sections: [
       {
         paragraphs: [
           "The party starts the moment you step into the van.",
           "Planning a bachelor or bachelorette party in Greece? Don't let logistics ruin the fun. At H&A Tours, we provide the ultimate party transfer solution – so your whole crew can celebrate together, safely, and in absolute style.",
-          "Forget taxis, forget someone staying sober to drive. Our signature black [Mercedes V-Class](https://haviptransfers.gr/blog/mercedes-v-class-chauffeur-service-athens) with luxurious caramel leather interior is your private party shuttle.",
+          "Forget taxis, forget someone staying sober to drive. Our signature black [Mercedes Vito VIP](https://haviptransfers.gr/blog/mercedes-vito-vip-chauffeur-service-athens) with luxurious caramel leather interior is your private party shuttle.",
         ],
       },
       {
@@ -197,7 +197,7 @@ export const blogPosts: BlogPost[] = [
       {
         image: hostedAssetUrl(bachelorPartyVClass),
         imageAlt:
-          "Group of six laughing friends with drinks standing beside a black Mercedes V-Class with caramel leather interior at a bachelor party",
+          "Group of six laughing friends with drinks standing beside a black Mercedes Vito VIP with caramel leather interior at a bachelor party",
         paragraphs: [
           "From bachelorette brunches to bachelor nights out — the party van is ready for both crews.",
         ],
@@ -224,24 +224,24 @@ export const blogPosts: BlogPost[] = [
         heading: "Book Your Bachelor / Bachelorette Party Van",
         paragraphs: [
           "Keep the group together. Keep the party going. Let H&A Tours be your designated driver in style.",
-          "Bachelor party season in Greece is busy. Our black V-Class is our most requested party vehicle — after [wedding transfers](https://haviptransfers.gr/blog/wedding-transfers-greece-mercedes-v-class), it is our fastest-growing service.",
+          "Bachelor party season in Greece is busy. Our black Mercedes Vito VIP is our most requested party vehicle — after [wedding transfers](https://haviptransfers.gr/blog/wedding-transfers-greece-mercedes-vito-vip), it is our fastest-growing service.",
           "Contact H&A Tours now to lock your date and get a custom quote for your night.",
         ],
       },
     ],
   },
   {
-    slug: "wedding-transfers-greece-mercedes-v-class",
+    slug: "wedding-transfers-greece-mercedes-vito-vip",
     title: "Wedding Transfers in Greece – Luxury, Elegance & Comfort",
     excerpt:
-      "Arrive at the most important day of your life in style. Private wedding transfers across Greece for the bride, the couple and your guests in our black Mercedes V-Class with caramel leather interior.",
+      "Arrive at the most important day of your life in style. Private wedding transfers across Greece for the bride, the couple and your guests in our black Mercedes Vito VIP with caramel leather interior.",
     image: hostedAssetUrl(weddingTransferBrideVClass),
     imageAlt:
-      "Bride in a white wedding dress stepping into a black Mercedes V-Class with caramel leather interior, assisted by the groom outside a flower-decorated wedding venue",
+      "Bride in a white wedding dress stepping into a black Mercedes Vito VIP with caramel leather interior, assisted by the groom outside a flower-decorated wedding venue",
     date: "2026-11-16",
-    metaTitle: "Wedding Transfers in Greece – Luxury Mercedes V-Class | H&A Tours",
+    metaTitle: "Wedding Transfers in Greece – Luxury Mercedes Vito VIP | H&A Tours",
     metaDescription:
-      "Private wedding transfers across Greece: bridal transfer, couple's transfer and guest shuttle in a black Mercedes V-Class with a professional chauffeur. Full-day availability.",
+      "Private wedding transfers across Greece: bridal transfer, couple's transfer and guest shuttle in a black Mercedes Vito VIP with a professional chauffeur. Full-day availability.",
     sections: [
       {
         paragraphs: [
@@ -250,9 +250,9 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Our Fleet: Black Mercedes V-Class with Caramel Leather Interior",
+        heading: "Our Fleet: Black Mercedes Vito VIP with Caramel Leather Interior",
         paragraphs: [
-          "Forget the typical white limousine. Our luxurious black [Mercedes V-Class](https://haviptransfers.gr/blog/mercedes-v-class-chauffeur-service-athens) with its stunning caramel leather interior offers the perfect combination of sophistication, space, and comfort.",
+          "Forget the typical white limousine. Our luxurious black [Mercedes Vito VIP](https://haviptransfers.gr/blog/mercedes-vito-vip-chauffeur-service-athens) with its stunning caramel leather interior offers the perfect combination of sophistication, space, and comfort.",
         ],
         bullets: [
           "For the Bride: spacious enough for a voluminous wedding dress to stay perfect, with wide sliding doors so you step in and out gracefully.",
@@ -296,18 +296,18 @@ export const blogPosts: BlogPost[] = [
     slug: "athens-airport-to-piraeus-port-transport-options",
     title: "Athens Airport to Piraeus Port: Every Way to Get There",
     excerpt:
-      "Metro, X96 bus, taxi, or a private Mercedes V-Class? Compare travel time, price, luggage capacity, and comfort for the 45 km journey from Athens Airport to Piraeus Port.",
+      "Metro, X96 bus, taxi, or a private Mercedes Vito VIP? Compare travel time, price, luggage capacity, and comfort for the 45 km journey from Athens Airport to Piraeus Port.",
     image: hostedAssetUrl(athensAirportPiraeusPortTransfer),
     imageAlt:
-      "Family with luggage boarding a black Mercedes V-Class with a chauffeur, with Athens Airport and a cruise ship at Piraeus in the background",
+      "Family with luggage boarding a black Mercedes Vito VIP with a chauffeur, with Athens Airport and a cruise ship at Piraeus in the background",
     date: "2026-10-16",
     metaTitle: "Athens Airport to Piraeus Port: Transport & Prices 2026",
     metaDescription:
-      "Compare the Metro, X96 bus, taxi and private Mercedes V-Class from Athens Airport to Piraeus Port, including 2026 prices, travel times and cruise tips.",
+      "Compare the Metro, X96 bus, taxi and private Mercedes Vito VIP from Athens Airport to Piraeus Port, including 2026 prices, travel times and cruise tips.",
     sections: [
       {
         paragraphs: [
-          "Landing at Athens International Airport (ATH) and heading straight to Piraeus Port for a cruise or ferry? The journey is approximately 45 km, with four main transport options. As local drivers who make this route every day in our Mercedes V-Class, here is our honest 2026 comparison.",
+          "Landing at Athens International Airport (ATH) and heading straight to Piraeus Port for a cruise or ferry? The journey is approximately 45 km, with four main transport options. As local drivers who make this route every day in our Mercedes Vito VIP, here is our honest 2026 comparison.",
         ],
       },
       {
@@ -316,7 +316,7 @@ export const blogPosts: BlogPost[] = [
           "Metro (Line 3 + Line 1): 90–110 minutes, €10 per person, difficult with cruise luggage",
           "Bus X96: 90–120 minutes, €6 per person, very limited luggage space",
           "Taxi sedan: 45–70 minutes, €54–€75 plus possible extras, maximum 3 suitcases; groups need 2 taxis",
-          "Private V-Class — H&A Tours: 45–60 minutes, €100 for 1–4 passengers / €110 for 5–7 passengers, one large suitcase per person plus hand luggage",
+          "Private Mercedes Vito VIP — H&A Tours: 45–60 minutes, €100 for 1–4 passengers / €110 for 5–7 passengers, one large suitcase per person plus hand luggage",
           "Night rate (22:00–06:00): +€10 per person",
         ],
       },
@@ -339,13 +339,13 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "4. Private transfer with Mercedes V-Class — best for groups and cruises",
+        heading: "4. Private transfer with Mercedes Vito VIP — best for groups and cruises",
         paragraphs: [
           "This is the option our clients most often choose when travelling directly to Piraeus.",
         ],
         bullets: [
           "Door-to-gate service: we drop you exactly at your ship's gate, not merely at the port entrance. Piraeus stretches for roughly 2 km, and gate E12 is far from E2.",
-          "Fits all your luggage: our V-Class is configured for cruise travel — up to 7 passengers, with one large 23 kg suitcase per person plus cabin bags.",
+          "Fits all your luggage: our Mercedes Vito VIP is configured for cruise travel — up to 7 passengers, with one large 23 kg suitcase per person plus cabin bags.",
           "No stress on arrival: your driver waits in Arrivals with your name, flight tracking is included, you receive 60 minutes of free waiting time, and flight delays carry no extra charge.",
           "Fixed and clear price: €100 for 1–4 passengers and €110 for 5–7 passengers. There are no hidden fees and tolls are included. The night rate is +€10 per person.",
         ],
@@ -359,23 +359,23 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Choose the journey that fits your cruise day",
         paragraphs: [
-          "Public transport is useful when budget matters most and you travel light. For families, groups, and passengers carrying cruise luggage, a pre-booked private V-Class offers the shortest, most direct route from the airport arrivals hall to the correct ship gate, with the vehicle and luggage space confirmed in advance.",
+          "Public transport is useful when budget matters most and you travel light. For families, groups, and passengers carrying cruise luggage, a pre-booked private Mercedes Vito VIP offers the shortest, most direct route from the airport arrivals hall to the correct ship gate, with the vehicle and luggage space confirmed in advance.",
         ],
       },
     ],
   },
   {
     slug: "night-transfer-athens-airport-late-arrival",
-    title: "Night Transfer from Athens Airport: A Calm, Private Late Arrival by Mercedes V-Class",
+    title: "Night Transfer from Athens Airport: A Calm, Private Late Arrival by Mercedes Vito VIP",
     excerpt:
       "A late arrival in Athens should not begin with uncertainty outside the terminal. See how a pre-arranged private night transfer from Athens Airport sets the tone for your entire stay.",
     image: hostedAssetUrl(nightArrivalAirportTransfer),
     imageAlt:
-      "Chauffeur in a dark suit with a suitcase standing beside a black Mercedes V-Class with its trunk open outside Athens Airport terminal at night, an aircraft and the control tower in the background",
+      "Chauffeur in a dark suit with a suitcase standing beside a black Mercedes Vito VIP with its trunk open outside Athens Airport terminal at night, an aircraft and the control tower in the background",
     date: "2026-09-16",
     metaTitle: "Night Transfer from Athens Airport – Private Late Arrival | H&A VIP Tours",
     metaDescription:
-      "Arriving late in Athens? Book a private night transfer from Athens Airport with a Mercedes V-Class, professional chauffeur, luggage space and 24/7 WhatsApp booking.",
+      "Arriving late in Athens? Book a private night transfer from Athens Airport with a Mercedes Vito VIP, professional chauffeur, luggage space and 24/7 WhatsApp booking.",
     sections: [
       {
         paragraphs: [
@@ -396,7 +396,7 @@ export const blogPosts: BlogPost[] = [
         paragraphs: [
           "Not every airport transfer provides the same level of service. For a late-night arrival, the details make the difference between basic transportation and a polished welcome to Greece.",
           "A premium private arrangement begins with direct confirmation. You should know who is collecting you, what vehicle has been reserved, how many passengers and bags the booking accommodates, and how to communicate if your plans change. Direct WhatsApp access is particularly useful for international travelers who want one simple point of contact before departure and upon arrival.",
-          "The vehicle also matters. A [Mercedes V-Class](https://haviptransfers.gr/blog/mercedes-v-class-chauffeur-service-athens) is designed for guests who want more than a standard ride from point A to point B. Its spacious cabin supports a more relaxed journey for couples, families, and small private groups, while offering practical room for suitcases, carry-ons, strollers, and travel essentials. After an overnight flight, the ability to sit comfortably without crowding your bags is a meaningful advantage.",
+          "The vehicle also matters. A [Mercedes Vito VIP](https://haviptransfers.gr/blog/mercedes-vito-vip-chauffeur-service-athens) is designed for guests who want more than a standard ride from point A to point B. Its spacious cabin supports a more relaxed journey for couples, families, and small private groups, while offering practical room for suitcases, carry-ons, strollers, and travel essentials. After an overnight flight, the ability to sit comfortably without crowding your bags is a meaningful advantage.",
           "A professional chauffeur brings another layer of reassurance. A courteous local driver understands that the first transfer sets the tone for the stay. The service should be discreet, attentive, and punctual, with an approach that respects your schedule rather than rushing the experience.",
         ],
       },
@@ -404,7 +404,7 @@ export const blogPosts: BlogPost[] = [
         heading: "From Athens International Airport to your next stop",
         paragraphs: [
           "Your late-night destination may be a central Athens hotel, a coastal resort, a private apartment, a business address, or onward accommodation near the port. Each requires slightly different planning, especially when an arrival falls late in the evening or early in the morning.",
-          "When reserving your transfer, provide the flight number, arrival date, airline, passenger count, luggage estimate, destination address, and any child-seat requirements. This allows the transport team to prepare the appropriate Mercedes V-Class configuration and schedule the pickup accurately. It also avoids a common issue: reserving a vehicle that is comfortable for passengers but too limited for the amount of luggage traveling with them.",
+          "When reserving your transfer, provide the flight number, arrival date, airline, passenger count, luggage estimate, destination address, and any child-seat requirements. This allows the transport team to prepare the appropriate Mercedes Vito VIP configuration and schedule the pickup accurately. It also avoids a common issue: reserving a vehicle that is comfortable for passengers but too limited for the amount of luggage traveling with them.",
           "For travelers continuing to Piraeus for a [cruise or ferry connection](https://haviptransfers.gr/blog/piraeus-cruise-transfer), timing deserves particular attention. A private transfer can be planned around your preferred departure window, but travelers should allow a sensible buffer for flight arrival procedures, baggage collection, and any late-night changes to their itinerary. The right pickup time depends on the airline schedule, the port terminal, and how much margin you want before boarding.",
         ],
       },
@@ -433,7 +433,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         paragraphs: [
-          "These are small points, but together they shape a transfer that feels organized rather than improvised. H&A VIP Tours offers private Mercedes V-Class transfers in Athens with direct 24/7 WhatsApp booking for travelers who value reliable coordination and a refined arrival experience. For guests who want to add sightseeing, dining plans, or additional transportation to their itinerary, private journeys and custom tours can also be arranged around individual schedules.",
+          "These are small points, but together they shape a transfer that feels organized rather than improvised. H&A VIP Tours offers private Mercedes Vito VIP transfers in Athens with direct 24/7 WhatsApp booking for travelers who value reliable coordination and a refined arrival experience. For guests who want to add sightseeing, dining plans, or additional transportation to their itinerary, private journeys and custom tours can also be arranged around individual schedules.",
         ],
       },
       {
@@ -442,7 +442,7 @@ export const blogPosts: BlogPost[] = [
           "The ideal arrangement depends on why you are traveling. A couple arriving for a weekend in Athens may prioritize a quiet, elegant ride and a smooth hotel drop-off. A family may need confirmed child seating, extra luggage capacity, and enough space for everyone to travel comfortably. A small group may value staying together in one private vehicle instead of splitting up after a long flight.",
           "For cruise passengers, the key concern is often dependable timing and space for larger suitcases. For corporate guests, discretion and punctuality may lead the decision. There is no single version of premium service that fits everyone. The advantage of a private booking is that the vehicle and timing can be aligned with the needs of the actual journey.",
           "Late-night arrivals also deserve honest expectations. Traffic conditions may be lighter than daytime, but flight procedures, baggage delivery, and airport formalities can still affect the moment you are ready to leave. A professional service plans for communication and flexibility, rather than assuming every arrival will run exactly on schedule.",
-          "A well-arranged nighttime transfer does more than take you from the airport to an address. It gives you a composed first moment in Athens: a private Mercedes V-Class waiting for your party, room for what you brought, and the confidence that the next part of your journey is already in capable hands.",
+          "A well-arranged nighttime transfer does more than take you from the airport to an address. It gives you a composed first moment in Athens: a private Mercedes Vito VIP waiting for your party, room for what you brought, and the confidence that the next part of your journey is already in capable hands.",
         ],
       },
     ],
@@ -451,14 +451,14 @@ export const blogPosts: BlogPost[] = [
     slug: "private-chauffeur-service-business-travel-athens",
     title: "Private Chauffeur Service for Business Travel in Athens",
     excerpt:
-      "Move between Athens airport, hotels, meetings, ports and private addresses with a professional chauffeur and a Mercedes V-Class reserved around your schedule.",
+      "Move between Athens airport, hotels, meetings, ports and private addresses with a professional chauffeur and a Mercedes Vito VIP reserved around your schedule.",
     image: hostedAssetUrl(privateChauffeurBusinessAthens),
     imageAlt:
-      "Professional chauffeur opening a black Mercedes V-Class for a business traveler with the Acropolis of Athens in the background",
+      "Professional chauffeur opening a black Mercedes Vito VIP for a business traveler with the Acropolis of Athens in the background",
     date: "2026-08-15",
     metaTitle: "Private Chauffeur for Business Travel in Athens",
     metaDescription:
-      "Book a private chauffeur in Athens for business travel. Mercedes V-Class transfers for airports, hotels, meetings and ports with 24/7 WhatsApp support.",
+      "Book a private chauffeur in Athens for business travel. Mercedes Vito VIP transfers for airports, hotels, meetings and ports with 24/7 WhatsApp support.",
     sections: [
       {
         paragraphs: [
@@ -474,7 +474,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "What to Expect",
         paragraphs: [
-          "At H&A VIP Tours, business transfers run in Mercedes V-Class vehicles, chosen for their space and comfort — ideal for executives or small groups with luggage and presentation materials. A private vehicle waiting on time also creates a composed first impression for colleagues or clients arriving from abroad.",
+          "At H&A VIP Tours, business transfers run in Mercedes Vito VIP vehicles, chosen for their space and comfort — ideal for executives or small groups with luggage and presentation materials. A private vehicle waiting on time also creates a composed first impression for colleagues or clients arriving from abroad.",
         ],
       },
       {
@@ -492,11 +492,11 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Port Transfers That Respect Your Schedule",
         paragraphs: [
-          "For guests connecting to a cruise or ferry, a Mercedes V-Class comfortably handles luggage and timing, keeping the final leg of the trip organized and private — as long as accurate departure details are booked in advance.",
+          "For guests connecting to a cruise or ferry, a Mercedes Vito VIP comfortably handles luggage and timing, keeping the final leg of the trip organized and private — as long as accurate departure details are booked in advance.",
         ],
       },
       {
-        heading: "The Value of Mercedes V-Class Transportation",
+        heading: "The Value of Mercedes Vito VIP Transportation",
         paragraphs: [
           "The spacious cabin suits solo executives, small corporate groups, or families traveling together, letting everyone arrive in one vehicle. The right choice depends on party size and luggage — details worth sharing at booking.",
         ],
@@ -516,7 +516,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "A Better Standard for Your Time in Athens",
         paragraphs: [
-          "The best private chauffeur service means you don't have to think about transportation once it's booked — just a comfortable Mercedes V-Class, a professional driver, and a plan built around your schedule from arrival to departure.",
+          "The best private chauffeur service means you don't have to think about transportation once it's booked — just a comfortable Mercedes Vito VIP, a professional driver, and a plan built around your schedule from arrival to departure.",
         ],
       },
     ],
@@ -524,22 +524,22 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "private-transfer-athens-multiple-suitcases",
     title:
-      "Private Transfer in Athens for Multiple Suitcases: Space, Comfort & Luggage Planning by Mercedes V-Class",
+      "Private Transfer in Athens for Multiple Suitcases: Space, Comfort & Luggage Planning by Mercedes Vito VIP",
     excerpt:
-      "Landing in Athens with several bags? See why a private Mercedes V-Class transfer is the smart choice when luggage capacity, timing, and a calm arrival all matter.",
+      "Landing in Athens with several bags? See why a private Mercedes Vito VIP transfer is the smart choice when luggage capacity, timing, and a calm arrival all matter.",
     image: hostedAssetUrl(privateTransferAthensLuggage),
     imageAlt:
-      "Professional chauffeur loading suitcases into a black Mercedes V-Class with the Acropolis of Athens visible in the background",
+      "Professional chauffeur loading suitcases into a black Mercedes Vito VIP with the Acropolis of Athens visible in the background",
     date: "2026-07-15",
     metaTitle:
       "Private Transfer in Athens for Multiple Suitcases | H&A VIP Tours",
     metaDescription:
-      "Book a private Athens transfer with space for multiple suitcases. Mercedes V-Class, professional chauffeur, 24/7 WhatsApp booking, and luggage planned in advance.",
+      "Book a private Athens transfer with space for multiple suitcases. Mercedes Vito VIP, professional chauffeur, 24/7 WhatsApp booking, and luggage planned in advance.",
     sections: [
       {
         paragraphs: [
           "Landing in Athens with multiple suitcases changes what a good arrival looks like. A private transfer in Athens travelers can rely on is not simply about getting from one address to another. It is about having enough room for every bag, a vehicle ready at the agreed time, and a driver who understands that a long-haul arrival should begin calmly.",
-          "For couples traveling for an extended stay, families carrying strollers and child equipment, cruise guests with formalwear, or business travelers with presentation materials, luggage capacity deserves attention before booking. A premium private transfer in a Mercedes V-Class provides the space, privacy, and personal service that make the first or final journey in Athens feel organized rather than rushed.",
+          "For couples traveling for an extended stay, families carrying strollers and child equipment, cruise guests with formalwear, or business travelers with presentation materials, luggage capacity deserves attention before booking. A premium private transfer in a Mercedes Vito VIP provides the space, privacy, and personal service that make the first or final journey in Athens feel organized rather than rushed.",
         ],
       },
       {
@@ -553,7 +553,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Private transfer in Athens for multiple suitcases",
         paragraphs: [
-          "A [Mercedes V-Class](https://haviptransfers.gr/blog/mercedes-v-class-chauffeur-service-athens) is a strong choice for private airport, hotel, and port transportation because it combines a refined passenger cabin with practical luggage flexibility. Guests travel together in one private vehicle, with a professional chauffeur and a setting that supports quiet conversation, rest, or a quick review of the day ahead.",
+          "A [Mercedes Vito VIP](https://haviptransfers.gr/blog/mercedes-vito-vip-chauffeur-service-athens) is a strong choice for private airport, hotel, and port transportation because it combines a refined passenger cabin with practical luggage flexibility. Guests travel together in one private vehicle, with a professional chauffeur and a setting that supports quiet conversation, rest, or a quick review of the day ahead.",
           "The benefit is not merely having a larger vehicle. It is having a transfer planned around your group. A couple with four large suitcases has different needs from a family of five with compact cases, a stroller, and child seats. A small group traveling light may prioritize generous personal space, while cruise passengers may need the luggage area optimized for several full-size cases.",
           "For this reason, luggage should be described clearly at the time of booking. Include whether bags are large, medium, or carry-on size, and mention any unusual items. If you are bringing a foldable stroller, wheelchair, golf bag, instrument, or garment carrier, say so in advance. Clear information allows the transfer to be prepared properly, without last-minute compromises.",
         ],
@@ -588,7 +588,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Comfort is more than luggage space",
         paragraphs: [
           "Luggage capacity is the starting point, but it should not come at the expense of the passenger experience. A private transfer should leave enough room for guests to sit comfortably, keep immediate essentials accessible, and travel without bags crowding the cabin. This is where the configuration of the vehicle matters as much as its overall size.",
-          "The Mercedes V-Class is suited to guests who expect a luxury environment alongside practical utility. Its spacious interior supports airport arrivals, hotel changes, private day journeys, and port connections without turning the ride into a storage exercise. For a longer private journey beyond central Athens, that extra comfort becomes even more meaningful.",
+          "The Mercedes Vito VIP is suited to guests who expect a luxury environment alongside practical utility. Its spacious interior supports airport arrivals, hotel changes, private day journeys, and port connections without turning the ride into a storage exercise. For a longer private journey beyond central Athens, that extra comfort becomes even more meaningful.",
           "There are trade-offs, of course. The more passengers and oversized items involved, the more important it is to select the correct arrangement in advance. A vehicle should never be chosen simply because it can technically accommodate a group. It should be selected so the group can travel well.",
         ],
       },
@@ -604,7 +604,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Choosing service over assumptions",
         paragraphs: [
           "When several bags are involved, a private transfer is most valuable before the vehicle arrives. The booking conversation is where the right experience is created: the number of guests is confirmed, luggage is accounted for, child seating is arranged where needed, and the pickup schedule is established around your itinerary.",
-          "H&A VIP Tours offers premium private transportation in Athens with Mercedes V-Class vehicles and direct 24/7 WhatsApp booking, making it straightforward to communicate those requirements. A short message with your passenger count, luggage details, and travel schedule can help shape a transfer that feels personal from the first response.",
+          "H&A VIP Tours offers premium private transportation in Athens with Mercedes Vito VIP vehicles and direct 24/7 WhatsApp booking, making it straightforward to communicate those requirements. A short message with your passenger count, luggage details, and travel schedule can help shape a transfer that feels personal from the first response.",
           "Your bags should be part of the plan, not an afterthought at the curb. When space, timing, and guest comfort are arranged in advance, the journey through Athens begins with the composed, private experience you intended to book.",
         ],
       },
@@ -615,14 +615,14 @@ export const blogPosts: BlogPost[] = [
     title:
       "Why Child Car Seats Are Non-Negotiable in Private Transfers in Greece: Safety, Law & Comfort with H&A TOURS LTD",
     excerpt:
-      "Certified BeSafe child seats for every age, installed by us and always free on request. Greek law, real safety data, and how our Mercedes V-Class keeps families comfortable on long routes.",
+      "Certified BeSafe child seats for every age, installed by us and always free on request. Greek law, real safety data, and how our Mercedes Vito VIP keeps families comfortable on long routes.",
     image: hostedAssetUrl(childSeatsFamilySafe),
     imageAlt:
-      "Black Mercedes V-Class at Athens International Airport with a family, two children, luggage and an H&A Tours Ltd Family Safe sign held by the chauffeur",
+      "Black Mercedes Vito VIP at Athens International Airport with a family, two children, luggage and an H&A Tours Ltd Family Safe sign held by the chauffeur",
     date: "2026-06-15",
     metaTitle: "Child Car Seats in Private Transfers in Greece – Safety & Law | H&A TOURS LTD",
     metaDescription:
-      "Greek law, i-Size rules and real safety data for child car seats in private transfers. BeSafe seats for babies, toddlers and big kids, installed free in our Mercedes V-Class.",
+      "Greek law, i-Size rules and real safety data for child car seats in private transfers. BeSafe seats for babies, toddlers and big kids, installed free in our Mercedes Vito VIP.",
     sections: [
       {
         paragraphs: [
@@ -656,16 +656,16 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "private-meteora-day-trip-from-athens",
-    title: "Private Meteora Day Trip from Athens: Monasteries in the Sky by Mercedes V-Class",
+    title: "Private Meteora Day Trip from Athens: Monasteries in the Sky by Mercedes Vito VIP",
     excerpt:
-      "A full-day private journey from Athens to the monasteries of Meteora. Luxury Mercedes V-Class, hotel pickup, flexible timing, and a schedule built around your priorities.",
+      "A full-day private journey from Athens to the monasteries of Meteora. Luxury Mercedes Vito VIP, hotel pickup, flexible timing, and a schedule built around your priorities.",
     image: hostedAssetUrl(privateMeteoraTourFromAthens),
     imageAlt:
-      "Woman in a sun hat standing beside a black Mercedes V-Class overlooking the Meteora monasteries on sandstone pillars at sunset",
+      "Woman in a sun hat standing beside a black Mercedes Vito VIP overlooking the Meteora monasteries on sandstone pillars at sunset",
     date: "2026-05-15",
-    metaTitle: "Private Meteora Day Trip from Athens – Mercedes V-Class | H&A VIP Tours",
+    metaTitle: "Private Meteora Day Trip from Athens – Mercedes Vito VIP | H&A VIP Tours",
     metaDescription:
-      "Private chauffeur-driven day trip from Athens to Meteora in a luxury Mercedes V-Class. Hotel pickup, monastery visits, flexible timing and 24/7 WhatsApp booking.",
+      "Private chauffeur-driven day trip from Athens to Meteora in a luxury Mercedes Vito VIP. Hotel pickup, monastery visits, flexible timing and 24/7 WhatsApp booking.",
     sections: [
       {
         paragraphs: [
@@ -677,7 +677,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Why a private Meteora tour from Athens changes the day",
         paragraphs: [
           "Meteora is approximately four and a half hours from central Athens in each direction, depending on traffic, departure point, and planned comfort stops. It is a substantial full-day commitment. When transportation is private, that time becomes part of the experience rather than a fixed obligation.",
-          "A premium Mercedes V-Class offers generous room for passengers and luggage, climate-controlled comfort, and the privacy to rest, talk, work, or simply watch the landscape change beyond Athens. The route moves from the urban energy of the capital into central Greece, where mountain views, open plains, and traditional towns create a welcome contrast to the city.",
+          "A premium Mercedes Vito VIP offers generous room for passengers and luggage, climate-controlled comfort, and the privacy to rest, talk, work, or simply watch the landscape change beyond Athens. The route moves from the urban energy of the capital into central Greece, where mountain views, open plains, and traditional towns create a welcome contrast to the city.",
           "The most valuable difference is flexibility. An early departure may suit travelers who want more time around the monasteries. Others may prefer a measured morning departure, a relaxed lunch near Kalambaka or Kastraki, and carefully chosen viewpoints before returning to Athens. Your day should reflect your travel pace, not an inflexible timetable.",
         ],
         image: athensMeteoraRouteMap,
@@ -702,7 +702,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Comfort matters on the Athens to Meteora journey",
         paragraphs: [
-          "The road time is significant, which makes vehicle standards more than a cosmetic detail. A luxury Mercedes V-Class is well suited to private touring because it gives small groups room to settle in without feeling confined. It is an especially practical choice for families carrying day bags, travelers with extra luggage, or guests who appreciate a polished, discreet environment between destinations.",
+          "The road time is significant, which makes vehicle standards more than a cosmetic detail. A luxury Mercedes Vito VIP is well suited to private touring because it gives small groups room to settle in without feeling confined. It is an especially practical choice for families carrying day bags, travelers with extra luggage, or guests who appreciate a polished, discreet environment between destinations.",
           "For families, child and baby seats can be arranged in advance so the day starts with the right setup rather than last-minute adjustments. For business travelers, the quiet and privacy of a chauffeur-driven vehicle can make it easier to remain connected during part of the journey. For couples, it creates an unhurried setting for a destination that deserves one.",
           "Professional chauffeur service also removes the small decisions that can interrupt a long excursion: where to stop, how to manage arrival timing, and how to navigate between the elevated monastery areas and viewpoints. You remain focused on the visit itself.",
         ],
@@ -727,7 +727,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Plan your private Meteora experience",
         paragraphs: [
           "Advance planning makes a noticeable difference. Share your preferred travel date, number of passengers, pickup point, luggage needs, child-seat requirements, and any mobility considerations. If you have particular monasteries, photography interests, or dining preferences in mind, these details can help create a more personal schedule.",
-          "H&A VIP Tours provides premium private transfers and custom tours from Athens with a service approach centered on punctuality, comfort, and direct communication. A Mercedes V-Class and professional chauffeur provide the right foundation for a long-distance day that still feels calm and personal. Booking assistance is available 24/7 through WhatsApp, which is particularly useful for international travelers finalizing plans across time zones.",
+          "H&A VIP Tours provides premium private transfers and custom tours from Athens with a service approach centered on punctuality, comfort, and direct communication. A Mercedes Vito VIP and professional chauffeur provide the right foundation for a long-distance day that still feels calm and personal. Booking assistance is available 24/7 through WhatsApp, which is particularly useful for international travelers finalizing plans across time zones.",
           "Meteora is at its best when there is room to look up, pause, and take in the scale of the landscape. Choose a private journey that gives the destination the time, comfort, and attention it deserves.",
         ],
       },
@@ -735,21 +735,21 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "private-delphi-day-trip-from-athens",
-    title: "Private Delphi Day Trip from Athens: A Full Day by Mercedes V-Class",
+    title: "Private Delphi Day Trip from Athens: A Full Day by Mercedes Vito VIP",
     excerpt:
-      "A full day through central Greece to the slopes of Mount Parnassus. Direct hotel pickup, a luxury Mercedes V-Class, and an unhurried itinerary built around Delphi, its museum and Arachova.",
+      "A full day through central Greece to the slopes of Mount Parnassus. Direct hotel pickup, a luxury Mercedes Vito VIP, and an unhurried itinerary built around Delphi, its museum and Arachova.",
     image: hostedAssetUrl(delphiDayTripCover),
     imageAlt:
       "Ancient Tholos of Delphi ruins with Doric columns set against the mountains of Mount Parnassus and the Pleistos Valley", 
     date: "2026-04-15",
-    metaTitle: "Private Delphi Day Trip from Athens – Mercedes V-Class | H&A VIP Tours",
+    metaTitle: "Private Delphi Day Trip from Athens – Mercedes Vito VIP | H&A VIP Tours",
     metaDescription:
-      "Private chauffeur-driven day trip from Athens to Delphi in a Mercedes V-Class. Hotel pickup, Arachova stop, flexible timing and an unhurried itinerary. Book via WhatsApp 24/7.",
+      "Private chauffeur-driven day trip from Athens to Delphi in a Mercedes Vito VIP. Hotel pickup, Arachova stop, flexible timing and an unhurried itinerary. Book via WhatsApp 24/7.",
     sections: [
       {
         paragraphs: [
           "The drive to Delphi is not simply a transfer between Athens and an ancient site. It is a full day through central Greece, with mountain roads, changing views, and a destination that deserves unhurried time. For travelers searching for a day trip, a private itinerary brings the right balance of comfort, pace, and personal attention.",
-          "Delphi sits on the slopes of Mount Parnassus, approximately 115 miles northwest of Athens. The journey is long enough that vehicle quality, space, and timing shape the experience. A premium private transfer in a Mercedes V-Class allows couples, families, small groups, and business travelers to travel in privacy, keep their belongings close, and make the day their own.",
+          "Delphi sits on the slopes of Mount Parnassus, approximately 115 miles northwest of Athens. The journey is long enough that vehicle quality, space, and timing shape the experience. A premium private transfer in a Mercedes Vito VIP allows couples, families, small groups, and business travelers to travel in privacy, keep their belongings close, and make the day their own.",
         ],
       },
       {
@@ -757,7 +757,7 @@ export const blogPosts: BlogPost[] = [
         paragraphs: [
           "Delphi is often described as the spiritual center of the ancient Greek world, but the setting is as memorable as the ruins themselves. The sanctuary overlooks the Pleistos Valley and reaches toward the mountains beyond it. Arriving rested gives you the time and focus to appreciate the Temple of Apollo, the Sacred Way, the theater, and the archaeological museum without treating them as stops on a clock.",
           "A private day trip is especially valuable for guests staying in central Athens, along the Athens Riviera, or near Piraeus before or after a cruise. Your chauffeur collects you directly from your hotel, residence, or agreed meeting point. There is no need to coordinate separate stages of the journey, manage luggage between stops, or follow a fixed group schedule.",
-          "The Mercedes V-Class is well suited to the route. Its spacious cabin offers comfortable seating, climate control, and room for day bags, cameras, strollers, and personal items. Families can request child and baby seats in advance, while couples may prefer the quiet of a private cabin and the freedom to linger over lunch in the mountains.",
+          "The Mercedes Vito VIP is well suited to the route. Its spacious cabin offers comfortable seating, climate control, and room for day bags, cameras, strollers, and personal items. Families can request child and baby seats in advance, while couples may prefer the quiet of a private cabin and the freedom to linger over lunch in the mountains.",
         ],
       },
       {
@@ -795,7 +795,7 @@ export const blogPosts: BlogPost[] = [
       {
         subheading: "Afternoon: optional stops and return to Athens",
         paragraphs: [
-          "Depending on the season and your interests, your chauffeur can incorporate a short viewpoint stop, time in Arachova, or a refreshment break before returning. The ride back is often welcome after a day of walking. In a Mercedes V-Class, guests can settle in, enjoy the changing landscape, and arrive at their Athens hotel in comfort during the early evening.",
+          "Depending on the season and your interests, your chauffeur can incorporate a short viewpoint stop, time in Arachova, or a refreshment break before returning. The ride back is often welcome after a day of walking. In a Mercedes Vito VIP, guests can settle in, enjoy the changing landscape, and arrive at their Athens hotel in comfort during the early evening.",
           "For a standard full-day plan, expect approximately 10 to 12 hours door to door. Guests arriving on a cruise ship or traveling with a tightly timed flight should build in additional flexibility. Delphi is best enjoyed when the return is not rushed.",
         ],
       },
@@ -817,7 +817,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Premium transport for a day that deserves time",
         paragraphs: [
-          "H&A VIP Tours provides private Delphi journeys designed around the way you want to travel: direct hotel pickup, a luxury Mercedes V-Class, discreet professional service, and a schedule tailored to your priorities. Booking access through WhatsApp is available 24/7, which is useful when plans change after arrival in Athens or when a cruise, flight, or dinner reservation affects your timing.",
+          "H&A VIP Tours provides private Delphi journeys designed around the way you want to travel: direct hotel pickup, a luxury Mercedes Vito VIP, discreet professional service, and a schedule tailored to your priorities. Booking access through WhatsApp is available 24/7, which is useful when plans change after arrival in Athens or when a cruise, flight, or dinner reservation affects your timing.",
           "Delphi rewards travelers who give it room to breathe. Leave Athens early, take the mountain road at an easy pace, and let the final view over the valley be the moment that sets the rhythm for the rest of your Greece journey.",
         ],
       },
@@ -826,21 +826,21 @@ export const blogPosts: BlogPost[] = [
   {
 
     slug: "private-transfer-athens-to-cape-sounio",
-    title: "Private Transfer from Athens to Cape Sounio: Temple of Poseidon by Mercedes V-Class",
+    title: "Private Transfer from Athens to Cape Sounio: Temple of Poseidon by Mercedes Vito VIP",
     excerpt:
-      "An unhurried coastal journey to the Temple of Poseidon, arranged around your departure time and pace. Discover why a private chauffeur-driven Mercedes V-Class is the finest way to experience Cape Sounion.",
+      "An unhurried coastal journey to the Temple of Poseidon, arranged around your departure time and pace. Discover why a private chauffeur-driven Mercedes Vito VIP is the finest way to experience Cape Sounion.",
     image: hostedAssetUrl(sounionPrivateTour),
     imageAlt:
-      "Elegant couple with a black Mercedes V-Class at Cape Sounion, the Temple of Poseidon silhouetted against a golden sunset over the Aegean Sea",
+      "Elegant couple with a black Mercedes Vito VIP at Cape Sounion, the Temple of Poseidon silhouetted against a golden sunset over the Aegean Sea",
     date: "2026-03-15",
     metaTitle: "Private Transfer Athens to Cape Sounio – Temple of Poseidon | H&A VIP Tours",
     metaDescription:
-      "Private chauffeur-driven transfer from Athens to Cape Sounion and the Temple of Poseidon in a Mercedes V-Class. Sunset tours, coastal stops, flexible timing. Book via WhatsApp 24/7.",
+      "Private chauffeur-driven transfer from Athens to Cape Sounion and the Temple of Poseidon in a Mercedes Vito VIP. Sunset tours, coastal stops, flexible timing. Book via WhatsApp 24/7.",
     sections: [
       {
         paragraphs: [
           "The moment the Temple of Poseidon comes into view above the Aegean, the value of a private journey becomes clear. A private ride from Athens to Cape Sounio is not simply transportation to a landmark. It is an unhurried coastal experience arranged around your preferred departure time, your pace, and the people traveling with you.",
-          "For couples planning a sunset outing, families traveling with children, cruise guests with limited time, or business travelers seeking a polished afternoon outside Athens, Cape Sounion offers a memorable change of scene without requiring an overnight stay. The difference lies in how you get there: a private chauffeur, a spacious Mercedes V-Class, and an itinerary that leaves room for the moments you do not want to rush.",
+          "For couples planning a sunset outing, families traveling with children, cruise guests with limited time, or business travelers seeking a polished afternoon outside Athens, Cape Sounion offers a memorable change of scene without requiring an overnight stay. The difference lies in how you get there: a private chauffeur, a spacious Mercedes Vito VIP, and an itinerary that leaves room for the moments you do not want to rush.",
         ],
       },
       {
@@ -848,7 +848,7 @@ export const blogPosts: BlogPost[] = [
         paragraphs: [
           "Cape Sounion sits at the southern tip of Attica, where the Temple of Poseidon overlooks the sea from a dramatic clifftop. The journey from central Athens generally takes around 75 to 100 minutes each way, depending on traffic, pickup location, and the route selected. That makes timing essential, especially when your plans revolve around the sunset.",
           "A premium private transfer gives your party the advantage of a direct hotel, residence, port, or airport-area pickup at the time that works for your day. There is no need to adjust your schedule around fixed departure windows. Your chauffeur manages the driving, parking, and timing while you enjoy the changing scenery from Athens to the Attica Riviera.",
-          "The Mercedes V-Class is particularly well suited to this outing. Its generous interior provides comfortable seating for couples, families, and small private groups, with room for personal belongings and luggage when Sounion is part of a larger travel day. Child and baby seats can be arranged in advance, so families can travel with the same attention to comfort and safety from departure through return.",
+          "The Mercedes Vito VIP is particularly well suited to this outing. Its generous interior provides comfortable seating for couples, families, and small private groups, with room for personal belongings and luggage when Sounion is part of a larger travel day. Child and baby seats can be arranged in advance, so families can travel with the same attention to comfort and safety from departure through return.",
         ],
       },
       {
@@ -881,7 +881,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "What premium private transportation changes",
         paragraphs: [
-          "The appeal of Sounion is its setting, but the quality of the journey influences the entire experience. After a full day of sightseeing in Athens, navigating traffic and coastal roads can take energy away from the occasion. In a luxury Mercedes V-Class, guests can settle into a quiet, climate-controlled cabin and focus on the view, conversation, or simply a moment of rest.",
+          "The appeal of Sounion is its setting, but the quality of the journey influences the entire experience. After a full day of sightseeing in Athens, navigating traffic and coastal roads can take energy away from the occasion. In a luxury Mercedes Vito VIP, guests can settle into a quiet, climate-controlled cabin and focus on the view, conversation, or simply a moment of rest.",
           "Privacy also matters. A private vehicle keeps your party together and allows the day to move at a personal rhythm. You can depart when your group is ready, remain at a viewpoint a little longer, or make a last-minute adjustment if weather or dining preferences change. Flexibility has limits around site hours and road conditions, but a well-planned private service leaves far more room to adapt than a rigid itinerary.",
           "H&A VIP Tours provides this type of chauffeur-driven Sounio experience with premium private transfers, custom tour planning, and direct 24/7 WhatsApp booking access. For international visitors, clear communication before pickup is as valuable as the vehicle itself: your timing, passenger needs, pickup point, and desired stops can be confirmed in advance.",
         ],
@@ -901,15 +901,15 @@ export const blogPosts: BlogPost[] = [
     slug: "private-transfer-athens-airport-to-hotel",
     title: "Private Transfer from Athens Airport to Hotel",
     excerpt:
-      "Skip taxi queues and travel from Athens Airport to your hotel in comfort. Discover why a private Mercedes V-Class transfer is the smartest start to your Athens stay.",
+      "Skip taxi queues and travel from Athens Airport to your hotel in comfort. Discover why a private Mercedes Vito VIP transfer is the smartest start to your Athens stay.",
     image: hostedAssetUrl(athensAirportHotelTransfer),
     imageAlt:
-      "Black Mercedes V-Class on a scenic Athens road at golden hour with the Acropolis and a private tour guide pointing toward the ancient monuments",
+      "Black Mercedes Vito VIP on a scenic Athens road at golden hour with the Acropolis and a private tour guide pointing toward the ancient monuments",
     date: "2025-10-15",
     metaTitle:
       "Private Transfer from Athens Airport to Hotel | H&A VIP Transfers",
     metaDescription:
-      "Book a premium private transfer from Athens Airport to your hotel. Mercedes V-Class, 24/7 WhatsApp support, fixed pickup, direct route.",
+      "Book a premium private transfer from Athens Airport to your hotel. Mercedes Vito VIP, 24/7 WhatsApp support, fixed pickup, direct route.",
     sections: [
       {
         paragraphs: [
@@ -926,9 +926,9 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Mercedes V-Class: comfort in every detail",
+        heading: "Mercedes Vito VIP: comfort in every detail",
         paragraphs: [
-          "The quality of the vehicle affects the journey much more than it seems at first. A Mercedes V-Class offers a spacious cabin, comfortable seats and practical luggage space. For a family or a small group, the ability to travel all together without compromises creates a noticeably better experience.",
+          "The quality of the vehicle affects the journey much more than it seems at first. A Mercedes Vito VIP offers a spacious cabin, comfortable seats and practical luggage space. For a family or a small group, the ability to travel all together without compromises creates a noticeably better experience.",
           "Comfort is not just about size. It is about cleanliness, air conditioning, a quiet ride and the fact that you do not share the vehicle with strangers. The transfer is private, from pickup to the entrance of your hotel.",
         ],
       },
@@ -950,33 +950,33 @@ export const blogPosts: BlogPost[] = [
         heading: "How to make a correct booking",
         paragraphs: [
           "You need: main passenger name, date, time and flight number, destination or full hotel address, number of passengers and luggage. If you travel with a child, ask for the appropriate child seat in advance.",
-          "H&A VIP Tours serves exactly this need with premium private transfers in Athens, Mercedes V-Class and direct communication via WhatsApp, 24 hours a day.",
+          "H&A VIP Tours serves exactly this need with premium private transfers in Athens, Mercedes Vito VIP and direct communication via WhatsApp, 24 hours a day.",
         ],
       },
     ],
   },
   {
-    slug: "mercedes-v-class-chauffeur-service-athens",
-    title: "Mercedes V-Class Chauffeur Service in Athens",
+    slug: "mercedes-vito-vip-chauffeur-service-athens",
+    title: "Mercedes Vito VIP Chauffeur Service in Athens",
     excerpt:
-      "Discover why a Mercedes V-Class chauffeur service is the ideal way to move through Athens — from airport transfers and port connections to custom private tours.",
+      "Discover why a Mercedes Vito VIP chauffeur service is the ideal way to move through Athens — from airport transfers and port connections to custom private tours.",
     image: hostedAssetUrl(mercedesVClassChauffeurAthens),
-    imageAlt: "Black Mercedes V-Class with professional chauffeur and H&A TOURS LTD branding, Acropolis of Athens in the background",
+    imageAlt: "Black Mercedes Vito VIP with professional chauffeur and H&A TOURS LTD branding, Acropolis of Athens in the background",
     date: "2025-11-15",
-    metaTitle: "Mercedes V-Class Chauffeur Service in Athens | H&A VIP Transfers",
+    metaTitle: "Mercedes Vito VIP Chauffeur Service in Athens | H&A VIP Transfers",
     metaDescription:
-      "Book a premium Mercedes V-Class chauffeur service in Athens. Airport, port, hotel transfers and custom private tours with a professional driver.",
+      "Book a premium Mercedes Vito VIP chauffeur service in Athens. Airport, port, hotel transfers and custom private tours with a professional driver.",
     sections: [
       {
         paragraphs: [
-          "An Athens arrival can begin with a long walk through the terminal, luggage carts, and uncertainty about where everyone should meet. Or it can begin with a confirmed private vehicle, a professional chauffeur, and enough room for every passenger and suitcase. For travelers searching for υπηρεσία σοφέρ Mercedes V-Class Αθήνα, the difference is not simply transportation. It is the ability to move through a busy city on a schedule that remains entirely your own.",
-          "A Mercedes V-Class chauffeur service is designed for guests who expect a polished arrival, discreet assistance, and a vehicle that feels appropriate for both business and leisure travel. Whether the destination is a central Athens hotel, Piraeus port, the Athenian Riviera, or a private residence, the journey should feel calm from the moment you leave the airport.",
+          "An Athens arrival can begin with a long walk through the terminal, luggage carts, and uncertainty about where everyone should meet. Or it can begin with a confirmed private vehicle, a professional chauffeur, and enough room for every passenger and suitcase. For travelers searching for υπηρεσία σοφέρ Mercedes Vito VIP Αθήνα, the difference is not simply transportation. It is the ability to move through a busy city on a schedule that remains entirely your own.",
+          "A Mercedes Vito VIP chauffeur service is designed for guests who expect a polished arrival, discreet assistance, and a vehicle that feels appropriate for both business and leisure travel. Whether the destination is a central Athens hotel, Piraeus port, the Athenian Riviera, or a private residence, the journey should feel calm from the moment you leave the airport.",
         ],
       },
       {
-        heading: "Why the Mercedes V-Class suits private travel in Athens",
+        heading: "Why the Mercedes Vito VIP suits private travel in Athens",
         paragraphs: [
-          "The Mercedes V-Class is particularly well suited to Athens because it combines executive presentation with the space travelers genuinely need. It provides comfortable seating for couples, families, and small private groups while allowing room for luggage that would make a standard vehicle feel restrictive.",
+          "The Mercedes Vito VIP is particularly well suited to Athens because it combines executive presentation with the space travelers genuinely need. It provides comfortable seating for couples, families, and small private groups while allowing room for luggage that would make a standard vehicle feel restrictive.",
           "This matters after an international flight, before a cruise departure, or during a full day of private touring. Guests can sit comfortably, keep personal belongings close, and travel together instead of dividing the party between multiple vehicles. For families, advance arrangements for child and baby seats make the transfer more straightforward from the start.",
           "The vehicle also offers a more composed experience for business travelers. A clean, spacious cabin creates the right setting to make a call, review an itinerary, or simply have a quiet moment before a meeting. For leisure guests, it offers the same benefit in a different form: room to settle in, look out at the city, and arrive without rushing.",
         ],
@@ -984,14 +984,14 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Airport arrivals and departures",
         paragraphs: [
-          "An airport transfer should account for more than the drive itself. Flight timing, luggage, passenger numbers, and the final hotel address all affect the experience. With a pre-arranged Mercedes V-Class, guests have a clear collection plan and a chauffeur prepared for the journey ahead.",
+          "An airport transfer should account for more than the drive itself. Flight timing, luggage, passenger numbers, and the final hotel address all affect the experience. With a pre-arranged Mercedes Vito VIP, guests have a clear collection plan and a chauffeur prepared for the journey ahead.",
           "For arrivals, this removes the pressure of making transport decisions after landing. For departures, it means setting a pickup time that respects airline check-in requirements, anticipated traffic, and the pace of the guests' day. Early-morning and late-night travel deserve the same level of attention as a midday transfer.",
         ],
       },
       {
         heading: "Port transfers for cruise and island travel",
         paragraphs: [
-          "Piraeus is a major gateway for cruise guests and travelers continuing to the Greek islands. Port days can be time-sensitive, particularly when luggage, ship schedules, and hotel checkouts are involved. A private V-Class transfer offers direct transportation between the port and the airport, city hotels, or any Athens address.",
+          "Piraeus is a major gateway for cruise guests and travelers continuing to the Greek islands. Port days can be time-sensitive, particularly when luggage, ship schedules, and hotel checkouts are involved. A private Mercedes Vito VIP transfer offers direct transportation between the port and the airport, city hotels, or any Athens address.",
           "The practical advantage is space and coordination. Cruise guests often travel with more luggage, while families may need seating arrangements confirmed in advance. A dedicated chauffeur service keeps the group together and provides a more comfortable transition between sea and city.",
         ],
       },
@@ -1012,18 +1012,18 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "When a private V-Class is the right choice",
+        heading: "When a private Mercedes Vito VIP is the right choice",
         paragraphs: [
-          "A Mercedes V-Class chauffeur service is an especially strong fit when comfort, luggage capacity, and personal scheduling are priorities. Couples who prefer a refined airport arrival, families traveling with children, small groups exploring Athens together, and executives moving between appointments all benefit from a private arrangement.",
+          "A Mercedes Vito VIP chauffeur service is an especially strong fit when comfort, luggage capacity, and personal scheduling are priorities. Couples who prefer a refined airport arrival, families traveling with children, small groups exploring Athens together, and executives moving between appointments all benefit from a private arrangement.",
           "It can also be the better option for guests combining several destinations in one stay. For example, an itinerary may include an airport arrival, a transfer to Piraeus two days later, and a private drive to Cape Sounion or Delphi before departure. Booking transportation around the itinerary helps preserve time and avoids treating each movement as a separate problem.",
-          "There are trade-offs to consider. A private V-Class is a premium service, so it is best chosen by travelers who place value on space, discretion, dependable timing, and a tailored experience. If the itinerary is still changing, communicate that early. A flexible plan is easier to build when pickup locations, passenger counts, and key reservations are known in advance.",
+          "There are trade-offs to consider. A private Mercedes Vito VIP is a premium service, so it is best chosen by travelers who place value on space, discretion, dependable timing, and a tailored experience. If the itinerary is still changing, communicate that early. A flexible plan is easier to build when pickup locations, passenger counts, and key reservations are known in advance.",
         ],
       },
       {
-        heading: "Custom tours with a chauffeur-driven Mercedes V-Class",
+        heading: "Custom tours with a chauffeur-driven Mercedes Vito VIP",
         paragraphs: [
           "Athens is ideal for private touring because the most rewarding days are rarely identical. One group may want the Acropolis and the Acropolis Museum before lunch in Plaka. Another may prefer a coastal drive to the Temple of Poseidon at Cape Sounion, with time for photographs and a late meal by the sea. Families may need a gentler pace, while returning visitors may want to focus on neighborhoods, viewpoints, and less obvious stops.",
-          "A custom tour in a Mercedes V-Class gives guests the freedom to set that pace. Rather than working around a fixed group schedule, they can decide where to spend more time and where to move on. The chauffeur handles the transport details, while the day remains centered on the guests' interests.",
+          "A custom tour in a Mercedes Vito VIP gives guests the freedom to set that pace. Rather than working around a fixed group schedule, they can decide where to spend more time and where to move on. The chauffeur handles the transport details, while the day remains centered on the guests' interests.",
           "For longer excursions, comfort becomes even more significant. Destinations such as Delphi, Nafplio, Ancient Corinth, and the Argolis region involve substantial time on the road. A spacious premium vehicle makes those hours part of the experience rather than time to endure.",
         ],
       },
@@ -1032,7 +1032,7 @@ export const blogPosts: BlogPost[] = [
         paragraphs: [
           "The most useful booking request includes the travel date, pickup and drop-off locations, number of passengers, luggage estimate, flight or vessel details when relevant, and any child-seat requirements. For private tours, it also helps to share the preferred destinations, available hours, and whether the day should emphasize history, scenery, shopping, dining, or a relaxed mix.",
           "Direct 24/7 WhatsApp access is especially helpful when plans change during travel. A delayed flight, updated hotel address, or revised port timing can be addressed quickly with a clear conversation. H&A VIP Tours approaches these requests as part of guest care, not an interruption to the service.",
-          "For the best result, reserve the Mercedes V-Class as soon as your core itinerary is confirmed, particularly during high-demand travel periods. Then allow the transfer to become the quiet, well-organized part of your Athens stay: a private space between the places you came to enjoy.",
+          "For the best result, reserve the Mercedes Vito VIP as soon as your core itinerary is confirmed, particularly during high-demand travel periods. Then allow the transfer to become the quiet, well-organized part of your Athens stay: a private space between the places you came to enjoy.",
         ],
       },
     ],
@@ -1044,11 +1044,11 @@ export const blogPosts: BlogPost[] = [
       "Departing from Piraeus after a cruise or a stay at the port? Discover why a pre-booked private transfer to Athens Airport is the calmest way to end your trip.",
     image: hostedAssetUrl(privateTransferPiraeusPort),
     imageAlt:
-      "Black Mercedes V-Class on the coastal road from Piraeus Port with a cruise ship, the Acropolis at sunset and H&A TOURS LTD branding",
+      "Black Mercedes Vito VIP on the coastal road from Piraeus Port with a cruise ship, the Acropolis at sunset and H&A TOURS LTD branding",
     date: "2025-12-15",
     metaTitle: "Private Transfer from Piraeus Port to Athens Airport | H&A VIP Transfers",
     metaDescription:
-      "Book a private transfer from Piraeus Port to Athens Airport. Mercedes V-Class, cruise pickup coordination, 24/7 WhatsApp support, fixed scheduling.",
+      "Book a private transfer from Piraeus Port to Athens Airport. Mercedes Vito VIP, cruise pickup coordination, 24/7 WhatsApp support, fixed scheduling.",
     sections: [
       {
         paragraphs: [
@@ -1070,7 +1070,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Private Piraeus - Athens Airport transfer with the right vehicle",
         paragraphs: [
-          "The choice of vehicle is not just about appearance. For a couple with carry-on luggage, a luxury sedan may be enough. For a family, a group of friends or passengers disembarking from a cruise with more luggage, a Mercedes V-Class offers a much more practical solution: spacious, discreet, and allowing everyone to travel together without being cramped.",
+          "The choice of vehicle is not just about appearance. For a couple with carry-on luggage, a luxury sedan may be enough. For a family, a group of friends or passengers disembarking from a cruise with more luggage, a Mercedes Vito VIP offers a much more practical solution: spacious, discreet, and allowing everyone to travel together without being cramped.",
           "The vehicle must correspond to the actual number of passengers and luggage, not just the number of seats. This detail is particularly important when there are large travel items, a baby stroller, equipment or multiple pieces of luggage per person. Providing correct information at the time of booking helps ensure the transfer starts as it should, without last-minute changes.",
           "A premium private transfer also offers something that is not always a given with alternatives: personal space. You don't share the vehicle with strangers, you don't make intermediate stops for other passengers and you don't need to adapt your schedule to a shuttle timetable. The ride is exclusively yours, from the pick-up point to drop-off at the airport.",
         ],
@@ -1079,7 +1079,7 @@ export const blogPosts: BlogPost[] = [
         heading: "What to expect from a premium service",
         paragraphs: [
           "The value of a private transfer is evident even before the vehicle door opens. The booking needs to be clear, with confirmed pick-up details, time, destination and contact information. On the day of the transfer, the driver's punctuality and the cleanliness of the vehicle create the level of confidence a demanding traveler is looking for.",
-          "At H&A VIP Tours, transfers with Mercedes V-Class are organized as a personal service and not just a simple ride. This means the team knows your schedule in advance and can handle changes or questions via WhatsApp, 24 hours a day. For visitors who do not know Athens or have limited time, direct communication is an essential part of the experience.",
+          "At H&A VIP Tours, transfers with Mercedes Vito VIP are organized as a personal service and not just a simple ride. This means the team knows your schedule in advance and can handle changes or questions via WhatsApp, 24 hours a day. For visitors who do not know Athens or have limited time, direct communication is an essential part of the experience.",
           "Professionalism does not need to be showy. It is expressed through a polite, discreet driver, careful driving, help with luggage and knowledge of the routes to the airport. For business travelers, this creates the quiet time they need before a flight. For families and couples, it offers a more comfortable end to their holiday.",
         ],
       },
@@ -1119,17 +1119,17 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "piraeus-cruise-transfer",
-    title: "Μεταφορά Κρουαζιέρας Πειραιά: Ιδιωτική Premium Μεταφορά με Mercedes V-Class",
+    title: "Μεταφορά Κρουαζιέρας Πειραιά: Ιδιωτική Premium Μεταφορά με Mercedes Vito VIP",
     excerpt:
-      "Το πλοίο έδεσε και οι αποσκευές παραδόθηκαν. Δείτε γιατί μια προκρατημένη ιδιωτική μεταφορά κρουαζιέρας από τον Πειραιά με Mercedes V-Class αλλάζει την πρώτη ή την τελευταία σας ημέρα στην Αθήνα.",
+      "Το πλοίο έδεσε και οι αποσκευές παραδόθηκαν. Δείτε γιατί μια προκρατημένη ιδιωτική μεταφορά κρουαζιέρας από τον Πειραιά με Mercedes Vito VIP αλλάζει την πρώτη ή την τελευταία σας ημέρα στην Αθήνα.",
     image: hostedAssetUrl(piraeusCruiseTransfer),
     imageAlt:
-      "Επαγγελματίας οδηγός ανοίγει την πόρτα μαύρου Mercedes V-Class στο λιμάνι του Πειραιά, με κρουαζιερόπλοιο και αεροπλάνο στον ορίζοντα — ιδιωτική μεταφορά κρουαζιέρας",
+      "Επαγγελματίας οδηγός ανοίγει την πόρτα μαύρου Mercedes Vito VIP στο λιμάνι του Πειραιά, με κρουαζιερόπλοιο και αεροπλάνο στον ορίζοντα — ιδιωτική μεταφορά κρουαζιέρας",
     date: "2026-01-15",
     metaTitle:
-      "Μεταφορά Κρουαζιέρας Πειραιά | Ιδιωτική Μεταφορά με Mercedes V-Class — H&A VIP Transfers",
+      "Μεταφορά Κρουαζιέρας Πειραιά | Ιδιωτική Μεταφορά με Mercedes Vito VIP — H&A VIP Transfers",
     metaDescription:
-      "Προκρατημένη ιδιωτική μεταφορά κρουαζιέρας από το λιμάνι του Πειραιά προς ξενοδοχείο, αεροδρόμιο ή Αθήνα. Mercedes V-Class, συντονισμός αποβίβασης, WhatsApp 24/7.",
+      "Προκρατημένη ιδιωτική μεταφορά κρουαζιέρας από το λιμάνι του Πειραιά προς ξενοδοχείο, αεροδρόμιο ή Αθήνα. Mercedes Vito VIP, συντονισμός αποβίβασης, WhatsApp 24/7.",
     sections: [
       {
         paragraphs: [
@@ -1146,10 +1146,10 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Ιδιωτικό Mercedes V-Class ή ταξί;",
+        heading: "Ιδιωτικό Mercedes Vito VIP ή ταξί;",
         paragraphs: [
           "Η επιλογή εξαρτάται από τον τρόπο που ταξιδεύετε. Ένα συμβατικό ταξί μπορεί να είναι κατάλληλο για έναν ή δύο επιβάτες με ελαφριές αποσκευές και χωρίς αυστηρό πρόγραμμα. Ωστόσο, δεν προσφέρει πάντα εγγυημένο χώρο, σταθερή εμπειρία οχήματος ή τη βεβαιότητα ότι θα βρείτε άμεσα διαθέσιμο αυτοκίνητο στο λιμάνι.",
-          "Για ζευγάρια που επιθυμούν μια πιο ήσυχη άφιξη, οικογένειες με παιδιά ή μικρές ιδιωτικές ομάδες, το Mercedes V-Class προσφέρει μια πιο ολοκληρωμένη λύση. Η ευρύχωρη καμπίνα, η άνετη πρόσβαση, ο χώρος για αποσκευές και η δυνατότητα να ταξιδεύει η παρέα μαζί αλλάζουν ουσιαστικά τη διαδρομή μετά την κρουαζιέρα. Δεν χρειάζεται να χωριστείτε σε δύο οχήματα ούτε να διαπραγματευτείτε πρακτικές λεπτομέρειες στον δρόμο.",
+          "Για ζευγάρια που επιθυμούν μια πιο ήσυχη άφιξη, οικογένειες με παιδιά ή μικρές ιδιωτικές ομάδες, το Mercedes Vito VIP προσφέρει μια πιο ολοκληρωμένη λύση. Η ευρύχωρη καμπίνα, η άνετη πρόσβαση, ο χώρος για αποσκευές και η δυνατότητα να ταξιδεύει η παρέα μαζί αλλάζουν ουσιαστικά τη διαδρομή μετά την κρουαζιέρα. Δεν χρειάζεται να χωριστείτε σε δύο οχήματα ούτε να διαπραγματευτείτε πρακτικές λεπτομέρειες στον δρόμο.",
           "Υπάρχει και η επιλογή του shared shuttle ή του λεωφορείου. Συνήθως κοστίζει λιγότερο, αλλά συνοδεύεται από συγκεκριμένα ωράρια, στάσεις για άλλους επιβάτες και λιγότερο έλεγχο της διαδρομής. Αν ο χρόνος σας είναι άνετος και η μετακίνηση προς το ξενοδοχείο δεν έχει ιδιαίτερες απαιτήσεις, μπορεί να σας εξυπηρετήσει. Αν όμως έχετε κράτηση σε εστιατόριο, πτήση, ιδιωτική ξενάγηση ή παιδιά που μόλις ολοκλήρωσαν μια μεγάλη ημέρα στο πλοίο, η ιδιωτική υπηρεσία έχει διαφορετική αξία.",
         ],
       },
@@ -1175,7 +1175,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Οι λεπτομέρειες που κάνουν τη διαφορά",
         paragraphs: [
           "Μια premium μεταφορά δεν κρίνεται μόνο από το όχημα. Κρίνεται από την επικοινωνία πριν από την άφιξη, την καθαρότητα των οδηγιών συνάντησης, την επαγγελματική παρουσία του οδηγού και την ικανότητα να προσαρμόζεται σε αλλαγές. Οι καθυστερήσεις πλοίων, οι αλλαγές στην ώρα αποβίβασης και οι απρόβλεπτες συνθήκες στο λιμάνι είναι μέρος του ταξιδιού, όχι εξαίρεση.",
-          "Η H&A VIP Tours οργανώνει ιδιωτικές μεταφορές από και προς τον Πειραιά με Mercedes V-Class και άμεση επικοινωνία μέσω WhatsApp, διαθέσιμη όλο το 24ωρο. Αυτό είναι ιδιαίτερα χρήσιμο όταν χρειάζεται να επιβεβαιώσετε μια λεπτομέρεια της παραλαβής, να ενημερώσετε για αλλαγή στο πρόγραμμά σας ή να ζητήσετε προσαρμογή της διαδρομής.",
+          "Η H&A VIP Tours οργανώνει ιδιωτικές μεταφορές από και προς τον Πειραιά με Mercedes Vito VIP και άμεση επικοινωνία μέσω WhatsApp, διαθέσιμη όλο το 24ωρο. Αυτό είναι ιδιαίτερα χρήσιμο όταν χρειάζεται να επιβεβαιώσετε μια λεπτομέρεια της παραλαβής, να ενημερώσετε για αλλαγή στο πρόγραμμά σας ή να ζητήσετε προσαρμογή της διαδρομής.",
           "Πριν επιβεβαιώσετε οποιαδήποτε υπηρεσία, αξίζει να ελέγξετε αν η τιμή αφορά αποκλειστικά ιδιωτικό όχημα, αν περιλαμβάνεται η αναμονή που σχετίζεται με την αποβίβαση και αν το προτεινόμενο όχημα επαρκεί πραγματικά για τα άτομα και τις αποσκευές σας. Η χαμηλότερη αρχική τιμή δεν είναι πάντα η πιο πρακτική επιλογή, ειδικά όταν οδηγεί σε αναμονή, περιορισμένο χώρο ή ανάγκη για δεύτερο όχημα.",
         ],
       },
@@ -1195,13 +1195,13 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "athens-private-tour-with-driver",
-    title: "Private Tour of Athens with Driver: Discover the City in a Mercedes V-Class",
+    title: "Private Tour of Athens with Driver: Discover the City in a Mercedes Vito VIP",
     excerpt: "A planned private tour with a driver turns a busy day in Athens into a private experience built around your priorities — professional chauffeur, premium vehicle, flexible itinerary.",
     image: hostedAssetUrl(privateAthensTourWithDriver),
     imageAlt: "Private tour of Athens with a professional driver gesturing toward the Acropolis, with a couple enjoying the view on a sunny day",
     date: "2026-02-15",
-    metaTitle: "Private Tour of Athens with Driver | Mercedes V-Class | H&A VIP Tours",
-    metaDescription: "Discover Athens at your own pace with a private tour and professional chauffeur in a luxury Mercedes V-Class. Custom itinerary, hotel & cruise terminal pickup, child seats on request.",
+    metaTitle: "Private Tour of Athens with Driver | Mercedes Vito VIP | H&A VIP Tours",
+    metaDescription: "Discover Athens at your own pace with a private tour and professional chauffeur in a luxury Mercedes Vito VIP. Custom itinerary, hotel & cruise terminal pickup, child seats on request.",
     sections: [
       {
         paragraphs: [
@@ -1213,7 +1213,7 @@ export const blogPosts: BlogPost[] = [
         heading: "What a Private Athens Tour With a Driver Offers",
         paragraphs: [
           "A private tour with a driver is designed for travelers who want Athens to feel organized without feeling rushed. Your chauffeur collects you directly from your hotel, residence, cruise terminal, or another agreed location. From there, the route follows the plan you have made - with room for sensible adjustments along the way.",
-          "A Mercedes V-Class is especially well suited to this style of touring. Its spacious cabin allows guests to travel together comfortably, with room for day bags, shopping, strollers, and the luggage that often accompanies a hotel change or a port connection. Families can request child and baby seats in advance, so the journey is prepared for every passenger from the start.",
+          "A Mercedes Vito VIP is especially well suited to this style of touring. Its spacious cabin allows guests to travel together comfortably, with room for day bags, shopping, strollers, and the luggage that often accompanies a hotel change or a port connection. Families can request child and baby seats in advance, so the journey is prepared for every passenger from the start.",
           "The service is private from pickup through final drop-off. There is no need to coordinate with other travelers' timing or make every stop fit a fixed route. If you would like more time in Plaka, prefer a relaxed lunch near the coast, or need to return to your hotel before an evening reservation, your transport plan can reflect that.",
         ],
       },
@@ -1238,7 +1238,7 @@ export const blogPosts: BlogPost[] = [
         heading: "When a Private Tour Makes the Most Sense",
         paragraphs: [
           "Private touring is particularly useful on arrival and departure days. If you land early and cannot check in immediately, a thoughtfully paced Athens tour can make productive use of those hours before your hotel transfer. On departure day, the same approach can work around a later flight, with luggage remaining securely in the vehicle while you enjoy a final visit or lunch.",
-          "Cruise passengers also benefit from a service built around port timing. A private driver can meet you at the terminal, follow a schedule that respects your return time, and bring you back with a comfortable margin before boarding. For small groups, traveling in one Mercedes V-Class also keeps the experience together rather than splitting the party across vehicles.",
+          "Cruise passengers also benefit from a service built around port timing. A private driver can meet you at the terminal, follow a schedule that respects your return time, and bring you back with a comfortable margin before boarding. For small groups, traveling in one Mercedes Vito VIP also keeps the experience together rather than splitting the party across vehicles.",
           "Business travelers may not need a full sightseeing program, yet often appreciate the same level of planning. A private vehicle can combine a hotel pickup, a meeting transfer, a short city orientation, and a precise airport or port departure. Privacy, presentation, and punctuality matter when every part of the day is scheduled.",
         ],
       },
@@ -1260,7 +1260,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Comfort Is Part of the Experience",
         paragraphs: [
-          "The difference between a standard sightseeing day and a premium private tour is often felt in the intervals. It is the ease of being met at the right place, the space to settle into a clean Mercedes V-Class, and the reassurance of having an experienced local chauffeur handling the route while you focus on Athens.",
+          "The difference between a standard sightseeing day and a premium private tour is often felt in the intervals. It is the ease of being met at the right place, the space to settle into a clean Mercedes Vito VIP, and the reassurance of having an experienced local chauffeur handling the route while you focus on Athens.",
           "That level of service is especially valuable during warm months, when a comfortable vehicle between outdoor sites can make a full day more enjoyable. It also matters for multigenerational families, guests with limited mobility, and travelers carrying luggage between accommodations. Luxury in this setting is practical: more space, more privacy, and less friction around each transition.",
           "H&A VIP Tours arranges premium private transfers and custom Athens tours for guests who want this experience to feel straightforward from the first message to the final drop-off. The emphasis is on a polished, reliable service that respects your time while leaving room for the Athens you came to see.",
         ],

@@ -84,7 +84,7 @@ const ChildSeats = () => {
           >
             <OptimizedImage
               src={`${ASSET_HOST}${vanAthensChildSeat.url}`}
-              alt="Mother securing her smiling child in a child seat inside the Mercedes V Class, with the Athens Acropolis in the background"
+              alt="Mother securing her smiling child in a child seat inside the Mercedes Vito VIP, with the Athens Acropolis in the background"
               loading="lazy"
               decoding="async"
               className="col-span-2 row-span-2 w-full h-full object-cover rounded-lg border border-primary/20 shadow-2xl"
@@ -98,7 +98,7 @@ const ChildSeats = () => {
             />
             <OptimizedImage
               src={`${ASSET_HOST}${seatBesafe360.url}`}
-              alt="BeSafe 360 swivel child seat installed in a Mercedes V Class"
+              alt="BeSafe 360 swivel child seat installed in a Mercedes Vito VIP"
               loading="lazy"
               decoding="async"
               className="w-full h-full object-cover rounded-lg border border-primary/20 shadow-xl"
