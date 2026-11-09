@@ -1,3 +1,4 @@
+import supplements from "./blogSupplements.json";
 
 import athensAirportHotelTransfer from "@/assets/athens-airport-hotel-transfer.jpg.asset.json";
 import mercedesVClassChauffeurAthens from "@/assets/mercedes-v-class-chauffeur-athens.jpg.asset.json";
@@ -55,18 +56,20 @@ export interface BlogPost {
 
 /** Returns the post with localized fields for `lang`, falling back to the base (English) content. */
 export function localizePost(post: BlogPost, lang: string): BlogPost {
-  const base = lang?.split("-")[0];
-  const tr: BlogPostTranslation | undefined =
-    blogPostTranslations[post.slug]?.[lang] ??
-    (base ? blogPostTranslations[post.slug]?.[base] : undefined);
-  if (!tr) return post;
-  // Translated sections don't carry images: inherit them from the base sections by index.
-  const sections = tr.sections.map((s, i) => ({
-    ...s,
-    image: s.image ?? post.sections[i]?.image,
-    imageAlt: s.imageAlt ?? post.sections[i]?.imageAlt,
+  const base = lang?.split("-")[0] || "en";
+  const extra = (supplements as Record<string, Record<string, Partial<BlogPostTranslation> & { imageAlts?: (string | null)[] }>>)[post.slug]?.[base];
+  const tr = blogPostTranslations[post.slug]?.[base];
+  const merged = { ...post, ...tr, ...extra };
+  const sourceSections = extra?.sections ?? tr?.sections ?? post.sections;
+  const sections = sourceSections.map((section, index) => ({
+    ...section,
+    image: section.image ?? post.sections[index]?.image,
+    imageAlt: extra?.imageAlts?.[index] ?? section.imageAlt ?? post.sections[index]?.imageAlt,
   }));
-  return { ...post, ...tr, sections };
+  if (post.slug === "athens-to-nafplio-private-tour") {
+    sections.push({ image: nafplioPost.map, imageAlt: extra?.imageAlts?.[sections.length] ?? extra?.sections?.find((section) => section.imageAlt)?.imageAlt ?? post.imageAlt });
+  }
+  return { ...merged, sections };
 }
 
 export const WHATSAPP_URL = "https://wa.me/306949393700";

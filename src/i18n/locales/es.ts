@@ -1,4 +1,129 @@
 export default {
+  seoContent: {
+  "homeTitle": "Traslados VIP Atenas | Traslados Privados de Aeropuerto y Puerto | H&A",
+  "homeDescription": "Traslados VIP privados en Atenas: aeropuerto ATH y Pireo, Mercedes Vito VIP para 7 pasajeros, sillas infantiles gratis bajo petición y recepción. WhatsApp.",
+  "homeH1": "Traslados VIP en Atenas",
+  "piraeusTitle": "Traslado Puerto del Pireo | Traslado Privado del Pireo al Aeropuerto de Atenas",
+  "piraeusDescription": "Traslados privados del Pireo al aeropuerto de Atenas, hoteles y centro. Mercedes Vito VIP para 7 pasajeros, recepción y sillas infantiles gratis bajo petición.",
+  "piraeusH1": "Traslados Privados del Puerto del Pireo",
+  "privacyTitle": "Política de Privacidad | H&A VIP Tours Atenas",
+  "privacyDescription": "Cómo H&A VIP Tours recopila, utiliza y protege tus datos personales: cookies, analítica y tus derechos según el RGPD.",
+  "passengerLabel": "Hasta 7 pasajeros",
+  "maxPax": "Mercedes Vito VIP · Hasta 7 pasajeros",
+  "familyHeading": "Traslados familiares con sillas infantiles",
+  "childTitle": "Sillas infantiles gratis bajo petición",
+  "childDescription": "Indícanos las edades de tus hijos y solicita sillas infantiles gratuitas al organizar el traslado. Confirma las sillas necesarias antes de reservar.",
+  "relatedHeading": "Excursiones y guías de viaje relacionadas",
+  "vehicleAlt": "Interior del Mercedes Vito VIP con asientos enfrentados tipo salón para hasta 7 pasajeros, sin contar al conductor",
+  "faqTitle": "Preguntas frecuentes",
+  "homeSections": [
+    {
+      "heading": "Traslados al Aeropuerto",
+      "paragraphs": [
+        "Organiza un traslado privado desde o hacia el Aeropuerto Internacional de Atenas (ATH) con H&A VIP Tours. Nuestro Mercedes Vito VIP recibe hasta siete pasajeros, sin contar al conductor, en una cabina tipo salón con asientos enfrentados. Facilita los datos del vuelo, el destino y las necesidades de equipaje al solicitar tu viaje, tanto si llegas a Atenas como si regresas al aeropuerto.",
+        "El servicio de recepción te ayuda a comenzar con un plan claro de recogida. Contacta por WhatsApp para hablar de tu traslado al aeropuerto, llegada al hotel o viaje a Glyfada, Vouliagmeni y la Riviera de Atenas. Los detalles de recogida se coordinan antes del viaje."
+      ]
+    },
+    {
+      "heading": "Traslados a Puertos",
+      "paragraphs": [
+        "Conecta tu viaje por mar con un traslado privado en Pireo, Rafina o Lavrio. Indícanos los datos del ferry o crucero, puerto, fecha y siguiente destino para organizar la recogida según tu itinerario. Nuestros traslados conectan los puertos con el aeropuerto de Atenas, hoteles y el centro de la ciudad.",
+        "Un conductor profesional de habla inglesa y una cabina privada facilitan viajar juntos. Comunica con antelación el número de pasajeros y el equipaje, especialmente si combinas una recogida en el puerto con la salida de un vuelo."
+      ]
+    },
+    {
+      "heading": "Excursiones Privadas",
+      "paragraphs": [
+        "Descubre Atenas y los destinos más emblemáticos de Grecia con una excursión privada organizada según tus planes. El salón del Mercedes Vito VIP, con asientos enfrentados, ofrece un espacio compartido para tu grupo entre visitas. Comenta la ruta y las paradas que prefieres antes de reservar, en lugar de dar por hecho un itinerario fijo.",
+        "Tanto si tus planes incluyen Atenas como Glyfada, Vouliagmeni o la Riviera de Atenas, contacta con H&A VIP Tours para hablar del recorrido. Dinos dónde quieres empezar y terminar para preparar una propuesta personalizada."
+      ]
+    },
+    {
+      "heading": "Traslados Familiares con Sillas Infantiles",
+      "paragraphs": [
+        "Viajad juntos con espacio para hasta siete pasajeros, sin contar al conductor. Las sillas infantiles son gratuitas bajo petición: indica la edad de cada niño y confirma las sillas necesarias antes de reservar el traslado de aeropuerto, puerto u hotel.",
+        "Avísanos sobre carritos y otras maletas al organizar el viaje. Podemos comentar las necesidades de tu familia junto con los detalles de recogida, para planificar la llegada o salida sin dejar cuestiones importantes para el día del traslado."
+      ]
+    }
+  ],
+  "piraeusSections": [
+    {
+      "heading": "Del Puerto del Pireo al Aeropuerto de Atenas",
+      "paragraphs": [
+        "Organiza un traslado privado entre el puerto del Pireo y el Aeropuerto Internacional de Atenas (ATH) con H&A VIP Tours. Tanto si desembarcas de un crucero como si llegas en ferry o viajas del aeropuerto al puerto, comparte tu itinerario antes de reservar. Necesitamos la fecha, el número de pasajeros, los detalles del equipaje y los datos del vuelo o barco para comentar una recogida adecuada a tu viaje.",
+        "El Mercedes Vito VIP transporta hasta siete pasajeros, sin contar al conductor, en una cabina tipo salón con asientos enfrentados. El tiempo depende de la ruta, el acceso al puerto y el tráfico, por lo que conviene dejar margen para enlazar el viaje por mar y por aire. Pídenos que revisemos tus horarios en lugar de suponer una duración fija o una conexión garantizada."
+      ]
+    },
+    {
+      "heading": "Traslados del Pireo a Hoteles y al Centro de Atenas",
+      "paragraphs": [
+        "Un traslado privado del Pireo puede conectar la llegada de tu ferry o crucero con un hotel u otra dirección acordada en el centro de Atenas. Envía la dirección completa del destino con tu solicitud para que el presupuesto refleje el viaje que realmente necesitas. Si te alojas en Glyfada, Vouliagmeni u otro lugar de la Riviera de Atenas, indica esa ubicación en vez de solicitar simplemente un traslado a Atenas.",
+        "Para la vuelta, comparte la dirección del alojamiento y los datos de salida del ferry o crucero. Podemos hablar de la recogida antes de reservar. Cada viaje se planifica según la ruta acordada; el tiempo varía con el tráfico y las ubicaciones de origen y destino. Contacta por WhatsApp con tus planes y solicita un presupuesto personalizado para tu traslado privado."
+      ]
+    },
+    {
+      "heading": "Terminales de Cruceros, Puertos de Ferris y Recepción",
+      "paragraphs": [
+        "El Pireo atiende tanto cruceros como ferris, por lo que el nombre del barco y la terminal o puerta correcta son importantes al organizar la recogida. Facilita los datos que tengas y avísanos si cambian. La recepción y el punto de encuentro se coordinan para tu viaje; confirma las instrucciones de recogida y las condiciones de espera acordadas antes de reservar para saber qué esperar a tu llegada.",
+        "Nuestros traslados también atienden Rafina y Lavrio. Son puertos distintos, no otros nombres del Pireo, así que revisa el billete e indica el puerto correcto en tu solicitud. Para un traslado entre puertos o hacia ATH, comunica ambos extremos del recorrido. Se realiza seguimiento del vuelo o barco cuando es necesario, mientras que las condiciones de espera siempre deben comentarse y confirmarse para tu reserva."
+      ]
+    },
+    {
+      "heading": "Equipaje y Viajes Familiares con Sillas Infantiles Gratuitas",
+      "paragraphs": [
+        "Mantén unido a tu grupo en un Mercedes Vito VIP con asientos enfrentados tipo salón y capacidad para hasta siete pasajeros, sin contar al conductor. Indica cuántos bultos llevas, incluidas maletas grandes, carritos u otros objetos voluminosos. La capacidad de pasajeros por sí sola no confirma que quepa cualquier combinación de equipaje: comenta tus necesidades antes de confirmar el viaje.",
+        "Las sillas infantiles son gratuitas bajo petición. Indica las edades de tus hijos y el número de sillas al solicitar el presupuesto, y confirma lo acordado antes de reservar. Se aplica el mismo cuidado tanto si tu familia viaja de una terminal de cruceros a un hotel, de un ferry al aeropuerto de Atenas o de regreso al Pireo. Comparte el viaje completo para acordar de antemano ruta, sillas solicitadas, equipaje, punto de encuentro y precio."
+      ]
+    }
+  ],
+  "piraeusFaq": [
+    {
+      "question": "¿Cuánto dura el traslado entre el Pireo y el aeropuerto de Atenas?",
+      "answer": "El tiempo depende de la ruta, el acceso al puerto y el tráfico. Comparte los datos del vuelo o barco para comentar una hora de recogida adecuada; no se garantiza una duración fija ni la conexión."
+    },
+    {
+      "question": "¿Cuánto cuesta un traslado privado del Pireo?",
+      "answer": "Los precios se facilitan bajo petición. Envía ruta, fecha, número de pasajeros, equipaje y necesidades de sillas infantiles para recibir un presupuesto personalizado."
+    },
+    {
+      "question": "¿Cuáles son las condiciones de espera en el Pireo?",
+      "answer": "La espera y el encuentro se coordinan para tu viaje y se confirman antes de reservar. Facilita los datos del barco y pide confirmar las condiciones aplicables; no des por hecho un periodo de espera garantizado."
+    }
+  ],
+  "aboutParagraphs": [
+    "H&A VIP Tours es una empresa familiar autorizada de traslados privados y excursiones con sede en Atenas, Grecia. Nos especializamos en transporte de lujo en Mercedes Vito VIP para traslados al aeropuerto, recogidas en puertos, llegadas a hoteles y excursiones privadas de un día por los destinos más emblemáticos de Grecia.",
+    "Con años de experiencia atendiendo a viajeros de todo el mundo, nuestra misión es sencilla: ofrecer viajes seguros, cómodos y sin estrés con un toque personal. Cada trayecto incluye un conductor profesional de habla inglesa, wifi gratuito, agua embotellada y seguimiento del vuelo o barco cuando sea necesario.",
+    "Tanto si visitas Atenas por negocios como por placer, estamos a tu disposición las 24 horas, los 7 días de la semana, para hacer tu viaje inolvidable."
+  ],
+  "privacySections": [
+    {
+      "heading": "Quiénes somos",
+      "paragraphs": [
+        "H&A VIP Tours (H&A Tours Ltd) es una empresa de traslados privados y excursiones con sede en Atenas, Grecia. Puedes contactar en h.a.viptransfers@gmail.com o +30 694 939 3700."
+      ]
+    },
+    {
+      "heading": "Qué recopilamos",
+      "paragraphs": [
+        "Cuando conversas con nuestro asistente de IA o utilizas el formulario de presupuesto, guardamos los datos que compartes — nombre, correo electrónico, teléfono, recogida, destino, fecha y pasajeros — para responder a tu solicitud.",
+        "Con tu consentimiento, también utilizamos cookies analíticas (Google Analytics, Metricool) para comprender cómo se utiliza el sitio."
+      ]
+    },
+    {
+      "heading": "Cookies",
+      "paragraphs": [
+        "Las cookies necesarias mantienen el sitio en funcionamiento, por ejemplo el chat y el formulario de presupuesto. Siempre están activadas.",
+        "Las cookies analíticas y de marketing permanecen bloqueadas hasta que pulses «Aceptar todas» o las actives en «Gestionar». Puedes cambiar tu elección en cualquier momento borrando el almacenamiento del navegador."
+      ]
+    },
+    {
+      "heading": "Tus derechos (RGPD)",
+      "paragraphs": [
+        "Puedes solicitar el acceso, la corrección o la eliminación de tus datos personales en cualquier momento escribiendo a h.a.viptransfers@gmail.com. Respondemos en un plazo de 30 días."
+      ]
+    }
+  ]
+},
   nav: {
     services: "Servicios",
     tagline: "Traslados VIP",
@@ -87,7 +212,7 @@ export default {
     title2: "Precio Instantáneo",
     selectService: "Selecciona Servicio",
     passengers: "Pasajeros",
-    maxPax: "Mercedes Vito VIP · Máx 8 pasajeros",
+    maxPax: "Mercedes Vito VIP · Hasta 7 pasajeros",
     nightRate: "Tarifa Nocturna (22:00 – 06:00) +€10/persona",
     estimated: "Precio Estimado",
     perVehicle: "por vehículo",

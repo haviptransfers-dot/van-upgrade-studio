@@ -14,8 +14,8 @@ const SITE_URL = "https://haviptransfers.gr";
 const SeoPage = ({ routeKey, path }: SeoPageProps) => {
   const { t, i18n } = useTranslation();
   const url = `${SITE_URL}${path}`;
-  const title = t(`seo.${routeKey}.title`);
-  const description = t(`seo.${routeKey}.description`);
+  const title = t(routeKey === "piraeus" ? "seoContent.piraeusTitle" : `seo.${routeKey}.title`);
+  const description = t(routeKey === "piraeus" ? "seoContent.piraeusDescription" : `seo.${routeKey}.description`);
   return (
     <>
       <ServiceStructuredData path={path} />

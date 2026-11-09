@@ -51,21 +51,7 @@ const About = () => {
         </div>
 
         <div className="space-y-8 text-foreground/80 leading-relaxed">
-          <p>
-            H&amp;A VIP Tours is a licensed, family-owned private transfer and tour company based in Athens, Greece.
-            We specialize in luxury Mercedes Vito VIP transportation for airport transfers, port pickups, hotel
-            drop-offs, and private day tours across Greece’s most iconic destinations.
-          </p>
-          <p>
-            With years of experience serving travelers from around the world, our mission is simple: to provide
-            safe, comfortable, and stress-free journeys with a personal touch. Every ride includes a
-            professional English-speaking driver, complimentary Wi-Fi, bottled water, and flight or ship
-            monitoring whenever needed.
-          </p>
-          <p>
-            Whether you are visiting Athens for business or leisure, we are here 24/7 to make your trip
-            unforgettable.
-          </p>
+          {(t("seoContent.aboutParagraphs", { returnObjects: true }) as string[]).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
         </div>
 
         {/* Support local business + Google Preferred Sources */}

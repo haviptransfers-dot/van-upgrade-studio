@@ -6,7 +6,7 @@ const hosted = (url: string) => `https://van-move-boost.lovable.app${url}`;
 export const nafplioPost = {
   slug: "athens-to-nafplio-private-tour",
   title: "Nafplio Private Tour from Athens",
-  metaTitle: "Nafplio Private Tour from Athens | Mercedes Vito VIP VIP Day Trip",
+  metaTitle: "Nafplio Private Tour from Athens | Mercedes Vito VIP Day Trip",
   metaDescription: "Private Nafplio tour from Athens in Mercedes Vito VIP. Corinth Canal, Mycenae, Epidaurus stops. 24/7 WhatsApp, child seats, hotel/port pickup.",
   keywords: "nafplio private tour, athens to nafplio transfer, private day trip nafplio",
   excerpt: "A private Mercedes Vito VIP day journey from Athens to Nafplio, with a relaxed old-town visit and optional Corinth Canal, Mycenae and Epidaurus stops.",
