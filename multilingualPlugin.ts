@@ -49,6 +49,7 @@ export function multilingualPlugin(): Plugin {
       const server = dev ?? await createServer({ server: { middlewareMode: true }, appType: "custom", plugins: [], configFile: "vite.config.ts" });
       try {
         const renderer = await server.ssrLoadModule("/src/static-entry.tsx") as Renderer;
+        const emittedMedia = new Set<string>();
         for (const pathname of paths) {
           const fileName = pathname === "/" ? "index.html" : `${pathname.replace(/^\//, "").replace(/\/$/, "")}/index.html`;
           let html = await multilingualHtml(template, pathname, renderer);
@@ -60,11 +61,10 @@ export function multilingualPlugin(): Plugin {
             const filename = cleanUrl.split("/").pop();
             if (!filename) continue;
             const target = `static-media/${filename}`;
-            if (!bundle[target]) {
+            if (!bundle[target] && !emittedMedia.has(target)) {
               const { readFile } = await import("node:fs/promises");
               this.emitFile({ type: "asset", fileName: target, source: await readFile(cleanUrl.slice(1)) });
-              // Track queued assets as well as those already in the output.
-              bundle[target] = { type: "asset", fileName: target, name: filename, names: [filename], originalFileName: null, originalFileNames: [], source: await readFile(cleanUrl.slice(1)), needsCodeReference: false };
+              emittedMedia.add(target);
             }
             html = html.replaceAll(sourceUrl, `/${target}`);
           }
