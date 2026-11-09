@@ -75,7 +75,7 @@ export function multilingualPlugin(): Plugin {
               this.emitFile({ type: "asset", fileName: target, source: await readFile(cleanUrl.slice(1)) });
               emittedMedia.add(target);
             }
-            html = html.replaceAll(sourceUrl, `/${target}`);
+            html = html.split(sourceUrl).join(`/${target}`);
           }
           const existing = bundle[fileName];
           if (existing?.type === "asset") existing.source = html;
