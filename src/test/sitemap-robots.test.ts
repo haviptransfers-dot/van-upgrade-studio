@@ -17,7 +17,7 @@ const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[
 describe("sitemap.xml automated checks", () => {
   it("is a valid XML urlset with the sitemap namespace", () => {
     expect(sitemap.startsWith('<?xml version="1.0" encoding="UTF-8"?>')).toBe(true);
-    expect(sitemap).toContain('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">');
+    expect(sitemap).toContain('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">');
     expect(sitemap.trim().endsWith("</urlset>")).toBe(true);
     expect(locs.length).toBeGreaterThan(0);
   });

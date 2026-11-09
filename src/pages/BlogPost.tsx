@@ -10,9 +10,11 @@ import { Button } from "@/components/ui/button";
 import { blogPosts, localizePost, WHATSAPP_URL } from "@/data/blogPosts";
 import logoImg from "@/assets/logo.webp";
 import { organization } from "@/data/structuredData";
+import { localizedPath } from "@/lib/languagePaths";
 
 /** Renders plain text with optional [label](url) markdown links as real anchors. */
 function LinkedText({ text }: { text: string }) {
+  const { i18n } = useTranslation();
   const parts: React.ReactNode[] = [];
   const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
   let lastIndex = 0;
@@ -25,7 +27,7 @@ function LinkedText({ text }: { text: string }) {
     parts.push(
       <a
         key={key++}
-        href={match[2]}
+        href={match[2].startsWith("https://haviptransfers.gr/") ? localizedPath(match[2].slice("https://haviptransfers.gr".length), i18n.language) : match[2]}
         target="_blank"
         rel="noopener noreferrer"
         className="text-primary underline underline-offset-2 hover:text-primary/80"
@@ -125,7 +127,7 @@ const BlogPost = () => {
               )}
               {section.paragraphs?.map((p, j) => (
                 <p key={j} className="text-foreground/80 leading-relaxed mb-4">
-                  <LinkedText text={p} />
+                  <LinkedText text={p.replace(/\*\*([^*]+)\*\*/g, "$1")} />
                 </p>
               ))}
               {section.bullets && (
@@ -150,6 +152,8 @@ const BlogPost = () => {
             </section>
           ))}
         </article>
+
+        {post.slug.includes("piraeus") && <p className="mt-8"><Link to="/piraeus-port-transfer" className="text-primary underline underline-offset-4">{t("seoContent.piraeusH1")}</Link></p>}
 
         {/* WhatsApp CTA */}
         <div className="mt-14 bg-card border border-primary/20 rounded-lg p-8 text-center">

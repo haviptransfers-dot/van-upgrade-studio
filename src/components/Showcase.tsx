@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import DeferredBackground from "@/components/DeferredBackground";
 import { motion } from "framer-motion";
 import showcase1 from "@/assets/showcase-1.webp";
@@ -33,14 +34,16 @@ const slides = [
 ];
 
 const Showcase = () => {
+  const { t } = useTranslation();
+  const localized = t("seoUi.showcaseSlides", { returnObjects: true }) as { title: string; subtitle: string; alt: string }[];
   return (
     <section className="relative">
       {slides.map((slide, i) => (
         <div
-          key={slide.title}
+          key={localized[i].title}
           className="relative h-[60vh] min-h-[440px] md:h-screen w-full overflow-hidden bg-background"
         >
-          <DeferredBackground src={slide.src} label={slide.alt} className="absolute inset-0 bg-cover bg-center md:bg-fixed" />
+          <DeferredBackground src={slide.src} label={localized[i].alt} className="absolute inset-0 bg-cover bg-center md:bg-fixed" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-background/20" />
           <div className="relative z-10 h-full flex items-end md:items-center justify-center md:justify-start px-6 md:px-20 pb-12 md:pb-0">
             <motion.div
@@ -54,10 +57,10 @@ const Showcase = () => {
                 {`0${i + 1} / 0${slides.length}`}
               </p>
               <h3 className="font-display text-3xl sm:text-4xl md:text-6xl font-bold text-foreground mb-3 md:mb-5 leading-tight">
-                {slide.title}
+                {localized[i].title}
               </h3>
               <p className="text-foreground/70 text-sm sm:text-base md:text-lg">
-                {slide.subtitle}
+                {localized[i].subtitle}
               </p>
             </motion.div>
           </div>

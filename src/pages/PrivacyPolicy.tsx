@@ -1,5 +1,8 @@
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import Link from "@/components/LocalizedLink";
+import { useTranslation } from "react-i18next";
+import PageHead from "@/components/PageHead";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const sections: { heading: string; body: string[] }[] = [
   {
@@ -30,26 +33,21 @@ const sections: { heading: string; body: string[] }[] = [
   },
 ];
 
-const PrivacyPolicy = () => (
+const PrivacyPolicy = () => {
+  const { t } = useTranslation();
+  const translated = t("seoContent.privacySections", { returnObjects: true }) as { heading: string; paragraphs: string[] }[];
+  return (
   <main className="min-h-screen bg-background text-foreground px-4 py-16 md:py-24">
-    <Helmet>
-      <title>Privacy Policy | H&A VIP Tours Athens</title>
-      <link rel="canonical" href="https://haviptransfers.gr/privacy-policy" />
-      <link rel="alternate" hrefLang="en" href="https://haviptransfers.gr/privacy-policy" />
-      <link rel="alternate" hrefLang="x-default" href="https://haviptransfers.gr/privacy-policy" />
-      <meta
-        name="description"
-        content="How H&A VIP Tours collects, uses and protects your personal data — cookies, analytics and your GDPR rights."
-      />
-    </Helmet>
+    <PageHead title={t("seoContent.privacyTitle")} description={t("seoContent.privacyDescription")} />
     <div className="container mx-auto max-w-2xl">
       <p className="text-primary uppercase tracking-[0.2em] text-xs mb-3">H&A VIP Tours</p>
-      <h1 className="font-display text-3xl md:text-4xl font-bold mb-8">Privacy Policy</h1>
+      <LanguageSwitcher />
+      <h1 className="font-display text-3xl md:text-4xl font-bold mb-8">{t("seoContent.privacyTitle").split("|")[0]}</h1>
       <div className="space-y-8">
-        {sections.map((s) => (
+        {translated.map((s) => (
           <section key={s.heading}>
             <h2 className="font-display text-xl font-semibold text-primary mb-2">{s.heading}</h2>
-            {s.body.map((p, i) => (
+            {s.paragraphs.map((p, i) => (
               <p key={i} className="text-sm text-muted-foreground leading-relaxed mb-2">
                 {p}
               </p>
@@ -58,10 +56,11 @@ const PrivacyPolicy = () => (
         ))}
       </div>
       <Link to="/" className="inline-block mt-10 text-primary hover:text-primary/80 text-sm underline underline-offset-4">
-        ← Back to home
+        {t("blog.backHome")}
       </Link>
     </div>
   </main>
 );
+};
 
 export default PrivacyPolicy;

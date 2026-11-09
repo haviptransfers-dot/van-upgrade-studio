@@ -62,7 +62,7 @@ const Reviews = () => {
           <div className="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-6 py-4 md:py-5">
             <div className="text-center sm:text-left">
               <span className="font-display text-4xl md:text-5xl font-medium text-foreground">5.0</span>
-              <p className="text-sm text-muted-foreground">out of 5</p>
+              <p className="text-sm text-muted-foreground">{t("seoUi.uiTranslations.out of 5")}</p>
             </div>
             <div className="w-px h-12 bg-border hidden sm:block" />
             <div className="text-center sm:text-left">
@@ -71,8 +71,8 @@ const Reviews = () => {
                   <Star key={i} className="w-5 h-5 md:w-6 md:h-6 fill-primary text-primary" />
                 ))}
               </div>
-              <p className="text-sm text-foreground/80 font-medium">Verified reviews</p>
-              <p className="text-xs text-muted-foreground">Based on real customer experiences</p>
+              <p className="text-sm text-foreground/80 font-medium">{t("seoUi.uiTranslations.Verified reviews")}</p>
+              <p className="text-xs text-muted-foreground">{t("seoUi.uiTranslations.Based on real customer experiences")}</p>
             </div>
           </div>
         </div>

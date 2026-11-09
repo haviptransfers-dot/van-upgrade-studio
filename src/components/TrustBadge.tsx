@@ -1,14 +1,17 @@
 import { Star } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const GOOGLE_REVIEWS_URL =
   "https://www.google.com/maps/place/H%26A+Tours+EE+%E2%80%93+VIP+VAN+Transfers+Athens+%2F+Airport+Transfer/@37.8984517,23.7510804,15z/data=!4m8!3m7!1s0x14a1bf29f6b3d8db:0x68e02440ef866866!8m2!3d37.895034!4d23.7553906!9m1!1b1!16s%2Fg%2F11xkp5z_zr";
 
-const TrustBadge = () => (
+const TrustBadge = () => {
+  const { t } = useTranslation();
+  return (
   <a
     href={GOOGLE_REVIEWS_URL}
     target="_blank"
     rel="noopener noreferrer"
-    aria-label="5.0 out of 5 — read customer reviews on Google"
+    aria-label={(t("seoUi.uiTranslations", { returnObjects: true }) as Record<string, string>)["5.0 out of 5 — read customer reviews on Google"]}
     className="home-trust-badge inline-flex items-center gap-2 py-2 text-foreground hover:text-primary transition-colors"
   >
     <svg viewBox="0 0 24 24" className="w-4 h-4 flex-shrink-0" aria-hidden="true">
@@ -28,6 +31,7 @@ const TrustBadge = () => (
     <span className="text-xs text-foreground/80">Google</span>
   </a>
 );
+};
 
 export default TrustBadge;
 

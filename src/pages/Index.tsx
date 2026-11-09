@@ -121,8 +121,8 @@ const Index = ({ routeKey }: IndexProps) => {
             </Link>
           </div>
           <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="Book now via WhatsApp">
-              <Button size="sm" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/80 md:h-10 md:px-4" aria-label="Book now via WhatsApp">
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label={t("seoUi.uiTranslations.Book now via WhatsApp")}>
+              <Button size="sm" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/80 md:h-10 md:px-4" aria-label={t("seoUi.uiTranslations.Book now via WhatsApp")}>
                 <MessageCircle className="w-4 h-4" />
                 <span className="hidden sm:inline">{t("nav.bookNow")}</span>
               </Button>
@@ -135,7 +135,7 @@ const Index = ({ routeKey }: IndexProps) => {
               onClick={() => setMobileMenuOpen((open) => !open)}
               aria-expanded={mobileMenuOpen}
               aria-controls="mobile-navigation"
-              aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-label={mobileMenuOpen ? t("seoUi.uiTranslations.Close menu") : t("seoUi.uiTranslations.Open menu")}
             >
               {mobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
             </Button>
@@ -165,8 +165,7 @@ const Index = ({ routeKey }: IndexProps) => {
           {/* Static base layer — first image always painted to avoid black gap */}
           <OptimizedImage
             src={heroCycleImages[0]}
-            alt=""
-            aria-hidden="true"
+            alt={t("seoUi.galleryAlts.2")}
             fetchPriority="high"
             loading="eager"
             sizes="100vw"
@@ -222,7 +221,7 @@ const Index = ({ routeKey }: IndexProps) => {
             <TrustBadge />
           </div>
         </div>
-        <a href="#services" aria-label="Scroll to services" className="home-hero-scroll absolute bottom-8 left-1/2 -translate-x-1/2 text-foreground/70">
+        <a href="#services" aria-label={t("seoUi.uiTranslations.Scroll to services")} className="home-hero-scroll absolute bottom-8 left-1/2 -translate-x-1/2 text-foreground/70">
           <ChevronDown className="w-8 h-8" />
         </a>
       </section>
@@ -235,7 +234,7 @@ const Index = ({ routeKey }: IndexProps) => {
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chat on WhatsApp"
+        aria-label={t("seoUi.uiTranslations.Chat on WhatsApp")}
         className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-whatsapp rounded-full flex items-center justify-center shadow-lg hover:bg-whatsapp-hover transition-colors hover:scale-110"
       >
         <MessageCircle className="w-7 h-7 text-whatsapp-foreground" />

@@ -1,6 +1,6 @@
 import { createServer, type Plugin, type ViteDevServer } from "vite";
 import { canonicalPaths } from "./canonicalPlugin";
-import { basePath, languageFromPath, LANGUAGES, LEGACY_SLUGS, localizedPath } from "./src/lib/languagePaths";
+import { basePath, languageFromPath, LEGACY_SLUGS, localizedPath } from "./src/lib/languagePaths";
 export const MAX_PRERENDER_PAGES = 1000;
 type Renderer = { renderPage(path: string): Promise<{ body: string; head: string }> };
 export async function multilingualHtml(template: string, pathname: string, renderer: Renderer) {
@@ -49,9 +49,25 @@ export function multilingualPlugin(): Plugin {
       const server = dev ?? await createServer({ server: { middlewareMode: true }, appType: "custom", plugins: [], configFile: "vite.config.ts" });
       try {
         const renderer = await server.ssrLoadModule("/src/static-entry.tsx") as Renderer;
+        const emittedMedia = new Set<string>();
         for (const pathname of paths) {
           const fileName = pathname === "/" ? "index.html" : `${pathname.replace(/^\//, "").replace(/\/$/, "")}/index.html`;
-          const html = await multilingualHtml(template, pathname, renderer);
+          let html = await multilingualHtml(template, pathname, renderer);
+          // ssrLoadModule returns source URLs for unoptimized small logos/maps.
+          // Publish real files, never URLs that depend on the development server.
+          const sourceAssets = [...new Set(html.match(/\/src\/assets\/[^"<>\s)]+/g) ?? [])];
+          for (const sourceUrl of sourceAssets) {
+            const cleanUrl = sourceUrl.split("?")[0];
+            const filename = cleanUrl.split("/").pop();
+            if (!filename) continue;
+            const target = `static-media/${filename}`;
+            if (!bundle[target] && !emittedMedia.has(target)) {
+              const { readFile } = await import("node:fs/promises");
+              this.emitFile({ type: "asset", fileName: target, source: await readFile(cleanUrl.slice(1)) });
+              emittedMedia.add(target);
+            }
+            html = html.replaceAll(sourceUrl, `/${target}`);
+          }
           const existing = bundle[fileName];
           if (existing?.type === "asset") existing.source = html;
           else this.emitFile({ type: "asset", fileName, source: html });

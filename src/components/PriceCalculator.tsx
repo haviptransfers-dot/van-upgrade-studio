@@ -63,10 +63,10 @@ const PriceCalculator = () => {
   const { base, nightExtra, total } = useMemo(() => {
     let baseVal = 0;
     if (isFixed) {
-      baseVal = fixedPrices[service]!;
+      baseVal = fixedPrices[service] ?? 0;
     } else {
-      const tier = tieredPrices[service]!;
-      baseVal = pax <= 4 ? tier.upTo4 : tier.fiveToSeven;
+      const tier = tieredPrices[service];
+      baseVal = tier ? (pax <= 4 ? tier.upTo4 : tier.fiveToSeven) : 0;
     }
     const nExtra = night ? pax * 10 : 0;
     return { base: baseVal, nightExtra: nExtra, total: baseVal + nExtra };
@@ -123,7 +123,7 @@ const PriceCalculator = () => {
             <div className="flex items-center justify-center gap-4">
               <button
                 onClick={() => setPax((p) => Math.max(1, p - 1))}
-                aria-label="Decrease passengers"
+                aria-label={t("seoUi.uiTranslations.Decrease passengers")}
                 className="w-10 h-10 border border-border text-primary rounded-sm hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center"
               >
                 <Minus className="w-4 h-4" />
@@ -131,7 +131,7 @@ const PriceCalculator = () => {
               <div className="font-display text-3xl min-w-[3rem] text-center">{pax}</div>
               <button
                 onClick={() => setPax((p) => Math.min(MAX_PASSENGERS, p + 1))}
-                aria-label="Increase passengers"
+                aria-label={t("seoUi.uiTranslations.Increase passengers")}
                 className="w-10 h-10 border border-border text-primary rounded-sm hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center"
               >
                 <Plus className="w-4 h-4" />

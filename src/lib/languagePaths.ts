@@ -17,7 +17,9 @@ export function basePath(path: string) {
 }
 export function localizedPath(path: string, language: string): string {
   if (!path.startsWith("/") || path.startsWith("//")) return path;
-  const [pathname, suffix = ""] = path.split(/(?=[?#])/);
+  const separator = path.search(/[?#]/);
+  const pathname = separator < 0 ? path : path.slice(0, separator);
+  const suffix = separator < 0 ? "" : path.slice(separator);
   const base = basePath(pathname);
   const slug = base.startsWith("/blog/") ? base.slice(6) : "";
   const resolved = LEGACY_SLUGS[slug] ? `/blog/${LEGACY_SLUGS[slug]}` : base;

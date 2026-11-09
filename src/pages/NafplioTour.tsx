@@ -36,32 +36,10 @@ const NafplioTour = () => {
     canal: "🌿",
   };
   const whatIncluded = t("nafplioTour.whatIncluded", { returnObjects: true }) as string[];
-  const faqItems = [
-    {
-      q: "What is included in the Nafplio Private Tour?",
-      a: "The tour includes a private Mercedes Vito VIP with a professional English-speaking driver, door-to-door pickup from your Athens hotel or Airbnb, a scenic drive through the Peloponnese, visits to Nafplio old town, Palamidi Fortress, and Bourtzi castle views, and complimentary cold drinks on board. Entrance fees are not included.",
-    },
-    {
-      q: t("nafplioTour.durationQuestion", { tour: t("nafplioTour.title") }),
-      a: t("nafplioTour.durationAnswer", { duration: t("nafplioTour.durationVal") }),
-    },
-    {
-      q: "How far is Nafplio from Athens?",
-      a: "Nafplio is approximately 140 km from Athens, about a 1.5–2 hour scenic drive through the Peloponnese.",
-    },
-    {
-      q: "Is the Nafplio tour fully private?",
-      a: "Yes, 100% private. The vehicle and driver are exclusively for you and your group — no shared tours, no strangers.",
-    },
-    {
-      q: "How many passengers can travel together?",
-      a: "Our Mercedes Vito VIP accommodates up to 7 passengers, ideal for families and small groups.",
-    },
-    {
-      q: "How do I book the Nafplio Private Tour?",
-      a: "You can book via WhatsApp, email, or through our online booking form. We confirm all bookings within a few hours.",
-    },
-  ];
+  const faqItems = (t("seoUi.tourFaqs.nafplioTour", { returnObjects: true }) as { q: string; a: string }[]).map((item, index) => index === 1 ? {
+    q: t("nafplioTour.durationQuestion", { tour: t("nafplioTour.title") }),
+    a: t("nafplioTour.durationAnswer", { duration: t("nafplioTour.durationVal") }),
+  } : item);
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -244,7 +222,7 @@ const NafplioTour = () => {
         <section className="py-12 md:py-20 px-4">
           <div className="container mx-auto max-w-3xl">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-10">
-              Frequently Asked Questions
+              {t("seoContent.faqTitle")}
             </h2>
             <Accordion type="single" collapsible className="space-y-2">
               {faqItems.map((item, i) => (

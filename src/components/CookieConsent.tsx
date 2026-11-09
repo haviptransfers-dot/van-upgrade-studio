@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "@/components/LocalizedLink";
 import { useTranslation } from "react-i18next";
 import { Cookie, X } from "lucide-react";
 import {

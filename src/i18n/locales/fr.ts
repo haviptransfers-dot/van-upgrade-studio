@@ -1,4 +1,200 @@
 export default {
+  seoUi: {
+  "galleryAlts": [
+    "Extérieur du Mercedes Vito avec porte ouverte",
+    "Sièges arrière du Mercedes Vito VIP en cuir cognac matelassé",
+    "Mercedes Vito noir stationné devant l’entrée d’un hôtel de luxe à Athènes",
+    "Van H&A Tours avec vue sur l’Acropole d’Athènes",
+    "Porte coulissante ouverte du Mercedes Vito VIP dévoilant des sièges en cuir cognac avec éclairage d’ambiance",
+    "Intérieur du Mercedes Vito VIP avec sièges en cuir noir à surpiqûres losanges et éclairage d’ambiance bleu au sol",
+    "Chauffeur H&A Tours ouvrant la porte du Mercedes Vito VIP à un voyageur avec bagages à l’aéroport d’Athènes",
+    "Chauffeur H&A Tours accueillant un client par une poignée de main à l’aéroport d’Athènes, avec l’Acropole en arrière-plan",
+    "Présentation du Mercedes Vito VIP de H&A Tours avec vues extérieures, intérieures et de détails",
+    "Mère attachant son enfant dans un siège enfant à l’intérieur du Mercedes Vito VIP, avec l’Acropole en arrière-plan"
+  ],
+  "showcaseSlides": [
+    {
+      "title": "Entrez dans le luxe",
+      "subtitle": "Cuir haut de gamme. Habitacle silencieux.",
+      "alt": "Mercedes Vito VIP avec porte latérale ouverte dans un garage de luxe"
+    },
+    {
+      "title": "Le souci du détail",
+      "subtitle": "Chaque surface, finie à la perfection.",
+      "alt": "Gros plan sur la poignée de porte du Mercedes Vito VIP"
+    },
+    {
+      "title": "Partout en Grèce",
+      "subtitle": "D’Athènes aux Météores — dans un confort absolu.",
+      "alt": "Mercedes Vito VIP sur une route de montagne pittoresque"
+    },
+    {
+      "title": "De l’espace pour se détendre",
+      "subtitle": "Jusqu’à 7 passagers. Un espace généreux pour les jambes.",
+      "alt": "Habitacle arrière du Mercedes Vito VIP avec sièges en cuir cognac"
+    }
+  ],
+  "roadAlt": "Mercedes Vito VIP roulant sur l’autoroute",
+  "childPhotoAlts": [
+    "Mère attachant son enfant souriant dans un siège enfant à l’intérieur du Mercedes Vito VIP, avec l’Acropole d’Athènes en arrière-plan",
+    "Siège enfant i-Size avec harnais sur la banquette arrière d’une Mercedes",
+    "Siège enfant pivotant BeSafe 360 installé dans un Mercedes Vito VIP"
+  ],
+  "tourFaqs": {
+    "athensTour": [
+      {
+        "q": "Que comprend l’excursion privée : Athènes ?",
+        "a": "L’excursion comprend un Mercedes Vito VIP privé avec un chauffeur professionnel anglophone, une prise en charge porte-à-porte à votre hôtel ou Airbnb, des visites du quartier de l’Acropole, de Plaka, de Monastiraki, du stade panathénaïque et d’autres sites emblématiques d’Athènes, ainsi que des boissons fraîches offertes à bord."
+      },
+      {
+        "q": "",
+        "a": ""
+      },
+      {
+        "q": "La visite de la ville d’Athènes est-elle entièrement privée ?",
+        "a": "Oui, 100% privée. Vous ne partagerez pas le véhicule avec d’autres touristes. La visite est exclusivement réservée à vous et à votre groupe."
+      },
+      {
+        "q": "Pouvons-nous personnaliser les arrêts de la visite de la ville d’Athènes ?",
+        "a": "Absolument. Nous adaptons chaque excursion à vos centres d’intérêt. Prévenez-nous simplement à l’avance si vous souhaitez visiter des sites ou des quartiers précis."
+      },
+      {
+        "q": "Combien de passagers peuvent participer à la visite de la ville d’Athènes ?",
+        "a": "Notre Mercedes Vito VIP accueille confortablement jusqu’à 7 passagers, parfait pour les familles et les petits groupes."
+      },
+      {
+        "q": "Comment réserver la visite de la ville d’Athènes ?",
+        "a": "Vous pouvez réserver via WhatsApp, par e-mail ou via notre formulaire de réservation en ligne sur le site. Nous confirmons toutes les réservations en quelques heures."
+      }
+    ],
+    "sounionTour": [
+      {
+        "q": "Que comprend l’excursion privée : cap Sounion ?",
+        "a": "L’excursion comprend un Mercedes Vito VIP privé avec un chauffeur professionnel anglophone, une prise en charge porte-à-porte à votre hôtel ou Airbnb à Athènes, un trajet côtier pittoresque le long de la Riviera athénienne, un arrêt au temple de Poséidon et des boissons fraîches offertes à bord. Les droits d’entrée ne sont pas inclus."
+      },
+      {
+        "q": "",
+        "a": ""
+      },
+      {
+        "q": "À quelle distance d’Athènes se trouve la destination cap Sounion ?",
+        "a": "Le cap Sounion se trouve à environ 70 km du centre d’Athènes, soit environ 1 heure de trajet pittoresque le long de la Riviera athénienne."
+      },
+      {
+        "q": "Puis-je réserver une excursion au cap Sounion au coucher du soleil ?",
+        "a": "Oui ! Notre excursion au coucher du soleil part en fin d’après-midi afin que vous arriviez au temple de Poséidon juste avant le coucher du soleil — l’une des vues les plus spectaculaires de toute la Grèce."
+      },
+      {
+        "q": "Combien de passagers peuvent voyager ensemble ?",
+        "a": "Notre Mercedes Vito VIP accueille jusqu’à 7 passagers, ce qui le rend idéal pour les familles et les petits groupes."
+      },
+      {
+        "q": "Comment réserver l’excursion au cap Sounion ?",
+        "a": "Vous pouvez réserver via WhatsApp, par e-mail ou via notre formulaire de réservation en ligne. Nous confirmons toutes les réservations en quelques heures."
+      }
+    ],
+    "delphiTour": [
+      {
+        "q": "Que comprend l’excursion privée : Delphes ?",
+        "a": "L’excursion comprend un Mercedes Vito VIP privé avec un chauffeur professionnel anglophone, une prise en charge porte-à-porte à votre hôtel ou Airbnb à Athènes, un trajet pittoresque à travers la campagne grecque, une visite du site archéologique de Delphes et du musée de Delphes, ainsi que des boissons fraîches offertes à bord. Les droits d’entrée ne sont pas inclus."
+      },
+      {
+        "q": "",
+        "a": ""
+      },
+      {
+        "q": "À quelle distance d’Athènes se trouve la destination Delphes ?",
+        "a": "Delphes se trouve à environ 180 km d’Athènes, soit environ 2.5 heures de trajet pittoresque à travers la Béotie et les pentes du mont Parnasse."
+      },
+      {
+        "q": "L’excursion vers la destination Delphes est-elle entièrement privée ?",
+        "a": "Oui, 100% privée. Le véhicule et le chauffeur sont exclusivement à votre disposition et à celle de votre groupe — pas d’excursions partagées, pas d’inconnus."
+      },
+      {
+        "q": "Combien de passagers peuvent voyager ensemble ?",
+        "a": "Notre Mercedes Vito VIP accueille jusqu’à 7 passagers, idéal pour les familles et les petits groupes."
+      },
+      {
+        "q": "Comment réserver l’excursion privée à Delphes ?",
+        "a": "Vous pouvez réserver via WhatsApp, par e-mail ou via notre formulaire de réservation en ligne. Nous confirmons toutes les réservations en quelques heures."
+      }
+    ],
+    "meteoraTour": [
+      {
+        "q": "Que comprend l’excursion privée : Météores ?",
+        "a": "L’excursion comprend un Mercedes Vito VIP privé avec un chauffeur professionnel anglophone, une prise en charge porte-à-porte à votre hôtel ou Airbnb à Athènes, un trajet pittoresque à travers la Thessalie, des visites des spectaculaires monastères des Météores et des boissons fraîches offertes à bord. Les droits d’entrée ne sont pas inclus."
+      },
+      {
+        "q": "",
+        "a": ""
+      },
+      {
+        "q": "À quelle distance d’Athènes se trouve la destination Météores ?",
+        "a": "Les Météores se trouvent à environ 350 km d’Athènes, soit environ 3.5 heures de route à travers la Grèce centrale."
+      },
+      {
+        "q": "L’excursion vers la destination Météores est-elle entièrement privée ?",
+        "a": "Oui, 100% privée. Le véhicule et le chauffeur sont exclusivement à votre disposition et à celle de votre groupe — pas d’excursions partagées, pas d’inconnus."
+      },
+      {
+        "q": "Combien de passagers peuvent voyager ensemble ?",
+        "a": "Notre Mercedes Vito VIP accueille jusqu’à 7 passagers, idéal pour les familles et les petits groupes."
+      },
+      {
+        "q": "Comment réserver l’excursion privée aux Météores ?",
+        "a": "Vous pouvez réserver via WhatsApp, par e-mail ou via notre formulaire de réservation en ligne. Nous confirmons toutes les réservations en quelques heures."
+      }
+    ],
+    "nafplioTour": [
+      {
+        "q": "Que comprend l’excursion privée : Nafplio ?",
+        "a": "L’excursion comprend un Mercedes Vito VIP privé avec un chauffeur professionnel anglophone, une prise en charge porte-à-porte à votre hôtel ou Airbnb à Athènes, un trajet pittoresque à travers le Péloponnèse, des visites de la vieille ville de Nafplio, de la forteresse de Palamidi et des vues sur le château de Bourtzi, ainsi que des boissons fraîches offertes à bord. Les droits d’entrée ne sont pas inclus."
+      },
+      {
+        "q": "",
+        "a": ""
+      },
+      {
+        "q": "À quelle distance d’Athènes se trouve la destination Nafplio ?",
+        "a": "Nafplio se trouve à environ 140 km d’Athènes, soit environ 1.5–2 heures de trajet pittoresque à travers le Péloponnèse."
+      },
+      {
+        "q": "L’excursion vers la destination Nafplio est-elle entièrement privée ?",
+        "a": "Oui, 100% privée. Le véhicule et le chauffeur sont exclusivement à votre disposition et à celle de votre groupe — pas d’excursions partagées, pas d’inconnus."
+      },
+      {
+        "q": "Combien de passagers peuvent voyager ensemble ?",
+        "a": "Notre Mercedes Vito VIP accueille jusqu’à 7 passagers, idéal pour les familles et les petits groupes."
+      },
+      {
+        "q": "Comment réserver l’excursion privée à Nafplio ?",
+        "a": "Vous pouvez réserver via WhatsApp, par e-mail ou via notre formulaire de réservation en ligne. Nous confirmons toutes les réservations en quelques heures."
+      }
+    ]
+  },
+  "uiTranslations": {
+    "out of 5": "sur 5",
+    "Verified reviews": "Avis vérifiés",
+    "Based on real customer experiences": "Basés sur de véritables expériences clients",
+    "Chat with us": "Discutez avec nous",
+    "Loading chat…": "Chargement du chat…",
+    "Decrease passengers": "Diminuer le nombre de passagers",
+    "Increase passengers": "Augmenter le nombre de passagers",
+    "Landline": "Téléphone fixe",
+    "Book now via WhatsApp": "Réservez maintenant via WhatsApp",
+    "Close menu": "Fermer le menu",
+    "Open menu": "Ouvrir le menu",
+    "Scroll to services": "Défiler jusqu’aux services",
+    "Chat on WhatsApp": "Discuter sur WhatsApp",
+    "Toggle night rate": "Activer ou désactiver le tarif de nuit",
+    "Read all reviews on Google": "Lire tous les avis sur Google",
+    "Read All Reviews on Google": "Lire tous les avis sur Google",
+    "Read {name}'s review on Google": "Lire l’avis de {name} sur Google",
+    "5.0 out of 5 — read customer reviews on Google": "5.0 sur 5 — lire les avis clients sur Google",
+    "Read review": "Lire l’avis",
+    "Google": "Google"
+  }
+},
   seoContent: {
   "homeTitle": "Transferts VIP Athènes | Transferts Privés Aéroport et Ports | H&A",
   "homeDescription": "Transferts VIP privés à Athènes : aéroport ATH et Pirée, Mercedes Vito VIP pour 7 passagers, sièges enfants gratuits sur demande, accueil. Contact WhatsApp.",
@@ -138,7 +334,7 @@ export default {
     eyebrow: "Transferts privés à Athènes",
     title1: "Transferts de Luxe",
     title2: "à Athènes",
-    subtitle: "Découvrez la Grèce avec style dans notre Mercedes Classe V. Transferts aéroport, prises en charge au port, visites privées et transport VIP.",
+    subtitle: "Découvrez la Grèce avec style dans notre Mercedes Vito VIP. Transferts aéroport, prises en charge au port, visites privées et transport VIP.",
     whatsapp: "Devis sur WhatsApp",
     call: "Appelez-nous",
     exploreTours: "Découvrez nos Visites",
@@ -169,8 +365,8 @@ export default {
   },
   fleet: {
     eyebrow: "Notre Flotte",
-    title: "Mercedes Classe V",
-    desc: "Voyagez dans un confort ultime avec notre Mercedes Classe V — le choix premium des voyageurs exigeants. Intérieur cuir spacieux, climatisation, Wi-Fi et eau offerts à chaque trajet.",
+    title: "Mercedes Vito VIP",
+    desc: "Voyagez dans un confort ultime avec notre Mercedes Vito VIP — le choix premium des voyageurs exigeants. Intérieur cuir spacieux, climatisation, Wi-Fi et eau offerts à chaque trajet.",
     features: [
       "Jusqu'à 7 passagers",
       "Sièges en cuir et éclairage d'ambiance",
@@ -185,7 +381,7 @@ export default {
     title: "Pourquoi nous choisir",
     items: {
       licensed: { title: "Licencié & Assuré", desc: "Service de chauffeur professionnel entièrement licencié" },
-      passengers: { title: "7 Passagers", desc: "Mercedes Classe V spacieux pour groupes et familles" },
+      passengers: { title: "7 Passagers", desc: "Mercedes Vito VIP spacieux pour groupes et familles" },
       available: { title: "Disponible 24/7", desc: "Service en continu, tôt le matin et tard le soir" },
       rated: { title: "Noté 5 Étoiles", desc: "Des centaines de voyageurs satisfaits du monde entier" },
     },

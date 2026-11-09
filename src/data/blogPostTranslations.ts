@@ -251,13 +251,13 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
     de: {
       title: "Privater Transfer vom Flughafen Athen zum Hotel",
       excerpt:
-        "Vermeiden Sie Taxi-Schlangen und reisen Sie bequem vom Flughafen Athen zu Ihrem Hotel. Erfahren Sie, warum ein privater Transfer mit der Mercedes V-Klasse der klügste Start in Ihren Athen-Aufenthalt ist.",
+        "Vermeiden Sie Taxi-Schlangen und reisen Sie bequem vom Flughafen Athen zu Ihrem Hotel. Erfahren Sie, warum ein privater Transfer mit der Mercedes Vito VIP der klügste Start in Ihren Athen-Aufenthalt ist.",
       imageAlt:
         "Illustration eines privaten Autotransfers vom Flughafen Athen zu einem Hotel bei Sonnenuntergang",
       metaTitle:
         "Privater Transfer Flughafen Athen – Hotel | H&A VIP Transfers",
       metaDescription:
-        "Buchen Sie einen Premium-Privattransfer vom Flughafen Athen zu Ihrem Hotel. Mercedes V-Klasse, 24/7 WhatsApp-Support, feste Abholung, direkte Route.",
+        "Buchen Sie einen Premium-Privattransfer vom Flughafen Athen zu Ihrem Hotel. Mercedes Vito VIP, 24/7 WhatsApp-Support, feste Abholung, direkte Route.",
       sections: [
         {
           paragraphs: [
@@ -274,9 +274,9 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
           ],
         },
         {
-          heading: "Mercedes V-Klasse: Komfort bis ins Detail",
+          heading: "Mercedes Vito VIP: Komfort bis ins Detail",
           paragraphs: [
-            "Die Qualität des Fahrzeugs beeinflusst die Reise weit mehr, als es auf den ersten Blick scheint. Eine Mercedes V-Klasse bietet eine geräumige Kabine, bequeme Sitze und praktischen Gepäckraum. Für eine Familie oder eine kleine Gruppe schafft die Möglichkeit, alle gemeinsam ohne Kompromisse zu reisen, ein spürbar besseres Erlebnis.",
+            "Die Qualität des Fahrzeugs beeinflusst die Reise weit mehr, als es auf den ersten Blick scheint. Eine Mercedes Vito VIP bietet eine geräumige Kabine, bequeme Sitze und praktischen Gepäckraum. Für eine Familie oder eine kleine Gruppe schafft die Möglichkeit, alle gemeinsam ohne Kompromisse zu reisen, ein spürbar besseres Erlebnis.",
             "Komfort ist nicht nur eine Frage der Größe. Es geht um Sauberkeit, Klimaanlage, eine leise Fahrt und darum, das Fahrzeug nicht mit Fremden zu teilen. Der Transfer ist privat – von der Abholung bis zum Eingang Ihres Hotels.",
           ],
         },
@@ -298,7 +298,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
           heading: "So buchen Sie richtig",
           paragraphs: [
             "Sie benötigen: Name des Hauptpassagiers, Datum, Uhrzeit und Flugnummer, Ziel oder vollständige Hoteladresse, Anzahl der Passagiere und des Gepäcks. Wenn Sie mit einem Kind reisen, fragen Sie rechtzeitig nach dem passenden Kindersitz.",
-            "H&A VIP Tours deckt genau diesen Bedarf ab – mit Premium-Privattransfers in Athen, Mercedes V-Klasse und direkter Kommunikation über WhatsApp, 24 Stunden am Tag.",
+            "H&A VIP Tours deckt genau diesen Bedarf ab – mit Premium-Privattransfers in Athen, Mercedes Vito VIP und direkter Kommunikation über WhatsApp, 24 Stunden am Tag.",
           ],
         },
       ],
@@ -2728,20 +2728,20 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       ],
     },
     de: {
-      title: "Privater Transfer von Athen zum Kap Sounion: Poseidon-Tempel mit der Mercedes V-Klasse",
-      excerpt: "Eine ungehastete Küstenfahrt zum Poseidon-Tempel, abgestimmt auf Ihre Abfahrtszeit und Ihr Tempo. Entdecken Sie, warum ein privater Chauffeur mit Mercedes V-Klasse der schönste Weg ist, Kap Sounion zu erleben.",
-      imageAlt: "Illustration einer schwarzen Mercedes V-Klasse auf einer farbenfrohen Küstenstraße zum Poseidon-Tempel am Kap Sounion bei Sonnenuntergang",
+      title: "Privater Transfer von Athen zum Kap Sounion: Poseidon-Tempel mit der Mercedes Vito VIP",
+      excerpt: "Eine ungehastete Küstenfahrt zum Poseidon-Tempel, abgestimmt auf Ihre Abfahrtszeit und Ihr Tempo. Entdecken Sie, warum ein privater Chauffeur mit Mercedes Vito VIP der schönste Weg ist, Kap Sounion zu erleben.",
+      imageAlt: "Illustration einer schwarzen Mercedes Vito VIP auf einer farbenfrohen Küstenstraße zum Poseidon-Tempel am Kap Sounion bei Sonnenuntergang",
       metaTitle: "Privater Transfer Athen – Kap Sounion, Poseidon-Tempel | H&A VIP Tours",
-      metaDescription: "Privater Chauffeur-Transfer von Athen zum Kap Sounion und zum Poseidon-Tempel in der Mercedes V-Klasse. Sonnenuntergang-Touren, Küstenstopps, flexible Zeiten. Buchung per WhatsApp 24/7.",
+      metaDescription: "Privater Chauffeur-Transfer von Athen zum Kap Sounion und zum Poseidon-Tempel in der Mercedes Vito VIP. Sonnenuntergang-Touren, Küstenstopps, flexible Zeiten. Buchung per WhatsApp 24/7.",
       sections: [
         { paragraphs: [
           "In dem Moment, in dem der Poseidon-Tempel über der Ägäis in Sicht kommt, wird der Wert einer privaten Reise deutlich. Eine private Fahrt von Athen zum Kap Sounion ist nicht einfach Transport zu einem Wahrzeichen. Es ist ein ungehastetes Küstenerlebnis, arrangiert um Ihre bevorzugte Abfahrtszeit, Ihr Tempo und die Menschen, die mit Ihnen reisen.",
-          "Für Paare, die einen Sonnenuntergangsausflug planen, Familien mit Kindern, Kreuzfahrtgäste mit begrenzter Zeit oder Geschäftsreisende, die einen gepflegten Nachmittag außerhalb Athens suchen, bietet Kap Sounion einen unvergesslichen Tapetenwechsel ohne Übernachtung. Der Unterschied liegt darin, wie Sie hinkommen: ein privater Chauffeur, eine geräumige Mercedes V-Klasse und ein Reiseplan, der Raum für die Momente lässt, die Sie nicht überstürzen möchten.",
+          "Für Paare, die einen Sonnenuntergangsausflug planen, Familien mit Kindern, Kreuzfahrtgäste mit begrenzter Zeit oder Geschäftsreisende, die einen gepflegten Nachmittag außerhalb Athens suchen, bietet Kap Sounion einen unvergesslichen Tapetenwechsel ohne Übernachtung. Der Unterschied liegt darin, wie Sie hinkommen: ein privater Chauffeur, eine geräumige Mercedes Vito VIP und ein Reiseplan, der Raum für die Momente lässt, die Sie nicht überstürzen möchten.",
         ]},
         { heading: "Warum eine private Sounion-Tour ab Athen wählen?", paragraphs: [
           "Kap Sounion liegt an der Südspitze Attikas, wo der Poseidon-Tempel von einer dramatischen Klippe auf das Meer blickt. Die Fahrt vom Zentrum Athens dauert je nach Verkehr, Abholort und gewählter Route etwa 75 bis 100 Minuten pro Strecke. Das macht das Timing entscheidend, besonders wenn Ihre Pläne sich um den Sonnenuntergang drehen.",
           "Ein privater Premium-Transfer bietet Ihrer Gruppe den Vorteil einer direkten Abholung von Hotel, Residenz, Hafen oder Flughafen zur Zeit, die zu Ihrem Tag passt. Sie müssen Ihren Zeitplan nicht an feste Abfahrtszeiten anpassen. Ihr Chauffeur kümmert sich um Fahren, Parken und Timing, während Sie die wechselnde Landschaft von Athen zur Attischen Riviera genießen.",
-          "Die Mercedes V-Klasse eignet sich besonders für diesen Ausflug. Ihr großzügiger Innenraum bietet bequeme Plätze für Paare, Familien und kleine private Gruppen, mit Raum für persönliche Gegenstände und Gepäck, wenn Sounion Teil eines größeren Reisetages ist. Kindersitze können im Voraus organisiert werden.",
+          "Die Mercedes Vito VIP eignet sich besonders für diesen Ausflug. Ihr großzügiger Innenraum bietet bequeme Plätze für Paare, Familien und kleine private Gruppen, mit Raum für persönliche Gegenstände und Gepäck, wenn Sounion Teil eines größeren Reisetages ist. Kindersitze können im Voraus organisiert werden.",
         ]},
         { heading: "Die Küstenroute ist Teil des Erlebnisses", paragraphs: [
           "Die malerischste Route zum Kap Sounion folgt Athens Südküste. Beim Verlassen der Stadt wandelt sich die Landschaft allmählich von Stadtvierteln zu Uferpromenaden, Marinas, Stränden und Hügelblicken über den Saronischen Golf. Deshalb sollte sich eine private Sounion-Fahrt nicht wie ein simpler Hin- und Rücktransfer anfühlen.",
@@ -2759,7 +2759,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
           "Für Kreuzfahrtpassagiere muss der Reiseplan um Hafenankunft und Einschiffungszeiten gebaut werden. Ein privater Chauffeurservice bietet die Kontrolle, um ein begrenztes Zeitfenster optimal zu nutzen und pünktlich zurückzukehren. Der gleiche Ansatz passt zu Geschäftsgästen mit nur einem freien Nachmittag in Athen.",
         ]},
         { heading: "Was privater Premium-Transport verändert", paragraphs: [
-          "Der Reiz von Sounion ist seine Kulisse, aber die Qualität der Reise beeinflusst das gesamte Erlebnis. Nach einem vollen Sightseeing-Tag in Athen können Verkehr und Küstenstraßen der Gelegenheit Energie rauben. In einer luxuriösen Mercedes V-Klasse können sich Gäste in einer ruhigen, klimatisierten Kabine entspannen.",
+          "Der Reiz von Sounion ist seine Kulisse, aber die Qualität der Reise beeinflusst das gesamte Erlebnis. Nach einem vollen Sightseeing-Tag in Athen können Verkehr und Küstenstraßen der Gelegenheit Energie rauben. In einer luxuriösen Mercedes Vito VIP können sich Gäste in einer ruhigen, klimatisierten Kabine entspannen.",
           "Privatsphäre zählt ebenfalls. Ein privates Fahrzeug hält Ihre Gruppe zusammen und lässt den Tag in persönlichem Rhythmus verlaufen. Sie können abfahren, wenn Ihre Gruppe bereit ist, etwas länger an einem Aussichtspunkt bleiben oder eine Last-Minute-Anpassung vornehmen.",
           "H&A VIP Tours bietet dieses Chauffeur-Sounion-Erlebnis mit privaten Premium-Transfers, individueller Tourenplanung und direktem WhatsApp-Buchungszugang 24/7. Für internationale Besucher ist klare Kommunikation vor der Abholung ebenso wertvoll wie das Fahrzeug selbst.",
         ]},
@@ -3428,14 +3428,14 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       ],
     },
     de: {
-      title: "Private Meteora-Tagestour ab Athen: Klöster im Himmel mit der Mercedes V-Klasse",
+      title: "Private Meteora-Tagestour ab Athen: Klöster im Himmel mit der Mercedes Vito VIP",
       excerpt:
-        "Eine private Ganztagesreise von Athen zu den Klöstern von Meteora. Luxuriöse Mercedes V-Klasse, Hotelabholung, flexible Zeiten und ein Programm nach Ihren Prioritäten.",
+        "Eine private Ganztagesreise von Athen zu den Klöstern von Meteora. Luxuriöse Mercedes Vito VIP, Hotelabholung, flexible Zeiten und ein Programm nach Ihren Prioritäten.",
       imageAlt:
-        "Illustration einer schwarzen Mercedes V-Klasse, die bei Sonnenuntergang zu den Meteora-Klöstern auf Sandsteinfelsen fährt",
-      metaTitle: "Private Meteora-Tagestour ab Athen – Mercedes V-Klasse | H&A VIP Tours",
+        "Illustration einer schwarzen Mercedes Vito VIP, die bei Sonnenuntergang zu den Meteora-Klöstern auf Sandsteinfelsen fährt",
+      metaTitle: "Private Meteora-Tagestour ab Athen – Mercedes Vito VIP | H&A VIP Tours",
       metaDescription:
-        "Private Tagestour mit Chauffeur von Athen nach Meteora in luxuriöser Mercedes V-Klasse. Hotelabholung, Klosterbesuche, flexible Zeiten und WhatsApp-Buchung rund um die Uhr.",
+        "Private Tagestour mit Chauffeur von Athen nach Meteora in luxuriöser Mercedes Vito VIP. Hotelabholung, Klosterbesuche, flexible Zeiten und WhatsApp-Buchung rund um die Uhr.",
       sections: [
         { paragraphs: [
           "Meteora ist kein Reiseziel, das Eile belohnt. Die Klöster ragen auf riesigen Sandsteinsäulen über der thessalischen Ebene empor, und die Fahrt von Athen ist lang genug, dass die Qualität des Fahrerlebnisses den gesamten Tag prägt. Eine private Fahrt von Athen nach Meteora gibt Ihnen Raum, Zeit und persönliche Betreuung, um diese bemerkenswerte UNESCO-Welterbestätte zu erleben, ohne einen großen Reisetag zur Geduldsprobe werden zu lassen.",
@@ -3443,7 +3443,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
         ]},
         { heading: "Warum eine private Meteora-Tour ab Athen den Tag verändert", paragraphs: [
           "Meteora liegt etwa viereinhalb Stunden vom Zentrum Athens entfernt – je nach Verkehr, Abfahrtsort und geplanten Pausen. Es ist ein substantielles Ganztagesvorhaben. Wenn der Transport privat ist, wird diese Zeit Teil des Erlebnisses statt einer festen Verpflichtung.",
-          "Eine Premium-Mercedes-V-Klasse bietet großzügigen Platz für Passagiere und Gepäck, klimatisierten Komfort und die Privatsphäre, sich auszuruhen, zu sprechen oder einfach zu beobachten, wie sich die Landschaft jenseits von Athen verändert. Die Route führt von der urbanen Energie der Hauptstadt nach Zentralgriechenland, mit Bergblicken, offenen Ebenen und traditionellen Städten.",
+          "Eine Premium-Mercedes-Mercedes Vito VIP bietet großzügigen Platz für Passagiere und Gepäck, klimatisierten Komfort und die Privatsphäre, sich auszuruhen, zu sprechen oder einfach zu beobachten, wie sich die Landschaft jenseits von Athen verändert. Die Route führt von der urbanen Energie der Hauptstadt nach Zentralgriechenland, mit Bergblicken, offenen Ebenen und traditionellen Städten.",
           "Der wertvollste Unterschied ist die Flexibilität. Eine frühe Abfahrt passt zu Reisenden, die mehr Zeit bei den Klöstern wünschen. Andere bevorzugen eine ruhigere Abfahrt am Vormittag, ein entspanntes Mittagessen bei Kalambaka oder Kastraki und sorgfältig gewählte Aussichtspunkte vor der Rückkehr nach Athen.",
         ], imageAlt: "Google-Maps-Route von Athen nach Meteora, 355 km und etwa 4 Stunden 15 Minuten über E75 und E65" },
         { heading: "Ein Programm, das sich danach richtet, was Sie sehen möchten", paragraphs: [
@@ -3456,7 +3456,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
           "Der genaue Ablauf hängt von Abholort, Saison, Klosteröffnungszeiten, Wetter und Gehvorlieben ab. Eine maßgeschneiderte Tour bedeutet nicht, um jeden Preis mehr in den Tag zu packen, sondern mit der verfügbaren Zeit gute Entscheidungen zu treffen.",
         ]},
         { heading: "Komfort zählt auf der Strecke Athen–Meteora", paragraphs: [
-          "Die Fahrzeit ist erheblich – Fahrzeugstandards sind damit mehr als ein kosmetisches Detail. Eine luxuriöse Mercedes V-Klasse eignet sich hervorragend für private Touren, weil sie kleinen Gruppen Raum bietet, sich ohne Enge einzurichten.",
+          "Die Fahrzeit ist erheblich – Fahrzeugstandards sind damit mehr als ein kosmetisches Detail. Eine luxuriöse Mercedes Vito VIP eignet sich hervorragend für private Touren, weil sie kleinen Gruppen Raum bietet, sich ohne Enge einzurichten.",
           "Für Familien können Kindersitze im Voraus organisiert werden. Für Geschäftsreisende erleichtern die Ruhe und Privatsphäre eines chauffierten Fahrzeugs das Arbeiten unterwegs. Für Paare entsteht ein ungehetzter Rahmen für ein Reiseziel, das ihn verdient.",
           "Ein professioneller Chauffeurservice nimmt auch die kleinen Entscheidungen ab, die einen langen Ausflug unterbrechen: wo man hält, wie man Ankunftszeiten steuert und wie man zwischen Klöstern und Aussichtspunkten navigiert. Sie bleiben auf den Besuch konzentriert.",
         ]},
@@ -3472,7 +3472,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
         ]},
         { heading: "Planen Sie Ihr privates Meteora-Erlebnis", paragraphs: [
           "Frühzeitige Planung macht einen spürbaren Unterschied. Teilen Sie Ihr Wunschdatum, die Passagierzahl, den Abholort, Gepäck- und Kindersitzbedarf sowie etwaige Mobilitätshinweise mit.",
-          "H&A VIP Tours bietet premium private Transfers und maßgeschneiderte Touren ab Athen mit Fokus auf Pünktlichkeit, Komfort und direkte Kommunikation. Eine Mercedes V-Klasse mit professionellem Chauffeur ist die richtige Grundlage für einen langen Tag, der ruhig und persönlich bleibt. Buchungshilfe ist rund um die Uhr über WhatsApp verfügbar.",
+          "H&A VIP Tours bietet premium private Transfers und maßgeschneiderte Touren ab Athen mit Fokus auf Pünktlichkeit, Komfort und direkte Kommunikation. Eine Mercedes Vito VIP mit professionellem Chauffeur ist die richtige Grundlage für einen langen Tag, der ruhig und persönlich bleibt. Buchungshilfe ist rund um die Uhr über WhatsApp verfügbar.",
           "Meteora zeigt sich von seiner besten Seite, wenn Raum ist, hinaufzublicken, innezuhalten und die Größe der Landschaft auf sich wirken zu lassen. Wählen Sie eine private Reise, die dem Ziel die Zeit, den Komfort und die Aufmerksamkeit gibt, die es verdient.",
         ]},
       ],

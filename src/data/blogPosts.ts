@@ -57,7 +57,7 @@ export interface BlogPost {
 /** Returns the post with localized fields for `lang`, falling back to the base (English) content. */
 export function localizePost(post: BlogPost, lang: string): BlogPost {
   const base = lang?.split("-")[0] || "en";
-  const extra = (supplements as Record<string, Record<string, Partial<BlogPostTranslation> & { imageAlts?: (string | null)[] }>>)[post.slug]?.[base];
+  const extra = (supplements as Record<string, Record<string, Partial<BlogPostTranslation> & { imageAlts?: (string | null)[]; mapAlt?: string }>>)[post.slug]?.[base];
   const tr = blogPostTranslations[post.slug]?.[base];
   const merged = { ...post, ...tr, ...extra };
   const sourceSections = extra?.sections ?? tr?.sections ?? post.sections;
@@ -67,7 +67,7 @@ export function localizePost(post: BlogPost, lang: string): BlogPost {
     imageAlt: extra?.imageAlts?.[index] ?? section.imageAlt ?? post.sections[index]?.imageAlt,
   }));
   if (post.slug === "athens-to-nafplio-private-tour") {
-    sections.push({ image: nafplioPost.map, imageAlt: extra?.imageAlts?.[sections.length] ?? extra?.sections?.find((section) => section.imageAlt)?.imageAlt ?? post.imageAlt });
+    sections.push({ image: nafplioPost.map, imageAlt: extra?.mapAlt ?? nafplioPost.mapAlt });
   }
   return { ...merged, sections };
 }

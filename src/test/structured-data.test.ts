@@ -7,7 +7,7 @@ describe("public sitemap and structured data", () => {
     const sources = readFileSync("src/data/blogPosts.ts", "utf8") + readFileSync("src/data/nafplio.ts", "utf8");
     const slugs = [...sources.matchAll(/slug:\s*"([^"]+)"/g)].map((match) => match[1]);
     const xml = readFileSync("public/sitemap.xml", "utf8");
-    expect((xml.match(/<loc>/g) ?? []).length).toBe(28);
+    expect((xml.match(/<loc>/g) ?? []).length).toBe(232);
     for (const slug of slugs) expect(xml).toContain(`<loc>https://haviptransfers.gr/blog/${slug}</loc>`);
     for (const page of servicePages) expect(xml).toContain(`<loc>https://haviptransfers.gr${page.path}</loc>`);
     expect(xml).not.toContain("<lastmod>");
@@ -16,11 +16,11 @@ describe("public sitemap and structured data", () => {
   });
   it("uses Organization on the homepage with the existing business score and owner-confirmed review counts", () => {
     expect(structuredDataForPath("/")?.["@graph"][0]).toEqual(organization);
-    expect(organization["@type"]).toBe("Organization");
+    expect(organization["@type"]).toEqual(["Organization", "LocalBusiness", "TaxiService"]);
     expect(organization.url).toBe("https://haviptransfers.gr/");
     expect(organization.aggregateRating.ratingValue).toBe(5);
-    expect(organization.aggregateRating.reviewCount).toBe(127);
-    expect(organization.aggregateRating.ratingCount).toBe(127);
+    expect(organization.aggregateRating.reviewCount).toBe(63);
+    expect(organization.aggregateRating.ratingCount).toBe(63);
     expect(organization.image).toBe("https://haviptransfers.gr/logo.png");
     expect(organization.logo).toBe("https://haviptransfers.gr/logo.png");
     expect(existsSync("public/logo.png")).toBe(true);
@@ -35,11 +35,11 @@ describe("public sitemap and structured data", () => {
   });
   it("keeps one address, service area list, rating and unique social list in the shared business", () => {
     expect(Array.isArray(organization.address)).toBe(false);
-    expect(organization.address).toEqual({ "@type": "PostalAddress", addressLocality: "Athens", addressCountry: "GR" });
+    expect(organization.address).toEqual({ "@type": "PostalAddress", streetAddress: "Afroditis 66", addressLocality: "Elliniko", postalCode: "167 77", addressCountry: "GR" });
     expect(organization.areaServed).toEqual([{ "@type": "City", name: "Athens" }, { "@type": "Country", name: "Greece" }]);
     expect(Array.isArray(organization.aggregateRating)).toBe(false);
-    expect(organization.aggregateRating.reviewCount).toBe(127);
-    expect(organization.aggregateRating.ratingCount).toBe(127);
+    expect(organization.aggregateRating.reviewCount).toBe(63);
+    expect(organization.aggregateRating.ratingCount).toBe(63);
     expect(new Set(organization.sameAs).size).toBe(organization.sameAs.length);
   });
   it.each([

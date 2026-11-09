@@ -1,8 +1,10 @@
+import { MemoryRouter } from "react-router-dom";
 import { render, screen, cleanup } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("react-i18next", () => ({
   useTranslation: () => ({
+    i18n: { language: "en" },
     t: (key: string, options?: { returnObjects?: boolean }) =>
       options?.returnObjects ? [] : key,
   }),
@@ -22,7 +24,7 @@ describe("contact phone card", () => {
       unobserve() {}
       disconnect() {}
     });
-    render(<HomeSections />);
+    render(<MemoryRouter><HomeSections /></MemoryRouter>);
 
     const number = screen.getByText("+30 694 939 3700");
     expect(number.closest("a")).toHaveAttribute("href", "tel:+306949393700");
