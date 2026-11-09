@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] Remove duplicate business JSON-LD on all pages, preserve one shared business rating/details and service/article references; validate initial HTML, rendered pages and navigation without publishing.
+
 - [done] Corrected initial HTML canonicals and matching og:url for all 28 public pages, preserving independent static articles and Helmet navigation. Verified initial and loaded tags on every page plus Blog/article navigation; 24 tests pass. Sitemap already correct, design unchanged; not published.
 
 - [done] Audited tour durations, child-seat limits and tour price units across pages and all eight languages; verified Delphi discrepancies on the live site and recorded findings without content changes.

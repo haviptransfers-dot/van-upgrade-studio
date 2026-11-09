@@ -5,6 +5,7 @@ import { marked } from "marked";
 import { nafplioPost as post, nafplioFaq } from "./src/data/nafplio";
 import montserrat from "./src/assets/fonts/montserrat-latin.woff2.asset.json";
 import playfair from "./src/assets/fonts/playfair-display-latin.woff2.asset.json";
+import { organization } from "./src/data/structuredData";
 
 export const nafplioPath = `/blog/${post.slug}`;
 const canonical = `https://haviptransfers.gr${nafplioPath}`;
@@ -18,8 +19,8 @@ export function renderNafplio() {
     "@context": "https://schema.org", "@type": "FAQPage",
     mainEntity: nafplioFaq.map(({ question, answer }) => ({ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } })),
   };
-  const articleSchema = { "@context": "https://schema.org", "@type": "BlogPosting", headline: post.title, description: post.metaDescription, image: post.image, datePublished: post.date, mainEntityOfPage: canonical, author: { "@type": "Organization", name: "H&A VIP Tours" } };
-  const orgSchema = { "@context": "https://schema.org", "@type": "Organization", name: "H&A VIP Tours", url: "https://haviptransfers.gr/", telephone: "+306949393700", email: "h.a.viptransfers@gmail.com", address: { "@type": "PostalAddress", addressLocality: "Athens", addressCountry: "GR" } };
+  const articleSchema = { "@context": "https://schema.org", "@type": "BlogPosting", headline: post.title, description: post.metaDescription, image: post.image, datePublished: post.date, mainEntityOfPage: canonical, author: { "@id": organization["@id"] } };
+  const orgSchema = { "@context": "https://schema.org", ...organization };
   return `<!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${esc(post.metaTitle)}</title><meta name="description" content="${esc(post.metaDescription)}"><meta name="keywords" content="${esc(post.keywords)}">
