@@ -1,5 +1,7 @@
 # Roadmap
 
+- [done] Corrected initial HTML canonicals and matching og:url for all 28 public pages, preserving independent static articles and Helmet navigation. Verified initial and loaded tags on every page plus Blog/article navigation; 24 tests pass. Sitemap already correct, design unchanged; not published.
+
 - [done] Audited tour durations, child-seat limits and tour price units across pages and all eight languages; verified Delphi discrepancies on the live site and recorded findings without content changes.
 - [done] Applied confirmed durations (Delphi 8h, Nafplio 8h, Meteora 12h, Athens/Acropolis 3h, Sounion 5h), per-vehicle tour price qualifiers and owner-supplied approximate seat ages across eight languages. All 81 targeted tests passed; checked all five detail routes in eight languages and calculator WhatsApp text. Verified SEO head tags and metadata unchanged; no publication.
 
