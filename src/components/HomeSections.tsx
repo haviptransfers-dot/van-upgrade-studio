@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import OptimizedImage from "@/components/OptimizedImage";
 import DeferredBackground from "@/components/DeferredBackground";
 import DeferredSection from "@/components/DeferredSection";
+import ServiceContent from "@/components/ServiceContent";
+import RelatedTravelLinks from "@/components/RelatedTravelLinks";
 import TrustBadge from "@/components/TrustBadge";
 import interiorImg from "@/assets/fleet-vito.webp";
 import logoImg from "@/assets/logo.webp";
@@ -40,7 +42,7 @@ const fadeUp = {
   }),
 };
 
-export default function HomeSections() {
+export default function HomeSections({ port = false }: { port?: boolean }) {
   const { t } = useTranslation();
   const whatsappUrl = "https://wa.me/306949393700";
   useEffect(() => {
@@ -86,6 +88,9 @@ export default function HomeSections() {
           </motion.div>
         </div>
       </section>
+
+      <ServiceContent port={port} />
+      <RelatedTravelLinks />
 
       <DeferredSection placeholderClass="h-[240vh] min-h-[1760px] md:h-[400vh]"><Showcase /></DeferredSection>
       <DeferredSection placeholderClass="h-[60vh] min-h-[440px] md:h-screen"><PhotoWall /></DeferredSection>
