@@ -1,9 +1,11 @@
+import RelatedTravelLinks from "@/components/RelatedTravelLinks";
+import PageHead from "@/components/PageHead";
 import OptimizedImage from "@/components/OptimizedImage";
 import ServiceStructuredData from "@/components/ServiceStructuredData";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from "@/components/LocalizedLink";
 import {
   Accordion,
   AccordionContent,
@@ -36,7 +38,7 @@ const DelphiTour = () => {
   const faqItems = [
     {
       q: "What is included in the Delphi Private Tour?",
-      a: "The tour includes a private Mercedes-Benz V-Class with a professional English-speaking driver, door-to-door pickup from your Athens hotel or Airbnb, a scenic drive through the Greek countryside, visit to the Archaeological Site of Delphi and the Delphi Museum, and complimentary cold drinks on board. Entrance fees are not included.",
+      a: "The tour includes a private Mercedes Vito VIP with a professional English-speaking driver, door-to-door pickup from your Athens hotel or Airbnb, a scenic drive through the Greek countryside, visit to the Archaeological Site of Delphi and the Delphi Museum, and complimentary cold drinks on board. Entrance fees are not included.",
     },
     {
       q: t("delphiTour.durationQuestion", { tour: t("delphiTour.title") }),
@@ -52,7 +54,7 @@ const DelphiTour = () => {
     },
     {
       q: "How many passengers can travel together?",
-      a: "Our Mercedes-Benz V-Class accommodates up to 7 passengers, ideal for families and small groups.",
+      a: "Our Mercedes Vito VIP accommodates up to 7 passengers, ideal for families and small groups.",
     },
     {
       q: "How do I book the Delphi Private Tour?",
@@ -77,16 +79,15 @@ const DelphiTour = () => {
   return (
     <>
       <ServiceStructuredData path="/delphi-private-tour" />
+      <PageHead />
       <Helmet>
         <html lang={i18n.language} />
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="canonical" href={url} />
-        <link rel="alternate" hrefLang="en" href={url} />
-        <link rel="alternate" hrefLang="x-default" href={url} />
+
+
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:url" content={url} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={`${SITE_URL}${tourDelphi}`} />
         <script type="application/ld+json">
@@ -290,6 +291,7 @@ const DelphiTour = () => {
             </a>
           </div>
         </section>
+        <RelatedTravelLinks current={url.replace(SITE_URL, "")} />
       </div>
     </>
   );

@@ -8,25 +8,25 @@ import showcase4 from "@/assets/showcase-4.webp";
 const slides = [
   {
     src: showcase1,
-    alt: "Mercedes V Class side door open in luxury garage",
+    alt: "Mercedes Vito VIP side door open in luxury garage",
     title: "Step Inside Luxury",
     subtitle: "Premium leather. Whisper-quiet cabin.",
   },
   {
     src: showcase2,
-    alt: "Close-up of Mercedes V Class door handle",
+    alt: "Close-up of Mercedes Vito VIP door handle",
     title: "Crafted in Detail",
     subtitle: "Every surface, finished to perfection.",
   },
   {
     src: showcase3,
-    alt: "Mercedes V Class on scenic mountain road",
+    alt: "Mercedes Vito VIP on scenic mountain road",
     title: "Anywhere in Greece",
     subtitle: "From Athens to Meteora — in absolute comfort.",
   },
   {
     src: showcase4,
-    alt: "Mercedes V Class rear cabin with cognac leather seats",
+    alt: "Mercedes Vito VIP rear cabin with cognac leather seats",
     title: "Space to Unwind",
     subtitle: "Up to 7 passengers. Generous legroom.",
   },

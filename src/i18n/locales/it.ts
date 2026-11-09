@@ -1,4 +1,129 @@
 export default {
+  seoContent: {
+  "homeTitle": "Trasferimenti VIP Atene | Transfer Privati Aeroporto e Porti | H&A",
+  "homeDescription": "Transfer VIP privati ad Atene: aeroporto ATH e Pireo, Mercedes Vito VIP per 7 passeggeri, seggiolini gratuiti su richiesta e accoglienza. Contattaci su WhatsApp.",
+  "homeH1": "Trasferimenti VIP ad Atene",
+  "piraeusTitle": "Transfer Porto del Pireo | Trasferimento Privato dal Pireo all’Aeroporto di Atene",
+  "piraeusDescription": "Transfer privati dal Pireo all’aeroporto di Atene, hotel e centro. Mercedes Vito VIP per 7 passeggeri, accoglienza e seggiolini gratuiti su richiesta.",
+  "piraeusH1": "Trasferimenti Privati al Porto del Pireo",
+  "privacyTitle": "Informativa sulla Privacy | H&A VIP Tours Atene",
+  "privacyDescription": "Come H&A VIP Tours raccoglie, utilizza e protegge i tuoi dati personali: cookie, analisi e diritti previsti dal GDPR.",
+  "passengerLabel": "Fino a 7 passeggeri",
+  "maxPax": "Mercedes Vito VIP · Fino a 7 passeggeri",
+  "familyHeading": "Transfer per famiglie con seggiolini",
+  "childTitle": "Seggiolini gratuiti su richiesta",
+  "childDescription": "Comunica l’età dei bambini e richiedi seggiolini gratuiti quando organizzi il transfer. Conferma i seggiolini necessari prima della prenotazione.",
+  "relatedHeading": "Tour e guide di viaggio correlati",
+  "vehicleAlt": "Interni del Mercedes Vito VIP con sedili contrapposti in configurazione salotto per fino a 7 passeggeri, escluso il conducente",
+  "faqTitle": "Domande frequenti",
+  "homeSections": [
+    {
+      "heading": "Trasferimenti Aeroporto",
+      "paragraphs": [
+        "Organizza un trasferimento privato da o per l’Aeroporto Internazionale di Atene (ATH) con H&A VIP Tours. Il nostro Mercedes Vito VIP accoglie fino a sette passeggeri, escluso il conducente, in un abitacolo salotto con sedili contrapposti. Comunica i dettagli del volo, la destinazione e le esigenze di bagaglio quando richiedi il viaggio, sia per l’arrivo ad Atene sia per il ritorno in aeroporto.",
+        "L’accoglienza ti aiuta a iniziare con un piano di incontro chiaro. Contattaci su WhatsApp per il transfer aeroportuale, l’arrivo in hotel o un viaggio verso Glyfada, Vouliagmeni e la Riviera di Atene. I dettagli del prelievo vengono concordati prima del viaggio."
+      ]
+    },
+    {
+      "heading": "Trasferimenti Porti",
+      "paragraphs": [
+        "Collega il tuo viaggio via mare a un transfer privato da o per Pireo, Rafina o Lavrio. Indica i dettagli del traghetto o della crociera, il porto, la data e la destinazione successiva, così da organizzare il prelievo secondo il tuo itinerario. I nostri transfer collegano i porti all’aeroporto di Atene, agli hotel e al centro città.",
+        "Un autista professionista che parla inglese e un abitacolo privato semplificano i viaggi insieme. Comunica in anticipo il numero di passeggeri e i bagagli, soprattutto quando abbini il prelievo al porto alla partenza di un volo."
+      ]
+    },
+    {
+      "heading": "Tour Privati",
+      "paragraphs": [
+        "Scopri Atene e le destinazioni più rappresentative della Grecia con un tour privato organizzato secondo i tuoi programmi. Il salotto del Mercedes Vito VIP con sedili contrapposti offre uno spazio condiviso al gruppo tra una visita e l’altra. Discuti il percorso e le soste desiderate prima di prenotare, anziché presumere un itinerario fisso.",
+        "Che i tuoi programmi comprendano Atene, Glyfada, Vouliagmeni o la Riviera di Atene, contatta H&A VIP Tours per parlarne. Indica dove vuoi iniziare e terminare, così possiamo preparare una proposta personalizzata."
+      ]
+    },
+    {
+      "heading": "Transfer per Famiglie con Seggiolini",
+      "paragraphs": [
+        "Viaggiate insieme con spazio per fino a sette passeggeri, escluso il conducente. I seggiolini sono gratuiti su richiesta: comunica l’età di ogni bambino e conferma i seggiolini necessari prima di prenotare il transfer aeroportuale, portuale o alberghiero.",
+        "Segnala passeggini e altri bagagli quando organizzi il viaggio. Possiamo discutere le esigenze familiari insieme ai dettagli del prelievo, aiutandoti a pianificare l’arrivo o la partenza senza rimandare questioni importanti al giorno del trasferimento."
+      ]
+    }
+  ],
+  "piraeusSections": [
+    {
+      "heading": "Dal Porto del Pireo all’Aeroporto di Atene",
+      "paragraphs": [
+        "Organizza un trasferimento privato tra il porto del Pireo e l’Aeroporto Internazionale di Atene (ATH) con H&A VIP Tours. Che tu stia scendendo da una nave da crociera, arrivando in traghetto o viaggiando dall’aeroporto al porto, comunica l’itinerario prima di prenotare. Servono data, numero di passeggeri, dettagli dei bagagli e informazioni sul volo o sulla nave per discutere un prelievo adatto al tuo viaggio.",
+        "Il Mercedes Vito VIP trasporta fino a sette passeggeri, escluso il conducente, in un abitacolo salotto con sedili contrapposti. I tempi dipendono dal percorso, dall’accesso al porto e dal traffico: lascia quindi un margine per il collegamento tra viaggio marittimo e aereo. Chiedici di valutare gli orari proposti anziché presumere una durata fissa o una coincidenza garantita."
+      ]
+    },
+    {
+      "heading": "Transfer dal Pireo a Hotel e Centro di Atene",
+      "paragraphs": [
+        "Un transfer privato dal Pireo può collegare l’arrivo del traghetto o della crociera a un hotel o a un altro indirizzo concordato nel centro di Atene. Invia l’indirizzo completo con la richiesta affinché il preventivo rispecchi il viaggio effettivamente necessario. Se soggiorni a Glyfada, Vouliagmeni o altrove sulla Riviera di Atene, indica la località specifica anziché richiedere genericamente un arrivo ad Atene.",
+        "Per il ritorno, comunica l’indirizzo dell’alloggio e i dettagli di partenza del traghetto o della crociera. Possiamo discutere il prelievo prima della prenotazione. Ogni viaggio segue il percorso concordato; i tempi variano con il traffico e le località di partenza e arrivo. Contattaci su WhatsApp con i tuoi programmi e richiedi una tariffa personalizzata per il trasferimento privato."
+      ]
+    },
+    {
+      "heading": "Terminal Crociere, Porti dei Traghetti e Accoglienza",
+      "paragraphs": [
+        "Il Pireo serve navi da crociera e traghetti: il nome della nave e il terminal o varco corretto sono quindi importanti per organizzare il prelievo. Fornisci le informazioni disponibili e aggiornaci in caso di cambiamenti. L’accoglienza e il punto d’incontro vengono coordinati per il viaggio; conferma le istruzioni e le condizioni di attesa concordate prima di prenotare, così da sapere cosa aspettarti all’arrivo.",
+        "I nostri transfer servono anche Rafina e Lavrio. Sono porti differenti, non altri nomi del Pireo: controlla quindi il biglietto e specifica il porto corretto nella richiesta. Per un trasferimento tra porti o verso ATH, indica entrambi gli estremi del percorso. Il monitoraggio del volo o della nave viene effettuato quando necessario, mentre le condizioni di attesa vanno sempre discusse e confermate per la prenotazione."
+      ]
+    },
+    {
+      "heading": "Bagagli e Viaggi in Famiglia con Seggiolini Gratuiti",
+      "paragraphs": [
+        "Mantieni unito il gruppo in un Mercedes Vito VIP con sedili contrapposti in configurazione salotto e capacità fino a sette passeggeri, escluso il conducente. Comunica quanti bagagli porterai, comprese valigie grandi, passeggini o altri oggetti ingombranti. La sola capacità di passeggeri non conferma che qualsiasi combinazione di bagagli trovi posto: discuti le esigenze prima di confermare il viaggio.",
+        "I seggiolini sono gratuiti su richiesta. Indica le età dei bambini e il numero di seggiolini necessari nella richiesta di preventivo e conferma l’organizzazione prima di prenotare. La stessa attenzione vale per un viaggio dal terminal crociere all’hotel, dal traghetto all’aeroporto di Atene o di ritorno al Pireo. Comunica il viaggio completo per concordare in anticipo percorso, seggiolini richiesti, bagagli, punto d’incontro e tariffa."
+      ]
+    }
+  ],
+  "piraeusFaq": [
+    {
+      "question": "Quanto dura il transfer tra il Pireo e l’aeroporto di Atene?",
+      "answer": "La durata dipende dal percorso, dall’accesso al porto e dal traffico. Comunica i dettagli del volo o della nave per discutere un orario adeguato; non sono garantite una durata fissa o la coincidenza."
+    },
+    {
+      "question": "Quanto costa un transfer privato dal Pireo?",
+      "answer": "I prezzi sono disponibili su richiesta. Invia percorso, data, numero di passeggeri, bagagli ed esigenze di seggiolini per un preventivo personalizzato."
+    },
+    {
+      "question": "Quali sono le condizioni di attesa al Pireo?",
+      "answer": "Attesa e incontro vengono coordinati per il viaggio e confermati prima della prenotazione. Comunica i dettagli della nave e chiedi conferma delle condizioni applicabili; non presumere un periodo di attesa garantito."
+    }
+  ],
+  "aboutParagraphs": [
+    "H&A VIP Tours è un’azienda autorizzata a conduzione familiare di trasferimenti privati e tour con sede ad Atene, in Grecia. Siamo specializzati nel trasporto di lusso in Mercedes Vito VIP per trasferimenti aeroportuali, prelievi ai porti, arrivi agli hotel e tour privati giornalieri nelle destinazioni più rappresentative della Grecia.",
+    "Con anni di esperienza al servizio di viaggiatori da tutto il mondo, la nostra missione è semplice: offrire viaggi sicuri, confortevoli e senza stress, con un tocco personale. Ogni corsa include un autista professionista che parla inglese, Wi-Fi gratuito, acqua in bottiglia e monitoraggio del volo o della nave quando necessario.",
+    "Che tu visiti Atene per lavoro o per piacere, siamo a disposizione 24 ore su 24, 7 giorni su 7, per rendere il tuo viaggio indimenticabile."
+  ],
+  "privacySections": [
+    {
+      "heading": "Chi siamo",
+      "paragraphs": [
+        "H&A VIP Tours (H&A Tours Ltd) è un’azienda di trasferimenti privati e tour con sede ad Atene, in Grecia. Puoi contattarci a h.a.viptransfers@gmail.com o al +30 694 939 3700."
+      ]
+    },
+    {
+      "heading": "Cosa raccogliamo",
+      "paragraphs": [
+        "Quando chatti con il nostro assistente IA o usi il modulo di preventivo, salviamo i dati condivisi — nome, email, telefono, punto di prelievo, destinazione, data e passeggeri — per rispondere alla richiesta.",
+        "Con il tuo consenso, utilizziamo anche cookie analitici (Google Analytics, Metricool) per capire come viene utilizzato il sito."
+      ]
+    },
+    {
+      "heading": "Cookie",
+      "paragraphs": [
+        "I cookie necessari mantengono il sito funzionante, per esempio la chat e il modulo di preventivo. Sono sempre attivi.",
+        "I cookie analitici e di marketing sono bloccati finché non premi «Accetta tutti» o li attivi in «Gestisci». Puoi modificare la scelta in qualsiasi momento cancellando i dati memorizzati dal browser."
+      ]
+    },
+    {
+      "heading": "I tuoi diritti (GDPR)",
+      "paragraphs": [
+        "Puoi richiedere in qualsiasi momento l’accesso, la rettifica o la cancellazione dei dati personali scrivendo a h.a.viptransfers@gmail.com. Rispondiamo entro 30 giorni."
+      ]
+    }
+  ]
+},
   nav: {
     services: "Servizi",
     tagline: "Trasferimenti VIP",
@@ -47,7 +172,7 @@ export default {
     title: "Mercedes Classe V",
     desc: "Viaggia in massimo comfort con la nostra Mercedes Classe V — la scelta premium per i viaggiatori esigenti. Spazioso interno in pelle, climatizzatore, Wi-Fi e acqua in omaggio per ogni viaggio.",
     features: [
-      "Fino a 7-8 passeggeri",
+      "Fino a 7 passeggeri",
       "Sedili in pelle e illuminazione d'ambiente",
       "Wi-Fi e acqua in omaggio",
       "Autista professionista anglofono",
@@ -60,7 +185,7 @@ export default {
     title: "Perché Sceglierci",
     items: {
       licensed: { title: "Autorizzati e Assicurati", desc: "Servizio chauffeur professionale completamente autorizzato" },
-      passengers: { title: "7-8 Passeggeri", desc: "Spaziosa Mercedes Classe V per gruppi e famiglie" },
+      passengers: { title: "7 Passeggeri", desc: "Spaziosa Mercedes Classe V per gruppi e famiglie" },
       available: { title: "Disponibili 24/7", desc: "Servizio 24 ore su 24, mattina presto e tarda notte" },
       rated: { title: "Valutati 5 Stelle", desc: "Centinaia di viaggiatori soddisfatti da tutto il mondo" },
     },
@@ -87,7 +212,7 @@ export default {
     title2: "Prezzo Immediato",
     selectService: "Seleziona Servizio",
     passengers: "Passeggeri",
-    maxPax: "Mercedes V Class · Max 8 passeggeri",
+    maxPax: "Mercedes Vito VIP · Fino a 7 passeggeri",
     nightRate: "Tariffa Notturna (22:00 – 06:00) +€10/persona",
     estimated: "Prezzo Stimato",
     perVehicle: "per veicolo",
@@ -199,13 +324,13 @@ export default {
     },
   },
   seo: {
-    airport: { title: "Transfer Aeroporto di Atene (ATH) – Mercedes V Class | H&A VIP Tours", description: "Transfer privati per l'Aeroporto Internazionale di Atene con Mercedes V Class di lusso. Monitoraggio voli, accoglienza, prezzi fissi da 70€. Prenota via WhatsApp 24/7." },
-    piraeus: { title: "Transfer Porto del Pireo da Atene e Aeroporto | H&A VIP Tours", description: "Transfer privati di lusso da e per i porti del Pireo, Rafina e Lavrio. Ideale per crociere e traghetti. Mercedes V Class, 7–8 passeggeri, prezzi fissi." },
-    athens: { title: "Tour Privato di Atene – Acropoli e Attrazioni | H&A VIP Tours", description: "Tour privato della città di Atene con autista professionista. Visita l'Acropoli, Plaka, Syntagma e lo Stadio Panatenaico con una Mercedes V Class." },
-    delphi: { title: "Tour Privato a Delfi da Atene | H&A VIP Tours", description: "Tour privato di un'intera giornata da Atene a Delfi, l'antico Oracolo di Apollo. Mercedes V Class di lusso con autista anglofono. Sosta ad Arachova." },
-    meteora: { title: "Tour Privato a Meteora da Atene | H&A VIP Tours", description: "Tour privato ai monasteri UNESCO di Meteora da Atene con Mercedes V Class. Viaggio comodo di una giornata intera con autista professionista." },
-    nafplio: { title: "Tour Privato a Nafplio da Atene | H&A VIP Tours", description: "Tour privato di un giorno da Atene a Nafplio, Micene ed Epidauro. Scopri la prima capitale della Grecia in Mercedes V Class." },
-    sounion: { title: "Tour a Capo Sounion – Tempio di Poseidone | H&A VIP Tours", description: "Tour privato al tramonto da Atene a Capo Sounion e al Tempio di Poseidone. Percorso panoramico sulla Riviera Ateniese in Mercedes V Class." },
+    airport: { title: "Transfer Aeroporto di Atene (ATH) – Mercedes Vito VIP | H&A VIP Tours", description: "Transfer privati per l'Aeroporto Internazionale di Atene con Mercedes Vito VIP di lusso. Monitoraggio voli, accoglienza, prezzi fissi da 70€. Prenota via WhatsApp 24/7." },
+    piraeus: { title: "Transfer Porto del Pireo da Atene e Aeroporto | H&A VIP Tours", description: "Transfer privati di lusso da e per i porti del Pireo, Rafina e Lavrio. Ideale per crociere e traghetti. Mercedes Vito VIP, 7 passeggeri, prezzi fissi." },
+    athens: { title: "Tour Privato di Atene – Acropoli e Attrazioni | H&A VIP Tours", description: "Tour privato della città di Atene con autista professionista. Visita l'Acropoli, Plaka, Syntagma e lo Stadio Panatenaico con una Mercedes Vito VIP." },
+    delphi: { title: "Tour Privato a Delfi da Atene | H&A VIP Tours", description: "Tour privato di un'intera giornata da Atene a Delfi, l'antico Oracolo di Apollo. Mercedes Vito VIP di lusso con autista anglofono. Sosta ad Arachova." },
+    meteora: { title: "Tour Privato a Meteora da Atene | H&A VIP Tours", description: "Tour privato ai monasteri UNESCO di Meteora da Atene con Mercedes Vito VIP. Viaggio comodo di una giornata intera con autista professionista." },
+    nafplio: { title: "Tour Privato a Nafplio da Atene | H&A VIP Tours", description: "Tour privato di un giorno da Atene a Nafplio, Micene ed Epidauro. Scopri la prima capitale della Grecia in Mercedes Vito VIP." },
+    sounion: { title: "Tour a Capo Sounion – Tempio di Poseidone | H&A VIP Tours", description: "Tour privato al tramonto da Atene a Capo Sounion e al Tempio di Poseidone. Percorso panoramico sulla Riviera Ateniese in Mercedes Vito VIP." },
   },
   delphiTour: {
     badge: "Esperienza VIP Esclusivamente Privata",

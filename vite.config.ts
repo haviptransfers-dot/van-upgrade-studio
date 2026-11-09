@@ -9,6 +9,7 @@ import { nonCriticalScheduler } from "./src/lib/non-critical-scheduler";
 import { sitemapPlugin } from "./sitemapPlugin";
 import { organization } from "./src/data/structuredData";
 import { canonicalPlugin } from "./canonicalPlugin";
+import { multilingualPlugin } from "./multilingualPlugin";
 
 function performanceHtml() {
   return {
@@ -54,7 +55,7 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
-  plugins: [react(), rssPlugin(), sitemapPlugin(), nafplioPlugin(), performanceHtml(), canonicalPlugin(), mode === "development" && componentTagger()].filter(Boolean),
+  plugins: [react(), rssPlugin(), sitemapPlugin(), performanceHtml(), canonicalPlugin(), multilingualPlugin(), mode === "development" && componentTagger()].filter(Boolean),
   build: {
     minify: "esbuild",
     cssMinify: true,

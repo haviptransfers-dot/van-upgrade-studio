@@ -1,6 +1,8 @@
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import PageHead from "@/components/PageHead";
 import OptimizedImage from "@/components/OptimizedImage";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import Link from "@/components/LocalizedLink";
 import { useTranslation } from "react-i18next";
 import { ArrowLeft, Heart } from "lucide-react";
 import logoImg from "@/assets/logo.webp";
@@ -15,22 +17,21 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <PageHead />
       <Helmet>
         <html lang={i18n.language} />
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="canonical" href={url} />
-        <link rel="alternate" hrefLang="en" href={url} />
-        <link rel="alternate" hrefLang="x-default" href={url} />
+
+
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:url" content={url} />
         <meta property="og:type" content="website" />
       </Helmet>
 
       {/* Header */}
       <header className="border-b border-border bg-background/90 backdrop-blur-md sticky top-0 z-50">
-        <div className="container mx-auto flex items-center justify-between py-3 px-4">
+        <div className="container mx-auto flex flex-wrap gap-3 items-center justify-between py-3 px-4">
           <Link to="/" className="flex items-center gap-2">
             <OptimizedImage src={logoImg} alt="H&A Tours" loading="eager" sizes="36px" className="h-9 w-9 object-contain" width={36} height={36} />
             <span className="font-display text-base font-bold text-primary">H&A TOURS</span>
@@ -39,6 +40,7 @@ const About = () => {
             <ArrowLeft className="w-4 h-4" />
             {t("blog.backHome")}
           </Link>
+          <LanguageSwitcher />
         </div>
       </header>
 
@@ -49,21 +51,7 @@ const About = () => {
         </div>
 
         <div className="space-y-8 text-foreground/80 leading-relaxed">
-          <p>
-            H&amp;A VIP Tours is a licensed, family-owned private transfer and tour company based in Athens, Greece.
-            We specialize in luxury Mercedes V Class transportation for airport transfers, port pickups, hotel
-            drop-offs, and private day tours across Greece’s most iconic destinations.
-          </p>
-          <p>
-            With years of experience serving travelers from around the world, our mission is simple: to provide
-            safe, comfortable, and stress-free journeys with a personal touch. Every ride includes a
-            professional English-speaking driver, complimentary Wi-Fi, bottled water, and flight or ship
-            monitoring whenever needed.
-          </p>
-          <p>
-            Whether you are visiting Athens for business or leisure, we are here 24/7 to make your trip
-            unforgettable.
-          </p>
+          {(t("seoContent.aboutParagraphs", { returnObjects: true }) as string[]).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
         </div>
 
         {/* Support local business + Google Preferred Sources */}

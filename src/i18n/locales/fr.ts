@@ -1,4 +1,129 @@
 export default {
+  seoContent: {
+  "homeTitle": "Transferts VIP Athènes | Transferts Privés Aéroport et Ports | H&A",
+  "homeDescription": "Transferts VIP privés à Athènes : aéroport ATH et Pirée, Mercedes Vito VIP pour 7 passagers, sièges enfants gratuits sur demande, accueil. Contact WhatsApp.",
+  "homeH1": "Transferts VIP à Athènes",
+  "piraeusTitle": "Transfert Port du Pirée | Transfert Privé du Pirée à l’Aéroport d’Athènes",
+  "piraeusDescription": "Transferts privés du Pirée vers l’aéroport d’Athènes, les hôtels et le centre. Mercedes Vito VIP pour 7 passagers, accueil et sièges enfants gratuits sur demande.",
+  "piraeusH1": "Transferts Privés au Port du Pirée",
+  "privacyTitle": "Politique de Confidentialité | H&A VIP Tours Athènes",
+  "privacyDescription": "Comment H&A VIP Tours collecte, utilise et protège vos données personnelles — cookies, statistiques et droits au titre du RGPD.",
+  "passengerLabel": "Jusqu’à 7 passagers",
+  "maxPax": "Mercedes Vito VIP · Jusqu’à 7 passagers",
+  "familyHeading": "Transferts familiaux avec sièges enfants",
+  "childTitle": "Sièges enfants gratuits sur demande",
+  "childDescription": "Indiquez l’âge de vos enfants et demandez des sièges enfants gratuits lors de l’organisation du transfert. Confirmez les sièges nécessaires avant de réserver.",
+  "relatedHeading": "Excursions et guides de voyage associés",
+  "vehicleAlt": "Intérieur du Mercedes Vito VIP avec sièges face à face en configuration salon pour jusqu’à 7 passagers, hors conducteur",
+  "faqTitle": "Questions fréquentes",
+  "homeSections": [
+    {
+      "heading": "Transferts Aéroport",
+      "paragraphs": [
+        "Organisez un transfert privé depuis ou vers l’aéroport international d’Athènes (ATH) avec H&A VIP Tours. Notre Mercedes Vito VIP accueille jusqu’à sept passagers, hors conducteur, dans un habitacle salon avec sièges face à face. Communiquez les détails du vol, votre destination et vos besoins en bagages lors de votre demande, que vous arriviez à Athènes ou retourniez à l’aéroport.",
+        "L’accueil personnalisé vous permet de commencer avec un plan de prise en charge clair. Contactez-nous sur WhatsApp pour votre transfert aéroport, votre arrivée à l’hôtel ou un trajet vers Glyfada, Vouliagmeni et la Riviera d’Athènes. Les modalités de prise en charge sont coordonnées avant le voyage."
+      ]
+    },
+    {
+      "heading": "Transferts Ports",
+      "paragraphs": [
+        "Reliez votre voyage en mer à un transfert privé desservant le Pirée, Rafina ou Lavrio. Indiquez les détails du ferry ou de la croisière, le port, la date et votre prochaine destination afin d’organiser la prise en charge selon votre itinéraire. Nos transferts relient les ports à l’aéroport d’Athènes, aux hôtels et au centre-ville.",
+        "Un chauffeur professionnel anglophone et un habitacle privé facilitent les déplacements en groupe. Précisez à l’avance le nombre de passagers et les bagages, notamment si vous combinez une arrivée au port avec un départ en avion."
+      ]
+    },
+    {
+      "heading": "Excursions Privées",
+      "paragraphs": [
+        "Découvrez Athènes et les destinations emblématiques de Grèce lors d’une excursion privée organisée selon vos projets. Le salon du Mercedes Vito VIP avec sièges face à face offre un espace commun à votre groupe entre les visites. Discutez de votre parcours et de vos arrêts préférés avant de réserver, plutôt que de supposer un itinéraire fixe.",
+        "Que vos projets incluent Athènes, Glyfada, Vouliagmeni ou la Riviera d’Athènes, contactez H&A VIP Tours pour en discuter. Indiquez vos points de départ et d’arrivée afin que nous préparions une proposition personnalisée."
+      ]
+    },
+    {
+      "heading": "Transferts Familiaux avec Sièges Enfants",
+      "paragraphs": [
+        "Voyagez ensemble avec de la place pour jusqu’à sept passagers, hors conducteur. Les sièges enfants sont gratuits sur demande : précisez l’âge de chaque enfant et confirmez les sièges nécessaires avant de réserver votre transfert aéroport, port ou hôtel.",
+        "Signalez les poussettes et autres bagages lors de l’organisation du trajet. Nous pouvons discuter des besoins de votre famille en même temps que des modalités de prise en charge, pour préparer l’arrivée ou le départ sans reporter les questions importantes au jour du voyage."
+      ]
+    }
+  ],
+  "piraeusSections": [
+    {
+      "heading": "Du Port du Pirée à l’Aéroport d’Athènes",
+      "paragraphs": [
+        "Organisez un transfert privé entre le port du Pirée et l’aéroport international d’Athènes (ATH) avec H&A VIP Tours. Que vous débarquiez d’un navire de croisière, arriviez en ferry ou rejoigniez le port depuis l’aéroport, communiquez votre itinéraire avant de réserver. Nous avons besoin de la date, du nombre de passagers, des bagages et des informations de vol ou de navire pour discuter d’une prise en charge adaptée à votre voyage.",
+        "Le Mercedes Vito VIP transporte jusqu’à sept passagers, hors conducteur, dans un habitacle salon avec sièges face à face. La durée dépend du parcours, de l’accès au port et de la circulation : prévoyez une marge pour votre correspondance entre mer et avion. Demandez-nous d’examiner les horaires envisagés plutôt que de compter sur une durée fixe ou une correspondance garantie."
+      ]
+    },
+    {
+      "heading": "Transferts du Pirée vers les Hôtels et le Centre d’Athènes",
+      "paragraphs": [
+        "Un transfert privé du Pirée peut relier votre arrivée en ferry ou en croisière à un hôtel ou à une autre adresse convenue dans le centre d’Athènes. Envoyez l’adresse complète avec votre demande afin que le devis corresponde au trajet réellement souhaité. Si vous séjournez à Glyfada, Vouliagmeni ou ailleurs sur la Riviera d’Athènes, précisez ce lieu au lieu de demander simplement une dépose à Athènes.",
+        "Pour le retour, communiquez l’adresse de votre hébergement et les détails de départ du ferry ou de la croisière. Nous pouvons discuter de la prise en charge avant votre réservation. Chaque trajet suit le parcours convenu ; sa durée varie selon la circulation et les lieux de départ et d’arrivée. Contactez-nous sur WhatsApp avec vos projets et demandez un devis personnalisé pour votre transfert privé."
+      ]
+    },
+    {
+      "heading": "Terminaux de Croisière, Ports de Ferries et Accueil",
+      "paragraphs": [
+        "Le Pirée accueille des navires de croisière et des ferries : le nom du navire et le bon terminal ou la bonne porte comptent donc pour organiser la prise en charge. Fournissez les informations disponibles et informez-nous de tout changement. L’accueil et le point de rencontre sont coordonnés pour votre trajet ; confirmez les consignes de prise en charge et les modalités d’attente convenues avant de réserver pour savoir à quoi vous attendre à l’arrivée.",
+        "Nos transferts desservent également Rafina et Lavrio. Ce sont des ports distincts, pas d’autres noms du Pirée : vérifiez votre billet et indiquez le bon port dans votre demande. Pour un trajet entre ports ou vers ATH, précisez les deux extrémités du parcours. Le suivi du vol ou du navire est assuré lorsque nécessaire, tandis que les modalités d’attente doivent toujours être discutées et confirmées pour votre réservation."
+      ]
+    },
+    {
+      "heading": "Bagages et Voyages en Famille avec Sièges Enfants Gratuits",
+      "paragraphs": [
+        "Gardez votre groupe réuni dans un Mercedes Vito VIP avec sièges face à face en configuration salon, pour jusqu’à sept passagers, hors conducteur. Indiquez le nombre de bagages, y compris les grandes valises, poussettes ou autres objets encombrants. La capacité en passagers ne confirme pas à elle seule que toute combinaison de bagages conviendra ; discutez de vos besoins avant de confirmer le trajet.",
+        "Les sièges enfants sont gratuits sur demande. Précisez les âges et le nombre de sièges nécessaires lors de la demande de devis, puis confirmez l’organisation avant de réserver. La même attention s’applique que votre famille aille d’un terminal de croisière à un hôtel, d’un ferry à l’aéroport d’Athènes ou retourne au Pirée. Communiquez le voyage complet pour convenir à l’avance du parcours, des sièges demandés, des bagages, du point de rencontre et du prix."
+      ]
+    }
+  ],
+  "piraeusFaq": [
+    {
+      "question": "Combien de temps dure un transfert entre le Pirée et l’aéroport d’Athènes ?",
+      "answer": "La durée dépend du parcours, de l’accès au port et de la circulation. Communiquez les informations du vol ou du navire pour discuter de l’heure de prise en charge ; aucune durée fixe ni correspondance n’est garantie."
+    },
+    {
+      "question": "Quel est le prix d’un transfert privé du Pirée ?",
+      "answer": "Les prix sont fournis sur demande. Envoyez le parcours, la date, le nombre de passagers, les bagages et les besoins en sièges enfants pour un devis personnalisé."
+    },
+    {
+      "question": "Quelles sont les modalités d’attente au Pirée ?",
+      "answer": "L’attente et la rencontre sont coordonnées pour votre trajet et confirmées avant la réservation. Communiquez les détails du navire et demandez confirmation des modalités applicables ; ne supposez pas une durée d’attente garantie."
+    }
+  ],
+  "aboutParagraphs": [
+    "H&A VIP Tours est une entreprise familiale agréée de transferts privés et d’excursions basée à Athènes, en Grèce. Nous sommes spécialisés dans le transport de luxe en Mercedes Vito VIP pour les transferts aéroport, les prises en charge aux ports, les déposes aux hôtels et les excursions privées à la journée vers les destinations les plus emblématiques de Grèce.",
+    "Forts de plusieurs années d’expérience auprès de voyageurs du monde entier, notre mission est simple : proposer des trajets sûrs, confortables et sans stress, avec une attention personnelle. Chaque trajet comprend un chauffeur professionnel anglophone, le Wi-Fi gratuit, de l’eau en bouteille et le suivi du vol ou du navire lorsque nécessaire.",
+    "Que vous visitiez Athènes pour affaires ou pour le plaisir, nous sommes à votre disposition 24 h/24, 7 j/7 pour rendre votre séjour inoubliable."
+  ],
+  "privacySections": [
+    {
+      "heading": "Qui sommes-nous ?",
+      "paragraphs": [
+        "H&A VIP Tours (H&A Tours Ltd) est une entreprise de transferts privés et d’excursions basée à Athènes, en Grèce. Vous pouvez nous joindre à h.a.viptransfers@gmail.com ou au +30 694 939 3700."
+      ]
+    },
+    {
+      "heading": "Ce que nous collectons",
+      "paragraphs": [
+        "Lorsque vous échangez avec notre assistant IA ou utilisez le formulaire de devis, nous enregistrons les informations partagées — nom, e-mail, téléphone, lieu de prise en charge, destination, date et passagers — afin de répondre à votre demande.",
+        "Avec votre consentement, nous utilisons aussi des cookies d’analyse (Google Analytics, Metricool) pour comprendre l’utilisation du site."
+      ]
+    },
+    {
+      "heading": "Cookies",
+      "paragraphs": [
+        "Les cookies nécessaires assurent le fonctionnement du site, par exemple le chat et le formulaire de devis. Ils sont toujours actifs.",
+        "Les cookies d’analyse et de marketing sont bloqués jusqu’à ce que vous choisissiez « Tout accepter » ou les activiez dans « Gérer ». Vous pouvez modifier votre choix à tout moment en effaçant les données stockées par votre navigateur."
+      ]
+    },
+    {
+      "heading": "Vos droits (RGPD)",
+      "paragraphs": [
+        "Vous pouvez demander à tout moment l’accès, la rectification ou la suppression de vos données personnelles en écrivant à h.a.viptransfers@gmail.com. Nous répondons sous 30 jours."
+      ]
+    }
+  ]
+},
   nav: {
     services: "Services",
     tagline: "Transferts VIP",
@@ -47,7 +172,7 @@ export default {
     title: "Mercedes Classe V",
     desc: "Voyagez dans un confort ultime avec notre Mercedes Classe V — le choix premium des voyageurs exigeants. Intérieur cuir spacieux, climatisation, Wi-Fi et eau offerts à chaque trajet.",
     features: [
-      "Jusqu'à 7-8 passagers",
+      "Jusqu'à 7 passagers",
       "Sièges en cuir et éclairage d'ambiance",
       "Wi-Fi et eau offerts",
       "Chauffeur professionnel anglophone",
@@ -60,7 +185,7 @@ export default {
     title: "Pourquoi nous choisir",
     items: {
       licensed: { title: "Licencié & Assuré", desc: "Service de chauffeur professionnel entièrement licencié" },
-      passengers: { title: "7-8 Passagers", desc: "Mercedes Classe V spacieux pour groupes et familles" },
+      passengers: { title: "7 Passagers", desc: "Mercedes Classe V spacieux pour groupes et familles" },
       available: { title: "Disponible 24/7", desc: "Service en continu, tôt le matin et tard le soir" },
       rated: { title: "Noté 5 Étoiles", desc: "Des centaines de voyageurs satisfaits du monde entier" },
     },
@@ -87,7 +212,7 @@ export default {
     title2: "Prix Instantané",
     selectService: "Choisir le Service",
     passengers: "Passagers",
-    maxPax: "Mercedes V Class · Max 8 passagers",
+    maxPax: "Mercedes Vito VIP · Jusqu’à 7 passagers",
     nightRate: "Tarif Nuit (22:00 – 06:00) +€10/personne",
     estimated: "Prix Estimé",
     perVehicle: "par véhicule",
@@ -199,13 +324,13 @@ export default {
     },
   },
   seo: {
-    airport: { title: "Transfert Aéroport d'Athènes (ATH) – Mercedes V Class | H&A VIP Tours", description: "Transferts privés vers l'Aéroport International d'Athènes en Mercedes V Class de luxe. Suivi des vols, accueil, prix fixes à partir de 70€. Réservation WhatsApp 24/7." },
-    piraeus: { title: "Transfert Port du Pirée depuis Athènes et l'Aéroport | H&A VIP Tours", description: "Transferts privés de luxe vers et depuis les ports du Pirée, Rafina et Lavrio. Idéal pour les voyageurs en croisière et ferry. Mercedes V Class, 7–8 passagers, prix fixes." },
-    athens: { title: "Visite Privée d'Athènes – Acropole et Sites Majeurs | H&A VIP Tours", description: "Visite privée de la ville d'Athènes avec chauffeur professionnel. Acropole, Plaka, Syntagma et Stade Panathénaïque en Mercedes V Class. Itinéraire personnalisable." },
-    delphi: { title: "Excursion Privée à Delphes depuis Athènes | H&A VIP Tours", description: "Excursion privée d'une journée depuis Athènes à Delphes, l'ancien Oracle d'Apollon. Mercedes V Class de luxe avec chauffeur anglophone. Arrêt à Arachova." },
-    meteora: { title: "Excursion Privée aux Météores depuis Athènes | H&A VIP Tours", description: "Excursion privée aux monastères UNESCO des Météores depuis Athènes en Mercedes V Class. Journée complète confortable avec chauffeur professionnel." },
-    nafplio: { title: "Excursion Privée à Nauplie depuis Athènes | H&A VIP Tours", description: "Excursion privée d'une journée depuis Athènes à Nauplie, Mycènes et Épidaure. Découvrez la première capitale de la Grèce en Mercedes V Class." },
-    sounion: { title: "Excursion au Cap Sounion – Temple de Poséidon | H&A VIP Tours", description: "Excursion privée au coucher du soleil depuis Athènes au Cap Sounion et au Temple de Poséidon. Route panoramique de la Riviera athénienne en Mercedes V Class." },
+    airport: { title: "Transfert Aéroport d'Athènes (ATH) – Mercedes Vito VIP | H&A VIP Tours", description: "Transferts privés vers l'Aéroport International d'Athènes en Mercedes Vito VIP de luxe. Suivi des vols, accueil, prix fixes à partir de 70€. Réservation WhatsApp 24/7." },
+    piraeus: { title: "Transfert Port du Pirée depuis Athènes et l'Aéroport | H&A VIP Tours", description: "Transferts privés de luxe vers et depuis les ports du Pirée, Rafina et Lavrio. Idéal pour les voyageurs en croisière et ferry. Mercedes Vito VIP, 7 passagers, prix fixes." },
+    athens: { title: "Visite Privée d'Athènes – Acropole et Sites Majeurs | H&A VIP Tours", description: "Visite privée de la ville d'Athènes avec chauffeur professionnel. Acropole, Plaka, Syntagma et Stade Panathénaïque en Mercedes Vito VIP. Itinéraire personnalisable." },
+    delphi: { title: "Excursion Privée à Delphes depuis Athènes | H&A VIP Tours", description: "Excursion privée d'une journée depuis Athènes à Delphes, l'ancien Oracle d'Apollon. Mercedes Vito VIP de luxe avec chauffeur anglophone. Arrêt à Arachova." },
+    meteora: { title: "Excursion Privée aux Météores depuis Athènes | H&A VIP Tours", description: "Excursion privée aux monastères UNESCO des Météores depuis Athènes en Mercedes Vito VIP. Journée complète confortable avec chauffeur professionnel." },
+    nafplio: { title: "Excursion Privée à Nauplie depuis Athènes | H&A VIP Tours", description: "Excursion privée d'une journée depuis Athènes à Nauplie, Mycènes et Épidaure. Découvrez la première capitale de la Grèce en Mercedes Vito VIP." },
+    sounion: { title: "Excursion au Cap Sounion – Temple de Poséidon | H&A VIP Tours", description: "Excursion privée au coucher du soleil depuis Athènes au Cap Sounion et au Temple de Poséidon. Route panoramique de la Riviera athénienne en Mercedes Vito VIP." },
   },
   delphiTour: {
     badge: "Expérience VIP Exclusivement Privée",

@@ -25,15 +25,15 @@ const fadeUp = {
 
 const images: { src: string; alt: string; fit?: string }[] = [
   { src: gallery1, alt: "Mercedes Vito exterior with open door" },
-  { src: gallery2, alt: "Mercedes V Class quilted cognac leather rear seats" },
+  { src: gallery2, alt: "Mercedes Vito VIP quilted cognac leather rear seats" },
   { src: gallery3, alt: "Black Mercedes Vito parked in front of a luxury Athens hotel entrance" },
   { src: gallery4, alt: "H&A Tours van with Athens Acropolis view" },
-  { src: gallery5, alt: "Mercedes V Class open sliding door showing cognac leather seats with ambient lighting" },
-  { src: gallery6, alt: "Mercedes V Class interior with diamond-stitched black leather seats and blue ambient floor lighting" },
-  { src: `${ASSET_HOST}${airportPickupVan.url}`, alt: "H&A Tours chauffeur opening the Mercedes V Class door for a traveler with luggage at Athens Airport" },
+  { src: gallery5, alt: "Mercedes Vito VIP open sliding door showing cognac leather seats with ambient lighting" },
+  { src: gallery6, alt: "Mercedes Vito VIP interior with diamond-stitched black leather seats and blue ambient floor lighting" },
+  { src: `${ASSET_HOST}${airportPickupVan.url}`, alt: "H&A Tours chauffeur opening the Mercedes Vito VIP door for a traveler with luggage at Athens Airport" },
   { src: `${ASSET_HOST}${driverHandshake.url}`, alt: "H&A Tours driver welcoming a client with a handshake at Athens Airport, Acropolis in the background" },
-  { src: `${ASSET_HOST}${vClassLookCollage.url}`, alt: "H&A Tours Mercedes V Class presentation with exterior, interior and detail views", fit: "object-contain bg-background" },
-  { src: `${ASSET_HOST}${vanAthensChildSeat.url}`, alt: "Mother securing her child in a child seat inside the Mercedes V Class, Acropolis in the background" },
+  { src: `${ASSET_HOST}${vClassLookCollage.url}`, alt: "H&A Tours Mercedes Vito VIP presentation with exterior, interior and detail views", fit: "object-contain bg-background" },
+  { src: `${ASSET_HOST}${vanAthensChildSeat.url}`, alt: "Mother securing her child in a child seat inside the Mercedes Vito VIP, Acropolis in the background" },
 ];
 
 const Gallery = () => {

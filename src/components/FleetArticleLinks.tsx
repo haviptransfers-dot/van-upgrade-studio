@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import Link from "@/components/LocalizedLink";
 import { blogPosts, localizePost } from "@/data/blogPosts";
 
 export default function FleetArticleLinks() {
   const { i18n } = useTranslation();
-  const slugs = ["mercedes-v-class-chauffeur-service-athens", "child-car-seats-private-transfers-greece"];
+  const slugs = ["mercedes-vito-vip-chauffeur-service-athens", "child-car-seats-private-transfers-greece"];
   const posts = blogPosts.filter((post) => slugs.includes(post.slug));
   return <div className="mt-6 space-y-2">{posts.map((post) => {
     const localized = localizePost(post, i18n.language);

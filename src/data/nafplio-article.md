@@ -1,6 +1,6 @@
 A **naflpion tour**, more commonly spelled a Nafplion tour, is one of the most rewarding private day journeys from Athens. It combines a scenic drive through the Peloponnese with a destination that feels distinctly different from the capital: neoclassical lanes, a handsome waterfront, Venetian history, and an unhurried atmosphere made for strolling.
 
-For guests who value comfort as much as the destination, the journey should feel considered from the first hotel pickup to the final return. A private Mercedes V-Class gives couples, families, small groups, and business travelers the space, privacy, and flexibility to experience Nafplion at their own pace.
+For guests who value comfort as much as the destination, the journey should feel considered from the first hotel pickup to the final return. A private Mercedes Vito VIP gives couples, families, small groups, and business travelers the space, privacy, and flexibility to experience Nafplion at their own pace.
 
 ## Why Choose a Private Nafplion Tour From Athens
 
@@ -8,7 +8,7 @@ Nafplion is approximately two hours from Athens, depending on traffic, pickup lo
 
 A private tour is especially valuable because Nafplion is not a destination best appreciated on a fixed timetable. Some guests want to spend more time photographing the waterfront. Others prefer a long lunch in the old town, a visit to the fortress, or a stop at an archaeological site before arriving in town. With a custom itinerary, the day adjusts to your priorities rather than asking you to adjust to a preset schedule.
 
-The [Mercedes V-Class](https://haviptransfers.gr/blog/mercedes-v-class-chauffeur-service-athens) is well suited to this style of travel. Its spacious cabin and refined ride create a more restful experience on the road, while private chauffeur service allows every guest to stay together throughout the day. For families, advance-arranged [baby and child seats](https://haviptransfers.gr/blog/child-car-seats-private-transfers-greece) provide an additional level of reassurance.
+The [Mercedes Vito VIP](https://haviptransfers.gr/blog/mercedes-vito-vip-chauffeur-service-athens) is well suited to this style of travel. Its spacious cabin and refined ride create a more restful experience on the road, while private chauffeur service allows every guest to stay together throughout the day. For families, advance-arranged [baby and child seats](https://haviptransfers.gr/blog/child-car-seats-private-transfers-greece) provide an additional level of reassurance.
 
 ## What Makes Nafplion Worth the Journey
 
@@ -56,7 +56,7 @@ Do not try to fit every Peloponnese highlight into a single day. Nafplion deserv
 
 ## Private Travel That Feels Effortless
 
-H&A VIP Tours provides premium private transfers and custom tours in Mercedes V-Class vehicles for guests who want an attentive, polished way to travel from Athens. Your day can begin at your hotel, residence, airport, or port, with service shaped around your schedule and your preferred stops.
+H&A VIP Tours provides premium private transfers and custom tours in Mercedes Vito VIP vehicles for guests who want an attentive, polished way to travel from Athens. Your day can begin at your hotel, residence, airport, or port, with service shaped around your schedule and your preferred stops.
 
 Direct 24/7 WhatsApp access keeps planning simple, particularly when travel details change or you would like to confirm arrangements before arrival. Rather than treating transportation as an afterthought, a private chauffeur service turns the journey into part of the experience: quiet, spacious, punctual, and entirely centered on your party.
 

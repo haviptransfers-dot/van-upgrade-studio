@@ -1,9 +1,11 @@
+import RelatedTravelLinks from "@/components/RelatedTravelLinks";
+import PageHead from "@/components/PageHead";
 import OptimizedImage from "@/components/OptimizedImage";
 import ServiceStructuredData from "@/components/ServiceStructuredData";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from "@/components/LocalizedLink";
 import {
   Accordion,
   AccordionContent,
@@ -37,7 +39,7 @@ const AthensTour = () => {
   const faqItems = [
     {
       q: "What is included in the Athens City Tour?",
-      a: "The tour includes a private Mercedes-Benz V-Class with a professional English-speaking driver, door-to-door pickup from your hotel or Airbnb, visits to the Acropolis area, Plaka, Monastiraki, Panathenaic Stadium, and other iconic Athens landmarks, plus complimentary cold drinks on board.",
+      a: "The tour includes a private Mercedes Vito VIP with a professional English-speaking driver, door-to-door pickup from your hotel or Airbnb, visits to the Acropolis area, Plaka, Monastiraki, Panathenaic Stadium, and other iconic Athens landmarks, plus complimentary cold drinks on board.",
     },
     {
       q: t("athensTour.durationQuestion", { tour: t("athensTour.title") }),
@@ -53,7 +55,7 @@ const AthensTour = () => {
     },
     {
       q: "How many passengers can join the Athens City Tour?",
-      a: "Our Mercedes-Benz V-Class comfortably accommodates up to 7 passengers, perfect for families and small groups.",
+      a: "Our Mercedes Vito VIP comfortably accommodates up to 7 passengers, perfect for families and small groups.",
     },
     {
       q: "How do I book the Athens City Tour?",
@@ -78,16 +80,15 @@ const AthensTour = () => {
   return (
     <>
       <ServiceStructuredData path="/athens-city-tour" />
+      <PageHead />
       <Helmet>
         <html lang={i18n.language} />
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="canonical" href={url} />
-        <link rel="alternate" hrefLang="en" href={url} />
-        <link rel="alternate" hrefLang="x-default" href={url} />
+
+
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:url" content={url} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={`${SITE_URL}${tourAthens}`} />
         <script type="application/ld+json">
@@ -283,6 +284,7 @@ const AthensTour = () => {
             </a>
           </div>
         </section>
+        <RelatedTravelLinks current={url.replace(SITE_URL, "")} />
       </div>
     </>
   );

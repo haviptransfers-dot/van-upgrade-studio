@@ -14,7 +14,7 @@ export default function DeferredBackground({ src, className, label }: { src: str
     return () => observer.disconnect();
   }, []);
   const entry = imageEntry(src);
-  const targetWidth = window.innerWidth * Math.min(window.devicePixelRatio, 2);
+  const targetWidth = typeof window === "undefined" ? 800 : window.innerWidth * Math.min(window.devicePixelRatio, 2);
   const variant = entry?.variants.find((item) => item.width >= targetWidth) ?? entry?.variants[entry.variants.length - 1];
   return <div ref={ref} className={className} style={ready ? { backgroundImage: `url(${variant ? hostedImageUrl(variant.url) : src})` } : undefined} role={label ? "img" : undefined} aria-label={label} aria-hidden={label ? undefined : true} />;
 }

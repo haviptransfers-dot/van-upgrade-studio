@@ -1,4 +1,5 @@
 import { Suspense, useEffect, useRef, useState, type ReactNode } from "react";
+import { usePrerender } from "@/lib/prerender";
 
 export default function DeferredSection({ children, placeholderClass = "min-h-[600px]", anchor, anchors = [], rootMargin = "600px" }: {
   children: ReactNode;
@@ -8,7 +9,8 @@ export default function DeferredSection({ children, placeholderClass = "min-h-[6
   rootMargin?: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
-  const [ready, setReady] = useState(false);
+  const prerender = usePrerender();
+  const [ready, setReady] = useState(prerender);
   useEffect(() => {
     const element = ref.current;
     if (!element) return;
