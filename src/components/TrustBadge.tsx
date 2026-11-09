@@ -11,7 +11,7 @@ const TrustBadge = () => {
     href={GOOGLE_REVIEWS_URL}
     target="_blank"
     rel="noopener noreferrer"
-    aria-label={t("seoUi.uiTranslations.5.0 out of 5 — read customer reviews on Google", { keySeparator: false, defaultValue: "5.0 out of 5 — read customer reviews on Google" })}
+    aria-label={(t("seoUi.uiTranslations", { returnObjects: true }) as Record<string, string>)["5.0 out of 5 — read customer reviews on Google"]}
     className="home-trust-badge inline-flex items-center gap-2 py-2 text-foreground hover:text-primary transition-colors"
   >
     <svg viewBox="0 0 24 24" className="w-4 h-4 flex-shrink-0" aria-hidden="true">

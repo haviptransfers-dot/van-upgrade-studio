@@ -165,8 +165,7 @@ const Index = ({ routeKey }: IndexProps) => {
           {/* Static base layer — first image always painted to avoid black gap */}
           <OptimizedImage
             src={heroCycleImages[0]}
-            alt=""
-            aria-hidden="true"
+            alt={t("seoUi.galleryAlts.2")}
             fetchPriority="high"
             loading="eager"
             sizes="100vw"
