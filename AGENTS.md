@@ -29,3 +29,4 @@
 - Keep package-lock.json synchronized with every dependency change and verify npm ci before declaring CI repaired; clean GitHub runners cannot use packages installed only in the preview sandbox.
 - Point structured-data image/logo at a site-served absolute URL (public/logo.png) rather than a bundled asset import, and keep that file at the source mark's true fidelity instead of an upscaled render.
 - Generate all public language documents from the real React page tree and language dictionaries using bounded Vite static generation; share localized URL mapping across navigation, head metadata and sitemap, so crawlers see the same translated content as visitors.
+- Disable dependency discovery, file watching and HMR on the build-only SSR renderer; it transforms pages without starting a competing browser dependency scan during publishing.
