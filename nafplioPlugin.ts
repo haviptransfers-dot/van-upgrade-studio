@@ -6,9 +6,10 @@ import { nafplioPost as post, nafplioFaq } from "./src/data/nafplio";
 import montserrat from "./src/assets/fonts/montserrat-latin.woff2.asset.json";
 import playfair from "./src/assets/fonts/playfair-display-latin.woff2.asset.json";
 import { organization } from "./src/data/structuredData";
+import { pageUrl } from "./src/lib/languagePaths";
 
 export const nafplioPath = `/blog/${post.slug}`;
-const canonical = `https://haviptransfers.gr${nafplioPath}`;
+const canonical = pageUrl(nafplioPath, "en");
 const esc = (value: string) => value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
 export function renderNafplio() {
