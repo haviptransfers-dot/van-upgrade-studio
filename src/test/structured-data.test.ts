@@ -25,6 +25,23 @@ describe("public sitemap and structured data", () => {
     expect(organization.logo).toBe("https://haviptransfers.gr/logo.png");
     expect(existsSync("public/logo.png")).toBe(true);
   });
+  it.each(servicePages.map((page) => page.path))("does not repeat the static business or rating in the client graph for %s", (path) => {
+    const graph = structuredDataForPath(path, false)?.["@graph"] ?? [];
+    expect(graph.map((node) => node["@type"])).toEqual(["Service", "TouristTrip"]);
+    for (const node of graph) {
+      expect(node).toHaveProperty("provider", { "@id": "https://haviptransfers.gr/#organization" });
+      expect(node).not.toHaveProperty("aggregateRating");
+    }
+  });
+  it("keeps one address, service area list, rating and unique social list in the shared business", () => {
+    expect(Array.isArray(organization.address)).toBe(false);
+    expect(organization.address).toEqual({ "@type": "PostalAddress", addressLocality: "Athens", addressCountry: "GR" });
+    expect(organization.areaServed).toEqual([{ "@type": "City", name: "Athens" }, { "@type": "Country", name: "Greece" }]);
+    expect(Array.isArray(organization.aggregateRating)).toBe(false);
+    expect(organization.aggregateRating.reviewCount).toBe(127);
+    expect(organization.aggregateRating.ratingCount).toBe(127);
+    expect(new Set(organization.sameAs).size).toBe(organization.sameAs.length);
+  });
   it.each([
     ["/airport-transfer-athens", [85, 100]], ["/piraeus-port-transfer", [55]],
     ["/athens-city-tour", [180]], ["/cape-sounion-tour", [350]],
