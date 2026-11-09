@@ -8,8 +8,8 @@ describe("public sitemap and structured data", () => {
     const slugs = [...sources.matchAll(/slug:\s*"([^"]+)"/g)].map((match) => match[1]);
     const xml = readFileSync("public/sitemap.xml", "utf8");
     expect((xml.match(/<loc>/g) ?? []).length).toBe(232);
-    for (const slug of slugs) expect(xml).toContain(`<loc>https://haviptransfers.gr/blog/${slug}</loc>`);
-    for (const page of servicePages) expect(xml).toContain(`<loc>https://haviptransfers.gr${page.path}</loc>`);
+    for (const slug of slugs) expect(xml).toContain(`<loc>https://haviptransfers.gr/blog/${slug}/</loc>`);
+    for (const page of servicePages) expect(xml).toContain(`<loc>https://haviptransfers.gr${page.path}/</loc>`);
     expect(xml).not.toContain("<lastmod>");
     expect(xml).not.toContain(":slug");
     expect(readFileSync("public/robots.txt", "utf8")).toContain("Sitemap: https://haviptransfers.gr/sitemap.xml");
