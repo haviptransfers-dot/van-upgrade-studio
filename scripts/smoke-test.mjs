@@ -6,7 +6,7 @@
 //   2. robots.txt — references Sitemap: <base>/sitemap.xml
 //   3. structured data — every public page serves parseable JSON-LD including Organization
 //   4. SEO head tags (rendered) — every public page has a unique <title>, a canonical
-//      URL on the production domain, and en/x-default hreflang self-references
+//      URL on the production domain, and matching eight-language hreflang URLs
 //
 // Checks 1–3 read raw HTML; check 4 uses headless Chromium because titles and
 // canonicals are client-rendered. Service/TouristTrip schema content is validated
@@ -20,7 +20,7 @@
 
 import { writeFileSync, appendFileSync, rmSync } from "node:fs";
 import { chromium } from "playwright";
-import { SITE, publicPaths as getPublicPaths } from "./public-pages.mjs";
+import { SITE, publicPaths as getPublicPaths, expectedHreflangs } from "./public-pages.mjs";
 import { numericOption, fetchWithRetry as fetchRetry, UnavailableError, jsonLdBlocks, hasOrganization } from "./smoke-helpers.mjs";
 import { smokeSummary } from "./smoke-summary.mjs";
 
@@ -154,8 +154,8 @@ try {
       check(titleOk, `${path} has a unique rendered <title>${titleOk ? "" : ` (got "${head.title}")`}`, "seo-head");
       check(head.canonical === expectedUrl(path), `${path} canonical is ${expectedUrl(path)}${head.canonical === expectedUrl(path) ? "" : ` (got "${head.canonical}")`}`, "seo-head");
       check(
-        head.hreflangs["en"] === expectedUrl(path) && head.hreflangs["x-default"] === expectedUrl(path),
-        `${path} hreflang en + x-default self-reference the page URL`,
+        Object.entries(expectedHreflangs(path)).every(([language, url]) => head.hreflangs[language] === url),
+        `${path} hreflang covers eight matching language URLs with English x-default`,
         "seo-head",
       );
     } catch (e) {
