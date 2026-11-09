@@ -18,6 +18,12 @@ const LANGUAGES = ["en", "el", "de", "es", "fr", "it", "he", "ar"];
 const localPath = (path, language) => language === "en" ? path : `/${language}${path}`;
 const basePath = (path) => path.replace(/^\/(el|de|es|fr|it|he|ar)(?=\/|$)/, "") || "/";
 
+export function expectedHreflangs(path) {
+  return Object.fromEntries([...LANGUAGES, "x-default"].map((language) => [
+    language, `${SITE}${localPath(basePath(path), language === "x-default" ? "en" : language)}`,
+  ]));
+}
+
 export function generateSitemap(paths = publicPaths()) {
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${[...new Set(paths)].map((path) => `  <url><loc>${SITE}${path}</loc>${[...LANGUAGES, "x-default"].map((language) => `<xhtml:link rel="alternate" hreflang="${language}" href="${SITE}${localPath(basePath(path), language === "x-default" ? "en" : language)}" />`).join("")}</url>`).join("\n")}\n</urlset>\n`;
 }
