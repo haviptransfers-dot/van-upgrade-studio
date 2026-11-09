@@ -6,6 +6,7 @@ import { ArrowLeft, MessageCircle, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { blogPosts, localizePost, WHATSAPP_URL } from "@/data/blogPosts";
 import logoImg from "@/assets/logo.webp";
+import { organization } from "@/data/structuredData";
 
 /** Renders plain text with optional [label](url) markdown links as real anchors. */
 function LinkedText({ text }: { text: string }) {
@@ -80,7 +81,7 @@ const BlogPost = () => {
             description: post.metaDescription,
             datePublished: post.date,
             image: post.image,
-            author: { "@type": "Organization", name: "H&A VIP Transfers" },
+            author: { "@id": organization["@id"] },
           })}
         </script>
       </Helmet>

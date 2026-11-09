@@ -5,14 +5,22 @@ export const organization = {
   "@id": `${SITE_URL}/#organization`,
   name: "H&A Tours",
   url: `${SITE_URL}/`,
-  telephone: "+306949393700",
+  telephone: ["+306949393700", "+302109925244"],
+  priceRange: "€€€",
+  geo: { "@type": "GeoCoordinates", latitude: 37.9838, longitude: 23.7275 },
+  availableLanguage: ["English", "Greek"],
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    opens: "00:00", closes: "23:59",
+  },
   email: "h.a.viptransfers@gmail.com",
   image: `${SITE_URL}/logo.png`,
   logo: `${SITE_URL}/logo.png`,
   address: { "@type": "PostalAddress", addressLocality: "Athens", addressCountry: "GR" },
-  areaServed: { "@type": "Country", name: "Greece" },
+  areaServed: [{ "@type": "City", name: "Athens" }, { "@type": "Country", name: "Greece" }],
   aggregateRating: { "@type": "AggregateRating", ratingValue: 5, bestRating: 5, worstRating: 1, reviewCount: 127, ratingCount: 127 },
-  sameAs: ["https://g.page/r/CWZohu9AJOBoEBM/review", "https://www.instagram.com/antonhs_ieronymakhs", "https://www.facebook.com/profile.php?id=61590718264708"],
+  sameAs: ["https://g.page/r/CWZohu9AJOBoEBM/review", "https://www.instagram.com/antonhs_ieronymakhs", "https://www.facebook.com/profile.php?id=61590718264708", "https://www.tiktok.com/@hatoursathens"],
 };
 
 export const servicePages = [
@@ -25,9 +33,9 @@ export const servicePages = [
   { path: "/nafplio-private-tour", name: "Nafplio Private Tour from Athens", type: "Private sightseeing tour", areas: ["Athens", "Nafplio", "Corinth Canal"], prices: [500], tiered: false },
 ];
 
-export function structuredDataForPath(path: string) {
+export function structuredDataForPath(path: string, includeOrganization = true) {
   const page = servicePages.find((entry) => entry.path === path);
-  if (!page) return path === "/" ? { "@context": "https://schema.org", "@graph": [organization] } : undefined;
+  if (!page) return path === "/" && includeOrganization ? { "@context": "https://schema.org", "@graph": [organization] } : undefined;
   const url = `${SITE_URL}${page.path}`;
   const places = page.areas.map((name) => ({ "@type": "Place", name }));
   const offers = page.prices.map((price, index) => ({
@@ -39,7 +47,7 @@ export function structuredDataForPath(path: string) {
     "@context": "https://schema.org",
     "@graph": [
       // The displayed Google score is for the business, not a separate rating of every tour.
-      organization,
+      ...(includeOrganization ? [organization] : []),
       { "@type": "Service", "@id": `${url}#service`, url, name: page.name, serviceType: page.type, provider: { "@id": organization["@id"] }, areaServed: places, offers },
       { "@type": "TouristTrip", "@id": `${url}#trip`, url, name: page.name, description: `${page.type} in a private Mercedes V-Class, arranged by H&A Tours.`, provider: { "@id": organization["@id"] }, itinerary: { "@type": "ItemList", itemListElement: places.map((item, index) => ({ "@type": "ListItem", position: index + 1, item })) }, offers },
     ],

@@ -1,5 +1,7 @@
 # Architecture rules
 
+- Keep the shared Organization as the sole static business definition on each page, including independent articles; client Service/TouristTrip graphs and article authors reference its stable @id instead of repeating business details or ratings.
+
 - Generate route-specific static HTML canonical and og:url tags for every public route, preserving independently generated articles; remove the initial canonical before Helmet takes ownership so crawlers and client navigation both see exactly one self-referencing URL.
 
 - Interpolate each tour's localized duration field into its duration FAQ answer and reuse the localized per-vehicle qualifier only for tour prices; this prevents conflicting duplicate values without changing transfer pricing or page metadata.
