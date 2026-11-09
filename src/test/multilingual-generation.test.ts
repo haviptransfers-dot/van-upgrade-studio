@@ -19,6 +19,8 @@ describe("multilingual build renderer", () => {
       optimizeDeps: { noDiscovery: true, include: [], entries: [] },
       ssr: { optimizeDeps: { noDiscovery: true, include: [] } },
       server: { middlewareMode: true, watch: null, hmr: false },
+      configFile: false,
+      esbuild: { jsx: "automatic", jsxDev: false },
     }));
     expect(renderPage.mock.calls.map(([path]) => path)).toEqual(canonicalPaths());
     expect(emitted).toHaveLength(231);

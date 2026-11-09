@@ -1,4 +1,5 @@
 import { createServer, type Plugin, type ViteDevServer } from "vite";
+import { resolve } from "node:path";
 import { canonicalPaths } from "./canonicalPlugin";
 import { basePath, languageFromPath, LEGACY_SLUGS, localizedPath } from "./src/lib/languagePaths";
 export const MAX_PRERENDER_PAGES = 1000;
@@ -52,7 +53,11 @@ export function multilingualPlugin(): Plugin {
         server: { middlewareMode: true, watch: null, hmr: false },
         appType: "custom",
         plugins: [],
-        configFile: "vite.config.ts",
+        // Do not inherit the browser SWC plugin: its serve transform emits jsxDEV
+        // even when publishing runs React's production runtime (no jsxDEV).
+        configFile: false,
+        resolve: { alias: { "@": resolve("src") } },
+        esbuild: { jsx: "automatic", jsxDev: false },
         optimizeDeps: { noDiscovery: true, include: [], entries: [] },
         ssr: { optimizeDeps: { noDiscovery: true, include: [] } },
       });
