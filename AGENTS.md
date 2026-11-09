@@ -1,5 +1,7 @@
 # Architecture rules
 
+- Generate route-specific static HTML canonical and og:url tags for every public route, preserving independently generated articles; remove the initial canonical before Helmet takes ownership so crawlers and client navigation both see exactly one self-referencing URL.
+
 - Interpolate each tour's localized duration field into its duration FAQ answer and reuse the localized per-vehicle qualifier only for tour prices; this prevents conflicting duplicate values without changing transfer pricing or page metadata.
 
 - Use the generated image manifest through OptimizedImage and DeferredBackground for responsive WebP delivery; this keeps intrinsic sizes and optimized variants consistent across pages. Resolve hosted image pointers through the stable published asset origin so direct local preview tests also render CDN photos.
