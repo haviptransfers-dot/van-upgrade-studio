@@ -5,6 +5,12 @@ export function numericOption(value, fallback, minimum = 0) {
 
 export class UnavailableError extends Error {}
 
+// Render checks need application code, not photos, music or external trackers.
+export function allowSmokeRequest(url, resourceType, base) {
+  return new URL(url).origin === new URL(base).origin &&
+    ["document", "script", "stylesheet", "fetch", "xhr"].includes(resourceType);
+}
+
 export async function fetchWithRetry(url, { retries = 3, delay = 5000, timeout = 15000, fetcher = fetch, sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms)) } = {}) {
   let lastError;
   for (let attempt = 1; attempt <= retries; attempt++) {
