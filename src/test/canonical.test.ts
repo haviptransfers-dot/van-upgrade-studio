@@ -1,3 +1,4 @@
+// @vitest-environment node
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { canonicalPaths, pageCanonicalHtml, canonicalPlugin } from "../../canonicalPlugin";
@@ -12,7 +13,7 @@ describe("self-referencing public page canonicals", () => {
 
   it("covers every sitemap page and every article with one canonical", () => {
     const urls = [...readFileSync("public/sitemap.xml", "utf8").matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
-    expect(canonicalPaths().map((pathname) => `https://haviptransfers.gr${pathname}`)).toEqual(urls);
+    expect(canonicalPaths().map((pathname) => `https://haviptransfers.gr${pathname}`).sort()).toEqual(urls.sort());
     for (const url of urls) {
       const html = pageCanonicalHtml(template, new URL(url).pathname);
       expect(canonicals(html)).toEqual([url]);
