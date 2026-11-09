@@ -87,7 +87,8 @@
             "Is a child seat available? Yes, free on request."
           ]
         }
-      ]
+      ],
+      "mapAlt": "Road map of the Athens to Nafplio route, 135 km"
     },
     "el": {
       "title": "Nafplio Private Tour από την Αθήνα",
@@ -176,7 +177,8 @@
             "Υπάρχει διαθέσιμο παιδικό κάθισμα; Ναι, δωρεάν κατόπιν αιτήματος."
           ]
         }
-      ]
+      ],
+      "mapAlt": "Χάρτης της διαδρομής Αθήνα–Ναύπλιο, 135 χλμ."
     },
     "de": {
       "title": "Private Nafplio-Tour ab Athen",
@@ -265,7 +267,8 @@
             "Ist ein Kindersitz verfügbar? Ja, auf Anfrage kostenlos."
           ]
         }
-      ]
+      ],
+      "mapAlt": "Straßenkarte der Route von Athen nach Nafplio, 135 km"
     },
     "es": {
       "title": "Tour privado de Nauplia desde Atenas",
@@ -354,7 +357,8 @@
             "¿Hay un asiento para niños disponible? Sí, gratis bajo petición."
           ]
         }
-      ]
+      ],
+      "mapAlt": "Mapa de la ruta por carretera de Atenas a Nafplio, 135 km"
     },
     "fr": {
       "title": "Visite privée de Nauplie au départ d'Athènes",
@@ -443,7 +447,8 @@
             "Un siège enfant est-il disponible ? Oui, gratuit sur demande."
           ]
         }
-      ]
+      ],
+      "mapAlt": "Carte routière du trajet Athènes–Nauplie, 135 km"
     },
     "it": {
       "title": "Tour privato di Nafplio da Atene",
@@ -532,7 +537,8 @@
             "È disponibile un seggiolino per bambini? Sì, gratuito su richiesta."
           ]
         }
-      ]
+      ],
+      "mapAlt": "Mappa stradale del percorso da Atene a Nauplia, 135 km"
     },
     "he": {
       "title": "סיור פרטי של Nafplio מאתונה",
@@ -621,7 +627,8 @@
             "האם מושב לילד זמין? כן, חינם לפי בקשה."
           ]
         }
-      ]
+      ],
+      "mapAlt": "מפת הדרך מאתונה לנאפפליו, 135 ק״מ"
     },
     "ar": {
       "title": "جولة نافبليو الخاصة من أثينا",
@@ -710,7 +717,8 @@
             "هل يتوفر مقعد للأطفال؟ نعم مجانا عند الطلب"
           ]
         }
-      ]
+      ],
+      "mapAlt": "خريطة الطريق من أثينا إلى نافبليو، 135 كم"
     }
   },
   "chauffeur-transfer-versus-athens-taxi": {},

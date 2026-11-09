@@ -1,4 +1,200 @@
 export default {
+  seoUi: {
+  "galleryAlts": [
+    "Mercedes Vito exterior with open door",
+    "Mercedes Vito VIP quilted cognac leather rear seats",
+    "Black Mercedes Vito parked in front of a luxury Athens hotel entrance",
+    "H&A Tours van with Athens Acropolis view",
+    "Mercedes Vito VIP open sliding door showing cognac leather seats with ambient lighting",
+    "Mercedes Vito VIP interior with diamond-stitched black leather seats and blue ambient floor lighting",
+    "H&A Tours chauffeur opening the Mercedes Vito VIP door for a traveler with luggage at Athens Airport",
+    "H&A Tours driver welcoming a client with a handshake at Athens Airport, Acropolis in the background",
+    "H&A Tours Mercedes Vito VIP presentation with exterior, interior and detail views",
+    "Mother securing her child in a child seat inside the Mercedes Vito VIP, Acropolis in the background"
+  ],
+  "showcaseSlides": [
+    {
+      "alt": "Mercedes Vito VIP side door open in luxury garage",
+      "title": "Step Inside Luxury",
+      "subtitle": "Premium leather. Whisper-quiet cabin."
+    },
+    {
+      "alt": "Close-up of Mercedes Vito VIP door handle",
+      "title": "Crafted in Detail",
+      "subtitle": "Every surface, finished to perfection."
+    },
+    {
+      "alt": "Mercedes Vito VIP on scenic mountain road",
+      "title": "Anywhere in Greece",
+      "subtitle": "From Athens to Meteora — in absolute comfort."
+    },
+    {
+      "alt": "Mercedes Vito VIP rear cabin with cognac leather seats",
+      "title": "Space to Unwind",
+      "subtitle": "Up to 7 passengers. Generous legroom."
+    }
+  ],
+  "roadAlt": "Mercedes Vito VIP cruising on the highway",
+  "childPhotoAlts": [
+    "Mother securing her smiling child in a child seat inside the Mercedes Vito VIP, with the Athens Acropolis in the background",
+    "i-Size child seat with harness in the back seat of a Mercedes",
+    "BeSafe 360 swivel child seat installed in a Mercedes Vito VIP"
+  ],
+  "tourFaqs": {
+    "athensTour": [
+      {
+        "q": "What is included in the Athens City Tour?",
+        "a": "The tour includes a private Mercedes Vito VIP with a professional English-speaking driver, door-to-door pickup from your hotel or Airbnb, visits to the Acropolis area, Plaka, Monastiraki, Panathenaic Stadium, and other iconic Athens landmarks, plus complimentary cold drinks on board."
+      },
+      {
+        "q": "",
+        "a": ""
+      },
+      {
+        "q": "Is the Athens City Tour fully private?",
+        "a": "Yes, 100% private. You will not share the vehicle with other tourists. The tour is exclusively for you and your group."
+      },
+      {
+        "q": "Can we customize the stops on the Athens City Tour?",
+        "a": "Absolutely. We tailor every tour to your interests. Just let us know in advance if there are specific sites or neighborhoods you'd like to visit."
+      },
+      {
+        "q": "How many passengers can join the Athens City Tour?",
+        "a": "Our Mercedes Vito VIP comfortably accommodates up to 7 passengers, perfect for families and small groups."
+      },
+      {
+        "q": "How do I book the Athens City Tour?",
+        "a": "You can book via WhatsApp, email, or through our online booking form on the website. We confirm all bookings within a few hours."
+      }
+    ],
+    "sounionTour": [
+      {
+        "q": "What is included in the Cape Sounion private tour?",
+        "a": "The tour includes a private Mercedes Vito VIP with a professional English-speaking driver, door-to-door pickup from your Athens hotel or Airbnb, a scenic coastal drive along the Athens Riviera, a stop at the Temple of Poseidon, and complimentary cold drinks on board. Entrance fees are not included."
+      },
+      {
+        "q": "",
+        "a": ""
+      },
+      {
+        "q": "How far is Cape Sounion from Athens?",
+        "a": "Cape Sounion is approximately 70 km from central Athens, about a 1-hour scenic drive along the Athenian Riviera."
+      },
+      {
+        "q": "Can I book a sunset tour to Cape Sounion?",
+        "a": "Yes! Our sunset tour departs in the late afternoon so you arrive at the Temple of Poseidon just before sunset — one of the most spectacular views in all of Greece."
+      },
+      {
+        "q": "How many passengers can travel together?",
+        "a": "Our Mercedes Vito VIP accommodates up to 7 passengers, making it ideal for families and small groups."
+      },
+      {
+        "q": "How do I book the Cape Sounion tour?",
+        "a": "You can book via WhatsApp, email, or through our online booking form. We confirm all bookings within a few hours."
+      }
+    ],
+    "delphiTour": [
+      {
+        "q": "What is included in the Delphi Private Tour?",
+        "a": "The tour includes a private Mercedes Vito VIP with a professional English-speaking driver, door-to-door pickup from your Athens hotel or Airbnb, a scenic drive through the Greek countryside, visit to the Archaeological Site of Delphi and the Delphi Museum, and complimentary cold drinks on board. Entrance fees are not included."
+      },
+      {
+        "q": "",
+        "a": ""
+      },
+      {
+        "q": "How far is Delphi from Athens?",
+        "a": "Delphi is approximately 180 km from Athens, about a 2.5-hour scenic drive through Boeotia and the slopes of Mount Parnassus."
+      },
+      {
+        "q": "Is the Delphi tour fully private?",
+        "a": "Yes, 100% private. The vehicle and driver are exclusively for you and your group — no shared tours, no strangers."
+      },
+      {
+        "q": "How many passengers can travel together?",
+        "a": "Our Mercedes Vito VIP accommodates up to 7 passengers, ideal for families and small groups."
+      },
+      {
+        "q": "How do I book the Delphi Private Tour?",
+        "a": "You can book via WhatsApp, email, or through our online booking form. We confirm all bookings within a few hours."
+      }
+    ],
+    "meteoraTour": [
+      {
+        "q": "What is included in the Meteora Private Tour?",
+        "a": "The tour includes a private Mercedes Vito VIP with a professional English-speaking driver, door-to-door pickup from your Athens hotel or Airbnb, a scenic drive through Thessaly, visits to the spectacular monasteries of Meteora, and complimentary cold drinks on board. Entrance fees are not included."
+      },
+      {
+        "q": "",
+        "a": ""
+      },
+      {
+        "q": "How far is Meteora from Athens?",
+        "a": "Meteora is approximately 350 km from Athens, about a 3.5-hour drive through central Greece."
+      },
+      {
+        "q": "Is the Meteora tour fully private?",
+        "a": "Yes, 100% private. The vehicle and driver are exclusively for you and your group — no shared tours, no strangers."
+      },
+      {
+        "q": "How many passengers can travel together?",
+        "a": "Our Mercedes Vito VIP accommodates up to 7 passengers, ideal for families and small groups."
+      },
+      {
+        "q": "How do I book the Meteora Private Tour?",
+        "a": "You can book via WhatsApp, email, or through our online booking form. We confirm all bookings within a few hours."
+      }
+    ],
+    "nafplioTour": [
+      {
+        "q": "What is included in the Nafplio Private Tour?",
+        "a": "The tour includes a private Mercedes Vito VIP with a professional English-speaking driver, door-to-door pickup from your Athens hotel or Airbnb, a scenic drive through the Peloponnese, visits to Nafplio old town, Palamidi Fortress, and Bourtzi castle views, and complimentary cold drinks on board. Entrance fees are not included."
+      },
+      {
+        "q": "",
+        "a": ""
+      },
+      {
+        "q": "How far is Nafplio from Athens?",
+        "a": "Nafplio is approximately 140 km from Athens, about a 1.5–2 hour scenic drive through the Peloponnese."
+      },
+      {
+        "q": "Is the Nafplio tour fully private?",
+        "a": "Yes, 100% private. The vehicle and driver are exclusively for you and your group — no shared tours, no strangers."
+      },
+      {
+        "q": "How many passengers can travel together?",
+        "a": "Our Mercedes Vito VIP accommodates up to 7 passengers, ideal for families and small groups."
+      },
+      {
+        "q": "How do I book the Nafplio Private Tour?",
+        "a": "You can book via WhatsApp, email, or through our online booking form. We confirm all bookings within a few hours."
+      }
+    ]
+  },
+  "uiTranslations": {
+    "out of 5": "out of 5",
+    "Verified reviews": "Verified reviews",
+    "Based on real customer experiences": "Based on real customer experiences",
+    "Chat with us": "Chat with us",
+    "Loading chat…": "Loading chat…",
+    "Decrease passengers": "Decrease passengers",
+    "Increase passengers": "Increase passengers",
+    "Landline": "Landline",
+    "Book now via WhatsApp": "Book now via WhatsApp",
+    "Close menu": "Close menu",
+    "Open menu": "Open menu",
+    "Scroll to services": "Scroll to services",
+    "Chat on WhatsApp": "Chat on WhatsApp",
+    "Toggle night rate": "Toggle night rate",
+    "Read all reviews on Google": "Read all reviews on Google",
+    "Read All Reviews on Google": "Read All Reviews on Google",
+    "Read {name}'s review on Google": "Read {name}'s review on Google",
+    "5.0 out of 5 — read customer reviews on Google": "5.0 out of 5 — read customer reviews on Google",
+    "Read review": "Read review",
+    "Google": "Google"
+  }
+},
   seoContent: {
   "homeTitle": "VIP Transfers Athens | Private Airport & Port Transfers | H&A",
   "homeDescription": "Private VIP transfers in Athens: ATH airport and Piraeus, Mercedes Vito VIP for 7 passengers, free child seats on request, meet & greet. Contact us on WhatsApp.",

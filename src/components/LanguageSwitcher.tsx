@@ -38,7 +38,7 @@ const LanguageSwitcher = () => {
               sizes="20px"
               width={20}
               height={15}
-              alt=""
+              alt={l.label}
               loading="lazy"
               decoding="async"
               className="inline-block rounded-sm w-3.5 h-2.5 md:w-5 md:h-[15px]"

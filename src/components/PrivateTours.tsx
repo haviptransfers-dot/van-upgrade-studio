@@ -90,7 +90,7 @@ const PrivateTours = () => {
               >
                 <OptimizedImage
                   src={tour.src}
-                  alt={`Private tour to ${name}`}
+                  alt={`${t("tours.title")} · ${name}`}
                   loading="lazy"
                   width={768}
                   height={512}
@@ -128,7 +128,7 @@ const PrivateTours = () => {
               <div className="relative h-56 w-full">
                 <OptimizedImage
                   src={activeTour.src}
-                  alt={`Private tour to ${activeName}`}
+                  alt={`${t("tours.title")} · ${activeName}`}
                   className="absolute inset-0 w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />

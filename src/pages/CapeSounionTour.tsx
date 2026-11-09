@@ -37,32 +37,10 @@ const CapeSounionTour = () => {
   const whatIncluded = t("sounionTour.whatIncluded", { returnObjects: true }) as string[];
   const bookUrl = `${WHATSAPP}?text=${encodeURIComponent(t("sounionTour.bookMsg"))}`;
 
-  const faqItems = [
-    {
-      q: "What is included in the Cape Sounion private tour?",
-      a: "The tour includes a private Mercedes Vito VIP with a professional English-speaking driver, door-to-door pickup from your Athens hotel or Airbnb, a scenic coastal drive along the Athens Riviera, a stop at the Temple of Poseidon, and complimentary cold drinks on board. Entrance fees are not included.",
-    },
-    {
-      q: t("sounionTour.durationQuestion", { tour: t("sounionTour.title") }),
-      a: t("sounionTour.durationAnswer", { duration: t("sounionTour.durationVal") }),
-    },
-    {
-      q: "How far is Cape Sounion from Athens?",
-      a: "Cape Sounion is approximately 70 km from central Athens, about a 1-hour scenic drive along the Athenian Riviera.",
-    },
-    {
-      q: "Can I book a sunset tour to Cape Sounion?",
-      a: "Yes! Our sunset tour departs in the late afternoon so you arrive at the Temple of Poseidon just before sunset — one of the most spectacular views in all of Greece.",
-    },
-    {
-      q: "How many passengers can travel together?",
-      a: "Our Mercedes Vito VIP accommodates up to 7 passengers, making it ideal for families and small groups.",
-    },
-    {
-      q: "How do I book the Cape Sounion tour?",
-      a: "You can book via WhatsApp, email, or through our online booking form. We confirm all bookings within a few hours.",
-    },
-  ];
+  const faqItems = (t("seoUi.tourFaqs.sounionTour", { returnObjects: true }) as { q: string; a: string }[]).map((item, index) => index === 1 ? {
+    q: t("sounionTour.durationQuestion", { tour: t("sounionTour.title") }),
+    a: t("sounionTour.durationAnswer", { duration: t("sounionTour.durationVal") }),
+  } : item);
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -251,7 +229,7 @@ const CapeSounionTour = () => {
         <section className="py-12 md:py-20 px-4">
           <div className="container mx-auto max-w-3xl">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-10">
-              Frequently Asked Questions
+              {t("seoContent.faqTitle")}
             </h2>
             <Accordion type="single" collapsible className="space-y-2">
               {faqItems.map((item, i) => (

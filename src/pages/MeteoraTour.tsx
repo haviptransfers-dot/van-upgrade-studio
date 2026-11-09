@@ -35,32 +35,10 @@ const MeteoraTour = () => {
     lamia: "🌿",
   };
   const whatIncluded = t("meteoraTour.whatIncluded", { returnObjects: true }) as string[];
-  const faqItems = [
-    {
-      q: "What is included in the Meteora Private Tour?",
-      a: "The tour includes a private Mercedes Vito VIP with a professional English-speaking driver, door-to-door pickup from your Athens hotel or Airbnb, a scenic drive through Thessaly, visits to the spectacular monasteries of Meteora, and complimentary cold drinks on board. Entrance fees are not included.",
-    },
-    {
-      q: t("meteoraTour.durationQuestion", { tour: t("meteoraTour.title") }),
-      a: t("meteoraTour.durationAnswer", { duration: t("meteoraTour.durationVal") }),
-    },
-    {
-      q: "How far is Meteora from Athens?",
-      a: "Meteora is approximately 350 km from Athens, about a 3.5-hour drive through central Greece.",
-    },
-    {
-      q: "Is the Meteora tour fully private?",
-      a: "Yes, 100% private. The vehicle and driver are exclusively for you and your group — no shared tours, no strangers.",
-    },
-    {
-      q: "How many passengers can travel together?",
-      a: "Our Mercedes Vito VIP accommodates up to 7 passengers, ideal for families and small groups.",
-    },
-    {
-      q: "How do I book the Meteora Private Tour?",
-      a: "You can book via WhatsApp, email, or through our online booking form. We confirm all bookings within a few hours.",
-    },
-  ];
+  const faqItems = (t("seoUi.tourFaqs.meteoraTour", { returnObjects: true }) as { q: string; a: string }[]).map((item, index) => index === 1 ? {
+    q: t("meteoraTour.durationQuestion", { tour: t("meteoraTour.title") }),
+    a: t("meteoraTour.durationAnswer", { duration: t("meteoraTour.durationVal") }),
+  } : item);
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -250,7 +228,7 @@ const MeteoraTour = () => {
         <section className="py-12 md:py-20 px-4">
           <div className="container mx-auto max-w-3xl">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-10">
-              Frequently Asked Questions
+              {t("seoContent.faqTitle")}
             </h2>
             <Accordion type="single" collapsible className="space-y-2">
               {faqItems.map((item, i) => (

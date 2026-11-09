@@ -1,4 +1,200 @@
 export default {
+  seoUi: {
+  "galleryAlts": [
+    "Esterno del Mercedes Vito con portiera aperta",
+    "Sedili posteriori del Mercedes Vito VIP in pelle trapuntata color cognac",
+    "Mercedes Vito nero parcheggiato davanti all’ingresso di un hotel di lusso ad Atene",
+    "Van H&A Tours con vista sull’Acropoli di Atene",
+    "Portiera scorrevole aperta del Mercedes Vito VIP che mostra sedili in pelle color cognac con illuminazione d’ambiente",
+    "Interni del Mercedes Vito VIP con sedili in pelle nera con cuciture a rombi e illuminazione d’ambiente blu sul pavimento",
+    "Autista H&A Tours che apre la portiera del Mercedes Vito VIP a un viaggiatore con bagagli all’aeroporto di Atene",
+    "Autista H&A Tours che accoglie un cliente con una stretta di mano all’aeroporto di Atene, con l’Acropoli sullo sfondo",
+    "Presentazione del Mercedes Vito VIP di H&A Tours con viste esterne, interne e dei dettagli",
+    "Madre che assicura il figlio in un seggiolino all’interno del Mercedes Vito VIP, con l’Acropoli sullo sfondo"
+  ],
+  "showcaseSlides": [
+    {
+      "title": "Entra nel lusso",
+      "subtitle": "Pelle pregiata. Abitacolo silenzioso.",
+      "alt": "Mercedes Vito VIP con portiera laterale aperta in un garage di lusso"
+    },
+    {
+      "title": "Curato nei dettagli",
+      "subtitle": "Ogni superficie, rifinita alla perfezione.",
+      "alt": "Primo piano della maniglia della portiera del Mercedes Vito VIP"
+    },
+    {
+      "title": "Ovunque in Grecia",
+      "subtitle": "Da Atene a Meteora — nel massimo comfort.",
+      "alt": "Mercedes Vito VIP su una panoramica strada di montagna"
+    },
+    {
+      "title": "Spazio per rilassarsi",
+      "subtitle": "Fino a 7 passeggeri. Ampio spazio per le gambe.",
+      "alt": "Abitacolo posteriore del Mercedes Vito VIP con sedili in pelle color cognac"
+    }
+  ],
+  "roadAlt": "Mercedes Vito VIP in viaggio sull’autostrada",
+  "childPhotoAlts": [
+    "Madre che assicura il figlio sorridente in un seggiolino all’interno del Mercedes Vito VIP, con l’Acropoli di Atene sullo sfondo",
+    "Seggiolino i-Size con cinture sul sedile posteriore di una Mercedes",
+    "Seggiolino girevole BeSafe 360 installato in un Mercedes Vito VIP"
+  ],
+  "tourFaqs": {
+    "athensTour": [
+      {
+        "q": "Cosa include il tour privato a Atene?",
+        "a": "Il tour include un Mercedes Vito VIP privato con un autista professionista di lingua inglese, prelievo porta a porta dal tuo hotel o Airbnb, visite alla zona dell’Acropoli, Plaka, Monastiraki, allo Stadio Panatenaico e ad altri luoghi simbolo di Atene, oltre a bevande fresche in omaggio a bordo."
+      },
+      {
+        "q": "",
+        "a": ""
+      },
+      {
+        "q": "Il tour della città di Atene è completamente privato?",
+        "a": "Sì, 100% privato. Non condividerai il veicolo con altri turisti. Il tour è esclusivamente per te e il tuo gruppo."
+      },
+      {
+        "q": "Possiamo personalizzare le soste del tour della città di Atene?",
+        "a": "Certamente. Adattiamo ogni tour ai tuoi interessi. Basta comunicarci in anticipo se ci sono siti o quartieri specifici che desideri visitare."
+      },
+      {
+        "q": "Quanti passeggeri possono partecipare al tour della città di Atene?",
+        "a": "Il nostro Mercedes Vito VIP può ospitare comodamente fino a 7 passeggeri, perfetto per famiglie e piccoli gruppi."
+      },
+      {
+        "q": "Come prenoto il tour della città di Atene?",
+        "a": "Puoi prenotare tramite WhatsApp, email o il nostro modulo di prenotazione online sul sito web. Confermiamo tutte le prenotazioni entro poche ore."
+      }
+    ],
+    "sounionTour": [
+      {
+        "q": "Cosa include il tour privato a Capo Sunio?",
+        "a": "Il tour include un Mercedes Vito VIP privato con un autista professionista di lingua inglese, prelievo porta a porta dal tuo hotel o Airbnb ad Atene, un percorso panoramico costiero lungo la Riviera di Atene, una sosta al Tempio di Poseidone e bevande fresche in omaggio a bordo. I biglietti d’ingresso non sono inclusi."
+      },
+      {
+        "q": "",
+        "a": ""
+      },
+      {
+        "q": "Quanto dista Capo Sunio da Atene?",
+        "a": "Capo Sunio dista circa 70 km dal centro di Atene, circa 1 ora di percorso panoramico lungo la Riviera di Atene."
+      },
+      {
+        "q": "Posso prenotare un tour al tramonto a Capo Sunio?",
+        "a": "Sì! Il nostro tour al tramonto parte nel tardo pomeriggio, così arriverai al Tempio di Poseidone poco prima del tramonto — uno dei panorami più spettacolari di tutta la Grecia."
+      },
+      {
+        "q": "Quanti passeggeri possono viaggiare insieme?",
+        "a": "Il nostro Mercedes Vito VIP può ospitare fino a 7 passeggeri, il che lo rende ideale per famiglie e piccoli gruppi."
+      },
+      {
+        "q": "Come prenoto il tour a Capo Sunio?",
+        "a": "Puoi prenotare tramite WhatsApp, email o il nostro modulo di prenotazione online. Confermiamo tutte le prenotazioni entro poche ore."
+      }
+    ],
+    "delphiTour": [
+      {
+        "q": "Cosa include il tour privato a Delfi?",
+        "a": "Il tour include un Mercedes Vito VIP privato con un autista professionista di lingua inglese, prelievo porta a porta dal tuo hotel o Airbnb ad Atene, un percorso panoramico attraverso la campagna greca, una visita al sito archeologico di Delfi e al Museo di Delfi e bevande fresche in omaggio a bordo. I biglietti d’ingresso non sono inclusi."
+      },
+      {
+        "q": "",
+        "a": ""
+      },
+      {
+        "q": "Quanto dista Delfi da Atene?",
+        "a": "Delfi dista circa 180 km da Atene, circa 2.5 ore di percorso panoramico attraverso la Beozia e le pendici del monte Parnaso."
+      },
+      {
+        "q": "Il tour a Delfi è completamente privato?",
+        "a": "Sì, 100% privato. Il veicolo e l’autista sono esclusivamente per te e il tuo gruppo — nessun tour condiviso, nessun estraneo."
+      },
+      {
+        "q": "Quanti passeggeri possono viaggiare insieme?",
+        "a": "Il nostro Mercedes Vito VIP può ospitare fino a 7 passeggeri, ideale per famiglie e piccoli gruppi."
+      },
+      {
+        "q": "Come prenoto il tour privato a Delfi?",
+        "a": "Puoi prenotare tramite WhatsApp, email o il nostro modulo di prenotazione online. Confermiamo tutte le prenotazioni entro poche ore."
+      }
+    ],
+    "meteoraTour": [
+      {
+        "q": "Cosa include il tour privato a Meteora?",
+        "a": "Il tour include un Mercedes Vito VIP privato con un autista professionista di lingua inglese, prelievo porta a porta dal tuo hotel o Airbnb ad Atene, un percorso panoramico attraverso la Tessaglia, visite agli spettacolari monasteri di Meteora e bevande fresche in omaggio a bordo. I biglietti d’ingresso non sono inclusi."
+      },
+      {
+        "q": "",
+        "a": ""
+      },
+      {
+        "q": "Quanto dista Meteora da Atene?",
+        "a": "Meteora dista circa 350 km da Atene, circa 3.5 ore di viaggio attraverso la Grecia centrale."
+      },
+      {
+        "q": "Il tour a Meteora è completamente privato?",
+        "a": "Sì, 100% privato. Il veicolo e l’autista sono esclusivamente per te e il tuo gruppo — nessun tour condiviso, nessun estraneo."
+      },
+      {
+        "q": "Quanti passeggeri possono viaggiare insieme?",
+        "a": "Il nostro Mercedes Vito VIP può ospitare fino a 7 passeggeri, ideale per famiglie e piccoli gruppi."
+      },
+      {
+        "q": "Come prenoto il tour privato a Meteora?",
+        "a": "Puoi prenotare tramite WhatsApp, email o il nostro modulo di prenotazione online. Confermiamo tutte le prenotazioni entro poche ore."
+      }
+    ],
+    "nafplioTour": [
+      {
+        "q": "Cosa include il tour privato a Nafplio?",
+        "a": "Il tour include un Mercedes Vito VIP privato con un autista professionista di lingua inglese, prelievo porta a porta dal tuo hotel o Airbnb ad Atene, un percorso panoramico attraverso il Peloponneso, visite al centro storico di Nafplio, alla fortezza di Palamidi e viste sul castello di Bourtzi, oltre a bevande fresche in omaggio a bordo. I biglietti d’ingresso non sono inclusi."
+      },
+      {
+        "q": "",
+        "a": ""
+      },
+      {
+        "q": "Quanto dista Nafplio da Atene?",
+        "a": "Nafplio dista circa 140 km da Atene, circa 1.5–2 ore di percorso panoramico attraverso il Peloponneso."
+      },
+      {
+        "q": "Il tour a Nafplio è completamente privato?",
+        "a": "Sì, 100% privato. Il veicolo e l’autista sono esclusivamente per te e il tuo gruppo — nessun tour condiviso, nessun estraneo."
+      },
+      {
+        "q": "Quanti passeggeri possono viaggiare insieme?",
+        "a": "Il nostro Mercedes Vito VIP può ospitare fino a 7 passeggeri, ideale per famiglie e piccoli gruppi."
+      },
+      {
+        "q": "Come prenoto il tour privato a Nafplio?",
+        "a": "Puoi prenotare tramite WhatsApp, email o il nostro modulo di prenotazione online. Confermiamo tutte le prenotazioni entro poche ore."
+      }
+    ]
+  },
+  "uiTranslations": {
+    "out of 5": "su 5",
+    "Verified reviews": "Recensioni verificate",
+    "Based on real customer experiences": "Basate su esperienze reali dei clienti",
+    "Chat with us": "Chatta con noi",
+    "Loading chat…": "Caricamento della chat…",
+    "Decrease passengers": "Diminuire i passeggeri",
+    "Increase passengers": "Aumentare i passeggeri",
+    "Landline": "Telefono fisso",
+    "Book now via WhatsApp": "Prenota ora tramite WhatsApp",
+    "Close menu": "Chiudi menu",
+    "Open menu": "Apri menu",
+    "Scroll to services": "Scorri fino ai servizi",
+    "Chat on WhatsApp": "Chatta su WhatsApp",
+    "Toggle night rate": "Attiva o disattiva la tariffa notturna",
+    "Read all reviews on Google": "Leggi tutte le recensioni su Google",
+    "Read All Reviews on Google": "Leggi tutte le recensioni su Google",
+    "Read {name}'s review on Google": "Leggi la recensione di {name} su Google",
+    "5.0 out of 5 — read customer reviews on Google": "5.0 su 5 — leggi le recensioni dei clienti su Google",
+    "Read review": "Leggi la recensione",
+    "Google": "Google"
+  }
+},
   seoContent: {
   "homeTitle": "Trasferimenti VIP Atene | Transfer Privati Aeroporto e Porti | H&A",
   "homeDescription": "Transfer VIP privati ad Atene: aeroporto ATH e Pireo, Mercedes Vito VIP per 7 passeggeri, seggiolini gratuiti su richiesta e accoglienza. Contattaci su WhatsApp.",
@@ -138,7 +334,7 @@ export default {
     eyebrow: "Trasferimenti privati ad Atene",
     title1: "Transfer di Lusso",
     title2: "ad Atene",
-    subtitle: "Vivi la Grecia con stile a bordo della nostra Mercedes Classe V. Transfer aeroportuali, prelievi al porto, tour privati e trasporti VIP.",
+    subtitle: "Vivi la Grecia con stile a bordo della nostra Mercedes Vito VIP. Transfer aeroportuali, prelievi al porto, tour privati e trasporti VIP.",
     whatsapp: "Preventivo su WhatsApp",
     call: "Chiamaci",
     exploreTours: "Scopri i Nostri Tour",
@@ -169,8 +365,8 @@ export default {
   },
   fleet: {
     eyebrow: "La Nostra Flotta",
-    title: "Mercedes Classe V",
-    desc: "Viaggia in massimo comfort con la nostra Mercedes Classe V — la scelta premium per i viaggiatori esigenti. Spazioso interno in pelle, climatizzatore, Wi-Fi e acqua in omaggio per ogni viaggio.",
+    title: "Mercedes Vito VIP",
+    desc: "Viaggia in massimo comfort con la nostra Mercedes Vito VIP — la scelta premium per i viaggiatori esigenti. Spazioso interno in pelle, climatizzatore, Wi-Fi e acqua in omaggio per ogni viaggio.",
     features: [
       "Fino a 7 passeggeri",
       "Sedili in pelle e illuminazione d'ambiente",
@@ -185,7 +381,7 @@ export default {
     title: "Perché Sceglierci",
     items: {
       licensed: { title: "Autorizzati e Assicurati", desc: "Servizio chauffeur professionale completamente autorizzato" },
-      passengers: { title: "7 Passeggeri", desc: "Spaziosa Mercedes Classe V per gruppi e famiglie" },
+      passengers: { title: "7 Passeggeri", desc: "Spaziosa Mercedes Vito VIP per gruppi e famiglie" },
       available: { title: "Disponibili 24/7", desc: "Servizio 24 ore su 24, mattina presto e tarda notte" },
       rated: { title: "Valutati 5 Stelle", desc: "Centinaia di viaggiatori soddisfatti da tutto il mondo" },
     },

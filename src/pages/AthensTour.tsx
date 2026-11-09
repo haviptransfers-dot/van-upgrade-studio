@@ -36,32 +36,10 @@ const AthensTour = () => {
     monastiraki: "🛍️",
   };
   const whatIncluded = t("athensTour.whatIncluded", { returnObjects: true }) as string[];
-  const faqItems = [
-    {
-      q: "What is included in the Athens City Tour?",
-      a: "The tour includes a private Mercedes Vito VIP with a professional English-speaking driver, door-to-door pickup from your hotel or Airbnb, visits to the Acropolis area, Plaka, Monastiraki, Panathenaic Stadium, and other iconic Athens landmarks, plus complimentary cold drinks on board.",
-    },
-    {
-      q: t("athensTour.durationQuestion", { tour: t("athensTour.title") }),
-      a: t("athensTour.durationAnswer", { duration: t("athensTour.durationVal") }),
-    },
-    {
-      q: "Is the Athens City Tour fully private?",
-      a: "Yes, 100% private. You will not share the vehicle with other tourists. The tour is exclusively for you and your group.",
-    },
-    {
-      q: "Can we customize the stops on the Athens City Tour?",
-      a: "Absolutely. We tailor every tour to your interests. Just let us know in advance if there are specific sites or neighborhoods you'd like to visit.",
-    },
-    {
-      q: "How many passengers can join the Athens City Tour?",
-      a: "Our Mercedes Vito VIP comfortably accommodates up to 7 passengers, perfect for families and small groups.",
-    },
-    {
-      q: "How do I book the Athens City Tour?",
-      a: "You can book via WhatsApp, email, or through our online booking form on the website. We confirm all bookings within a few hours.",
-    },
-  ];
+  const faqItems = (t("seoUi.tourFaqs.athensTour", { returnObjects: true }) as { q: string; a: string }[]).map((item, index) => index === 1 ? {
+    q: t("athensTour.durationQuestion", { tour: t("athensTour.title") }),
+    a: t("athensTour.durationAnswer", { duration: t("athensTour.durationVal") }),
+  } : item);
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -244,7 +222,7 @@ const AthensTour = () => {
         <section className="py-12 md:py-20 px-4">
           <div className="container mx-auto max-w-3xl">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-10">
-              Frequently Asked Questions
+              {t("seoContent.faqTitle")}
             </h2>
             <Accordion type="single" collapsible className="space-y-2">
               {faqItems.map((item, i) => (

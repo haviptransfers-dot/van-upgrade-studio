@@ -10,7 +10,7 @@ const PhotoWall = () => {
     <section className="relative h-[60vh] min-h-[440px] md:h-screen w-full overflow-hidden bg-background">
       <OptimizedImage
         src={wall3}
-        alt="Mercedes Vito VIP cruising on the highway"
+        alt={t("seoUi.roadAlt")}
         loading="lazy"
         decoding="async"
         width={1920}

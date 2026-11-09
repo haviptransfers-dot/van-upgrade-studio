@@ -69,7 +69,7 @@ const Gallery = () => {
           >
             <OptimizedImage
               src={img.src}
-              alt={img.alt}
+              alt={t(`seoUi.galleryAlts.${i}`)}
               loading="lazy"
               decoding="async"
               width={800}
