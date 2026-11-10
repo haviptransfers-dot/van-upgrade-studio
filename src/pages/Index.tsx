@@ -7,7 +7,7 @@ import { Phone, ChevronDown, MessageCircle, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import TrustBadge from "@/components/TrustBadge";
-import OptimizedImage from "@/components/OptimizedImage";
+import { heroDelivery } from "@/lib/heroDelivery";
 import DeferredSection from "@/components/DeferredSection";
 import ClickToChat from "@/components/ClickToChat";
 import { useAfterFirstPaint } from "@/hooks/use-after-first-paint";
@@ -100,7 +100,7 @@ const Index = ({ routeKey }: IndexProps) => {
       <nav className="home-navigation fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
         <div className="container mx-auto flex flex-wrap items-center justify-between py-2 md:py-3 px-4">
           <div className="flex items-center gap-2 md:gap-3 min-w-0">
-            <OptimizedImage src={logoImg} alt="H&A Tours" className="h-9 w-9 md:h-10 md:w-10 object-contain flex-shrink-0" width={40} height={40} sizes="40px" loading="eager" decoding="async" />
+            <img src={logoImg} alt="H&A Tours" className="h-9 w-9 md:h-10 md:w-10 object-contain flex-shrink-0" width={40} height={40} loading="eager" decoding="async" />
             <div className="min-w-0">
               <span className="font-display text-base md:text-lg font-bold text-primary whitespace-nowrap">H&A TOURS</span>
               <p className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-muted-foreground">{t("nav.tagline")}</p>
@@ -163,13 +163,11 @@ const Index = ({ routeKey }: IndexProps) => {
       <section className="home-hero relative flex items-center overflow-hidden">
         <div className="absolute inset-0 overflow-hidden bg-background">
           {/* Static base layer — first image always painted to avoid black gap */}
-          <OptimizedImage
-            src={heroCycleImages[0]}
+          <img
+            {...heroDelivery}
             alt={t("seoUi.galleryAlts.2")}
             fetchPriority="high"
             loading="eager"
-            sizes="100vw"
-            maxWidth={800}
             decoding="async"
             onLoad={() => requestAnimationFrame(() => requestAnimationFrame(() => setHeroPainted(true)))}
             onError={() => setHeroPainted(true)}

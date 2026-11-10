@@ -1,9 +1,10 @@
 import type { ImgHTMLAttributes } from "react";
 import manifest from "@/assets/imageManifest.json";
+import { hostedImageUrl } from "@/lib/heroDelivery";
+export { hostedImageUrl } from "@/lib/heroDelivery";
 
 type ImageEntry = { width: number; height: number; variants: { url: string; width: number; bytes: number }[] };
 const images = manifest as Record<string, ImageEntry>;
-export const hostedImageUrl = (url: string) => url.startsWith("/") ? `https://van-move-boost.lovable.app${url}` : url;
 
 export function imageEntry(src: string) {
   const filename = src.split("/").pop()?.split("?")[0] ?? "";

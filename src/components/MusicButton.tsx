@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Music, Pause } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { hostedImageUrl } from "./OptimizedImage";
+import { hostedImageUrl } from "@/lib/heroDelivery";
 import musicAsset from "@/assets/holiday-music.mp3.asset.json";
 
 // Floating music toggle — always visible (fixed), never autoplays.

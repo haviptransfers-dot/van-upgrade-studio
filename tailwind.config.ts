@@ -2,7 +2,9 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  // Only shipped UI contributes utilities; unused template controls and tests do not.
+  content: ["./src/**/*.{ts,tsx}", "!./src/test/**", "!./src/**/*.test.{ts,tsx}", "!./src/components/ui/**",
+    "./src/components/ui/{button,accordion,dialog,dropdown-menu}.tsx"],
   prefix: "",
   theme: {
     container: {
