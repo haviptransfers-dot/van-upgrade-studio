@@ -1,1 +1,14 @@
-null
+{
+  "@context": "https://schema.org",
+  "@type": "DataCatalog",
+  "name": "H&A VIP Tours public information",
+  "url": "https://haviptransfers.gr/ai-catalog.json",
+  "publisher": { "@id": "https://haviptransfers.gr/#organization" },
+  "dataset": [{
+    "@type": "Dataset",
+    "name": "H&A VIP Tours services and public travel information",
+    "description": "Public information about Athens transfers and private tours, with links to service pages.",
+    "url": "https://haviptransfers.gr/llms.txt",
+    "distribution": [{ "@type": "DataDownload", "contentUrl": "https://haviptransfers.gr/llms.txt", "encodingFormat": "text/plain" }]
+  }]
+}

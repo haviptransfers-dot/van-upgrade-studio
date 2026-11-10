@@ -1,4 +1,5 @@
-import OptimizedImage from "@/components/OptimizedImage";
+import flags from "@/assets/flagManifest.json";
+import { hostedImageUrl } from "@/lib/heroDelivery";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 import { useLocation } from "react-router-dom";
@@ -33,8 +34,8 @@ const LanguageSwitcher = () => {
             )}
             aria-label={`Switch language to ${l.label}`}
           >
-            <OptimizedImage
-              src={`${l.country}.png`}
+            <img
+              src={hostedImageUrl(flags[`${l.country}.png` as keyof typeof flags].variants[0].url)}
               sizes="20px"
               width={20}
               height={15}
