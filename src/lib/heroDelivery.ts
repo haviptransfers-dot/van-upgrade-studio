@@ -1,5 +1,5 @@
-import mobile from "@/assets/riviera-home-480.webp.asset.json";
-import desktop from "@/assets/riviera-home-800.webp.asset.json";
+import mobile from "../assets/riviera-home-480.webp.asset.json";
+import desktop from "../assets/riviera-home-800.webp.asset.json";
 
 export const hostedImageUrl = (url: string) => url.startsWith("/") ? `https://van-move-boost.lovable.app${url}` : url;
 export const heroDelivery = {
