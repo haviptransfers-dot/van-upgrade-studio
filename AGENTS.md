@@ -8,6 +8,7 @@
 
 - Use the generated image manifest through OptimizedImage and DeferredBackground for responsive WebP delivery; this keeps intrinsic sizes and optimized variants consistent across pages. Resolve hosted image pointers through the stable published asset origin so direct local preview tests also render CDN photos.
 - Keep non-homepage routes and non-English language resources dynamically imported; visitors should not download unrelated page or language content.
+- Keep the persistent music control in its own Suspense boundary and exclude unused template UI/test files from Tailwind scanning; noncritical controls must not blank the page or add unused utilities.
 - Defer below-fold homepage modules until they approach the viewport; load chat only through the click-to-chat boundary and reveal floating WhatsApp after both the hero paint and a timer-or-scroll gate, so unrelated interactions cannot load chat or interrupt the hero.
 - Keep the homepage section tree and slideshow animation engine behind separate lazy boundaries; animate the first photo with CSS and activate lower content only at the viewport or a matching navigation anchor, reducing first-screen React work without removing animations.
 - Load the homepage tour dropdown implementation on its first click, keeping its initial trigger identical; this avoids executing menu dependencies before they are needed.
