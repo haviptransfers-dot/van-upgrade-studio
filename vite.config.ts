@@ -10,6 +10,7 @@ import { sitemapPlugin } from "./sitemapPlugin";
 import { organization } from "./src/data/structuredData";
 import { canonicalPlugin } from "./canonicalPlugin";
 import { multilingualPlugin } from "./multilingualPlugin";
+import { heroDelivery } from "./src/lib/heroDelivery";
 
 function performanceHtml() {
   return {
@@ -17,24 +18,19 @@ function performanceHtml() {
     transformIndexHtml: {
       order: "post" as const,
       handler(html: string) {
-      const manifest = JSON.parse(readFileSync(path.resolve(__dirname, "src/assets/imageManifest.json"), "utf8"));
-      const variants = (manifest["hero-sunset-car.webp"].variants as { url: string; width: number }[]).filter((variant) => variant.width <= 800);
-      const hero = variants[variants.length - 1];
-      if (!hero) return html;
-      const hosted = (url: string) => `https://van-move-boost.lovable.app${url}`;
-      const srcset = variants.map((v) => `${hosted(v.url)} ${v.width}w`).join(", ");
       const critical = readFileSync(path.resolve(__dirname, "src/critical-screen.css"), "utf8");
       const fontPreloads = [...critical.matchAll(/src: url\(([^)]+\/(?:playfair-display|montserrat)-latin\.woff2)\)/g)]
         .map((match) => `<link rel="preload" as="font" type="font/woff2" href="${match[1]}" crossorigin />`).join("");
       const screen = readFileSync(path.resolve(__dirname, "src/first-screen.html"), "utf8")
-        .replaceAll("__HERO_SRCSET__", srcset).replaceAll("__HERO_SRC__", hosted(hero.url))
+        .replaceAll("__HERO_SRCSET__", heroDelivery.srcSet).replaceAll("__HERO_SRC__", heroDelivery.src)
+        .replace('sizes="100vw"', `sizes="${heroDelivery.sizes}"`)
         .replace('class="absolute inset-0 w-full h-full object-cover"', 'class="absolute inset-0 w-full h-full object-cover hero-base-zoom"');
       return html
         .replace("<!-- ORGANIZATION_SCHEMA -->", `<script id="organization-structured-data" type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", ...organization })}</script>`)
         .replaceAll("setTimeout(function () {", "window.scheduleNonCritical(function () {")
         .replaceAll("}, 3000);", "});")
         .replace("<!-- Google Preferred Sources button script -->", `<script>${nonCriticalScheduler}</script><!-- Google Preferred Sources button script -->`)
-        .replace("<!-- HERO_PRELOAD -->", `<link rel="preconnect" href="https://van-move-boost.lovable.app" crossorigin /><link rel="preload" as="image" href="${hosted(hero.url)}" imagesrcset="${srcset}" imagesizes="100vw" type="image/webp" fetchpriority="high" />`)
+        .replace("<!-- HERO_PRELOAD -->", `<link rel="preconnect" href="https://van-move-boost.lovable.app" crossorigin /><link rel="preload" as="image" href="${heroDelivery.src}" imagesrcset="${heroDelivery.srcSet}" imagesizes="${heroDelivery.sizes}" type="image/webp" fetchpriority="high" />`)
         .replace("<!-- CRITICAL_CSS -->", `${fontPreloads}<style>${critical}</style>`)
         .replace("<!-- FIRST_SCREEN -->", `<div id="first-screen">${screen}</div>`)
         .replace(/<link\b[^>]*rel="stylesheet"[^>]*>/g, (tag) => {
