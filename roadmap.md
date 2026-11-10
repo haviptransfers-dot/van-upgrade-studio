@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Optimize homepage mobile delivery without visual/content changes: smaller responsive hero, deferred CSS/JS and media, preserve font/tracking behavior, fix root AI catalog response, and verify booking/SEO/mobile rendering.
+- [done] Optimized homepage delivery without visual/content changes: 23.7/52.4KB responsive WebP hero with matching high-priority preload; isolated image metadata and music loading, excluded unused template/test CSS, preserved lazy media/font swap/consent-gated tracking, and served a Schema.org root DataCatalog. All 186 tests passed; desktop/mobile images, menus, three-passenger €85 WhatsApp message, head tags and catalog verified. Build OK. No publication; new hosted PageSpeed scores remain unmeasured (only two visitor FCP readings and no LCP data).
 
 - [done] Normalized 232 sitemap locs, 2088 alternates and all static/client canonical and og:url tags to trailing slashes; renamed 20 hosted originals/variants with identical bytes and updated all image references. All 184 tests passed; 232 initial documents, 20 image responses and desktop/mobile rendering verified. Publication requested in this turn; completion of deployment remains external.
 
