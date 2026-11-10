@@ -59,7 +59,7 @@ const MusicButton = lazy(() => import("./components/MusicButton"));
 const App = () => (
       <BrowserRouter>
         <Suspense fallback={<div className="min-h-screen bg-background" aria-busy="true" />}>
-        <MusicButton />
+        <Suspense fallback={null}><MusicButton /></Suspense>
         <PublicRoutes />
         <LazyCookieConsent />
         </Suspense>

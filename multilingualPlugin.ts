@@ -27,6 +27,13 @@ export function multilingualPlugin(): Plugin {
       dev = server;
       server.middlewares.use(async (req, res, next) => {
         const requestPath = req.url?.split("?")[0] ?? "/";
+        // This optional catalog has no adopted schema and must not serve SPA HTML.
+        if (requestPath === "/ai-catalog.json") {
+          res.statusCode = 404;
+          res.setHeader("Content-Type", "text/plain; charset=utf-8");
+          res.end("Not found");
+          return;
+        }
         const language = languageFromPath(requestPath);
         const base = basePath(requestPath.replace(/\/index\.html$/, "/"));
         const slug = base.startsWith("/blog/") ? base.slice(6) : "";

@@ -22,7 +22,8 @@ async function mount() {
   // Each page sets its own canonical once React mounts.
   document.getElementById("static-canonical")?.remove();
   document.querySelectorAll('[data-static-head]').forEach((tag) => tag.remove());
-  document.body.classList.remove("first-paint");
+  // Keep the already-painted homepage visible until its React hero is ready.
+  if (!document.querySelector('[data-page-snapshot] .home-hero')) document.body.classList.remove("first-paint");
   createRoot(root).render(
   <HelmetProvider>
     <App />
