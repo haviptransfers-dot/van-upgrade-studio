@@ -7,11 +7,11 @@ import el from "@/i18n/locales/el";
 import de from "@/i18n/locales/de";
 import es from "@/i18n/locales/es";
 import fr from "@/i18n/locales/fr";
-import it from "@/i18n/locales/it";
+import itLocale from "@/i18n/locales/it";
 import he from "@/i18n/locales/he";
 import ar from "@/i18n/locales/ar";
 
-const locales = { en, el, de, es, fr, it, he, ar };
+const locales = { en, el, de, es, fr, it: itLocale, he, ar };
 const excluded = ["child-car-seats-private-transfers-greece"];
 
 describe("multilingual SEO clean-up", () => {
