@@ -22,5 +22,5 @@ export const nafplioPost = {
 export const nafplioFaq = [
   { question: "How long is Athens to Nafplio?", answer: "~2 hours, 150km" },
   { question: "Can we stop at Corinth Canal?", answer: "Yes, ideal 15-min stop" },
-  { question: "Is car seat available?", answer: "Yes, free on request" },
+  { question: "Is car seat available?", answer: "Yes, included on request" },
 ];

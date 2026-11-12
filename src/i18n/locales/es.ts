@@ -235,7 +235,7 @@ export default {
     {
       "heading": "Traslados Familiares con Sillas Infantiles",
       "paragraphs": [
-        "Viajad juntos con espacio para hasta siete pasajeros, sin contar al conductor. Las sillas infantiles son gratuitas bajo petición: indica la edad de cada niño y confirma las sillas necesarias antes de reservar el traslado de aeropuerto, puerto u hotel.",
+        "Viajad juntos con espacio para hasta siete pasajeros, sin contar al conductor. Las sillas infantiles están incluidas bajo petición: indica la edad de cada niño y confirma las sillas necesarias antes de reservar el traslado de aeropuerto, puerto u hotel.",
         "Avísanos sobre carritos y otras maletas al organizar el viaje. Podemos comentar las necesidades de tu familia junto con los detalles de recogida, para planificar la llegada o salida sin dejar cuestiones importantes para el día del traslado."
       ]
     }
@@ -263,10 +263,10 @@ export default {
       ]
     },
     {
-      "heading": "Equipaje y Viajes Familiares con Sillas Infantiles Gratuitas",
+      "heading": "Equipaje y Viajes Familiares con Sillas Infantiles incluidas bajo petición",
       "paragraphs": [
         "Mantén unido a tu grupo en un Mercedes Vito VIP con asientos enfrentados tipo salón y capacidad para hasta siete pasajeros, sin contar al conductor. Indica cuántos bultos llevas, incluidas maletas grandes, carritos u otros objetos voluminosos. La capacidad de pasajeros por sí sola no confirma que quepa cualquier combinación de equipaje: comenta tus necesidades antes de confirmar el viaje.",
-        "Las sillas infantiles son gratuitas bajo petición. Indica las edades de tus hijos y el número de sillas al solicitar el presupuesto, y confirma lo acordado antes de reservar. Se aplica el mismo cuidado tanto si tu familia viaja de una terminal de cruceros a un hotel, de un ferry al aeropuerto de Atenas o de regreso al Pireo. Comparte el viaje completo para acordar de antemano ruta, sillas solicitadas, equipaje, punto de encuentro y precio."
+        "Las sillas infantiles están incluidas bajo petición. Indica las edades de tus hijos y el número de sillas al solicitar el presupuesto, y confirma lo acordado antes de reservar. Se aplica el mismo cuidado tanto si tu familia viaja de una terminal de cruceros a un hotel, de un ferry al aeropuerto de Atenas o de regreso al Pireo. Comparte el viaje completo para acordar de antemano ruta, sillas solicitadas, equipaje, punto de encuentro y precio."
       ]
     }
   ],
@@ -520,7 +520,7 @@ export default {
     },
   },
   seo: {
-    airport: { title: "Traslado Aeropuerto de Atenas (ATH) – Mercedes Vito VIP | H&A VIP Tours", description: "Traslados privados desde el Aeropuerto de Atenas (ATH) en Mercedes Vito VIP. Recepción, seguimiento del vuelo y precio fijo acordado. Reserve por WhatsApp." },
+    airport: { title: "Traslado Aeropuerto de Atenas – Mercedes Vito VIP | H&A VIP Tours", description: "Traslados privados desde el Aeropuerto de Atenas (ATH) en Mercedes Vito VIP. Recepción, seguimiento del vuelo y precio fijo acordado. Reserve por WhatsApp." },
     piraeus: { title: "Traslado Puerto del Pireo desde Atenas y Aeropuerto | H&A VIP Tours", description: "Traslados privados de lujo a y desde los puertos del Pireo, Rafina y Lavrio. Ideal para cruceros y ferris. Mercedes Vito VIP, 7 pasajeros, precios fijos." },
     athens: { title: "Tour Privado por Atenas – Acrópolis y Monumentos | H&A VIP Tours", description: "Tour privado por la ciudad de Atenas con conductor profesional. Visita la Acrópolis, Plaka, Syntagma y el Estadio Panatenaico en un Mercedes Vito VIP." },
     delphi: { title: "Tour Privado a Delfos desde Atenas | H&A VIP Tours", description: "Excursión privada de día completo desde Atenas a Delfos, el antiguo Oráculo de Apolo. Mercedes Vito VIP de lujo con conductor angloparlante. Parada en Arachova." },
@@ -542,7 +542,7 @@ export default {
       distomo: { title: "Distomo / Livadia", desc: "Una pausa relajante en la ruta (parada opcional)" },
     },
     whatIncludedTitle: "Qué está incluido",
-    whatIncluded: ["Recogida y entrega en el lugar que desees", "Van de lujo Mercedes-Benz con asientos de cuero", "Wi-Fi gratis durante todo el trayecto", "Agua embotellada", "Tour privado — solo tú y tu grupo"],
+    whatIncluded: ["Recogida y entrega en el lugar que desees", "Mercedes Vito VIP con asientos de cuero", "Wi-Fi gratis durante todo el trayecto", "Agua embotellada", "Tour privado — solo tú y tu grupo"],
     infoTitle: "Información",
     duration: "Duración", durationVal: "8 horas",
     durationQuestion: "¿Cuánto dura el tour «{{tour}}»?",
@@ -564,7 +564,7 @@ export default {
     badge: "Experiencia VIP Privada",
     title: "Tour por la ciudad de Atenas",
     heroHeading: "Descubre Atenas a tu propio ritmo",
-    heroText: "Vive Atenas como se merece — con comodidad, privacidad y estilo. El Tour por la ciudad de Atenas de H&A Tours es una visita exclusivamente privada de 3 horas en una furgoneta Mercedes-Benz de lujo, diseñada para quienes desean ver los principales monumentos de la ciudad sin prisas y sin grupos de turistas.",
+    heroText: "Vive Atenas como se merece — con comodidad, privacidad y estilo. El Tour por la ciudad de Atenas de H&A Tours es una visita exclusivamente privada de 3 horas en un Mercedes Vito VIP, diseñada para quienes desean ver los principales monumentos de la ciudad sin prisas y sin grupos de turistas.",
     includesTitle: "Qué incluye el tour",
     includes: {
       stadium: { title: "Estadio Panatenaico", desc: "El único estadio olímpico de mármol del mundo" },
@@ -575,7 +575,7 @@ export default {
       monastiraki: { title: "Monastiraki", desc: "El alma del casco antiguo con su ambiente y sus colores" },
     },
     whatIncludedTitle: "Qué está incluido",
-    whatIncluded: ["Recogida y regreso desde el lugar que elijas", "Furgoneta Mercedes-Benz de lujo con asientos de cuero", "Wi-Fi gratis durante todo el viaje", "Agua embotellada", "Tour privado — solo tú y tu grupo"],
+    whatIncluded: ["Recogida y regreso desde el lugar que elijas", "Mercedes Vito VIP con asientos de cuero", "Wi-Fi gratis durante todo el viaje", "Agua embotellada", "Tour privado — solo tú y tu grupo"],
     infoTitle: "Información",
     duration: "Duración", durationVal: "3 horas",
     durationQuestion: "¿Cuánto dura el tour «{{tour}}»?",
@@ -607,7 +607,7 @@ export default {
       voula: { title: "Voula / Glyfada", desc: "Para café o un descanso con vistas al mar (parada opcional)" },
     },
     whatIncludedTitle: "Qué está incluido",
-    whatIncluded: ["Recogida y entrega en el lugar que desees", "Furgoneta de lujo Mercedes-Benz con asientos de cuero", "Wi-Fi gratis durante todo el trayecto", "Agua embotellada", "Tour privado — solo tú y tu grupo"],
+    whatIncluded: ["Recogida y entrega en el lugar que desees", "Mercedes Vito VIP con asientos de cuero", "Wi-Fi gratis durante todo el trayecto", "Agua embotellada", "Tour privado — solo tú y tu grupo"],
     infoTitle: "Información",
     duration: "Duración", durationVal: "5 horas",
     durationQuestion: "¿Cuánto dura el tour «{{tour}}»?",
@@ -640,7 +640,7 @@ export default {
       lamia: { title: "Lamia", desc: "Para un descanso relajante y café (parada opcional)" },
     },
     whatIncludedTitle: "Qué está incluido",
-    whatIncluded: ["Recogida y entrega en el lugar que desees", "Furgoneta de lujo Mercedes-Benz con asientos de cuero", "Wi-Fi gratis durante todo el trayecto", "Agua embotellada", "Tour privado — solo tú y tu grupo"],
+    whatIncluded: ["Recogida y entrega en el lugar que desees", "Mercedes Vito VIP con asientos de cuero", "Wi-Fi gratis durante todo el trayecto", "Agua embotellada", "Tour privado — solo tú y tu grupo"],
     infoTitle: "Información",
     duration: "Duración", durationVal: "12 horas",
     durationQuestion: "¿Cuánto dura el tour «{{tour}}»?",
@@ -674,7 +674,7 @@ export default {
       canal: { title: "Canal de Corinto", desc: "Una de las construcciones más impresionantes del siglo XIX (parada opcional)" },
     },
     whatIncludedTitle: "Qué está incluido",
-    whatIncluded: ["Recogida y entrega en el lugar que desees", "Furgoneta de lujo Mercedes-Benz con asientos de cuero", "Wi-Fi gratis durante todo el trayecto", "Agua embotellada", "Tour privado — solo tú y tu grupo"],
+    whatIncluded: ["Recogida y entrega en el lugar que desees", "Mercedes Vito VIP con asientos de cuero", "Wi-Fi gratis durante todo el trayecto", "Agua embotellada", "Tour privado — solo tú y tu grupo"],
     infoTitle: "Información",
     duration: "Duración", durationVal: "8 horas",
     durationQuestion: "¿Cuánto dura el tour «{{tour}}»?",

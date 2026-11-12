@@ -235,7 +235,7 @@ export default {
     {
       "heading": "Family Transfers with Child Seats",
       "paragraphs": [
-        "Travel together with space for up to seven passengers, excluding the driver. Child seats are available free of charge on request: share each child’s age and confirm the seats needed before booking your airport, port or hotel transfer.",
+        "Travel together with space for up to seven passengers, excluding the driver. Child seats are included on request: share each child’s age and confirm the seats needed before booking your airport, port or hotel transfer.",
         "Let us know about pushchairs and other luggage when arranging your journey. We can discuss your family’s requirements alongside the pickup details, helping you plan an arrival or departure without leaving important questions until the day."
       ]
     }
@@ -263,10 +263,10 @@ export default {
       ]
     },
     {
-      "heading": "Luggage and Family Travel with Free Child Seats",
+      "heading": "Luggage and Family Travel with Child Seats Included on Request",
       "paragraphs": [
         "Keep your group together in a Mercedes Vito VIP with a face-to-face lounge layout and capacity for up to seven passengers, excluding the driver. Tell us how many bags you are bringing, including large suitcases, pushchairs or other bulky items. Passenger capacity alone does not confirm that every luggage combination will fit, so discuss your luggage requirements before confirming the journey.",
-        "Child seats are free on request. Please give us your children’s ages and the number of seats required when asking for a quote, and confirm the arrangement before booking. The same care applies whether your family is travelling from a cruise terminal to a hotel, from a ferry to Athens Airport or back to Piraeus. Share the complete journey with us so the route, requested seats, luggage, meeting point and fare can be agreed in advance."
+        "Child seats are included on request. Please give us your children’s ages and the number of seats required when asking for a quote, and confirm the arrangement before booking. The same care applies whether your family is travelling from a cruise terminal to a hotel, from a ferry to Athens Airport or back to Piraeus. Share the complete journey with us so the route, requested seats, luggage, meeting point and fare can be agreed in advance."
       ]
     }
   ],
@@ -542,7 +542,7 @@ export default {
       distomo: { title: "Distomo / Livadia", desc: "A relaxing break along the route (optional stop)" },
     },
     whatIncludedTitle: "What's included",
-    whatIncluded: ["Pickup & drop-off from your chosen location", "Luxury Mercedes-Benz van with leather seats", "Free Wi-Fi throughout the journey", "Bottled water", "Private tour — only you and your group"],
+    whatIncluded: ["Pickup & drop-off from your chosen location", "Mercedes Vito VIP with leather seats", "Free Wi-Fi throughout the journey", "Bottled water", "Private tour — only you and your group"],
     infoTitle: "Information",
     duration: "Duration", durationVal: "8 hours",
     durationQuestion: "How long is the {{tour}}?",
@@ -564,7 +564,7 @@ export default {
     badge: "Private VIP Experience",
     title: "Athens City Tour",
     heroHeading: "Discover Athens at your own pace",
-    heroText: "Experience Athens the way it deserves — with comfort, privacy and style. The Athens City Tour by H&A Tours is an exclusively private 3-hour tour in a luxury Mercedes-Benz van, designed for those who want to see the city's most important landmarks without rushing and without tourist crowds.",
+    heroText: "Experience Athens the way it deserves — with comfort, privacy and style. The Athens City Tour by H&A Tours is an exclusively private 3-hour tour in a Mercedes Vito VIP, designed for those who want to see the city's most important landmarks without rushing and without tourist crowds.",
     includesTitle: "What the tour includes",
     includes: {
       stadium: { title: "Panathenaic Stadium", desc: "The only all-marble Olympic stadium in the world" },
@@ -575,7 +575,7 @@ export default {
       monastiraki: { title: "Monastiraki", desc: "The soul of the old town with its atmosphere and colors" },
     },
     whatIncludedTitle: "What's included",
-    whatIncluded: ["Pickup & drop-off from your chosen location", "Luxury Mercedes-Benz van with leather seats", "Free Wi-Fi throughout the journey", "Bottled water", "Private tour — only you and your group"],
+    whatIncluded: ["Pickup & drop-off from your chosen location", "Mercedes Vito VIP with leather seats", "Free Wi-Fi throughout the journey", "Bottled water", "Private tour — only you and your group"],
     infoTitle: "Information",
     duration: "Duration", durationVal: "3 hours",
     durationQuestion: "How long is the {{tour}}?",
@@ -607,7 +607,7 @@ export default {
       voula: { title: "Voula / Glyfada", desc: "For coffee or a break with a sea view (optional stop)" },
     },
     whatIncludedTitle: "What's included",
-    whatIncluded: ["Pickup & drop-off from your chosen location", "Luxury Mercedes-Benz van with leather seats", "Free Wi-Fi throughout the journey", "Bottled water", "Private tour — only you and your group"],
+    whatIncluded: ["Pickup & drop-off from your chosen location", "Mercedes Vito VIP with leather seats", "Free Wi-Fi throughout the journey", "Bottled water", "Private tour — only you and your group"],
     infoTitle: "Information",
     duration: "Duration", durationVal: "5 hours",
     durationQuestion: "How long is the {{tour}}?",
@@ -640,7 +640,7 @@ export default {
       lamia: { title: "Lamia", desc: "For a relaxing break and coffee (optional stop)" },
     },
     whatIncludedTitle: "What's included",
-    whatIncluded: ["Pickup & drop-off from your chosen location", "Luxury Mercedes-Benz van with leather seats", "Free Wi-Fi throughout the journey", "Bottled water", "Private tour — only you and your group"],
+    whatIncluded: ["Pickup & drop-off from your chosen location", "Mercedes Vito VIP with leather seats", "Free Wi-Fi throughout the journey", "Bottled water", "Private tour — only you and your group"],
     infoTitle: "Information",
     duration: "Duration", durationVal: "12 hours",
     durationQuestion: "How long is the {{tour}}?",
@@ -674,7 +674,7 @@ export default {
       canal: { title: "Corinth Canal", desc: "One of the most impressive constructions of the 19th century (optional stop)" },
     },
     whatIncludedTitle: "What's included",
-    whatIncluded: ["Pickup & drop-off from your chosen location", "Luxury Mercedes-Benz van with leather seats", "Free Wi-Fi throughout the journey", "Bottled water", "Private tour — only you and your group"],
+    whatIncluded: ["Pickup & drop-off from your chosen location", "Mercedes Vito VIP with leather seats", "Free Wi-Fi throughout the journey", "Bottled water", "Private tour — only you and your group"],
     infoTitle: "Information",
     duration: "Duration", durationVal: "8 hours",
     durationQuestion: "How long is the {{tour}}?",

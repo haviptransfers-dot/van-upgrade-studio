@@ -312,7 +312,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       metaTitle:
         "نقل خاص من مطار أثينا إلى الفندق | H&A VIP Transfers",
       metaDescription:
-        "احجز نقلًا خاصًا فاخرًا من مطار أثينا إلى فندقك. مرسيدس Mercedes Vito VIP، دعم واتساب على مدار الساعة، استلام ثابت، طريق مباشر.",
+        "احجز نقلًا خاصًا فاخرًا من مطار أثينا إلى فندقك. Mercedes Vito VIP، دعم واتساب على مدار الساعة، استلام ثابت، طريق مباشر.",
       sections: [
         {
           paragraphs: [
@@ -367,7 +367,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       metaTitle:
         "הסעה פרטית מנמל התעופה אתונה למלון | H&A VIP Transfers",
       metaDescription:
-        "הזמינו הסעה פרטית פרימיום מנמל התעופה של אתונה למלון שלכם. מרצדס Mercedes Vito VIP, תמיכת וואטסאפ 24/7, איסוף קבוע, מסלול ישיר.",
+        "הזמינו הסעה פרטית פרימיום מנמל התעופה של אתונה למלון שלכם. Mercedes Vito VIP, תמיכת וואטסאפ 24/7, איסוף קבוע, מסלול ישיר.",
       sections: [
         {
           paragraphs: [
@@ -821,7 +821,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
     ],
   },
   ar: {
-    title: "خدمة السائق الخاص بسيارة مرسيدس Mercedes Vito VIP في أثينا",
+    title: "خدمة السائق الخاص بسيارة Mercedes Vito VIP في أثينا",
     excerpt:
       "اكتشفوا لماذا تُعد خدمة السائق الخاص بسيارة مرسيدس Mercedes Vito VIP الطريقة المثالية للتنقل في أثينا — من نقل المطار وربط الموانئ إلى الجولات الخاصة المصممة حسب الطلب.",
     imageAlt:
@@ -829,7 +829,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
     metaTitle:
       "خدمة سائق خاص بسيارة Mercedes Vito VIP في أثينا | H&A VIP Transfers",
     metaDescription:
-      "احجزوا خدمة سائق خاص فاخرة بسيارة مرسيدس Mercedes Vito VIP في أثينا. نقل من المطار والميناء والفندق وجولات خاصة مصممة حسب الطلب مع سائق محترف.",
+      "احجزوا خدمة سائق خاص فاخرة بسيارة Mercedes Vito VIP في أثينا. نقل من المطار والميناء والفندق وجولات خاصة مصممة حسب الطلب مع سائق محترف.",
     sections: [
       {
         paragraphs: [
@@ -902,15 +902,15 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
     ],
   },
   he: {
-    title: "שירות נהג פרטי במרצדס Mercedes Vito VIP באתונה",
+    title: "שירות נהג פרטי ב-Mercedes Vito VIP באתונה",
     excerpt:
       "גלו מדוע שירות נהג פרטי במרצדס Mercedes Vito VIP הוא הדרך האידיאלית לנוע באתונה — מהסעות שדה תעופה וחיבורי נמל ועד סיורים פרטיים בהתאמה אישית.",
     imageAlt:
       "מרצדס Mercedes Vito VIP שחורה עם נהג פרטי והאקרופוליס של אתונה ברקע",
     metaTitle:
-      "שירות נהג פרטי במרצדס Mercedes Vito VIP באתונה | H&A VIP Transfers",
+      "שירות נהג פרטי ב-Mercedes Vito VIP באתונה | H&A VIP Transfers",
     metaDescription:
-      "הזמינו שירות נהג פרטי יוקרתי במרצדס Mercedes Vito VIP באתונה. הסעות משדה תעופה, נמל ומלון וסיורים פרטיים בהתאמה אישית עם נהג מקצועי.",
+      "הזמינו שירות נהג פרטי יוקרתי ב-Mercedes Vito VIP באתונה. הסעות משדה תעופה, נמל ומלון וסיורים פרטיים בהתאמה אישית עם נהג מקצועי.",
     sections: [
       {
         paragraphs: [
@@ -1372,7 +1372,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
         "رسم توضيحي من H&A Tours لسيارة مرسيدس Mercedes Vito VIP تربط ميناء بيرايوس والمدينة ومطار أثينا",
       metaTitle: "نقل خاص بيرايوس - مطار أثينا | H&A VIP Transfers",
       metaDescription:
-        "احجز نقلاً خاصاً من ميناء بيرايوس إلى مطار أثينا. مرسيدس Mercedes Vito VIP، تنسيق الاستقبال من السفن السياحية، دعم واتساب على مدار الساعة.",
+        "احجز نقلاً خاصاً من ميناء بيرايوس إلى مطار أثينا. Mercedes Vito VIP، تنسيق الاستقبال من السفن السياحية، دعم واتساب على مدار الساعة.",
       sections: [
         {
           paragraphs: [
@@ -1448,7 +1448,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
         "איור של H&A Tours עם מרצדס Mercedes Vito VIP המחברת את נמל פיראוס, העיר ושדה התעופה של אתונה",
       metaTitle: "הסעה פרטית פיראוס - שדה התעופה אתונה | H&A VIP Transfers",
       metaDescription:
-        "הזמינו הסעה פרטית מנמל פיראוס לשדה התעופה של אתונה. מרצדס Mercedes Vito VIP, תיאום איסוף מאוניות תענוגות, תמיכת וואטסאפ 24/7.",
+        "הזמינו הסעה פרטית מנמל פיראוס לשדה התעופה של אתונה. Mercedes Vito VIP, תיאום איסוף מאוניות תענוגות, תמיכת וואטסאפ 24/7.",
       sections: [
         {
           paragraphs: [
@@ -1879,15 +1879,15 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       ],
     },
     ar: {
-      title: "نقل رحلات الكروز من بيريوس: نقل خاص فاخر بمرسيدس Mercedes Vito VIP",
+      title: "نقل رحلات الكروز من بيرايوس: نقل خاص فاخر بـMercedes Vito VIP",
       excerpt:
         "رسا القارب وتم تسليم الأمتعة. اكتشف لماذا يغيّر النقل الخاص المحجوز مسبقًا لرحلات الكروز من بيريوس بمرسيدس Mercedes Vito VIP يومك الأول أو الأخير في أثينا.",
       imageAlt:
         "رسم توضيحي من H&A Tours يظهر مرسيدس Mercedes Vito VIP وسفينة كروز في بيريوس والأكروبوليس — نقل كروز خاص",
       metaTitle:
-        "نقل الكروز من بيريوس بسيارة Mercedes Vito VIP | H&A VIP Transfers",
+        "نقل الكروز من بيرايوس بسيارة Mercedes Vito VIP | H&A VIP Transfers",
       metaDescription:
-        "نقل خاص محجوز مسبقًا لرحلات الكروز من ميناء بيريوس إلى الفندق أو المطار أو أثينا. مرسيدس Mercedes Vito VIP، تنسيق النزول، واتساب على مدار الساعة.",
+        "نقل خاص محجوز مسبقًا لرحلات الكروز من ميناء بيرايوس إلى الفندق أو المطار أو أثينا. Mercedes Vito VIP، تنسيق النزول، واتساب على مدار الساعة.",
       sections: [
         {
           paragraphs: [
@@ -2400,10 +2400,10 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       ],
     },
     ar: {
-      title: "جولة خاصة في أثينا مع سائق: اكتشف المدينة في مرسيدس Mercedes Vito VIP",
+      title: "جولة خاصة في أثينا مع سائق: اكتشف المدينة في Mercedes Vito VIP",
       excerpt: "جولة خاصة مخططة مع سائق تحوّل يومًا مزدحمًا في أثينا إلى تجربة خاصة مبنية حول أولوياتك — سائق محترف، مركبة فاخرة، برنامج مرن.",
       imageAlt: "رسم توضيحي لشركة H&A Tours Ltd — جولة خاصة في وسط أثينا التاريخي مع مرسيدس Mercedes Vito VIP سوداء، البارثينون وتل ليكابيتوس عند الغروب",
-      metaTitle: "جولة خاصة في أثينا مع سائق | مرسيدس Mercedes Vito VIP | H&A VIP Tours",
+      metaTitle: "جولة خاصة في أثينا مع سائق | Mercedes Vito VIP | H&A VIP Tours",
       metaDescription: "اكتشف أثينا بإيقاعك الخاص مع جولة خاصة وسائق محترف في Mercedes Vito VIP. برنامج مخصص، استقبال من الفندق أو محطة الرحلات البحرية، مقاعد أطفال عند الطلب.",
       sections: [
         {
@@ -2772,11 +2772,11 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       ],
     },
     ar: {
-      title: "نقل خاص من أثينا إلى رأس سونيو: معبد بوسيدون بسيارة مرسيدس Mercedes Vito VIP",
+      title: "نقل خاص من أثينا إلى رأس سونيو: معبد بوسيدون بسيارة Mercedes Vito VIP",
       excerpt: "رحلة ساحلية هادئة إلى معبد بوسيدون، منظمة حسب وقت مغادرتك وإيقاعك. اكتشف لماذا يُعد السائق الخاص مع مرسيدس Mercedes Vito VIP أفضل طريقة لعيش تجربة رأس سونيون.",
       imageAlt: "رسم توضيحي لسيارة مرسيدس Mercedes Vito VIP سوداء على طريق ساحلي ملون باتجاه معبد بوسيدون في رأس سونيون عند الغروب",
       metaTitle: "نقل خاص أثينا – رأس سونيو، معبد بوسيدون | H&A VIP Tours",
-      metaDescription: "نقل خاص بسائق من أثينا إلى رأس سونيون ومعبد بوسيدون بسيارة مرسيدس Mercedes Vito VIP. جولات الغروب، توقفات ساحلية، مواعيد مرنة. احجز عبر واتساب 24/7.",
+      metaDescription: "نقل خاص بسائق من أثينا إلى رأس سونيون ومعبد بوسيدون بسيارة Mercedes Vito VIP. جولات الغروب، توقفات ساحلية، مواعيد مرنة. احجز عبر واتساب 24/7.",
       sections: [
         { paragraphs: [
           "في اللحظة التي يظهر فيها معبد بوسيدون فوق بحر إيجه، تتضح قيمة الرحلة الخاصة. النقل الخاص من أثينا إلى رأس سونيو ليس مجرد وسيلة وصول إلى معلم أثري. إنه تجربة ساحلية بلا استعجال، مرتبة حسب وقت المغادرة الذي تفضله وإيقاعك والأشخاص المسافرين معك.",
@@ -2816,11 +2816,11 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       ],
     },
     he: {
-      title: "הסעה פרטית מאתונה לכף סוניו: מקדש פוסידון במרצדס Mercedes Vito VIP",
+      title: "הסעה פרטית מאתונה לכף סוניו: מקדש פוסידון ב-Mercedes Vito VIP",
       excerpt: "מסע חוף רגוע אל מקדש פוסידון, מאורגן סביב שעת היציאה והקצב שלכם. גלו מדוע נהג פרטי עם מרצדס Mercedes Vito VIP הוא הדרך הטובה ביותר לחוות את כף סוניון.",
       imageAlt: "איור של מרצדס Mercedes Vito VIP שחורה בכביש חוף צבעוני לעבר מקדש פוסידון בכף סוניון בשקיעה",
       metaTitle: "הסעה פרטית אתונה – כף סוניו, מקדש פוסידון | H&A VIP Tours",
-      metaDescription: "הסעה פרטית עם נהג מאתונה לכף סוניון ומקדש פוסידון במרצדס Mercedes Vito VIP. סיורי שקיעה, עצירות חוף, זמנים גמישים. הזמנה בוואטסאפ 24/7.",
+      metaDescription: "הסעה פרטית עם נהג מאתונה לכף סוניון ומקדש פוסידון ב-Mercedes Vito VIP. סיורי שקיעה, עצירות חוף, זמנים גמישים. הזמנה בוואטסאפ 24/7.",
       sections: [
         { paragraphs: [
           "ברגע שמקדש פוסידון נגלל מעל הים האגאי, הערך של מסע פרטי מתבהר. נסיעה פרטית מאתונה לכף סוניו היא לא רק תחבורה אל אתר. זו חוויית חוף נינוחה המאורגנת סביב שעת היציאה המועדפת עליכם, הקצב שלכם והאנשים המטיילים איתכם.",
@@ -3021,7 +3021,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       title: "Excursion privée à Delphes depuis Athènes : une journée complète en Mercedes Vito VIP",
       excerpt: "Une journée entière au cœur de la Grèce centrale, sur les pentes du mont Parnasse. Prise en charge à l'hôtel, Mercedes Vito VIP de luxe et itinéraire sans hâte entre Delphes, son musée et Arachova.",
       imageAlt: "Illustration colorée d'un Mercedes Vito VIP noir sur une route de montagne vers l'ancien sanctuaire de Delphes au coucher du soleil",
-      metaTitle: "Excursion privée à Delphes depuis Athènes | H&A VIP Tours",
+      metaTitle: "Visite privée de Delphes depuis Athènes | H&A VIP Tours",
       metaDescription: "Excursion privée d'une journée d'Athènes à Delphes avec chauffeur en Mercedes Vito VIP. Prise en charge à l'hôtel, arrêt à Arachova, horaires flexibles.",
       sections: [
         { paragraphs: [
@@ -3122,11 +3122,11 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       ],
     },
     ar: {
-      title: "رحلة يومية خاصة إلى دلفي من أثينا بسيارة مرسيدس Mercedes Vito VIP",
+      title: "رحلة يومية خاصة إلى دلفي من أثينا بسيارة Mercedes Vito VIP",
       excerpt: "يوم كامل عبر وسط اليونان على سفوح جبل بارناسوس. استقبال من الفندق، مرسيدس Mercedes Vito VIP فاخرة، وبرنامج مريح يشمل دلفي والمتحف وأراخوفا.",
       imageAlt: "رسم ملوّن لسيارة مرسيدس Mercedes Vito VIP سوداء على طريق جبلي نحو موقع دلفي الأثري عند الغروب",
-      metaTitle: "رحلة خاصة إلى دلفي من أثينا – مرسيدس Mercedes Vito VIP | H&A VIP Tours",
-      metaDescription: "رحلة يومية خاصة بسائق من أثينا إلى دلفي بسيارة مرسيدس Mercedes Vito VIP. استقبال من الفندق، توقف في أراخوفا، مواعيد مرنة. الحجز عبر واتساب على مدار الساعة.",
+      metaTitle: "رحلة خاصة إلى دلفي من أثينا – Mercedes Vito VIP | H&A VIP Tours",
+      metaDescription: "رحلة يومية خاصة بسائق من أثينا إلى دلفي بسيارة Mercedes Vito VIP. استقبال من الفندق، توقف في أراخوفا، مواعيد مرنة. الحجز عبر واتساب على مدار الساعة.",
       sections: [
         { paragraphs: [
           "الرحلة إلى دلفي ليست مجرد نقل بين أثينا وموقع أثري، بل يوم كامل عبر وسط اليونان بطرق جبلية ومناظر متغيرة ووجهة تستحق وقتاً بلا عجلة. البرنامج الخاص يمنح التوازن الصحيح بين الراحة والإيقاع والاهتمام الشخصي.",
@@ -3174,11 +3174,11 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       ],
     },
     he: {
-      title: "טיול יום פרטי לדלפי מאתונה: יום שלם עם מרצדס Mercedes Vito VIP",
+      title: "טיול יום פרטי לדלפי מאתונה: יום שלם עם Mercedes Vito VIP",
       excerpt: "יום שלם ביוון המרכזית, במורדות הר פרנסוס. איסוף מהמלון, מרצדס Mercedes Vito VIP יוקרתית ומסלול נינוח הכולל את דלפי, המוזיאון ואראחובה.",
       imageAlt: "איור צבעוני של מרצדס Mercedes Vito VIP שחורה בדרך הרים אל אתר דלפי העתיק בשקיעה",
-      metaTitle: "טיול יום פרטי לדלפי מאתונה – מרצדס Mercedes Vito VIP | H&A VIP Tours",
-      metaDescription: "טיול יום פרטי עם נהג מאתונה לדלפי במרצדס Mercedes Vito VIP. איסוף מהמלון, עצירה באראחובה, שעות גמישות. הזמנה בוואטסאפ 24/7.",
+      metaTitle: "טיול יום פרטי לדלפי מאתונה – Mercedes Vito VIP | H&A VIP Tours",
+      metaDescription: "טיול יום פרטי עם נהג מאתונה לדלפי ב-Mercedes Vito VIP. איסוף מהמלון, עצירה באראחובה, שעות גמישות. הזמנה בוואטסאפ 24/7.",
       sections: [
         { paragraphs: [
           "הנסיעה לדלפי אינה רק העברה בין אתונה לאתר עתיק. זהו יום שלם ביוון המרכזית, עם דרכי הרים, נופים משתנים ויעד שראוי לזמן ללא לחץ. מסלול פרטי מעניק את האיזון הנכון בין נוחות, קצב ותשומת לב אישית.",
@@ -3233,7 +3233,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
         "Ολοήμερη ιδιωτική εκδρομή από την Αθήνα στα μοναστήρια των Μετεώρων. Πολυτελής Mercedes Vito VIP, παραλαβή από το ξενοδοχείο, ευέλικτο πρόγραμμα και πρόγραμμα προσαρμοσμένο στις προτεραιότητές σας.",
       imageAlt:
         "Εικονογράφηση μαύρης Mercedes Vito VIP που οδηγεί προς τα μοναστήρια των Μετεώρων πάνω σε βραχώδεις πυλώνες στο ηλιοβασίλεμα",
-      metaTitle: "Ιδιωτική Εκδρομή στα Μετέωρα από Αθήνα | H&A VIP Tours",
+      metaTitle: "Ιδιωτική ημερήσια εκδρομή στα Μετέωρα | H&A VIP Tours",
       metaDescription:
         "Ιδιωτική ημερήσια εκδρομή από την Αθήνα στα Μετέωρα με Mercedes Vito VIP. Παραλαβή ξενοδοχείου, επίσκεψη σε μοναστήρια, ευέλικτο πρόγραμμα. WhatsApp 24/7.",
       sections: [
@@ -3383,7 +3383,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
         "Un voyage privé d'une journée complète d'Athènes aux monastères des Météores. Luxueuse Mercedes Vito VIP, prise en charge à l'hôtel, horaires flexibles et programme adapté à vos priorités.",
       imageAlt:
         "Illustration d'une Mercedes Vito VIP noire roulant vers les monastères des Météores sur des piliers de grès au coucher du soleil",
-      metaTitle: "Excursion Privée aux Météores depuis Athènes | H&A VIP Tours",
+      metaTitle: "Visite privée des Météores depuis Athènes | H&A VIP Tours",
       metaDescription:
         "Excursion privée d'une journée d'Athènes aux Météores en Mercedes Vito VIP. Prise en charge à l'hôtel, visite des monastères, horaires flexibles, WhatsApp.",
       sections: [
@@ -3478,14 +3478,14 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       ],
     },
     ar: {
-      title: "رحلة خاصة ليوم واحد إلى ميتيورا من أثينا: أديرة في السماء بمرسيدس Mercedes Vito VIP",
+      title: "رحلة خاصة ليوم واحد إلى ميتيورا من أثينا: أديرة في السماء بـMercedes Vito VIP",
       excerpt:
         "رحلة خاصة ليوم كامل من أثينا إلى أديرة ميتيورا. مرسيدس Mercedes Vito VIP فاخرة، استقبال من الفندق، مواعيد مرنة وبرنامج مبني على أولوياتكم.",
       imageAlt:
         "رسم توضيحي لمرسيدس Mercedes Vito VIP سوداء تتجه نحو أديرة ميتيورا على أعمدة حجر رملي عند الغروب",
       metaTitle: "رحلة خاصة إلى ميتيورا من أثينا – Mercedes Vito VIP | H&A VIP Tours",
       metaDescription:
-        "رحلة يومية خاصة مع سائق من أثينا إلى ميتيورا بمرسيدس Mercedes Vito VIP فاخرة. استقبال من الفندق، زيارة الأديرة، مواعيد مرنة وحجز عبر واتساب على مدار الساعة.",
+        "رحلة يومية خاصة مع سائق من أثينا إلى ميتيورا بـMercedes Vito VIP فاخرة. استقبال من الفندق، زيارة الأديرة، مواعيد مرنة وحجز عبر واتساب على مدار الساعة.",
       sections: [
         { paragraphs: [
           "ميتيورا ليست وجهة تكافئ الاستعجال. ترتفع الأديرة فوق سهل ثيساليا على أعمدة هائلة من الحجر الرملي، والرحلة من أثينا طويلة بما يكفي لتشكّل جودة تجربة الطريق اليوم بأكمله. الرحلة الخاصة من أثينا إلى ميتيورا تمنحكم المساحة والوقت والاهتمام الشخصي لعيش هذا الموقع الاستثنائي من مواقع التراث العالمي لليونسكو دون تحويل يوم سفر كبير إلى اختبار للتحمل.",
@@ -3528,14 +3528,14 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       ],
     },
     he: {
-      title: "טיול פרטי של יום שלם למטאורה מאתונה: מנזרים בשמיים במרצדס Mercedes Vito VIP",
+      title: "טיול פרטי של יום שלם למטאורה מאתונה: מנזרים בשמיים ב-Mercedes Vito VIP",
       excerpt:
         "מסע פרטי של יום שלם מאתונה למנזרי מטאורה. מרצדס Mercedes Vito VIP יוקרתית, איסוף מהמלון, זמנים גמישים ותוכנית שנבנית סביב סדרי העדיפויות שלכם.",
       imageAlt:
         "איור של מרצדס Mercedes Vito VIP שחורה נוסעת לעבר מנזרי מטאורה על עמודי אבן חול בשקיעה",
-      metaTitle: "טיול פרטי למטאורה מאתונה – מרצדס Mercedes Vito VIP | H&A VIP Tours",
+      metaTitle: "טיול פרטי למטאורה מאתונה – Mercedes Vito VIP | H&A VIP Tours",
       metaDescription:
-        "טיול יום פרטי עם נהג מאתונה למטאורה במרצדס Mercedes Vito VIP יוקרתית. איסוף מהמלון, ביקור במנזרים, זמנים גמישים והזמנה בוואטסאפ 24/7.",
+        "טיול יום פרטי עם נהג מאתונה למטאורה ב-Mercedes Vito VIP יוקרתית. איסוף מהמלון, ביקור במנזרים, זמנים גמישים והזמנה בוואטסאפ 24/7.",
       sections: [
         { paragraphs: [
           "מטאורה אינה יעד שמתגמל מהירות. המנזרים מתנשאים מעל מישור תסליה על עמודי אבן חול עצומים, והמסע מאתונה ארוך מספיק כדי שאיכות חוויית הכביש תעצב את כל היום. נסיעה פרטית מאתונה למטאורה נותנת לכם את המרחב, התזמון והיחס האישי לחוות את אתר המורשת העולמית המרשים של אונסק״ו מבלי להפוך יום נסיעות גדול למבחן סיבולת.",

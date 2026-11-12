@@ -235,7 +235,7 @@ export default {
     {
       "heading": "Transfer per Famiglie con Seggiolini",
       "paragraphs": [
-        "Viaggiate insieme con spazio per fino a sette passeggeri, escluso il conducente. I seggiolini sono gratuiti su richiesta: comunica l’età di ogni bambino e conferma i seggiolini necessari prima di prenotare il transfer aeroportuale, portuale o alberghiero.",
+        "Viaggiate insieme con spazio per fino a sette passeggeri, escluso il conducente. I seggiolini sono inclusi su richiesta: comunica l’età di ogni bambino e conferma i seggiolini necessari prima di prenotare il transfer aeroportuale, portuale o alberghiero.",
         "Segnala passeggini e altri bagagli quando organizzi il viaggio. Possiamo discutere le esigenze familiari insieme ai dettagli del prelievo, aiutandoti a pianificare l’arrivo o la partenza senza rimandare questioni importanti al giorno del trasferimento."
       ]
     }
@@ -263,10 +263,10 @@ export default {
       ]
     },
     {
-      "heading": "Bagagli e Viaggi in Famiglia con Seggiolini Gratuiti",
+      "heading": "Bagagli e Viaggi in Famiglia con seggiolini inclusi su richiesta",
       "paragraphs": [
         "Mantieni unito il gruppo in un Mercedes Vito VIP con sedili contrapposti in configurazione salotto e capacità fino a sette passeggeri, escluso il conducente. Comunica quanti bagagli porterai, comprese valigie grandi, passeggini o altri oggetti ingombranti. La sola capacità di passeggeri non conferma che qualsiasi combinazione di bagagli trovi posto: discuti le esigenze prima di confermare il viaggio.",
-        "I seggiolini sono gratuiti su richiesta. Indica le età dei bambini e il numero di seggiolini necessari nella richiesta di preventivo e conferma l’organizzazione prima di prenotare. La stessa attenzione vale per un viaggio dal terminal crociere all’hotel, dal traghetto all’aeroporto di Atene o di ritorno al Pireo. Comunica il viaggio completo per concordare in anticipo percorso, seggiolini richiesti, bagagli, punto d’incontro e tariffa."
+        "I seggiolini sono inclusi su richiesta. Indica le età dei bambini e il numero di seggiolini necessari nella richiesta di preventivo e conferma l’organizzazione prima di prenotare. La stessa attenzione vale per un viaggio dal terminal crociere all’hotel, dal traghetto all’aeroporto di Atene o di ritorno al Pireo. Comunica il viaggio completo per concordare in anticipo percorso, seggiolini richiesti, bagagli, punto d’incontro e tariffa."
       ]
     }
   ],
@@ -542,7 +542,7 @@ export default {
       distomo: { title: "Distomo / Livadia", desc: "Una pausa rilassante lungo il percorso (sosta facoltativa)" },
     },
     whatIncludedTitle: "Cosa è incluso",
-    whatIncluded: ["Prelievo e riconsegna nel luogo che desideri", "Van di lusso Mercedes-Benz con sedili in pelle", "Wi-Fi gratuito per tutto il viaggio", "Acqua in bottiglia", "Tour privato — solo tu e il tuo gruppo"],
+    whatIncluded: ["Prelievo e riconsegna nel luogo che desideri", "Mercedes Vito VIP con sedili in pelle", "Wi-Fi gratuito per tutto il viaggio", "Acqua in bottiglia", "Tour privato — solo tu e il tuo gruppo"],
     infoTitle: "Informazioni",
     duration: "Durata", durationVal: "8 ore",
     durationQuestion: "Quanto dura il tour «{{tour}}»?",
@@ -564,7 +564,7 @@ export default {
     badge: "Esperienza VIP Privata",
     title: "Tour della città di Atene",
     heroHeading: "Scopri Atene al tuo ritmo",
-    heroText: "Vivi Atene come merita — con comfort, privacy e stile. L'Athens City Tour di H&A Tours è una visita esclusivamente privata di 3 ore in un van Mercedes-Benz di lusso, pensata per chi vuole vedere i principali monumenti della città senza fretta e senza gruppi di turisti.",
+    heroText: "Vivi Atene come merita — con comfort, privacy e stile. L'Athens City Tour di H&A Tours è una visita esclusivamente privata di 3 ore in un Mercedes Vito VIP, pensata per chi vuole vedere i principali monumenti della città senza fretta e senza gruppi di turisti.",
     includesTitle: "Cosa include il tour",
     includes: {
       stadium: { title: "Stadio Panatenaico", desc: "L'unico stadio olimpico interamente in marmo al mondo" },
@@ -575,7 +575,7 @@ export default {
       monastiraki: { title: "Monastiraki", desc: "L'anima della città vecchia con la sua atmosfera e i suoi colori" },
     },
     whatIncludedTitle: "Cosa è incluso",
-    whatIncluded: ["Prelievo e rientro dal luogo che desideri", "Van Mercedes-Benz di lusso con sedili in pelle", "Wi-Fi gratuito per tutto il viaggio", "Acqua in bottiglia", "Tour privato — solo tu e il tuo gruppo"],
+    whatIncluded: ["Prelievo e rientro dal luogo che desideri", "Mercedes Vito VIP con sedili in pelle", "Wi-Fi gratuito per tutto il viaggio", "Acqua in bottiglia", "Tour privato — solo tu e il tuo gruppo"],
     infoTitle: "Informazioni",
     duration: "Durata", durationVal: "3 ore",
     durationQuestion: "Quanto dura il tour «{{tour}}»?",
@@ -607,7 +607,7 @@ export default {
       voula: { title: "Voula / Glyfada", desc: "Per un caffè o una pausa con vista sul mare (sosta facoltativa)" },
     },
     whatIncludedTitle: "Cosa è incluso",
-    whatIncluded: ["Prelievo e riconsegna nel luogo che desideri", "Van di lusso Mercedes-Benz con sedili in pelle", "Wi-Fi gratuito per tutto il viaggio", "Acqua in bottiglia", "Tour privato — solo tu e il tuo gruppo"],
+    whatIncluded: ["Prelievo e riconsegna nel luogo che desideri", "Mercedes Vito VIP con sedili in pelle", "Wi-Fi gratuito per tutto il viaggio", "Acqua in bottiglia", "Tour privato — solo tu e il tuo gruppo"],
     infoTitle: "Informazioni",
     duration: "Durata", durationVal: "5 ore",
     durationQuestion: "Quanto dura il tour «{{tour}}»?",
@@ -640,7 +640,7 @@ export default {
       lamia: { title: "Lamia", desc: "Per una pausa rilassante e un caffè (sosta facoltativa)" },
     },
     whatIncludedTitle: "Cosa è incluso",
-    whatIncluded: ["Prelievo e riconsegna nel luogo che desideri", "Van di lusso Mercedes-Benz con sedili in pelle", "Wi-Fi gratuito per tutto il viaggio", "Acqua in bottiglia", "Tour privato — solo tu e il tuo gruppo"],
+    whatIncluded: ["Prelievo e riconsegna nel luogo che desideri", "Mercedes Vito VIP con sedili in pelle", "Wi-Fi gratuito per tutto il viaggio", "Acqua in bottiglia", "Tour privato — solo tu e il tuo gruppo"],
     infoTitle: "Informazioni",
     duration: "Durata", durationVal: "12 ore",
     durationQuestion: "Quanto dura il tour «{{tour}}»?",
@@ -674,7 +674,7 @@ export default {
       canal: { title: "Canale di Corinto", desc: "Una delle costruzioni più impressionanti del XIX secolo (sosta facoltativa)" },
     },
     whatIncludedTitle: "Cosa è incluso",
-    whatIncluded: ["Prelievo e riconsegna nel luogo che desideri", "Van di lusso Mercedes-Benz con sedili in pelle", "Wi-Fi gratuito per tutto il viaggio", "Acqua in bottiglia", "Tour privato — solo tu e il tuo gruppo"],
+    whatIncluded: ["Prelievo e riconsegna nel luogo che desideri", "Mercedes Vito VIP con sedili in pelle", "Wi-Fi gratuito per tutto il viaggio", "Acqua in bottiglia", "Tour privato — solo tu e il tuo gruppo"],
     infoTitle: "Informazioni",
     duration: "Durata", durationVal: "8 ore",
     durationQuestion: "Quanto dura il tour «{{tour}}»?",

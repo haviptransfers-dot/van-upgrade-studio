@@ -235,7 +235,7 @@ export default {
     {
       "heading": "Transferts Familiaux avec Sièges Enfants",
       "paragraphs": [
-        "Voyagez ensemble avec de la place pour jusqu’à sept passagers, hors conducteur. Les sièges enfants sont gratuits sur demande : précisez l’âge de chaque enfant et confirmez les sièges nécessaires avant de réserver votre transfert aéroport, port ou hôtel.",
+        "Voyagez ensemble avec de la place pour jusqu’à sept passagers, hors conducteur. Les sièges enfants sont inclus sur demande : précisez l’âge de chaque enfant et confirmez les sièges nécessaires avant de réserver votre transfert aéroport, port ou hôtel.",
         "Signalez les poussettes et autres bagages lors de l’organisation du trajet. Nous pouvons discuter des besoins de votre famille en même temps que des modalités de prise en charge, pour préparer l’arrivée ou le départ sans reporter les questions importantes au jour du voyage."
       ]
     }
@@ -263,10 +263,10 @@ export default {
       ]
     },
     {
-      "heading": "Bagages et Voyages en Famille avec Sièges Enfants Gratuits",
+      "heading": "Bagages et Voyages en Famille avec sièges enfants inclus sur demande",
       "paragraphs": [
         "Gardez votre groupe réuni dans un Mercedes Vito VIP avec sièges face à face en configuration salon, pour jusqu’à sept passagers, hors conducteur. Indiquez le nombre de bagages, y compris les grandes valises, poussettes ou autres objets encombrants. La capacité en passagers ne confirme pas à elle seule que toute combinaison de bagages conviendra ; discutez de vos besoins avant de confirmer le trajet.",
-        "Les sièges enfants sont gratuits sur demande. Précisez les âges et le nombre de sièges nécessaires lors de la demande de devis, puis confirmez l’organisation avant de réserver. La même attention s’applique que votre famille aille d’un terminal de croisière à un hôtel, d’un ferry à l’aéroport d’Athènes ou retourne au Pirée. Communiquez le voyage complet pour convenir à l’avance du parcours, des sièges demandés, des bagages, du point de rencontre et du prix."
+        "Les sièges enfants sont inclus sur demande. Précisez les âges et le nombre de sièges nécessaires lors de la demande de devis, puis confirmez l’organisation avant de réserver. La même attention s’applique que votre famille aille d’un terminal de croisière à un hôtel, d’un ferry à l’aéroport d’Athènes ou retourne au Pirée. Communiquez le voyage complet pour convenir à l’avance du parcours, des sièges demandés, des bagages, du point de rencontre et du prix."
       ]
     }
   ],
@@ -542,7 +542,7 @@ export default {
       distomo: { title: "Distomo / Livadia", desc: "Une pause relaxante en cours de route (arrêt optionnel)" },
     },
     whatIncludedTitle: "Ce qui est inclus",
-    whatIncluded: ["Prise en charge & dépose au lieu de votre choix", "Van Mercedes-Benz de luxe avec sièges en cuir", "Wi-Fi gratuit tout au long du trajet", "Eau en bouteille", "Tour privé — vous et votre groupe uniquement"],
+    whatIncluded: ["Prise en charge & dépose au lieu de votre choix", "Mercedes Vito VIP avec sièges en cuir", "Wi-Fi gratuit tout au long du trajet", "Eau en bouteille", "Tour privé — vous et votre groupe uniquement"],
     infoTitle: "Informations",
     duration: "Durée", durationVal: "8 heures",
     durationQuestion: "Combien de temps dure la visite « {{tour}} » ?",
@@ -564,7 +564,7 @@ export default {
     badge: "Expérience VIP Privée",
     title: "Tour de la ville d'Athènes",
     heroHeading: "Découvrez Athènes à votre rythme",
-    heroText: "Vivez Athènes comme elle le mérite — avec confort, intimité et style. Le Tour de la ville d'Athènes par H&A Tours est une visite exclusivement privée de 3 heures dans un van Mercedes-Benz de luxe, conçue pour ceux qui veulent voir les principaux monuments de la ville sans précipitation et sans groupes de touristes.",
+    heroText: "Vivez Athènes comme elle le mérite — avec confort, intimité et style. Le Tour de la ville d'Athènes par H&A Tours est une visite exclusivement privée de 3 heures dans un Mercedes Vito VIP, conçue pour ceux qui veulent voir les principaux monuments de la ville sans précipitation et sans groupes de touristes.",
     includesTitle: "Ce que comprend la visite",
     includes: {
       stadium: { title: "Stade Panathénaïque", desc: "Le seul stade olympique entièrement en marbre au monde" },
@@ -575,7 +575,7 @@ export default {
       monastiraki: { title: "Monastiraki", desc: "L'âme de la vieille ville avec son atmosphère et ses couleurs" },
     },
     whatIncludedTitle: "Ce qui est inclus",
-    whatIncluded: ["Prise en charge et retour depuis le lieu de votre choix", "Van Mercedes-Benz de luxe avec sièges en cuir", "Wi-Fi gratuit tout au long du voyage", "Eau en bouteille", "Visite privée — uniquement vous et votre groupe"],
+    whatIncluded: ["Prise en charge et retour depuis le lieu de votre choix", "Mercedes Vito VIP avec sièges en cuir", "Wi-Fi gratuit tout au long du voyage", "Eau en bouteille", "Visite privée — uniquement vous et votre groupe"],
     infoTitle: "Informations",
     duration: "Durée", durationVal: "3 heures",
     durationQuestion: "Combien de temps dure la visite « {{tour}} » ?",
@@ -607,7 +607,7 @@ export default {
       voula: { title: "Voula / Glyfada", desc: "Pour un café ou une pause avec vue sur la mer (arrêt optionnel)" },
     },
     whatIncludedTitle: "Ce qui est inclus",
-    whatIncluded: ["Prise en charge & dépose au lieu de votre choix", "Van Mercedes-Benz de luxe avec sièges en cuir", "Wi-Fi gratuit tout au long du trajet", "Eau en bouteille", "Tour privé — vous et votre groupe uniquement"],
+    whatIncluded: ["Prise en charge & dépose au lieu de votre choix", "Mercedes Vito VIP avec sièges en cuir", "Wi-Fi gratuit tout au long du trajet", "Eau en bouteille", "Tour privé — vous et votre groupe uniquement"],
     infoTitle: "Informations",
     duration: "Durée", durationVal: "5 heures",
     durationQuestion: "Combien de temps dure la visite « {{tour}} » ?",
@@ -628,7 +628,7 @@ export default {
   },
   meteoraTour: {
     badge: "Expérience VIP Exclusivement Privée",
-    title: "Tour Privé de Météores",
+    title: "Tour privé des Météores",
     heroHeading: "Là où la terre touche le ciel",
     heroText: "Les Météores sont l'un des endroits les plus impressionnants au monde — des monastères construits au sommet d'énormes rochers, un site du patrimoine mondial de l'UNESCO. Une expérience qui change votre façon de voir le monde.",
     includesTitle: "Ce que comprend le tour",
@@ -640,7 +640,7 @@ export default {
       lamia: { title: "Lamia", desc: "Pour une pause relaxante et un café (arrêt optionnel)" },
     },
     whatIncludedTitle: "Ce qui est inclus",
-    whatIncluded: ["Prise en charge & dépose au lieu de votre choix", "Van Mercedes-Benz de luxe avec sièges en cuir", "Wi-Fi gratuit tout au long du trajet", "Eau en bouteille", "Tour privé — vous et votre groupe uniquement"],
+    whatIncluded: ["Prise en charge & dépose au lieu de votre choix", "Mercedes Vito VIP avec sièges en cuir", "Wi-Fi gratuit tout au long du trajet", "Eau en bouteille", "Tour privé — vous et votre groupe uniquement"],
     infoTitle: "Informations",
     duration: "Durée", durationVal: "12 heures",
     durationQuestion: "Combien de temps dure la visite « {{tour}} » ?",
@@ -674,7 +674,7 @@ export default {
       canal: { title: "Canal de Corinthe", desc: "L'une des constructions les plus impressionnantes du 19e siècle (arrêt optionnel)" },
     },
     whatIncludedTitle: "Ce qui est inclus",
-    whatIncluded: ["Prise en charge & dépose au lieu de votre choix", "Van Mercedes-Benz de luxe avec sièges en cuir", "Wi-Fi gratuit tout au long du trajet", "Eau en bouteille", "Tour privé — vous et votre groupe uniquement"],
+    whatIncluded: ["Prise en charge & dépose au lieu de votre choix", "Mercedes Vito VIP avec sièges en cuir", "Wi-Fi gratuit tout au long du trajet", "Eau en bouteille", "Tour privé — vous et votre groupe uniquement"],
     infoTitle: "Informations",
     duration: "Durée", durationVal: "8 heures",
     durationQuestion: "Combien de temps dure la visite « {{tour}} » ?",
