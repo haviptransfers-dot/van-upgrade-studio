@@ -7,7 +7,8 @@ import itLocale from "../i18n/locales/it";
 import es from "../i18n/locales/es";
 import he from "../i18n/locales/he";
 import ar from "../i18n/locales/ar";
-import { blogPosts, getLocalizedPost } from "../data/blogPosts";
+import { blogPosts, localizePost } from "../data/blogPosts";
+const getLocalizedPost = (slug: string, lang: string) => { const post = blogPosts.find((item) => item.slug === slug); return post && localizePost(post, lang); };
 
 const locales = { en, el, de, fr, it: itLocale, es, he, ar };
 const freeWords = /free|δωρεάν|gratis|kostenlos|gratuit|gratuiti|חינם|ללא תשלום|مجاني/i;
