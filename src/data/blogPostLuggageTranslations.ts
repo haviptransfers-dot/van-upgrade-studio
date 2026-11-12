@@ -87,7 +87,7 @@ export const luggageTranslations: Record<string, BlogPostTranslation> = {
   "excerpt": "Atterrate ad Atene con diverse valigie? Scoprite perché un transfer privato con Mercedes Vito VIP è la scelta ideale quando capienza dei bagagli, puntualità e un arrivo sereno fanno la differenza.",
   "imageAlt": "Autista professionista che carica valigie su una Mercedes Vito VIP nera con l'Acropoli di Atene sullo sfondo",
   "metaTitle": "Transfer Privato ad Atene per Numerosi Bagagli | H&A VIP Tours",
-  "metaDescription": "Prenotate un transfer privato ad Atene con spazio per numerosi bagagli. Mercedes Vito VIP, autista professionista, prenotazione WhatsApp 24/7 e bagagli pianificati in anticipo.",
+  "metaDescription": "Transfer privato ad Atene con spazio per numerosi bagagli. Mercedes Vito VIP, autista professionista, WhatsApp 24/7 e bagagli pianificati in anticipo.",
   "sections": [
     {
       "paragraphs": [
@@ -168,7 +168,7 @@ export const luggageTranslations: Record<string, BlogPostTranslation> = {
   "excerpt": "¿Llega a Atenas con varias maletas? Descubra por qué un traslado privado en Mercedes Vito VIP es la opción inteligente cuando la capacidad de equipaje, los horarios y una llegada tranquila son importantes.",
   "imageAlt": "Chófer profesional cargando maletas en un Mercedes Vito VIP negro con la Acrópolis de Atenas visible al fondo",
   "metaTitle": "Traslado Privado en Atenas para Varias Maletas | H&A VIP Tours",
-  "metaDescription": "Reserve un traslado privado en Atenas con espacio para varias maletas. Mercedes Vito VIP, chófer profesional, reservas por WhatsApp 24/7 y equipaje planificado con antelación.",
+  "metaDescription": "Traslado privado en Atenas con espacio para varias maletas. Mercedes Vito VIP, chófer profesional, WhatsApp 24/7 y equipaje planificado con antelación.",
   "sections": [
     {
       "paragraphs": [
@@ -249,7 +249,7 @@ export const luggageTranslations: Record<string, BlogPostTranslation> = {
   "excerpt": "Vous arrivez à Athènes avec plusieurs bagages ? Découvrez pourquoi un transfert privé en Mercedes Vito VIP est le choix judicieux lorsque capacité de chargement, ponctualité et arrivée sereine comptent réellement.",
   "imageAlt": "Chauffeur professionnel chargeant des valises dans une Mercedes Vito VIP noire avec l'Acropole d'Athènes visible en arrière-plan",
   "metaTitle": "Transfert privé à Athènes pour plusieurs valises | H&A VIP Tours",
-  "metaDescription": "Réservez un transfert privé à Athènes avec suffisamment d'espace pour plusieurs valises. Mercedes Vito VIP, chauffeur professionnel, réservation 24/7 par WhatsApp et bagages planifiés à l'avance.",
+  "metaDescription": "Transfert privé à Athènes avec de l'espace pour plusieurs valises. Mercedes Vito VIP, chauffeur professionnel, WhatsApp 24/7 et bagages planifiés à l'avance.",
   "sections": [
     {
       "paragraphs": [
@@ -330,7 +330,7 @@ export const luggageTranslations: Record<string, BlogPostTranslation> = {
   "excerpt": "Landen Sie in Athen mit mehreren Gepäckstücken? Erfahren Sie, warum ein privater Transfer mit der Mercedes Vito VIP die kluge Wahl ist, wenn Gepäckkapazität, Timing und eine entspannte Ankunft entscheidend sind.",
   "imageAlt": "Professioneller Chauffeur verlädt Koffer in eine schwarze Mercedes Vito VIP, im Hintergrund die Akropolis von Athen",
   "metaTitle": "Privater Transfer in Athen für mehrere Koffer | H&A VIP Tours",
-  "metaDescription": "Buchen Sie einen privaten Transfer in Athen mit ausreichend Platz für mehrere Koffer. Mercedes Vito VIP, professioneller Chauffeur, 24/7-Buchung per WhatsApp und im Voraus geplantes Gepäck.",
+  "metaDescription": "Privater Transfer in Athen mit Platz für mehrere Koffer. Mercedes Vito VIP, professioneller Chauffeur, Buchung per WhatsApp 24/7, im Voraus geplantes Gepäck.",
   "sections": [
     {
       "paragraphs": [

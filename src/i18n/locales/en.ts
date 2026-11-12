@@ -195,10 +195,10 @@ export default {
 },
   seoContent: {
   "homeTitle": "VIP Transfers Athens | Private Airport & Port Transfers | H&A",
-  "homeDescription": "Private VIP transfers in Athens: ATH airport and Piraeus, Mercedes Vito VIP for 7 passengers, free child seats on request, meet & greet. Contact us on WhatsApp.",
+  "homeDescription": "Private VIP transfers in Athens: ATH airport and Piraeus, Mercedes Vito VIP for up to 7 passengers, child seats included on request, meet & greet. WhatsApp us.",
   "homeH1": "VIP Transfers in Athens",
   "piraeusTitle": "Piraeus Port Transfer | Private Transfer Piraeus to Athens Airport",
-  "piraeusDescription": "Private Piraeus transfers to Athens Airport, hotels and the city centre. Mercedes Vito VIP for 7 passengers, meet & greet and free child seats on request.",
+  "piraeusDescription": "Private Piraeus transfers to Athens Airport, hotels and the city centre. Mercedes Vito VIP for up to 7 passengers, meet & greet, child seats on request.",
   "piraeusH1": "Private Piraeus Port Transfers",
   "privacyTitle": "Privacy Policy | H&A VIP Tours Athens",
   "privacyDescription": "How H&A VIP Tours collects, uses and protects your personal data — cookies, analytics and your GDPR rights.",
