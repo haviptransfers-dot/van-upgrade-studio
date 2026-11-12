@@ -525,7 +525,7 @@ export default {
     athens: { title: "Athens Private City Tour – Acropolis & Highlights | H&A VIP Tours", description: "Private Athens city tour with a professional driver. Visit the Acropolis, Plaka, Syntagma & Panathenaic Stadium in a Mercedes Vito VIP. Customizable itinerary." },
     delphi: { title: "Delphi Private Day Tour from Athens | H&A VIP Tours", description: "Private full-day tour from Athens to Delphi, the ancient Oracle of Apollo. Luxury Mercedes Vito VIP with English-speaking driver. Stop at Arachova village." },
     meteora: { title: "Meteora Private Tour from Athens | H&A VIP Tours", description: "Private tour to Meteora's UNESCO monasteries from Athens in a Mercedes Vito VIP. Comfortable full-day journey with professional driver and panoramic stops." },
-    nafplio: { title: "Nafplio Private Day Tour from Athens | H&A VIP Tours", description: "Private day tour from Athens to Nafplio, Mycenae & Epidaurus. Discover Greece's first capital in a Mercedes Vito VIP with a professional English-speaking driver." },
+    nafplio: { title: "Nafplio Private Day Tour from Athens | H&A VIP Tours", description: "Private day tour from Athens to Nafplio, Mycenae & Epidaurus in a Mercedes Vito VIP, with a professional English-speaking driver. Greece's first capital." },
     sounion: { title: "Cape Sounion Sunset Tour – Temple of Poseidon | H&A VIP Tours", description: "Private sunset tour from Athens to Cape Sounion and the Temple of Poseidon. Scenic Athens Riviera drive in a luxury Mercedes Vito VIP. Approx. 4–5 hours." },
   },
   delphiTour: {
