@@ -33,3 +33,5 @@
 - Use an isolated Vite configuration with production-compatible automatic JSX, no browser SWC plugin, dependency discovery, file watching or HMR for the build-only SSR renderer; publishing must match React's production runtime without a competing dependency scan.
 
 - Keep the child-seat article’s localized body, metadata and CTA in its dedicated data record; derive its FAQ schema from the displayed FAQ sections so question and answer text cannot drift.
+
+- Email the business only for booking requests that pass the shared name/email/phone rules, validated in the browser and again in send-lead-email, with reply_to set to the customer; chat questions are stored without email, so no notification arrives without contact details.

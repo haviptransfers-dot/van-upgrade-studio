@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { X, Send, Loader2, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { captureLead } from "@/lib/leadCapture";
+import { validateContact, type ContactErrors } from "@/lib/contactValidation";
 import { formatCountdown } from "@/lib/formatCountdown";
 import { trackRateLimitWhatsAppClick } from "@/lib/quoteClickTracking";
 import vanIcon from "@/assets/fleet-vito.webp";
@@ -68,6 +69,24 @@ const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
     flight: "",
     notes: "",
   });
+  const [contactErrors, setContactErrors] = useState<ContactErrors>({});
+  const [contactChecked, setContactChecked] = useState(false);
+
+  // Name, email and phone must be valid before any booking request is sent.
+  const checkContact = () => {
+    const errors = validateContact({ name: booking.name, email: booking.email, phone: booking.phone });
+    setContactErrors(errors);
+    setContactChecked(true);
+    return Object.keys(errors).length === 0;
+  };
+
+  const updateBookingField = (key: keyof typeof booking, value: string) => {
+    const next = { ...booking, [key]: value };
+    setBooking(next);
+    if (contactChecked && (key === "name" || key === "email" || key === "phone")) {
+      setContactErrors(validateContact({ name: next.name, email: next.email, phone: next.phone }));
+    }
+  };
 
   useEffect(() => {
     if (open && messages.length === 0) {
@@ -218,13 +237,20 @@ const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
   const finishBooking = () => {
     setShowBooking(false);
     captureLead({
-      type: "booking_attempt",
-      route: `${booking.service || "Transfer"}: ${booking.pickup || "?"} → ${booking.dropoff || "?"}`,
-      travelDate: booking.date || undefined,
-      passengers: booking.pax || undefined,
-      contactName: booking.name || undefined,
-      contactEmail: booking.email || undefined,
-      contactPhone: booking.phone || undefined,
+      type: "booking_request",
+      name: booking.name.trim(),
+      email: booking.email.trim(),
+      phone: booking.phone.trim(),
+      service: booking.service,
+      pickup: booking.pickup,
+      dropoff: booking.dropoff,
+      travelDate: booking.date,
+      travelTime: booking.time,
+      passengers: booking.pax,
+      flight: booking.flight || undefined,
+      notes: booking.notes || undefined,
+      pageUrl: window.location.href,
+      language: i18n.language.split("-")[0],
     });
     setMessages((prev) => [
       ...prev,
@@ -235,8 +261,13 @@ const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
     ]);
   };
 
-  const submitBooking = (e: React.FormEvent) => {
+  const submitBooking = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!checkContact()) return;
+    if (!e.currentTarget.checkValidity()) {
+      e.currentTarget.reportValidity();
+      return;
+    }
     const subject = `New Booking Request — ${booking.name}`;
     window.location.href = `mailto:h.a.viptransfers@gmail.com?subject=${encodeURIComponent(
       subject
@@ -245,6 +276,7 @@ const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
   };
 
   const sendBookingWhatsapp = () => {
+    if (!checkContact()) return;
     if (!booking.name || !booking.email || !booking.phone || !booking.service || !booking.pickup || !booking.dropoff || !booking.date || !booking.time) {
       alert(t("chat.bookingFillRequired") || "Please fill in all required fields first.");
       return;
@@ -330,12 +362,35 @@ const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
             </div>
 
             {showBooking ? (
-              <form onSubmit={submitBooking} className="flex-1 overflow-y-auto p-4 space-y-2 text-sm">
+              <form noValidate onSubmit={submitBooking} className="flex-1 overflow-y-auto p-4 space-y-2 text-sm">
                 <p className="font-display font-bold text-base text-primary mb-2">{t("chat.bookingTitle")}</p>
+                {([
+                  { k: "name", type: "text", autoComplete: "name", placeholder: t("chat.bookingName"), error: t("chat.bookingErrName") },
+                  { k: "email", type: "email", autoComplete: "email", placeholder: t("chat.bookingEmail"), error: t("chat.bookingErrEmail") },
+                  { k: "phone", type: "tel", autoComplete: "tel", placeholder: t("chat.bookingPhonePlaceholder"), error: t("chat.bookingErrPhone") },
+                ] as const).map((f) => (
+                  <div key={f.k}>
+                    <input
+                      required
+                      type={f.type}
+                      autoComplete={f.autoComplete}
+                      inputMode={f.k === "phone" ? "tel" : undefined}
+                      aria-label={f.placeholder}
+                      aria-invalid={contactErrors[f.k] ? true : undefined}
+                      aria-describedby={contactErrors[f.k] ? `booking-${f.k}-error` : undefined}
+                      placeholder={f.placeholder}
+                      value={booking[f.k]}
+                      onChange={(e) => updateBookingField(f.k, e.target.value)}
+                      className={`w-full bg-background border rounded px-3 py-2 text-sm focus:border-primary outline-none ${contactErrors[f.k] ? "border-destructive" : "border-border"}`}
+                    />
+                    {contactErrors[f.k] && (
+                      <p id={`booking-${f.k}-error`} role="alert" className="mt-1 text-xs text-destructive">
+                        {f.error}
+                      </p>
+                    )}
+                  </div>
+                ))}
                 {[
-                  { k: "name", req: true },
-                  { k: "email", req: true, type: "email" },
-                  { k: "phone", req: true },
                   { k: "service", req: true },
                   { k: "pickup", req: true },
                   { k: "dropoff", req: true },
@@ -343,7 +398,7 @@ const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
                   <input
                     key={f.k}
                     required={f.req}
-                    type={f.type || "text"}
+                    type="text"
                     placeholder={t(`chat.booking${f.k.charAt(0).toUpperCase() + f.k.slice(1)}`)}
                     value={booking[f.k as keyof typeof booking]}
                     onChange={(e) => setBooking({ ...booking, [f.k]: e.target.value })}

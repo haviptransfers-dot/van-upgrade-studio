@@ -59,36 +59,60 @@ export type Database = {
           contact_name: string | null
           contact_phone: string | null
           created_at: string
+          dropoff: string | null
+          flight: string | null
           id: string
+          language: string | null
           night_rate: boolean
+          notes: string | null
+          page_url: string | null
           passengers: string | null
+          pickup: string | null
           quoted_price: number | null
           route: string
+          service: string | null
           travel_date: string | null
+          travel_time: string | null
         }
         Insert: {
           contact_email?: string | null
           contact_name?: string | null
           contact_phone?: string | null
           created_at?: string
+          dropoff?: string | null
+          flight?: string | null
           id?: string
+          language?: string | null
           night_rate?: boolean
+          notes?: string | null
+          page_url?: string | null
           passengers?: string | null
+          pickup?: string | null
           quoted_price?: number | null
           route: string
+          service?: string | null
           travel_date?: string | null
+          travel_time?: string | null
         }
         Update: {
           contact_email?: string | null
           contact_name?: string | null
           contact_phone?: string | null
           created_at?: string
+          dropoff?: string | null
+          flight?: string | null
           id?: string
+          language?: string | null
           night_rate?: boolean
+          notes?: string | null
+          page_url?: string | null
           passengers?: string | null
+          pickup?: string | null
           quoted_price?: number | null
           route?: string
+          service?: string | null
           travel_date?: string | null
+          travel_time?: string | null
         }
         Relationships: []
       }
