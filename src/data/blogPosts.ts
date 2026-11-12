@@ -623,47 +623,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "child-car-seats-private-transfers-greece",
-    title:
-      "Why Child Car Seats Are Non-Negotiable in Private Transfers in Greece: Safety, Law & Comfort with H&A TOURS LTD",
-    excerpt:
-      "Certified BeSafe child seats for every age, installed by us and always free on request. Greek law, real safety data, and how our Mercedes Vito VIP keeps families comfortable on long routes.",
+    ...childSeatArticle.en,
     image: hostedAssetUrl(childSeatsFamilySafe),
-    imageAlt:
-      "Black Mercedes Vito VIP at Athens International Airport with a family, two children, luggage and an H&A Tours Ltd Family Safe sign held by the chauffeur",
     date: "2026-06-15",
-    metaTitle: "Child Car Seats in Private Transfers in Greece – Safety & Law | H&A TOURS LTD",
-    metaDescription:
-      "Greek law, i-Size rules and real safety data for child car seats in private transfers. BeSafe seats for babies, toddlers and big kids, installed free in our Mercedes Vito VIP.",
-    sections: [
-      {
-        paragraphs: [
-          "Traveling with children is a joy, but also a responsibility. When you book a private transfer from Athens to Meteora, Delphi, Sounio, or a simple airport transfer, one question matters more than Wi-Fi, water, or luxury leather seats: is my child truly safe?",
-          "At H&A TOURS LTD, the answer is always yes. Here is why child car seats are not just an extra – they are essential.",
-        ],
-      },
-      {
-        heading: "1. The reality of road safety in Greece",
-        paragraphs: [
-          "Greece welcomes millions of families every year. The routes are beautiful – Athens Riviera to Sounio (69 km), Athens to Delphi (180 km), Athens to Meteora (355 km) – but they are also highways with high speeds, sharp mountain turns, and heavy summer traffic. According to EU statistics, the correct use of a certified child car seat reduces the risk of fatal injury by up to 71% for infants and 54% for toddlers.",
-          "A simple adult seatbelt is designed for a 75 kg adult. For a 10 kg baby, in a 50 km/h collision, the force becomes over 300 kg. No parent's arms can hold that. Only an i-Size certified seat can.",
-        ],
-      },
-      {
-        heading: "2. The law: what every tourist parent should know",
-        paragraphs: ["Greek traffic law (KOK) and EU regulation R129 (i-Size) are strict:"],
-        bullets: [
-          "Children under 12 years or 135 cm in height must use an appropriate child restraint system.",
-          "Children under 150 cm cannot sit in the front seat with an active airbag.",
-          "Fines for non-compliance start at €350, but the real cost is safety.",
-          "Professional transfer companies are legally required to provide suitable seats upon request.",
-        ],
-      },
-      {
-        paragraphs: [
-          "Many taxis or low-cost shuttles in Athens do not carry proper seats. They offer a booster for a six-month-old baby, which is both illegal and dangerous. At H&A TOURS LTD, we never compromise.",
-        ],
-      },
-    ],
   },
   {
     slug: "private-meteora-day-trip-from-athens",

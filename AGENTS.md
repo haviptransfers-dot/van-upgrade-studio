@@ -31,3 +31,5 @@
 - Point structured-data image/logo at a site-served absolute URL (public/logo.png) rather than a bundled asset import, and keep that file at the source mark's true fidelity instead of an upscaled render.
 - Generate all public language documents from the real React page tree and language dictionaries using bounded Vite static generation; normalize SEO URLs with pageUrl to exactly one trailing slash, matching the CI sitemap and smoke expectations without changing navigation behavior.
 - Use an isolated Vite configuration with production-compatible automatic JSX, no browser SWC plugin, dependency discovery, file watching or HMR for the build-only SSR renderer; publishing must match React's production runtime without a competing dependency scan.
+
+- Keep the child-seat article’s localized body, metadata and CTA in its dedicated data record; derive its FAQ schema from the displayed FAQ sections so question and answer text cannot drift.
