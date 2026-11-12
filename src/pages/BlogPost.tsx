@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { blogPosts, localizePost, WHATSAPP_URL } from "@/data/blogPosts";
 import logoImg from "@/assets/logo.webp";
 import { organization } from "@/data/structuredData";
+import { showTwitterDescription } from "@/lib/twitterDescription";
 import { localizedPath } from "@/lib/languagePaths";
 
 /** Renders plain text with optional [label](url) markdown links as real anchors. */
