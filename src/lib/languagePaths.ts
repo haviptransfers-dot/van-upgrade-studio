@@ -26,6 +26,16 @@ export function localizedPath(path: string, language: string): string {
   const prefix = language !== "en" && LANGUAGES.includes(language as SiteLanguage) ? `/${language}` : "";
   return `${prefix}${resolved === "/" ? "/" : resolved}${suffix}`;
 }
+/** Localized href with exactly one trailing slash on page paths, matching canonical URLs. */
+export function linkPath(path: string, language: string): string {
+  const localized = localizedPath(path, language);
+  if (!localized.startsWith("/") || localized.startsWith("//")) return localized;
+  const separator = localized.search(/[?#]/);
+  const pathname = separator < 0 ? localized : localized.slice(0, separator);
+  const suffix = separator < 0 ? "" : localized.slice(separator);
+  if (/\.[a-z0-9]{2,5}$/i.test(pathname)) return localized;
+  return `${pathname.replace(/\/+$/, "")}/${suffix}`;
+}
 export function pageUrl(path: string, language: string) {
   const pathname = localizedPath(path, language).split(/[?#]/)[0];
   return `${SITE_ORIGIN}${pathname.replace(/\/+$/, "")}/`;

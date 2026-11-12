@@ -3,7 +3,7 @@ import { hostedImageUrl } from "@/lib/heroDelivery";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 import { useLocation } from "react-router-dom";
-import { localizedPath } from "@/lib/languagePaths";
+import { linkPath } from "@/lib/languagePaths";
 
 const langs = [
   { code: "el", label: "GR", country: "gr" },
@@ -26,7 +26,7 @@ const LanguageSwitcher = () => {
       {langs.map((l, i) => (
         <div key={l.country} className="flex items-center gap-0.5 md:gap-1">
           <a
-            href={localizedPath(`${location.pathname}${location.search}${location.hash}`, l.code)}
+            href={linkPath(`${location.pathname}${location.search}${location.hash}`, l.code)}
             hrefLang={l.code}
             className={cn(
               "transition-colors px-0.5 md:px-1 inline-flex items-center gap-1 md:gap-1.5",

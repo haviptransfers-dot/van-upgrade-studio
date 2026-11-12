@@ -1,4 +1,4 @@
-import { localizedPath } from "@/lib/languagePaths";
+import { linkPath } from "@/lib/languagePaths";
 import { useTranslation } from "react-i18next";
 import { ChevronDown } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -15,7 +15,7 @@ export default function ExploreToursMenu({ label, tours }: { label: string; tour
       </Button>
     </DropdownMenuTrigger>
     <DropdownMenuContent align="center" className="bg-card border-border min-w-[220px]">
-      {tours.map((tour) => <DropdownMenuItem key={tour.path} onClick={() => navigate(localizedPath(tour.path, i18n.language))} className="cursor-pointer text-foreground hover:text-primary focus:text-primary">{tour.label}</DropdownMenuItem>)}
+      {tours.map((tour) => <DropdownMenuItem key={tour.path} onClick={() => navigate(linkPath(tour.path, i18n.language))} className="cursor-pointer text-foreground hover:text-primary focus:text-primary">{tour.label}</DropdownMenuItem>)}
     </DropdownMenuContent>
   </DropdownMenu>;
 }
