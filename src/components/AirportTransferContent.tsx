@@ -72,7 +72,7 @@ export default function AirportTransferContent() {
             <AccordionTrigger className="text-start py-4 md:py-5 hover:no-underline group">
               <div className="flex items-start gap-3">
                 <HelpCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <h3 className="font-display text-sm md:text-base font-semibold text-foreground group-hover:text-primary transition-colors leading-snug">{item.q}</h3>
+                <span className="font-display text-sm md:text-base font-semibold text-foreground group-hover:text-primary transition-colors leading-snug">{item.q}</span>
               </div>
             </AccordionTrigger>
             <AccordionContent className="text-muted-foreground leading-relaxed ps-8 text-sm md:text-base">{item.a}</AccordionContent>
