@@ -13,8 +13,11 @@ import { organization } from "@/data/structuredData";
 import { localizedPath } from "@/lib/languagePaths";
 
 /** Renders plain text with optional [label](url) markdown links as real anchors. */
-function LinkedText({ text }: { text: string }) {
+function LinkedText({ text, bold = false }: { text: string; bold?: boolean }) {
   const { i18n } = useTranslation();
+  if (bold && text.includes("**")) {
+    return <>{text.split(/(\*\*[^*]+\*\*)/g).map((part, index) => part.startsWith("**") ? <strong key={index}><LinkedText text={part.slice(2, -2)} /></strong> : <LinkedText key={index} text={part} />)}</>;
+  }
   const parts: React.ReactNode[] = [];
   const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
   let lastIndex = 0;
@@ -88,6 +91,16 @@ const BlogPost = () => {
             author: { "@id": organization["@id"] },
           })}
         </script>
+        {post.slug === "child-car-seats-private-transfers-greece" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org", "@type": "FAQPage",
+            inLanguage: i18n.language.split("-")[0],
+            mainEntity: post.sections.filter(section => section.faq).map(section => ({
+              "@type": "Question", name: section.subheading,
+              acceptedAnswer: { "@type": "Answer", text: section.paragraphs?.[0] },
+            })),
+          })}</script>
+        )}
       </Helmet>
 
       {/* Header */}
@@ -127,7 +140,7 @@ const BlogPost = () => {
               )}
               {section.paragraphs?.map((p, j) => (
                 <p key={j} className="text-foreground/80 leading-relaxed mb-4">
-                  <LinkedText text={p.replace(/\*\*([^*]+)\*\*/g, "$1")} />
+                  <LinkedText text={post.cta ? p : p.replace(/\*\*([^*]+)\*\*/g, "$1")} bold={Boolean(post.cta)} />
                 </p>
               ))}
               {section.bullets && (
@@ -135,11 +148,14 @@ const BlogPost = () => {
                   {section.bullets.map((b, j) => (
                     <li key={j} className="flex items-start gap-3 text-foreground/80">
                       <Star className="w-4 h-4 text-primary flex-shrink-0 mt-1" />
-                      <span><LinkedText text={b} /></span>
+                      <span><LinkedText text={b} bold={Boolean(post.cta)} /></span>
                     </li>
                   ))}
                 </ul>
               )}
+              {section.orderedItems && <ol className="list-decimal pl-6 space-y-3 mt-4 text-foreground/80">
+                {section.orderedItems.map((item, index) => <li key={index}><LinkedText text={item} bold /></li>)}
+              </ol>}
               {section.image && (
                 <OptimizedImage
                   src={section.image}
@@ -157,12 +173,12 @@ const BlogPost = () => {
 
         {/* WhatsApp CTA */}
         <div className="mt-14 bg-card border border-primary/20 rounded-lg p-8 text-center">
-          <h2 className="font-display text-2xl font-bold mb-3">{t("blog.ctaTitle")}</h2>
-          <p className="text-muted-foreground mb-6">{t("blog.ctaDesc")}</p>
+          <h2 className="font-display text-2xl font-bold mb-3">{post.cta?.title ?? t("blog.ctaTitle")}</h2>
+          <p className="text-muted-foreground mb-6">{post.cta?.description ?? t("blog.ctaDesc")}</p>
           <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="text-base px-8 gap-2 bg-primary text-primary-foreground hover:bg-primary/80">
               <MessageCircle className="w-5 h-5" />
-              {t("blog.ctaWhatsapp")}
+              {post.cta?.button ?? t("blog.ctaWhatsapp")}
             </Button>
           </a>
         </div>

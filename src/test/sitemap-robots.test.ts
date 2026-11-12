@@ -58,8 +58,12 @@ describe("sitemap.xml automated checks", () => {
     expect(sitemap).not.toContain("/404");
   });
 
-  it("omits lastmod because no authoritative per-page change timestamp exists", () => {
-    expect(sitemap).not.toContain("<lastmod>");
+  it("uses the confirmed content-change date only for the eight child-seat article URLs", () => {
+    const changed = [...sitemap.matchAll(/<url>(.*?)<\/url>/g)].filter(([entry]) => entry.includes("<lastmod>"));
+    expect(changed).toHaveLength(8);
+    for (const [entry] of changed) {
+      expect(entry).toContain("/blog/child-car-seats-private-transfers-greece/</loc><lastmod>2026-11-12</lastmod>");
+    }
   });
 });
 

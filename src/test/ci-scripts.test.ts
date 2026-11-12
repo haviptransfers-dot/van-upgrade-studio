@@ -14,7 +14,7 @@ describe("CI script regressions", () => {
   it("automatically repairs an outdated sitemap before npm test", () => {
     const staging = mkdtempSync(join(tmpdir(), "sitemap-autofix-"));
     try {
-      for (const path of ["scripts/sync-sitemap.mjs", "scripts/public-pages.mjs", "src/seoRoutes.ts", "src/data/blogPosts.ts", "src/data/nafplio.ts"]) {
+      for (const path of ["scripts/sync-sitemap.mjs", "scripts/public-pages.mjs", "src/seoRoutes.ts", "src/data/blogPosts.ts", "src/data/nafplio.ts", "src/data/articleLastmod.json"]) {
         mkdirSync(dirname(join(staging, path)), { recursive: true });
         copyFileSync(join(ROOT, path), join(staging, path));
       }

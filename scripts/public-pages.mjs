@@ -25,5 +25,6 @@ export function expectedHreflangs(path) {
 }
 
 export function generateSitemap(paths = publicPaths()) {
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${[...new Set(paths)].map((path) => `  <url><loc>${SITE}${path.replace(/\/+$/, "")}/</loc>${[...LANGUAGES, "x-default"].map((language) => `<xhtml:link rel="alternate" hreflang="${language}" href="${SITE}${localPath(basePath(path), language === "x-default" ? "en" : language)}" />`).join("")}</url>`).join("\n")}\n</urlset>\n`;
+  const lastmod = JSON.parse(source("src/data/articleLastmod.json"));
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${[...new Set(paths)].map((path) => `  <url><loc>${SITE}${path.replace(/\/+$/, "")}/</loc>${lastmod[basePath(path).replace(/^\/blog\//, "").replace(/\/+$/, "")] ? `<lastmod>${lastmod[basePath(path).replace(/^\/blog\//, "").replace(/\/+$/, "")]}</lastmod>` : ""}${[...LANGUAGES, "x-default"].map((language) => `<xhtml:link rel="alternate" hreflang="${language}" href="${SITE}${localPath(basePath(path), language === "x-default" ? "en" : language)}" />`).join("")}</url>`).join("\n")}\n</urlset>\n`;
 }

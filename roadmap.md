@@ -1,6 +1,6 @@
 # Roadmap
 
-- [open] Update only the existing child-seat article in eight languages, preserving identity/URLs/date/image, adding matching localized FAQ schema and only its eight sitemap lastmod entries; verify and present the diff without publishing.
+- [done] Updated only the existing child-seat article in eight languages with matching localized FAQ schema and eight page-specific sitemap dates. Identity, URLs, publication date and featured image retained; translated title/meta limits checked. Full suite: 211 tests passed. Eight initial and loaded article versions, links, images and RTL checked; review diff supplied. Not published; awaiting owner approval.
 
 - [done] Optimized homepage delivery without visual/content changes: 23.7/52.4KB responsive WebP hero with matching high-priority preload; isolated image metadata and music loading, excluded unused template/test CSS, preserved lazy media/font swap/consent-gated tracking, and served a Schema.org root DataCatalog. All 186 tests passed; desktop/mobile images, menus, three-passenger €85 WhatsApp message, head tags and catalog verified. Build OK. No publication; new hosted PageSpeed scores remain unmeasured (only two visitor FCP readings and no LCP data).
 
