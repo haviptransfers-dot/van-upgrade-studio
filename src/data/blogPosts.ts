@@ -1,4 +1,5 @@
 import supplements from "./blogSupplements.json";
+import childSeatArticle from "./childSeatArticle.json";
 
 import athensAirportHotelTransfer from "@/assets/athens-airport-hotel-transfer.jpg.asset.json";
 import mercedesVitoVipChauffeurAthens from "@/assets/mercedes-vito-vip-chauffeur-athens.jpg.asset.json";
@@ -33,6 +34,8 @@ const ASSET_HOST = "https://van-move-boost.lovable.app";
 const hostedAssetUrl = (asset: { url: string }) => `${ASSET_HOST}${asset.url}`;
 
 export interface BlogSection {
+  faq?: boolean;
+  orderedItems?: string[];
   heading?: string; // H2
   subheading?: string; // H3
   paragraphs?: string[];
@@ -42,6 +45,7 @@ export interface BlogSection {
 }
 
 export interface BlogPost {
+  cta?: { title: string; description: string; button: string };
   staticDocument?: boolean;
   slug: string;
   title: string;
@@ -57,6 +61,10 @@ export interface BlogPost {
 /** Returns the post with localized fields for `lang`, falling back to the base (English) content. */
 export function localizePost(post: BlogPost, lang: string): BlogPost {
   const base = lang?.split("-")[0] || "en";
+  if (post.slug === "child-car-seats-private-transfers-greece") {
+    const article = childSeatArticle[base as keyof typeof childSeatArticle] ?? childSeatArticle.en;
+    return { ...post, ...article };
+  }
   const extra = (supplements as Record<string, Record<string, Partial<BlogPostTranslation> & { imageAlts?: (string | null)[]; mapAlt?: string }>>)[post.slug]?.[base];
   const tr = blogPostTranslations[post.slug]?.[base];
   const merged = { ...post, ...tr, ...extra };
