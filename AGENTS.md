@@ -38,5 +38,5 @@
 - Publish twitter:description on Helmet-owned pages only for paths listed per language in src/lib/twitterDescription.ts; owner-reviewed metadata rolls out page by page without altering unreviewed pages.
 - Keep About meta text in preferredSources.metaDescription when it differs from the visible support paragraph, falling back to supportText; search snippets can be shortened without editing page copy.
 - Build internal and language-switch hrefs with linkPath (localized, exactly one trailing slash) so links match canonical URLs; keep localizedPath slashless because route matching and static generation depend on it.
-- Accordion content also renders a hidden copy of each answer so closed FAQ answers are present in server-rendered HTML without changing panel design or animation.
-- The airport route renders the shared Index header with its own AirportTransferContent body (locale `airportPage` copy, inline links parsed from [label](path)) plus the shared SiteFooter and booking form, instead of the homepage sections; header section links point to the homepage there, and its FAQPage schema comes only from that copy.
+- Accordion content renders a hidden answer copy so closed FAQ answers stay in server-rendered HTML without design changes.
+- Airport route: shared Index header + AirportTransferContent (locale `airportPage`, [label](path) links) + SiteFooter and booking form, not homepage sections; its only FAQPage comes from that copy, so the page stays unique.
