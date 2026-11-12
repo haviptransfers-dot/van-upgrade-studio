@@ -95,7 +95,7 @@ export const blogPosts: BlogPost[] = [
     date: "2027-01-16",
     metaTitle: "Chauffeur Transfer Versus Athens Taxi | H&A Tours",
     metaDescription:
-      "Chauffeur transfer versus Athens taxi compared: availability, luggage space, child seats, privacy and fixed scheduling — and when a private Mercedes Vito VIP transfer is the better choice.",
+      "Chauffeur transfer versus Athens taxi: availability, luggage, child seats, privacy and fixed scheduling — when a private Mercedes Vito VIP is a better choice.",
     sections: [
       {
         paragraphs: [
@@ -184,7 +184,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-12-16",
     metaTitle: "Bachelor & Bachelorette Party Transfers in Greece | H&A Tours",
     metaDescription:
-      "Private party transfers in a black Mercedes Vito VIP: bar and club hopping in Athens or the Athens Riviera, beach days, winery trips and airport pickups for your whole crew. All-night availability, fixed price.",
+      "Private party transfers in a black Mercedes Vito VIP: bars and clubs in Athens, beach days, wineries and airport pickups. All-night availability, fixed price.",
     sections: [
       {
         paragraphs: [
@@ -252,7 +252,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-11-16",
     metaTitle: "Wedding Transfers in Greece – Luxury Mercedes Vito VIP | H&A Tours",
     metaDescription:
-      "Private wedding transfers across Greece: bridal transfer, couple's transfer and guest shuttle in a black Mercedes Vito VIP with a professional chauffeur. Full-day availability.",
+      "Private wedding transfers across Greece: bridal, couple and guest transport in a black Mercedes Vito VIP with a professional chauffeur. Full-day availability.",
     sections: [
       {
         paragraphs: [
@@ -386,7 +386,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-09-16",
     metaTitle: "Night Transfer from Athens Airport – Private Late Arrival | H&A VIP Tours",
     metaDescription:
-      "Arriving late in Athens? Book a private night transfer from Athens Airport with a Mercedes Vito VIP, professional chauffeur, luggage space and 24/7 WhatsApp booking.",
+      "Arriving late in Athens? Book a private night transfer from Athens Airport in a Mercedes Vito VIP, professional chauffeur, luggage space and WhatsApp 24/7.",
     sections: [
       {
         paragraphs: [
@@ -545,7 +545,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle:
       "Private Transfer in Athens for Multiple Suitcases | H&A VIP Tours",
     metaDescription:
-      "Book a private Athens transfer with space for multiple suitcases. Mercedes Vito VIP, professional chauffeur, 24/7 WhatsApp booking, and luggage planned in advance.",
+      "Book a private Athens transfer with space for multiple suitcases. Mercedes Vito VIP, professional chauffeur, WhatsApp 24/7, luggage planned in advance.",
     sections: [
       {
         paragraphs: [
@@ -638,7 +638,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-05-15",
     metaTitle: "Private Meteora Day Trip from Athens – Mercedes Vito VIP | H&A VIP Tours",
     metaDescription:
-      "Private chauffeur-driven day trip from Athens to Meteora in a luxury Mercedes Vito VIP. Hotel pickup, monastery visits, flexible timing and 24/7 WhatsApp booking.",
+      "Private chauffeur-driven day trip from Athens to Meteora in a Mercedes Vito VIP. Hotel pickup, monastery visits, flexible timing and 24/7 WhatsApp booking.",
     sections: [
       {
         paragraphs: [
@@ -717,7 +717,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-15",
     metaTitle: "Private Delphi Day Trip from Athens – Mercedes Vito VIP | H&A VIP Tours",
     metaDescription:
-      "Private chauffeur-driven day trip from Athens to Delphi in a Mercedes Vito VIP. Hotel pickup, Arachova stop, flexible timing and an unhurried itinerary. Book via WhatsApp 24/7.",
+      "Private chauffeur-driven day trip from Athens to Delphi in a Mercedes Vito VIP. Hotel pickup, an Arachova stop, and flexible timing. Book via WhatsApp 24/7.",
     sections: [
       {
         paragraphs: [
@@ -808,7 +808,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-03-15",
     metaTitle: "Private Transfer Athens to Cape Sounio – Temple of Poseidon | H&A VIP Tours",
     metaDescription:
-      "Private chauffeur-driven transfer from Athens to Cape Sounion and the Temple of Poseidon in a Mercedes Vito VIP. Sunset tours, coastal stops, flexible timing. Book via WhatsApp 24/7.",
+      "Private transfer from Athens to Cape Sounion and the Temple of Poseidon in a Mercedes Vito VIP. Sunset tours and coastal stops. Book via WhatsApp 24/7.",
     sections: [
       {
         paragraphs: [
@@ -1174,7 +1174,7 @@ export const blogPosts: BlogPost[] = [
     imageAlt: "Private tour of Athens with a professional driver gesturing toward the Acropolis, with a couple enjoying the view on a sunny day",
     date: "2026-02-15",
     metaTitle: "Private Tour of Athens with Driver | Mercedes Vito VIP | H&A VIP Tours",
-    metaDescription: "Discover Athens at your own pace with a private tour and professional chauffeur in a luxury Mercedes Vito VIP. Custom itinerary, hotel & cruise terminal pickup, child seats on request.",
+    metaDescription: "Discover Athens at your own pace with a private tour and chauffeur in a Mercedes Vito VIP. Custom itinerary, hotel or cruise pickup, child seats on request.",
     sections: [
       {
         paragraphs: [

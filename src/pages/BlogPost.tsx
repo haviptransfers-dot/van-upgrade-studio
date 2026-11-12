@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { blogPosts, localizePost, WHATSAPP_URL } from "@/data/blogPosts";
 import logoImg from "@/assets/logo.webp";
 import { organization } from "@/data/structuredData";
+import { showTwitterDescription } from "@/lib/twitterDescription";
 import { localizedPath } from "@/lib/languagePaths";
 
 /** Renders plain text with optional [label](url) markdown links as real anchors. */
@@ -79,6 +80,7 @@ const BlogPost = () => {
 
         <meta property="og:title" content={post.metaTitle} />
         <meta property="og:description" content={post.metaDescription} />
+        {showTwitterDescription(`/blog/${post.slug}`, i18n.language) && <meta name="twitter:description" content={post.metaDescription} />}
         <meta property="og:type" content="article" />
         <script type="application/ld+json">
           {JSON.stringify({

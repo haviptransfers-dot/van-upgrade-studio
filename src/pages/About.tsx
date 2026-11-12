@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet-async";
 import Link from "@/components/LocalizedLink";
 import { useTranslation } from "react-i18next";
 import { ArrowLeft, Heart } from "lucide-react";
+import { showTwitterDescription } from "@/lib/twitterDescription";
 import logoImg from "@/assets/logo.webp";
 
 const SITE_URL = "https://haviptransfers.gr";
@@ -26,6 +27,7 @@ const About = () => {
 
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
+        {showTwitterDescription("/about", i18n.language) && <meta name="twitter:description" content={description} />}
         <meta property="og:type" content="website" />
       </Helmet>
 

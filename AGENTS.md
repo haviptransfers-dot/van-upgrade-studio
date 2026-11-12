@@ -35,3 +35,4 @@
 - Keep the child-seat article’s localized body, metadata and CTA in its dedicated data record; derive its FAQ schema from the displayed FAQ sections so question and answer text cannot drift.
 
 - Email the business only for booking requests that pass the shared name/email/phone rules, validated in the browser and again in send-lead-email, with reply_to set to the customer; chat questions are stored without email, so no notification arrives without contact details.
+- Publish twitter:description on Helmet-owned pages only for paths listed per language in src/lib/twitterDescription.ts; owner-reviewed metadata rolls out page by page without altering unreviewed pages.
