@@ -14,7 +14,8 @@ const About = () => {
   const { t, i18n } = useTranslation();
   const url = `${SITE_URL}/about`;
   const title = t("preferredSources.aboutTitle");
-  const description = t("preferredSources.supportText");
+  // Meta text may differ from the visible support paragraph; languages without one reuse it.
+  const description = t("preferredSources.metaDescription", { defaultValue: t("preferredSources.supportText") });
 
   return (
     <div className="min-h-screen bg-background">

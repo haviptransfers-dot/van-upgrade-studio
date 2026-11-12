@@ -29,7 +29,7 @@ describe("Part 1 English meta descriptions", () => {
 
   it("adds twitter:description only to the listed English pages", () => {
     expect(showTwitterDescription("/about", "en")).toBe(true);
-    expect(showTwitterDescription("/about", "el")).toBe(false);
+    expect(showTwitterDescription("/about", "de")).toBe(false);
     expect(showTwitterDescription("/blog/child-car-seats-private-transfers-greece", "en")).toBe(false);
     expect(showTwitterDescription("/airport-transfer-athens", "en")).toBe(false);
   });
