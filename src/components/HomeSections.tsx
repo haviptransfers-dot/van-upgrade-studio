@@ -11,7 +11,6 @@ import RelatedTravelLinks from "@/components/RelatedTravelLinks";
 import TrustBadge from "@/components/TrustBadge";
 import SiteFooter from "@/components/SiteFooter";
 import interiorImg from "@/assets/fleet-vito.webp";
-import logoImg from "@/assets/logo.webp";
 import bgServices from "@/assets/showcase-1.webp";
 import bgWhy from "@/assets/showcase-2.webp";
 import bgCta from "@/assets/wall-3.webp";
