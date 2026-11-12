@@ -36,9 +36,7 @@ export default {
   ],
   "roadAlt": "Mercedes Vito VIP cruising on the highway",
   "childPhotoAlts": [
-    "Mother securing her smiling child in a child seat inside the Mercedes Vito VIP, with the Athens Acropolis in the background",
-    "i-Size child seat with harness in the back seat of a Mercedes",
-    "BeSafe 360 swivel child seat installed in a Mercedes Vito VIP"
+    "Mother securing her smiling child in a child seat inside the Mercedes Vito VIP, with the Athens Acropolis in the background"
   ],
   "tourFaqs": {
     "athensTour": [
@@ -449,8 +447,6 @@ export default {
     request: "Request Child Seat",
     safety: "Your family's safety is our priority",
     whatsappMsg: "Hi! I'd like to request a child seat for my upcoming transfer.",
-    besafeTitle: "BeSafe — Scandinavian pioneer in child car safety",
-    besafeText: "BeSafe is the first producer of child car seats in Scandinavia, and its seats are sold in more than 40 countries. The BeSafe research and development department in the Netherlands continuously focuses on developing innovative products to improve children's safety on the road.",
   },
   payments: {
     eyebrow: "Secure Payment",

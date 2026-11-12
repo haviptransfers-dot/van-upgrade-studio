@@ -36,9 +36,7 @@ export default {
   ],
   "roadAlt": "Mercedes Vito VIP auf der Autobahn",
   "childPhotoAlts": [
-    "Mutter sichert ihr lächelndes Kind in einem Kindersitz im Mercedes Vito VIP, mit der Akropolis von Athen im Hintergrund",
-    "i-Size-Kindersitz mit Gurtsystem auf dem Rücksitz eines Mercedes",
-    "Drehbarer BeSafe 360 Kindersitz in einem Mercedes Vito VIP installiert"
+    "Mutter sichert ihr lächelndes Kind in einem Kindersitz im Mercedes Vito VIP, mit der Akropolis von Athen im Hintergrund"
   ],
   "tourFaqs": {
     "athensTour": [
@@ -449,8 +447,6 @@ export default {
     request: "Kindersitz Anfragen",
     safety: "Die Sicherheit Ihrer Familie ist unsere Priorität",
     whatsappMsg: "Hallo! Ich möchte einen Kindersitz für meine Fahrt anfragen.",
-    besafeTitle: "BeSafe — Skandinavischer Pionier in der Kinderautosicherheit",
-    besafeText: "BeSafe ist der erste Hersteller von Kindersitzen in Skandinavien, und die Sitze werden in über 40 Länder verkauft. Die Forschungs- und Entwicklungsabteilung von BeSafe in den Niederlanden konzentriert sich kontinuierlich auf die Entwicklung innovativer Produkte zur Verbesserung der Kindersicherheit auf der Straße.",
   },
   payments: {
     eyebrow: "Sichere Zahlung",

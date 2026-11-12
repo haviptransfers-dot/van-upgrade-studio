@@ -36,9 +36,7 @@ export default {
   ],
   "roadAlt": "Mercedes Vito VIP roulant sur l’autoroute",
   "childPhotoAlts": [
-    "Mère attachant son enfant souriant dans un siège enfant à l’intérieur du Mercedes Vito VIP, avec l’Acropole d’Athènes en arrière-plan",
-    "Siège enfant i-Size avec harnais sur la banquette arrière d’une Mercedes",
-    "Siège enfant pivotant BeSafe 360 installé dans un Mercedes Vito VIP"
+    "Mère attachant son enfant souriant dans un siège enfant à l’intérieur du Mercedes Vito VIP, avec l’Acropole d’Athènes en arrière-plan"
   ],
   "tourFaqs": {
     "athensTour": [
@@ -449,8 +447,6 @@ export default {
     request: "Demander un Siège Enfant",
     safety: "La sécurité de votre famille est notre priorité",
     whatsappMsg: "Bonjour ! Je souhaite réserver un siège enfant pour mon transfert.",
-    besafeTitle: "BeSafe — Le pionnier scandinave de la sécurité automobile pour enfants",
-    besafeText: "C'est le premier fabricant de sièges auto pour enfants en Scandinavie, et ses sièges sont vendus dans plus de 40 pays. Le département de recherche et développement de BeSafe aux Pays-Bas se concentre en permanence sur le développement de produits innovants pour améliorer la sécurité des enfants sur la route.",
   },
   payments: {
     eyebrow: "Paiement Sécurisé",
