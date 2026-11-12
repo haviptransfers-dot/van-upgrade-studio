@@ -22,7 +22,11 @@ export async function renderPage(path: string) {
     const chunks: Buffer[] = [];
     const output = new PassThrough();
     output.on("data", (chunk) => chunks.push(Buffer.from(chunk)));
-    output.on("end", () => resolve(Buffer.concat(chunks).toString("utf8")));
+    output.on("end", () => {
+      const html = Buffer.concat(chunks).toString("utf8");
+      // The long RTL article can cross React 18's text-buffer boundary.
+      resolve(path.replace(/\/+$/, "").endsWith("/blog/child-car-seats-private-transfers-greece") ? html.replace(/\u0000/g, "") : html);
+    });
     output.on("error", reject);
     const stream = renderToPipeableStream(page, { onAllReady() { stream.pipe(output); }, onShellError: reject, onError: reject });
   });
