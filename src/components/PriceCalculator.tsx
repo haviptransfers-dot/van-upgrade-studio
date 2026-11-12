@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { MessageCircle, Minus, Plus, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { captureLead } from "@/lib/leadCapture";
 
 type ServiceKey =
   | "airport_to_athens"
@@ -193,15 +192,6 @@ const PriceCalculator = () => {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() =>
-              captureLead({
-                type: "booking_attempt",
-                route: t(`calc.services.${service}`),
-                passengers: String(pax),
-                quotedPrice: total,
-                nightRate: night,
-              })
-            }
           >
             <Button className="w-full gap-2 bg-primary text-primary-foreground hover:bg-primary/80 tracking-[0.15em] md:tracking-[0.2em] uppercase text-[11px] md:text-xs font-bold py-5 md:py-6">
               <MessageCircle className="w-4 h-4" />

@@ -398,7 +398,7 @@ const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
                   <input
                     key={f.k}
                     required={f.req}
-                    type={f.type || "text"}
+                    type="text"
                     placeholder={t(`chat.booking${f.k.charAt(0).toUpperCase() + f.k.slice(1)}`)}
                     value={booking[f.k as keyof typeof booking]}
                     onChange={(e) => setBooking({ ...booking, [f.k]: e.target.value })}
