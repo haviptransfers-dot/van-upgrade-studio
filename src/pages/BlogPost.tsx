@@ -79,6 +79,7 @@ const BlogPost = () => {
 
         <meta property="og:title" content={post.metaTitle} />
         <meta property="og:description" content={post.metaDescription} />
+        {showTwitterDescription(`/blog/${post.slug}`, i18n.language) && <meta name="twitter:description" content={post.metaDescription} />}
         <meta property="og:type" content="article" />
         <script type="application/ld+json">
           {JSON.stringify({
