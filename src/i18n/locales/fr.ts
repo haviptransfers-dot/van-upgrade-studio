@@ -386,7 +386,7 @@ export default {
   },
   cta: {
     title: "Prêt à réserver votre transfert ?",
-    desc: "Contactez-nous via WhatsApp pour une confirmation immédiate. Disponible en anglais, grec, français, allemand et italien.",
+    desc: "Contactez-nous via WhatsApp pour une confirmation immédiate. Disponible en anglais, grec, allemand, espagnol, français, italien, hébreu et arabe.",
     whatsapp: "Réserver via WhatsApp",
     email: "Envoyer un Email",
   },
@@ -506,7 +506,7 @@ export default {
       q2: "Qu'est-ce qui est inclus dans le prix ?",
       a2: "Tous les transferts incluent les péages, l'eau en bouteille, le Wi-Fi gratuit et le suivi des vols ou des navires.",
       q3: "Combien de passagers et de valises peuvent entrer ?",
-      a3: "Nous avons des véhicules pour 7 ou 8 passagers. Chaque passager peut apporter une grande valise.",
+      a3: "Notre Mercedes Vito VIP accueille jusqu’à 7 passagers. Chaque passager peut apporter une grande valise.",
       q4: "Quels modes de paiement acceptez-vous ?",
       a4: "Nous acceptons les espèces (EUR), le paiement par carte via POS mobile (Visa/Mastercard) et le virement bancaire.",
       q5: "Un acompte est-il requis ?",
@@ -516,7 +516,7 @@ export default {
       q7: "Proposez-vous des sièges enfants ?",
       a7: "Oui, des sièges enfants sont disponibles sur demande. Âges indicatifs : groupe 0+ (0–13 kg), jusqu’à 2–3 ans ; groupe 1 (9–18 kg), de 2,5–3 à 4–5 ans ; rehausseurs (15–36 kg), à partir de 4 ans. Indiquez l’âge et le poids de l’enfant et le nombre de sièges nécessaires lors de la réservation.",
       q8: "Comment trouver mon chauffeur à l'aéroport ?",
-      a8: "Votre chauffeur tiendra une pancarte avec le nom de notre entreprise (H&A VIP Transfers). Si vous le souhaitez, nous pouvons aussi afficher votre nom — il suffit de demander.",
+      a8: "Votre chauffeur vous attend dans le hall des arrivées avec une pancarte à votre nom.",
     },
   },
   seo: {

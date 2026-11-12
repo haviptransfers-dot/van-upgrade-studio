@@ -386,7 +386,7 @@ export default {
   },
   cta: {
     title: "¿Listo para reservar tu transfer?",
-    desc: "Contáctanos por WhatsApp para confirmación inmediata. Disponible en inglés, griego, francés, alemán e italiano.",
+    desc: "Contáctanos por WhatsApp para confirmación inmediata. Disponible en inglés, griego, alemán, español, francés, italiano, hebreo y árabe.",
     whatsapp: "Reservar por WhatsApp",
     email: "Envíanos un Email",
   },
@@ -506,7 +506,7 @@ export default {
       q2: "¿Qué está incluido en el precio?",
       a2: "Todos los traslados incluyen peajes, agua embotellada, Wi-Fi gratuito y seguimiento de vuelos o barcos.",
       q3: "¿Cuántos pasajeros y maletas caben?",
-      a3: "Tenemos vehículos para 7 u 8 pasajeros. Cada pasajero puede traer una maleta grande.",
+      a3: "Nuestro Mercedes Vito VIP lleva hasta 7 pasajeros. Cada pasajero puede traer una maleta grande.",
       q4: "¿Qué métodos de pago aceptan?",
       a4: "Aceptamos efectivo (EUR), pago con tarjeta vía POS portátil (Visa/Mastercard) y transferencia bancaria.",
       q5: "¿Se requiere un depósito?",
@@ -516,7 +516,7 @@ export default {
       q7: "¿Proporcionan sillas para niños?",
       a7: "Sí, las sillas infantiles están disponibles bajo petición. Edades orientativas: grupo 0+ (0–13 kg), hasta 2–3 años; grupo 1 (9–18 kg), de 2,5–3 a 4–5 años; elevadores (15–36 kg), desde los 4 años. Indique la edad y el peso del niño y cuántas sillas necesita al reservar.",
       q8: "¿Cómo encontraré a mi conductor en el aeropuerto?",
-      a8: "Tu conductor sostendrá un cartel con el nombre de nuestra empresa (H&A VIP Transfers). Si lo deseas, también podemos mostrar un cartel con tu nombre — solo pídelo.",
+      a8: "Tu conductor te espera dentro de la sala de llegadas con un cartel con tu nombre.",
     },
   },
   seo: {

@@ -386,7 +386,7 @@ export default {
   },
   cta: {
     title: "Bereit, Ihren Transfer zu buchen?",
-    desc: "Kontaktieren Sie uns über WhatsApp für sofortige Buchungsbestätigung. Verfügbar auf Englisch, Griechisch, Französisch, Deutsch & Italienisch.",
+    desc: "Kontaktieren Sie uns über WhatsApp für sofortige Buchungsbestätigung. Verfügbar auf Englisch, Griechisch, Deutsch, Spanisch, Französisch, Italienisch, Hebräisch & Arabisch.",
     whatsapp: "Über WhatsApp buchen",
     email: "E-Mail senden",
   },
@@ -506,7 +506,7 @@ export default {
       q2: "Was ist im Preis inbegriffen?",
       a2: "Alle Transfers beinhalten Maut, Wasser, kostenloses WLAN sowie Flug- und Schiffsüberwachung.",
       q3: "Wie viele Passagiere und Koffer passen hinein?",
-      a3: "Wir haben Fahrzeuge für 7 oder 8 Passagiere. Jeder Passagier kann einen großen Koffer mitnehmen.",
+      a3: "Unser Mercedes Vito VIP bietet Platz für bis zu 7 Passagiere. Jeder Passagier kann einen großen Koffer mitnehmen.",
       q4: "Welche Zahlungsarten akzeptieren Sie?",
       a4: "Wir akzeptieren Bargeld (EUR), Kartenzahlung per mobilem POS (Visa/Mastercard) und Banküberweisung.",
       q5: "Ist eine Anzahlung erforderlich?",
@@ -516,7 +516,7 @@ export default {
       q7: "Bieten Sie Kindersitze an?",
       a7: "Ja, Kindersitze sind auf Anfrage verfügbar. Ungefähre Altersangaben: Gruppe 0+ (0–13 kg), bis 2–3 Jahre; Gruppe 1 (9–18 kg), von 2,5–3 bis 4–5 Jahren; Booster (15–36 kg), ab 4 Jahren. Bitte geben Sie bei der Buchung Alter und Gewicht des Kindes sowie die benötigte Anzahl an Sitzen an.",
       q8: "Wie finde ich meinen Fahrer am Flughafen?",
-      a8: "Ihr Fahrer hält ein Schild mit unserem Firmennamen (H&A VIP Transfers). Auf Wunsch können wir auch ein Schild mit Ihrem Namen anfertigen — einfach nachfragen.",
+      a8: "Ihr Fahrer erwartet Sie in der Ankunftshalle mit einem Schild, auf dem Ihr Name steht.",
     },
   },
   seo: {
