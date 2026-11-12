@@ -10,7 +10,7 @@ import he from "@/i18n/locales/he";
 import ar from "@/i18n/locales/ar";
 
 const locales = { en, el, de, es, fr, it: itLocale, he, ar };
-const childSeatWords = /child|baby|booster|famil|kinder|kids|sill(a|as) (infantil|para beb)|siège(s)? (enfant|bébé)|rehausseur|seggiolin|παιδικ|βρεφικ|οικογ|ילד|תינוק|משפח|طفل|أطفال|رضيع|عائل/i;
+const childSeatWords = /\bchild|baby|booster|famil|kinder|kids|sill(a|as) (infantil|para beb)|siège(s)? (enfant|bébé)|rehausseur|seggiolin|παιδικ|βρεφικ|οικογ|ילד|תינוק|משפח|طفل|أطفال|رضيع|عائل/i;
 const blogSlugs = [...readFileSync("src/data/blogPosts.ts", "utf8").matchAll(/slug:\s*"([^"]+)"/g)].map((m) => m[1]);
 const publicPaths = new Set(["/piraeus-port-transfer", "/athens-city-tour", "/delphi-private-tour", "/meteora-private-tour", "/nafplio-private-tour", "/cape-sounion-tour", ...blogSlugs.map((s) => `/blog/${s}`)]);
 const text = (page: typeof en.airportPage) => JSON.stringify(page);
