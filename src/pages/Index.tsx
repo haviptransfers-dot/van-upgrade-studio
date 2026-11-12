@@ -11,6 +11,7 @@ import { heroDelivery } from "@/lib/heroDelivery";
 import DeferredSection from "@/components/DeferredSection";
 import ClickToChat from "@/components/ClickToChat";
 import { useAfterFirstPaint } from "@/hooks/use-after-first-paint";
+import { linkPath } from "@/lib/languagePaths";
 import logoImg from "@/assets/logo.webp";
 import tourAcropolis from "@/assets/tour-acropolis.webp";
 import tourSounio from "@/assets/tour-sounio.webp";
@@ -25,6 +26,8 @@ const AnimatedBackground = lazy(() => import("@/components/AnimatedBackground"))
 const HomeSections = lazy(() => import("@/components/HomeSections"));
 const HeroSlideshow = lazy(() => import("@/components/HeroSlideshow"));
 const ExploreToursMenu = lazy(() => import("@/components/ExploreToursMenu"));
+const AirportTransferContent = lazy(() => import("@/components/AirportTransferContent"));
+const SiteFooter = lazy(() => import("@/components/SiteFooter"));
 
 const heroCycleImages = [
   heroSunsetCar,
@@ -44,10 +47,13 @@ interface IndexProps {
 }
 
 const Index = ({ routeKey }: IndexProps) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  // The airport page keeps the site header and footer but has its own dedicated body instead of the homepage sections.
+  const airport = routeKey === "airport";
+  const sectionHref = (id: string) => airport ? `${linkPath("/", i18n.language)}#${id}` : `#${id}`;
   const whatsappUrl = "https://wa.me/306949393700";
   const [toursMenuReady, setToursMenuReady] = useState(false);
-  const [heroPainted, setHeroPainted] = useState(false);
+  const [heroPainted, setHeroPainted] = useState(airport);
   useLayoutEffect(() => {
     if (!heroPainted) return;
     document.getElementById("first-screen")?.remove();
@@ -71,12 +77,13 @@ const Index = ({ routeKey }: IndexProps) => {
   }, []);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   useEffect(() => {
+    if (airport) return;
     const id = setInterval(() => {
       if (document.hidden || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
       setHeroCycleIndex((i) => (i + 1) % heroCycleImages.length);
     }, SLIDE_DURATION * 1000);
     return () => clearInterval(id);
-  }, []);
+  }, [airport]);
 
   const tourLinks = [
     { path: "/athens-city-tour", labelKey: "athensTour.title" },
@@ -107,11 +114,11 @@ const Index = ({ routeKey }: IndexProps) => {
             </div>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium">
-            <a href="#services" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.services")}</a>
-            <a href="#fleet" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.fleet")}</a>
-            <a href="#gallery" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.gallery")}</a>
-            <a href="#about" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.about")}</a>
-            <a href="#contact" className="text-foreground/70 hover:text-primary transition-colors">{t("nav.contact")}</a>
+            <a href={sectionHref("services")} className="text-foreground/70 hover:text-primary transition-colors">{t("nav.services")}</a>
+            <a href={sectionHref("fleet")} className="text-foreground/70 hover:text-primary transition-colors">{t("nav.fleet")}</a>
+            <a href={sectionHref("gallery")} className="text-foreground/70 hover:text-primary transition-colors">{t("nav.gallery")}</a>
+            <a href={sectionHref("about")} className="text-foreground/70 hover:text-primary transition-colors">{t("nav.about")}</a>
+            <a href={sectionHref("contact")} className="text-foreground/70 hover:text-primary transition-colors">{t("nav.contact")}</a>
             <Link to="/blog" className="relative text-foreground/70 hover:text-primary transition-colors">
               {t("blog.nav")}
               <span className="absolute -top-1.5 -right-2.5 flex h-2 w-2" aria-hidden="true">
@@ -143,11 +150,11 @@ const Index = ({ routeKey }: IndexProps) => {
           {mobileMenuOpen && (
             <div id="mobile-navigation" className="order-last mt-3 w-full border-t border-border pt-3 md:hidden">
               <div className="flex flex-col items-center gap-3 text-sm">
-                <a href="#services" onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("nav.services")}</a>
-                <a href="#fleet" onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("nav.fleet")}</a>
-                <a href="#gallery" onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("nav.gallery")}</a>
-                <a href="#about" onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("nav.about")}</a>
-                <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("nav.contact")}</a>
+                <a href={sectionHref("services")} onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("nav.services")}</a>
+                <a href={sectionHref("fleet")} onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("nav.fleet")}</a>
+                <a href={sectionHref("gallery")} onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("nav.gallery")}</a>
+                <a href={sectionHref("about")} onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("nav.about")}</a>
+                <a href={sectionHref("contact")} onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("nav.contact")}</a>
                 <Link to="/blog" onClick={() => setMobileMenuOpen(false)} className="text-foreground/80 hover:text-primary">{t("blog.nav")}</Link>
                 <LanguageSwitcher />
               </div>
@@ -159,6 +166,10 @@ const Index = ({ routeKey }: IndexProps) => {
         </div>
       </nav>
 
+      {airport ? <Suspense fallback={<div className="min-h-screen" aria-hidden="true" />}>
+        <AirportTransferContent />
+        <SiteFooter />
+      </Suspense> : <>
       {/* Hero */}
       <section className="home-hero relative flex items-center overflow-hidden">
         <div className="absolute inset-0 overflow-hidden bg-background">
@@ -227,6 +238,7 @@ const Index = ({ routeKey }: IndexProps) => {
       <DeferredSection anchor="services" anchors={["fleet", "gallery", "about", "contact", "calculator", "tours"]} rootMargin="0px" placeholderClass="min-h-[900px]">
         <HomeSections port={routeKey === "piraeus"} />
       </DeferredSection>
+      </>}
 
       {whatsappReady && <a
         href={whatsappUrl}

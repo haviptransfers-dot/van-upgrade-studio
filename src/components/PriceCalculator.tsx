@@ -36,7 +36,8 @@ const tieredPrices: Partial<Record<ServiceKey, { upTo4: number; fiveToSeven: num
   port_to_airport: { upTo4: 100, fiveToSeven: 110 },
 };
 
-const PriceCalculator = () => {
+// The airport page omits the child-seat chip (its owner brief bans child-seat mentions there); the chip is always last.
+const PriceCalculator = ({ hideChildSeats = false }: { hideChildSeats?: boolean }) => {
   const { t } = useTranslation();
   const [service, setService] = useState<ServiceKey>("airport_to_athens");
   const [pax, setPax] = useState(2);
@@ -199,7 +200,7 @@ const PriceCalculator = () => {
             </Button>
           </a>
           <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 mt-4">
-            {(t("calc.includes", { returnObjects: true }) as string[]).map((item) => (
+            {(t("calc.includes", { returnObjects: true }) as string[]).slice(0, hideChildSeats ? -1 : undefined).map((item) => (
               <span key={item} className="text-[9px] tracking-[0.15em] uppercase text-muted-foreground">
                 <span className="text-primary">✓</span> {item}
               </span>

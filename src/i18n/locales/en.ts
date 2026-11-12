@@ -520,7 +520,7 @@ export default {
     },
   },
   seo: {
-    airport: { title: "Athens Airport Transfer (ATH) – Mercedes Vito VIP | H&A VIP Tours", description: "Private Athens International Airport (ATH) transfers in a luxury Mercedes Vito VIP. Flight tracking, meet & greet, fixed prices from €70. Book via WhatsApp 24/7." },
+    airport: { title: "Athens Airport Transfer (ATH) – Mercedes Vito VIP | H&A VIP Tours", description: "Private Athens Airport (ATH) transfers in a Mercedes Vito VIP. Meet & greet, flight monitoring, fixed price agreed in advance. Book on WhatsApp." },
     piraeus: { title: "Piraeus Port Transfer from Athens & Airport | H&A VIP Tours", description: "Luxury private transfers to and from Piraeus, Rafina & Lavrio ports. Perfect for cruise and ferry travelers. Mercedes Vito VIP, 7 passengers, fixed prices." },
     athens: { title: "Athens Private City Tour – Acropolis & Highlights | H&A VIP Tours", description: "Private Athens city tour with a professional driver. Visit the Acropolis, Plaka, Syntagma & Panathenaic Stadium in a Mercedes Vito VIP. Customizable itinerary." },
     delphi: { title: "Delphi Private Day Tour from Athens | H&A VIP Tours", description: "Private full-day tour from Athens to Delphi, the ancient Oracle of Apollo. Luxury Mercedes Vito VIP with English-speaking driver. Stop at Arachova village." },
@@ -735,5 +735,93 @@ export default {
     marketingDesc: "Used for personalized offers.",
     alwaysOn: "Always on",
     close: "Close",
+  },
+  airportPage: {
+    "h1": "Athens Airport Transfer (ATH) in a Mercedes Vito VIP",
+    "intro": "Landing at Athens International Airport Eleftherios Venizelos should feel calm, not complicated. With H&A VIP Tours, a professional English-speaking driver is waiting for you in arrivals, and the price was agreed before you even boarded. Whether you are heading to a city hotel, a port or a day out on the mainland, your journey begins the moment you walk through the doors.",
+    "sections": [
+      {
+        "title": "Meet & greet at Athens International Airport",
+        "paragraphs": [
+          "Your driver meets you inside the arrivals hall at Athens International Airport Eleftherios Venizelos (ATH) and holds a name sign with your name on it. You do not have to search for a taxi rank or negotiate a fare after a long flight.",
+          "To arrange the pickup, we only need a few details: the main passenger's name, your date, flight number and arrival time, your destination or full hotel address, the number of passengers and your luggage. Each passenger can bring one large suitcase."
+        ]
+      },
+      {
+        "title": "Flight monitoring: we follow your flight, not the timetable",
+        "paragraphs": [
+          "Flights rarely land exactly on schedule. We monitor your flight in real time, so your driver arrives when you do. If your flight is delayed, there is no extra charge for reasonable delays, and 60 minutes of free waiting time is included in your fixed price. We are available 24 hours a day, 7 days a week, including late-evening and early-morning arrivals."
+        ]
+      },
+      {
+        "title": "Fixed price, agreed in advance",
+        "paragraphs": [
+          "Every airport transfer is quoted as a fixed price before you travel. Airport transfers start from €85 for 1–4 passengers and from €100 for 5–7 passengers. There are no hidden fees. The price includes tolls, bottled water and complimentary Wi-Fi. You can get an instant estimate with the booking form on this page, or message us on WhatsApp for an exact quote for your route and group size.",
+          "You can pay in cash (euro), by card on our portable POS terminal (Visa and Mastercard), or by bank transfer. A 20% deposit by bank transfer may be requested, but it is not mandatory for standard transfers."
+        ]
+      },
+      {
+        "title": "Where we take you from the airport",
+        "paragraphs": [
+          "Your airport transfer can end anywhere your plans lead:"
+        ],
+        "items": [
+          "**Athens city centre and hotels.** Door-to-door service to any hotel, villa or Airbnb in Athens. See also our guide to a [private transfer from Athens Airport to your hotel](/blog/private-transfer-athens-airport-to-hotel).",
+          "**Ports of Piraeus, Rafina and Lavrio.** We connect the airport with the ports for ferry and cruise travellers. Read more on our [Piraeus port transfer](/piraeus-port-transfer) page, or compare all the options in [Athens Airport to Piraeus Port: Every Way to Get There](/blog/athens-airport-to-piraeus-port-transport-options).",
+          "**The Athens Riviera.** Glyfada, Vouliagmeni and the coast south of the city, a short drive from the airport.",
+          "**Private day trips on the mainland.** Start your tour straight from the airport or from your hotel: [Delphi](/delphi-private-tour), [Meteora](/meteora-private-tour), [Nafplio](/nafplio-private-tour) and [Cape Sounion](/cape-sounion-tour), or an [Athens city tour](/athens-city-tour) at your own pace."
+        ],
+        "after": [
+          "The same service works in reverse. For a departure, we collect you from your hotel or address in time for your flight and take you to the departures terminal. If you land late, our guide to the [night transfer from Athens Airport](/blog/night-transfer-athens-airport-late-arrival) explains what to expect."
+        ]
+      },
+      {
+        "title": "Our vehicle: the Mercedes Vito VIP",
+        "paragraphs": [
+          "You travel in a Mercedes Vito VIP with a spacious brown leather interior and face-to-face seating, which makes it easy to talk and relax after your flight. It welcomes up to seven passengers, excluding the driver, and has climate control, complimentary Wi-Fi and bottled water for every journey. If you are travelling with more luggage, see our guide to [airport transfers with multiple suitcases](/blog/private-transfer-athens-multiple-suitcases). For larger groups, tell us your numbers and we will arrange the right vehicle.",
+          "Your driver is a professional, English-speaking chauffeur, and our service is fully licensed and insured."
+        ]
+      },
+      {
+        "title": "How to book your airport transfer",
+        "items": [
+          "**WhatsApp or Viber:** message us on [+30 694 939 3700](https://wa.me/306949393700) with your flight details. We confirm your booking.",
+          "**Email:** write to [h.a.viptransfers@gmail.com](mailto:h.a.viptransfers@gmail.com) with your name, date, flight number, destination and number of passengers.",
+          "**Online form:** use the booking form on this page to get an instant estimate and send your request."
+        ],
+        "after": [
+          "You can also call our landline on [+30 210 992 5244](tel:+302109925244). We are available around the clock."
+        ]
+      }
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "How will I find my driver at the airport?",
+        "a": "Your driver waits for you inside the arrivals hall, holding a sign with your name."
+      },
+      {
+        "q": "What if my flight is delayed or lands early?",
+        "a": "We monitor your flight in real time and adjust the pickup to your actual arrival. There is no extra charge for reasonable delays, and 60 minutes of free waiting time is included."
+      },
+      {
+        "q": "Is the price fixed, and what does it include?",
+        "a": "Yes. We agree a fixed price with you in advance, with no hidden fees: airport transfers start from €85 for 1–4 passengers and from €100 for 5–7 passengers. The price includes tolls, bottled water, complimentary Wi-Fi and flight tracking."
+      },
+      {
+        "q": "How many passengers and suitcases fit in the vehicle?",
+        "a": "Our Mercedes Vito VIP carries up to seven passengers, excluding the driver, and each passenger can bring one large suitcase. Tell us your group size and luggage when you book so we can prepare the right vehicle."
+      },
+      {
+        "q": "Which payment methods do you accept?",
+        "a": "Cash in euro, card payment on a portable POS terminal (Visa and Mastercard) and bank transfer. A 20% deposit by bank transfer may be requested, but it is not mandatory for standard transfers."
+      },
+      {
+        "q": "Can you take me from the airport to the port or on a day trip?",
+        "a": "Yes. We transfer guests from Athens Airport to the ports of Piraeus, Rafina and Lavrio, to any hotel in Athens, and onward on private day trips to destinations on the Greek mainland such as Delphi, Meteora and Nafplio."
+      }
+    ],
+    "ctaTitle": "Ready to book?",
+    "ctaText": "Message us on WhatsApp at [+30 694 939 3700](https://wa.me/306949393700) or email [h.a.viptransfers@gmail.com](mailto:h.a.viptransfers@gmail.com), and we will confirm your Athens airport transfer."
   },
 };

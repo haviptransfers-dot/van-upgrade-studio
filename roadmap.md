@@ -38,3 +38,4 @@
 - [done] Chat rate-limit UX: 429 now returns retryAfterSeconds; widget shows live m:ss countdown + WhatsApp CTA (wa.me/306949393700) in all 8 languages; RPC returns retry_after_seconds; 53 tests pass
 
 - [done] Organization schema image/logo serve from https://haviptransfers.gr/logo.png; the owner's high-resolution logo replaced the small source.
+- [done] Dedicated /airport-transfer-athens/ page in 8 languages (own H1, description, body, FAQ schema). Not published.
