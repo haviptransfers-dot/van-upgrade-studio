@@ -35,7 +35,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       imageAlt:
         "Εικονογράφηση ιδιωτικής μεταφοράς από το αεροδρόμιο της Αθήνας προς ξενοδοχείο στο ηλιοβασίλεμα",
       metaTitle:
-        "Ιδιωτική Μεταφορά Αεροδρόμιο Αθηνών προς Ξενοδοχείο | H&A VIP Transfers",
+        "Ιδιωτική Μεταφορά Αεροδρόμιο Αθηνών–Ξενοδοχείο | H&A VIP Transfers",
       metaDescription:
         "Κλείστε ιδιωτική μεταφορά από το αεροδρόμιο της Αθήνας στο ξενοδοχείο σας. Mercedes Vito VIP, υποστήριξη WhatsApp 24/7, σταθερή παραλαβή, απευθείας διαδρομή.",
       sections: [
@@ -667,7 +667,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
     metaTitle:
       "Service de Chauffeur Mercedes Vito VIP à Athènes | H&A VIP Transfers",
     metaDescription:
-      "Réservez un service premium de chauffeur Mercedes Vito VIP à Athènes. Transferts aéroport, port, hôtel et excursions privées sur mesure avec un chauffeur professionnel.",
+      "Réservez un chauffeur Mercedes Vito VIP à Athènes. Transferts aéroport, port et hôtel, et excursions privées sur mesure avec un chauffeur professionnel.",
     sections: [
       {
         paragraphs: [
@@ -748,7 +748,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
     metaTitle:
       "Mercedes Vito VIP Chauffeurservice in Athen | H&A VIP Transfers",
     metaDescription:
-      "Buchen Sie einen Premium-Chauffeurservice mit der Mercedes Vito VIP in Athen. Flughafen-, Hafen- und Hoteltransfers sowie individuelle Privattouren mit professionellem Fahrer.",
+      "Buchen Sie einen Chauffeurservice mit der Mercedes Vito VIP in Athen. Flughafen-, Hafen- und Hoteltransfers sowie individuelle Privattouren mit Profi-Fahrer.",
     sections: [
       {
         paragraphs: [
@@ -827,7 +827,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
     imageAlt:
       "سيارة مرسيدس Mercedes Vito VIP سوداء مع سائق خاص والأكروبوليس في أثينا في الخلفية",
     metaTitle:
-      "خدمة السائق الخاص بسيارة مرسيدس Mercedes Vito VIP في أثينا | H&A VIP Transfers",
+      "خدمة سائق خاص بسيارة Mercedes Vito VIP في أثينا | H&A VIP Transfers",
     metaDescription:
       "احجزوا خدمة سائق خاص فاخرة بسيارة مرسيدس Mercedes Vito VIP في أثينا. نقل من المطار والميناء والفندق وجولات خاصة مصممة حسب الطلب مع سائق محترف.",
     sections: [
@@ -1525,7 +1525,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       imageAlt:
         "H&A Tours illustration with a Mercedes Vito VIP, a cruise ship in Piraeus and the Acropolis — private cruise transfer",
       metaTitle:
-        "Piraeus Cruise Transfer | Private Mercedes Vito VIP Transfer — H&A VIP Transfers",
+        "Piraeus Cruise Transfer in a Mercedes Vito VIP | H&A VIP Transfers",
       metaDescription:
         "Pre-booked private cruise transfer from the Port of Piraeus to your hotel, the airport or Athens. Mercedes Vito VIP, disembarkation coordination, 24/7 WhatsApp.",
       sections: [
@@ -1597,7 +1597,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       imageAlt:
         "Illustrazione H&A Tours con Mercedes Vito VIP, nave da crociera al Pireo e l'Acropoli — transfer crociera privato",
       metaTitle:
-        "Transfer Crociera Pireo | Trasferimento Privato Mercedes Vito VIP — H&A VIP Transfers",
+        "Transfer Crociera Pireo in Mercedes Vito VIP | H&A VIP Transfers",
       metaDescription:
         "Transfer privato prenotato dal Porto del Pireo verso hotel, aeroporto o Atene. Mercedes Vito VIP, coordinamento dello sbarco, WhatsApp 24/7.",
       sections: [
@@ -1669,9 +1669,9 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       imageAlt:
         "Ilustración de H&A Tours con un Mercedes Vito VIP, un crucero en El Pireo y la Acrópolis — traslado privado de crucero",
       metaTitle:
-        "Traslado de Crucero desde El Pireo | Mercedes Vito VIP Privado — H&A VIP Transfers",
+        "Traslado de Crucero desde El Pireo | H&A VIP Transfers",
       metaDescription:
-        "Traslado privado de crucero reservado desde el Puerto de El Pireo hacia tu hotel, el aeropuerto o Atenas. Mercedes Vito VIP, coordinación del desembarque, WhatsApp 24/7.",
+        "Traslado privado de crucero reservado desde el puerto de El Pireo a tu hotel, el aeropuerto o Atenas. Mercedes Vito VIP, coordinación del desembarque.",
       sections: [
         {
           paragraphs: [
@@ -1741,9 +1741,9 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       imageAlt:
         "Illustration H&A Tours avec une Mercedes Vito VIP, un navire de croisière au Pirée et l'Acropole — transfert privé de croisière",
       metaTitle:
-        "Transfert Croisière du Pirée | Transfert Privé Mercedes Vito VIP — H&A VIP Transfers",
+        "Transfert Croisière Privé du Pirée | H&A VIP Transfers",
       metaDescription:
-        "Transfert privé de croisière réservé depuis le Port du Pirée vers votre hôtel, l'aéroport ou Athènes. Mercedes Vito VIP, coordination du débarquement, WhatsApp 24/7.",
+        "Transfert privé de croisière réservé depuis le port du Pirée vers votre hôtel, l'aéroport ou Athènes. Mercedes Vito VIP et coordination du débarquement.",
       sections: [
         {
           paragraphs: [
@@ -1813,9 +1813,9 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       imageAlt:
         "H&A Tours Illustration mit Mercedes Vito VIP, Kreuzfahrtschiff in Piräus und der Akropolis — privater Kreuzfahrttransfer",
       metaTitle:
-        "Piräus-Kreuzfahrttransfer | Privater Transfer mit Mercedes Vito VIP — H&A VIP Transfers",
+        "Piräus-Kreuzfahrttransfer mit Mercedes Vito VIP | H&A VIP Transfers",
       metaDescription:
-        "Im Voraus gebuchter privater Kreuzfahrttransfer vom Hafen Piräus zu Ihrem Hotel, zum Flughafen oder nach Athen. Mercedes Vito VIP, Ausschiffungs-Koordination, WhatsApp 24/7.",
+        "Vorab gebuchter privater Kreuzfahrttransfer vom Hafen Piräus zum Hotel, Flughafen oder nach Athen. Mercedes Vito VIP, Ausschiffungs-Koordination, WhatsApp.",
       sections: [
         {
           paragraphs: [
@@ -1885,7 +1885,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       imageAlt:
         "رسم توضيحي من H&A Tours يظهر مرسيدس Mercedes Vito VIP وسفينة كروز في بيريوس والأكروبوليس — نقل كروز خاص",
       metaTitle:
-        "نقل رحلات الكروز من بيريوس | نقل خاص بمرسيدس Mercedes Vito VIP — H&A VIP Transfers",
+        "نقل الكروز من بيريوس بسيارة Mercedes Vito VIP | H&A VIP Transfers",
       metaDescription:
         "نقل خاص محجوز مسبقًا لرحلات الكروز من ميناء بيريوس إلى الفندق أو المطار أو أثينا. مرسيدس Mercedes Vito VIP، تنسيق النزول، واتساب على مدار الساعة.",
       sections: [
@@ -1957,7 +1957,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       imageAlt:
         "איור של H&A Tours עם Mercedes Vito VIP, אוניית תענוגות בפיראוס והאקרופוליס — הסעת שייט פרטית",
       metaTitle:
-        "הסעה משייט בפיראוס | הסעה פרטית ב-Mercedes Vito VIP — H&A VIP Transfers",
+        "הסעה משייט בפיראוס ב-Mercedes Vito VIP | H&A VIP Transfers",
       metaDescription:
         "הסעה פרטית משייט שהוזמנה מראש מנמל פיראוס למלון, לשדה התעופה או לאתונה. Mercedes Vito VIP, תיאום הורדה, וואטסאפ 24/7.",
       sections: [
@@ -2104,7 +2104,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       excerpt: "Un tour privato pianificato con autista trasforma una giornata intensa ad Atene in un'esperienza privata costruita sulle tue priorità — autista professionista, veicolo premium, itinerario flessibile.",
       imageAlt: "Illustrazione H&A Tours Ltd — tour privato del centro storico di Atene con un Mercedes Vito VIP nero, il Partenone e la collina di Licabetto al tramonto",
       metaTitle: "Tour Privato di Atene con Autista | Mercedes Vito VIP | H&A VIP Tours",
-      metaDescription: "Scopri Atene al tuo ritmo con un tour privato e un autista professionista in un lussuoso Mercedes Vito VIP. Itinerario personalizzato, prelievo da hotel e terminal crociere, seggiolini su richiesta.",
+      metaDescription: "Scopri Atene al tuo ritmo con un tour privato e autista in Mercedes Vito VIP. Itinerario su misura, prelievo in hotel o al porto, seggiolini su richiesta.",
       sections: [
         {
           paragraphs: [
@@ -2178,8 +2178,8 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       title: "Tour Privado de Atenas con Conductor: Descubre la Ciudad en un Mercedes Vito VIP",
       excerpt: "Un tour privado planificado con conductor convierte un día ajetreado en Atenas en una experiencia privada construida en torno a tus prioridades — chófer profesional, vehículo premium, itinerario flexible.",
       imageAlt: "Ilustración de H&A Tours Ltd — tour privado por el centro histórico de Atenas con un Mercedes Vito VIP negro, el Partenón y la colina de Licabeto al atardecer",
-      metaTitle: "Tour Privado de Atenas con Conductor | Mercedes Vito VIP | H&A VIP Tours",
-      metaDescription: "Descubre Atenas a tu ritmo con un tour privado y chófer profesional en un lujoso Mercedes Vito VIP. Itinerario personalizado, recogida en hotel y terminal de cruceros, sillas infantiles bajo petición.",
+      metaTitle: "Tour Privado de Atenas con Conductor | H&A VIP Tours",
+      metaDescription: "Descubre Atenas a tu ritmo: tour privado con chófer en Mercedes Vito VIP. Itinerario a medida, recogida en hotel o crucero, sillas infantiles bajo petición.",
       sections: [
         {
           paragraphs: [
@@ -2253,8 +2253,8 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       title: "Visite Privée d'Athènes avec Chauffeur : Découvrez la Ville en Mercedes Vito VIP",
       excerpt: "Une visite privée planifiée avec chauffeur transforme une journée chargée à Athènes en une expérience privée construite autour de vos priorités — chauffeur professionnel, véhicule premium, itinéraire flexible.",
       imageAlt: "Illustration H&A Tours Ltd — visite privée du centre historique d'Athènes avec un Mercedes Vito VIP noir, le Parthénon et la colline de Lycabette au coucher du soleil",
-      metaTitle: "Visite Privée d'Athènes avec Chauffeur | Mercedes Vito VIP | H&A VIP Tours",
-      metaDescription: "Découvrez Athènes à votre rythme avec une visite privée et un chauffeur professionnel en Mercedes Vito VIP de luxe. Itinéraire personnalisé, prise en charge à l'hôtel et au terminal de croisière, sièges enfants sur demande.",
+      metaTitle: "Visite Privée d'Athènes avec Chauffeur | H&A VIP Tours",
+      metaDescription: "Athènes à votre rythme : visite privée avec chauffeur en Mercedes Vito VIP. Itinéraire sur mesure, accueil à l'hôtel ou au port, sièges enfants sur demande.",
       sections: [
         {
           paragraphs: [
@@ -2329,7 +2329,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       excerpt: "Eine geplante private Tour mit Fahrer verwandelt einen vollen Tag in Athen in ein privates Erlebnis nach Ihren Prioritäten — professioneller Chauffeur, Premium-Fahrzeug, flexibler Ablauf.",
       imageAlt: "H&A Tours Ltd Illustration — private Tour durch das historische Zentrum Athens mit einem schwarzen Mercedes Vito VIP, dem Parthenon und dem Lykabettos bei Sonnenuntergang",
       metaTitle: "Private Athen-Tour mit Fahrer | Mercedes Vito VIP | H&A VIP Tours",
-      metaDescription: "Entdecken Sie Athen in Ihrem eigenen Tempo mit einer privaten Tour und professionellem Chauffeur in einem luxuriösen Mercedes Vito VIP. Individueller Ablauf, Abholung von Hotel und Kreuzfahrtterminal, Kindersitze auf Anfrage.",
+      metaDescription: "Athen in Ihrem Tempo: private Tour mit Chauffeur im Mercedes Vito VIP. Individueller Ablauf, Abholung am Hotel oder Kreuzfahrthafen, Kindersitze auf Anfrage.",
       sections: [
         {
           paragraphs: [
@@ -2404,7 +2404,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       excerpt: "جولة خاصة مخططة مع سائق تحوّل يومًا مزدحمًا في أثينا إلى تجربة خاصة مبنية حول أولوياتك — سائق محترف، مركبة فاخرة، برنامج مرن.",
       imageAlt: "رسم توضيحي لشركة H&A Tours Ltd — جولة خاصة في وسط أثينا التاريخي مع مرسيدس Mercedes Vito VIP سوداء، البارثينون وتل ليكابيتوس عند الغروب",
       metaTitle: "جولة خاصة في أثينا مع سائق | مرسيدس Mercedes Vito VIP | H&A VIP Tours",
-      metaDescription: "اكتشف أثينا بإيقاعك الخاص مع جولة خاصة وسائق محترف في مرسيدس Mercedes Vito VIP فاخرة. برنامج مخصص، استقبال من الفندق ومحطة الرحلات البحرية، مقاعد أطفال عند الطلب.",
+      metaDescription: "اكتشف أثينا بإيقاعك الخاص مع جولة خاصة وسائق محترف في Mercedes Vito VIP. برنامج مخصص، استقبال من الفندق أو محطة الرحلات البحرية، مقاعد أطفال عند الطلب.",
       sections: [
         {
           paragraphs: [
@@ -2599,8 +2599,8 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       title: "Trasferimento Privato da Atene a Capo Sounio: Tempio di Poseidone in Mercedes Vito VIP",
       excerpt: "Un viaggio costiero senza fretta verso il Tempio di Poseidone, organizzato secondo i vostri orari e il vostro ritmo. Scoprite perché uno chauffeur privato con Mercedes Vito VIP è il modo migliore per vivere Capo Sounion.",
       imageAlt: "Illustrazione di una Mercedes Vito VIP nera su una colorata strada costiera verso il Tempio di Poseidone a Capo Sounion al tramonto",
-      metaTitle: "Trasferimento Privato Atene – Capo Sounio, Tempio di Poseidone | H&A VIP Tours",
-      metaDescription: "Trasferimento privato con autista da Atene a Capo Sounion e al Tempio di Poseidone in Mercedes Vito VIP. Tour al tramonto, soste costiere, orari flessibili. Prenota via WhatsApp 24/7.",
+      metaTitle: "Transfer Privato Atene – Capo Sounio e Poseidone | H&A VIP Tours",
+      metaDescription: "Trasferimento privato con autista da Atene a Capo Sounion e al Tempio di Poseidone in Mercedes Vito VIP. Tramonto e soste costiere. Prenota via WhatsApp 24/7.",
       sections: [
         { paragraphs: [
           "Nel momento in cui il Tempio di Poseidone appare sopra l'Egeo, il valore di un viaggio privato diventa evidente. Un trasferimento privato da Atene a Capo Sounio non è semplicemente un trasporto verso un monumento. È un'esperienza costiera senza fretta, organizzata intorno all'orario di partenza che preferite, al vostro ritmo e alle persone che viaggiano con voi.",
@@ -2643,8 +2643,8 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       title: "Traslado Privado de Atenas al Cabo Sunio: Templo de Poseidón en Mercedes Vito VIP",
       excerpt: "Un viaje costero sin prisas hasta el Templo de Poseidón, organizado según tu hora de salida y tu ritmo. Descubre por qué un chófer privado con Mercedes Vito VIP es la mejor manera de vivir el Cabo Sunión.",
       imageAlt: "Ilustración de una Mercedes Vito VIP negra en una colorida carretera costera hacia el Templo de Poseidón en el Cabo Sunión al atardecer",
-      metaTitle: "Traslado Privado Atenas – Cabo Sunio, Templo de Poseidón | H&A VIP Tours",
-      metaDescription: "Traslado privado con chófer de Atenas al Cabo Sunión y al Templo de Poseidón en Mercedes Vito VIP. Tours al atardecer, paradas costeras, horarios flexibles. Reserva por WhatsApp 24/7.",
+      metaTitle: "Traslado Privado Atenas – Cabo Sunio y Poseidón | H&A VIP Tours",
+      metaDescription: "Traslado privado con chófer de Atenas al Cabo Sunión y al Templo de Poseidón en Mercedes Vito VIP. Tours al atardecer y paradas costeras. Reserva WhatsApp.",
       sections: [
         { paragraphs: [
           "En el momento en que el Templo de Poseidón aparece sobre el Egeo, el valor de un viaje privado se hace evidente. Un traslado privado de Atenas al Cabo Sunio no es simplemente transporte hacia un monumento. Es una experiencia costera sin prisas organizada en torno a tu hora de salida preferida, tu ritmo y las personas que viajan contigo.",
@@ -2687,8 +2687,8 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       title: "Transfert Privé d'Athènes au Cap Sounion : Temple de Poséidon en Mercedes Vito VIP",
       excerpt: "Un voyage côtier sans hâte vers le Temple de Poséidon, organisé selon votre heure de départ et votre rythme. Découvrez pourquoi un chauffeur privé avec Mercedes Vito VIP est la plus belle façon de vivre le Cap Sounion.",
       imageAlt: "Illustration d'une Mercedes Vito VIP noire sur une route côtière colorée vers le Temple de Poséidon au Cap Sounion au coucher du soleil",
-      metaTitle: "Transfert Privé Athènes – Cap Sounion, Temple de Poséidon | H&A VIP Tours",
-      metaDescription: "Transfert privé avec chauffeur d'Athènes au Cap Sounion et au Temple de Poséidon en Mercedes Vito VIP. Tours au coucher du soleil, arrêts côtiers, horaires flexibles. Réservation WhatsApp 24/7.",
+      metaTitle: "Transfert Privé Athènes – Cap Sounion et Poséidon | H&A VIP Tours",
+      metaDescription: "Transfert privé avec chauffeur d'Athènes au cap Sounion et au temple de Poséidon en Mercedes Vito VIP. Coucher de soleil, arrêts côtiers, WhatsApp 24/7.",
       sections: [
         { paragraphs: [
           "Au moment où le Temple de Poséidon apparaît au-dessus de la mer Égée, la valeur d'un voyage privé devient évidente. Un transfert privé d'Athènes au Cap Sounion n'est pas simplement un transport vers un monument. C'est une expérience côtière sans hâte, organisée autour de votre heure de départ préférée, de votre rythme et des personnes qui voyagent avec vous.",
@@ -2732,7 +2732,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       excerpt: "Eine ungehastete Küstenfahrt zum Poseidon-Tempel, abgestimmt auf Ihre Abfahrtszeit und Ihr Tempo. Entdecken Sie, warum ein privater Chauffeur mit Mercedes Vito VIP der schönste Weg ist, Kap Sounion zu erleben.",
       imageAlt: "Illustration einer schwarzen Mercedes Vito VIP auf einer farbenfrohen Küstenstraße zum Poseidon-Tempel am Kap Sounion bei Sonnenuntergang",
       metaTitle: "Privater Transfer Athen – Kap Sounion, Poseidon-Tempel | H&A VIP Tours",
-      metaDescription: "Privater Chauffeur-Transfer von Athen zum Kap Sounion und zum Poseidon-Tempel in der Mercedes Vito VIP. Sonnenuntergang-Touren, Küstenstopps, flexible Zeiten. Buchung per WhatsApp 24/7.",
+      metaDescription: "Privater Chauffeur-Transfer von Athen zum Kap Sounion und Poseidon-Tempel im Mercedes Vito VIP. Sonnenuntergang, Küstenstopps, flexible Zeiten. WhatsApp 24/7.",
       sections: [
         { paragraphs: [
           "In dem Moment, in dem der Poseidon-Tempel über der Ägäis in Sicht kommt, wird der Wert einer privaten Reise deutlich. Eine private Fahrt von Athen zum Kap Sounion ist nicht einfach Transport zu einem Wahrzeichen. Es ist ein ungehastetes Küstenerlebnis, arrangiert um Ihre bevorzugte Abfahrtszeit, Ihr Tempo und die Menschen, die mit Ihnen reisen.",
@@ -2865,7 +2865,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       title: "Ιδιωτική Ημερήσια Εκδρομή στους Δελφούς από την Αθήνα με Mercedes Vito VIP",
       excerpt: "Μια ολόκληρη μέρα στην κεντρική Ελλάδα, στις πλαγιές του Παρνασσού. Παραλαβή από το ξενοδοχείο, πολυτελής Mercedes Vito VIP και χαλαρό πρόγραμμα με Δελφούς, μουσείο και Αράχωβα.",
       imageAlt: "Πολύχρωμη εικονογράφηση μαύρης Mercedes Vito VIP σε ορεινό δρόμο προς το αρχαίο ιερό των Δελφών κάτω από τον Παρνασσό στο ηλιοβασίλεμα",
-      metaTitle: "Ιδιωτική Εκδρομή στους Δελφούς από την Αθήνα – Mercedes Vito VIP | H&A VIP Tours",
+      metaTitle: "Ιδιωτική Εκδρομή στους Δελφούς από την Αθήνα | H&A VIP Tours",
       metaDescription: "Ιδιωτική ημερήσια εκδρομή με οδηγό από την Αθήνα στους Δελφούς με Mercedes Vito VIP. Παραλαβή ξενοδοχείου, στάση Αράχωβα, ευέλικτο ωράριο. WhatsApp 24/7.",
       sections: [
         { paragraphs: [
@@ -2917,8 +2917,8 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       title: "Escursione privata a Delfi da Atene: una giornata intera con Mercedes Vito VIP",
       excerpt: "Una giornata intera nella Grecia centrale, sulle pendici del Monte Parnaso. Prelievo in hotel, Mercedes Vito VIP di lusso e un itinerario senza fretta tra Delfi, il museo e Arachova.",
       imageAlt: "Illustrazione colorata di una Mercedes Vito VIP nera su una strada di montagna verso l'antico santuario di Delfi al tramonto",
-      metaTitle: "Escursione privata a Delfi da Atene – Mercedes Vito VIP | H&A VIP Tours",
-      metaDescription: "Escursione privata di un giorno da Atene a Delfi con autista e Mercedes Vito VIP. Prelievo in hotel, sosta ad Arachova, orari flessibili. Prenota su WhatsApp 24/7.",
+      metaTitle: "Escursione privata a Delfi da Atene | H&A VIP Tours",
+      metaDescription: "Escursione privata di un giorno da Atene a Delfi con autista e Mercedes Vito VIP. Prelievo in hotel, sosta ad Arachova, orari flessibili. Prenota su WhatsApp.",
       sections: [
         { paragraphs: [
           "Il viaggio verso Delfi non è semplicemente un trasferimento tra Atene e un sito antico. È una giornata intera nella Grecia centrale, tra strade di montagna, panorami che cambiano e una destinazione che merita tempo senza fretta. Un itinerario privato offre il giusto equilibrio tra comfort, ritmo e attenzione personale.",
@@ -2969,8 +2969,8 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       title: "Excursión privada a Delfos desde Atenas: un día completo en Mercedes Vito VIP",
       excerpt: "Un día completo por la Grecia central, en las laderas del monte Parnaso. Recogida en el hotel, Mercedes Vito VIP de lujo y un itinerario sin prisas por Delfos, su museo y Arachova.",
       imageAlt: "Ilustración colorida de un Mercedes Vito VIP negro en una carretera de montaña hacia el antiguo santuario de Delfos al atardecer",
-      metaTitle: "Excursión privada a Delfos desde Atenas – Mercedes Vito VIP | H&A VIP Tours",
-      metaDescription: "Excursión privada de un día de Atenas a Delfos con chófer y Mercedes Vito VIP. Recogida en el hotel, parada en Arachova, horarios flexibles. Reserva por WhatsApp 24/7.",
+      metaTitle: "Excursión privada a Delfos desde Atenas | H&A VIP Tours",
+      metaDescription: "Excursión privada de un día de Atenas a Delfos con chófer y Mercedes Vito VIP. Recogida en el hotel, parada en Arachova, horarios flexibles. WhatsApp 24/7.",
       sections: [
         { paragraphs: [
           "El viaje a Delfos no es solo un traslado entre Atenas y un sitio antiguo. Es un día completo por la Grecia central, con carreteras de montaña, paisajes cambiantes y un destino que merece tiempo sin prisas. Un itinerario privado ofrece el equilibrio justo entre comodidad, ritmo y atención personal.",
@@ -3021,8 +3021,8 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       title: "Excursion privée à Delphes depuis Athènes : une journée complète en Mercedes Vito VIP",
       excerpt: "Une journée entière au cœur de la Grèce centrale, sur les pentes du mont Parnasse. Prise en charge à l'hôtel, Mercedes Vito VIP de luxe et itinéraire sans hâte entre Delphes, son musée et Arachova.",
       imageAlt: "Illustration colorée d'un Mercedes Vito VIP noir sur une route de montagne vers l'ancien sanctuaire de Delphes au coucher du soleil",
-      metaTitle: "Excursion privée à Delphes depuis Athènes – Mercedes Vito VIP | H&A VIP Tours",
-      metaDescription: "Excursion privée d'une journée d'Athènes à Delphes avec chauffeur et Mercedes Vito VIP. Prise en charge à l'hôtel, arrêt à Arachova, horaires flexibles. Réservation WhatsApp 24/7.",
+      metaTitle: "Excursion privée à Delphes depuis Athènes | H&A VIP Tours",
+      metaDescription: "Excursion privée d'une journée d'Athènes à Delphes avec chauffeur en Mercedes Vito VIP. Prise en charge à l'hôtel, arrêt à Arachova, horaires flexibles.",
       sections: [
         { paragraphs: [
           "La route vers Delphes n'est pas un simple transfert entre Athènes et un site antique. C'est une journée entière à travers la Grèce centrale, avec des routes de montagne, des paysages changeants et une destination qui mérite du temps. Un itinéraire privé offre le juste équilibre entre confort, rythme et attention personnelle.",
@@ -3073,7 +3073,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       title: "Privater Tagesausflug nach Delphi ab Athen: ein ganzer Tag im Mercedes Vito VIP",
       excerpt: "Ein ganzer Tag durch Mittelgriechenland an den Hängen des Parnass. Abholung am Hotel, luxuriöser Mercedes Vito VIP und ein entspanntes Programm mit Delphi, Museum und Arachova.",
       imageAlt: "Farbenfrohe Illustration eines schwarzen Mercedes Vito VIP auf einer Bergstraße zum antiken Heiligtum von Delphi bei Sonnenuntergang",
-      metaTitle: "Privater Delphi-Tagesausflug ab Athen – Mercedes Vito VIP | H&A VIP Tours",
+      metaTitle: "Privater Delphi-Tagesausflug ab Athen | H&A VIP Tours",
       metaDescription: "Privater Tagesausflug mit Chauffeur von Athen nach Delphi im Mercedes Vito VIP. Hotelabholung, Stopp in Arachova, flexible Zeiten. Buchung per WhatsApp 24/7.",
       sections: [
         { paragraphs: [
@@ -3233,7 +3233,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
         "Ολοήμερη ιδιωτική εκδρομή από την Αθήνα στα μοναστήρια των Μετεώρων. Πολυτελής Mercedes Vito VIP, παραλαβή από το ξενοδοχείο, ευέλικτο πρόγραμμα και πρόγραμμα προσαρμοσμένο στις προτεραιότητές σας.",
       imageAlt:
         "Εικονογράφηση μαύρης Mercedes Vito VIP που οδηγεί προς τα μοναστήρια των Μετεώρων πάνω σε βραχώδεις πυλώνες στο ηλιοβασίλεμα",
-      metaTitle: "Ιδιωτική Εκδρομή στα Μετέωρα από Αθήνα – Mercedes Vito VIP | H&A VIP Tours",
+      metaTitle: "Ιδιωτική Εκδρομή στα Μετέωρα από Αθήνα | H&A VIP Tours",
       metaDescription:
         "Ιδιωτική ημερήσια εκδρομή από την Αθήνα στα Μετέωρα με Mercedes Vito VIP. Παραλαβή ξενοδοχείου, επίσκεψη σε μοναστήρια, ευέλικτο πρόγραμμα. WhatsApp 24/7.",
       sections: [
@@ -3283,9 +3283,9 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
         "Un viaggio privato di un'intera giornata da Atene ai monasteri di Meteora. Lussuosa Mercedes Vito VIP, prelievo in hotel, orari flessibili e un programma costruito sulle vostre priorità.",
       imageAlt:
         "Illustrazione di una Mercedes Vito VIP nera che guida verso i monasteri di Meteora su pilastri di arenaria al tramonto",
-      metaTitle: "Escursione Privata a Meteora da Atene – Mercedes Vito VIP | H&A VIP Tours",
+      metaTitle: "Escursione Privata a Meteora da Atene | H&A VIP Tours",
       metaDescription:
-        "Escursione privata di un giorno da Atene a Meteora con autista in lussuosa Mercedes Vito VIP. Prelievo in hotel, visite ai monasteri, orari flessibili e prenotazione WhatsApp 24/7.",
+        "Escursione privata di un giorno da Atene a Meteora con autista in Mercedes Vito VIP. Prelievo in hotel, visite ai monasteri, orari flessibili. WhatsApp 24/7.",
       sections: [
         { paragraphs: [
           "Meteora non è una destinazione che premia la fretta. I monasteri si ergono sopra la pianura tessalica su immensi pilastri di arenaria, e il viaggio da Atene è abbastanza lungo da far sì che la qualità dell'esperienza su strada plasmi l'intera giornata. Un trasferimento privato da Atene a Meteora vi offre spazio, tempi e attenzione personale per vivere questo straordinario sito UNESCO senza trasformare una grande giornata di viaggio in una prova di resistenza.",
@@ -3333,9 +3333,9 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
         "Un viaje privado de día completo desde Atenas a los monasterios de Meteora. Lujosa Mercedes Vito VIP, recogida en el hotel, horarios flexibles y un programa adaptado a sus prioridades.",
       imageAlt:
         "Ilustración de una Mercedes Vito VIP negra conduciendo hacia los monasterios de Meteora sobre pilares de arenisca al atardecer",
-      metaTitle: "Excursión Privada a Meteora desde Atenas – Mercedes Vito VIP | H&A VIP Tours",
+      metaTitle: "Excursión Privada a Meteora desde Atenas | H&A VIP Tours",
       metaDescription:
-        "Excursión privada de un día desde Atenas a Meteora con chófer en lujosa Mercedes Vito VIP. Recogida en el hotel, visitas a monasterios, horarios flexibles y reserva por WhatsApp 24/7.",
+        "Excursión privada de un día de Atenas a Meteora con chófer en Mercedes Vito VIP. Recogida en el hotel, visitas a monasterios, horarios flexibles. WhatsApp.",
       sections: [
         { paragraphs: [
           "Meteora no es un destino que recompense las prisas. Los monasterios se alzan sobre la llanura tesalia sobre inmensos pilares de arenisca, y el viaje desde Atenas es lo bastante largo como para que la calidad de la experiencia en carretera defina todo el día. Un traslado privado de Atenas a Meteora le ofrece espacio, tiempo y atención personal para vivir este extraordinario sitio Patrimonio de la Humanidad de la UNESCO sin convertir una gran jornada en una prueba de resistencia.",
@@ -3383,9 +3383,9 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
         "Un voyage privé d'une journée complète d'Athènes aux monastères des Météores. Luxueuse Mercedes Vito VIP, prise en charge à l'hôtel, horaires flexibles et programme adapté à vos priorités.",
       imageAlt:
         "Illustration d'une Mercedes Vito VIP noire roulant vers les monastères des Météores sur des piliers de grès au coucher du soleil",
-      metaTitle: "Excursion Privée aux Météores depuis Athènes – Mercedes Vito VIP | H&A VIP Tours",
+      metaTitle: "Excursion Privée aux Météores depuis Athènes | H&A VIP Tours",
       metaDescription:
-        "Excursion privée d'une journée d'Athènes aux Météores avec chauffeur en luxueuse Mercedes Vito VIP. Prise en charge à l'hôtel, visites des monastères, horaires flexibles et réservation WhatsApp 24/7.",
+        "Excursion privée d'une journée d'Athènes aux Météores en Mercedes Vito VIP. Prise en charge à l'hôtel, visite des monastères, horaires flexibles, WhatsApp.",
       sections: [
         { paragraphs: [
           "Les Météores ne sont pas une destination qui récompense la précipitation. Les monastères s'élèvent au-dessus de la plaine thessalienne sur d'immenses piliers de grès, et le trajet depuis Athènes est assez long pour que la qualité de l'expérience sur route façonne toute la journée. Un transfert privé d'Athènes aux Météores vous offre l'espace, le temps et l'attention personnelle pour vivre ce remarquable site du patrimoine mondial de l'UNESCO sans transformer une grande journée de voyage en épreuve d'endurance.",
@@ -3435,7 +3435,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
         "Illustration einer schwarzen Mercedes Vito VIP, die bei Sonnenuntergang zu den Meteora-Klöstern auf Sandsteinfelsen fährt",
       metaTitle: "Private Meteora-Tagestour ab Athen – Mercedes Vito VIP | H&A VIP Tours",
       metaDescription:
-        "Private Tagestour mit Chauffeur von Athen nach Meteora in luxuriöser Mercedes Vito VIP. Hotelabholung, Klosterbesuche, flexible Zeiten und WhatsApp-Buchung rund um die Uhr.",
+        "Private Tagestour mit Chauffeur von Athen nach Meteora im Mercedes Vito VIP. Hotelabholung, Klosterbesuche, flexible Zeiten, WhatsApp-Buchung rund um die Uhr.",
       sections: [
         { paragraphs: [
           "Meteora ist kein Reiseziel, das Eile belohnt. Die Klöster ragen auf riesigen Sandsteinsäulen über der thessalischen Ebene empor, und die Fahrt von Athen ist lang genug, dass die Qualität des Fahrerlebnisses den gesamten Tag prägt. Eine private Fahrt von Athen nach Meteora gibt Ihnen Raum, Zeit und persönliche Betreuung, um diese bemerkenswerte UNESCO-Welterbestätte zu erleben, ohne einen großen Reisetag zur Geduldsprobe werden zu lassen.",
@@ -3483,7 +3483,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
         "رحلة خاصة ليوم كامل من أثينا إلى أديرة ميتيورا. مرسيدس Mercedes Vito VIP فاخرة، استقبال من الفندق، مواعيد مرنة وبرنامج مبني على أولوياتكم.",
       imageAlt:
         "رسم توضيحي لمرسيدس Mercedes Vito VIP سوداء تتجه نحو أديرة ميتيورا على أعمدة حجر رملي عند الغروب",
-      metaTitle: "رحلة خاصة إلى ميتيورا من أثينا – مرسيدس Mercedes Vito VIP | H&A VIP Tours",
+      metaTitle: "رحلة خاصة إلى ميتيورا من أثينا – Mercedes Vito VIP | H&A VIP Tours",
       metaDescription:
         "رحلة يومية خاصة مع سائق من أثينا إلى ميتيورا بمرسيدس Mercedes Vito VIP فاخرة. استقبال من الفندق، زيارة الأديرة، مواعيد مرنة وحجز عبر واتساب على مدار الساعة.",
       sections: [

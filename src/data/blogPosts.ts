@@ -384,7 +384,7 @@ export const blogPosts: BlogPost[] = [
     imageAlt:
       "Chauffeur in a dark suit with a suitcase standing beside a black Mercedes Vito VIP with its trunk open outside Athens Airport terminal at night, an aircraft and the control tower in the background",
     date: "2026-09-16",
-    metaTitle: "Night Transfer from Athens Airport – Private Late Arrival | H&A VIP Tours",
+    metaTitle: "Night Transfer from Athens Airport – Late Arrival | H&A VIP Tours",
     metaDescription:
       "Arriving late in Athens? Book a private night transfer from Athens Airport in a Mercedes Vito VIP, professional chauffeur, luggage space and WhatsApp 24/7.",
     sections: [
@@ -636,7 +636,7 @@ export const blogPosts: BlogPost[] = [
     imageAlt:
       "Woman in a sun hat standing beside a black Mercedes Vito VIP overlooking the Meteora monasteries on sandstone pillars at sunset",
     date: "2026-05-15",
-    metaTitle: "Private Meteora Day Trip from Athens – Mercedes Vito VIP | H&A VIP Tours",
+    metaTitle: "Private Meteora Day Trip from Athens | H&A VIP Tours",
     metaDescription:
       "Private chauffeur-driven day trip from Athens to Meteora in a Mercedes Vito VIP. Hotel pickup, monastery visits, flexible timing and 24/7 WhatsApp booking.",
     sections: [
@@ -715,7 +715,7 @@ export const blogPosts: BlogPost[] = [
     imageAlt:
       "Ancient Tholos of Delphi ruins with Doric columns set against the mountains of Mount Parnassus and the Pleistos Valley", 
     date: "2026-04-15",
-    metaTitle: "Private Delphi Day Trip from Athens – Mercedes Vito VIP | H&A VIP Tours",
+    metaTitle: "Private Delphi Day Trip from Athens | H&A VIP Tours",
     metaDescription:
       "Private chauffeur-driven day trip from Athens to Delphi in a Mercedes Vito VIP. Hotel pickup, an Arachova stop, and flexible timing. Book via WhatsApp 24/7.",
     sections: [
@@ -806,7 +806,7 @@ export const blogPosts: BlogPost[] = [
     imageAlt:
       "Elegant couple with a black Mercedes Vito VIP at Cape Sounion, the Temple of Poseidon silhouetted against a golden sunset over the Aegean Sea",
     date: "2026-03-15",
-    metaTitle: "Private Transfer Athens to Cape Sounio – Temple of Poseidon | H&A VIP Tours",
+    metaTitle: "Private Transfer Athens to Cape Sounio & Poseidon | H&A VIP Tours",
     metaDescription:
       "Private transfer from Athens to Cape Sounion and the Temple of Poseidon in a Mercedes Vito VIP. Sunset tours and coastal stops. Book via WhatsApp 24/7.",
     sections: [
@@ -1019,7 +1019,7 @@ export const blogPosts: BlogPost[] = [
     imageAlt:
       "Black Mercedes Vito VIP on the coastal road from Piraeus Port with a cruise ship, the Acropolis at sunset and H&A TOURS LTD branding",
     date: "2025-12-15",
-    metaTitle: "Private Transfer from Piraeus Port to Athens Airport | H&A VIP Transfers",
+    metaTitle: "Private Transfer Piraeus Port to Athens Airport | H&A VIP Transfers",
     metaDescription:
       "Book a private transfer from Piraeus Port to Athens Airport. Mercedes Vito VIP, cruise pickup coordination, 24/7 WhatsApp support, fixed scheduling.",
     sections: [
@@ -1100,7 +1100,7 @@ export const blogPosts: BlogPost[] = [
       "Επαγγελματίας οδηγός ανοίγει την πόρτα μαύρου Mercedes Vito VIP στο λιμάνι του Πειραιά, με κρουαζιερόπλοιο και αεροπλάνο στον ορίζοντα — ιδιωτική μεταφορά κρουαζιέρας",
     date: "2026-01-15",
     metaTitle:
-      "Μεταφορά Κρουαζιέρας Πειραιά | Ιδιωτική Μεταφορά με Mercedes Vito VIP — H&A VIP Transfers",
+      "Μεταφορά Κρουαζιέρας Πειραιά με Mercedes Vito VIP | H&A VIP",
     metaDescription:
       "Προκρατημένη ιδιωτική μεταφορά κρουαζιέρας από το λιμάνι του Πειραιά προς ξενοδοχείο, αεροδρόμιο ή Αθήνα. Mercedes Vito VIP, συντονισμός αποβίβασης, WhatsApp 24/7.",
     sections: [

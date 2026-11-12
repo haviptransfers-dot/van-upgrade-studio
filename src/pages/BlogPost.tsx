@@ -11,7 +11,7 @@ import { blogPosts, localizePost, WHATSAPP_URL } from "@/data/blogPosts";
 import logoImg from "@/assets/logo.webp";
 import { organization } from "@/data/structuredData";
 import { showTwitterDescription } from "@/lib/twitterDescription";
-import { localizedPath } from "@/lib/languagePaths";
+import { linkPath } from "@/lib/languagePaths";
 
 /** Renders plain text with optional [label](url) markdown links as real anchors. */
 function LinkedText({ text, bold = false }: { text: string; bold?: boolean }) {
@@ -31,7 +31,7 @@ function LinkedText({ text, bold = false }: { text: string; bold?: boolean }) {
     parts.push(
       <a
         key={key++}
-        href={match[2].startsWith("https://haviptransfers.gr/") ? localizedPath(match[2].slice("https://haviptransfers.gr".length), i18n.language) : match[2]}
+        href={match[2].startsWith("https://haviptransfers.gr/") ? linkPath(match[2].slice("https://haviptransfers.gr".length), i18n.language) : match[2]}
         target="_blank"
         rel="noopener noreferrer"
         className="text-primary underline underline-offset-2 hover:text-primary/80"

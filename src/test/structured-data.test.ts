@@ -10,7 +10,8 @@ describe("public sitemap and structured data", () => {
     expect((xml.match(/<loc>/g) ?? []).length).toBe(232);
     for (const slug of slugs) expect(xml).toContain(`<loc>https://haviptransfers.gr/blog/${slug}/</loc>`);
     for (const page of servicePages) expect(xml).toContain(`<loc>https://haviptransfers.gr${page.path}/</loc>`);
-    expect(xml.match(/<lastmod>2026-11-12<\/lastmod>/g)).toHaveLength(8);
+    const pageDates = JSON.parse(readFileSync("src/data/pageLastmod.json", "utf8")) as Record<string, string>;
+    expect(xml.match(/<lastmod>2026-11-12<\/lastmod>/g)).toHaveLength(8 + Object.keys(pageDates).length);
     expect(xml).not.toContain(":slug");
     expect(readFileSync("public/robots.txt", "utf8")).toContain("Sitemap: https://haviptransfers.gr/sitemap.xml");
   });

@@ -2,7 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-route
 import { lazy, Suspense, useEffect, useState, type ComponentType } from "react";
 import Index from "./pages/Index.tsx";
 import { seoRoutes } from "./seoRoutes.ts";
-import { basePath, languageFromPath, localizedPath, LEGACY_SLUGS } from "./lib/languagePaths";
+import { basePath, languageFromPath, linkPath, LEGACY_SLUGS } from "./lib/languagePaths";
 import i18n from "./i18n";
 const NotFound = lazy(() => import("./pages/NotFound"));
 const SeoPage = lazy(() => import("./pages/SeoPage"));
@@ -23,7 +23,7 @@ export function PublicRoutes() {
   const language = languageFromPath(location.pathname);
   useEffect(() => { if (i18n.language !== language) void i18n.changeLanguage(language); }, [language]);
   const slug = path.startsWith("/blog/") ? path.slice(6) : "";
-  if (LEGACY_SLUGS[slug]) return <Navigate replace to={localizedPath(`/blog/${LEGACY_SLUGS[slug]}`, language)} />;
+  if (LEGACY_SLUGS[slug]) return <Navigate replace to={linkPath(`/blog/${LEGACY_SLUGS[slug]}`, language)} />;
   return <Routes location={{ ...location, pathname: path }}>
     <Route path="/" element={<Index />} />
     <Route path="/delphi-private-tour" element={<DelphiTour />} />

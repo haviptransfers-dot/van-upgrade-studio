@@ -1,6 +1,6 @@
 # Roadmap
 
-- [in progress] SEO clean-up across languages: de/es/fr/it/he/ar descriptions >160 → 150–158; titles >70 → 50–68 (all 8); wording rules in meta/titles/schema (all 8); meet & greet = sign with customer's name; FAQ answers in initial HTML; WhatsApp tooltip + availableLanguage list all 8 languages; sitemap lastmod today for changed pages; trailing-slash internal/language links. Exclude airport page and child-seat article.
+- [done] SEO clean-up across languages: de/es/fr/it/he/ar descriptions >160 → 150–158; titles >70 → 50–68 (all 8); wording rules in meta/titles/schema (all 8); meet & greet = sign with customer's name; FAQ answers in initial HTML; WhatsApp tooltip + availableLanguage list all 8 languages; sitemap lastmod today for changed pages; trailing-slash internal/language links. Airport page got the shared FAQ fixes only (owner approved); child-seat article only the shared languages list. 312 tests pass; 232 pages compared before/after. Not published.
 - [done] Part 1 (en) and Part 2 (el) meta descriptions.
 
 - [done] Updated only the existing child-seat article in eight languages with matching localized FAQ schema and eight page-specific sitemap dates. Identity, URLs, publication date and featured image retained; translated title/meta limits checked. Full suite: 211 tests passed. Eight initial and loaded article versions, links, images and RTL checked; review diff supplied. Not published; awaiting owner approval.

@@ -58,12 +58,17 @@ describe("sitemap.xml automated checks", () => {
     expect(sitemap).not.toContain("/404");
   });
 
-  it("uses the confirmed content-change date only for the eight child-seat article URLs", () => {
-    const changed = [...sitemap.matchAll(/<url>(.*?)<\/url>/g)].filter(([entry]) => entry.includes("<lastmod>"));
-    expect(changed).toHaveLength(8);
-    for (const [entry] of changed) {
-      expect(entry).toContain("/blog/child-car-seats-private-transfers-greece/</loc><lastmod>2026-11-12</lastmod>");
+  it("uses recorded content-change dates only for the child-seat article and changed localized pages", () => {
+    const pageDates = JSON.parse(readFileSync("src/data/pageLastmod.json", "utf8")) as Record<string, string>;
+    const changed = [...sitemap.matchAll(/<url><loc>([^<]+)<\/loc><lastmod>([^<]+)<\/lastmod>/g)];
+    expect(changed).toHaveLength(8 + Object.keys(pageDates).length);
+    for (const [, loc, date] of changed) {
+      const path = loc.replace(DOMAIN, "");
+      if (path.includes("/blog/child-car-seats-private-transfers-greece/")) expect(date).toBe("2026-11-12");
+      else expect(pageDates[path]).toBe(date);
     }
+    expect(pageDates["/airport-transfer-athens/"]).toBe("2026-11-12");
+    expect(pageDates["/privacy-policy/"]).toBeUndefined();
   });
 });
 

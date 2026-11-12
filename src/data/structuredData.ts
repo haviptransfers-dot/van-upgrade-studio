@@ -8,7 +8,7 @@ export const organization = {
   telephone: ["+306949393700", "+302109925244"],
   priceRange: "€€€",
   geo: { "@type": "GeoCoordinates", latitude: 37.9838, longitude: 23.7275 },
-  availableLanguage: ["English", "Greek"],
+  availableLanguage: ["English", "Greek", "German", "Spanish", "French", "Italian", "Hebrew", "Arabic"],
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
     dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],

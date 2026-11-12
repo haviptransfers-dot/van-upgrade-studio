@@ -38,13 +38,17 @@ const AccordionContent = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content>
 >(({ className, children, ...props }, ref) => (
-  <AccordionPrimitive.Content
-    ref={ref}
-    className="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
-    {...props}
-  >
-    <div className={cn("pb-4 pt-0", className)}>{children}</div>
-  </AccordionPrimitive.Content>
+  <>
+    <AccordionPrimitive.Content
+      ref={ref}
+      className="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+      {...props}
+    >
+      <div className={cn("pb-4 pt-0", className)}>{children}</div>
+    </AccordionPrimitive.Content>
+    {/* Radix omits closed answers from the DOM; this hidden copy keeps them in the server-rendered HTML for crawlers. */}
+    <div hidden data-prerendered-answer="">{children}</div>
+  </>
 ));
 
 AccordionContent.displayName = AccordionPrimitive.Content.displayName;

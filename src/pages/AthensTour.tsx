@@ -16,6 +16,7 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, Clock, Users, MapPin, Wallet, Check, ArrowLeft } from "lucide-react";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import tourAthens from "@/assets/tour-acropolis.webp";
+import { showTwitterDescription } from "@/lib/twitterDescription";
 
 const SITE_URL = "https://haviptransfers.gr";
 const WHATSAPP = "https://wa.me/306949393700";
@@ -67,6 +68,7 @@ const AthensTour = () => {
 
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
+        {showTwitterDescription("/athens-city-tour", i18n.language) && <meta name="twitter:description" content={description} />}
         <meta property="og:type" content="website" />
         <meta property="og:image" content={`${SITE_URL}${tourAthens}`} />
         <script type="application/ld+json">
