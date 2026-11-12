@@ -80,28 +80,14 @@ const ChildSeats = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="grid grid-cols-3 grid-rows-2 gap-3 h-72 sm:h-96"
+            className="h-72 sm:h-96"
           >
             <OptimizedImage
               src={`${ASSET_HOST}${vanAthensChildSeat.url}`}
               alt={t("seoUi.childPhotoAlts.0")}
               loading="lazy"
               decoding="async"
-              className="col-span-2 row-span-2 w-full h-full object-cover rounded-lg border border-primary/20 shadow-2xl"
-            />
-            <OptimizedImage
-              src={`${ASSET_HOST}${seatIdrive.url}`}
-              alt={t("seoUi.childPhotoAlts.1")}
-              loading="lazy"
-              decoding="async"
-              className="w-full h-full object-cover rounded-lg border border-primary/20 shadow-xl"
-            />
-            <OptimizedImage
-              src={`${ASSET_HOST}${seatBesafe360.url}`}
-              alt={t("seoUi.childPhotoAlts.2")}
-              loading="lazy"
-              decoding="async"
-              className="w-full h-full object-cover rounded-lg border border-primary/20 shadow-xl"
+              className="w-full h-full object-cover rounded-lg border border-primary/20 shadow-2xl"
             />
           </motion.div>
         </div>
