@@ -5,9 +5,6 @@ import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 
 import vanAthensChildSeat from "@/assets/van-athens-child-seat.jpg.asset.json";
-import seatBesafe360 from "@/assets/child-seat-besafe-360.jpg.asset.json";
-import seatIdrive from "@/assets/child-seat-idrive.jpg.asset.json";
-import seatBooster from "@/assets/child-seat-booster-monza.jpg.asset.json";
 
 const ASSET_HOST = "https://van-move-boost.lovable.app";
 
@@ -33,9 +30,9 @@ const ChildSeats = () => {
   ];
 
   const categories = [
-    { name: t("childSeats.group0.name"), range: t("childSeats.group0.range"), img: `${ASSET_HOST}${seatBesafe360.url}` },
-    { name: t("childSeats.group1.name"), range: t("childSeats.group1.range"), img: `${ASSET_HOST}${seatIdrive.url}` },
-    { name: t("childSeats.booster.name"), range: t("childSeats.booster.range"), img: `${ASSET_HOST}${seatBooster.url}` },
+    { name: t("childSeats.group0.name"), range: t("childSeats.group0.range") },
+    { name: t("childSeats.group1.name"), range: t("childSeats.group1.range") },
+    { name: t("childSeats.booster.name"), range: t("childSeats.booster.range") },
   ];
 
   const whatsappUrl = `${WHATSAPP_URL}?text=${encodeURIComponent(t("childSeats.whatsappMsg"))}`;
@@ -112,9 +109,6 @@ const ChildSeats = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 md:divide-x md:divide-border">
               {categories.map((c) => (
                 <div key={c.name} className="flex flex-col items-center text-center md:px-6">
-                  <div className="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border border-primary/25 mb-4">
-                    <OptimizedImage src={c.img} alt={`${c.name} · ${c.range}`} loading="lazy" decoding="async" className="w-full h-full object-cover" />
-                  </div>
                   <p className="font-display text-base md:text-lg font-semibold">{c.name}</p>
                   <p className="text-xs md:text-sm text-muted-foreground mt-1">{c.range}</p>
                 </div>
