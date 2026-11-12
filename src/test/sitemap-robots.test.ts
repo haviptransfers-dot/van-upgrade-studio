@@ -58,7 +58,7 @@ describe("sitemap.xml automated checks", () => {
     expect(sitemap).not.toContain("/404");
   });
 
-  it("uses recorded content-change dates only for the child-seat article and changed localized pages", () => {
+  it("uses recorded content-change dates for the child-seat article and every localized page", () => {
     const pageDates = JSON.parse(readFileSync("src/data/pageLastmod.json", "utf8")) as Record<string, string>;
     const changed = [...sitemap.matchAll(/<url><loc>([^<]+)<\/loc><lastmod>([^<]+)<\/lastmod>/g)];
     expect(changed).toHaveLength(8 + Object.keys(pageDates).length);
@@ -68,7 +68,8 @@ describe("sitemap.xml automated checks", () => {
       else expect(pageDates[path]).toBe(date);
     }
     expect(pageDates["/airport-transfer-athens/"]).toBe("2026-11-12");
-    expect(pageDates["/privacy-policy/"]).toBeUndefined();
+    // Owner asked (Nov 2026) for every sitemap URL to carry a lastmod date.
+    expect(pageDates["/privacy-policy/"]).toBe("2026-11-12");
   });
 });
 
