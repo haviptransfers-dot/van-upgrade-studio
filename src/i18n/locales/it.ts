@@ -36,9 +36,7 @@ export default {
   ],
   "roadAlt": "Mercedes Vito VIP in viaggio sull’autostrada",
   "childPhotoAlts": [
-    "Madre che assicura il figlio sorridente in un seggiolino all’interno del Mercedes Vito VIP, con l’Acropoli di Atene sullo sfondo",
-    "Seggiolino i-Size con cinture sul sedile posteriore di una Mercedes",
-    "Seggiolino girevole BeSafe 360 installato in un Mercedes Vito VIP"
+    "Madre che assicura il figlio sorridente in un seggiolino all’interno del Mercedes Vito VIP, con l’Acropoli di Atene sullo sfondo"
   ],
   "tourFaqs": {
     "athensTour": [
@@ -449,8 +447,6 @@ export default {
     request: "Richiedi un Seggiolino",
     safety: "La sicurezza della vostra famiglia è la nostra priorità",
     whatsappMsg: "Ciao! Vorrei richiedere un seggiolino auto per il mio transfer.",
-    besafeTitle: "BeSafe — Il pioniere scandinavo della sicurezza infantile in auto",
-    besafeText: "È il primo produttore di seggiolini auto per bambini in Scandinavia e i suoi seggiolini sono venduti in oltre 40 paesi. Il reparto di ricerca e sviluppo di BeSafe nei Paesi Bassi si concentra continuamente sullo sviluppo di prodotti innovativi per migliorare la sicurezza dei bambini su strada.",
   },
   payments: {
     eyebrow: "Pagamento Sicuro",

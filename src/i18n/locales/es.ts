@@ -36,9 +36,7 @@ export default {
   ],
   "roadAlt": "Mercedes Vito VIP circulando por la autopista",
   "childPhotoAlts": [
-    "Madre asegurando a su sonriente hijo en una silla infantil dentro del Mercedes Vito VIP, con la Acrópolis de Atenas al fondo",
-    "Silla infantil i-Size con arnés en el asiento trasero de un Mercedes",
-    "Silla infantil giratoria BeSafe 360 instalada en un Mercedes Vito VIP"
+    "Madre asegurando a su sonriente hijo en una silla infantil dentro del Mercedes Vito VIP, con la Acrópolis de Atenas al fondo"
   ],
   "tourFaqs": {
     "athensTour": [
@@ -449,8 +447,6 @@ export default {
     request: "Solicitar Silla Infantil",
     safety: "La seguridad de su familia es nuestra prioridad",
     whatsappMsg: "¡Hola! Me gustaría solicitar una silla infantil para mi traslado.",
-    besafeTitle: "BeSafe — Pionero escandinavo en seguridad infantil del automóvil",
-    besafeText: "Es el primer fabricante de sillas de coche para niños en Escandinavia, y sus sillas se venden en más de 40 países. El departamento de investigación y desarrollo de BeSafe en los Países Bajos se centra continuamente en desarrollar productos innovadores para mejorar la seguridad de los niños en la carretera.",
   },
   payments: {
     eyebrow: "Pago Seguro",
