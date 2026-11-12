@@ -235,7 +235,7 @@ export default {
     {
       "heading": "Familientransfers mit Kindersitzen",
       "paragraphs": [
-        "Reisen Sie gemeinsam mit Platz für bis zu sieben Fahrgäste, ohne Fahrer. Kindersitze sind auf Anfrage kostenlos erhältlich: Nennen Sie das Alter jedes Kindes und bestätigen Sie die benötigten Sitze, bevor Sie Ihren Flughafen-, Hafen- oder Hoteltransfer buchen.",
+        "Reisen Sie gemeinsam mit Platz für bis zu sieben Fahrgäste, ohne Fahrer. Kindersitze sind auf Anfrage inklusive: Nennen Sie das Alter jedes Kindes und bestätigen Sie die benötigten Sitze, bevor Sie Ihren Flughafen-, Hafen- oder Hoteltransfer buchen.",
         "Informieren Sie uns bei der Planung über Kinderwagen und anderes Gepäck. Wir können die Bedürfnisse Ihrer Familie zusammen mit den Abholdetails besprechen. So planen Sie Ihre Ankunft oder Abreise, ohne wichtige Fragen erst am Reisetag zu klären."
       ]
     }
@@ -263,10 +263,10 @@ export default {
       ]
     },
     {
-      "heading": "Gepäck und Familienreisen mit kostenlosen Kindersitzen",
+      "heading": "Gepäck und Familienreisen mit Kindersitzen auf Anfrage inklusive",
       "paragraphs": [
         "Ihre Gruppe reist gemeinsam im Mercedes Vito VIP mit gegenüberliegenden Loungesitzen und Platz für bis zu sieben Fahrgäste, ohne Fahrer. Teilen Sie uns mit, wie viele Gepäckstücke Sie mitbringen, einschließlich großer Koffer, Kinderwagen oder anderer sperriger Gegenstände. Die Fahrgastkapazität allein bestätigt nicht, dass jede Gepäckkombination hineinpasst. Besprechen Sie Ihren Gepäckbedarf deshalb vor der endgültigen Bestätigung der Fahrt.",
-        "Kindersitze sind auf Anfrage kostenlos. Nennen Sie bei der Angebotsanfrage das Alter Ihrer Kinder und die Anzahl benötigter Sitze und bestätigen Sie die Vereinbarung vor der Buchung. Das gilt gleichermaßen für Fahrten vom Kreuzfahrtterminal zum Hotel, von der Fähre zum Flughafen Athen oder zurück nach Piräus. Teilen Sie uns die gesamte Reise mit, damit Route, angefragte Sitze, Gepäck, Treffpunkt und Fahrpreis vorab vereinbart werden können."
+        "Kindersitze sind auf Anfrage inklusive. Nennen Sie bei der Angebotsanfrage das Alter Ihrer Kinder und die Anzahl benötigter Sitze und bestätigen Sie die Vereinbarung vor der Buchung. Das gilt gleichermaßen für Fahrten vom Kreuzfahrtterminal zum Hotel, von der Fähre zum Flughafen Athen oder zurück nach Piräus. Teilen Sie uns die gesamte Reise mit, damit Route, angefragte Sitze, Gepäck, Treffpunkt und Fahrpreis vorab vereinbart werden können."
       ]
     }
   ],
@@ -542,7 +542,7 @@ export default {
       distomo: { title: "Distomo / Livadia", desc: "Eine erholsame Pause auf der Strecke (optionaler Stopp)" },
     },
     whatIncludedTitle: "Im Preis enthalten",
-    whatIncluded: ["Abholung & Rückfahrt vom gewünschten Ort", "Luxuriöser Mercedes-Benz Van mit Ledersitzen", "Kostenloses WLAN während der gesamten Fahrt", "Wasser in Flaschen", "Private Tour — nur Sie und Ihre Gruppe"],
+    whatIncluded: ["Abholung & Rückfahrt vom gewünschten Ort", "Mercedes Vito VIP mit Ledersitzen", "Kostenloses WLAN während der gesamten Fahrt", "Wasser in Flaschen", "Private Tour — nur Sie und Ihre Gruppe"],
     infoTitle: "Informationen",
     duration: "Dauer", durationVal: "8 Stunden",
     durationQuestion: "Wie lange dauert die Tour „{{tour}}“?",
@@ -564,7 +564,7 @@ export default {
     badge: "Private VIP-Erfahrung",
     title: "Athen Stadtrundfahrt",
     heroHeading: "Entdecken Sie Athen in Ihrem eigenen Tempo",
-    heroText: "Erleben Sie Athen, wie es verdient — mit Komfort, Privatsphäre und Stil. Die Athen Stadtrundfahrt von H&A Tours ist eine exklusiv private 3-stündige Tour in einem luxuriösen Mercedes-Benz Van, für alle, die die wichtigsten Sehenswürdigkeiten ohne Hektik und ohne Touristengruppen entdecken möchten.",
+    heroText: "Erleben Sie Athen, wie es verdient — mit Komfort, Privatsphäre und Stil. Die Athen Stadtrundfahrt von H&A Tours ist eine exklusiv private 3-stündige Tour in einem Mercedes Vito VIP, für alle, die die wichtigsten Sehenswürdigkeiten ohne Hektik und ohne Touristengruppen entdecken möchten.",
     includesTitle: "Was die Tour beinhaltet",
     includes: {
       stadium: { title: "Panathinaiko-Stadion", desc: "Das einzige vollständig aus Marmor gebaute Olympiastadion der Welt" },
@@ -575,7 +575,7 @@ export default {
       monastiraki: { title: "Monastiraki", desc: "Die Seele der Altstadt mit ihrer Atmosphäre und ihren Farben" },
     },
     whatIncludedTitle: "Inbegriffen",
-    whatIncluded: ["Abholung & Rückfahrt von Ihrem Wunschort", "Luxuriöser Mercedes-Benz Van mit Ledersitzen", "Kostenloses WLAN während der gesamten Fahrt", "Wasserflaschen", "Private Tour — nur Sie und Ihre Gruppe"],
+    whatIncluded: ["Abholung & Rückfahrt von Ihrem Wunschort", "Mercedes Vito VIP mit Ledersitzen", "Kostenloses WLAN während der gesamten Fahrt", "Wasserflaschen", "Private Tour — nur Sie und Ihre Gruppe"],
     infoTitle: "Informationen",
     duration: "Dauer", durationVal: "3 Stunden",
     durationQuestion: "Wie lange dauert die Tour „{{tour}}“?",
@@ -607,7 +607,7 @@ export default {
       voula: { title: "Voula / Glyfada", desc: "Für Kaffee oder eine Pause mit Meerblick (optionaler Stopp)" },
     },
     whatIncludedTitle: "Im Preis enthalten",
-    whatIncluded: ["Abholung & Rückfahrt vom gewünschten Ort", "Luxuriöser Mercedes-Benz Van mit Ledersitzen", "Kostenloses WLAN während der gesamten Fahrt", "Wasser in Flaschen", "Private Tour — nur Sie und Ihre Gruppe"],
+    whatIncluded: ["Abholung & Rückfahrt vom gewünschten Ort", "Mercedes Vito VIP mit Ledersitzen", "Kostenloses WLAN während der gesamten Fahrt", "Wasser in Flaschen", "Private Tour — nur Sie und Ihre Gruppe"],
     infoTitle: "Informationen",
     duration: "Dauer", durationVal: "5 Stunden",
     durationQuestion: "Wie lange dauert die Tour „{{tour}}“?",
@@ -640,7 +640,7 @@ export default {
       lamia: { title: "Lamia", desc: "Für eine entspannende Pause und Kaffee (optionaler Stopp)" },
     },
     whatIncludedTitle: "Im Preis enthalten",
-    whatIncluded: ["Abholung & Rückfahrt vom gewünschten Ort", "Luxuriöser Mercedes-Benz Van mit Ledersitzen", "Kostenloses WLAN während der gesamten Fahrt", "Wasser in Flaschen", "Private Tour — nur Sie und Ihre Gruppe"],
+    whatIncluded: ["Abholung & Rückfahrt vom gewünschten Ort", "Mercedes Vito VIP mit Ledersitzen", "Kostenloses WLAN während der gesamten Fahrt", "Wasser in Flaschen", "Private Tour — nur Sie und Ihre Gruppe"],
     infoTitle: "Informationen",
     duration: "Dauer", durationVal: "12 Stunden",
     durationQuestion: "Wie lange dauert die Tour „{{tour}}“?",
@@ -674,7 +674,7 @@ export default {
       canal: { title: "Kanal von Korinth", desc: "Eine der beeindruckendsten Konstruktionen des 19. Jahrhunderts (optionaler Stopp)" },
     },
     whatIncludedTitle: "Im Preis enthalten",
-    whatIncluded: ["Abholung & Rückfahrt vom gewünschten Ort", "Luxuriöser Mercedes-Benz Van mit Ledersitzen", "Kostenloses WLAN während der gesamten Fahrt", "Wasser in Flaschen", "Private Tour — nur Sie und Ihre Gruppe"],
+    whatIncluded: ["Abholung & Rückfahrt vom gewünschten Ort", "Mercedes Vito VIP mit Ledersitzen", "Kostenloses WLAN während der gesamten Fahrt", "Wasser in Flaschen", "Private Tour — nur Sie und Ihre Gruppe"],
     infoTitle: "Informationen",
     duration: "Dauer", durationVal: "8 Stunden",
     durationQuestion: "Wie lange dauert die Tour „{{tour}}“?",

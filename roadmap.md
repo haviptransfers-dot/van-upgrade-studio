@@ -1,5 +1,6 @@
 # Roadmap
 
+- [done] House-rules clean-up (uploaded list): 2 airport titles, child seats "included on request" (homepage, Piraeus, Nafplio FAQ; 8 langs), Mercedes-Benz van → Mercedes Vito VIP on 5 tours, listed el/fr/it/he/ar title/H1/description fixes, lastmod on all 232 sitemap URLs, trailing-slash links in child-seat article. 102 pages changed, all explained; 369 tests pass. Not published.
 - [done] SEO clean-up across languages: de/es/fr/it/he/ar descriptions >160 → 150–158; titles >70 → 50–68 (all 8); wording rules in meta/titles/schema (all 8); meet & greet = sign with customer's name; FAQ answers in initial HTML; WhatsApp tooltip + availableLanguage list all 8 languages; sitemap lastmod today for changed pages; trailing-slash internal/language links. Airport page got the shared FAQ fixes only (owner approved); child-seat article only the shared languages list. 312 tests pass; 232 pages compared before/after. Not published.
 - [done] Part 1 (en) and Part 2 (el) meta descriptions.
 
