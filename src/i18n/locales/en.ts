@@ -205,8 +205,8 @@ export default {
   "passengerLabel": "Up to 7 passengers",
   "maxPax": "Mercedes Vito VIP · Up to 7 passengers",
   "familyHeading": "Family transfers with child seats",
-  "childTitle": "Free child seats on request",
-  "childDescription": "Tell us your children’s ages and request free child seats when arranging your transfer. Confirm the required seats before booking.",
+  "childTitle": "Child seats included on request",
+  "childDescription": "Tell us your children’s ages and request child seats, included on request, when arranging your transfer. Confirm the required seats before booking.",
   "relatedHeading": "Related tours and travel guides",
   "vehicleAlt": "Mercedes Vito VIP interior with a face-to-face lounge seating layout for up to 7 passengers, excluding the driver",
   "faqTitle": "Frequently asked questions",
@@ -429,7 +429,7 @@ export default {
     includes: ["Meet & Greet", "Flight Tracking", "Free Wait", "Free WiFi", "Child Seats"],
   },
   childSeats: {
-    eyebrow: "Extra Services",
+    eyebrow: "Included on request",
     title1: "Child",
     title2: "Seats",
     subtitle: "Safe travels for the little ones",
@@ -498,7 +498,7 @@ export default {
     title: "Frequently Asked Questions",
     items: {
       q1: "How much does a transfer cost?",
-      a1: "Transfers start from €70 and vary depending on the number of passengers and route. Contact us for an exact quote.",
+      a1: "Transfers start from €85 and vary depending on the number of passengers and route. Contact us for an exact quote.",
       q2: "What is included in the price?",
       a2: "All transfers include tolls, bottled water, complimentary Wi-Fi, and flight or ship tracking.",
       q3: "How many passengers and suitcases fit?",
@@ -708,7 +708,7 @@ export default {
     button: "Add as a preferred source on Google",
     footerLink: "Add to Google preferred sources",
     supportTitle: "Support a local business",
-    supportText: "H&A VIP Tours is a local, family-owned transfer company in Athens. Add us as a preferred source on Google to stay updated with our latest travel guides and offers.",
+    supportText: "H&A VIP Tours is a local, family-owned transfer company in Athens. Add us as a preferred source on Google to stay updated with our latest travel guides.",
     aboutTitle: "About H&A VIP Tours",
   },
   music: {

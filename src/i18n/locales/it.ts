@@ -205,8 +205,8 @@ export default {
   "passengerLabel": "Fino a 7 passeggeri",
   "maxPax": "Mercedes Vito VIP · Fino a 7 passeggeri",
   "familyHeading": "Transfer per famiglie con seggiolini",
-  "childTitle": "Seggiolini gratuiti su richiesta",
-  "childDescription": "Comunica l’età dei bambini e richiedi seggiolini gratuiti quando organizzi il transfer. Conferma i seggiolini necessari prima della prenotazione.",
+  "childTitle": "Seggiolini inclusi su richiesta",
+  "childDescription": "Comunica l’età dei bambini e richiedi i seggiolini, inclusi su richiesta, quando organizzi il transfer. Conferma i seggiolini necessari prima della prenotazione.",
   "relatedHeading": "Tour e guide di viaggio correlati",
   "vehicleAlt": "Interni del Mercedes Vito VIP con sedili contrapposti in configurazione salotto per fino a 7 passeggeri, escluso il conducente",
   "faqTitle": "Domande frequenti",
@@ -429,7 +429,7 @@ export default {
     includes: ["Accoglienza", "Tracciamento Volo", "Attesa Gratis", "WiFi Gratis", "Seggiolini"],
   },
   childSeats: {
-    eyebrow: "Servizi Extra",
+    eyebrow: "Incluso su richiesta",
     title1: "Seggiolini",
     title2: "Bambino",
     subtitle: "Viaggi sicuri per i più piccoli",
@@ -498,7 +498,7 @@ export default {
     title: "FAQ",
     items: {
       q1: "Quanto costa un transfer?",
-      a1: "I transfer partono da €70 e variano in base al numero di passeggeri e all'itinerario. Contattaci per un preventivo esatto.",
+      a1: "I transfer partono da €85 e variano in base al numero di passeggeri e all'itinerario. Contattaci per un preventivo esatto.",
       q2: "Cosa è incluso nel prezzo?",
       a2: "Tutti i transfer includono pedaggi, acqua in bottiglia, Wi-Fi gratuito e monitoraggio voli o navi.",
       q3: "Quanti passeggeri e valigie entrano?",
@@ -708,7 +708,7 @@ export default {
     button: "Aggiungi come fonte preferita su Google",
     footerLink: "Aggiungi alle fonti preferite di Google",
     supportTitle: "Sostieni un'azienda locale",
-    supportText: "H&A VIP Tours è un'azienda di trasferimenti locale e a conduzione familiare ad Atene. Aggiungici come fonte preferita su Google per rimanere aggiornato sulle nostre guide di viaggio e offerte.",
+    supportText: "H&A VIP Tours è un'azienda di trasferimenti locale e a conduzione familiare ad Atene. Aggiungici come fonte preferita su Google per rimanere aggiornato sulle nostre guide di viaggio.",
     aboutTitle: "Chi siamo - H&A VIP Tours",
   },
   music: {
