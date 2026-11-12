@@ -520,7 +520,7 @@ export default {
     },
   },
   seo: {
-    airport: { title: "Transfer Aeroporto di Atene (ATH) – Mercedes Vito VIP | H&A VIP Tours", description: "Transfer privati per l'Aeroporto Internazionale di Atene con Mercedes Vito VIP di lusso. Monitoraggio voli, accoglienza, prezzi fissi da 70€. Prenota via WhatsApp 24/7." },
+    airport: { title: "Transfer Aeroporto di Atene (ATH) – Mercedes Vito VIP | H&A VIP Tours", description: "Transfer privati dall'aeroporto di Atene (ATH) con Mercedes Vito VIP. Accoglienza, monitoraggio del volo, prezzo fisso concordato prima. Prenota su WhatsApp." },
     piraeus: { title: "Transfer Porto del Pireo da Atene e Aeroporto | H&A VIP Tours", description: "Transfer privati di lusso da e per i porti del Pireo, Rafina e Lavrio. Ideale per crociere e traghetti. Mercedes Vito VIP, 7 passeggeri, prezzi fissi." },
     athens: { title: "Tour Privato di Atene – Acropoli e Attrazioni | H&A VIP Tours", description: "Tour privato della città di Atene con autista professionista. Visita l'Acropoli, Plaka, Syntagma e lo Stadio Panatenaico con una Mercedes Vito VIP." },
     delphi: { title: "Tour Privato a Delfi da Atene | H&A VIP Tours", description: "Tour privato di un'intera giornata da Atene a Delfi, l'antico Oracolo di Apollo. Mercedes Vito VIP di lusso con autista anglofono. Sosta ad Arachova." },
@@ -736,5 +736,93 @@ export default {
     marketingDesc: "Usati per offerte personalizzate.",
     alwaysOn: "Sempre attivi",
     close: "Chiudi",
+  },
+  airportPage: {
+    "h1": "Transfer aeroporto di Atene (ATH) con Mercedes Vito VIP",
+    "intro": "Atterrare all'Athens International Airport Eleftherios Venizelos dovrebbe essere rilassante, non complicato. Con H&A VIP Tours, un autista professionista di lingua inglese vi aspetta agli arrivi, e il prezzo è stato concordato prima ancora dell'imbarco. Che siate diretti a un hotel in città, a un porto o a una gita sulla terraferma, il vostro viaggio inizia nel momento in cui varcate le porte.",
+    "sections": [
+      {
+        "title": "Accoglienza all'Aeroporto Internazionale di Atene",
+        "paragraphs": [
+          "Il vostro autista vi accoglie all'interno della sala arrivi dell'Athens International Airport Eleftherios Venizelos (ATH) con un cartello con il vostro nome. Dopo un lungo volo non dovrete cercare un posteggio taxi né contrattare una tariffa.",
+          "Per organizzare il prelievo ci servono solo pochi dati: il nome del passeggero principale, la data, il numero del volo e l'orario di arrivo, la destinazione o l'indirizzo completo dell'hotel, il numero di passeggeri e i bagagli. Ogni passeggero può portare una valigia grande."
+        ]
+      },
+      {
+        "title": "Monitoraggio del volo: seguiamo il vostro volo, non l'orario",
+        "paragraphs": [
+          "I voli raramente atterrano esattamente in orario. Monitoriamo il vostro volo in tempo reale, così il vostro autista arriva quando arrivate voi. Se il volo è in ritardo, non ci sono costi aggiuntivi per ritardi ragionevoli, e 60 minuti di attesa gratuita sono inclusi nel prezzo fisso. Siamo disponibili 24 ore su 24, 7 giorni su 7, anche per arrivi in tarda serata e al mattino presto."
+        ]
+      },
+      {
+        "title": "Prezzo fisso, concordato in anticipo",
+        "paragraphs": [
+          "Per ogni transfer aeroportuale indichiamo un prezzo fisso prima della partenza. I transfer aeroportuali partono da €85 per 1–4 passeggeri e da €100 per 5–7 passeggeri. Nessun costo nascosto. Il prezzo include pedaggi, acqua in bottiglia e Wi-Fi gratuito. Potete ottenere una stima immediata con il modulo di prenotazione in questa pagina, oppure scriverci su WhatsApp per un preventivo esatto in base al percorso e alle dimensioni del gruppo.",
+          "Potete pagare in contanti (euro), con carta sul nostro terminale POS portatile (Visa e Mastercard) o con bonifico bancario. Può essere richiesto un acconto del 20% tramite bonifico bancario, ma non è obbligatorio per i transfer standard."
+        ]
+      },
+      {
+        "title": "Dove vi portiamo dall'aeroporto",
+        "paragraphs": [
+          "Il vostro transfer dall'aeroporto può terminare ovunque vi portino i vostri programmi:"
+        ],
+        "items": [
+          "**Centro di Atene e hotel.** Servizio porta a porta verso qualsiasi hotel, villa o Airbnb ad Atene. Leggete anche la nostra guida al [transfer privato dall'aeroporto di Atene al vostro hotel](/blog/private-transfer-athens-airport-to-hotel).",
+          "**Porti del Pireo, di Rafina e di Lavrio.** Colleghiamo l'aeroporto ai porti per chi viaggia in traghetto o in crociera. Scoprite di più nella nostra pagina sul [transfer al porto del Pireo](/piraeus-port-transfer), oppure confrontate tutte le opzioni in [Dall'Aeroporto di Atene al Porto del Pireo: Tutti i Modi per Arrivarci](/blog/athens-airport-to-piraeus-port-transport-options).",
+          "**La Riviera ateniese.** Glyfada, Vouliagmeni e la costa a sud della città, a breve distanza in auto dall'aeroporto.",
+          "**Gite private di un giorno sulla terraferma.** Iniziate il vostro tour direttamente dall'aeroporto o dal vostro hotel: [Delfi](/delphi-private-tour), [Meteora](/meteora-private-tour), [Nafplio](/nafplio-private-tour) e [Capo Sounion](/cape-sounion-tour), oppure un [tour di Atene](/athens-city-tour) con i vostri tempi."
+        ],
+        "after": [
+          "Lo stesso servizio funziona anche al contrario. Per la partenza, vi preleviamo dal vostro hotel o indirizzo in tempo per il volo e vi accompagniamo al terminal partenze. Se atterrate tardi, la nostra guida al [transfer notturno dall'aeroporto di Atene](/blog/night-transfer-athens-airport-late-arrival) spiega cosa aspettarsi."
+        ]
+      },
+      {
+        "title": "Il nostro veicolo: il Mercedes Vito VIP",
+        "paragraphs": [
+          "Viaggiate su un Mercedes Vito VIP con uno spazioso interno in pelle marrone e sedili vis-à-vis, che rendono facile chiacchierare e rilassarsi dopo il volo. Accoglie fino a sette passeggeri, escluso l'autista, ed è dotato di climatizzazione, Wi-Fi gratuito e acqua in bottiglia per ogni viaggio. Se viaggiate con più bagagli, consultate la nostra guida ai [transfer aeroportuali con più valigie](/blog/private-transfer-athens-multiple-suitcases). Per gruppi più numerosi, diteci quanti siete e organizzeremo il veicolo adatto.",
+          "Il vostro autista è un professionista di lingua inglese, e il nostro servizio è pienamente autorizzato e assicurato."
+        ]
+      },
+      {
+        "title": "Come prenotare il vostro transfer aeroportuale",
+        "items": [
+          "**WhatsApp o Viber:** scriveteci al [+30 694 939 3700](https://wa.me/306949393700) con i dati del volo. Confermiamo la vostra prenotazione.",
+          "**E-mail:** scrivete a [h.a.viptransfers@gmail.com](mailto:h.a.viptransfers@gmail.com) indicando nome, data, numero del volo, destinazione e numero di passeggeri.",
+          "**Modulo online:** usate il modulo di prenotazione in questa pagina per ottenere una stima immediata e inviare la vostra richiesta."
+        ],
+        "after": [
+          "Potete anche chiamare il nostro numero fisso [+30 210 992 5244](tel:+302109925244). Siamo disponibili 24 ore su 24."
+        ]
+      }
+    ],
+    "faqTitle": "Domande frequenti",
+    "faq": [
+      {
+        "q": "Come troverò il mio autista in aeroporto?",
+        "a": "Il vostro autista vi aspetta all'interno della sala arrivi con un cartello con il vostro nome."
+      },
+      {
+        "q": "Cosa succede se il mio volo è in ritardo o atterra in anticipo?",
+        "a": "Monitoriamo il vostro volo in tempo reale e adattiamo il prelievo al vostro arrivo effettivo. Non ci sono costi aggiuntivi per ritardi ragionevoli, e sono inclusi 60 minuti di attesa gratuita."
+      },
+      {
+        "q": "Il prezzo è fisso e cosa include?",
+        "a": "Sì. Concordiamo con voi un prezzo fisso in anticipo, senza costi nascosti: i transfer aeroportuali partono da €85 per 1–4 passeggeri e da €100 per 5–7 passeggeri. Il prezzo include pedaggi, acqua in bottiglia, Wi-Fi gratuito e monitoraggio del volo."
+      },
+      {
+        "q": "Quanti passeggeri e valigie entrano nel veicolo?",
+        "a": "Il nostro Mercedes Vito VIP trasporta fino a sette passeggeri, escluso l'autista, e ogni passeggero può portare una valigia grande. Indicateci al momento della prenotazione le dimensioni del gruppo e i bagagli, così prepareremo il veicolo adatto."
+      },
+      {
+        "q": "Quali metodi di pagamento accettate?",
+        "a": "Contanti in euro, pagamento con carta su terminale POS portatile (Visa e Mastercard) e bonifico bancario. Può essere richiesto un acconto del 20% tramite bonifico bancario, ma non è obbligatorio per i transfer standard."
+      },
+      {
+        "q": "Potete portarmi dall'aeroporto al porto o in una gita di un giorno?",
+        "a": "Sì. Accompagniamo i clienti dall'aeroporto di Atene ai porti del Pireo, di Rafina e di Lavrio, a qualsiasi hotel di Atene e oltre, in gite private di un giorno verso destinazioni della Grecia continentale come Delfi, Meteora e Nafplio."
+      }
+    ],
+    "ctaTitle": "Pronti a prenotare?",
+    "ctaText": "Scriveteci su WhatsApp al [+30 694 939 3700](https://wa.me/306949393700) o via e-mail a [h.a.viptransfers@gmail.com](mailto:h.a.viptransfers@gmail.com) e confermeremo il vostro transfer dall'aeroporto di Atene."
   },
 };

@@ -520,7 +520,7 @@ export default {
     },
   },
   seo: {
-    airport: { title: "Athen Flughafentransfer (ATH) – Mercedes Vito VIP | H&A VIP Tours", description: "Private Transfers zum Internationalen Flughafen Athen in einer luxuriösen Mercedes Vito VIP. Flugverfolgung, Meet & Greet, Festpreise ab 70€. Buchung via WhatsApp 24/7." },
+    airport: { title: "Athen Flughafentransfer (ATH) – Mercedes Vito VIP | H&A VIP Tours", description: "Private Transfers vom Flughafen Athen (ATH) im Mercedes Vito VIP. Empfang, Flugüberwachung, im Voraus vereinbarter Festpreis. Buchung per WhatsApp." },
     piraeus: { title: "Hafentransfer Piräus von Athen & Flughafen | H&A VIP Tours", description: "Luxuriöse private Transfers zu und von den Häfen Piräus, Rafina und Lavrio. Perfekt für Kreuzfahrt- und Fährreisende. Mercedes Vito VIP, 7 Passagiere, Festpreise." },
     athens: { title: "Private Stadtführung Athen – Akropolis & Highlights | H&A VIP Tours", description: "Private Stadttour durch Athen mit professionellem Fahrer. Besuchen Sie Akropolis, Plaka, Syntagma & Panathenäisches Stadion in einer Mercedes Vito VIP." },
     delphi: { title: "Private Tagestour nach Delphi ab Athen | H&A VIP Tours", description: "Private Ganztagestour von Athen nach Delphi, dem antiken Orakel des Apollo. Luxuriöse Mercedes Vito VIP mit englischsprachigem Fahrer. Stopp in Arachova." },
@@ -736,5 +736,93 @@ export default {
     marketingDesc: "Wird für personalisierte Angebote verwendet.",
     alwaysOn: "Immer aktiv",
     close: "Schließen",
+  },
+  airportPage: {
+    "h1": "Flughafentransfer Athen (ATH) im Mercedes Vito VIP",
+    "intro": "Die Landung am Athens International Airport Eleftherios Venizelos sollte entspannt sein, nicht kompliziert. Bei H&A VIP Tours erwartet Sie ein professioneller, Englisch sprechender Fahrer in der Ankunftshalle, und der Preis wurde vereinbart, bevor Sie überhaupt eingestiegen sind. Ob Sie zu einem Hotel in der Stadt, zu einem Hafen oder zu einem Tagesausflug auf dem Festland fahren – Ihre Reise beginnt in dem Moment, in dem Sie durch die Türen gehen.",
+    "sections": [
+      {
+        "title": "Persönlicher Empfang am Internationalen Flughafen Athen",
+        "paragraphs": [
+          "Ihr Fahrer empfängt Sie in der Ankunftshalle des Athens International Airport Eleftherios Venizelos (ATH) und hält ein Schild mit Ihrem Namen. Nach einem langen Flug müssen Sie weder einen Taxistand suchen noch über einen Fahrpreis verhandeln.",
+          "Für die Abholung benötigen wir nur wenige Angaben: den Namen des Hauptreisenden, Ihr Datum, Flugnummer und Ankunftszeit, Ihr Ziel oder die vollständige Hoteladresse, die Anzahl der Passagiere und Ihr Gepäck. Jeder Passagier kann einen großen Koffer mitnehmen."
+        ]
+      },
+      {
+        "title": "Flugüberwachung: Wir richten uns nach Ihrem Flug, nicht nach dem Flugplan",
+        "paragraphs": [
+          "Flüge landen selten genau planmäßig. Wir verfolgen Ihren Flug in Echtzeit, damit Ihr Fahrer da ist, wenn Sie ankommen. Ist Ihr Flug verspätet, fallen für angemessene Verspätungen keine Zusatzkosten an, und 60 Minuten kostenlose Wartezeit sind in Ihrem Festpreis enthalten. Wir sind 24 Stunden am Tag, 7 Tage die Woche erreichbar, auch bei Ankünften spätabends und frühmorgens."
+        ]
+      },
+      {
+        "title": "Festpreis, im Voraus vereinbart",
+        "paragraphs": [
+          "Für jeden Flughafentransfer nennen wir Ihnen vor der Reise einen Festpreis. Flughafentransfers kosten ab €85 für 1–4 Passagiere und ab €100 für 5–7 Passagiere. Es gibt keine versteckten Gebühren. Im Preis enthalten sind Mautgebühren, Wasser in Flaschen und kostenloses WLAN. Mit dem Buchungsformular auf dieser Seite erhalten Sie sofort eine Preisschätzung, oder Sie schreiben uns auf WhatsApp für einen genauen Preis für Ihre Strecke und Gruppengröße.",
+          "Sie können bar (Euro), mit Karte über unser mobiles POS-Terminal (Visa und Mastercard) oder per Banküberweisung bezahlen. Eine Anzahlung von 20 % per Banküberweisung kann angefragt werden, ist bei Standardtransfers aber nicht verpflichtend."
+        ]
+      },
+      {
+        "title": "Wohin wir Sie vom Flughafen bringen",
+        "paragraphs": [
+          "Ihr Flughafentransfer kann überall dort enden, wohin Ihre Pläne Sie führen:"
+        ],
+        "items": [
+          "**Stadtzentrum von Athen und Hotels.** Tür-zu-Tür-Service zu jedem Hotel, jeder Villa oder jedem Airbnb in Athen. Lesen Sie auch unseren Ratgeber zum [privaten Transfer vom Flughafen Athen zu Ihrem Hotel](/blog/private-transfer-athens-airport-to-hotel).",
+          "**Häfen Piräus, Rafina und Lavrio.** Wir verbinden den Flughafen mit den Häfen für Fähr- und Kreuzfahrtreisende. Mehr dazu auf unserer Seite zum [Transfer zum Hafen Piräus](/piraeus-port-transfer), oder vergleichen Sie alle Möglichkeiten in [Vom Flughafen Athen zum Hafen Piräus: Alle Möglichkeiten](/blog/athens-airport-to-piraeus-port-transport-options).",
+          "**Die Athener Riviera.** Glyfada, Vouliagmeni und die Küste südlich der Stadt, nur eine kurze Fahrt vom Flughafen entfernt.",
+          "**Private Tagesausflüge auf dem Festland.** Beginnen Sie Ihre Tour direkt am Flughafen oder an Ihrem Hotel: [Delphi](/delphi-private-tour), [Meteora](/meteora-private-tour), [Nafplio](/nafplio-private-tour) und [Kap Sounion](/cape-sounion-tour) oder eine [Stadtführung in Athen](/athens-city-tour) in Ihrem eigenen Tempo."
+        ],
+        "after": [
+          "Derselbe Service funktioniert auch in umgekehrter Richtung. Für Ihren Abflug holen wir Sie rechtzeitig an Ihrem Hotel oder Ihrer Adresse ab und bringen Sie zum Abflugterminal. Wenn Sie spät landen, erklärt unser Ratgeber zum [Nachttransfer vom Flughafen Athen](/blog/night-transfer-athens-airport-late-arrival), was Sie erwartet."
+        ]
+      },
+      {
+        "title": "Unser Fahrzeug: der Mercedes Vito VIP",
+        "paragraphs": [
+          "Sie reisen in einem Mercedes Vito VIP mit geräumigem Innenraum aus braunem Leder und gegenüberliegenden Sitzen, die es leicht machen, sich nach dem Flug zu unterhalten und zu entspannen. Er bietet Platz für bis zu sieben Passagiere, ohne den Fahrer, und verfügt auf jeder Fahrt über Klimaanlage, kostenloses WLAN und Wasser in Flaschen. Wenn Sie mit mehr Gepäck reisen, lesen Sie unseren Ratgeber zu [Flughafentransfers mit mehreren Koffern](/blog/private-transfer-athens-multiple-suitcases). Bei größeren Gruppen nennen Sie uns Ihre Personenzahl, und wir organisieren das passende Fahrzeug.",
+          "Ihr Fahrer ist ein professioneller, Englisch sprechender Chauffeur, und unser Service ist vollständig lizenziert und versichert."
+        ]
+      },
+      {
+        "title": "So buchen Sie Ihren Flughafentransfer",
+        "items": [
+          "**WhatsApp oder Viber:** Schreiben Sie uns unter [+30 694 939 3700](https://wa.me/306949393700) mit Ihren Flugdaten. Wir bestätigen Ihre Buchung.",
+          "**E-Mail:** Schreiben Sie an [h.a.viptransfers@gmail.com](mailto:h.a.viptransfers@gmail.com) mit Ihrem Namen, Datum, Flugnummer, Ziel und der Anzahl der Passagiere.",
+          "**Online-Formular:** Nutzen Sie das Buchungsformular auf dieser Seite, um sofort eine Preisschätzung zu erhalten und Ihre Anfrage zu senden."
+        ],
+        "after": [
+          "Sie können uns auch über unser Festnetz unter [+30 210 992 5244](tel:+302109925244) anrufen. Wir sind rund um die Uhr erreichbar."
+        ]
+      }
+    ],
+    "faqTitle": "Häufig gestellte Fragen",
+    "faq": [
+      {
+        "q": "Wie finde ich meinen Fahrer am Flughafen?",
+        "a": "Ihr Fahrer wartet in der Ankunftshalle auf Sie und hält ein Schild mit Ihrem Namen."
+      },
+      {
+        "q": "Was passiert, wenn mein Flug verspätet ist oder früher landet?",
+        "a": "Wir verfolgen Ihren Flug in Echtzeit und passen die Abholung an Ihre tatsächliche Ankunft an. Für angemessene Verspätungen fallen keine Zusatzkosten an, und 60 Minuten kostenlose Wartezeit sind inbegriffen."
+      },
+      {
+        "q": "Ist der Preis fest, und was ist enthalten?",
+        "a": "Ja. Wir vereinbaren mit Ihnen im Voraus einen Festpreis ohne versteckte Gebühren: Flughafentransfers kosten ab €85 für 1–4 Passagiere und ab €100 für 5–7 Passagiere. Im Preis enthalten sind Mautgebühren, Wasser in Flaschen, kostenloses WLAN und Flugüberwachung."
+      },
+      {
+        "q": "Wie viele Passagiere und Koffer passen in das Fahrzeug?",
+        "a": "Unser Mercedes Vito VIP befördert bis zu sieben Passagiere, ohne den Fahrer, und jeder Passagier kann einen großen Koffer mitnehmen. Nennen Sie uns bei der Buchung Ihre Gruppengröße und Ihr Gepäck, damit wir das passende Fahrzeug vorbereiten können."
+      },
+      {
+        "q": "Welche Zahlungsmethoden akzeptieren Sie?",
+        "a": "Barzahlung in Euro, Kartenzahlung über ein mobiles POS-Terminal (Visa und Mastercard) und Banküberweisung. Eine Anzahlung von 20 % per Banküberweisung kann angefragt werden, ist bei Standardtransfers aber nicht verpflichtend."
+      },
+      {
+        "q": "Können Sie mich vom Flughafen zum Hafen oder zu einem Tagesausflug bringen?",
+        "a": "Ja. Wir bringen Gäste vom Flughafen Athen zu den Häfen Piräus, Rafina und Lavrio, zu jedem Hotel in Athen und weiter auf private Tagesausflüge zu Zielen auf dem griechischen Festland wie Delphi, Meteora und Nafplio."
+      }
+    ],
+    "ctaTitle": "Bereit zu buchen?",
+    "ctaText": "Schreiben Sie uns auf WhatsApp unter [+30 694 939 3700](https://wa.me/306949393700) oder per E-Mail an [h.a.viptransfers@gmail.com](mailto:h.a.viptransfers@gmail.com), und wir bestätigen Ihren Flughafentransfer in Athen."
   },
 };
