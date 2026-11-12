@@ -205,8 +205,8 @@ export default {
   "passengerLabel": "Bis zu 7 Fahrgäste",
   "maxPax": "Mercedes Vito VIP · Bis zu 7 Fahrgäste",
   "familyHeading": "Familientransfers mit Kindersitzen",
-  "childTitle": "Kostenlose Kindersitze auf Anfrage",
-  "childDescription": "Teilen Sie uns das Alter Ihrer Kinder mit und fragen Sie bei der Transferplanung kostenlose Kindersitze an. Bestätigen Sie die benötigten Sitze vor der Buchung.",
+  "childTitle": "Kindersitze auf Anfrage inklusive",
+  "childDescription": "Teilen Sie uns das Alter Ihrer Kinder mit und fragen Sie bei der Transferplanung Kindersitze an, die auf Anfrage inklusive sind. Bestätigen Sie die benötigten Sitze vor der Buchung.",
   "relatedHeading": "Passende Touren und Reiseführer",
   "vehicleAlt": "Innenraum des Mercedes Vito VIP mit gegenüberliegenden Sitzen in Lounge-Anordnung für bis zu 7 Fahrgäste, ohne Fahrer",
   "faqTitle": "Häufig gestellte Fragen",
@@ -332,7 +332,7 @@ export default {
     eyebrow: "Private Transfers in Athen",
     title1: "Luxustransfers",
     title2: "in Athen",
-    subtitle: "Erleben Sie Griechenland mit Stil in unserem Mercedes Mercedes Vito VIP. Flughafentransfers, Hafenabholungen, Privattouren & VIP-Transport.",
+    subtitle: "Erleben Sie Griechenland mit Stil in unserem Mercedes Vito VIP. Flughafentransfers, Hafenabholungen, Privattouren & VIP-Transport.",
     whatsapp: "Angebot per WhatsApp",
     call: "Anrufen",
     exploreTours: "Entdecken Sie unsere Touren",
@@ -363,8 +363,8 @@ export default {
   },
   fleet: {
     eyebrow: "Unsere Flotte",
-    title: "Mercedes Mercedes Vito VIP",
-    desc: "Reisen Sie in höchstem Komfort mit unserem Mercedes Mercedes Vito VIP — die erste Wahl für anspruchsvolle Reisende. Geräumiges Lederinterieur, Klimaanlage, kostenloses WLAN und Wasser bei jeder Fahrt.",
+    title: "Mercedes Vito VIP",
+    desc: "Reisen Sie in höchstem Komfort mit unserem Mercedes Vito VIP — die erste Wahl für anspruchsvolle Reisende. Geräumiges Lederinterieur, Klimaanlage, kostenloses WLAN und Wasser bei jeder Fahrt.",
     features: [
       "Bis zu 7 Passagiere",
       "Ledersitze & Ambientebeleuchtung",
@@ -379,7 +379,7 @@ export default {
     title: "Warum uns wählen",
     items: {
       licensed: { title: "Lizenziert & Versichert", desc: "Voll lizenzierter, professioneller Chauffeurservice" },
-      passengers: { title: "7 Passagiere", desc: "Geräumiger Mercedes Mercedes Vito VIP für Gruppen & Familien" },
+      passengers: { title: "7 Passagiere", desc: "Geräumiger Mercedes Vito VIP für Gruppen & Familien" },
       available: { title: "24/7 Verfügbar", desc: "Rund-um-die-Uhr-Service, früh morgens & spät abends" },
       rated: { title: "5-Sterne-Bewertung", desc: "Hunderte zufriedener Reisender aus aller Welt" },
     },
@@ -429,7 +429,7 @@ export default {
     includes: ["Empfang", "Flugverfolgung", "Freie Wartezeit", "Gratis WLAN", "Kindersitze"],
   },
   childSeats: {
-    eyebrow: "Zusatzleistungen",
+    eyebrow: "Auf Anfrage inklusive",
     title1: "Sichere",
     title2: "Kindersitze",
     subtitle: "Sichere Reisen für die Kleinen",
@@ -498,7 +498,7 @@ export default {
     title: "FAQ",
     items: {
       q1: "Wie viel kostet ein Transfer?",
-      a1: "Transfers ab €70 — der Preis richtet sich nach Passagierzahl und Route. Kontaktieren Sie uns für ein genaues Angebot.",
+      a1: "Transfers ab €85 — der Preis richtet sich nach Passagierzahl und Route. Kontaktieren Sie uns für ein genaues Angebot.",
       q2: "Was ist im Preis inbegriffen?",
       a2: "Alle Transfers beinhalten Maut, Wasser, kostenloses WLAN sowie Flug- und Schiffsüberwachung.",
       q3: "Wie viele Passagiere und Koffer passen hinein?",
@@ -708,7 +708,7 @@ export default {
     button: "Als bevorzugte Quelle bei Google hinzufügen",
     footerLink: "Zu Google-Bevorzugten hinzufügen",
     supportTitle: "Unterstützen Sie ein lokales Unternehmen",
-    supportText: "H&A VIP Tours ist ein lokales, familiengeführtes Transferunternehmen in Athen. Fügen Sie uns als bevorzugte Quelle bei Google hinzu, um über unsere neuesten Reiseführer und Angebote auf dem Laufenden zu bleiben.",
+    supportText: "H&A VIP Tours ist ein lokales, familiengeführtes Transferunternehmen in Athen. Fügen Sie uns als bevorzugte Quelle bei Google hinzu, um über unsere neuesten Reiseführer auf dem Laufenden zu bleiben.",
     aboutTitle: "Über H&A VIP Tours",
   },
   music: {

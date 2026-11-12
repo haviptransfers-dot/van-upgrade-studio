@@ -205,8 +205,8 @@ export default {
   "passengerLabel": "Jusqu’à 7 passagers",
   "maxPax": "Mercedes Vito VIP · Jusqu’à 7 passagers",
   "familyHeading": "Transferts familiaux avec sièges enfants",
-  "childTitle": "Sièges enfants gratuits sur demande",
-  "childDescription": "Indiquez l’âge de vos enfants et demandez des sièges enfants gratuits lors de l’organisation du transfert. Confirmez les sièges nécessaires avant de réserver.",
+  "childTitle": "Sièges enfants inclus sur demande",
+  "childDescription": "Indiquez l’âge de vos enfants et demandez des sièges enfants, inclus sur demande, lors de l’organisation du transfert. Confirmez les sièges nécessaires avant de réserver.",
   "relatedHeading": "Excursions et guides de voyage associés",
   "vehicleAlt": "Intérieur du Mercedes Vito VIP avec sièges face à face en configuration salon pour jusqu’à 7 passagers, hors conducteur",
   "faqTitle": "Questions fréquentes",
@@ -429,7 +429,7 @@ export default {
     includes: ["Accueil", "Suivi de Vol", "Attente Gratuite", "WiFi Gratuit", "Sièges Enfants"],
   },
   childSeats: {
-    eyebrow: "Services Supplémentaires",
+    eyebrow: "Inclus sur demande",
     title1: "Sièges",
     title2: "Enfant",
     subtitle: "Des voyages sûrs pour les tout-petits",
@@ -498,7 +498,7 @@ export default {
     title: "FAQ",
     items: {
       q1: "Combien coûte un transfert ?",
-      a1: "Les transferts à partir de 70 € varient selon le nombre de passagers et l'itinéraire. Contactez-nous pour un devis précis.",
+      a1: "Les transferts à partir de 85 € varient selon le nombre de passagers et l'itinéraire. Contactez-nous pour un devis précis.",
       q2: "Qu'est-ce qui est inclus dans le prix ?",
       a2: "Tous les transferts incluent les péages, l'eau en bouteille, le Wi-Fi gratuit et le suivi des vols ou des navires.",
       q3: "Combien de passagers et de valises peuvent entrer ?",
@@ -708,7 +708,7 @@ export default {
     button: "Ajouter comme source préférée sur Google",
     footerLink: "Ajouter aux sources préférées Google",
     supportTitle: "Soutenez une entreprise locale",
-    supportText: "H&A VIP Tours est une entreprise de transferts locale et familiale à Athènes. Ajoutez-nous comme source préférée sur Google pour rester informé de nos derniers guides de voyage et offres.",
+    supportText: "H&A VIP Tours est une entreprise de transferts locale et familiale à Athènes. Ajoutez-nous comme source préférée sur Google pour rester informé de nos derniers guides de voyage.",
     aboutTitle: "À propos d'H&A VIP Tours",
   },
   music: {

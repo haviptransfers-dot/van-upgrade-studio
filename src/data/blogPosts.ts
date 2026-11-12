@@ -184,7 +184,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-12-16",
     metaTitle: "Bachelor & Bachelorette Party Transfers in Greece | H&A Tours",
     metaDescription:
-      "Private party transfers in a black Mercedes Vito VIP: bar and club hopping in Athens or Mykonos, beach days, winery trips and airport pickups for your whole crew. All-night availability, fixed price.",
+      "Private party transfers in a black Mercedes Vito VIP: bar and club hopping in Athens or the Athens Riviera, beach days, winery trips and airport pickups for your whole crew. All-night availability, fixed price.",
     sections: [
       {
         paragraphs: [
@@ -216,7 +216,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Our Bachelor & Bachelorette Services",
         bullets: [
-          "1. Bar & Club Hopping in Athens / Mykonos: we know the best spots. We drive, you party. No parking stress in the city center.",
+          "1. Bar & Club Hopping in Athens and the Athens Riviera: we know the best spots. We drive, you party. No parking stress in the city center.",
           "2. Beach Day Transfers: full-day transfer for your beach party crew to Vouliagmeni, Astir Beach, or any beach club.",
           "3. Wine Tasting & Day Trips: for a more classy bachelorette – private transfers to wineries or spa resorts.",
           "4. Airport Transfers for the Crew: pick up all your friends arriving from different flights in one go.",

@@ -205,8 +205,8 @@ export default {
   "passengerLabel": "Hasta 7 pasajeros",
   "maxPax": "Mercedes Vito VIP · Hasta 7 pasajeros",
   "familyHeading": "Traslados familiares con sillas infantiles",
-  "childTitle": "Sillas infantiles gratis bajo petición",
-  "childDescription": "Indícanos las edades de tus hijos y solicita sillas infantiles gratuitas al organizar el traslado. Confirma las sillas necesarias antes de reservar.",
+  "childTitle": "Sillas infantiles incluidas a petición",
+  "childDescription": "Indícanos las edades de tus hijos y solicita sillas infantiles, incluidas a petición, al organizar el traslado. Confirma las sillas necesarias antes de reservar.",
   "relatedHeading": "Excursiones y guías de viaje relacionadas",
   "vehicleAlt": "Interior del Mercedes Vito VIP con asientos enfrentados tipo salón para hasta 7 pasajeros, sin contar al conductor",
   "faqTitle": "Preguntas frecuentes",
@@ -429,7 +429,7 @@ export default {
     includes: ["Recepción", "Seguimiento de Vuelo", "Espera Gratis", "WiFi Gratis", "Sillas Infantiles"],
   },
   childSeats: {
-    eyebrow: "Servicios Extra",
+    eyebrow: "Incluido a petición",
     title1: "Sillas",
     title2: "Infantiles",
     subtitle: "Viajes seguros para los más pequeños",
@@ -498,7 +498,7 @@ export default {
     title: "FAQ",
     items: {
       q1: "¿Cuánto cuesta un traslado?",
-      a1: "Los traslados empiezan desde €70 y varían según el número de pasajeros y la ruta. Contáctanos para un presupuesto exacto.",
+      a1: "Los traslados empiezan desde €85 y varían según el número de pasajeros y la ruta. Contáctanos para un presupuesto exacto.",
       q2: "¿Qué está incluido en el precio?",
       a2: "Todos los traslados incluyen peajes, agua embotellada, Wi-Fi gratuito y seguimiento de vuelos o barcos.",
       q3: "¿Cuántos pasajeros y maletas caben?",
@@ -708,7 +708,7 @@ export default {
     button: "Añadir como fuente preferida en Google",
     footerLink: "Añadir a fuentes preferidas de Google",
     supportTitle: "Apoya un negocio local",
-    supportText: "H&A VIP Tours es una empresa de traslados local y familiar en Atenas. Añádenos como fuente preferida en Google para estar al día con nuestras guías de viaje y ofertas.",
+    supportText: "H&A VIP Tours es una empresa de traslados local y familiar en Atenas. Añádenos como fuente preferida en Google para estar al día con nuestras guías de viaje.",
     aboutTitle: "Sobre H&A VIP Tours",
   },
   music: {
