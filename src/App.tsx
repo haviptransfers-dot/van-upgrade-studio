@@ -24,6 +24,8 @@ export function PublicRoutes() {
   useEffect(() => { if (i18n.language !== language) void i18n.changeLanguage(language); }, [language]);
   const slug = path.startsWith("/blog/") ? path.slice(6) : "";
   if (LEGACY_SLUGS[slug]) return <Navigate replace to={linkPath(`/blog/${LEGACY_SLUGS[slug]}`, language)} />;
+  // Retired family page: permanently replaced by Child Seats (server 301 in public/_redirects).
+  if (path === "/family-transfers-athens-child-seats") return <Navigate replace to={linkPath("/child-seats", language)} />;
   return <Routes location={{ ...location, pathname: path }}>
     <Route path="/" element={<Index />} />
     <Route path="/delphi-private-tour" element={<DelphiTour />} />
