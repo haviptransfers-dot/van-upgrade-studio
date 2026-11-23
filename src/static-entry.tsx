@@ -24,7 +24,7 @@ export async function renderPage(path: string) {
     const output = new PassThrough();
     output.on("data", (chunk) => chunks.push(Buffer.from(chunk)));
     output.on("end", () => {
-      resolve(stripRendererNulls(path, Buffer.concat(chunks).toString("utf8")));
+      resolve(stripRendererNulls(Buffer.concat(chunks).toString("utf8")));
     });
     output.on("error", reject);
     const stream = renderToPipeableStream(page, { onAllReady() { stream.pipe(output); }, onShellError: reject, onError: reject });

@@ -1,0 +1,1 @@
+- Strip U+0000 from every prerendered page body in static-entry.tsx; React 18's streaming encoder can insert them between multibyte Greek/Hebrew/Arabic characters, and they are never real content.
