@@ -93,14 +93,19 @@ const About = () => {
             <OptimizedImage src={logoImg} alt="H&A Tours" className="h-8 w-8 object-contain" loading="lazy" />
             <span className="font-display text-sm font-bold text-primary">H&A TOURS</span>
           </div>
-          <a
-            href="https://www.google.com/preferences/source?q=haviptransfers.gr"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-muted-foreground hover:text-primary transition-colors"
-          >
-            {t("preferredSources.footerLink")}
-          </a>
+          <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6">
+            <Link to="/privacy-policy" className="text-xs text-muted-foreground hover:text-primary transition-colors">
+              {t("footer.privacy")}
+            </Link>
+            <a
+              href="https://www.google.com/preferences/source?q=haviptransfers.gr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-muted-foreground hover:text-primary transition-colors"
+            >
+              {t("preferredSources.footerLink")}
+            </a>
+          </div>
           <p className="text-muted-foreground text-xs">© {new Date().getFullYear()} H&A VIP Tours. {t("footer.rights")}</p>
         </div>
       </footer>

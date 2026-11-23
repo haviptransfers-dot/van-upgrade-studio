@@ -2027,7 +2027,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
     el: {
       title: "Ιδιωτική Ξενάγηση στην Αθήνα με Οδηγό: Ανακαλύψτε την Πόλη με Mercedes Vito VIP",
       excerpt: "Μια προγραμματισμένη ιδιωτική ξενάγηση με οδηγό μετατρέπει μια φορτωμένη ημέρα στην Αθήνα σε μια ιδιωτική εμπειρία φτιαγμένη στις δικές σας προτεραιότητες — επαγγελματίας σοφέρ, premium όχημα, ευέλικτο πρόγραμμα.",
-      imageAlt: "Εικονογράφηση H&A Tours Ltd — ιδιωτική ξενάγηση στο ιστορικό κέντρο της Αθήνας με μαύρο Mercedes Vito VIP, ο Παρθενώνας και ο Λυκαβηττός στο ηλιοβασίλεμα",
+      imageAlt: "Εικονογράφηση H&A VIP Tours — ιδιωτική ξενάγηση στο ιστορικό κέντρο της Αθήνας με μαύρο Mercedes Vito VIP, ο Παρθενώνας και ο Λυκαβηττός στο ηλιοβασίλεμα",
       metaTitle: "Ιδιωτική Ξενάγηση Αθήνας με Οδηγό | Mercedes Vito VIP | H&A VIP Tours",
       metaDescription: "Ιδιωτική ξενάγηση στην Αθήνα με σοφέρ σε Mercedes Vito VIP. Πρόγραμμα στα μέτρα σας, παραλαβή ξενοδοχείου ή κρουαζιέρας, παιδικά καθίσματα κατόπιν αιτήματος.",
       sections: [
@@ -2102,7 +2102,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
     it: {
       title: "Tour Privato di Atene con Autista: Scopri la Città in Mercedes Vito VIP",
       excerpt: "Un tour privato pianificato con autista trasforma una giornata intensa ad Atene in un'esperienza privata costruita sulle tue priorità — autista professionista, veicolo premium, itinerario flessibile.",
-      imageAlt: "Illustrazione H&A Tours Ltd — tour privato del centro storico di Atene con un Mercedes Vito VIP nero, il Partenone e la collina di Licabetto al tramonto",
+      imageAlt: "Illustrazione H&A VIP Tours — tour privato del centro storico di Atene con un Mercedes Vito VIP nero, il Partenone e la collina di Licabetto al tramonto",
       metaTitle: "Tour Privato di Atene con Autista | Mercedes Vito VIP | H&A VIP Tours",
       metaDescription: "Scopri Atene al tuo ritmo con un tour privato e autista in Mercedes Vito VIP. Itinerario su misura, prelievo in hotel o al porto, seggiolini su richiesta.",
       sections: [
@@ -2177,7 +2177,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
     es: {
       title: "Tour Privado de Atenas con Conductor: Descubre la Ciudad en un Mercedes Vito VIP",
       excerpt: "Un tour privado planificado con conductor convierte un día ajetreado en Atenas en una experiencia privada construida en torno a tus prioridades — chófer profesional, vehículo premium, itinerario flexible.",
-      imageAlt: "Ilustración de H&A Tours Ltd — tour privado por el centro histórico de Atenas con un Mercedes Vito VIP negro, el Partenón y la colina de Licabeto al atardecer",
+      imageAlt: "Ilustración de H&A VIP Tours — tour privado por el centro histórico de Atenas con un Mercedes Vito VIP negro, el Partenón y la colina de Licabeto al atardecer",
       metaTitle: "Tour Privado de Atenas con Conductor | H&A VIP Tours",
       metaDescription: "Descubre Atenas a tu ritmo: tour privado con chófer en Mercedes Vito VIP. Itinerario a medida, recogida en hotel o crucero, sillas infantiles bajo petición.",
       sections: [
@@ -2252,7 +2252,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
     fr: {
       title: "Visite Privée d'Athènes avec Chauffeur : Découvrez la Ville en Mercedes Vito VIP",
       excerpt: "Une visite privée planifiée avec chauffeur transforme une journée chargée à Athènes en une expérience privée construite autour de vos priorités — chauffeur professionnel, véhicule premium, itinéraire flexible.",
-      imageAlt: "Illustration H&A Tours Ltd — visite privée du centre historique d'Athènes avec un Mercedes Vito VIP noir, le Parthénon et la colline de Lycabette au coucher du soleil",
+      imageAlt: "Illustration H&A VIP Tours — visite privée du centre historique d'Athènes avec un Mercedes Vito VIP noir, le Parthénon et la colline de Lycabette au coucher du soleil",
       metaTitle: "Visite Privée d'Athènes avec Chauffeur | H&A VIP Tours",
       metaDescription: "Athènes à votre rythme : visite privée avec chauffeur en Mercedes Vito VIP. Itinéraire sur mesure, accueil à l'hôtel ou au port, sièges enfants sur demande.",
       sections: [
@@ -2327,7 +2327,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
     de: {
       title: "Private Athen-Tour mit Fahrer: Entdecken Sie die Stadt in einem Mercedes Vito VIP",
       excerpt: "Eine geplante private Tour mit Fahrer verwandelt einen vollen Tag in Athen in ein privates Erlebnis nach Ihren Prioritäten — professioneller Chauffeur, Premium-Fahrzeug, flexibler Ablauf.",
-      imageAlt: "H&A Tours Ltd Illustration — private Tour durch das historische Zentrum Athens mit einem schwarzen Mercedes Vito VIP, dem Parthenon und dem Lykabettos bei Sonnenuntergang",
+      imageAlt: "H&A VIP Tours Illustration — private Tour durch das historische Zentrum Athens mit einem schwarzen Mercedes Vito VIP, dem Parthenon und dem Lykabettos bei Sonnenuntergang",
       metaTitle: "Private Athen-Tour mit Fahrer | Mercedes Vito VIP | H&A VIP Tours",
       metaDescription: "Athen in Ihrem Tempo: private Tour mit Chauffeur im Mercedes Vito VIP. Individueller Ablauf, Abholung am Hotel oder Kreuzfahrthafen, Kindersitze auf Anfrage.",
       sections: [
@@ -2402,7 +2402,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
     ar: {
       title: "جولة خاصة في أثينا مع سائق: اكتشف المدينة في Mercedes Vito VIP",
       excerpt: "جولة خاصة مخططة مع سائق تحوّل يومًا مزدحمًا في أثينا إلى تجربة خاصة مبنية حول أولوياتك — سائق محترف، مركبة فاخرة، برنامج مرن.",
-      imageAlt: "رسم توضيحي لشركة H&A Tours Ltd — جولة خاصة في وسط أثينا التاريخي مع مرسيدس Mercedes Vito VIP سوداء، البارثينون وتل ليكابيتوس عند الغروب",
+      imageAlt: "رسم توضيحي لشركة H&A VIP Tours — جولة خاصة في وسط أثينا التاريخي مع مرسيدس Mercedes Vito VIP سوداء، البارثينون وتل ليكابيتوس عند الغروب",
       metaTitle: "جولة خاصة في أثينا مع سائق | Mercedes Vito VIP | H&A VIP Tours",
       metaDescription: "اكتشف أثينا بإيقاعك الخاص مع جولة خاصة وسائق محترف في Mercedes Vito VIP. برنامج مخصص، استقبال من الفندق أو محطة الرحلات البحرية، مقاعد أطفال عند الطلب.",
       sections: [
@@ -2477,7 +2477,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
     he: {
       title: "סיור פרטי באתונה עם נהג: גלו את העיר ב-Mercedes Vito VIP",
       excerpt: "סיור פרטי מתוכנן עם נהג הופך יום עמוס באתונה לחוויה פרטית הבנויה סביב סדרי העדיפויות שלכם — נהג מקצועי, רכב יוקרתי, מסלול גמיש.",
-      imageAlt: "איור של H&A Tours Ltd — סיור פרטי במרכז ההיסטורי של אתונה עם Mercedes Vito VIP שחורה, הפרתנון וגבעת ליקבטוס בשקיעה",
+      imageAlt: "איור של H&A VIP Tours — סיור פרטי במרכז ההיסטורי של אתונה עם Mercedes Vito VIP שחורה, הפרתנון וגבעת ליקבטוס בשקיעה",
       metaTitle: "סיור פרטי באתונה עם נהג | Mercedes Vito VIP | H&A VIP Tours",
       metaDescription: "גלו את אתונה בקצב שלכם עם סיור פרטי ונהג מקצועי ב-Mercedes Vito VIP יוקרתית. מסלול מותאם אישית, איסוף מהמלון ומטרמינל השייט, מושבי בטיחות לילדים לפי בקשה.",
       sections: [

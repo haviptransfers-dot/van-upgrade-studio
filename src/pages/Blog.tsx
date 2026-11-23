@@ -89,6 +89,9 @@ const Blog = () => {
             <OptimizedImage src={logoImg} alt="H&A Tours" className="h-8 w-8 object-contain" loading="lazy" />
             <span className="font-display text-sm font-bold text-primary">H&A TOURS</span>
           </div>
+          <Link to="/privacy-policy" className="text-xs text-muted-foreground hover:text-primary transition-colors">
+            {t("footer.privacy")}
+          </Link>
           <a
             href="https://www.google.com/preferences/source?q=haviptransfers.gr"
             target="_blank"
