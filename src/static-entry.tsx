@@ -8,6 +8,7 @@ import { MotionConfig } from "framer-motion";
 import { PublicRoutes } from "./App";
 import { PrerenderContext } from "./lib/prerender";
 import { languageFromPath } from "./lib/languagePaths";
+import { stripRendererNulls } from "./lib/rendererNulls";
 const dictionaries = import.meta.glob("./i18n/locales/*.ts");
 export async function renderPage(path: string) {
   const language = languageFromPath(path);
@@ -23,9 +24,7 @@ export async function renderPage(path: string) {
     const output = new PassThrough();
     output.on("data", (chunk) => chunks.push(Buffer.from(chunk)));
     output.on("end", () => {
-      const html = Buffer.concat(chunks).toString("utf8");
-      // The long RTL article can cross React 18's text-buffer boundary.
-      resolve(path.replace(/\/+$/, "").endsWith("/blog/child-car-seats-private-transfers-greece") ? html.replace(/\u0000/g, "") : html);
+      resolve(stripRendererNulls(path, Buffer.concat(chunks).toString("utf8")));
     });
     output.on("error", reject);
     const stream = renderToPipeableStream(page, { onAllReady() { stream.pipe(output); }, onShellError: reject, onError: reject });
