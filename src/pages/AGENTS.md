@@ -1,0 +1,1 @@
+- Privacy sections store list items as paragraphs prefixed "- "; PrivacyPolicy groups them into lists, so legal text stays in locale data without markup.
