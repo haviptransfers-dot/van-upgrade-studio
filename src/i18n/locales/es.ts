@@ -293,27 +293,73 @@ export default {
     {
       "heading": "Quiénes somos",
       "paragraphs": [
-        "H&A VIP Tours (H&A Tours Ltd) es una empresa de traslados privados y excursiones con sede en Atenas, Grecia. Puedes contactar en h.a.viptransfers@gmail.com o +30 694 939 3700."
+        "H&A VIP Tours (H&A Tours ΕΕ, una sociedad comanditaria griega) es una empresa de traslados privados y excursiones con sede en Atenas, Grecia. Somos el responsable del tratamiento de los datos personales recogidos a través de este sitio web.",
+        "Correo electrónico: h.a.viptransfers@gmail.com",
+        "Teléfono: +30 210 992 5244",
+        "WhatsApp / Viber: +30 694 939 3700",
+        "Dirección postal: Afroditis 66, Elliniko 167 77, Grecia."
       ]
     },
     {
       "heading": "Qué recopilamos",
       "paragraphs": [
-        "Cuando conversas con nuestro asistente de IA o utilizas el formulario de presupuesto, guardamos los datos que compartes — nombre, correo electrónico, teléfono, recogida, destino, fecha y pasajeros — para responder a tu solicitud.",
-        "Con tu consentimiento, también utilizamos cookies analíticas (Google Analytics, Metricool) para comprender cómo se utiliza el sitio."
+        "Cuando conversas con nuestro asistente de IA o utilizas el formulario de presupuesto / reserva, guardamos los datos que compartes — como nombre, correo electrónico, teléfono, lugar de recogida, destino, fecha, hora, número de pasajeros, número de vuelo o de barco y cualquier observación — para responder a tu solicitud y, si reservas, prestar el traslado o la excursión.",
+        "Si nos contactas por correo electrónico, teléfono, WhatsApp o Viber, tratamos el contenido de esa comunicación y tus datos de contacto para responderte.",
+        "Con tu consentimiento, también utilizamos cookies analíticas (Google Analytics 4 y Metricool) para comprender cómo se utiliza el sitio."
+      ]
+    },
+    {
+      "heading": "Bases jurídicas (artículo 6 del RGPD)",
+      "paragraphs": [
+        "Solo tratamos datos personales cuando se aplica una base jurídica conforme al artículo 6 del RGPD:",
+        "- Ejecución de un contrato o aplicación de medidas precontractuales (art. 6.1.b): gestión de un presupuesto o de una reserva, prestación del traslado o la excursión y comunicación contigo al respecto.",
+        "- Consentimiento (art. 6.1.a): cookies analíticas y de marketing, que solo se cargan después de que las aceptes. Puedes retirar tu consentimiento en cualquier momento borrando el almacenamiento del navegador o mediante la configuración de cookies.",
+        "- Obligación legal (art. 6.1.c): registros fiscales, contables y de teneduría de libros.",
+        "- Intereses legítimos (art. 6.1.f): responder a consultas generales, mantener la seguridad del sitio web y formular o defender reclamaciones legales. Puedes oponerte al tratamiento basado en intereses legítimos."
+      ]
+    },
+    {
+      "heading": "Cuánto tiempo conservamos los datos",
+      "paragraphs": [
+        "- Datos de reservas, facturas y contabilidad: cinco (5) años a partir del final del ejercicio fiscal correspondiente, según exigen el artículo 7 de la Ley griega 4308/2014 y el artículo 13 de la Ley 5104/2024 (Código de Procedimiento Tributario).",
+        "- Consultas que no dan lugar a una reserva: 12 meses.",
+        "- Comunicaciones por WhatsApp, Viber y correo electrónico: 24 meses, salvo que los mensajes formen parte de un expediente de reserva o factura (en ese caso se aplica el plazo anterior).",
+        "- Datos analíticos: según la configuración de cada herramienta (Google Analytics 4 suele conservarlos durante 14 meses).",
+        "- Tu elección sobre cookies se guarda en tu navegador (clave de localStorage cookieConsent) hasta que la borres."
+      ]
+    },
+    {
+      "heading": "Encargados del tratamiento y otros destinatarios",
+      "paragraphs": [
+        "Utilizamos los siguientes encargados del tratamiento o destinatarios, limitados a los servicios que este sitio web utiliza realmente:",
+        "- Netlify, Inc. — alojamiento del sitio web.",
+        "- Lovable — creador del sitio y entrega de contenidos. Las imágenes, las fuentes (Montserrat y Playfair Display) y el audio de fondo opcional se sirven desde van-move-boost.lovable.app.",
+        "- Supabase — el asistente de IA utiliza un proveedor de servicios de IA a través de Supabase. Los mensajes del asistente y del formulario de presupuesto / reserva se envían a nuestras Supabase Edge Functions (/functions/v1/chat y /functions/v1/send-lead-email). Estas funciones están alojadas en Estados Unidos (región us-east-1).",
+        "- Google — Google Analytics 4 (ID de medición G-1K40KS1TVB); Gmail para nuestro correo profesional; enlaces a nuestro Perfil de Empresa en Google Maps; y el script de fuentes preferidas / editores de Google (news.google.com/swg).",
+        "- Metricool — analítica del sitio (script de tracker.metricool.com), solo después de que des tu consentimiento a las cookies.",
+        "- Meta Platforms — WhatsApp, cuando decides contactarnos por esa vía.",
+        "- Rakuten Viber — cuando decides contactarnos a través de Viber.",
+        "Este sitio web no carga Meta Pixel, píxel de TikTok, Hotjar, Microsoft Clarity ni Google Fonts desde los servidores de Google, y no inserta ningún mapa. Los pagos con tarjeta, en su caso, se realizan en persona con un TPV portátil, no en este sitio web."
+      ]
+    },
+    {
+      "heading": "Transferencias internacionales",
+      "paragraphs": [
+        "Algunos de los proveedores anteriores están establecidos, o tratan datos, en países fuera del Espacio Económico Europeo, en particular en Estados Unidos (entre ellos Netlify, Google, Meta y las funciones de chat y de solicitudes de Supabase en us-east-1). En esos casos, nos basamos en las Cláusulas Contractuales Tipo de la Comisión Europea y/o en el EU-US Data Privacy Framework si el proveedor está certificado."
       ]
     },
     {
       "heading": "Cookies",
       "paragraphs": [
-        "Las cookies necesarias mantienen el sitio en funcionamiento, por ejemplo el chat y el formulario de presupuesto. Siempre están activadas.",
-        "Las cookies analíticas y de marketing permanecen bloqueadas hasta que pulses «Aceptar todas» o las actives en «Gestionar». Puedes cambiar tu elección en cualquier momento borrando el almacenamiento del navegador."
+        "Las funciones necesarias mantienen el sitio en funcionamiento. Incluyen el registro de tu elección sobre cookies y el funcionamiento del chat y del formulario de presupuesto (el botón del chat se muestra después de que guardes una elección de cookies, incluida «Rechazar No Esenciales»). Están disponibles en cuanto hayas hecho una elección.",
+        "Las cookies analíticas y de marketing permanecen bloqueadas hasta que pulses «Aceptar Todas» o las actives en «Gestionar». Si permites las cookies analíticas y/o de marketing, cargamos Google Analytics 4, Metricool y el script de fuentes preferidas de Google. Puedes cambiar tu elección en cualquier momento borrando el almacenamiento del navegador."
       ]
     },
     {
       "heading": "Tus derechos (RGPD)",
       "paragraphs": [
-        "Puedes solicitar el acceso, la corrección o la eliminación de tus datos personales en cualquier momento escribiendo a h.a.viptransfers@gmail.com. Respondemos en un plazo de 30 días."
+        "Tienes derecho a acceder, rectificar, suprimir, limitar o portar tus datos personales, a oponerte al tratamiento basado en intereses legítimos y a retirar tu consentimiento en cualquier momento (la retirada no afecta al tratamiento ya realizado). Para ejercer estos derechos, escribe a h.a.viptransfers@gmail.com. Respondemos en un plazo de 30 días.",
+        "También tienes derecho a presentar una reclamación ante la Autoridad Helénica de Protección de Datos (Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα), Kifisias 1-3, 115 23 Atenas, Grecia, www.dpa.gr, tel. +30 210 6475 600."
       ]
     }
   ]
@@ -459,7 +505,7 @@ export default {
     pos: { title: "TPV en el Vehículo", desc: "Pague con tarjeta (Visa/Mastercard) directamente en el vehículo con nuestro TPV portátil." },
     cash: { title: "Efectivo", desc: "Pague en efectivo (EUR) directamente al conductor." },
   },
-  footer: { rights: "Todos los derechos reservados." },
+  footer: { rights: "Todos los derechos reservados.", privacy: "Política de Privacidad" },
   photoWall: { eyebrow: "En la Carretera", title: "Viajes Sin Esfuerzo", subtitle: "Suaves, silenciosos y siempre puntuales — donde sea que Grecia te lleve." },
   chat: {
     title: "H&A Concierge",

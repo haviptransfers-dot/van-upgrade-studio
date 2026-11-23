@@ -293,27 +293,73 @@ export default {
     {
       "heading": "Who we are",
       "paragraphs": [
-        "H&A VIP Tours (H&A Tours Ltd) is a private transfer and tour company based in Athens, Greece. You can reach us at h.a.viptransfers@gmail.com or +30 694 939 3700."
+        "H&A VIP Tours (H&A Tours ΕΕ, a Greek limited partnership) is a private transfer and tour company based in Athens, Greece. We are the data controller for personal data collected through this website.",
+        "Email: h.a.viptransfers@gmail.com",
+        "Telephone: +30 210 992 5244",
+        "WhatsApp / Viber: +30 694 939 3700",
+        "Postal address: Afroditis 66, Elliniko 167 77, Greece."
       ]
     },
     {
       "heading": "What we collect",
       "paragraphs": [
-        "When you chat with our AI assistant or use the quote form, we save the details you share — name, email, phone, pickup, destination, date and passengers — so we can respond to your request.",
-        "With your consent, we also use analytics cookies (Google Analytics, Metricool) to understand how the site is used."
+        "When you chat with our AI assistant or use the quote / booking form, we save the details you share — such as name, email, phone, pickup, destination, date, time, number of passengers, flight or ship number and any notes — so we can respond to your request and, if you book, provide the transfer or tour.",
+        "If you contact us by email, telephone, WhatsApp or Viber, we process the content of that correspondence and your contact details in order to reply.",
+        "With your consent, we also use analytics cookies (Google Analytics 4 and Metricool) to understand how the site is used."
+      ]
+    },
+    {
+      "heading": "Legal bases (GDPR Article 6)",
+      "paragraphs": [
+        "We process personal data only when a legal basis under Article 6 GDPR applies:",
+        "- Performance of a contract or steps prior to a contract (Art. 6(1)(b)): handling a quote or booking, providing the transfer or tour, and communicating with you about it.",
+        "- Consent (Art. 6(1)(a)): analytics and marketing cookies, which load only after you accept them. You may withdraw consent at any time by clearing your browser storage or using the cookie settings.",
+        "- Legal obligation (Art. 6(1)(c)): tax, accounting and bookkeeping records.",
+        "- Legitimate interests (Art. 6(1)(f)): answering general enquiries, keeping the website secure, and establishing or defending legal claims. You may object to processing based on legitimate interests."
+      ]
+    },
+    {
+      "heading": "How long we keep data",
+      "paragraphs": [
+        "- Booking, invoice and accounting data: five (5) years from the end of the relevant fiscal year, as required by article 7 of Greek Law 4308/2014 and article 13 of Law 5104/2024 (Code of Tax Procedure).",
+        "- Enquiries that do not lead to a booking: 12 months.",
+        "- WhatsApp, Viber and email correspondence: 24 months, unless the messages form part of a booking or invoice file (then the period above applies).",
+        "- Analytics data: according to each tool’s settings (Google Analytics 4 is typically retained for 14 months).",
+        "- Your cookie choice is stored in your browser (localStorage key cookieConsent) until you clear it."
+      ]
+    },
+    {
+      "heading": "Processors and other recipients",
+      "paragraphs": [
+        "We use the following processors or recipients, limited to services this website actually uses:",
+        "- Netlify, Inc. — website hosting.",
+        "- Lovable — site builder and content delivery. Images, fonts (Montserrat and Playfair Display) and optional background audio are served from van-move-boost.lovable.app.",
+        "- Supabase — the AI assistant uses an AI service provider via Supabase. Messages from the assistant and the quote / booking form are sent to our Supabase Edge Functions (/functions/v1/chat and /functions/v1/send-lead-email). These functions are hosted in the United States (region us-east-1).",
+        "- Google — Google Analytics 4 (measurement ID G-1K40KS1TVB); Gmail for our business email; links to our Google Maps Business Profile; and Google’s preferred-sources / publisher script (news.google.com/swg).",
+        "- Metricool — site analytics (script from tracker.metricool.com), only after you give cookie consent.",
+        "- Meta Platforms — WhatsApp, when you choose to contact us there.",
+        "- Rakuten Viber — when you choose to contact us via Viber.",
+        "This website does not load a Meta Pixel, a TikTok pixel, Hotjar, Microsoft Clarity or Google Fonts from Google’s servers, and it does not embed a map. Card payments, if any, are taken in person with a portable POS, not on this website."
+      ]
+    },
+    {
+      "heading": "International transfers",
+      "paragraphs": [
+        "Some of the providers above are established in, or process data in, countries outside the European Economic Area, in particular the United States (including Netlify, Google, Meta and the Supabase chat and lead functions in us-east-1). Where that happens, we rely on the European Commission’s Standard Contractual Clauses and/or the EU-US Data Privacy Framework if the provider is certified."
       ]
     },
     {
       "heading": "Cookies",
       "paragraphs": [
-        "Necessary cookies keep the site working (for example the chat and quote form). They are always on.",
-        "Analytics and marketing cookies are blocked until you press “Accept All” or enable them under “Manage”. You can change your choice at any time by clearing your browser storage."
+        "Necessary functions keep the site working. They include recording your cookie choice and the operation of the chat and quote form (the chat button is shown after you save a cookie choice, including “Reject Non-Essential”). These are available once you have made a choice.",
+        "Analytics and marketing cookies are blocked until you press “Accept All” or enable them under “Manage”. If you allow analytics and/or marketing, we load Google Analytics 4, Metricool and Google’s preferred-sources script. You can change your choice at any time by clearing your browser storage."
       ]
     },
     {
       "heading": "Your rights (GDPR)",
       "paragraphs": [
-        "You may request access, correction or deletion of your personal data at any time by emailing h.a.viptransfers@gmail.com. We respond within 30 days."
+        "You have the right to access, rectify, erase, restrict or port your personal data, to object to processing based on legitimate interests, and to withdraw consent at any time (withdrawal does not affect processing already carried out). To exercise these rights, email h.a.viptransfers@gmail.com. We respond within 30 days.",
+        "You also have the right to lodge a complaint with the Hellenic Data Protection Authority (Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα), Kifisias 1-3, 115 23 Athens, Greece, www.dpa.gr, tel. +30 210 6475 600."
       ]
     }
   ]
@@ -459,7 +505,7 @@ export default {
     pos: { title: "POS in the Vehicle", desc: "Pay by card (Visa/Mastercard) directly in the vehicle with our portable POS." },
     cash: { title: "Cash", desc: "Pay in cash (EUR) directly to your driver." },
   },
-  footer: { rights: "All rights reserved." },
+  footer: { rights: "All rights reserved.", privacy: "Privacy Policy" },
   photoWall: { eyebrow: "On The Road", title: "Effortless Journeys", subtitle: "Smooth, silent, and always on time — wherever Greece takes you." },
   chat: {
     title: "H&A Concierge",

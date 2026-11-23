@@ -68,8 +68,8 @@ describe("sitemap.xml automated checks", () => {
       else expect(pageDates[path]).toBe(date);
     }
     expect(pageDates["/airport-transfer-athens/"]).toBe("2026-11-12");
-    // Owner asked (Nov 2026) for every sitemap URL to carry a lastmod date.
-    expect(pageDates["/privacy-policy/"]).toBe("2026-11-12");
+    // Privacy pages were rewritten on 2026-11-23; every sitemap URL still carries a lastmod date.
+    expect(pageDates["/privacy-policy/"]).toBe("2026-11-23");
   });
 });
 

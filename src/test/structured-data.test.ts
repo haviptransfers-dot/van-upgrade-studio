@@ -11,7 +11,8 @@ describe("public sitemap and structured data", () => {
     for (const slug of slugs) expect(xml).toContain(`<loc>https://haviptransfers.gr/blog/${slug}/</loc>`);
     for (const page of servicePages) expect(xml).toContain(`<loc>https://haviptransfers.gr${page.path}/</loc>`);
     const pageDates = JSON.parse(readFileSync("src/data/pageLastmod.json", "utf8")) as Record<string, string>;
-    expect(xml.match(/<lastmod>2026-11-12<\/lastmod>/g)).toHaveLength(8 + Object.keys(pageDates).length);
+    expect(xml.match(/<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/g)).toHaveLength(8 + Object.keys(pageDates).length);
+    expect(xml.match(/<lastmod>2026-11-23<\/lastmod>/g)).toHaveLength(8);
     expect(xml).not.toContain(":slug");
     expect(readFileSync("public/robots.txt", "utf8")).toContain("Sitemap: https://haviptransfers.gr/sitemap.xml");
   });

@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import Link from "@/components/LocalizedLink";
 import OptimizedImage from "@/components/OptimizedImage";
 import logoImg from "@/assets/logo.webp";
 
@@ -13,6 +14,9 @@ export default function SiteFooter() {
           <span className="font-display text-sm font-bold text-primary">H&A TOURS</span>
         </div>
         <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6">
+          <Link to="/privacy-policy" className="text-xs text-muted-foreground hover:text-primary transition-colors">
+            {t("footer.privacy")}
+          </Link>
           <a
             href="https://www.google.com/preferences/source?q=haviptransfers.gr"
             target="_blank"

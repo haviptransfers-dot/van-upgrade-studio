@@ -293,27 +293,73 @@ export default {
     {
       "heading": "Qui sommes-nous ?",
       "paragraphs": [
-        "H&A VIP Tours (H&A Tours Ltd) est une entreprise de transferts privés et d’excursions basée à Athènes, en Grèce. Vous pouvez nous joindre à h.a.viptransfers@gmail.com ou au +30 694 939 3700."
+        "H&A VIP Tours (H&A Tours ΕΕ, société en commandite simple de droit grec) est une entreprise de transferts privés et d’excursions basée à Athènes, en Grèce. Nous sommes le responsable du traitement des données personnelles collectées via ce site.",
+        "E-mail : h.a.viptransfers@gmail.com",
+        "Téléphone : +30 210 992 5244",
+        "WhatsApp / Viber : +30 694 939 3700",
+        "Adresse postale : Afroditis 66, Elliniko 167 77, Grèce."
       ]
     },
     {
       "heading": "Ce que nous collectons",
       "paragraphs": [
-        "Lorsque vous échangez avec notre assistant IA ou utilisez le formulaire de devis, nous enregistrons les informations partagées — nom, e-mail, téléphone, lieu de prise en charge, destination, date et passagers — afin de répondre à votre demande.",
-        "Avec votre consentement, nous utilisons aussi des cookies d’analyse (Google Analytics, Metricool) pour comprendre l’utilisation du site."
+        "Lorsque vous échangez avec notre assistant IA ou utilisez le formulaire de devis / réservation, nous enregistrons les informations que vous partagez — telles que nom, e-mail, téléphone, lieu de prise en charge, destination, date, heure, nombre de passagers, numéro de vol ou de bateau et toute remarque — afin de répondre à votre demande et, si vous réservez, d’assurer le transfert ou l’excursion.",
+        "Si vous nous contactez par e-mail, téléphone, WhatsApp ou Viber, nous traitons le contenu de cette correspondance et vos coordonnées afin de vous répondre.",
+        "Avec votre consentement, nous utilisons aussi des cookies d’analyse (Google Analytics 4 et Metricool) pour comprendre l’utilisation du site."
+      ]
+    },
+    {
+      "heading": "Bases légales (article 6 du RGPD)",
+      "paragraphs": [
+        "Nous ne traitons des données personnelles que lorsqu’une base légale prévue à l’article 6 du RGPD s’applique :",
+        "- Exécution d’un contrat ou mesures précontractuelles (art. 6, par. 1, point b) : traitement d’une demande de devis ou d’une réservation, réalisation du transfert ou de l’excursion et communication avec vous à ce sujet.",
+        "- Consentement (art. 6, par. 1, point a) : cookies d’analyse et de marketing, qui ne sont chargés qu’après votre acceptation. Vous pouvez retirer votre consentement à tout moment en effaçant les données stockées par votre navigateur ou via les paramètres des cookies.",
+        "- Obligation légale (art. 6, par. 1, point c) : documents fiscaux, comptables et tenue des livres.",
+        "- Intérêts légitimes (art. 6, par. 1, point f) : réponse aux demandes générales, sécurité du site et constatation ou défense de droits en justice. Vous pouvez vous opposer au traitement fondé sur les intérêts légitimes."
+      ]
+    },
+    {
+      "heading": "Durée de conservation des données",
+      "paragraphs": [
+        "- Données de réservation, de facturation et comptables : cinq (5) ans à compter de la fin de l’exercice fiscal concerné, conformément à l’article 7 de la loi grecque 4308/2014 et à l’article 13 de la loi 5104/2024 (Code de procédure fiscale).",
+        "- Demandes n’aboutissant pas à une réservation : 12 mois.",
+        "- Correspondance par WhatsApp, Viber et e-mail : 24 mois, sauf si les messages font partie d’un dossier de réservation ou de facturation (la durée ci-dessus s’applique alors).",
+        "- Données d’analyse : selon les paramètres de chaque outil (Google Analytics 4 les conserve généralement 14 mois).",
+        "- Votre choix concernant les cookies est enregistré dans votre navigateur (clé localStorage cookieConsent) jusqu’à ce que vous l’effaciez."
+      ]
+    },
+    {
+      "heading": "Sous-traitants et autres destinataires",
+      "paragraphs": [
+        "Nous faisons appel aux sous-traitants ou destinataires suivants, limités aux services réellement utilisés par ce site :",
+        "- Netlify, Inc. — hébergement du site.",
+        "- Lovable — outil de création du site et diffusion de contenu. Les images, les polices (Montserrat et Playfair Display) et l’audio d’ambiance facultatif sont servis depuis van-move-boost.lovable.app.",
+        "- Supabase — l’assistant IA utilise un fournisseur de services d’IA via Supabase. Les messages de l’assistant et du formulaire de devis / réservation sont envoyés à nos Supabase Edge Functions (/functions/v1/chat et /functions/v1/send-lead-email). Ces fonctions sont hébergées aux États-Unis (région us-east-1).",
+        "- Google — Google Analytics 4 (ID de mesure G-1K40KS1TVB) ; Gmail pour notre messagerie professionnelle ; liens vers notre fiche d’établissement sur Google Maps ; et le script de sources préférées / éditeurs de Google (news.google.com/swg).",
+        "- Metricool — analyse du site (script de tracker.metricool.com), uniquement après votre consentement aux cookies.",
+        "- Meta Platforms — WhatsApp, lorsque vous choisissez de nous y contacter.",
+        "- Rakuten Viber — lorsque vous choisissez de nous contacter via Viber.",
+        "Ce site ne charge ni Meta Pixel, ni pixel TikTok, ni Hotjar, ni Microsoft Clarity, ni Google Fonts depuis les serveurs de Google, et n’intègre aucune carte. Les paiements par carte, le cas échéant, sont effectués en personne avec un terminal de paiement portable, et non sur ce site."
+      ]
+    },
+    {
+      "heading": "Transferts internationaux",
+      "paragraphs": [
+        "Certains des prestataires ci-dessus sont établis, ou traitent des données, dans des pays situés hors de l’Espace économique européen, notamment aux États-Unis (dont Netlify, Google, Meta et les fonctions de chat et de demandes Supabase dans us-east-1). Dans ce cas, nous nous appuyons sur les clauses contractuelles types de la Commission européenne et/ou sur l’EU-US Data Privacy Framework si le prestataire est certifié."
       ]
     },
     {
       "heading": "Cookies",
       "paragraphs": [
-        "Les cookies nécessaires assurent le fonctionnement du site, par exemple le chat et le formulaire de devis. Ils sont toujours actifs.",
-        "Les cookies d’analyse et de marketing sont bloqués jusqu’à ce que vous choisissiez « Tout accepter » ou les activiez dans « Gérer ». Vous pouvez modifier votre choix à tout moment en effaçant les données stockées par votre navigateur."
+        "Les fonctions nécessaires assurent le fonctionnement du site. Elles comprennent l’enregistrement de votre choix concernant les cookies ainsi que le fonctionnement du chat et du formulaire de devis (le bouton du chat s’affiche après l’enregistrement d’un choix de cookies, y compris « Refuser les Non Essentiels »). Elles sont disponibles dès que vous avez fait un choix.",
+        "Les cookies d’analyse et de marketing sont bloqués jusqu’à ce que vous choisissiez « Tout Accepter » ou les activiez dans « Gérer ». Si vous autorisez les cookies d’analyse et/ou de marketing, nous chargeons Google Analytics 4, Metricool et le script de sources préférées de Google. Vous pouvez modifier votre choix à tout moment en effaçant les données stockées par votre navigateur."
       ]
     },
     {
       "heading": "Vos droits (RGPD)",
       "paragraphs": [
-        "Vous pouvez demander à tout moment l’accès, la rectification ou la suppression de vos données personnelles en écrivant à h.a.viptransfers@gmail.com. Nous répondons sous 30 jours."
+        "Vous disposez d’un droit d’accès, de rectification, d’effacement, de limitation et de portabilité de vos données personnelles, du droit de vous opposer au traitement fondé sur les intérêts légitimes et du droit de retirer votre consentement à tout moment (le retrait n’affecte pas les traitements déjà effectués). Pour exercer ces droits, écrivez à h.a.viptransfers@gmail.com. Nous répondons sous 30 jours.",
+        "Vous avez également le droit d’introduire une réclamation auprès de l’Autorité hellénique de protection des données (Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα), Kifisias 1-3, 115 23 Athènes, Grèce, www.dpa.gr, tél. +30 210 6475 600."
       ]
     }
   ]
@@ -459,7 +505,7 @@ export default {
     pos: { title: "TPE à Bord", desc: "Payez par carte (Visa/Mastercard) directement dans le véhicule avec notre TPE portable." },
     cash: { title: "Espèces", desc: "Payez en espèces (EUR) directement au chauffeur." },
   },
-  footer: { rights: "Tous droits réservés." },
+  footer: { rights: "Tous droits réservés.", privacy: "Politique de Confidentialité" },
   photoWall: { eyebrow: "Sur la Route", title: "Voyages Sans Effort", subtitle: "Doux, silencieux et toujours à l'heure — où que la Grèce vous mène." },
   chat: {
     title: "H&A Concierge",

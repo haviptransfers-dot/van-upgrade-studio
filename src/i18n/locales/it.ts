@@ -293,27 +293,73 @@ export default {
     {
       "heading": "Chi siamo",
       "paragraphs": [
-        "H&A VIP Tours (H&A Tours Ltd) è un’azienda di trasferimenti privati e tour con sede ad Atene, in Grecia. Puoi contattarci a h.a.viptransfers@gmail.com o al +30 694 939 3700."
+        "H&A VIP Tours (H&A Tours ΕΕ, società in accomandita semplice di diritto greco) è un’azienda di trasferimenti privati e tour con sede ad Atene, in Grecia. Siamo il titolare del trattamento dei dati personali raccolti tramite questo sito.",
+        "Email: h.a.viptransfers@gmail.com",
+        "Telefono: +30 210 992 5244",
+        "WhatsApp / Viber: +30 694 939 3700",
+        "Indirizzo postale: Afroditis 66, Elliniko 167 77, Grecia."
       ]
     },
     {
       "heading": "Cosa raccogliamo",
       "paragraphs": [
-        "Quando chatti con il nostro assistente IA o usi il modulo di preventivo, salviamo i dati condivisi — nome, email, telefono, punto di prelievo, destinazione, data e passeggeri — per rispondere alla richiesta.",
-        "Con il tuo consenso, utilizziamo anche cookie analitici (Google Analytics, Metricool) per capire come viene utilizzato il sito."
+        "Quando chatti con il nostro assistente IA o usi il modulo di preventivo / prenotazione, salviamo i dati che condividi — come nome, email, telefono, punto di prelievo, destinazione, data, ora, numero di passeggeri, numero del volo o della nave ed eventuali note — per rispondere alla tua richiesta e, se prenoti, fornire il trasferimento o il tour.",
+        "Se ci contatti via email, telefono, WhatsApp o Viber, trattiamo il contenuto di tale corrispondenza e i tuoi dati di contatto per risponderti.",
+        "Con il tuo consenso, utilizziamo anche cookie analitici (Google Analytics 4 e Metricool) per capire come viene utilizzato il sito."
+      ]
+    },
+    {
+      "heading": "Basi giuridiche (articolo 6 del GDPR)",
+      "paragraphs": [
+        "Trattiamo i dati personali solo quando si applica una base giuridica ai sensi dell’articolo 6 del GDPR:",
+        "- Esecuzione di un contratto o misure precontrattuali (art. 6, par. 1, lett. b): gestione di un preventivo o di una prenotazione, fornitura del trasferimento o del tour e comunicazioni con te al riguardo.",
+        "- Consenso (art. 6, par. 1, lett. a): cookie analitici e di marketing, che vengono caricati solo dopo che li hai accettati. Puoi revocare il consenso in qualsiasi momento cancellando i dati memorizzati dal browser o tramite le impostazioni dei cookie.",
+        "- Obbligo legale (art. 6, par. 1, lett. c): documentazione fiscale, contabile e tenuta dei libri.",
+        "- Legittimo interesse (art. 6, par. 1, lett. f): risposta a richieste generali, sicurezza del sito e accertamento o difesa di diritti in sede giudiziaria. Puoi opporti al trattamento basato sul legittimo interesse."
+      ]
+    },
+    {
+      "heading": "Per quanto tempo conserviamo i dati",
+      "paragraphs": [
+        "- Dati di prenotazione, fatturazione e contabilità: cinque (5) anni dalla fine del relativo esercizio fiscale, come previsto dall’articolo 7 della legge greca 4308/2014 e dall’articolo 13 della legge 5104/2024 (Codice di procedura tributaria).",
+        "- Richieste che non si concludono con una prenotazione: 12 mesi.",
+        "- Corrispondenza via WhatsApp, Viber ed email: 24 mesi, salvo che i messaggi facciano parte di un fascicolo di prenotazione o fattura (in tal caso si applica il periodo sopra indicato).",
+        "- Dati analitici: secondo le impostazioni di ciascuno strumento (Google Analytics 4 li conserva in genere per 14 mesi).",
+        "- La tua scelta sui cookie è memorizzata nel browser (chiave localStorage cookieConsent) finché non la cancelli."
+      ]
+    },
+    {
+      "heading": "Responsabili del trattamento e altri destinatari",
+      "paragraphs": [
+        "Ci avvaliamo dei seguenti responsabili del trattamento o destinatari, limitatamente ai servizi effettivamente utilizzati da questo sito:",
+        "- Netlify, Inc. — hosting del sito.",
+        "- Lovable — piattaforma di creazione del sito e distribuzione dei contenuti. Immagini, font (Montserrat e Playfair Display) e audio di sottofondo facoltativo sono forniti da van-move-boost.lovable.app.",
+        "- Supabase — l’assistente IA utilizza un fornitore di servizi di IA tramite Supabase. I messaggi dell’assistente e del modulo di preventivo / prenotazione vengono inviati alle nostre Supabase Edge Functions (/functions/v1/chat e /functions/v1/send-lead-email). Queste funzioni sono ospitate negli Stati Uniti (regione us-east-1).",
+        "- Google — Google Analytics 4 (ID di misurazione G-1K40KS1TVB); Gmail per la nostra email aziendale; link al nostro Profilo dell’Attività su Google Maps; e lo script delle fonti preferite / editori di Google (news.google.com/swg).",
+        "- Metricool — analisi del sito (script da tracker.metricool.com), solo dopo il tuo consenso ai cookie.",
+        "- Meta Platforms — WhatsApp, quando scegli di contattarci tramite questo canale.",
+        "- Rakuten Viber — quando scegli di contattarci tramite Viber.",
+        "Questo sito non carica Meta Pixel, pixel di TikTok, Hotjar, Microsoft Clarity né Google Fonts dai server di Google, e non incorpora alcuna mappa. Gli eventuali pagamenti con carta avvengono di persona con un POS portatile, non su questo sito."
+      ]
+    },
+    {
+      "heading": "Trasferimenti internazionali",
+      "paragraphs": [
+        "Alcuni dei fornitori sopra indicati hanno sede, o trattano dati, in paesi al di fuori dello Spazio economico europeo, in particolare negli Stati Uniti (tra cui Netlify, Google, Meta e le funzioni di chat e richieste di Supabase in us-east-1). In tali casi ci basiamo sulle Clausole contrattuali standard della Commissione europea e/o sull’EU-US Data Privacy Framework, se il fornitore è certificato."
       ]
     },
     {
       "heading": "Cookie",
       "paragraphs": [
-        "I cookie necessari mantengono il sito funzionante, per esempio la chat e il modulo di preventivo. Sono sempre attivi.",
-        "I cookie analitici e di marketing sono bloccati finché non premi «Accetta tutti» o li attivi in «Gestisci». Puoi modificare la scelta in qualsiasi momento cancellando i dati memorizzati dal browser."
+        "Le funzioni necessarie mantengono il sito funzionante. Comprendono la registrazione della tua scelta sui cookie e il funzionamento della chat e del modulo di preventivo (il pulsante della chat compare dopo che hai salvato una scelta sui cookie, incluso «Rifiuta Non Essenziali»). Sono disponibili dopo che hai effettuato una scelta.",
+        "I cookie analitici e di marketing sono bloccati finché non premi «Accetta Tutti» o li attivi in «Gestisci». Se consenti i cookie analitici e/o di marketing, carichiamo Google Analytics 4, Metricool e lo script delle fonti preferite di Google. Puoi modificare la scelta in qualsiasi momento cancellando i dati memorizzati dal browser."
       ]
     },
     {
       "heading": "I tuoi diritti (GDPR)",
       "paragraphs": [
-        "Puoi richiedere in qualsiasi momento l’accesso, la rettifica o la cancellazione dei dati personali scrivendo a h.a.viptransfers@gmail.com. Rispondiamo entro 30 giorni."
+        "Hai il diritto di accedere ai tuoi dati personali, rettificarli, cancellarli, limitarne il trattamento o ottenerne la portabilità, di opporti al trattamento basato sul legittimo interesse e di revocare il consenso in qualsiasi momento (la revoca non pregiudica il trattamento già effettuato). Per esercitare questi diritti, scrivi a h.a.viptransfers@gmail.com. Rispondiamo entro 30 giorni.",
+        "Hai inoltre il diritto di proporre reclamo all’Autorità ellenica per la protezione dei dati (Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα), Kifisias 1-3, 115 23 Atene, Grecia, www.dpa.gr, tel. +30 210 6475 600."
       ]
     }
   ]
@@ -459,7 +505,7 @@ export default {
     pos: { title: "POS a Bordo", desc: "Paga con carta (Visa/Mastercard) direttamente a bordo con il nostro POS portatile." },
     cash: { title: "Contanti", desc: "Paga in contanti (EUR) direttamente all'autista." },
   },
-  footer: { rights: "Tutti i diritti riservati." },
+  footer: { rights: "Tutti i diritti riservati.", privacy: "Informativa sulla Privacy" },
   photoWall: { eyebrow: "In Viaggio", title: "Viaggi Senza Sforzo", subtitle: "Fluidi, silenziosi e sempre puntuali — ovunque la Grecia ti porti." },
   chat: {
     title: "H&A Concierge",
