@@ -4,7 +4,7 @@ import OptimizedImage from "@/components/OptimizedImage";
 import { Helmet } from "react-helmet-async";
 import Link from "@/components/LocalizedLink";
 import { useTranslation } from "react-i18next";
-import { ArrowLeft, Heart } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { showTwitterDescription } from "@/lib/twitterDescription";
 import logoImg from "@/assets/logo.webp";
 
@@ -14,8 +14,8 @@ const About = () => {
   const { t, i18n } = useTranslation();
   const url = `${SITE_URL}/about`;
   const title = t("preferredSources.aboutTitle");
-  // Meta text may differ from the visible support paragraph; languages without one reuse it.
-  const description = t("preferredSources.metaDescription", { defaultValue: t("preferredSources.supportText") });
+  // About metadata is independent of the visible page paragraphs.
+  const description = t("preferredSources.metaDescription");
 
   return (
     <div className="min-h-screen bg-background">
@@ -57,14 +57,6 @@ const About = () => {
           {(t("seoContent.aboutParagraphs", { returnObjects: true }) as string[]).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
         </div>
 
-        {/* Support local business + Google Preferred Sources */}
-        <div className="mt-14 bg-card border border-primary/20 rounded-lg p-8 md:p-10 text-center">
-          <div className="flex justify-center mb-4">
-            <Heart className="w-10 h-10 text-primary" />
-          </div>
-          <h2 className="font-display text-2xl md:text-3xl font-bold mb-4">{t("preferredSources.supportTitle")}</h2>
-          <p className="text-muted-foreground mb-8 max-w-xl mx-auto">{t("preferredSources.supportText")}</p>
-        </div>
       </main>
 
       <footer className="border-t border-border py-8 px-4">

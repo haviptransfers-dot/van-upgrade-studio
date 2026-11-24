@@ -1,3 +1,4 @@
+import SiteFooter from "@/components/SiteFooter";
 import RelatedTravelLinks from "@/components/RelatedTravelLinks";
 import PageHead from "@/components/PageHead";
 import OptimizedImage from "@/components/OptimizedImage";
@@ -270,6 +271,7 @@ const MeteoraTour = () => {
           </div>
         </section>
         <RelatedTravelLinks current={url.replace(SITE_URL, "")} />
+        <SiteFooter />
       </div>
     </>
   );

@@ -761,13 +761,8 @@ export default {
     metaDescription: "Travel guides, tips and insider knowledge for Athens airport transfers, port transfers and private tours in Greece.",
   },
   preferredSources: {
-    blogTitle: "Enjoyed this article?",
-    blogText: "Add H&A VIP Tours as a preferred source on Google for more Athens travel tips.",
-    button: "Add as a preferred source on Google",
-    footerLink: "Add to Google preferred sources",
-    supportTitle: "Support a local business",
-    supportText: "H&A VIP Tours is a local, family-owned transfer company in Athens. Add us as a preferred source on Google to stay updated with our latest travel guides.",
     aboutTitle: "About H&A VIP Tours",
+    metaDescription: "H&A VIP Tours is a local, family-owned transfer company in Athens. Private transfers and tours in a Mercedes Vito VIP with professional drivers.",
   },
   music: {
     play: "Play relaxing music",

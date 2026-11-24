@@ -1,3 +1,4 @@
+import SiteFooter from "@/components/SiteFooter";
 import { useTranslation } from "react-i18next";
 import ChildSeats from "@/components/ChildSeats";
 import PageHead from "@/components/PageHead";
@@ -10,5 +11,6 @@ export default function ChildSeatsPage() {
     <header className="px-4 py-4 border-b border-border"><div className="container mx-auto flex flex-wrap gap-4 items-center justify-between"><Link to="/" className="text-primary">H&A TOURS</Link><LanguageSwitcher /></div></header>
     <h1 className="font-display text-3xl md:text-5xl text-center px-4 pt-12">{t("seoContent.childTitle")}</h1>
     <ChildSeats />
+    <SiteFooter />
   </div>;
 }

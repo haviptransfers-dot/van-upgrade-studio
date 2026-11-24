@@ -23,7 +23,7 @@ describe("Part 1 English meta descriptions", () => {
   });
 
   it("About and Nafplio use the approved descriptions", () => {
-    expect(en.preferredSources.supportText).toBe("H&A VIP Tours is a local, family-owned transfer company in Athens. Add us as a preferred source on Google to stay updated with our latest travel guides.");
+    expect(en.preferredSources.metaDescription).toBe("H&A VIP Tours is a local, family-owned transfer company in Athens. Private transfers and tours in a Mercedes Vito VIP with professional drivers.");
     expect(en.seo.nafplio.description).toBe("Private day tour from Athens to Nafplio, Mycenae & Epidaurus in a Mercedes Vito VIP, with a professional English-speaking driver. Greece's first capital.");
   });
 

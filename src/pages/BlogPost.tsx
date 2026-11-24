@@ -188,11 +188,6 @@ const BlogPost = () => {
           </a>
         </div>
 
-        {/* Google Preferred Sources — big button */}
-        <div className="mt-8 bg-card border border-primary/20 rounded-lg p-8 md:p-10 text-center">
-          <h2 className="font-display text-2xl font-bold mb-3">{t("preferredSources.blogTitle")}</h2>
-          <p className="text-muted-foreground mb-6 max-w-xl mx-auto">{t("preferredSources.blogText")}</p>
-        </div>
       </main>
 
       <footer className="border-t border-border py-8 px-4">

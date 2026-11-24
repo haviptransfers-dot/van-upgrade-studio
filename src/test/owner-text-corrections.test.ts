@@ -24,7 +24,7 @@ describe.each(Object.entries(locales))("owner text corrections in %s", (_languag
     expect(locale.faq.items.a1).not.toMatch(/70/);
   });
   it("does not promise offers in the About text", () => {
-    expect(locale.preferredSources.supportText).not.toMatch(/offers|προσφορές|Angebote|ofertas|offres|offerte|הצעות|عروض/i);
+    expect(locale.preferredSources.metaDescription).not.toMatch(/offers|προσφορές|Angebote|ofertas|offres|offerte|הצעות|عروض/i);
   });
   it("never doubles the Mercedes brand word", () => {
     expect(JSON.stringify(locale)).not.toMatch(/Mercedes Mercedes/);

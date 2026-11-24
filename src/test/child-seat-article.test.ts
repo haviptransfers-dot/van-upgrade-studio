@@ -31,7 +31,7 @@ describe("existing child-seat article rules", () => {
     expect(text).toContain("+30 694 939 3700");
     expect(text).toContain("h.a.viptransfers@gmail.com");
     expect(text).toContain("Mercedes Vito VIP");
-    expect(text).toContain("H&A TOURS LTD");
+    expect(text).toContain("H&A VIP Tours");
     expect(text).not.toMatch(/BeSafe|i-Size|V-Class|starry sky|\bfree\b|δωρεάν|gratis|kostenlos|gratuit|gratuiti|gratuitas|مجاني|ללא תשלום/i);
   });
 });

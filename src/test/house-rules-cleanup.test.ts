@@ -36,7 +36,6 @@ describe("house-rules clean-up: owner-specified strings", () => {
   });
   it("uses the Hebrew word for passenger rides in the About description only", () => {
     expect(he.preferredSources.metaDescription).toContain("חברת הסעות");
-    expect(he.preferredSources.supportText).toContain("חברת העברות");
   });
   it("drops the doubled Mercedes word from Hebrew and Arabic article titles and descriptions", () => {
     for (const lang of ["he", "ar"]) {

@@ -940,7 +940,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Discover why a Mercedes Vito VIP chauffeur service is the ideal way to move through Athens — from airport transfers and port connections to custom private tours.",
     image: hostedAssetUrl(mercedesVitoVipChauffeurAthens),
-    imageAlt: "Black Mercedes Vito VIP with professional chauffeur and H&A TOURS LTD branding, Acropolis of Athens in the background",
+    imageAlt: "Black Mercedes Vito VIP with professional chauffeur and H&A VIP Tours branding, Acropolis of Athens in the background",
     date: "2025-11-15",
     metaTitle: "Mercedes Vito VIP Chauffeur Service in Athens | H&A VIP Transfers",
     metaDescription:
@@ -1023,7 +1023,7 @@ export const blogPosts: BlogPost[] = [
       "Departing from Piraeus after a cruise or a stay at the port? Discover why a pre-booked private transfer to Athens Airport is the calmest way to end your trip.",
     image: hostedAssetUrl(privateTransferPiraeusPort),
     imageAlt:
-      "Black Mercedes Vito VIP on the coastal road from Piraeus Port with a cruise ship, the Acropolis at sunset and H&A TOURS LTD branding",
+      "Black Mercedes Vito VIP on the coastal road from Piraeus Port with a cruise ship, the Acropolis at sunset and H&A VIP Tours branding",
     date: "2025-12-15",
     metaTitle: "Private Transfer Piraeus Port to Athens Airport | H&A VIP Transfers",
     metaDescription:

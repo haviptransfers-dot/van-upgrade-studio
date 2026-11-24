@@ -37,7 +37,7 @@
 - Email the business only for booking requests that pass the shared name/email/phone rules, validated in the browser and again in send-lead-email, with reply_to set to the customer; chat questions are stored without email, so no notification arrives without contact details.
 - Calculator email booking is a localized mailto draft using the current selection and fare, never an automatic notification; existing forms stay separate.
 - Publish twitter:description on Helmet-owned pages only for paths listed per language in src/lib/twitterDescription.ts; owner-reviewed metadata rolls out page by page without altering unreviewed pages.
-- Keep About meta text in preferredSources.metaDescription when it differs from the visible support paragraph, falling back to supportText; search snippets can be shortened without editing page copy.
+- Keep About meta text in preferredSources.metaDescription independently of the visible page paragraphs; removed source-promotion text must not become a metadata fallback.
 - Build internal and language-switch hrefs with linkPath (localized, exactly one trailing slash) so links match canonical URLs; keep localizedPath slashless because route matching and static generation depend on it.
 - Accordion content renders a hidden answer copy so closed FAQ answers stay in server-rendered HTML without design changes.
 - Airport route: shared Index header + AirportTransferContent (locale `airportPage`, [label](path) links) + SiteFooter and booking form, not homepage sections; its only FAQPage comes from that copy, so the page stays unique.

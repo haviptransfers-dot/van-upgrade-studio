@@ -761,13 +761,8 @@ export default {
     metaDescription: "أدلة سفر ونصائح ومعلومات مفيدة عن التنقلات من المطار والميناء والجولات الخاصة في اليونان.",
   },
   preferredSources: {
-    blogTitle: "هل أعجبك هذا المقال؟",
-    blogText: "أضف H&A VIP Tours كمصدر مفضل على Google للحصول على المزيد من نصائح السفر في أثينا.",
-    button: "إضافة كمصدر مفضل على Google",
-    footerLink: "إضافة إلى مصادر Google المفضلة",
-    supportTitle: "ادعم شركة محلية",
-    supportText: "H&A VIP Tours هي شركة نقل محلية عائلية في أثينا. أضفنا كمصدر مفضل على Google للبقاء على اطلاع بأحدث أدلتنا السياحية.",
     aboutTitle: "حول H&A VIP Tours",
+    metaDescription: "H&A VIP Tours هي شركة نقل محلية عائلية في أثينا. تنقلات وجولات خاصة بسيارة Mercedes Vito VIP.",
   },
   music: {
     play: "تشغيل موسيقى هادئة",

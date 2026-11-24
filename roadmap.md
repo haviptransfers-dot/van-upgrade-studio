@@ -1,5 +1,7 @@
 # Roadmap
 
+- [open] Nov 24 follow-up: remove leftover article/About boxes and unused source strings, exact About metadata and brand/French text fixes, reuse existing footer on 48 pages; verify all language pages. Owner approved existing footers on all eight privacy pages and deletion of only their obsolete Google source-script phrase.
+
 - [done] Nov 24 list: self-hosted media/fonts/music, localized calculator email drafts and night-rate display, three exact HTML reviews/shared rating, contact/fleet/three Nafplio links, removed all approved Google source buttons/script. 449 tests pass; 232 generated documents checked, 72 FAQ schemas unchanged, 232 published URLs return 200, eight-language interactive calculator and desktop/mobile RTL checked. Visible-content dates updated only for 184 pages. Protected article copy, seat copy, fares and tracking unchanged. Not published.
 - [done] Removed all remaining Google preferred-source buttons on About/articles after owner approval; article text and metadata retained.
 - [open] Fresh published mobile PageSpeed >=90 check: awaits deployment of these changes and an external lab measurement; no real-visitor speed readings available this week.

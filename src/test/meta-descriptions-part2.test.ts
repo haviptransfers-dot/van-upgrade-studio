@@ -25,7 +25,7 @@ describe("Part 2 Greek meta descriptions", () => {
   });
 
   it("About, Child Seats and Piraeus use the approved Greek descriptions", () => {
-    expect(el.preferredSources.metaDescription).toBe("Οι H&A VIP Tours είναι μια τοπική, οικογενειακή εταιρεία μεταφορών στην Αθήνα. Προσθέστε μας ως προτιμώμενη πηγή στο Google για τα ταξιδιωτικά μας άρθρα.");
+    expect(el.preferredSources.metaDescription).toBe("Οι H&A VIP Tours είναι μια τοπική, οικογενειακή εταιρεία μεταφορών στην Αθήνα. Ιδιωτικές μεταφορές και εκδρομές με Mercedes Vito VIP.");
     expect(el.seoContent.childDescription).toBe("Πείτε μας τις ηλικίες των παιδιών και ζητήστε παιδικά καθίσματα κατόπιν αιτήματος όταν κλείνετε τη μεταφορά. Επιβεβαιώστε τα καθίσματα πριν από την κράτηση.");
     expect(el.seoContent.piraeusDescription).toBe("Ιδιωτικές μεταφορές Πειραιά προς αεροδρόμιο, ξενοδοχεία και κέντρο Αθήνας. Mercedes Vito VIP έως 7 επιβάτες, υποδοχή και παιδικά καθίσματα κατόπιν αιτήματος.");
   });
