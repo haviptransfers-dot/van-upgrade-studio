@@ -336,6 +336,7 @@ export default {
         "- Lovable — outil de création du site et diffusion de contenu. Les images, les polices et l’audio d’ambiance facultatif sont servis depuis notre propre domaine (hébergé par Netlify).",
         "- Supabase — l’assistant IA utilise un fournisseur de services d’IA via Supabase. Les messages de l’assistant et du formulaire de devis / réservation sont envoyés à nos Supabase Edge Functions (/functions/v1/chat et /functions/v1/send-lead-email). Ces fonctions sont hébergées aux États-Unis (région us-east-1).",
         "- Google — Google Analytics 4 (ID de mesure G-1K40KS1TVB) ; Gmail pour notre messagerie professionnelle ; liens vers notre fiche d’établissement sur Google Maps.",
+        "- ImprovMX — transfert des e-mails de notre adresse info@haviptransfers.gr.",
         "- Metricool — analyse du site (script de tracker.metricool.com), uniquement après votre consentement aux cookies.",
         "- Meta Platforms — WhatsApp, lorsque vous choisissez de nous y contacter.",
         "- Rakuten Viber — lorsque vous choisissez de nous contacter via Viber.",
@@ -352,7 +353,7 @@ export default {
       "heading": "Cookies",
       "paragraphs": [
         "Les fonctions nécessaires assurent le fonctionnement du site. Elles comprennent l’enregistrement de votre choix concernant les cookies ainsi que le fonctionnement du chat et du formulaire de devis (le bouton du chat s’affiche après l’enregistrement d’un choix de cookies, y compris « Refuser les Non Essentiels »). Elles sont disponibles dès que vous avez fait un choix.",
-        "Les cookies d’analyse et de marketing sont bloqués jusqu’à ce que vous choisissiez « Tout Accepter » ou les activiez dans « Gérer ». Si vous autorisez les cookies d’analyse et/ou de marketing, nous chargeons Google Analytics 4, Metricool. Vous pouvez modifier votre choix à tout moment en effaçant les données stockées par votre navigateur."
+        "Les cookies d’analyse et de marketing sont bloqués jusqu’à ce que vous choisissiez « Tout Accepter » ou les activiez dans « Gérer ». Si vous autorisez les cookies d’analyse et/ou de marketing, nous chargeons Google Analytics 4 et Metricool. Vous pouvez modifier votre choix à tout moment en effaçant les données stockées par votre navigateur."
       ]
     },
     {

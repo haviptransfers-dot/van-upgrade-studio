@@ -1,5 +1,8 @@
 # Roadmap
 
+- [done] Nov 24 exact Netlify security/cache headers (full resource CSP report-only), seven cookie conjunction corrections and eight ImprovMX privacy disclosures. 459 tests pass; all 232 pages prerender without NULs; eight privacy lists verified, chat and consent-gated GA4/Metricool checked. Published 232 URLs return 200. Privacy dates already November 24, so no sitemap dates changed. No added runtime scripts/assets/dependencies; not published.
+- [open] Verify requested custom-domain response headers: awaits Netlify deployment; current live site does not yet serve the new headers.
+
 - [done] Company contact email replaced with info@haviptransfers.gr in all eight languages, website/email links, calculator drafts, privacy, schema and concierge prompt. Draft subjects/bodies unchanged; automatic booking notification routing unchanged. 449 tests pass; eight-language mail drafts verified; source and 232 generated pages have no former contact email. Not published.
 
 - [done] Nov 24 follow-up: removed leftover article/About boxes and unused source strings, exact About metadata and brand/French fixes; reused footer on 48 tour/seat pages plus eight approved privacy pages and removed only obsolete privacy script phrases. 232 generated pages have localized privacy footers, correct canonical/hreflang and no banned source text/NULs; existing published URLs return 200. Browser checks used client navigation because sandbox direct SSR has a pre-existing Vite runner limitation. No new assets/dependencies; not published.

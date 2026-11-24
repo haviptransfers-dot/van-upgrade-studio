@@ -336,6 +336,7 @@ export default {
         "- Lovable — site builder and content delivery. Images, fonts and optional background audio are served from our own domain (hosted by Netlify).",
         "- Supabase — the AI assistant uses an AI service provider via Supabase. Messages from the assistant and the quote / booking form are sent to our Supabase Edge Functions (/functions/v1/chat and /functions/v1/send-lead-email). These functions are hosted in the United States (region us-east-1).",
         "- Google — Google Analytics 4 (measurement ID G-1K40KS1TVB); Gmail for our business email; links to our Google Maps Business Profile.",
+        "- ImprovMX — email forwarding for our address info@haviptransfers.gr.",
         "- Metricool — site analytics (script from tracker.metricool.com), only after you give cookie consent.",
         "- Meta Platforms — WhatsApp, when you choose to contact us there.",
         "- Rakuten Viber — when you choose to contact us via Viber.",
@@ -352,7 +353,7 @@ export default {
       "heading": "Cookies",
       "paragraphs": [
         "Necessary functions keep the site working. They include recording your cookie choice and the operation of the chat and quote form (the chat button is shown after you save a cookie choice, including “Reject Non-Essential”). These are available once you have made a choice.",
-        "Analytics and marketing cookies are blocked until you press “Accept All” or enable them under “Manage”. If you allow analytics and/or marketing, we load Google Analytics 4, Metricool. You can change your choice at any time by clearing your browser storage."
+        "Analytics and marketing cookies are blocked until you press “Accept All” or enable them under “Manage”. If you allow analytics and/or marketing, we load Google Analytics 4 and Metricool. You can change your choice at any time by clearing your browser storage."
       ]
     },
     {

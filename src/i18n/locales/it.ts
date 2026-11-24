@@ -336,6 +336,7 @@ export default {
         "- Lovable — piattaforma di creazione del sito e distribuzione dei contenuti. Immagini, font e audio di sottofondo facoltativo sono forniti dal nostro dominio (ospitato da Netlify).",
         "- Supabase — l’assistente IA utilizza un fornitore di servizi di IA tramite Supabase. I messaggi dell’assistente e del modulo di preventivo / prenotazione vengono inviati alle nostre Supabase Edge Functions (/functions/v1/chat e /functions/v1/send-lead-email). Queste funzioni sono ospitate negli Stati Uniti (regione us-east-1).",
         "- Google — Google Analytics 4 (ID di misurazione G-1K40KS1TVB); Gmail per la nostra email aziendale; link al nostro Profilo dell’Attività su Google Maps.",
+        "- ImprovMX — inoltro email per il nostro indirizzo info@haviptransfers.gr.",
         "- Metricool — analisi del sito (script da tracker.metricool.com), solo dopo il tuo consenso ai cookie.",
         "- Meta Platforms — WhatsApp, quando scegli di contattarci tramite questo canale.",
         "- Rakuten Viber — quando scegli di contattarci tramite Viber.",
@@ -352,7 +353,7 @@ export default {
       "heading": "Cookie",
       "paragraphs": [
         "Le funzioni necessarie mantengono il sito funzionante. Comprendono la registrazione della tua scelta sui cookie e il funzionamento della chat e del modulo di preventivo (il pulsante della chat compare dopo che hai salvato una scelta sui cookie, incluso «Rifiuta Non Essenziali»). Sono disponibili dopo che hai effettuato una scelta.",
-        "I cookie analitici e di marketing sono bloccati finché non premi «Accetta Tutti» o li attivi in «Gestisci». Se consenti i cookie analitici e/o di marketing, carichiamo Google Analytics 4, Metricool. Puoi modificare la scelta in qualsiasi momento cancellando i dati memorizzati dal browser."
+        "I cookie analitici e di marketing sono bloccati finché non premi «Accetta Tutti» o li attivi in «Gestisci». Se consenti i cookie analitici e/o di marketing, carichiamo Google Analytics 4 e Metricool. Puoi modificare la scelta in qualsiasi momento cancellando i dati memorizzati dal browser."
       ]
     },
     {

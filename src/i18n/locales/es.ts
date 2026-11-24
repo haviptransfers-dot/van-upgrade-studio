@@ -336,6 +336,7 @@ export default {
         "- Lovable — creador del sitio y entrega de contenidos. Las imágenes, las fuentes y el audio de fondo opcional se sirven desde nuestro propio dominio (alojado por Netlify).",
         "- Supabase — el asistente de IA utiliza un proveedor de servicios de IA a través de Supabase. Los mensajes del asistente y del formulario de presupuesto / reserva se envían a nuestras Supabase Edge Functions (/functions/v1/chat y /functions/v1/send-lead-email). Estas funciones están alojadas en Estados Unidos (región us-east-1).",
         "- Google — Google Analytics 4 (ID de medición G-1K40KS1TVB); Gmail para nuestro correo profesional; enlaces a nuestro Perfil de Empresa en Google Maps.",
+        "- ImprovMX — reenvío de correo para nuestra dirección info@haviptransfers.gr.",
         "- Metricool — analítica del sitio (script de tracker.metricool.com), solo después de que des tu consentimiento a las cookies.",
         "- Meta Platforms — WhatsApp, cuando decides contactarnos por esa vía.",
         "- Rakuten Viber — cuando decides contactarnos a través de Viber.",
@@ -352,7 +353,7 @@ export default {
       "heading": "Cookies",
       "paragraphs": [
         "Las funciones necesarias mantienen el sitio en funcionamiento. Incluyen el registro de tu elección sobre cookies y el funcionamiento del chat y del formulario de presupuesto (el botón del chat se muestra después de que guardes una elección de cookies, incluida «Rechazar No Esenciales»). Están disponibles en cuanto hayas hecho una elección.",
-        "Las cookies analíticas y de marketing permanecen bloqueadas hasta que pulses «Aceptar Todas» o las actives en «Gestionar». Si permites las cookies analíticas y/o de marketing, cargamos Google Analytics 4, Metricool. Puedes cambiar tu elección en cualquier momento borrando el almacenamiento del navegador."
+        "Las cookies analíticas y de marketing permanecen bloqueadas hasta que pulses «Aceptar Todas» o las actives en «Gestionar». Si permites las cookies analíticas y/o de marketing, cargamos Google Analytics 4 y Metricool. Puedes cambiar tu elección en cualquier momento borrando el almacenamiento del navegador."
       ]
     },
     {

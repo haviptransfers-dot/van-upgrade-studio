@@ -336,6 +336,7 @@ export default {
         "- Lovable — منصة إنشاء الموقع وتوصيل المحتوى. تُقدَّم الصور والخطوط والصوت الخلفي الاختياري من نطاقنا الخاص (باستضافة Netlify).",
         "- Supabase — يستخدم مساعد الذكاء الاصطناعي مزوّد خدمة ذكاء اصطناعي عبر Supabase. تُرسَل الرسائل من المساعد ومن نموذج عرض السعر / الحجز إلى Supabase Edge Functions الخاصة بنا (‎/functions/v1/chat و‎/functions/v1/send-lead-email). وتُستضاف هذه الوظائف في الولايات المتحدة (المنطقة us-east-1).",
         "- Google — Google Analytics 4‎ (معرّف القياس G-1K40KS1TVB)؛ وGmail لبريدنا الإلكتروني التجاري؛ وروابط إلى ملفنا التجاري على Google Maps.",
+        "- ImprovMX — إعادة توجيه البريد الإلكتروني لعنواننا info@haviptransfers.gr.",
         "- Metricool — تحليلات الموقع (سكربت من tracker.metricool.com)، فقط بعد منحك الموافقة على ملفات تعريف الارتباط.",
         "- Meta Platforms — WhatsApp، عندما تختار التواصل معنا عبره.",
         "- Rakuten Viber — عندما تختار التواصل معنا عبر Viber.",

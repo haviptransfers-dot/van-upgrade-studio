@@ -336,6 +336,7 @@ export default {
         "- Lovable — Website-Baukasten und Bereitstellung von Inhalten. Bilder, Schriftarten und optionales Hintergrund-Audio werden von unserer eigenen Domain bereitgestellt (gehostet von Netlify).",
         "- Supabase — der KI-Assistent nutzt einen Anbieter von KI-Diensten über Supabase. Nachrichten aus dem Assistenten sowie aus dem Angebots- bzw. Buchungsformular werden an unsere Supabase Edge Functions (/functions/v1/chat und /functions/v1/send-lead-email) gesendet. Diese Funktionen werden in den Vereinigten Staaten gehostet (Region us-east-1).",
         "- Google — Google Analytics 4 (Mess-ID G-1K40KS1TVB); Gmail für unsere geschäftliche E-Mail; Links zu unserem Unternehmensprofil auf Google Maps.",
+        "- ImprovMX — E-Mail-Weiterleitung für unsere Adresse info@haviptransfers.gr.",
         "- Metricool — Website-Analyse (Skript von tracker.metricool.com), nur nachdem Sie Ihre Cookie-Einwilligung erteilt haben.",
         "- Meta Platforms — WhatsApp, wenn Sie sich entscheiden, uns dort zu kontaktieren.",
         "- Rakuten Viber — wenn Sie sich entscheiden, uns über Viber zu kontaktieren.",
@@ -352,7 +353,7 @@ export default {
       "heading": "Cookies",
       "paragraphs": [
         "Notwendige Funktionen halten die Website funktionsfähig. Dazu gehören die Speicherung Ihrer Cookie-Auswahl sowie der Betrieb des Chats und des Angebotsformulars (die Chat-Schaltfläche wird angezeigt, nachdem Sie eine Cookie-Auswahl gespeichert haben, auch bei „Nicht notwendige ablehnen“). Diese stehen zur Verfügung, sobald Sie eine Auswahl getroffen haben.",
-        "Analyse- und Marketing-Cookies bleiben gesperrt, bis Sie „Alle akzeptieren“ wählen oder sie unter „Verwalten“ aktivieren. Wenn Sie Analyse- und/oder Marketing-Cookies zulassen, laden wir Google Analytics 4, Metricool. Sie können Ihre Wahl jederzeit ändern, indem Sie Ihren Browserspeicher löschen."
+        "Analyse- und Marketing-Cookies bleiben gesperrt, bis Sie „Alle akzeptieren“ wählen oder sie unter „Verwalten“ aktivieren. Wenn Sie Analyse- und/oder Marketing-Cookies zulassen, laden wir Google Analytics 4 und Metricool. Sie können Ihre Wahl jederzeit ändern, indem Sie Ihren Browserspeicher löschen."
       ]
     },
     {
