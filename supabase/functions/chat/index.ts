@@ -16,7 +16,7 @@ SCOPE: Answer ONLY questions about H&A VIP Tours services, prices, vehicles, boo
 COMPANY INFO:
 - Vehicle: Mercedes V Class / Vito (up to 7-8 passengers, leather seats, Wi-Fi, water, child seats on request)
 - Phone / WhatsApp: +30 694 939 3700
-- Email: h.a.viptransfers@gmail.com
+- Email: info@haviptransfers.gr
 - Available 24/7, English-speaking professional drivers
 
 PRICES (EUR, fixed, no hidden fees — always use these exact figures):

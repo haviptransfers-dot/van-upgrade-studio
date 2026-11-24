@@ -29,7 +29,7 @@ describe("existing child-seat article rules", () => {
   it.each(Object.keys(article))("preserves contact details and exact vehicle name in %s", language => {
     const text = JSON.stringify(article[language as keyof typeof article]);
     expect(text).toContain("+30 694 939 3700");
-    expect(text).toContain("h.a.viptransfers@gmail.com");
+    expect(text).toContain("info@haviptransfers.gr");
     expect(text).toContain("Mercedes Vito VIP");
     expect(text).toContain("H&A VIP Tours");
     expect(text).not.toMatch(/BeSafe|i-Size|V-Class|starry sky|\bfree\b|δωρεάν|gratis|kostenlos|gratuit|gratuiti|gratuitas|مجاني|ללא תשלום/i);

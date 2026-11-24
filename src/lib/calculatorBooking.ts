@@ -34,5 +34,5 @@ export function calculatorEmailUrl(selection: {
     "",
     `${labels.name}:`,
   ].join("\n");
-  return `mailto:h.a.viptransfers@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  return `mailto:info@haviptransfers.gr?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }

@@ -30,7 +30,7 @@ describe("privacy policy pages", () => {
 
     it(`${lang}: includes controller contacts and Greek retention laws`, () => {
       const text = textOf(locale);
-      for (const s of ["h.a.viptransfers@gmail.com", "+30 210 992 5244", "+30 694 939 3700", "4308/2014", "5104/2024", "G-1K40KS1TVB", "us-east-1", "cookieConsent", "+30 210 6475 600"]) {
+      for (const s of ["info@haviptransfers.gr", "+30 210 992 5244", "+30 694 939 3700", "4308/2014", "5104/2024", "G-1K40KS1TVB", "us-east-1", "cookieConsent", "+30 210 6475 600"]) {
         expect(text).toContain(s);
       }
       expect(text).toContain(lang === "el" ? "Αφροδίτης 66, Ελληνικό 167 77" : "Afroditis 66, Elliniko 167 77");

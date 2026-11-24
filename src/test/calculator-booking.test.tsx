@@ -61,11 +61,11 @@ describe("unchanged calculator fares and customer-initiated email drafts", () =>
   });
 
   for (const [lang, locale] of Object.entries(locales)) {
-    it(`${lang}: drafts a localized mail to the unchanged recipient with the current selection`, () => {
+    it(`${lang}: drafts a localized mail to the current company recipient with the current selection`, () => {
       const service = locale.calc.services.airport_to_athens;
       const href = new URL(calculatorEmailUrl({ service, passengers: 5, night: true, total: 150 }, locale.calc.email));
       expect(href.protocol).toBe("mailto:");
-      expect(href.pathname).toBe("h.a.viptransfers@gmail.com");
+      expect(href.pathname).toBe("info@haviptransfers.gr");
       expect(href.searchParams.get("subject")).toBe(`${locale.calc.email.subject}: ${service}`);
       expect(href.searchParams.get("body")?.split("\n")).toEqual([
         `${locale.calc.email.service}: ${service}`, `${locale.calc.email.passengers}: 5`,

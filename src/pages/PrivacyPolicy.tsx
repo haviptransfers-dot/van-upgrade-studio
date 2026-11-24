@@ -1,3 +1,4 @@
+import SiteFooter from "@/components/SiteFooter";
 import Link from "@/components/LocalizedLink";
 import { useTranslation } from "react-i18next";
 import PageHead from "@/components/PageHead";
@@ -24,6 +25,7 @@ const PrivacyPolicy = () => {
   const { t } = useTranslation();
   const translated = t("seoContent.privacySections", { returnObjects: true }) as { heading: string; paragraphs: string[] }[];
   return (
+  <>
   <main className="min-h-screen bg-background text-foreground px-4 py-16 md:py-24">
     <PageHead title={t("seoContent.privacyTitle")} description={t("seoContent.privacyDescription")} />
     <div className="container mx-auto max-w-2xl">
@@ -55,6 +57,8 @@ const PrivacyPolicy = () => {
       </Link>
     </div>
   </main>
+  <SiteFooter />
+  </>
 );
 };
 

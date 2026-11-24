@@ -16,7 +16,7 @@ export const organization = {
     dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
     opens: "00:00", closes: "23:59",
   },
-  email: "h.a.viptransfers@gmail.com",
+  email: "info@haviptransfers.gr",
   image: `${SITE_URL}/logo.png`,
   logo: `${SITE_URL}/logo.png`,
   address: { "@type": "PostalAddress", streetAddress: "Afroditis 66", addressLocality: "Elliniko", postalCode: "167 77", addressCountry: "GR" },

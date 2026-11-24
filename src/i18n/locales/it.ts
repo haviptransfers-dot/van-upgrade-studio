@@ -294,7 +294,7 @@ export default {
       "heading": "Chi siamo",
       "paragraphs": [
         "H&A VIP Tours (H&A Tours ΕΕ, società in accomandita semplice di diritto greco) è un’azienda di trasferimenti privati e tour con sede ad Atene, in Grecia. Siamo il titolare del trattamento dei dati personali raccolti tramite questo sito.",
-        "Email: h.a.viptransfers@gmail.com",
+        "Email: info@haviptransfers.gr",
         "Telefono: +30 210 992 5244",
         "WhatsApp / Viber: +30 694 939 3700",
         "Indirizzo postale: Afroditis 66, Elliniko 167 77, Grecia."
@@ -352,13 +352,13 @@ export default {
       "heading": "Cookie",
       "paragraphs": [
         "Le funzioni necessarie mantengono il sito funzionante. Comprendono la registrazione della tua scelta sui cookie e il funzionamento della chat e del modulo di preventivo (il pulsante della chat compare dopo che hai salvato una scelta sui cookie, incluso «Rifiuta Non Essenziali»). Sono disponibili dopo che hai effettuato una scelta.",
-        "I cookie analitici e di marketing sono bloccati finché non premi «Accetta Tutti» o li attivi in «Gestisci». Se consenti i cookie analitici e/o di marketing, carichiamo Google Analytics 4, Metricool e lo script delle fonti preferite di Google. Puoi modificare la scelta in qualsiasi momento cancellando i dati memorizzati dal browser."
+        "I cookie analitici e di marketing sono bloccati finché non premi «Accetta Tutti» o li attivi in «Gestisci». Se consenti i cookie analitici e/o di marketing, carichiamo Google Analytics 4, Metricool. Puoi modificare la scelta in qualsiasi momento cancellando i dati memorizzati dal browser."
       ]
     },
     {
       "heading": "I tuoi diritti (GDPR)",
       "paragraphs": [
-        "Hai il diritto di accedere ai tuoi dati personali, rettificarli, cancellarli, limitarne il trattamento o ottenerne la portabilità, di opporti al trattamento basato sul legittimo interesse e di revocare il consenso in qualsiasi momento (la revoca non pregiudica il trattamento già effettuato). Per esercitare questi diritti, scrivi a h.a.viptransfers@gmail.com. Rispondiamo entro 30 giorni.",
+        "Hai il diritto di accedere ai tuoi dati personali, rettificarli, cancellarli, limitarne il trattamento o ottenerne la portabilità, di opporti al trattamento basato sul legittimo interesse e di revocare il consenso in qualsiasi momento (la revoca non pregiudica il trattamento già effettuato). Per esercitare questi diritti, scrivi a info@haviptransfers.gr. Rispondiamo entro 30 giorni.",
         "Hai inoltre il diritto di proporre reclamo all’Autorità ellenica per la protezione dei dati (Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα), Kifisias 1-3, 115 23 Atene, Grecia, www.dpa.gr, tel. +30 210 6475 600."
       ]
     }
@@ -835,7 +835,7 @@ export default {
         "title": "Come prenotare il vostro transfer aeroportuale",
         "items": [
           "**WhatsApp o Viber:** scriveteci al [+30 694 939 3700](https://wa.me/306949393700) con i dati del volo. Confermiamo la vostra prenotazione.",
-          "**E-mail:** scrivete a [h.a.viptransfers@gmail.com](mailto:h.a.viptransfers@gmail.com) indicando nome, data, numero del volo, destinazione e numero di passeggeri.",
+          "**E-mail:** scrivete a [info@haviptransfers.gr](mailto:info@haviptransfers.gr) indicando nome, data, numero del volo, destinazione e numero di passeggeri.",
           "**Modulo online:** usate il modulo di prenotazione in questa pagina per ottenere una stima immediata e inviare la vostra richiesta."
         ],
         "after": [
@@ -871,6 +871,6 @@ export default {
       }
     ],
     "ctaTitle": "Pronti a prenotare?",
-    "ctaText": "Scriveteci su WhatsApp al [+30 694 939 3700](https://wa.me/306949393700) o via e-mail a [h.a.viptransfers@gmail.com](mailto:h.a.viptransfers@gmail.com) e confermeremo il vostro transfer dall'aeroporto di Atene."
+    "ctaText": "Scriveteci su WhatsApp al [+30 694 939 3700](https://wa.me/306949393700) o via e-mail a [info@haviptransfers.gr](mailto:info@haviptransfers.gr) e confermeremo il vostro transfer dall'aeroporto di Atene."
   },
 };

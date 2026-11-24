@@ -294,7 +294,7 @@ export default {
       "heading": "Qui sommes-nous ?",
       "paragraphs": [
         "H&A VIP Tours (H&A Tours ΕΕ, société en commandite simple de droit grec) est une entreprise de transferts privés et d’excursions basée à Athènes, en Grèce. Nous sommes le responsable du traitement des données personnelles collectées via ce site.",
-        "E-mail : h.a.viptransfers@gmail.com",
+        "E-mail : info@haviptransfers.gr",
         "Téléphone : +30 210 992 5244",
         "WhatsApp / Viber : +30 694 939 3700",
         "Adresse postale : Afroditis 66, Elliniko 167 77, Grèce."
@@ -352,13 +352,13 @@ export default {
       "heading": "Cookies",
       "paragraphs": [
         "Les fonctions nécessaires assurent le fonctionnement du site. Elles comprennent l’enregistrement de votre choix concernant les cookies ainsi que le fonctionnement du chat et du formulaire de devis (le bouton du chat s’affiche après l’enregistrement d’un choix de cookies, y compris « Refuser les Non Essentiels »). Elles sont disponibles dès que vous avez fait un choix.",
-        "Les cookies d’analyse et de marketing sont bloqués jusqu’à ce que vous choisissiez « Tout Accepter » ou les activiez dans « Gérer ». Si vous autorisez les cookies d’analyse et/ou de marketing, nous chargeons Google Analytics 4, Metricool et le script de sources préférées de Google. Vous pouvez modifier votre choix à tout moment en effaçant les données stockées par votre navigateur."
+        "Les cookies d’analyse et de marketing sont bloqués jusqu’à ce que vous choisissiez « Tout Accepter » ou les activiez dans « Gérer ». Si vous autorisez les cookies d’analyse et/ou de marketing, nous chargeons Google Analytics 4, Metricool. Vous pouvez modifier votre choix à tout moment en effaçant les données stockées par votre navigateur."
       ]
     },
     {
       "heading": "Vos droits (RGPD)",
       "paragraphs": [
-        "Vous disposez d’un droit d’accès, de rectification, d’effacement, de limitation et de portabilité de vos données personnelles, du droit de vous opposer au traitement fondé sur les intérêts légitimes et du droit de retirer votre consentement à tout moment (le retrait n’affecte pas les traitements déjà effectués). Pour exercer ces droits, écrivez à h.a.viptransfers@gmail.com. Nous répondons sous 30 jours.",
+        "Vous disposez d’un droit d’accès, de rectification, d’effacement, de limitation et de portabilité de vos données personnelles, du droit de vous opposer au traitement fondé sur les intérêts légitimes et du droit de retirer votre consentement à tout moment (le retrait n’affecte pas les traitements déjà effectués). Pour exercer ces droits, écrivez à info@haviptransfers.gr. Nous répondons sous 30 jours.",
         "Vous avez également le droit d’introduire une réclamation auprès de l’Autorité hellénique de protection des données (Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα), Kifisias 1-3, 115 23 Athènes, Grèce, www.dpa.gr, tél. +30 210 6475 600."
       ]
     }
@@ -835,7 +835,7 @@ export default {
         "title": "Comment réserver votre transfert aéroport",
         "items": [
           "**WhatsApp ou Viber :** écrivez-nous au [+30 694 939 3700](https://wa.me/306949393700) avec les détails de votre vol. Nous confirmons votre réservation.",
-          "**E-mail :** écrivez à [h.a.viptransfers@gmail.com](mailto:h.a.viptransfers@gmail.com) en indiquant votre nom, la date, le numéro de vol, la destination et le nombre de passagers.",
+          "**E-mail :** écrivez à [info@haviptransfers.gr](mailto:info@haviptransfers.gr) en indiquant votre nom, la date, le numéro de vol, la destination et le nombre de passagers.",
           "**Formulaire en ligne :** utilisez le formulaire de réservation de cette page pour obtenir une estimation instantanée et envoyer votre demande."
         ],
         "after": [
@@ -871,6 +871,6 @@ export default {
       }
     ],
     "ctaTitle": "Prêt à réserver ?",
-    "ctaText": "Écrivez-nous sur WhatsApp au [+30 694 939 3700](https://wa.me/306949393700) ou par e-mail à [h.a.viptransfers@gmail.com](mailto:h.a.viptransfers@gmail.com), et nous confirmerons votre transfert aéroport à Athènes."
+    "ctaText": "Écrivez-nous sur WhatsApp au [+30 694 939 3700](https://wa.me/306949393700) ou par e-mail à [info@haviptransfers.gr](mailto:info@haviptransfers.gr), et nous confirmerons votre transfert aéroport à Athènes."
   },
 };

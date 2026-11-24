@@ -1,6 +1,8 @@
 # Roadmap
 
-- [open] Nov 24 follow-up: remove leftover article/About boxes and unused source strings, exact About metadata and brand/French text fixes, reuse existing footer on 48 pages; verify all language pages. Owner approved existing footers on all eight privacy pages and deletion of only their obsolete Google source-script phrase.
+- [done] Company contact email replaced with info@haviptransfers.gr in all eight languages, website/email links, calculator drafts, privacy, schema and concierge prompt. Draft subjects/bodies unchanged; automatic booking notification routing unchanged. 449 tests pass; eight-language mail drafts verified; source and 232 generated pages have no former contact email. Not published.
+
+- [done] Nov 24 follow-up: removed leftover article/About boxes and unused source strings, exact About metadata and brand/French fixes; reused footer on 48 tour/seat pages plus eight approved privacy pages and removed only obsolete privacy script phrases. 232 generated pages have localized privacy footers, correct canonical/hreflang and no banned source text/NULs; existing published URLs return 200. Browser checks used client navigation because sandbox direct SSR has a pre-existing Vite runner limitation. No new assets/dependencies; not published.
 
 - [done] Nov 24 list: self-hosted media/fonts/music, localized calculator email drafts and night-rate display, three exact HTML reviews/shared rating, contact/fleet/three Nafplio links, removed all approved Google source buttons/script. 449 tests pass; 232 generated documents checked, 72 FAQ schemas unchanged, 232 published URLs return 200, eight-language interactive calculator and desktop/mobile RTL checked. Visible-content dates updated only for 184 pages. Protected article copy, seat copy, fares and tracking unchanged. Not published.
 - [done] Removed all remaining Google preferred-source buttons on About/articles after owner approval; article text and metadata retained.

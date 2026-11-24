@@ -269,7 +269,7 @@ const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
       return;
     }
     const subject = `New Booking Request — ${booking.name}`;
-    window.location.href = `mailto:h.a.viptransfers@gmail.com?subject=${encodeURIComponent(
+    window.location.href = `mailto:info@haviptransfers.gr?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(buildBookingText())}`;
     finishBooking();

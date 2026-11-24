@@ -29,7 +29,7 @@ describe("dedicated Athens airport transfer page", () => {
     expect(page.sections).toHaveLength(6);
     expect(page.h1).toContain("Mercedes Vito VIP");
     expect(page.h1).toContain("ATH");
-    for (const fixed of ["Athens International Airport Eleftherios Venizelos", "H&A VIP Tours", "+30 694 939 3700", "+30 210 992 5244", "h.a.viptransfers@gmail.com"]) expect(text(page)).toContain(fixed);
+    for (const fixed of ["Athens International Airport Eleftherios Venizelos", "H&A VIP Tours", "+30 694 939 3700", "+30 210 992 5244", "info@haviptransfers.gr"]) expect(text(page)).toContain(fixed);
   });
 
   it.each(Object.entries(locales))("%s: no child seats, other models, offers or islands", (_, locale) => {

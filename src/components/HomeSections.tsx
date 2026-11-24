@@ -167,7 +167,7 @@ export default function HomeSections({ port = false }: { port?: boolean }) {
                 {t("cta.whatsapp")}
               </Button>
             </a>
-            <a href="mailto:h.a.viptransfers@gmail.com">
+            <a href="mailto:info@haviptransfers.gr">
               <Button size="lg" variant="outline" className="w-full sm:w-auto text-base px-8 md:px-10 gap-2 border-foreground/20 text-foreground hover:bg-foreground/10">
                 <Mail className="w-5 h-5" />
                 {t("cta.email")}
@@ -216,8 +216,8 @@ export default function HomeSections({ port = false }: { port?: boolean }) {
               },
               {
                 label: t("contact.email"),
-                value: "h.a.viptransfers@gmail.com",
-                href: "mailto:h.a.viptransfers@gmail.com",
+                value: "info@haviptransfers.gr",
+                href: "mailto:info@haviptransfers.gr",
                 icon: (
                   <svg viewBox="0 0 48 48" className="w-10 h-10" aria-hidden="true">
                     <path fill="#4285f4" d="M44 11.5L24 26 4 11.5V36a2 2 0 002 2h6V22l12 9 12-9v16h6a2 2 0 002-2V11.5z"/>

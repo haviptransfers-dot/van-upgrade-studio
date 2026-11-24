@@ -294,7 +294,7 @@ export default {
       "heading": "Quiénes somos",
       "paragraphs": [
         "H&A VIP Tours (H&A Tours ΕΕ, una sociedad comanditaria griega) es una empresa de traslados privados y excursiones con sede en Atenas, Grecia. Somos el responsable del tratamiento de los datos personales recogidos a través de este sitio web.",
-        "Correo electrónico: h.a.viptransfers@gmail.com",
+        "Correo electrónico: info@haviptransfers.gr",
         "Teléfono: +30 210 992 5244",
         "WhatsApp / Viber: +30 694 939 3700",
         "Dirección postal: Afroditis 66, Elliniko 167 77, Grecia."
@@ -352,13 +352,13 @@ export default {
       "heading": "Cookies",
       "paragraphs": [
         "Las funciones necesarias mantienen el sitio en funcionamiento. Incluyen el registro de tu elección sobre cookies y el funcionamiento del chat y del formulario de presupuesto (el botón del chat se muestra después de que guardes una elección de cookies, incluida «Rechazar No Esenciales»). Están disponibles en cuanto hayas hecho una elección.",
-        "Las cookies analíticas y de marketing permanecen bloqueadas hasta que pulses «Aceptar Todas» o las actives en «Gestionar». Si permites las cookies analíticas y/o de marketing, cargamos Google Analytics 4, Metricool y el script de fuentes preferidas de Google. Puedes cambiar tu elección en cualquier momento borrando el almacenamiento del navegador."
+        "Las cookies analíticas y de marketing permanecen bloqueadas hasta que pulses «Aceptar Todas» o las actives en «Gestionar». Si permites las cookies analíticas y/o de marketing, cargamos Google Analytics 4, Metricool. Puedes cambiar tu elección en cualquier momento borrando el almacenamiento del navegador."
       ]
     },
     {
       "heading": "Tus derechos (RGPD)",
       "paragraphs": [
-        "Tienes derecho a acceder, rectificar, suprimir, limitar o portar tus datos personales, a oponerte al tratamiento basado en intereses legítimos y a retirar tu consentimiento en cualquier momento (la retirada no afecta al tratamiento ya realizado). Para ejercer estos derechos, escribe a h.a.viptransfers@gmail.com. Respondemos en un plazo de 30 días.",
+        "Tienes derecho a acceder, rectificar, suprimir, limitar o portar tus datos personales, a oponerte al tratamiento basado en intereses legítimos y a retirar tu consentimiento en cualquier momento (la retirada no afecta al tratamiento ya realizado). Para ejercer estos derechos, escribe a info@haviptransfers.gr. Respondemos en un plazo de 30 días.",
         "También tienes derecho a presentar una reclamación ante la Autoridad Helénica de Protección de Datos (Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα), Kifisias 1-3, 115 23 Atenas, Grecia, www.dpa.gr, tel. +30 210 6475 600."
       ]
     }
@@ -835,7 +835,7 @@ export default {
         "title": "Cómo reservar su traslado al aeropuerto",
         "items": [
           "**WhatsApp o Viber:** escríbanos al [+30 694 939 3700](https://wa.me/306949393700) con los datos de su vuelo. Confirmamos su reserva.",
-          "**Correo electrónico:** escriba a [h.a.viptransfers@gmail.com](mailto:h.a.viptransfers@gmail.com) con su nombre, fecha, número de vuelo, destino y número de pasajeros.",
+          "**Correo electrónico:** escriba a [info@haviptransfers.gr](mailto:info@haviptransfers.gr) con su nombre, fecha, número de vuelo, destino y número de pasajeros.",
           "**Formulario online:** utilice el formulario de reserva de esta página para obtener una estimación al instante y enviar su solicitud."
         ],
         "after": [
@@ -871,6 +871,6 @@ export default {
       }
     ],
     "ctaTitle": "¿Listo para reservar?",
-    "ctaText": "Escríbanos por WhatsApp al [+30 694 939 3700](https://wa.me/306949393700) o por correo a [h.a.viptransfers@gmail.com](mailto:h.a.viptransfers@gmail.com) y confirmaremos su traslado al aeropuerto de Atenas."
+    "ctaText": "Escríbanos por WhatsApp al [+30 694 939 3700](https://wa.me/306949393700) o por correo a [info@haviptransfers.gr](mailto:info@haviptransfers.gr) y confirmaremos su traslado al aeropuerto de Atenas."
   },
 };
