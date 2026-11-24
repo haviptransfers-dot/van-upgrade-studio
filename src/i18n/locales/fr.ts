@@ -461,6 +461,7 @@ export default {
     fixedPrice: "Prix Fixe · Sans Frais Cachés",
     base: "Base",
     nightSurcharge: "Supplément Nuit",
+    pickupTime: "Heure de prise en charge",
     nightIncluded: "Tarif nuit inclus (+€20 forfait)",
     bookEmail: "Réserver par e-mail",
     email: {"subject": "Demande de réservation", "service": "Service / trajet", "passengers": "Passagers", "night": "Tarif de nuit", "yes": "Oui", "no": "Non", "price": "Prix", "dateTime": "Date et heure", "flightShip": "Vol ou bateau", "address": "Adresse de prise en charge / dépose", "name": "Nom"},

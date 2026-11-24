@@ -56,6 +56,16 @@ describe("unchanged calculator fares and customer-initiated email drafts", () =>
     expect(screen.getByText("€100")).toBeInTheDocument();
   });
 
+  it("turns night rate on only for pick-ups 00:00–04:59", async () => {
+    await calculator();
+    const time = screen.getByLabelText(en.calc.pickupTime);
+    for (const [v, on] of [["00:00", true], ["04:59", true], ["05:00", false], ["23:30", false], ["02:15", true], ["12:00", false]] as const) {
+      fireEvent.change(time, { target: { value: v } });
+      expect(screen.getByRole("switch").getAttribute("aria-checked")).toBe(String(on));
+      expect(screen.getByText(on ? "€105" : "€85")).toBeInTheDocument();
+    }
+  });
+
   it.each([
     ["sounio", 350], ["athens_sights", 180], ["port_to_athens", 55],
     ["nafplio", 500], ["meteora", 800], ["delphi", 500],

@@ -461,6 +461,7 @@ export default {
     fixedPrice: "Festpreis · Keine versteckten Kosten",
     base: "Basis",
     nightSurcharge: "Nachtzuschlag",
+    pickupTime: "Abholzeit",
     nightIncluded: "Inkl. Nachttarif (+€20 pauschal)",
     bookEmail: "Per E-Mail buchen",
     email: {"subject": "Buchungsanfrage", "service": "Service / Strecke", "passengers": "Passagiere", "night": "Nachttarif", "yes": "Ja", "no": "Nein", "price": "Preis", "dateTime": "Datum und Uhrzeit", "flightShip": "Flug oder Schiff", "address": "Abhol- / Zieladresse", "name": "Name"},

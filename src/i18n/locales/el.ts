@@ -462,6 +462,7 @@ export default {
     fixedPrice: "Σταθερή Τιμή · Χωρίς Κρυφές Χρεώσεις",
     base: "Βάση",
     nightSurcharge: "Νυχτερινή Προσαύξηση",
+    pickupTime: "Ώρα παραλαβής",
     nightIncluded: "Περιλαμβάνει νυχτερινή χρέωση (+€20 σταθερά)",
     bookEmail: "Κράτηση με email",
     email: {"subject": "Αίτημα κράτησης", "service": "Υπηρεσία / διαδρομή", "passengers": "Επιβάτες", "night": "Νυχτερινή χρέωση", "yes": "Ναι", "no": "Όχι", "price": "Τιμή", "dateTime": "Ημερομηνία και ώρα", "flightShip": "Πτήση ή πλοίο", "address": "Διεύθυνση παραλαβής / αποβίβασης", "name": "Όνομα"},

@@ -461,6 +461,7 @@ export default {
     fixedPrice: "Precio Fijo · Sin Cargos Ocultos",
     base: "Base",
     nightSurcharge: "Recargo Nocturno",
+    pickupTime: "Hora de recogida",
     nightIncluded: "Incluye tarifa nocturna (+€20 fijo)",
     bookEmail: "Reservar por email",
     email: {"subject": "Solicitud de reserva", "service": "Servicio / ruta", "passengers": "Pasajeros", "night": "Tarifa nocturna", "yes": "Sí", "no": "No", "price": "Precio", "dateTime": "Fecha y hora", "flightShip": "Vuelo o barco", "address": "Dirección de recogida / destino", "name": "Nombre"},

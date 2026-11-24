@@ -461,6 +461,7 @@ export default {
     fixedPrice: "Fixed Price · No Hidden Fees",
     base: "Base",
     nightSurcharge: "Night Surcharge",
+    pickupTime: "Pick-up time",
     nightIncluded: "Includes night rate (+€20 flat)",
     bookEmail: "Book by email",
     email: {"subject": "Booking request", "service": "Service / route", "passengers": "Passengers", "night": "Night rate", "yes": "Yes", "no": "No", "price": "Price", "dateTime": "Date and time", "flightShip": "Flight or ship", "address": "Pick-up / drop-off address", "name": "Name"},

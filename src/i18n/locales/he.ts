@@ -461,6 +461,7 @@ export default {
     fixedPrice: "מחיר קבוע · ללא עלויות נסתרות",
     base: "בסיס",
     nightSurcharge: "תוספת לילה",
+    pickupTime: "שעת איסוף",
     nightIncluded: "כולל תעריף לילה (+€20 קבוע)",
     bookEmail: "הזמנה במייל",
     email: {"subject": "בקשת הזמנה", "service": "שירות / מסלול", "passengers": "נוסעים", "night": "תעריף לילה", "yes": "כן", "no": "לא", "price": "מחיר", "dateTime": "תאריך ושעה", "flightShip": "טיסה או אונייה", "address": "כתובת איסוף / הורדה", "name": "שם"},

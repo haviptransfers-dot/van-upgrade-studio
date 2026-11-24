@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { MessageCircle, Minus, Plus, Moon, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { calculatorEmailUrl } from "@/lib/calculatorBooking";
+import { calculatorEmailUrl, isNightPickup } from "@/lib/calculatorBooking";
 
 type ServiceKey =
   | "airport_to_athens"
@@ -43,6 +43,8 @@ const PriceCalculator = ({ hideChildSeats = false }: { hideChildSeats?: boolean 
   const [service, setService] = useState<ServiceKey>("airport_to_athens");
   const [pax, setPax] = useState(2);
   const [night, setNight] = useState(false);
+  const [pickupTime, setPickupTime] = useState("");
+  const onTime = (v: string) => { setPickupTime(v); setNight(isNightPickup(v)); };
 
   const services: { key: ServiceKey; label: string }[] = [
     { key: "airport_to_athens", label: `✈ → 🏛 ${t("calc.services.airport_to_athens")}` },
@@ -74,11 +76,11 @@ const PriceCalculator = ({ hideChildSeats = false }: { hideChildSeats?: boolean 
   }, [service, pax, night, isFixed]);
 
   const whatsappMsg = encodeURIComponent(
-    `Hi! I'd like to book: ${t(`calc.services.${service}`)} · ${pax} pax${night ? " · Night" : ""} · €${total}${isTour ? ` ${t("calc.perVehicle")}` : ""}`
+    `Hi! I'd like to book: ${t(`calc.services.${service}`)} · ${pax} pax${pickupTime ? ` · ${pickupTime}` : ""}${night ? " · Night" : ""} · €${total}${isTour ? ` ${t("calc.perVehicle")}` : ""}`
   );
   const whatsappUrl = `https://wa.me/306949393700?text=${whatsappMsg}`;
   const emailUrl = calculatorEmailUrl(
-    { service: t(`calc.services.${service}`), passengers: pax, night, total },
+    { service: t(`calc.services.${service}`), passengers: pax, night, total, time: pickupTime },
     t("calc.email", { returnObjects: true }) as Parameters<typeof calculatorEmailUrl>[1],
   );
 
@@ -117,6 +119,20 @@ const PriceCalculator = ({ hideChildSeats = false }: { hideChildSeats?: boolean 
               </button>
             ))}
           </div>
+        </div>
+
+        {/* Pick-up time */}
+        <div className="bg-background border border-border rounded-md p-4 md:p-6 mb-4">
+          <label htmlFor="calc-pickup-time" className="block text-[10px] tracking-[0.2em] uppercase text-primary mb-3">
+            {t("calc.pickupTime")}
+          </label>
+          <input
+            id="calc-pickup-time"
+            type="time"
+            value={pickupTime}
+            onChange={(e) => onTime(e.target.value)}
+            className="w-full bg-background border border-border rounded-sm px-3 py-2 text-foreground"
+          />
         </div>
 
         {/* Passengers */}

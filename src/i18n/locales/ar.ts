@@ -461,6 +461,7 @@ export default {
     fixedPrice: "سعر ثابت · بدون رسوم خفية",
     base: "أساسي",
     nightSurcharge: "رسوم ليلية",
+    pickupTime: "وقت الاستلام",
     nightIncluded: "يشمل التعرفة الليلية (+€20 ثابتة)",
     bookEmail: "احجز عبر البريد الإلكتروني",
     email: {"subject": "طلب حجز", "service": "الخدمة / المسار", "passengers": "الركاب", "night": "التعرفة الليلية", "yes": "نعم", "no": "لا", "price": "السعر", "dateTime": "التاريخ والوقت", "flightShip": "الرحلة الجوية أو السفينة", "address": "عنوان الاستلام / التوصيل", "name": "الاسم"},

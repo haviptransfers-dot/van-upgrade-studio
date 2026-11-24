@@ -461,6 +461,7 @@ export default {
     fixedPrice: "Prezzo Fisso · Nessun Costo Nascosto",
     base: "Base",
     nightSurcharge: "Supplemento Notturno",
+    pickupTime: "Orario di prelievo",
     nightIncluded: "Include tariffa notturna (+€20 fisso)",
     bookEmail: "Prenota via email",
     email: {"subject": "Richiesta di prenotazione", "service": "Servizio / percorso", "passengers": "Passeggeri", "night": "Tariffa notturna", "yes": "Sì", "no": "No", "price": "Prezzo", "dateTime": "Data e ora", "flightShip": "Volo o nave", "address": "Indirizzo di partenza / arrivo", "name": "Nome"},

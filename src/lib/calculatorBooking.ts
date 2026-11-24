@@ -18,6 +18,7 @@ export function calculatorEmailUrl(selection: {
   passengers: number;
   night: boolean;
   total: number;
+  time?: string;
 }, labels: BookingLabels) {
   const subject = `${labels.subject}: ${selection.service}`;
   const body = [
@@ -26,7 +27,7 @@ export function calculatorEmailUrl(selection: {
     `${labels.night}: ${selection.night ? labels.yes : labels.no}`,
     `${labels.price}: €${selection.total}`,
     "",
-    `${labels.dateTime}:`,
+    `${labels.dateTime}:${selection.time ? ` ${selection.time}` : ""}`,
     "",
     `${labels.flightShip}:`,
     "",
@@ -35,4 +36,9 @@ export function calculatorEmailUrl(selection: {
     `${labels.name}:`,
   ].join("\n");
   return `mailto:info@haviptransfers.gr?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+/** Night rate applies to pick-ups from 00:00 to 04:59 ("HH:MM"). */
+export function isNightPickup(time: string) {
+  const h = Number(time.split(":")[0]);
+  return /^\d{2}:\d{2}$/.test(time) && h >= 0 && h < 5;
 }
