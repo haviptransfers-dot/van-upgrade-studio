@@ -266,8 +266,8 @@ export default function HomeSections({ port = false }: { port?: boolean }) {
               },
               {
                 label: "YouTube",
-                value: "@hatoursltdtransfers",
-                href: "https://www.youtube.com/@HATOURSLTDtransfers",
+                value: "H&A Tours EE | Athens Transfers",
+                href: "https://www.youtube.com/@HATOURSATHENS",
                 icon: (
                   <svg viewBox="0 0 24 24" className="w-10 h-10" aria-hidden="true">
                     <path fill="#FF0000" d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19C0 8.09 0 12 0 12s0 3.91.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14C24 15.91 24 12 24 12s0-3.91-.5-5.81z"/>

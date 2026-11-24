@@ -22,7 +22,7 @@ export const organization = {
   address: { "@type": "PostalAddress", streetAddress: "Afroditis 66", addressLocality: "Elliniko", postalCode: "167 77", addressCountry: "GR" },
   areaServed: [{ "@type": "City", name: "Athens" }, { "@type": "Country", name: "Greece" }],
   aggregateRating: { "@type": "AggregateRating", ratingValue: RATING, bestRating: 5, worstRating: 1, reviewCount: REVIEW_COUNT, ratingCount: REVIEW_COUNT },
-  sameAs: ["https://maps.google.com/maps?cid=7557080036042762342", "https://www.youtube.com/@HATOURSLTDtransfers", "https://www.instagram.com/antonhs_ieronymakhs", "https://www.facebook.com/profile.php?id=61590718264708", "https://www.tiktok.com/@hatoursathens"],
+  sameAs: ["https://maps.google.com/maps?cid=7557080036042762342", "https://www.youtube.com/@HATOURSATHENS", "https://www.instagram.com/antonhs_ieronymakhs", "https://www.facebook.com/profile.php?id=61590718264708", "https://www.tiktok.com/@hatoursathens"],
 };
 
 export const servicePages = [
