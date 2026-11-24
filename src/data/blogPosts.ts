@@ -334,7 +334,7 @@ export const blogPosts: BlogPost[] = [
           "Bus X96: 90–120 minutes, €6 per person, very limited luggage space",
           "Taxi sedan: 45–70 minutes, €54–€75 plus possible extras, maximum 3 suitcases; groups need 2 taxis",
           "Private Mercedes Vito VIP — H&A Tours: 45–60 minutes, €100 for 1–4 passengers / €110 for 5–7 passengers, one large suitcase per person plus hand luggage",
-          "Night rate (22:00–06:00): +€10 per person",
+          "Night rate (00:00–05:00): +€20 per trip",
         ],
       },
       {
@@ -364,7 +364,7 @@ export const blogPosts: BlogPost[] = [
           "Door-to-gate service: we drop you exactly at your ship's gate, not merely at the port entrance. Piraeus stretches for roughly 2 km, and gate E12 is far from E2.",
           "Fits all your luggage: our Mercedes Vito VIP is configured for cruise travel — up to 7 passengers, with one large 23 kg suitcase per person plus cabin bags.",
           "No stress on arrival: your driver waits in Arrivals with your name, flight tracking is included, you receive 60 minutes of free waiting time, and flight delays carry no extra charge.",
-          "Fixed and clear price: €100 for 1–4 passengers and €110 for 5–7 passengers. There are no hidden fees and tolls are included. The night rate is +€10 per person.",
+          "Fixed and clear price: €100 for 1–4 passengers and €110 for 5–7 passengers. There are no hidden fees and tolls are included. The night rate is +€20 per trip.",
         ],
       },
       {

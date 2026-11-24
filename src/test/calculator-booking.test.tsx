@@ -41,14 +41,19 @@ describe("unchanged calculator fares and customer-initiated email drafts", () =>
     expect(email.searchParams.get("body")).toContain(`${en.calc.email.passengers}: 7`);
   });
 
-  it("adds exactly €10 per passenger at night without changing the base fare", async () => {
+  it("adds a flat €20 night surcharge regardless of passengers", async () => {
     await calculator();
     fireEvent.click(screen.getByRole("switch"));
     expect(screen.getByText("€105")).toBeInTheDocument();
-    fireEvent.click(screen.getByRole("button", { name: en.seoUi.uiTranslations["Increase passengers"] }));
-    expect(screen.getByText("€115")).toBeInTheDocument();
+    const inc = screen.getByRole("button", { name: en.seoUi.uiTranslations["Increase passengers"] });
+    fireEvent.click(inc); fireEvent.click(inc);
+    expect(screen.getByText("€105")).toBeInTheDocument();
+    fireEvent.click(inc);
+    expect(screen.getByText("€120")).toBeInTheDocument();
+    for (let i = 0; i < 5; i++) fireEvent.click(inc);
+    expect(screen.getByText("€120")).toBeInTheDocument();
     fireEvent.click(screen.getByRole("switch"));
-    expect(screen.getByText("€85")).toBeInTheDocument();
+    expect(screen.getByText("€100")).toBeInTheDocument();
   });
 
   it.each([

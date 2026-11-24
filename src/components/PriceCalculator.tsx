@@ -69,7 +69,7 @@ const PriceCalculator = ({ hideChildSeats = false }: { hideChildSeats?: boolean 
       const tier = tieredPrices[service];
       baseVal = tier ? (pax <= 4 ? tier.upTo4 : tier.fiveToSeven) : 0;
     }
-    const nExtra = night ? pax * 10 : 0;
+    const nExtra = night ? 20 : 0;
     return { base: baseVal, nightExtra: nExtra, total: baseVal + nExtra };
   }, [service, pax, night, isFixed]);
 
