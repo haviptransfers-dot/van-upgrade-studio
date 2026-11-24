@@ -25,6 +25,6 @@ describe("Athens tour article image alts", () => {
   });
 
   it("keeps the Facebook page name in the Contact section unchanged", () => {
-    expect(readFileSync("src/components/HomeSections.tsx", "utf8")).toContain('value: "H&A Tours Ltd"');
+    expect(readFileSync("src/components/HomeSections.tsx", "utf8")).toContain('value: "H&A Tours ΕΕ"');
   });
 });

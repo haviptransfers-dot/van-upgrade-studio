@@ -277,7 +277,7 @@ export default function HomeSections({ port = false }: { port?: boolean }) {
               },
               {
                 label: "Facebook",
-                value: "H&A Tours Ltd",
+                value: "H&A Tours ΕΕ",
                 href: "https://www.facebook.com/profile.php?id=61590718264708",
                 icon: (
                   <svg viewBox="0 0 24 24" className="w-10 h-10" aria-hidden="true">
