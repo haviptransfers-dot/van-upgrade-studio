@@ -1,7 +1,8 @@
 import cover from "../assets/nafplio-van-vip-800.webp.asset.json";
 import map from "../assets/route-athens-nafplio-map-800.webp.asset.json";
+import { hostedImageUrl } from "../lib/mediaUrl";
 
-const hosted = (url: string) => `https://van-move-boost.lovable.app${url}`;
+const hosted = hostedImageUrl;
 
 export const nafplioPost = {
   slug: "athens-to-nafplio-private-tour",
@@ -11,6 +12,7 @@ export const nafplioPost = {
   keywords: "nafplio private tour, athens to nafplio transfer, private day trip nafplio",
   excerpt: "A private Mercedes Vito VIP day journey from Athens to Nafplio, with a relaxed old-town visit and optional Corinth Canal, Mycenae and Epidaurus stops.",
   image: hosted(cover.url),
+  socialImage: "https://haviptransfers.gr/static-media/nafplio-van-vip-1200.webp",
   imageAlt: "Private Mercedes Vito VIP in Nafplio with Bourtzi view",
   map: hosted(map.url),
   mapAlt: "Road map Athens to Nafplio route 135km",

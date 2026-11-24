@@ -64,12 +64,11 @@ describe("sitemap.xml automated checks", () => {
     expect(changed).toHaveLength(8 + Object.keys(pageDates).length);
     for (const [, loc, date] of changed) {
       const path = loc.replace(DOMAIN, "");
-      if (path.includes("/blog/child-car-seats-private-transfers-greece/")) expect(date).toBe("2026-11-12");
+      if (path.includes("/blog/child-car-seats-private-transfers-greece/")) expect(date).toBe("2026-11-24");
       else expect(pageDates[path]).toBe(date);
     }
-    expect(pageDates["/airport-transfer-athens/"]).toBe("2026-11-12");
-    // Privacy pages were rewritten on 2026-11-23; every sitemap URL still carries a lastmod date.
-    expect(pageDates["/privacy-policy/"]).toBe("2026-11-23");
+    expect(pageDates["/airport-transfer-athens/"]).toBe("2026-11-24");
+    expect(pageDates["/privacy-policy/"]).toBe("2026-11-24");
   });
 });
 

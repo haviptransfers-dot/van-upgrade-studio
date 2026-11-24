@@ -29,8 +29,8 @@ function performanceHtml() {
         .replace("<!-- ORGANIZATION_SCHEMA -->", `<script id="organization-structured-data" type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", ...organization })}</script>`)
         .replaceAll("setTimeout(function () {", "window.scheduleNonCritical(function () {")
         .replaceAll("}, 3000);", "});")
-        .replace("<!-- Google Preferred Sources button script -->", `<script>${nonCriticalScheduler}</script><!-- Google Preferred Sources button script -->`)
-        .replace("<!-- HERO_PRELOAD -->", `<link rel="preconnect" href="https://van-move-boost.lovable.app" crossorigin /><link rel="preload" as="image" href="${heroDelivery.src}" imagesrcset="${heroDelivery.srcSet}" imagesizes="${heroDelivery.sizes}" type="image/webp" fetchpriority="high" />`)
+        .replace("<!-- NON_CRITICAL_SCHEDULER -->", `<script>${nonCriticalScheduler}</script>`)
+        .replace("<!-- HERO_PRELOAD -->", `<link rel="preload" as="image" href="${heroDelivery.src}" imagesrcset="${heroDelivery.srcSet}" imagesizes="${heroDelivery.sizes}" type="image/webp" fetchpriority="high" />`)
         .replace("<!-- CRITICAL_CSS -->", `${fontPreloads}<style>${critical}</style>`)
         .replace("<!-- FIRST_SCREEN -->", `<div id="first-screen">${screen}</div>`)
         .replace(/<link\b[^>]*rel="stylesheet"[^>]*>/g, (tag) => {

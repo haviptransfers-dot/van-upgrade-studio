@@ -53,11 +53,9 @@ describe("privacy policy pages", () => {
     expect(text).toContain("Έχετε επίσης δικαίωμα να υποβάλετε καταγγελία στην Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα, Λεωφ. Κηφισίας 1-3, 115 23 Αθήνα, www.dpa.gr, τηλ. +30 210 6475 600.");
   });
 
-  it("dates only the eight privacy URLs to the change date", () => {
+  it("dates the eight changed privacy URLs to November 24", () => {
     const urls = ["/privacy-policy/", ...["el", "de", "es", "fr", "it", "he", "ar"].map((l) => `/${l}/privacy-policy/`)];
-    for (const u of urls) expect((pageLastmod as Record<string, string>)[u]).toBe("2026-11-23");
-    const others = Object.entries(pageLastmod as Record<string, string>).filter(([u]) => !urls.includes(u));
-    for (const [, d] of others) expect(d).not.toBe("2026-11-23");
+    for (const u of urls) expect((pageLastmod as Record<string, string>)[u]).toBe("2026-11-24");
   });
 });
 

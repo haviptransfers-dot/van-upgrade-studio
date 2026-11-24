@@ -28,10 +28,15 @@ import chauffeurVsTaxiAthens from "@/assets/chauffeur-vs-taxi-athens.jpg.asset.j
 import nightArrivalAirportTransfer from "@/assets/night-arrival-airport-transfer.jpg.asset.json";
 import { blogPostTranslations, type BlogPostTranslation } from "./blogPostTranslations";
 import { nafplioPost } from "./nafplio";
+import imageManifest from "@/assets/imageManifest.json";
+import { hostedImageUrl } from "@/lib/mediaUrl";
 
-const ASSET_HOST = "https://van-move-boost.lovable.app";
-
-const hostedAssetUrl = (asset: { url: string }) => `${ASSET_HOST}${asset.url}`;
+const hostedAssetUrl = (asset: { url: string }) => {
+  const filename = asset.url.split("/").pop() ?? "";
+  const entry = (imageManifest as Record<string, { variants: { url: string; width: number }[] }>)[filename];
+  const cover = entry?.variants.find((variant) => variant.width === 1200) ?? entry?.variants[entry.variants.length - 1];
+  return `https://haviptransfers.gr${hostedImageUrl(cover?.url ?? asset.url)}`;
+};
 
 export interface BlogSection {
   faq?: boolean;
@@ -51,6 +56,7 @@ export interface BlogPost {
   title: string;
   excerpt: string;
   image: string;
+  socialImage?: string;
   imageAlt: string;
   date: string; // ISO
   metaTitle: string;

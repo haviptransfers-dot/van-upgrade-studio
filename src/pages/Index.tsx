@@ -7,7 +7,7 @@ import { Phone, ChevronDown, MessageCircle, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import TrustBadge from "@/components/TrustBadge";
-import { heroDelivery } from "@/lib/heroDelivery";
+import { heroDelivery, hostedImageUrl } from "@/lib/heroDelivery";
 import DeferredSection from "@/components/DeferredSection";
 import ClickToChat from "@/components/ClickToChat";
 import { useAfterFirstPaint } from "@/hooks/use-after-first-paint";
@@ -31,7 +31,7 @@ const SiteFooter = lazy(() => import("@/components/SiteFooter"));
 
 const heroCycleImages = [
   heroSunsetCar,
-  `https://van-move-boost.lovable.app${vanAcropolisChauffeur.url}`,
+  hostedImageUrl(vanAcropolisChauffeur.url),
   tourAcropolis,
   tourSounio,
   fleetTrio,

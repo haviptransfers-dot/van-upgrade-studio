@@ -10,6 +10,7 @@ import ServiceContent from "@/components/ServiceContent";
 import RelatedTravelLinks from "@/components/RelatedTravelLinks";
 import TrustBadge from "@/components/TrustBadge";
 import SiteFooter from "@/components/SiteFooter";
+import { REVIEW_COUNT, RATING } from "@/data/reviewFacts";
 import interiorImg from "@/assets/fleet-vito.webp";
 import bgServices from "@/assets/showcase-1.webp";
 import bgWhy from "@/assets/showcase-2.webp";
@@ -60,7 +61,7 @@ export default function HomeSections({ port = false }: { port?: boolean }) {
     { icon: Shield, title: t("why.items.licensed.title"), desc: t("why.items.licensed.desc") },
     { icon: Users, title: t("why.items.passengers.title"), desc: t("why.items.passengers.desc") },
     { icon: Clock, title: t("why.items.available.title"), desc: t("why.items.available.desc") },
-    { icon: Star, title: t("why.items.rated.title"), desc: t("why.items.rated.desc") },
+    { icon: Star, title: t("why.items.rated.title"), desc: t("why.items.rated.desc", { count: REVIEW_COUNT, rating: RATING.toFixed(1).replace(".", t("why.ratingDecimal")) }) },
   ];
 
   const fleetFeatures = t("fleet.features", { returnObjects: true }) as string[];
@@ -115,6 +116,7 @@ export default function HomeSections({ port = false }: { port?: boolean }) {
                   </li>
                 ))}
               </motion.ul>
+              <p className="text-sm text-muted-foreground mt-4"><a href="#contact" className="hover:text-primary underline underline-offset-4">{t("fleet.largerGroup")}</a></p>
               <DeferredSection placeholderClass="min-h-[80px]"><FleetArticleLinks /></DeferredSection>
             </motion.div>
           </div>
@@ -234,7 +236,7 @@ export default function HomeSections({ port = false }: { port?: boolean }) {
               {
                 label: t("contact.based"),
                 value: t("contact.location"),
-                href: "#",
+                href: "https://maps.google.com/maps?cid=7557080036042762342",
                 icon: (
                   <svg viewBox="0 0 24 24" className="w-10 h-10" aria-hidden="true">
                     <path fill="#ef4444" d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/>
@@ -265,7 +267,7 @@ export default function HomeSections({ port = false }: { port?: boolean }) {
               {
                 label: "YouTube",
                 value: "@hatoursltdtransfers",
-                href: "https://youtube.com/@hatoursltdtransfers?si=pu05tl68ZLWd9v2K",
+                href: "https://www.youtube.com/@HATOURSLTDtransfers",
                 icon: (
                   <svg viewBox="0 0 24 24" className="w-10 h-10" aria-hidden="true">
                     <path fill="#FF0000" d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19C0 8.09 0 12 0 12s0 3.91.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14C24 15.91 24 12 24 12s0-3.91-.5-5.81z"/>
@@ -296,7 +298,7 @@ export default function HomeSections({ port = false }: { port?: boolean }) {
                   </div>
                 </div>
               ) : c.href ? (
-                <a key={c.label} href={c.href} className="bg-card border border-border rounded-lg p-5 md:p-6 text-center hover:border-primary/40 transition-colors block overflow-hidden">
+                <a key={c.label} href={c.href} target={c.href === "https://maps.google.com/maps?cid=7557080036042762342" ? "_blank" : undefined} rel={c.href === "https://maps.google.com/maps?cid=7557080036042762342" ? "noopener noreferrer" : undefined} className="bg-card border border-border rounded-lg p-5 md:p-6 text-center hover:border-primary/40 transition-colors block overflow-hidden">
                   <div className="flex justify-center mb-3">{c.icon}</div>
                   <p className="text-sm text-muted-foreground mb-1">{c.label}</p>
                   <p className="font-medium text-foreground text-sm break-all">{c.value}</p>

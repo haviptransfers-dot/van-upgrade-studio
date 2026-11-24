@@ -7,7 +7,11 @@ type Renderer = { renderPage(path: string): Promise<{ body: string; head: string
 export async function multilingualHtml(template: string, pathname: string, renderer: Renderer) {
   const language = languageFromPath(pathname);
   const { body, head } = await renderer.renderPage(pathname);
-  const cleaned = template
+  // Article-owned social covers replace the homepage fallback, not accompany it.
+  const pageTemplate = head.includes('property="og:image"')
+    ? template.replace(/<meta\b(?=[^>]*(?:property=["']og:image(?::(?:width|height|alt))?["']|name=["']twitter:image["']))[^>]*>/gi, "")
+    : template;
+  const cleaned = pageTemplate
     .replace(/<title\b[^>]*>[\s\S]*?<\/title>/gi, "")
     .replace(/<meta\b(?=[^>]*(?:name=["'](?:description|twitter:title|twitter:description)["']|property=["']og:(?:title|description|url|locale|type)["']))[^>]*>/gi, "")
     .replace(/<link\b(?=[^>]*rel=["'](?:canonical|alternate)["'])[^>]*>/gi, "")

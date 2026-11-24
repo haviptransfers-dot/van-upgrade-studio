@@ -2,8 +2,9 @@ import { MAX_PASSENGERS } from "@/lib/languagePaths";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { MessageCircle, Minus, Plus, Moon } from "lucide-react";
+import { MessageCircle, Minus, Plus, Moon, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { calculatorEmailUrl } from "@/lib/calculatorBooking";
 
 type ServiceKey =
   | "airport_to_athens"
@@ -76,6 +77,10 @@ const PriceCalculator = ({ hideChildSeats = false }: { hideChildSeats?: boolean 
     `Hi! I'd like to book: ${t(`calc.services.${service}`)} · ${pax} pax${night ? " · Night" : ""} · €${total}${isTour ? ` ${t("calc.perVehicle")}` : ""}`
   );
   const whatsappUrl = `https://wa.me/306949393700?text=${whatsappMsg}`;
+  const emailUrl = calculatorEmailUrl(
+    { service: t(`calc.services.${service}`), passengers: pax, night, total },
+    t("calc.email", { returnObjects: true }) as Parameters<typeof calculatorEmailUrl>[1],
+  );
 
   return (
     <section id="calculator" className="py-16 md:py-24 px-4 bg-card">
@@ -141,14 +146,16 @@ const PriceCalculator = ({ hideChildSeats = false }: { hideChildSeats?: boolean 
               {t("calc.maxPax")}
             </p>
 
-            <div className="flex items-center justify-between mt-4 pt-4 border-t border-border">
-              <span className="text-[10px] tracking-[0.15em] uppercase text-muted-foreground flex items-center gap-1">
-                <Moon className="w-3 h-3" /> {t("calc.nightRate")}
+            <div className="flex items-center justify-between gap-3 mt-4 pt-4 border-t border-border">
+              <span className="text-sm text-foreground flex items-center gap-2">
+                <Moon className="w-4 h-4 shrink-0" /> {t("calc.nightRate")}
               </span>
               <button
                 onClick={() => setNight((n) => !n)}
-                className={`relative w-12 h-6 rounded-full transition-colors ${night ? "bg-primary" : "bg-muted"}`}
-                aria-label="Toggle night rate"
+                className={`relative w-12 h-6 shrink-0 rounded-full transition-colors ${night ? "bg-primary" : "bg-muted"}`}
+                role="switch"
+                aria-checked={night}
+                aria-label={t("calc.nightRate")}
               >
                 <span
                   className={`absolute top-0.5 left-0.5 w-5 h-5 rounded-full transition-transform ${
@@ -161,14 +168,16 @@ const PriceCalculator = ({ hideChildSeats = false }: { hideChildSeats?: boolean 
         )}
 
         {isFixed && (
-          <div className="bg-background border border-border rounded-md p-4 md:p-6 mb-4 flex items-center justify-between">
-            <span className="text-[10px] tracking-[0.15em] uppercase text-muted-foreground flex items-center gap-1">
-              <Moon className="w-3 h-3" /> {t("calc.nightRate")}
+          <div className="bg-background border border-border rounded-md p-4 md:p-6 mb-4 flex items-center justify-between gap-3">
+            <span className="text-sm text-foreground flex items-center gap-2">
+              <Moon className="w-4 h-4 shrink-0" /> {t("calc.nightRate")}
             </span>
             <button
               onClick={() => setNight((n) => !n)}
-              className={`relative w-12 h-6 rounded-full transition-colors ${night ? "bg-primary" : "bg-muted"}`}
-              aria-label="Toggle night rate"
+              className={`relative w-12 h-6 shrink-0 rounded-full transition-colors ${night ? "bg-primary" : "bg-muted"}`}
+              role="switch"
+              aria-checked={night}
+              aria-label={t("calc.nightRate")}
             >
               <span
                 className={`absolute top-0.5 left-0.5 w-5 h-5 rounded-full transition-transform ${
@@ -181,12 +190,11 @@ const PriceCalculator = ({ hideChildSeats = false }: { hideChildSeats?: boolean 
 
         {/* Result */}
         <div className="rounded-md p-5 md:p-7 text-center border border-primary bg-gradient-to-br from-primary/10 to-background">
-          <p className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-2">
-            {t("calc.estimated")}
-          </p>
           <div className="font-display text-4xl md:text-5xl text-primary leading-none mb-1">€{total}</div>
+          {night && <p className="text-sm text-foreground mt-2 mb-2">{t("calc.nightIncluded")}</p>}
           <p className="text-[10px] tracking-[0.15em] uppercase text-muted-foreground mb-6">
-            {night ? `${t("calc.base")} €${base} + ${t("calc.nightSurcharge")} €${nightExtra}` : t("calc.fixedPrice")}
+            {t("calc.fixedPrice")}
+            {night && ` · ${t("calc.base")} €${base} + ${t("calc.nightSurcharge")} €${nightExtra}`}
             {isTour && ` · ${t("calc.perVehicle")}`}
           </p>
           <a
@@ -199,6 +207,9 @@ const PriceCalculator = ({ hideChildSeats = false }: { hideChildSeats?: boolean 
               {t("calc.bookWhatsapp")}
             </Button>
           </a>
+          <Button asChild variant="outline" className="w-full mt-3 gap-2 py-5 md:py-6 text-sm border-foreground/20 text-foreground hover:bg-foreground/10">
+            <a href={emailUrl}><Mail className="w-4 h-4" />{t("calc.bookEmail")}</a>
+          </Button>
           <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 mt-4">
             {(t("calc.includes", { returnObjects: true }) as string[]).slice(0, hideChildSeats ? -1 : undefined).map((item) => (
               <span key={item} className="text-[9px] tracking-[0.15em] uppercase text-muted-foreground">

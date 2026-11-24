@@ -1,12 +1,11 @@
 import OptimizedImage from "@/components/OptimizedImage";
+import { hostedImageUrl } from "@/lib/mediaUrl";
 import { motion } from "framer-motion";
 import { Baby, Car, MessageCircle, ShieldCheck, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 
 import vanAthensChildSeat from "@/assets/van-athens-child-seat.jpg.asset.json";
-
-const ASSET_HOST = "https://van-move-boost.lovable.app";
 
 const WHATSAPP_URL = "https://wa.me/306949393700";
 
@@ -80,7 +79,7 @@ const ChildSeats = () => {
             className="h-72 sm:h-96"
           >
             <OptimizedImage
-              src={`${ASSET_HOST}${vanAthensChildSeat.url}`}
+              src={hostedImageUrl(vanAthensChildSeat.url)}
               alt={t("seoUi.childPhotoAlts.0")}
               loading="lazy"
               decoding="async"

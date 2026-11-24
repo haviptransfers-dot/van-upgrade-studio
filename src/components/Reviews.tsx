@@ -1,10 +1,7 @@
 import { Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
-import { hostedImageUrl } from "./OptimizedImage";
-import review1 from "@/assets/review-1.webp.asset.json";
-import review2 from "@/assets/review-2.webp.asset.json";
-import review3 from "@/assets/review-3.webp.asset.json";
+import { RATING } from "@/data/reviewFacts";
 
 const GOOGLE_REVIEWS_URL =
   "https://www.google.com/maps/place/H%26A+Tours+EE+%E2%80%93+VIP+VAN+Transfers+Athens+%2F+Airport+Transfer/@37.8984517,23.7510804,15z/data=!4m8!3m7!1s0x14a1bf29f6b3d8db:0x68e02440ef866866!8m2!3d37.895034!4d23.7553906!9m1!1b1!16s%2Fg%2F11xkp5z_zr";
@@ -12,31 +9,23 @@ const GOOGLE_REVIEWS_URL =
 const reviews = [
   {
     name: "Janine Yalda",
-    flag: "🇺🇸",
     country: "USA",
     text: "Excellent service from start to finish. Very reliable, professional, and helpful. Communication was great, the driver was on time, friendly, and made everything stress-free. Clean vehicle and smooth ride. I highly recommend this company and would definitely use them again.",
-    date: "6 weeks ago",
   },
   {
-    name: "Ioannis Androulakis",
-    flag: "🇬🇷",
-    country: "Greece",
-    text: "Exceptional service. Great accessories and luxurious van. Very polite and informative driver. Very good English. I took their telephone number to have direct communication on short notice. Thank you Antonis!!!",
-    date: "2 months ago",
+    name: "Alya",
+    country: "",
+    text: "H&A Tours EE Athens — Highly Recommended!\nOne of the best car services we’ve used on our travels, and their prices were excellent!\nThe cars were new, spotless, with Wi-Fi, water, and sweets provided.\nWe had Paul for two days and Alex for our last day. Both were wonderful! Polite, patient, helpful, and so accommodating, even when we made last-minute changes to our plans.\nI arranged everything directly with Antonis, who was incredibly responsive. And when I say available 24/7, I mean it! Even at 5 or 6 in the morning, he would reply within 30 minutes. Very impressive!\nA big thank you to Antonis, Paul, and Alex for looking after us so well. We will definitely book with you again on our next visit to Athens!",
   },
   {
     name: "Zbigniew Adamczak",
-    flag: "🇵🇱",
     country: "Poland",
     text: "The transfer to the airport went very smoothly and without any problems. The driver was punctual, polite, and professional, and the car was clean and comfortable. The entire journey was calm and stress-free — especially important before a flight. Highly recommended.",
-    date: "6 weeks ago",
   },
 
 ];
 
 export { default as TrustBadge } from "./TrustBadge";
-
-const snapshots = [review1, review2, review3];
 
 const Reviews = () => {
   const { t } = useTranslation();
@@ -61,7 +50,7 @@ const Reviews = () => {
           {/* Big rating block */}
           <div className="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-6 py-4 md:py-5">
             <div className="text-center sm:text-left">
-              <span className="font-display text-4xl md:text-5xl font-medium text-foreground">5.0</span>
+              <span className="font-display text-4xl md:text-5xl font-medium text-foreground">{RATING.toFixed(1)}</span>
               <p className="text-sm text-muted-foreground">{t("seoUi.uiTranslations.out of 5")}</p>
             </div>
             <div className="w-px h-12 bg-border hidden sm:block" />
@@ -79,9 +68,17 @@ const Reviews = () => {
 
         {/* Review cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 mb-12 md:mb-16">
-          {reviews.map((review, i) => (
-            <a key={review.name} href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener noreferrer" className="block" aria-label={`Read ${review.name}'s review on Google`}>
-              <img src={hostedImageUrl(snapshots[i].url)} width={i === 1 ? 348 : 347} height={320} loading="lazy" decoding="async" className="w-full h-auto rounded-lg" alt={`${review.name}, ${review.country}, 5 out of 5 stars: ${review.text}`} />
+          {reviews.map((review) => (
+            <a key={review.name} href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener noreferrer" lang="en" dir="ltr" className="flex flex-col bg-card border border-border rounded-lg p-6 hover:border-primary/40 transition-colors" aria-label={`Read ${review.name}'s review on Google`}>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="w-10 h-10 shrink-0 rounded-full bg-secondary text-primary flex items-center justify-center font-semibold" aria-hidden="true">{review.name.charAt(0)}</span>
+                <div><p className="font-semibold text-sm text-foreground">{review.name}</p>{review.country && <p className="text-xs text-muted-foreground">{review.country}</p>}</div>
+              </div>
+              <div className="flex gap-1 mb-4 text-primary" aria-label="5 out of 5 stars">
+                {Array.from({ length: 5 }, (_, i) => <svg key={i} viewBox="0 0 24 24" className="w-4 h-4 fill-current" aria-hidden="true"><path d="m12 2 3.09 6.26 6.91 1-5 4.88 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.88 6.91-1L12 2Z" /></svg>)}
+              </div>
+              <blockquote className="text-sm leading-relaxed text-foreground/80 whitespace-pre-line mb-5">“{review.text}”</blockquote>
+              <span className="text-xs text-muted-foreground mt-auto">Google</span>
             </a>
           ))}
         </div>

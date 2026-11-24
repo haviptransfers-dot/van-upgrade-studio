@@ -333,9 +333,9 @@ export default {
       "paragraphs": [
         "אנו משתמשים במעבדי המידע או בנמענים הבאים, בהיקף השירותים שאתר זה משתמש בהם בפועל:",
         "- Netlify, Inc.‎ — אחסון האתר.",
-        "- Lovable — כלי בניית האתר והפצת תוכן. תמונות, גופנים (Montserrat ו-Playfair Display) ושמע רקע אופציונלי מוגשים מ-van-move-boost.lovable.app.",
+        "- Lovable — כלי בניית האתר והפצת תוכן. תמונות, גופנים ושמע רקע אופציונלי מוגשים מהדומיין שלנו (באחסון Netlify).",
         "- Supabase — עוזר הבינה המלאכותית משתמש בספק שירותי בינה מלאכותית באמצעות Supabase. הודעות מהעוזר ומטופס הצעת המחיר / ההזמנה נשלחות ל-Supabase Edge Functions שלנו (‎/functions/v1/chat ו-‎/functions/v1/send-lead-email). פונקציות אלה מאוחסנות בארצות הברית (אזור us-east-1).",
-        "- Google — Google Analytics 4‎ (מזהה מדידה G-1K40KS1TVB); Gmail לדוא״ל העסקי שלנו; קישורים לפרופיל העסק שלנו ב-Google Maps; וסקריפט המקורות המועדפים / בעלי האתרים של Google (news.google.com/swg).",
+        "- Google — Google Analytics 4‎ (מזהה מדידה G-1K40KS1TVB); Gmail לדוא״ל העסקי שלנו; קישורים לפרופיל העסק שלנו ב-Google Maps.",
         "- Metricool — ניתוח נתוני האתר (סקריפט מ-tracker.metricool.com), רק לאחר שנתתם הסכמה לעוגיות.",
         "- Meta Platforms — WhatsApp, כאשר אתם בוחרים לפנות אלינו שם.",
         "- Rakuten Viber — כאשר אתם בוחרים לפנות אלינו דרך Viber.",
@@ -409,8 +409,9 @@ export default {
   },
   fleet: {
     eyebrow: "הצי שלנו",
-    title: "מרצדס Vito VIP",
-    desc: "נסעו בנוחות מרבית עם המרצדס Vito VIP שלנו, הבחירה המובחרת. פנים עור מרווחים, בקרת אקלים, Wi-Fi חינם ומים בכל נסיעה.",
+    title: "Mercedes Vito VIP",
+    desc: "נסעו בנוחות מרבית עם ה-Mercedes Vito VIP שלנו, הבחירה המובחרת. פנים עור מרווחים, בקרת אקלים, Wi-Fi חינם ומים בכל נסיעה.",
+    largerGroup: "נוסעים בקבוצה גדולה יותר? צרו איתנו קשר לרכבים נוספים.",
     features: [
       "עד 7 נוסעים",
       "מושבי עור ותאורת אווירה",
@@ -423,11 +424,12 @@ export default {
   why: {
     eyebrow: "למה H&A Tours",
     title: "למה לבחור בנו",
+    ratingDecimal: ".",
     items: {
       licensed: { title: "מורשים ומבוטחים", desc: "שירות נהג מקצועי מורשה במלואו" },
       passengers: { title: "7 נוסעים", desc: "מרצדס Vito VIP מרווח לקבוצות ומשפחות" },
       available: { title: "זמינים 24/7", desc: "שירות מסביב לשעון, בוקר מוקדם ולילה מאוחר" },
-      rated: { title: "דירוג 5 כוכבים", desc: "מאות נוסעים מרוצים מכל העולם" },
+      rated: { title: "דירוג 5 כוכבים", desc: "דירוג {{rating}} בגוגל מתוך {{count}} ביקורות" },
     },
   },
   cta: {
@@ -454,15 +456,21 @@ export default {
     passengers: "נוסעים",
     maxPax: "Mercedes Vito VIP · עד 7 נוסעים",
     nightRate: "תעריף לילה (22:00 – 06:00) +€10/אדם",
-    estimated: "מחיר משוער",
     perVehicle: "לרכב",
     fixedPrice: "מחיר קבוע · ללא עלויות נסתרות",
     base: "בסיס",
     nightSurcharge: "תוספת לילה",
+    nightIncluded: "כולל תעריף לילה (+€10/אדם)",
+    bookEmail: "הזמנה במייל",
+    email: {"subject": "בקשת הזמנה", "service": "שירות / מסלול", "passengers": "נוסעים", "night": "תעריף לילה", "yes": "כן", "no": "לא", "price": "מחיר", "dateTime": "תאריך ושעה", "flightShip": "טיסה או אונייה", "address": "כתובת איסוף / הורדה", "name": "שם"},
     bookWhatsapp: "הזמנה בוואטסאפ",
     askOther: "שאלו על נסיעות וסיורים נוספים",
     askOtherMsg: "שלום! ברצוני לשאול על נסיעות וסיורים נוספים.",
     services: {
+      nafplio: "סיור בנאפפליו",
+      meteora: "סיור במטאורה",
+      delphi: "סיור בדלפי",
+
       airport_to_athens: "משדה התעופה לאתונה",
       athens_to_airport: "מאתונה לשדה התעופה",
       port_to_athens: "מפיראוס לאתונה",

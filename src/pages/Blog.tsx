@@ -92,14 +92,6 @@ const Blog = () => {
           <Link to="/privacy-policy" className="text-xs text-muted-foreground hover:text-primary transition-colors">
             {t("footer.privacy")}
           </Link>
-          <a
-            href="https://www.google.com/preferences/source?q=haviptransfers.gr"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-muted-foreground hover:text-primary transition-colors"
-          >
-            {t("preferredSources.footerLink")}
-          </a>
         </div>
       </footer>
     </div>

@@ -333,9 +333,9 @@ export default {
       "paragraphs": [
         "نستعين بجهات المعالجة أو المستلمين التالية، وذلك في حدود الخدمات التي يستخدمها هذا الموقع فعلياً:",
         "- Netlify, Inc.‎ — استضافة الموقع.",
-        "- Lovable — منصة إنشاء الموقع وتوصيل المحتوى. تُقدَّم الصور والخطوط (Montserrat وPlayfair Display) والصوت الخلفي الاختياري من van-move-boost.lovable.app.",
+        "- Lovable — منصة إنشاء الموقع وتوصيل المحتوى. تُقدَّم الصور والخطوط والصوت الخلفي الاختياري من نطاقنا الخاص (باستضافة Netlify).",
         "- Supabase — يستخدم مساعد الذكاء الاصطناعي مزوّد خدمة ذكاء اصطناعي عبر Supabase. تُرسَل الرسائل من المساعد ومن نموذج عرض السعر / الحجز إلى Supabase Edge Functions الخاصة بنا (‎/functions/v1/chat و‎/functions/v1/send-lead-email). وتُستضاف هذه الوظائف في الولايات المتحدة (المنطقة us-east-1).",
-        "- Google — Google Analytics 4‎ (معرّف القياس G-1K40KS1TVB)؛ وGmail لبريدنا الإلكتروني التجاري؛ وروابط إلى ملفنا التجاري على Google Maps؛ وسكربت المصادر المفضلة / الناشرين من Google (news.google.com/swg).",
+        "- Google — Google Analytics 4‎ (معرّف القياس G-1K40KS1TVB)؛ وGmail لبريدنا الإلكتروني التجاري؛ وروابط إلى ملفنا التجاري على Google Maps.",
         "- Metricool — تحليلات الموقع (سكربت من tracker.metricool.com)، فقط بعد منحك الموافقة على ملفات تعريف الارتباط.",
         "- Meta Platforms — WhatsApp، عندما تختار التواصل معنا عبره.",
         "- Rakuten Viber — عندما تختار التواصل معنا عبر Viber.",
@@ -409,8 +409,9 @@ export default {
   },
   fleet: {
     eyebrow: "أسطولنا",
-    title: "مرسيدس Vito VIP",
-    desc: "سافر براحة قصوى مع مرسيدس Vito VIP، الخيار الفاخر. مقصورة جلدية واسعة، تكييف، Wi-Fi مجاني ومياه في كل رحلة.",
+    title: "Mercedes Vito VIP",
+    desc: "سافر براحة قصوى مع Mercedes Vito VIP، الخيار الفاخر. مقصورة جلدية واسعة، تكييف، Wi-Fi مجاني ومياه في كل رحلة.",
+    largerGroup: "تسافرون ضمن مجموعة أكبر؟ تواصلوا معنا للحصول على مركبات إضافية.",
     features: [
       "حتى 7 ركاب",
       "مقاعد جلدية وإضاءة محيطية",
@@ -423,11 +424,12 @@ export default {
   why: {
     eyebrow: "لماذا H&A Tours",
     title: "لماذا تختارنا",
+    ratingDecimal: ".",
     items: {
       licensed: { title: "مرخصون ومؤمن عليهم", desc: "خدمة سائق محترفة ومرخصة بالكامل" },
       passengers: { title: "7 ركاب", desc: "مرسيدس Vito VIP الفسيحة للمجموعات والعائلات" },
       available: { title: "متاح 24/7", desc: "خدمة على مدار الساعة، صباحًا باكرًا وليلًا متأخرًا" },
-      rated: { title: "تقييم 5 نجوم", desc: "مئات المسافرين الراضين من جميع أنحاء العالم" },
+      rated: { title: "تقييم 5 نجوم", desc: "تقييم {{rating}} على Google من {{count}} مراجعة" },
     },
   },
   cta: {
@@ -454,15 +456,21 @@ export default {
     passengers: "الركاب",
     maxPax: "Mercedes Vito VIP · حتى 7 ركاب",
     nightRate: "تعرفة ليلية (22:00 – 06:00) +€10/شخص",
-    estimated: "السعر التقديري",
     perVehicle: "لكل مركبة",
     fixedPrice: "سعر ثابت · بدون رسوم خفية",
     base: "أساسي",
     nightSurcharge: "رسوم ليلية",
+    nightIncluded: "يشمل التعرفة الليلية (+€10/شخص)",
+    bookEmail: "احجز عبر البريد الإلكتروني",
+    email: {"subject": "طلب حجز", "service": "الخدمة / المسار", "passengers": "الركاب", "night": "التعرفة الليلية", "yes": "نعم", "no": "لا", "price": "السعر", "dateTime": "التاريخ والوقت", "flightShip": "الرحلة الجوية أو السفينة", "address": "عنوان الاستلام / التوصيل", "name": "الاسم"},
     bookWhatsapp: "احجز عبر واتساب",
     askOther: "اسأل عن رحلات وجولات أخرى",
     askOtherMsg: "مرحبًا! أود السؤال عن رحلات وجولات أخرى.",
     services: {
+      nafplio: "جولة نافبليو",
+      meteora: "جولة ميتيورا",
+      delphi: "جولة دلفي",
+
       airport_to_athens: "من المطار إلى أثينا",
       athens_to_airport: "من أثينا إلى المطار",
       port_to_athens: "من بيريوس إلى أثينا",

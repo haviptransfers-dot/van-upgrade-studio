@@ -1,7 +1,8 @@
 import mobile from "../assets/riviera-home-480.webp.asset.json";
 import desktop from "../assets/riviera-home-800.webp.asset.json";
+import { hostedImageUrl } from "./mediaUrl";
+export { hostedImageUrl } from "./mediaUrl";
 
-export const hostedImageUrl = (url: string) => url.startsWith("/") ? `https://van-move-boost.lovable.app${url}` : url;
 export const heroDelivery = {
   src: hostedImageUrl(desktop.url),
   srcSet: `${hostedImageUrl(mobile.url)} 480w, ${hostedImageUrl(desktop.url)} 800w`,

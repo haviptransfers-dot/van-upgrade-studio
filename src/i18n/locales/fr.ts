@@ -333,9 +333,9 @@ export default {
       "paragraphs": [
         "Nous faisons appel aux sous-traitants ou destinataires suivants, limités aux services réellement utilisés par ce site :",
         "- Netlify, Inc. — hébergement du site.",
-        "- Lovable — outil de création du site et diffusion de contenu. Les images, les polices (Montserrat et Playfair Display) et l’audio d’ambiance facultatif sont servis depuis van-move-boost.lovable.app.",
+        "- Lovable — outil de création du site et diffusion de contenu. Les images, les polices et l’audio d’ambiance facultatif sont servis depuis notre propre domaine (hébergé par Netlify).",
         "- Supabase — l’assistant IA utilise un fournisseur de services d’IA via Supabase. Les messages de l’assistant et du formulaire de devis / réservation sont envoyés à nos Supabase Edge Functions (/functions/v1/chat et /functions/v1/send-lead-email). Ces fonctions sont hébergées aux États-Unis (région us-east-1).",
-        "- Google — Google Analytics 4 (ID de mesure G-1K40KS1TVB) ; Gmail pour notre messagerie professionnelle ; liens vers notre fiche d’établissement sur Google Maps ; et le script de sources préférées / éditeurs de Google (news.google.com/swg).",
+        "- Google — Google Analytics 4 (ID de mesure G-1K40KS1TVB) ; Gmail pour notre messagerie professionnelle ; liens vers notre fiche d’établissement sur Google Maps.",
         "- Metricool — analyse du site (script de tracker.metricool.com), uniquement après votre consentement aux cookies.",
         "- Meta Platforms — WhatsApp, lorsque vous choisissez de nous y contacter.",
         "- Rakuten Viber — lorsque vous choisissez de nous contacter via Viber.",
@@ -411,6 +411,7 @@ export default {
     eyebrow: "Notre Flotte",
     title: "Mercedes Vito VIP",
     desc: "Voyagez dans un confort ultime avec notre Mercedes Vito VIP — le choix premium des voyageurs exigeants. Intérieur cuir spacieux, climatisation, Wi-Fi et eau offerts à chaque trajet.",
+    largerGroup: "Vous voyagez en groupe plus nombreux ? Contactez-nous pour des véhicules supplémentaires.",
     features: [
       "Jusqu'à 7 passagers",
       "Sièges en cuir et éclairage d'ambiance",
@@ -423,11 +424,12 @@ export default {
   why: {
     eyebrow: "Pourquoi H&A Tours",
     title: "Pourquoi nous choisir",
+    ratingDecimal: ".",
     items: {
       licensed: { title: "Licencié & Assuré", desc: "Service de chauffeur professionnel entièrement licencié" },
       passengers: { title: "7 Passagers", desc: "Mercedes Vito VIP spacieux pour groupes et familles" },
       available: { title: "Disponible 24/7", desc: "Service en continu, tôt le matin et tard le soir" },
-      rated: { title: "Noté 5 Étoiles", desc: "Des centaines de voyageurs satisfaits du monde entier" },
+      rated: { title: "Noté 5 Étoiles", desc: "Noté {{rating}} sur Google ({{count}} avis)" },
     },
   },
   cta: {
@@ -453,16 +455,22 @@ export default {
     selectService: "Choisir le Service",
     passengers: "Passagers",
     maxPax: "Mercedes Vito VIP · Jusqu’à 7 passagers",
-    nightRate: "Tarif Nuit (22:00 – 06:00) +€10/personne",
-    estimated: "Prix Estimé",
+    nightRate: "Tarif nuit (22:00 – 06:00) +€10/personne",
     perVehicle: "par véhicule",
     fixedPrice: "Prix Fixe · Sans Frais Cachés",
     base: "Base",
     nightSurcharge: "Supplément Nuit",
+    nightIncluded: "Tarif nuit inclus (+€10/personne)",
+    bookEmail: "Réserver par e-mail",
+    email: {"subject": "Demande de réservation", "service": "Service / trajet", "passengers": "Passagers", "night": "Tarif de nuit", "yes": "Oui", "no": "Non", "price": "Prix", "dateTime": "Date et heure", "flightShip": "Vol ou bateau", "address": "Adresse de prise en charge / dépose", "name": "Nom"},
     bookWhatsapp: "Réserver via WhatsApp",
     askOther: "Demander d'autres trajets & tours",
     askOtherMsg: "Bonjour ! Je voudrais me renseigner sur d'autres trajets et tours.",
     services: {
+      nafplio: "Excursion à Nauplie",
+      meteora: "Excursion aux Météores",
+      delphi: "Excursion à Delphes",
+
       airport_to_athens: "Aéroport vers Athènes",
       athens_to_airport: "Athènes vers Aéroport",
       port_to_athens: "Le Pirée vers Athènes",

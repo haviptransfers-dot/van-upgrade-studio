@@ -6,17 +6,17 @@
 
 - Interpolate each tour's localized duration field into its duration FAQ answer and reuse the localized per-vehicle qualifier only for tour prices; this prevents conflicting duplicate values without changing transfer pricing or page metadata.
 
-- Use the generated image manifest through OptimizedImage and DeferredBackground for responsive WebP delivery; this keeps intrinsic sizes and optimized variants consistent across pages. Resolve hosted image pointers through the stable published asset origin so direct local preview tests also render CDN photos.
+- Use the image manifest through OptimizedImage and DeferredBackground, resolving hosted pointers to identical public/static-media copies; this keeps sizes/srcsets unchanged and serves media on the site origin. Article/social images use absolute same-domain optimized WebP covers.
 - Keep non-homepage routes and non-English language resources dynamically imported; visitors should not download unrelated page or language content.
 - Keep the persistent music control in its own Suspense boundary and exclude unused template UI/test files from Tailwind scanning; noncritical controls must not blank the page or add unused utilities.
 - Defer below-fold homepage modules until they approach the viewport; load chat only through the click-to-chat boundary and reveal floating WhatsApp after both the hero paint and a timer-or-scroll gate, so unrelated interactions cannot load chat or interrupt the hero.
 - Keep the homepage section tree and slideshow animation engine behind separate lazy boundaries; animate the first photo with CSS and activate lower content only at the viewport or a matching navigation anchor, reducing first-screen React work without removing animations.
 - Load the homepage tour dropdown implementation on its first click, keeping its initial trigger identical; this avoids executing menu dependencies before they are needed.
 - Share the small hero delivery module between HTML preload and initial image rendering; keep the complete image manifest behind below-fold imports so unrelated image metadata does not delay the homepage.
-- Store the three review-card snapshots as lazy hosted images with full review text alternatives; this removes runtime review-card animation without losing readable review content.
+- Render owner-supplied reviews as HTML text cards without Review schema; shared REVIEW_COUNT and RATING keep localized feature text and Organization aggregateRating synchronized.
 - Preserve the production Metricool snippet verbatim; schedule third-party tracking through a separate staggered idle wrapper after initial rendering, rather than executing all trackers together or altering their tracking code.
 - Render a generated homepage first-screen snapshot with extracted critical CSS before React mounts; keep its markup and CSS aligned with hero/navigation changes to avoid visual shifts on handover. Load the complete stylesheet non-blockingly and mount React once it is ready.
-- Serve the existing font families from hosted WOFF2 subset pointers with swap and preload the exact Latin heading/body subsets, eliminating external font-stylesheet requests and late font discovery without changing typography.
+- Serve existing font families from same-domain WOFF2 copies with swap and exact Latin subset preloads, avoiding external requests without changing typography.
 - Deliver speed-critical Blog articles as build-generated static HTML through a Vite plugin with matching development middleware; this avoids React bootstrap while keeping Blog and RSS metadata shared.
 - Keep AI discovery documents as static public files, not React routes; Lovable serves them before SPA fallback, while the existing Netlify deployment needs discovery exclusions before its wildcard redirect.
 - Generate the sitemap from explicit public routes and the existing blog catalog at build time and in development; lastmod comes only from recorded page-specific change dates (src/data/pageLastmod.json per localized URL, articleLastmod.json per article) in both sitemap generators, never from build time.
@@ -35,6 +35,7 @@
 - Keep the child-seat article’s localized body, metadata and CTA in its dedicated data record; derive its FAQ schema from the displayed FAQ sections so question and answer text cannot drift.
 
 - Email the business only for booking requests that pass the shared name/email/phone rules, validated in the browser and again in send-lead-email, with reply_to set to the customer; chat questions are stored without email, so no notification arrives without contact details.
+- Calculator email booking is a localized mailto draft using the current selection and fare, never an automatic notification; existing forms stay separate.
 - Publish twitter:description on Helmet-owned pages only for paths listed per language in src/lib/twitterDescription.ts; owner-reviewed metadata rolls out page by page without altering unreviewed pages.
 - Keep About meta text in preferredSources.metaDescription when it differs from the visible support paragraph, falling back to supportText; search snippets can be shortened without editing page copy.
 - Build internal and language-switch hrefs with linkPath (localized, exactly one trailing slash) so links match canonical URLs; keep localizedPath slashless because route matching and static generation depend on it.

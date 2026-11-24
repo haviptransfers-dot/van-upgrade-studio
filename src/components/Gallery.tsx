@@ -1,4 +1,5 @@
 import OptimizedImage from "@/components/OptimizedImage";
+import { hostedImageUrl } from "@/lib/mediaUrl";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import gallery1 from "@/assets/gallery-1.webp";
@@ -11,8 +12,6 @@ import airportPickupVan from "@/assets/airport-pickup-van.jpg.asset.json";
 import driverHandshake from "@/assets/driver-handshake-airport.jpg.asset.json";
 import vanAthensChildSeat from "@/assets/van-athens-child-seat.jpg.asset.json";
 import vitoVipLookCollage from "@/assets/mercedes-vito-vip-look-collage.jpg.asset.json";
-
-const ASSET_HOST = "https://van-move-boost.lovable.app";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -30,10 +29,10 @@ const images: { src: string; alt: string; fit?: string }[] = [
   { src: gallery4, alt: "H&A Tours van with Athens Acropolis view" },
   { src: gallery5, alt: "Mercedes Vito VIP open sliding door showing cognac leather seats with ambient lighting" },
   { src: gallery6, alt: "Mercedes Vito VIP interior with diamond-stitched black leather seats and blue ambient floor lighting" },
-  { src: `${ASSET_HOST}${airportPickupVan.url}`, alt: "H&A Tours chauffeur opening the Mercedes Vito VIP door for a traveler with luggage at Athens Airport" },
-  { src: `${ASSET_HOST}${driverHandshake.url}`, alt: "H&A Tours driver welcoming a client with a handshake at Athens Airport, Acropolis in the background" },
-  { src: `${ASSET_HOST}${vitoVipLookCollage.url}`, alt: "H&A Tours Mercedes Vito VIP presentation with exterior, interior and detail views", fit: "object-contain bg-background" },
-  { src: `${ASSET_HOST}${vanAthensChildSeat.url}`, alt: "Mother securing her child in a child seat inside the Mercedes Vito VIP, Acropolis in the background" },
+  { src: hostedImageUrl(airportPickupVan.url), alt: "H&A Tours chauffeur opening the Mercedes Vito VIP door for a traveler with luggage at Athens Airport" },
+  { src: hostedImageUrl(driverHandshake.url), alt: "H&A Tours driver welcoming a client with a handshake at Athens Airport, Acropolis in the background" },
+  { src: hostedImageUrl(vitoVipLookCollage.url), alt: "H&A Tours Mercedes Vito VIP presentation with exterior, interior and detail views", fit: "object-contain bg-background" },
+  { src: hostedImageUrl(vanAthensChildSeat.url), alt: "Mother securing her child in a child seat inside the Mercedes Vito VIP, Acropolis in the background" },
 ];
 
 const Gallery = () => {
