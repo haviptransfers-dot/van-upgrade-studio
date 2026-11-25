@@ -356,7 +356,7 @@ const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
                 <p className="font-display font-bold text-sm text-foreground">{t("chat.title")}</p>
                 <p className="text-[10px] uppercase tracking-[0.15em] text-muted-foreground">{t("chat.subtitle")}</p>
               </div>
-              <button onClick={() => setOpen(false)} className="text-muted-foreground hover:text-foreground p-1">
+              <button onClick={() => setOpen(false)} aria-label="Close AI assistant" className="text-muted-foreground hover:text-foreground p-1">
                 <X className="w-4 h-4" />
               </button>
             </div>
@@ -542,6 +542,7 @@ const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
                   />
                   <button
                     type="submit"
+                    aria-label="Send message"
                     disabled={loading || !input.trim()}
                     className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center hover:bg-primary/80 disabled:opacity-40 transition-colors"
                   >
