@@ -1,3 +1,4 @@
+import { useHomeExtra } from "@/lib/homeExtra";
 import { lazy, useEffect, type ReactNode } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -43,8 +44,9 @@ const fadeUp = {
   }),
 };
 
-export default function HomeSections({ port = false }: { port?: boolean }) {
+export default function HomeSections({ port = false, home = false }: { port?: boolean; home?: boolean }) {
   const { t } = useTranslation();
+  const homeExtra = useHomeExtra(home);
   const whatsappUrl = "https://wa.me/306949393700";
   useEffect(() => {
     const anchor = location.hash.slice(1);
@@ -75,6 +77,7 @@ export default function HomeSections({ port = false }: { port?: boolean }) {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-12 md:mb-16">
             <motion.p variants={fadeUp} custom={0} className="text-muted-foreground text-xs md:text-sm mb-3">{t("services.eyebrow")}</motion.p>
             <motion.h2 variants={fadeUp} custom={1} className="font-display text-3xl md:text-5xl font-bold">{t("services.title")}</motion.h2>
+            {homeExtra && <motion.p variants={fadeUp} custom={2} className="text-muted-foreground text-sm md:text-base leading-relaxed mt-4 max-w-3xl mx-auto">{homeExtra.servicesIntro}</motion.p>}
           </motion.div>
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
             {services.map((s, i) => (
@@ -90,7 +93,7 @@ export default function HomeSections({ port = false }: { port?: boolean }) {
         </div>
       </section>
 
-      <ServiceContent port={port} />
+      <ServiceContent port={port} home={home} />
       <RelatedTravelLinks />
 
       <DeferredSection placeholderClass="h-[240vh] min-h-[1760px] md:h-[400vh]"><Showcase /></DeferredSection>
@@ -123,11 +126,11 @@ export default function HomeSections({ port = false }: { port?: boolean }) {
         </div>
       </section>
 
-      <DeferredSection anchor="gallery" placeholderClass="min-h-[1100px]"><Gallery /></DeferredSection>
+      <DeferredSection anchor="gallery" placeholderClass="min-h-[1100px]"><Gallery home={home} /></DeferredSection>
       <DeferredSection anchor="calculator"><PriceCalculator /></DeferredSection>
       <DeferredSection placeholderClass="min-h-[100px]"><PaymentMethods /></DeferredSection>
       <DeferredSection><ReviewsComponent /></DeferredSection>
-      <DeferredSection><FAQ /></DeferredSection>
+      <DeferredSection><FAQ home={home} /></DeferredSection>
 
       {/* Why Choose Us */}
       <section id="about" className="relative py-16 md:py-24 px-4 overflow-hidden">

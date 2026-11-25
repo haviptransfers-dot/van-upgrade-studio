@@ -1,3 +1,5 @@
+import { useHomeExtra } from "@/lib/homeExtra";
+import Link from "@/components/LocalizedLink";
 import OptimizedImage from "@/components/OptimizedImage";
 import { hostedImageUrl } from "@/lib/mediaUrl";
 import { motion } from "framer-motion";
@@ -35,8 +37,9 @@ const images: { src: string; alt: string; fit?: string }[] = [
   { src: hostedImageUrl(vanAthensChildSeat.url), alt: "Mother securing her child in a child seat inside the Mercedes Vito VIP, Acropolis in the background" },
 ];
 
-const Gallery = () => {
+const Gallery = ({ home = false }: { home?: boolean }) => {
   const { t } = useTranslation();
+  const homeExtra = useHomeExtra(home);
   return (
   <section id="gallery" className="py-16 md:py-24 px-4">
     <div className="container mx-auto max-w-6xl">
@@ -47,7 +50,7 @@ const Gallery = () => {
         className="text-center mb-12 md:mb-16"
       >
         <motion.p variants={fadeUp} custom={0} className="text-primary uppercase tracking-[0.2em] text-xs md:text-sm mb-3">
-          {t("gallery.eyebrow")}
+          {homeExtra ? <Link to="/blog/mercedes-vito-vip-chauffeur-service-athens">{t("gallery.eyebrow")}</Link> : t("gallery.eyebrow")}
         </motion.p>
         <motion.h2 variants={fadeUp} custom={1} className="font-display text-3xl md:text-5xl font-bold">
           {t("gallery.title")}

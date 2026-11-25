@@ -21,6 +21,7 @@ import tourNafplio from "@/assets/tour-nafplio.webp";
 import heroSunsetCar from "@/assets/hero-sunset-car.webp";
 import fleetTrio from "@/assets/fleet-trio.webp";
 import vanAcropolisChauffeur from "@/assets/van-acropolis-chauffeur.jpg.asset.json";
+import { useHomeExtra } from "@/lib/homeExtra";
 
 const AnimatedBackground = lazy(() => import("@/components/AnimatedBackground"));
 const HomeSections = lazy(() => import("@/components/HomeSections"));
@@ -50,6 +51,7 @@ const Index = ({ routeKey }: IndexProps) => {
   const { t, i18n } = useTranslation();
   // The airport page keeps the site header and footer but has its own dedicated body instead of the homepage sections.
   const airport = routeKey === "airport";
+  const homeExtra = useHomeExtra(!routeKey);
   const sectionHref = (id: string) => airport ? `${linkPath("/", i18n.language)}#${id}` : `#${id}`;
   const whatsappUrl = "https://wa.me/306949393700";
   const [toursMenuReady, setToursMenuReady] = useState(false);
@@ -193,7 +195,7 @@ const Index = ({ routeKey }: IndexProps) => {
           <p
             className="home-hero-eyebrow text-foreground text-sm font-medium"
           >
-            {t("hero.eyebrow")}
+            {homeExtra?.eyebrow ?? t("hero.eyebrow")}
           </p>
           <h1
             className="home-hero-title font-display font-medium"
@@ -203,7 +205,7 @@ const Index = ({ routeKey }: IndexProps) => {
           <p
             className="home-hero-description text-foreground"
           >
-            {t("hero.subtitle")}
+            {homeExtra?.intro ?? t("hero.subtitle")}
           </p>
           <div
             className="home-hero-actions flex flex-wrap"
@@ -236,7 +238,7 @@ const Index = ({ routeKey }: IndexProps) => {
       </section>
 
       <DeferredSection anchor="services" anchors={["fleet", "gallery", "about", "contact", "calculator", "tours"]} rootMargin="0px" placeholderClass="min-h-[900px]">
-        <HomeSections port={routeKey === "piraeus"} />
+        <HomeSections port={routeKey === "piraeus"} home={!routeKey} />
       </DeferredSection>
       </>}
 

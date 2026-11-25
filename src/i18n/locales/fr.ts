@@ -195,7 +195,7 @@ export default {
 },
   seoContent: {
   "homeTitle": "Transferts VIP Athènes | Transferts Privés Aéroport et Ports | H&A",
-  "homeDescription": "Transferts VIP privés à Athènes : aéroport ATH et Pirée, Mercedes Vito VIP jusqu’à 7 passagers, sièges enfants inclus sur demande, accueil. Contact WhatsApp.",
+  "homeDescription": "Transferts VIP privés et visites à Athènes : aéroport ATH et Pirée, Mercedes Vito VIP jusqu’à 7 passagers, sièges enfants inclus sur demande. Contact WhatsApp.",
   "homeH1": "Transferts VIP à Athènes",
   "piraeusTitle": "Transfert Port du Pirée | Transfert Privé vers l’Aéroport d’Athènes",
   "piraeusDescription": "Transferts privés du Pirée vers l’aéroport d’Athènes, les hôtels et le centre. Mercedes Vito VIP jusqu’à 7 passagers, accueil et sièges enfants sur demande.",
@@ -422,6 +422,23 @@ export default {
     ],
   },
   gallery: { eyebrow: "Notre Véhicule", title: "Galerie Photo" },
+  homeExtra: {
+    "eyebrow": "Transferts VIP privés à Athènes et en Grèce",
+    "intro": "Découvrez la Grèce avec style dans notre Mercedes Vito VIP. Transferts aéroport, prises en charge au port, visites privées et transport VIP à Athènes et dans toute la Grèce, jusqu’à 7 passagers.",
+    "servicesIntro": "H&A VIP Tours propose des transferts VIP à Athènes — prises en charge à l’aéroport et au port, transferts hôtels et visites privées en Grèce.",
+    "airportPhrase": "aéroport international d’Athènes (ATH)",
+    "portWord": "Pirée",
+    "faq": [
+      {
+        "q": "Qu’est-ce qu’un transfert VIP à Athènes ?",
+        "a": "Un transfert VIP à Athènes est un trajet privé en Mercedes Vito VIP, avec votre propre chauffeur professionnel. H&A VIP Tours dessert l’aéroport d’Athènes (ATH), le Pirée et d’autres ports, les hôtels et les visites privées en Grèce, jusqu’à 7 passagers dans un même véhicule. Les sièges enfants sont inclus sur demande."
+      },
+      {
+        "q": "Proposez-vous aussi des visites VIP, en plus des transferts ?",
+        "a": "Oui. En plus des transferts aéroport et port, nous organisons des visites privées à Delphes, aux Météores, à Nauplie et au Cap Sounion, dans le même Mercedes Vito VIP. Indiquez-nous vos projets et nous vous proposerons un itinéraire."
+      }
+    ]
+  },
   why: {
     eyebrow: "Pourquoi H&A Tours",
     title: "Pourquoi nous choisir",

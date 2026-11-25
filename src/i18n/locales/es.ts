@@ -195,7 +195,7 @@ export default {
 },
   seoContent: {
   "homeTitle": "Traslados VIP Atenas | Traslados Privados de Aeropuerto y Puerto | H&A",
-  "homeDescription": "Traslados VIP privados en Atenas: aeropuerto ATH y Pireo, Mercedes Vito VIP hasta 7 pasajeros, sillas infantiles incluidas bajo petición y recepción. WhatsApp.",
+  "homeDescription": "Traslados VIP privados y tours en Atenas: aeropuerto ATH y Pireo, Mercedes Vito VIP hasta 7 pasajeros, sillas infantiles incluidas bajo petición. WhatsApp.",
   "homeH1": "Traslados VIP en Atenas",
   "piraeusTitle": "Traslado Puerto del Pireo | Traslado Privado al Aeropuerto de Atenas",
   "piraeusDescription": "Traslados privados del Pireo al aeropuerto de Atenas, hoteles y centro. Mercedes Vito VIP hasta 7 pasajeros, recepción y sillas infantiles bajo petición.",
@@ -422,6 +422,23 @@ export default {
     ],
   },
   gallery: { eyebrow: "Nuestro Vehículo", title: "Galería de Fotos" },
+  homeExtra: {
+    "eyebrow": "Traslados VIP privados en Atenas y Grecia",
+    "intro": "Vive Grecia con estilo en nuestro Mercedes Vito VIP. Traslados al aeropuerto, recogidas en puerto, tours privados y transporte VIP en Atenas y en toda Grecia, para hasta 7 pasajeros.",
+    "servicesIntro": "H&A VIP Tours ofrece traslados VIP en Atenas — recogidas en el aeropuerto y el puerto, traslados a hoteles y tours privados por Grecia.",
+    "airportPhrase": "Aeropuerto Internacional de Atenas (ATH)",
+    "portWord": "Pireo",
+    "faq": [
+      {
+        "q": "¿Qué es un traslado VIP en Atenas?",
+        "a": "Un traslado VIP en Atenas es un viaje privado en un Mercedes Vito VIP, con su propio conductor profesional. H&A VIP Tours cubre el aeropuerto de Atenas (ATH), el Pireo y otros puertos, hoteles y tours privados en Grecia, para hasta 7 pasajeros en un solo vehículo. Las sillas infantiles están incluidas bajo petición."
+      },
+      {
+        "q": "¿Ofrecen tours VIP además de traslados?",
+        "a": "Sí. Además de los traslados al aeropuerto y al puerto, organizamos tours privados a Delfos, Meteora, Nafplio y Cabo Sunión, en el mismo Mercedes Vito VIP. Cuéntenos sus planes y le propondremos una ruta."
+      }
+    ]
+  },
   why: {
     eyebrow: "Por qué H&A Tours",
     title: "Por qué elegirnos",

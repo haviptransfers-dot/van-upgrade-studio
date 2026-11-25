@@ -195,7 +195,7 @@ export default {
 },
   seoContent: {
   "homeTitle": "Trasferimenti VIP Atene | Transfer Privati Aeroporto e Porti | H&A",
-  "homeDescription": "Transfer VIP privati ad Atene: aeroporto ATH e Pireo, Mercedes Vito VIP fino a 7 passeggeri, seggiolini inclusi su richiesta e accoglienza. Contatto WhatsApp.",
+  "homeDescription": "Transfer VIP privati e tour ad Atene: aeroporto ATH e Pireo, Mercedes Vito VIP fino a 7 passeggeri, seggiolini inclusi su richiesta. Contatto WhatsApp.",
   "homeH1": "Trasferimenti VIP ad Atene",
   "piraeusTitle": "Transfer Porto del Pireo | Transfer Privato per l’Aeroporto di Atene",
   "piraeusDescription": "Transfer privati dal Pireo all’aeroporto di Atene, hotel e centro. Mercedes Vito VIP fino a 7 passeggeri, accoglienza e seggiolini inclusi su richiesta.",
@@ -422,6 +422,23 @@ export default {
     ],
   },
   gallery: { eyebrow: "Scopri il Nostro Veicolo", title: "Galleria Fotografica" },
+  homeExtra: {
+    "eyebrow": "Trasferimenti VIP privati ad Atene e in Grecia",
+    "intro": "Vivi la Grecia con stile a bordo della nostra Mercedes Vito VIP. Transfer aeroportuali, prelievi al porto, tour privati e trasporti VIP ad Atene e in tutta la Grecia, fino a 7 passeggeri.",
+    "servicesIntro": "H&A VIP Tours offre trasferimenti VIP ad Atene — prelievi in aeroporto e al porto, transfer in hotel e tour privati in Grecia.",
+    "airportPhrase": "Aeroporto Internazionale di Atene (ATH)",
+    "portWord": "Pireo",
+    "faq": [
+      {
+        "q": "Che cos’è un transfer VIP ad Atene?",
+        "a": "Un transfer VIP ad Atene è un viaggio privato in Mercedes Vito VIP, con il vostro autista professionista. H&A VIP Tours copre l’aeroporto di Atene (ATH), il Pireo e altri porti, gli hotel e i tour privati in Grecia, fino a 7 passeggeri in un unico veicolo. I seggiolini sono inclusi su richiesta."
+      },
+      {
+        "q": "Offrite anche tour VIP, oltre ai transfer?",
+        "a": "Sì. Oltre ai transfer aeroportuali e portuali, organizziamo tour privati a Delfi, Meteora, Nafplio e Capo Sounion, nella stessa Mercedes Vito VIP. Diteci i vostri programmi e vi proporremo un itinerario."
+      }
+    ]
+  },
   why: {
     eyebrow: "Perché H&A Tours",
     title: "Perché Sceglierci",

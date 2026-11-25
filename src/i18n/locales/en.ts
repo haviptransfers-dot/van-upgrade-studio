@@ -195,7 +195,7 @@ export default {
 },
   seoContent: {
   "homeTitle": "VIP Transfers Athens | Private Airport & Port Transfers | H&A",
-  "homeDescription": "Private VIP transfers in Athens: ATH airport and Piraeus, Mercedes Vito VIP for up to 7 passengers, child seats included on request, meet & greet. WhatsApp us.",
+  "homeDescription": "Private VIP transfers and tours in Athens: ATH airport and Piraeus, Mercedes Vito VIP for up to 7 passengers, child seats included on request. WhatsApp us.",
   "homeH1": "VIP Transfers in Athens",
   "piraeusTitle": "Piraeus Port Transfer | Private Transfer Piraeus to Athens Airport",
   "piraeusDescription": "Private Piraeus transfers to Athens Airport, hotels and the city centre. Mercedes Vito VIP for up to 7 passengers, meet & greet, child seats on request.",
@@ -422,6 +422,23 @@ export default {
     ],
   },
   gallery: { eyebrow: "See Our Vehicle", title: "Photo Gallery" },
+  homeExtra: {
+    "eyebrow": "Private VIP transfers in Athens and Greece",
+    "intro": "Experience Greece in style with our Mercedes Vito VIP. Airport transfers, port pickups, private tours and VIP transportation in Athens and across Greece, for up to 7 passengers.",
+    "servicesIntro": "H&A VIP Tours provides VIP transfers in Athens — airport and port pickups, hotel transfers and private tours of Greece.",
+    "airportPhrase": "Athens International Airport (ATH)",
+    "portWord": "Piraeus",
+    "faq": [
+      {
+        "q": "What is a VIP transfer in Athens?",
+        "a": "A VIP transfer in Athens is a private ride in a Mercedes Vito VIP, with your own professional driver. H&A VIP Tours covers Athens airport (ATH), Piraeus and other ports, hotels, and private tours in Greece, for up to 7 passengers in one vehicle. Child seats are included on request."
+      },
+      {
+        "q": "Do you offer VIP tours as well as transfers?",
+        "a": "Yes. Alongside airport and port transfers, we arrange private tours to Delphi, Meteora, Nafplio and Cape Sounion, in the same Mercedes Vito VIP. Tell us your plans and we will propose a route."
+      }
+    ]
+  },
   why: {
     eyebrow: "Why H&A Tours",
     title: "Why Choose Us",

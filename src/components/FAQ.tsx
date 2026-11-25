@@ -1,3 +1,4 @@
+import { useHomeExtra } from "@/lib/homeExtra";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { HelpCircle } from "lucide-react";
@@ -17,8 +18,9 @@ const fadeUp = {
   }),
 };
 
-export default function FAQ() {
+export default function FAQ({ home = false }: { home?: boolean }) {
   const { t } = useTranslation();
+  const homeExtra = useHomeExtra(home);
 
   const faqItems = [
     { q: t("faq.items.q1"), a: t("faq.items.a1") },
@@ -29,6 +31,7 @@ export default function FAQ() {
     { q: t("faq.items.q6"), a: t("faq.items.a6") },
     { q: t("faq.items.q7"), a: t("faq.items.a7") },
     { q: t("faq.items.q8"), a: t("faq.items.a8") },
+    ...(homeExtra?.faq ?? []),
   ];
 
   const jsonLd = {
