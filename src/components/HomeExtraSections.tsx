@@ -1,4 +1,3 @@
-import { Star } from "lucide-react";
 import Link from "./LocalizedLink";
 import type { HomeExtra } from "@/lib/homeExtra";
 
@@ -21,7 +20,7 @@ function Block({ title, intro, children }: { title: string; intro: string; child
   </div></section>;
 }
 
-const Item = ({ children }: { children: React.ReactNode }) => <li className="flex items-start gap-3"><Star className="w-4 h-4 text-primary flex-shrink-0 mt-1" /><span>{children}</span></li>;
+const Item = ({ children }: { children: React.ReactNode }) => <li className="flex items-start gap-3"><span aria-hidden="true" className="text-primary flex-shrink-0 leading-6">✓</span><span>{children}</span></li>;
 
 export default function HomeExtraSections({ sections }: { sections: NonNullable<HomeExtra["sections"]> }) {
   const { included, popular, occasions } = sections;
