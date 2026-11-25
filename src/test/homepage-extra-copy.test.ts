@@ -5,8 +5,10 @@ import de from "@/i18n/locales/de";
 import es from "@/i18n/locales/es";
 import fr from "@/i18n/locales/fr";
 import it_ from "@/i18n/locales/it";
+import he from "@/i18n/locales/he";
+import ar from "@/i18n/locales/ar";
 
-const locales = { en, el, de, es, fr, it: it_ } as Record<string, any>;
+const locales = { en, el, de, es, fr, it: it_, he, ar } as Record<string, any>;
 
 describe("homepage extra copy", () => {
   for (const [lng, l] of Object.entries(locales)) {
