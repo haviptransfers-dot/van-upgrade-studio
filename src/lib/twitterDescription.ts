@@ -33,6 +33,7 @@ const TWITTER_DESCRIPTION_PAGES: Record<string, readonly string[]> = {
     "/blog/athens-private-tour-with-driver",
     "/blog/athens-to-nafplio-private-tour",
     "/blog/bachelor-bachelorette-party-transfers-greece",
+    "/blog/private-transfer-athens-airport-to-hotel",
   ],
   de: [
     "/about",
@@ -75,9 +76,11 @@ const TWITTER_DESCRIPTION_PAGES: Record<string, readonly string[]> = {
     "/blog/private-transfer-athens-multiple-suitcases",
     "/blog/private-transfer-athens-to-cape-sounio",
     "/blog/wedding-transfers-greece-mercedes-vito-vip",
+    "/blog/private-transfer-athens-airport-to-hotel",
   ],
   he: [
     "/blog/bachelor-bachelorette-party-transfers-greece",
+    "/blog/private-transfer-athens-airport-to-hotel",
   ],
   it: [
     "/about",
@@ -90,6 +93,7 @@ const TWITTER_DESCRIPTION_PAGES: Record<string, readonly string[]> = {
     "/blog/private-transfer-athens-multiple-suitcases",
     "/blog/private-transfer-athens-to-cape-sounio",
     "/blog/wedding-transfers-greece-mercedes-vito-vip",
+    "/blog/private-transfer-athens-airport-to-hotel",
   ],
 };
 
