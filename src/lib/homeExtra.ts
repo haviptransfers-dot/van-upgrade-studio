@@ -7,6 +7,11 @@ export type HomeExtra = {
   airportPhrase: string;
   portWord: string;
   faq: { q: string; a: string }[];
+  sections?: {
+    included: { title: string; intro: string; items: string[] };
+    popular: { title: string; intro: string; items: { label: string; to: string }[] };
+    occasions: { title: string; intro: string; items: string[] };
+  };
 };
 
 /** Homepage-only copy. Read without language fallback so a language without approved text keeps its current homepage. */

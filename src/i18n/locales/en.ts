@@ -436,8 +436,11 @@ export default {
       {
         "q": "Do you offer VIP tours as well as transfers?",
         "a": "Yes. Alongside airport and port transfers, we arrange private tours to Delphi, Meteora, Nafplio and Cape Sounion, in the same Mercedes Vito VIP. Tell us your plans and we will propose a route."
-      }
-    ]
+      },
+      {"q": "Do you operate 24/7?", "a": "Yes. H&A VIP Tours provides private transfers at any hour, including early-morning flights and late arrivals, in a Mercedes Vito VIP. Contact us on WhatsApp with your time."},
+      {"q": "Do you provide transfers for weddings, a night out or a bachelor or bachelorette party?", "a": "Yes. We arrange private transfers for weddings, a night out in Athens, and bachelor or bachelorette parties, in a Mercedes Vito VIP for up to 7 passengers. Tell us the date, pickup points and number of passengers and we will plan the journey."}
+    ],
+    "sections": {"included": {"title": "What's included", "intro": "Every private transfer with H&A VIP Tours includes:", "items": ["A professional English-speaking chauffeur", "A Mercedes Vito VIP for up to 7 passengers", "Meet & greet at Athens Airport (ATH) and at Piraeus Port", "A fixed price with no hidden charges", "Child seats included on request", "Luggage space for your group", "Flight and ship tracking, with 1 hour of free waiting", "Service at any hour, 24/7"]}, "popular": {"title": "Popular transfers", "intro": "Private VIP transfers and tours we run most often:", "items": [{"label": "Athens Airport (ATH)", "to": "/airport-transfer-athens"}, {"label": "Private transfer from Athens Airport to your hotel", "to": "/blog/private-transfer-athens-airport-to-hotel"}, {"label": "Piraeus Port transfer", "to": "/piraeus-port-transfer"}, {"label": "Athens city tour", "to": "/athens-city-tour"}, {"label": "Nafplio private tour", "to": "/nafplio-private-tour"}, {"label": "Delphi private tour", "to": "/delphi-private-tour"}, {"label": "Meteora private tour", "to": "/meteora-private-tour"}, {"label": "Cape Sounion tour", "to": "/cape-sounion-tour"}]}, "occasions": {"title": "For every occasion", "intro": "H&A VIP Tours arranges private transfers in a Mercedes Vito VIP for:", "items": ["Airport and port arrivals and departures.", "[Business travel](/blog/private-chauffeur-service-business-travel-athens).", "[Weddings](/blog/wedding-transfers-greece-mercedes-vito-vip).", "A night out in Athens.", "[Bachelor and bachelorette parties](/blog/bachelor-bachelorette-party-transfers-greece).", "Families travelling with children, [child seats included on request](/child-seats).", "VIP tours with a private driver."]}}
   },
   why: {
     eyebrow: "Why H&A Tours",

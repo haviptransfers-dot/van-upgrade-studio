@@ -436,8 +436,11 @@ export default {
       {
         "q": "Offrite anche tour VIP, oltre ai transfer?",
         "a": "Sì. Oltre ai transfer aeroportuali e portuali, organizziamo tour privati a Delfi, Meteora, Nafplio e Capo Sounion, nella stessa Mercedes Vito VIP. Diteci i vostri programmi e vi proporremo un itinerario."
-      }
-    ]
+      },
+      {"q": "Siete operativi 24/7?", "a": "Sì. H&A VIP Tours offre transfer privati a qualsiasi ora, anche per voli all'alba e arrivi a tarda sera, in un Mercedes Vito VIP. Contattateci su WhatsApp indicando l'orario."},
+      {"q": "Offrite transfer per matrimoni, una serata o un addio al celibato o al nubilato?", "a": "Sì. Organizziamo transfer privati per matrimoni, una serata ad Atene e addii al celibato o al nubilato, in un Mercedes Vito VIP fino a 7 passeggeri. Indicateci la data, i punti di partenza e il numero di passeggeri e pianificheremo il viaggio."}
+    ],
+    "sections": {"included": {"title": "Cosa è incluso", "intro": "Ogni transfer privato con H&A VIP Tours include:", "items": ["Un autista professionista che parla inglese", "Un Mercedes Vito VIP fino a 7 passeggeri", "Accoglienza all'aeroporto di Atene (ATH) e al porto del Pireo", "Un prezzo fisso senza costi nascosti", "Seggiolini per bambini inclusi su richiesta", "Spazio per i bagagli del vostro gruppo", "Monitoraggio di voli e navi, con 1 ora di attesa gratuita", "Servizio a qualsiasi ora, 24/7"]}, "popular": {"title": "Transfer più richiesti", "intro": "I transfer VIP privati e i tour che effettuiamo più spesso:", "items": [{"label": "Aeroporto di Atene (ATH)", "to": "/airport-transfer-athens"}, {"label": "Transfer privato dall'aeroporto di Atene al vostro hotel", "to": "/blog/private-transfer-athens-airport-to-hotel"}, {"label": "Transfer al porto del Pireo", "to": "/piraeus-port-transfer"}, {"label": "Tour di Atene", "to": "/athens-city-tour"}, {"label": "Tour privato a Nauplia", "to": "/nafplio-private-tour"}, {"label": "Tour privato a Delfi", "to": "/delphi-private-tour"}, {"label": "Tour privato alle Meteore", "to": "/meteora-private-tour"}, {"label": "Tour a Capo Sounion", "to": "/cape-sounion-tour"}]}, "occasions": {"title": "Per ogni occasione", "intro": "H&A VIP Tours organizza transfer privati in Mercedes Vito VIP per:", "items": ["Arrivi e partenze in aeroporto e al porto.", "[Viaggi di lavoro](/blog/private-chauffeur-service-business-travel-athens).", "[Matrimoni](/blog/wedding-transfers-greece-mercedes-vito-vip).", "Una serata ad Atene.", "[Addii al celibato e al nubilato](/blog/bachelor-bachelorette-party-transfers-greece).", "Famiglie in viaggio con bambini, [seggiolini per bambini inclusi su richiesta](/child-seats).", "Tour VIP con autista privato."]}}
   },
   why: {
     eyebrow: "Perché H&A Tours",

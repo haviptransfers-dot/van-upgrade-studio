@@ -9,6 +9,7 @@ import DeferredBackground from "@/components/DeferredBackground";
 import DeferredSection from "@/components/DeferredSection";
 import ServiceContent from "@/components/ServiceContent";
 import RelatedTravelLinks from "@/components/RelatedTravelLinks";
+import HomeExtraSections from "@/components/HomeExtraSections";
 import TrustBadge from "@/components/TrustBadge";
 import SiteFooter from "@/components/SiteFooter";
 import { REVIEW_COUNT, RATING } from "@/data/reviewFacts";
@@ -95,6 +96,7 @@ export default function HomeSections({ port = false, home = false }: { port?: bo
 
       <ServiceContent port={port} home={home} />
       <RelatedTravelLinks />
+      {homeExtra?.sections && <HomeExtraSections sections={homeExtra.sections} />}
 
       <DeferredSection placeholderClass="h-[240vh] min-h-[1760px] md:h-[400vh]"><Showcase /></DeferredSection>
       <DeferredSection placeholderClass="h-[60vh] min-h-[440px] md:h-screen"><PhotoWall /></DeferredSection>

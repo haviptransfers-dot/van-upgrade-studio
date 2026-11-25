@@ -13,7 +13,7 @@ const locales = { en, el, de, es, fr, it: it_, he, ar } as Record<string, any>;
 describe("homepage extra copy", () => {
   for (const [lng, l] of Object.entries(locales)) {
     it(`${lng}: two new FAQs, meta ≤160, link phrases present`, () => {
-      expect(l.homeExtra.faq).toHaveLength(2);
+      expect(l.homeExtra.faq).toHaveLength(4);
       expect(l.seoContent.homeDescription.length).toBeLessThanOrEqual(160);
       expect(l.seoContent.homeSections[0].paragraphs[0]).toContain(l.homeExtra.airportPhrase);
       expect(l.seoContent.homeSections[1].paragraphs[0]).toContain(l.homeExtra.portWord);
