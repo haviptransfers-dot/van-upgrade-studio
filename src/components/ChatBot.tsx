@@ -2,16 +2,7 @@ import OptimizedImage from "@/components/OptimizedImage";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { MAX_PASSENGERS } from "@/lib/languagePaths";
-const READY_MSG: Record<string, string> = {
-  en: "your booking request is ready to send. Please tap WhatsApp or email to complete it.",
-  el: "το αίτημα κράτησής σας είναι έτοιμο για αποστολή. Πατήστε WhatsApp ή email για να το ολοκληρώσετε.",
-  de: "Ihre Buchungsanfrage ist versandbereit. Tippen Sie auf WhatsApp oder E-Mail, um sie abzuschließen.",
-  es: "su solicitud de reserva está lista para enviar. Toque WhatsApp o correo electrónico para completarla.",
-  fr: "votre demande de réservation est prête à être envoyée. Touchez WhatsApp ou e-mail pour la finaliser.",
-  it: "la tua richiesta di prenotazione è pronta per l'invio. Tocca WhatsApp o email per completarla.",
-  he: "בקשת ההזמנה שלך מוכנה לשליחה. הקישו על WhatsApp או אימייל כדי להשלים אותה.",
-  ar: "طلب الحجز الخاص بك جاهز للإرسال. اضغط على واتساب أو البريد الإلكتروني لإكماله.",
-};
+import { bookingReadyMessage } from "@/lib/bookingReadyMessage";
 import { AnimatePresence, motion } from "framer-motion";
 import { X, Send, Loader2, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -266,7 +257,7 @@ const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
       ...prev,
       {
         role: "assistant",
-        content: (() => { const r = READY_MSG[i18n.language.split("-")[0]] ?? READY_MSG.en; return `✅ ${booking.name ? booking.name + ", " + r : r.charAt(0).toUpperCase() + r.slice(1)}`; })(),
+        content: bookingReadyMessage(i18n.language, booking.name),
       },
     ]);
   };
