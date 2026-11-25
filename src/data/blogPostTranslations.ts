@@ -37,7 +37,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       metaTitle:
         "Ιδιωτική Μεταφορά Αεροδρόμιο Αθηνών–Ξενοδοχείο | H&A VIP Transfers",
       metaDescription:
-        "Κλείστε ιδιωτική μεταφορά από το αεροδρόμιο της Αθήνας στο ξενοδοχείο σας. Mercedes Vito VIP, υποστήριξη WhatsApp 24/7, σταθερή παραλαβή, απευθείας διαδρομή.",
+        "Ιδιωτική μεταφορά από το αεροδρόμιο Αθηνών σε ξενοδοχεία στο κέντρο (Σύνταγμα, Πλάκα, Μοναστηράκι, Κουκάκι) ή στη Ριβιέρα. Mercedes Vito VIP, έως 7 επιβάτες.",
       sections: [
         {
           paragraphs: [
@@ -48,15 +48,27 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
         {
           heading: "Τι αλλάζει με μια ιδιωτική μεταφορά από το αεροδρόμιο της Αθήνας",
           paragraphs: [
-            "Το Διεθνές Αεροδρόμιο της Αθήνας βρίσκεται αρκετά μακριά από το κέντρο. Η διάρκεια της διαδρομής προς ξενοδοχείο στο Σύνταγμα, την Πλάκα, το Κολωνάκι ή τη Ριβιέρα εξαρτάται από την ώρα, την κίνηση και τον τελικό προορισμό. Γι' αυτό η εκ των προτέρων οργάνωση της μεταφοράς σας έχει πραγματική αξία, ειδικά όταν η άφιξη είναι αργά το βράδυ, νωρίς το πρωί ή στην αιχμή της τουριστικής περιόδου.",
+            "Το [Διεθνές Αεροδρόμιο της Αθήνας](https://haviptransfers.gr/airport-transfer-athens/) βρίσκεται αρκετά μακριά από το κέντρο της πόλης. Η διάρκεια της διαδρομής προς ξενοδοχείο στο Σύνταγμα, την Πλάκα, το Μοναστηράκι ή το Κουκάκι — ή πιο πέρα στην Αθηναϊκή Ριβιέρα — εξαρτάται από την ώρα, την κίνηση και τον τελικό προορισμό. Γι' αυτό η εκ των προτέρων οργάνωση της μεταφοράς σας έχει πραγματική αξία, ειδικά όταν η άφιξη είναι αργά το βράδυ, νωρίς το πρωί ή στην αιχμή της τουριστικής περιόδου.",
             "Σε μια premium ιδιωτική μεταφορά δεν χρειάζεται να διαπραγματευτείτε τη διαδρομή, να εξηγήσετε βιαστικά τη διεύθυνση ή να αναρωτιέστε αν χωρούν οι βαλίτσες σας. Τα στοιχεία της πτήσης, ο αριθμός επιβατών, οι αποσκευές και το ξενοδοχείο επιβεβαιώνονται εκ των προτέρων.",
             "Είναι ιδιαίτερα χρήσιμο για ζευγάρια που θέλουν μια ήρεμη άφιξη, οικογένειες με παιδιά και καρότσια, μικρές ομάδες με πολλές αποσκευές ή επαγγελματίες που πρέπει να βρίσκονται στο ξενοδοχείο τους χωρίς καθυστέρηση.",
           ],
         },
         {
+          heading: "Ξενοδοχεία στο κέντρο της Αθήνας",
+          paragraphs: [
+            "Οι περισσότεροι επισκέπτες πηγαίνουν από το αεροδρόμιο της Αθήνας σε ξενοδοχείο στο κέντρο της πόλης. Η H&A VIP Tours παρέχει ιδιωτική μεταφορά με Mercedes Vito VIP σε ξενοδοχεία στο Σύνταγμα, την Πλάκα, το Μοναστηράκι, το Κουκάκι και το Κολωνάκι, καθώς και σε κοντινούς δρόμους γύρω από την Ακρόπολη. Πείτε μας το όνομα ή την πλήρη διεύθυνση του ξενοδοχείου όταν κάνετε κράτηση, και ο οδηγός σας αφήνει στην είσοδο — χρήσιμο όταν έχετε αποσκευές, αργή άφιξη ή ομάδα που ταξιδεύει μαζί.",
+          ],
+        },
+        {
+          heading: "Ξενοδοχεία στην Αθηναϊκή Ριβιέρα",
+          paragraphs: [
+            "Πηγαίνουμε επίσης πιο νότια κατά μήκος της ακτής, σε ξενοδοχεία στη Γλυφάδα, τη Βουλιαγμένη και την υπόλοιπη Αθηναϊκή Ριβιέρα. Η διαδρομή είναι μεγαλύτερη από τη μεταφορά προς το κέντρο, και ο χρόνος εξαρτάται και πάλι από την κίνηση. Πείτε μας τη διεύθυνση του ξενοδοχείου και τα στοιχεία της πτήσης σας, ώστε να οργανωθεί η παραλαβή σύμφωνα με την άφιξή σας.",
+          ],
+        },
+        {
           heading: "Mercedes Vito VIP: άνεση σε κάθε λεπτομέρεια",
           paragraphs: [
-            "Η ποιότητα του οχήματος επηρεάζει το ταξίδι πολύ περισσότερο απ' όσο φαίνεται εκ πρώτης όψεως. Μια Mercedes Vito VIP προσφέρει ευρύχωρη καμπίνα, άνετα καθίσματα και πρακτικό χώρο αποσκευών. Για μια οικογένεια ή μια μικρή ομάδα, η δυνατότητα να ταξιδεύουν όλοι μαζί χωρίς συμβιβασμούς δημιουργεί αισθητά καλύτερη εμπειρία.",
+            "Η ποιότητα του οχήματος επηρεάζει το ταξίδι πολύ περισσότερο απ' όσο φαίνεται εκ πρώτης όψεως. Μια [Mercedes Vito VIP](https://haviptransfers.gr/blog/mercedes-vito-vip-chauffeur-service-athens/) προσφέρει ευρύχωρη καμπίνα, άνετα καθίσματα και πρακτικό χώρο αποσκευών. Για μια οικογένεια ή μια μικρή ομάδα, η δυνατότητα να ταξιδεύουν όλοι μαζί χωρίς συμβιβασμούς δημιουργεί αισθητά καλύτερη εμπειρία.",
             "Η άνεση δεν είναι μόνο θέμα μεγέθους. Είναι η καθαριότητα, ο κλιματισμός, η ήσυχη διαδρομή και το γεγονός ότι δεν μοιράζεστε το όχημα με αγνώστους. Η μεταφορά είναι ιδιωτική, από την παραλαβή έως την είσοδο του ξενοδοχείου σας.",
           ],
         },
@@ -71,14 +83,38 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
           heading: "Πότε η ιδιωτική μεταφορά Αεροδρόμιο Αθήνας – Ξενοδοχείο είναι η καλύτερη επιλογή;",
           paragraphs: [
             "Είναι η καλύτερη επιλογή όταν η άνεση και ο χρόνος αποτελούν προτεραιότητα. Ειδικά για βραδινές αφίξεις, οικογένειες με παιδιά, επισκέπτες που φτάνουν μετά από πτήση μεγάλης διάρκειας ή επαγγελματικά ταξίδια με προγραμματισμένες συναντήσεις.",
-            "Είναι επίσης έξυπνη λύση για όσους συνεχίζουν το ταξίδι τους από την Αθήνα προς το λιμάνι του Πειραιά, τη Ραφήνα ή άλλους προορισμούς της Αττικής.",
+            "Είναι επίσης έξυπνη λύση για όσους συνεχίζουν το ταξίδι τους από την Αθήνα προς το [λιμάνι του Πειραιά](https://haviptransfers.gr/piraeus-port-transfer/), τη Ραφήνα ή άλλους προορισμούς της Αττικής.",
           ],
         },
         {
           heading: "Πώς να κάνετε σωστή κράτηση",
           paragraphs: [
             "Χρειάζεστε: όνομα κύριου επιβάτη, ημερομηνία, ώρα και αριθμό πτήσης, προορισμό ή πλήρη διεύθυνση ξενοδοχείου, αριθμό επιβατών και αποσκευών. Αν ταξιδεύετε με παιδί, ζητήστε εκ των προτέρων το κατάλληλο παιδικό κάθισμα.",
-            "Η H&A VIP Tours εξυπηρετεί ακριβώς αυτή την ανάγκη με premium ιδιωτικές μεταφορές στην Αθήνα, Mercedes Vito VIP και απευθείας επικοινωνία μέσω WhatsApp, 24 ώρες το 24ωρο.",
+            "Η [H&A VIP Tours](https://haviptransfers.gr/) εξυπηρετεί ακριβώς αυτή την ανάγκη με premium ιδιωτικές μεταφορές στην Αθήνα, Mercedes Vito VIP και απευθείας επικοινωνία μέσω WhatsApp, 24 ώρες το 24ωρο.",
+          ],
+        },
+        {
+          heading: "Συχνές Ερωτήσεις",
+        },
+        {
+          faq: true,
+          subheading: "Παρέχετε ιδιωτική μεταφορά από το αεροδρόμιο της Αθήνας σε ξενοδοχεία στο κέντρο;",
+          paragraphs: [
+            "Ναι. Η H&A VIP Tours παρέχει ιδιωτική μεταφορά από το αεροδρόμιο της Αθήνας σε ξενοδοχεία στο κέντρο της Αθήνας, όπως στο Σύνταγμα, την Πλάκα, το Μοναστηράκι, το Κουκάκι και το Κολωνάκι, με Mercedes Vito VIP έως 7 επιβάτες. Πείτε μας το όνομα ή τη διεύθυνση του ξενοδοχείου όταν κάνετε κράτηση.",
+          ],
+        },
+        {
+          faq: true,
+          subheading: "Πηγαίνετε επίσης σε ξενοδοχεία στη Γλυφάδα ή τη Βουλιαγμένη;",
+          paragraphs: [
+            "Ναι. Μετά τα ξενοδοχεία του κέντρου, μεταφέρουμε επισκέπτες και στην Αθηναϊκή Ριβιέρα, όπως στη Γλυφάδα και τη Βουλιαγμένη. Πείτε μας τη διεύθυνση του ξενοδοχείου και τα στοιχεία της πτήσης σας και θα οργανώσουμε την παραλαβή.",
+          ],
+        },
+        {
+          faq: true,
+          subheading: "Πώς κλείνω ιδιωτική μεταφορά από το αεροδρόμιο της Αθήνας στο ξενοδοχείο μου;",
+          paragraphs: [
+            "Στείλτε μας το όνομά σας, τον αριθμό πτήσης, την ημερομηνία και την ώρα, τη διεύθυνση του ξενοδοχείου και τον αριθμό επιβατών και αποσκευών μέσω WhatsApp ή email. Αν ταξιδεύετε με παιδί, ζητήστε παιδικό κάθισμα εκ των προτέρων. Τα παιδικά καθίσματα περιλαμβάνονται κατόπιν αιτήματος.",
           ],
         },
       ],
@@ -147,7 +183,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       metaTitle:
         "Traslado Privado Aeropuerto de Atenas – Hotel | H&A VIP Transfers",
       metaDescription:
-        "Reserva un traslado privado premium del aeropuerto de Atenas a tu hotel. Mercedes Vito VIP, soporte por WhatsApp 24/7, recogida fija, ruta directa.",
+        "Traslado privado del aeropuerto de Atenas a hoteles del centro (Syntagma, Plaka, Monastiraki, Koukaki) o la Riviera. Mercedes Vito VIP, hasta 7 pasajeros.",
       sections: [
         {
           paragraphs: [
@@ -158,15 +194,27 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
         {
           heading: "Qué cambia con un traslado privado desde el aeropuerto de Atenas",
           paragraphs: [
-            "El Aeropuerto Internacional de Atenas está bastante lejos del centro. La duración del trayecto hasta un hotel en Syntagma, Plaka, Kolonaki o la Riviera depende de la hora, el tráfico y el destino final. Por eso organizar tu traslado con antelación tiene un valor real, especialmente cuando la llegada es tarde por la noche, temprano por la mañana o en plena temporada turística.",
+            "El [Aeropuerto Internacional de Atenas](https://haviptransfers.gr/airport-transfer-athens/) está bastante lejos del centro de la ciudad. La duración del trayecto hasta un hotel en Syntagma, Plaka, Monastiraki o Koukaki — o más adelante en la Riviera ateniense — depende de la hora, el tráfico y el destino final. Por eso organizar tu traslado con antelación tiene un valor real, especialmente cuando la llegada es tarde por la noche, temprano por la mañana o en plena temporada turística.",
             "En un traslado privado premium no necesitas negociar la ruta, explicar la dirección con prisa ni preguntarte si habrá espacio suficiente para tus maletas. Los datos del vuelo, el número de pasajeros, el equipaje y el hotel se confirman con antelación.",
             "Es especialmente útil para parejas que desean una llegada tranquila, familias con niños y carritos, grupos pequeños con mucho equipaje o profesionales que necesitan estar en su hotel sin retrasos.",
           ],
         },
         {
+          heading: "Hoteles en el centro de Atenas",
+          paragraphs: [
+            "La mayoría de los huéspedes van del aeropuerto de Atenas a un hotel en el centro de la ciudad. H&A VIP Tours ofrece un traslado privado en Mercedes Vito VIP a hoteles en Syntagma, Plaka, Monastiraki, Koukaki y Kolonaki, así como a calles cercanas alrededor de la Acrópolis. Indica el nombre del hotel o la dirección completa al reservar, y tu conductor te lleva a la entrada — útil cuando tienes equipaje, una llegada tardía o un grupo que viaja junto.",
+          ],
+        },
+        {
+          heading: "Hoteles en la Riviera de Atenas",
+          paragraphs: [
+            "También vamos más al sur por la costa, a hoteles en Glyfada, Vouliagmeni y el resto de la Riviera de Atenas. El trayecto es más largo que un traslado al centro, y el tiempo sigue dependiendo del tráfico. Dinos la dirección del hotel y los datos de tu vuelo para planificar la recogida en torno a tu llegada.",
+          ],
+        },
+        {
           heading: "Mercedes Vito VIP: comodidad en cada detalle",
           paragraphs: [
-            "La calidad del vehículo afecta al viaje mucho más de lo que parece a primera vista. Una Mercedes Vito VIP ofrece una cabina espaciosa, asientos cómodos y un espacio práctico para el equipaje. Para una familia o un grupo pequeño, la posibilidad de viajar todos juntos sin compromisos crea una experiencia notablemente mejor.",
+            "La calidad del vehículo afecta al viaje mucho más de lo que parece a primera vista. Una [Mercedes Vito VIP](https://haviptransfers.gr/blog/mercedes-vito-vip-chauffeur-service-athens/) ofrece una cabina espaciosa, asientos cómodos y un espacio práctico para el equipaje. Para una familia o un grupo pequeño, la posibilidad de viajar todos juntos sin compromisos crea una experiencia notablemente mejor.",
             "La comodidad no es solo cuestión de tamaño. Es limpieza, aire acondicionado, un trayecto silencioso y el hecho de no compartir el vehículo con desconocidos. El traslado es privado, desde la recogida hasta la entrada de tu hotel.",
           ],
         },
@@ -181,14 +229,38 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
           heading: "¿Cuándo es el traslado privado Aeropuerto de Atenas – Hotel la mejor opción?",
           paragraphs: [
             "Es la mejor opción cuando la comodidad y el tiempo son prioritarios. Especialmente para llegadas nocturnas, familias con niños, huéspedes que llegan tras un vuelo de larga distancia o viajes de negocios con reuniones programadas.",
-            "También es una solución inteligente para quienes continúan su viaje desde Atenas hacia el puerto de El Pireo, Rafina u otros destinos del Ática.",
+            "También es una solución inteligente para quienes continúan su viaje desde Atenas hacia el [puerto de El Pireo](https://haviptransfers.gr/piraeus-port-transfer/), Rafina u otros destinos del Ática.",
           ],
         },
         {
           heading: "Cómo hacer una reserva correcta",
           paragraphs: [
             "Necesitas: nombre del pasajero principal, fecha, hora y número de vuelo, destino o dirección completa del hotel, número de pasajeros y equipaje. Si viajas con un niño, solicita con antelación la silla infantil adecuada.",
-            "H&A VIP Tours atiende exactamente esta necesidad con traslados privados premium en Atenas, Mercedes Vito VIP y comunicación directa por WhatsApp, las 24 horas del día.",
+            "[H&A VIP Tours](https://haviptransfers.gr/) atiende exactamente esta necesidad con traslados privados premium en Atenas, Mercedes Vito VIP y comunicación directa por WhatsApp, las 24 horas del día.",
+          ],
+        },
+        {
+          heading: "Preguntas Frecuentes",
+        },
+        {
+          faq: true,
+          subheading: "¿Ofrecen un traslado privado del aeropuerto de Atenas a hoteles del centro?",
+          paragraphs: [
+            "Sí. H&A VIP Tours ofrece un traslado privado del aeropuerto de Atenas a hoteles del centro de Atenas, incluidos Syntagma, Plaka, Monastiraki, Koukaki y Kolonaki, en un Mercedes Vito VIP para hasta 7 pasajeros. Indica el nombre o la dirección del hotel al reservar.",
+          ],
+        },
+        {
+          faq: true,
+          subheading: "¿También van a hoteles en Glyfada o Vouliagmeni?",
+          paragraphs: [
+            "Sí. Después de los hoteles del centro, también llevamos a los huéspedes a la Riviera de Atenas, incluidas Glyfada y Vouliagmeni. Dinos la dirección del hotel y los datos de tu vuelo y organizaremos la recogida.",
+          ],
+        },
+        {
+          faq: true,
+          subheading: "¿Cómo reservo un traslado privado del aeropuerto de Atenas a mi hotel?",
+          paragraphs: [
+            "Envíanos tu nombre, número de vuelo, fecha y hora, la dirección del hotel y el número de pasajeros y maletas por WhatsApp o email. Si viajas con un niño, solicita una silla infantil con antelación. Las sillas infantiles están incluidas bajo petición.",
           ],
         },
       ],
@@ -257,7 +329,7 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
       metaTitle:
         "Privater Transfer Flughafen Athen – Hotel | H&A VIP Transfers",
       metaDescription:
-        "Buchen Sie einen Premium-Privattransfer vom Flughafen Athen zu Ihrem Hotel. Mercedes Vito VIP, 24/7 WhatsApp-Support, feste Abholung, direkte Route.",
+        "Privater Transfer vom Flughafen Athen zu Hotels im Zentrum (Syntagma, Plaka, Monastiraki, Koukaki) oder an die Riviera. Mercedes Vito VIP, bis zu 7 Fahrgäste.",
       sections: [
         {
           paragraphs: [
@@ -268,15 +340,27 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
         {
           heading: "Was sich mit einem privaten Transfer ab Flughafen Athen ändert",
           paragraphs: [
-            "Der internationale Flughafen Athen liegt ziemlich weit vom Zentrum entfernt. Die Fahrtdauer zu einem Hotel in Syntagma, Plaka, Kolonaki oder an der Riviera hängt von Tageszeit, Verkehr und Endziel ab. Deshalb hat die rechtzeitige Organisation Ihres Transfers einen echten Mehrwert – besonders bei Ankunft spät am Abend, früh am Morgen oder in der Hochsaison.",
+            "Der [internationale Flughafen Athen](https://haviptransfers.gr/airport-transfer-athens/) liegt ziemlich weit vom Stadtzentrum entfernt. Die Fahrtdauer zu einem Hotel in Syntagma, Plaka, Monastiraki oder Koukaki — oder weiter entlang der Athener Riviera — hängt von Tageszeit, Verkehr und Endziel ab. Deshalb hat die rechtzeitige Organisation Ihres Transfers einen echten Mehrwert – besonders bei Ankunft spät am Abend, früh am Morgen oder in der Hochsaison.",
             "Bei einem Premium-Privattransfer müssen Sie weder über die Route verhandeln noch hastig die Adresse erklären oder sich fragen, ob genug Platz für Ihre Koffer ist. Flugdaten, Anzahl der Passagiere, Gepäck und Hotel werden im Voraus bestätigt.",
             "Besonders nützlich ist das für Paare, die eine ruhige Ankunft wünschen, Familien mit Kindern und Kinderwagen, kleine Gruppen mit viel Gepäck oder Geschäftsreisende, die ohne Verzögerung im Hotel sein müssen.",
           ],
         },
         {
+          heading: "Hotels im Athener Stadtzentrum",
+          paragraphs: [
+            "Die meisten Gäste fahren vom Flughafen Athen zu einem Hotel im Stadtzentrum. H&A VIP Tours bietet einen privaten Transfer im Mercedes Vito VIP zu Hotels in Syntagma, Plaka, Monastiraki, Koukaki und Kolonaki sowie in nahe gelegenen Straßen rund um die Akropolis. Nennen Sie bei der Buchung den Hotelnamen oder die vollständige Adresse; Ihr Fahrer bringt Sie zum Eingang — praktisch bei Gepäck, später Ankunft oder einer gemeinsam reisenden Gruppe.",
+          ],
+        },
+        {
+          heading: "Hotels an der Athener Riviera",
+          paragraphs: [
+            "Wir fahren auch weiter nach Süden entlang der Küste, zu Hotels in Glyfada, Vouliagmeni und im übrigen Gebiet der Athener Riviera. Die Fahrt dauert länger als ein Transfer ins Zentrum, und die Zeit hängt weiterhin vom Verkehr ab. Nennen Sie uns die Hoteladresse und Ihre Flugdaten, damit die Abholung auf Ihre Ankunft abgestimmt werden kann.",
+          ],
+        },
+        {
           heading: "Mercedes Vito VIP: Komfort bis ins Detail",
           paragraphs: [
-            "Die Qualität des Fahrzeugs beeinflusst die Reise weit mehr, als es auf den ersten Blick scheint. Eine Mercedes Vito VIP bietet eine geräumige Kabine, bequeme Sitze und praktischen Gepäckraum. Für eine Familie oder eine kleine Gruppe schafft die Möglichkeit, alle gemeinsam ohne Kompromisse zu reisen, ein spürbar besseres Erlebnis.",
+            "Die Qualität des Fahrzeugs beeinflusst die Reise weit mehr, als es auf den ersten Blick scheint. Eine [Mercedes Vito VIP](https://haviptransfers.gr/blog/mercedes-vito-vip-chauffeur-service-athens/) bietet eine geräumige Kabine, bequeme Sitze und praktischen Gepäckraum. Für eine Familie oder eine kleine Gruppe schafft die Möglichkeit, alle gemeinsam ohne Kompromisse zu reisen, ein spürbar besseres Erlebnis.",
             "Komfort ist nicht nur eine Frage der Größe. Es geht um Sauberkeit, Klimaanlage, eine leise Fahrt und darum, das Fahrzeug nicht mit Fremden zu teilen. Der Transfer ist privat – von der Abholung bis zum Eingang Ihres Hotels.",
           ],
         },
@@ -291,14 +375,38 @@ export const blogPostTranslations: Record<string, Record<string, BlogPostTransla
           heading: "Wann ist ein privater Transfer Flughafen Athen – Hotel die beste Wahl?",
           paragraphs: [
             "Er ist die beste Wahl, wenn Komfort und Zeit Priorität haben. Besonders bei Ankünften am Abend, für Familien mit Kindern, Gäste nach einem Langstreckenflug oder Geschäftsreisen mit festen Terminen.",
-            "Er ist auch eine kluge Lösung für Reisende, die von Athen aus zum Hafen von Piräus, nach Rafina oder zu anderen Zielen in Attika weiterreisen.",
+            "Er ist auch eine kluge Lösung für Reisende, die von Athen aus zum [Hafen von Piräus](https://haviptransfers.gr/piraeus-port-transfer/), nach Rafina oder zu anderen Zielen in Attika weiterreisen.",
           ],
         },
         {
           heading: "So buchen Sie richtig",
           paragraphs: [
             "Sie benötigen: Name des Hauptpassagiers, Datum, Uhrzeit und Flugnummer, Ziel oder vollständige Hoteladresse, Anzahl der Passagiere und des Gepäcks. Wenn Sie mit einem Kind reisen, fragen Sie rechtzeitig nach dem passenden Kindersitz.",
-            "H&A VIP Tours deckt genau diesen Bedarf ab – mit Premium-Privattransfers in Athen, Mercedes Vito VIP und direkter Kommunikation über WhatsApp, 24 Stunden am Tag.",
+            "[H&A VIP Tours](https://haviptransfers.gr/) deckt genau diesen Bedarf ab – mit Premium-Privattransfers in Athen, Mercedes Vito VIP und direkter Kommunikation über WhatsApp, 24 Stunden am Tag.",
+          ],
+        },
+        {
+          heading: "Häufige Fragen",
+        },
+        {
+          faq: true,
+          subheading: "Bieten Sie einen privaten Transfer vom Flughafen Athen zu Hotels im Stadtzentrum an?",
+          paragraphs: [
+            "Ja. H&A VIP Tours bietet einen privaten Transfer vom Flughafen Athen zu Hotels im Athener Stadtzentrum an, darunter Syntagma, Plaka, Monastiraki, Koukaki und Kolonaki, im Mercedes Vito VIP für bis zu 7 Fahrgäste. Nennen Sie bei der Buchung den Hotelnamen oder die Adresse.",
+          ],
+        },
+        {
+          faq: true,
+          subheading: "Fahren Sie auch zu Hotels in Glyfada oder Vouliagmeni?",
+          paragraphs: [
+            "Ja. Nach den Hotels im Zentrum bringen wir Gäste auch an die Athener Riviera, darunter Glyfada und Vouliagmeni. Nennen Sie uns die Hoteladresse und Ihre Flugdaten, und wir organisieren die Abholung.",
+          ],
+        },
+        {
+          faq: true,
+          subheading: "Wie buche ich einen privaten Transfer vom Flughafen Athen zu meinem Hotel?",
+          paragraphs: [
+            "Senden Sie uns Ihren Namen, Flugnummer, Datum und Uhrzeit, die Hoteladresse sowie die Anzahl der Fahrgäste und Koffer per WhatsApp oder E-Mail. Wenn Sie mit einem Kind reisen, fragen Sie im Voraus nach einem Kindersitz. Kindersitze sind auf Anfrage inbegriffen.",
           ],
         },
       ],

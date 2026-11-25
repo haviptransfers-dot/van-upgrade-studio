@@ -888,7 +888,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle:
       "Private Transfer from Athens Airport to Hotel | H&A VIP Transfers",
     metaDescription:
-      "Book a premium private transfer from Athens Airport to your hotel. Mercedes Vito VIP, 24/7 WhatsApp support, fixed pickup, direct route.",
+      "Private transfer from Athens Airport to city-centre hotels (Syntagma, Plaka, Monastiraki, Koukaki) or the Riviera. Mercedes Vito VIP, up to 7 passengers.",
     sections: [
       {
         paragraphs: [
@@ -899,15 +899,27 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "What changes with a private transfer from Athens Airport",
         paragraphs: [
-          "Athens International Airport is quite far from the center. The duration of the ride to a hotel in Syntagma, Plaka, Kolonaki or the Riviera depends on the time, traffic and final destination. This is why organizing your transfer in advance has real value, especially when arrival is late at night, early in the morning or during peak tourist season.",
+          "[Athens International Airport](https://haviptransfers.gr/airport-transfer-athens/) is quite far from the city centre. The duration of the ride to a hotel in Syntagma, Plaka, Monastiraki or Koukaki — or further along the Athens Riviera — depends on the time, traffic and final destination. This is why organizing your transfer in advance has real value, especially when arrival is late at night, early in the morning or during peak tourist season.",
           "In a premium private transfer, you don't need to negotiate the route, explain the address in a hurry, or wonder if there is enough space for your suitcases. Flight details, number of passengers, luggage and hotel are confirmed in advance.",
           "This is especially useful for couples who want a quiet arrival, families with children and strollers, small groups with a lot of luggage, or professionals who need to be at their hotel without delay.",
         ],
       },
       {
+        heading: "Hotels in the Athens city centre",
+        paragraphs: [
+          "Most guests go from Athens Airport to a hotel in the city centre. H&A VIP Tours provides a private transfer in a Mercedes Vito VIP to hotels in Syntagma, Plaka, Monastiraki, Koukaki and Kolonaki, as well as nearby streets around the Acropolis. Share your hotel name or the full address when you book, and your driver takes you to the entrance — useful when you have luggage, a late arrival or a group travelling together.",
+        ],
+      },
+      {
+        heading: "Hotels on the Athens Riviera",
+        paragraphs: [
+          "We also go further south along the coast, to hotels in Glyfada, Vouliagmeni and the rest of the Athens Riviera. The ride is longer than a transfer into the centre, and the time still depends on traffic. Tell us the hotel address and your flight details so the pickup can be planned around your arrival.",
+        ],
+      },
+      {
         heading: "Mercedes Vito VIP: comfort in every detail",
         paragraphs: [
-          "The quality of the vehicle affects the journey much more than it seems at first. A Mercedes Vito VIP offers a spacious cabin, comfortable seats and practical luggage space. For a family or a small group, the ability to travel all together without compromises creates a noticeably better experience.",
+          "The quality of the vehicle affects the journey much more than it seems at first. A [Mercedes Vito VIP](https://haviptransfers.gr/blog/mercedes-vito-vip-chauffeur-service-athens/) offers a spacious cabin, comfortable seats and practical luggage space. For a family or a small group, the ability to travel all together without compromises creates a noticeably better experience.",
           "Comfort is not just about size. It is about cleanliness, air conditioning, a quiet ride and the fact that you do not share the vehicle with strangers. The transfer is private, from pickup to the entrance of your hotel.",
         ],
       },
@@ -922,14 +934,38 @@ export const blogPosts: BlogPost[] = [
         heading: "When is a private Athens Airport to Hotel transfer the best choice?",
         paragraphs: [
           "It is the best choice when comfort and time are a priority. Especially for evening arrivals, families with children, guests arriving after a long-haul flight, or business trips with scheduled meetings.",
-          "It is also a smart solution for guests who continue their journey from Athens to the port of Piraeus, Rafina or other destinations in Attica.",
+          "It is also a smart solution for guests who continue their journey from Athens to the [port of Piraeus](https://haviptransfers.gr/piraeus-port-transfer/), Rafina or other destinations in Attica.",
         ],
       },
       {
         heading: "How to make a correct booking",
         paragraphs: [
           "You need: main passenger name, date, time and flight number, destination or full hotel address, number of passengers and luggage. If you travel with a child, ask for the appropriate child seat in advance.",
-          "H&A VIP Tours serves exactly this need with premium private transfers in Athens, Mercedes Vito VIP and direct communication via WhatsApp, 24 hours a day.",
+          "[H&A VIP Tours](https://haviptransfers.gr/) serves exactly this need with premium private transfers in Athens, Mercedes Vito VIP and direct communication via WhatsApp, 24 hours a day.",
+        ],
+      },
+      {
+        heading: "Frequently Asked Questions",
+      },
+      {
+        faq: true,
+        subheading: "Do you provide a private transfer from Athens Airport to hotels in the city centre?",
+        paragraphs: [
+          "Yes. H&A VIP Tours provides a private transfer from Athens Airport to hotels in the Athens city centre, including Syntagma, Plaka, Monastiraki, Koukaki and Kolonaki, in a Mercedes Vito VIP for up to 7 passengers. Share your hotel name or address when you book.",
+        ],
+      },
+      {
+        faq: true,
+        subheading: "Do you also go to hotels in Glyfada or Vouliagmeni?",
+        paragraphs: [
+          "Yes. After city-centre hotels, we also take guests to the Athens Riviera, including Glyfada and Vouliagmeni. Tell us your hotel address and flight details and we will arrange the pickup.",
+        ],
+      },
+      {
+        faq: true,
+        subheading: "How do I book a private transfer from Athens Airport to my hotel?",
+        paragraphs: [
+          "Send your name, flight number, date and time, hotel address, and the number of passengers and suitcases via WhatsApp or email. If you are travelling with a child, ask for a child seat in advance. Child seats are included on request.",
         ],
       },
     ],

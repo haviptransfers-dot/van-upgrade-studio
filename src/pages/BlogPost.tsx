@@ -96,7 +96,7 @@ const BlogPost = () => {
             author: { "@id": organization["@id"] },
           })}
         </script>
-        {post.slug === "child-car-seats-private-transfers-greece" && (
+        {post.sections.some(section => section.faq) && (
           <script type="application/ld+json">{JSON.stringify({
             "@context": "https://schema.org", "@type": "FAQPage",
             inLanguage: i18n.language.split("-")[0],

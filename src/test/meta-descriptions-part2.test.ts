@@ -12,7 +12,7 @@ const expected: Record<string, string> = {
   "piraeus-cruise-transfer": "Προκρατημένη ιδιωτική μεταφορά κρουαζιέρας από το λιμάνι του Πειραιά προς ξενοδοχείο, αεροδρόμιο ή Αθήνα. Mercedes Vito VIP, συντονισμός αποβίβασης, WhatsApp.",
   "private-delphi-day-trip-from-athens": "Ιδιωτική ημερήσια εκδρομή με οδηγό από την Αθήνα στους Δελφούς με Mercedes Vito VIP. Παραλαβή ξενοδοχείου, στάση Αράχωβα, ευέλικτο ωράριο. WhatsApp 24/7.",
   "private-meteora-day-trip-from-athens": "Ιδιωτική ημερήσια εκδρομή από την Αθήνα στα Μετέωρα με Mercedes Vito VIP. Παραλαβή ξενοδοχείου, επίσκεψη σε μοναστήρια, ευέλικτο πρόγραμμα. WhatsApp 24/7.",
-  "private-transfer-athens-airport-to-hotel": "Κλείστε ιδιωτική μεταφορά από το αεροδρόμιο της Αθήνας στο ξενοδοχείο σας. Mercedes Vito VIP, υποστήριξη WhatsApp 24/7, σταθερή παραλαβή, απευθείας διαδρομή.",
+  "private-transfer-athens-airport-to-hotel": "Ιδιωτική μεταφορά από το αεροδρόμιο Αθηνών σε ξενοδοχεία στο κέντρο (Σύνταγμα, Πλάκα, Μοναστηράκι, Κουκάκι) ή στη Ριβιέρα. Mercedes Vito VIP, έως 7 επιβάτες.",
   "private-transfer-athens-multiple-suitcases": "Ιδιωτική μεταφορά στην Αθήνα με χώρο για πολλές βαλίτσες. Mercedes Vito VIP, επαγγελματίας οδηγός, WhatsApp 24/7, αποσκευές σχεδιασμένες εκ των προτέρων.",
   "private-transfer-athens-to-cape-sounio": "Ιδιωτική μεταφορά με οδηγό από την Αθήνα στο Σούνιο και τον Ναό του Ποσειδώνα με Mercedes Vito VIP. Ηλιοβασίλεμα, παράκτιες στάσεις. Κράτηση WhatsApp 24/7.",
 };
