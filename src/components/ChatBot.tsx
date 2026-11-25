@@ -256,7 +256,7 @@ const ChatBot = ({ initiallyOpen = false }: { initiallyOpen?: boolean }) => {
       ...prev,
       {
         role: "assistant",
-        content: `✅ ${booking.name ? booking.name + ", y" : "Y"}our booking request is ready. We'll confirm shortly.`,
+        content: `✅ ${booking.name ? booking.name + ", y" : "Y"}our booking request is ready to send. Please tap WhatsApp or email to complete it.`,
       },
     ]);
   };
