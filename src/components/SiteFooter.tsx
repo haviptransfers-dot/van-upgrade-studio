@@ -2,10 +2,11 @@ import { useTranslation } from "react-i18next";
 import Link from "@/components/LocalizedLink";
 import OptimizedImage from "@/components/OptimizedImage";
 import logoImg from "@/assets/logo.webp";
+import { VIP_TOURS_PATH, vipToursLabel } from "@/lib/vipToursLink";
 
 /** Shared site footer used by the homepage and the airport transfer page. */
 export default function SiteFooter() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <footer className="border-t border-border py-8 px-4">
       <div className="container mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-4">
@@ -14,6 +15,9 @@ export default function SiteFooter() {
           <span className="font-display text-sm font-bold text-primary">H&A TOURS</span>
         </div>
         <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6">
+          <Link to={VIP_TOURS_PATH} className="text-xs text-muted-foreground hover:text-primary transition-colors">
+            {vipToursLabel(i18n.language)}
+          </Link>
           <Link to="/privacy-policy" className="text-xs text-muted-foreground hover:text-primary transition-colors">
             {t("footer.privacy")}
           </Link>

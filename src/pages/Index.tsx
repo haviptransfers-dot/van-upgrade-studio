@@ -28,6 +28,7 @@ const HomeSections = lazy(() => import("@/components/HomeSections"));
 const HeroSlideshow = lazy(() => import("@/components/HeroSlideshow"));
 const ExploreToursMenu = lazy(() => import("@/components/ExploreToursMenu"));
 const AirportTransferContent = lazy(() => import("@/components/AirportTransferContent"));
+const VipToursContent = lazy(() => import("@/components/VipToursContent"));
 const SiteFooter = lazy(() => import("@/components/SiteFooter"));
 
 const heroCycleImages = [
@@ -56,7 +57,9 @@ interface IndexProps {
 const Index = ({ routeKey }: IndexProps) => {
   const { t, i18n } = useTranslation();
   // The airport page keeps the site header and footer but has its own dedicated body instead of the homepage sections.
-  const airport = routeKey === "airport";
+  // The VIP tours hub uses the same dedicated-body layout.
+  const vipTours = routeKey === "vipTours";
+  const airport = routeKey === "airport" || vipTours;
   const homeExtra = useHomeExtra(!routeKey);
   const sectionHref = (id: string) => airport ? `${linkPath("/", i18n.language)}#${id}` : `#${id}`;
   const whatsappUrl = "https://wa.me/306949393700";
@@ -175,7 +178,7 @@ const Index = ({ routeKey }: IndexProps) => {
       </nav>
 
       {airport ? <Suspense fallback={<div className="min-h-screen" aria-hidden="true" />}>
-        <AirportTransferContent />
+        {vipTours ? <VipToursContent /> : <AirportTransferContent />}
         <SiteFooter />
       </Suspense> : <>
       {/* Hero */}

@@ -6,4 +6,5 @@ export const seoRoutes = [
   { path: "/meteora-private-tour", key: "meteora" },
   { path: "/nafplio-private-tour", key: "nafplio" },
   { path: "/cape-sounion-tour", key: "sounion" },
+  { path: "/vip-tours-athens", key: "vipTours" },
 ] as const;

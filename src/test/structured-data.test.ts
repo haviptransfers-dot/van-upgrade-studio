@@ -7,7 +7,7 @@ describe("public sitemap and structured data", () => {
     const sources = readFileSync("src/data/blogPosts.ts", "utf8") + readFileSync("src/data/nafplio.ts", "utf8");
     const slugs = [...sources.matchAll(/slug:\s*"([^"]+)"/g)].map((match) => match[1]);
     const xml = readFileSync("public/sitemap.xml", "utf8");
-    expect((xml.match(/<loc>/g) ?? []).length).toBe(232);
+    expect((xml.match(/<loc>/g) ?? []).length).toBe(240);
     for (const slug of slugs) expect(xml).toContain(`<loc>https://haviptransfers.gr/blog/${slug}/</loc>`);
     for (const page of servicePages) expect(xml).toContain(`<loc>https://haviptransfers.gr${page.path}/</loc>`);
     const pageDates = JSON.parse(readFileSync("src/data/pageLastmod.json", "utf8")) as Record<string, string>;

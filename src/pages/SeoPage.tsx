@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import Index from "./Index";
 import ServiceStructuredData from "@/components/ServiceStructuredData";
+import { vipToursCopy } from "@/data/vipToursHub";
 
 interface SeoPageProps {
   routeKey: string;
@@ -14,8 +15,9 @@ const SITE_URL = "https://haviptransfers.gr";
 const SeoPage = ({ routeKey, path }: SeoPageProps) => {
   const { t, i18n } = useTranslation();
   const url = `${SITE_URL}${path}`;
-  const title = t(routeKey === "piraeus" ? "seoContent.piraeusTitle" : `seo.${routeKey}.title`);
-  const description = t(routeKey === "piraeus" ? "seoContent.piraeusDescription" : `seo.${routeKey}.description`);
+  const vipTours = routeKey === "vipTours" ? vipToursCopy(i18n.language) : null;
+  const title = vipTours?.title ?? t(routeKey === "piraeus" ? "seoContent.piraeusTitle" : `seo.${routeKey}.title`);
+  const description = vipTours?.description ?? t(routeKey === "piraeus" ? "seoContent.piraeusDescription" : `seo.${routeKey}.description`);
   return (
     <>
       <ServiceStructuredData path={path} />

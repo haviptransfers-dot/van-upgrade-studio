@@ -50,7 +50,7 @@ describe("house-rules clean-up: owner-specified strings", () => {
   it("gives every sitemap URL a lastmod date", () => {
     const xml = readFileSync("public/sitemap.xml", "utf8");
     const urls = xml.match(/<url>[\s\S]*?<\/url>/g) ?? [];
-    expect(urls.length).toBe(232);
+    expect(urls.length).toBe(240);
     expect(urls.filter((u) => !u.includes("<lastmod>"))).toEqual([]);
   });
   it("links the child-seat article to service pages with a trailing slash", () => {

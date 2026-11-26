@@ -41,3 +41,4 @@
 - Build internal and language-switch hrefs with linkPath (localized, exactly one trailing slash) so links match canonical URLs; keep localizedPath slashless because route matching and static generation depend on it.
 - Accordion content renders a hidden answer copy so closed FAQ answers stay in server-rendered HTML without design changes.
 - Airport route: shared Index header + AirportTransferContent (locale `airportPage`, [label](path) links) + SiteFooter and booking form, not homepage sections; its only FAQPage comes from that copy, so the page stays unique.
+- VIP tours hub (/vip-tours-athens) is an seoRoutes entry rendered through Index's dedicated-body layout with copy in src/data/vipToursHub.ts; its inbound label lives in the tiny src/lib/vipToursLink.ts so homepage/footer never load hub copy.

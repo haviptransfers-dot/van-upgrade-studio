@@ -23,7 +23,7 @@ describe("multilingual build renderer", () => {
       esbuild: { jsx: "automatic", jsxDev: false },
     }));
     expect(renderPage.mock.calls.map(([path]) => path)).toEqual(canonicalPaths());
-    expect(emitted).toHaveLength(231);
+    expect(emitted).toHaveLength(239);
     expect(close).toHaveBeenCalledTimes(1);
   });
 });

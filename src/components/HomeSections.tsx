@@ -95,7 +95,7 @@ export default function HomeSections({ port = false, home = false }: { port?: bo
       </section>
 
       <ServiceContent port={port} home={home} />
-      <RelatedTravelLinks piraeus={port} />
+      <RelatedTravelLinks piraeus={port} hub={home} />
       {homeExtra?.sections && <HomeExtraSections sections={homeExtra.sections} />}
 
       <DeferredSection placeholderClass="h-[240vh] min-h-[1760px] md:h-[400vh]"><Showcase /></DeferredSection>
