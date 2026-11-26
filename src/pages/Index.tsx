@@ -43,6 +43,12 @@ const heroCycleImages = [
 
 const SLIDE_DURATION = 10; // seconds each slide is the main image
 
+const linkFirst = (text: string, phrase: string, to: string) => {
+  const at = text.indexOf(phrase);
+  if (at < 0) return text;
+  return <>{text.slice(0, at)}<Link to={to} className="text-primary underline underline-offset-4">{phrase}</Link>{text.slice(at + phrase.length)}</>;
+};
+
 interface IndexProps {
   routeKey?: string;
 }
@@ -205,7 +211,7 @@ const Index = ({ routeKey }: IndexProps) => {
           <p
             className="home-hero-description text-foreground"
           >
-            {homeExtra?.intro ?? t("hero.subtitle")}
+            {routeKey === "piraeus" ? linkFirst(t("seoContent.piraeusIntro"), "Mercedes Vito VIP", "/blog/mercedes-vito-vip-chauffeur-service-athens") : homeExtra?.intro ?? t("hero.subtitle")}
           </p>
           <div
             className="home-hero-actions flex flex-wrap"

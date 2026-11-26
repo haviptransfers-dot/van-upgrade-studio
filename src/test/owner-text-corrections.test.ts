@@ -19,9 +19,9 @@ describe.each(Object.entries(locales))("owner text corrections in %s", (_languag
     expect(locale.seoContent.childDescription).not.toMatch(freeWords);
     expect(locale.childSeats.eyebrow).not.toMatch(freeWords);
   });
-  it("quotes transfers from €85 in the cost FAQ", () => {
-    expect(locale.faq.items.a1).toMatch(/85/);
-    expect(locale.faq.items.a1).not.toMatch(/70/);
+  it("quotes transfers from €55 in the cost FAQ", () => {
+    expect(locale.faq.items.a1).toMatch(/55/);
+    expect(locale.faq.items.a1).not.toMatch(/85|70/);
   });
   it("does not promise offers in the About text", () => {
     expect(locale.preferredSources.metaDescription).not.toMatch(/offers|προσφορές|Angebote|ofertas|offres|offerte|הצעות|عروض/i);

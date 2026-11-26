@@ -200,6 +200,9 @@ export default {
   "piraeusTitle": "Piraeus Port Transfer | Private Transfer Piraeus to Athens Airport",
   "piraeusDescription": "Private Piraeus transfers to Athens Airport, hotels and the city centre. Mercedes Vito VIP for up to 7 passengers, meet & greet, child seats on request.",
   "piraeusH1": "Private Piraeus Port Transfers",
+  "piraeusIntro": "Private VIP transfers from Piraeus Port in a Mercedes Vito VIP: cruise terminal and ferry gates to Athens Airport, hotels in the city centre and the Athens Riviera, for up to 7 passengers.",
+  "piraeusAirportLabel": "Athens International Airport (ATH)",
+  "piraeusRelated": "For more detail, see our guides to [getting from Athens Airport to Piraeus Port](/blog/athens-airport-to-piraeus-port-transport-options/), [a private transfer from Piraeus Port to Athens Airport](/blog/private-transfer-piraeus-port-to-athens-airport/), and [Piraeus cruise transfers](/blog/piraeus-cruise-transfer/).",
   "privacyTitle": "Privacy Policy | H&A VIP Tours Athens",
   "privacyDescription": "How H&A VIP Tours collects, uses and protects your personal data — cookies, analytics and your GDPR rights.",
   "passengerLabel": "Up to 7 passengers",
@@ -251,15 +254,32 @@ export default {
     {
       "heading": "Piraeus Transfers to Hotels and Central Athens",
       "paragraphs": [
-        "A private Piraeus transfer can connect your ferry or cruise arrival with a hotel or another agreed address in central Athens. Send the full destination address with your request so the quote reflects the journey you actually need. If your stay is in Glyfada, Vouliagmeni or elsewhere on the Athens Riviera, include that location rather than simply requesting an Athens drop-off.",
+        "A private Piraeus transfer can connect your ferry or cruise arrival with a hotel in the Athens city centre, including Syntagma, Plaka, Monastiraki and Koukaki, or another agreed address. Send the full destination address with your request so the quote reflects the journey you actually need. If your stay is in Glyfada, Vouliagmeni or elsewhere on the Athens Riviera, include that location rather than simply requesting an Athens drop-off.",
         "For the return journey, share your accommodation address and your ferry or cruise departure details. We can discuss the pickup arrangements before you book. Each journey is planned around the agreed route; travel time varies with traffic and the location of your pickup and destination. Contact us on WhatsApp with your plans and ask for a personalized quoted fare for your private transfer."
       ]
+    },
+    {
+        "heading": "Piraeus transfer prices",
+        "paragraphs": [
+            "Athens city centre ↔ Piraeus Port: from €55. Athens Airport ↔ Piraeus Port: from €100 (€110 for 5–7 passengers)."
+        ],
+        "quoteLink": "For an exact quote, use the price calculator.",
+        "listHeading": "What's included",
+        "items": [
+            "Meet & greet with a name sign",
+            "Flight and ship tracking for delays",
+            "1 hour of free waiting at the airport and at the port",
+            "Help with luggage",
+            "Child seats included on request"
+        ]
     },
     {
       "heading": "Cruise Terminals, Ferry Ports and Meet & Greet",
       "paragraphs": [
         "Piraeus serves both cruise ships and ferries, so the ship name and the correct terminal or gate matter when arranging a pickup. Provide the details you have and update us if your travel information changes. Meet & greet and the meeting point are coordinated for your journey; confirm the pickup instructions and the agreed waiting arrangements before booking so you know what to expect on arrival.",
-        "Our port transfers also serve Rafina and Lavrio. These are different ports, not alternative names for Piraeus, so please check your ticket and specify the correct port in your request. For a transfer between ports or onward to ATH, share both ends of the route. Flight or ship monitoring is provided whenever needed, while waiting arrangements should always be discussed and confirmed for your booking."
+        "Our port transfers also serve Rafina and Lavrio. These are different ports, not alternative names for Piraeus, so please check your ticket and specify the correct port in your request. For a transfer between ports or onward to ATH, share both ends of the route.",
+        "Piraeus is a large port: cruise ships and ferries use different parts of the harbour. Cruise arrivals are usually handled around gates E11 and E12. Ferries to the Cyclades and Aegina often use gates E6 to E8, and other routes use other gates. Tell us your ship or ferry company name, and the gate on your ticket if you have it.",
+        "We track both flights and ships for delays, and we include 1 hour of free waiting at the airport and at the port. The meeting point is confirmed when you book."
       ]
     },
     {
@@ -277,11 +297,23 @@ export default {
     },
     {
       "question": "How much does a private Piraeus transfer cost?",
-      "answer": "Prices are available on request. Send your route, date, passenger count, luggage and any child-seat requirements for a personalized quoted fare."
+      "answer": "From the Athens city centre to Piraeus Port from €55. From Athens Airport to Piraeus Port from €100, or €110 for 5–7 passengers. For an exact quote, use the price calculator on this page."
     },
     {
       "question": "What are the waiting arrangements at Piraeus?",
-      "answer": "Waiting and meeting arrangements are coordinated for your journey and confirmed before booking. Share your ship details and ask us to confirm the applicable arrangements; do not assume a guaranteed waiting period."
+      "answer": "We include 1 hour of free waiting at the port and at the airport, and we track flights and ships for delays. The meeting point is confirmed when you book."
+    },
+    {
+      "question": "Do you pick up at the cruise terminal and the ferry gates?",
+      "answer": "Yes. Cruise ships usually arrive around gates E11 and E12, and ferries to the Cyclades and Aegina often use gates E6 to E8. Tell us your ship or ferry company name."
+    },
+    {
+      "question": "Can you take us to Piraeus for the ferry to Aegina?",
+      "answer": "Yes. We drive you from your hotel or Athens Airport to the right ferry gate at Piraeus, and pick you up when you return."
+    },
+    {
+      "question": "Do you go from Piraeus to hotels in the Athens city centre?",
+      "answer": "Yes, including Syntagma, Plaka, Monastiraki and Koukaki, and the Athens Riviera, including Glyfada and Vouliagmeni."
     }
   ],
   "aboutParagraphs": [
@@ -578,7 +610,7 @@ export default {
     title: "Frequently Asked Questions",
     items: {
       q1: "How much does a transfer cost?",
-      a1: "Transfers start from €85 and vary depending on the number of passengers and route. Contact us for an exact quote.",
+      a1: "Transfers start from €55 and vary depending on the number of passengers and route. Contact us for an exact quote.",
       q2: "What is included in the price?",
       a2: "All transfers include tolls, bottled water, complimentary Wi-Fi, and flight or ship tracking.",
       q3: "How many passengers and suitcases fit?",

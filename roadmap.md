@@ -1,5 +1,7 @@
 # Roadmap
 
+- [done] Nov 26: updated only the Piraeus Port Transfer page in all eight languages (intro, prices/inclusions, practical port guidance, six FAQs/schema, internal links and two offers) and the shared transfer starting-price FAQ from €85 to €55. Titles, H1s, controls, calculator and unrelated content preserved; lastmod changed only for the 16 affected homepage/Piraeus URLs. 522 tests and typecheck pass; normal navigation, all eight rendered versions, both RTL layouts, calculator anchor and visible shared FAQ verified. Not published.
+
 - [done] Nov 24 exact Netlify security/cache headers (full resource CSP report-only), seven cookie conjunction corrections and eight ImprovMX privacy disclosures. 459 tests pass; all 232 pages prerender without NULs; eight privacy lists verified, chat and consent-gated GA4/Metricool checked. Published 232 URLs return 200. Privacy dates already November 24, so no sitemap dates changed. No added runtime scripts/assets/dependencies; not published.
 - [open] Verify requested custom-domain response headers: awaits Netlify deployment; current live site does not yet serve the new headers.
 

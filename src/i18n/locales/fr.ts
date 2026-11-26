@@ -200,6 +200,9 @@ export default {
   "piraeusTitle": "Transfert Port du Pirée | Transfert Privé vers l’Aéroport d’Athènes",
   "piraeusDescription": "Transferts privés du Pirée vers l’aéroport d’Athènes, les hôtels et le centre. Mercedes Vito VIP jusqu’à 7 passagers, accueil et sièges enfants sur demande.",
   "piraeusH1": "Transferts Privés au Port du Pirée",
+  "piraeusIntro": "Transferts VIP privés depuis le port du Pirée en Mercedes Vito VIP : du terminal de croisière et des portes des ferries vers l’aéroport d’Athènes, les hôtels du centre-ville et la Riviera d’Athènes, pour jusqu’à 7 passagers.",
+  "piraeusAirportLabel": "aéroport international d’Athènes (ATH)",
+  "piraeusRelated": "Pour plus de détails, consultez nos guides sur [le trajet de l’aéroport d’Athènes au port du Pirée](/blog/athens-airport-to-piraeus-port-transport-options/), [un transfert privé du port du Pirée à l’aéroport d’Athènes](/blog/private-transfer-piraeus-port-to-athens-airport/) et [les transferts de croisière au Pirée](/blog/piraeus-cruise-transfer/).",
   "privacyTitle": "Politique de Confidentialité | H&A VIP Tours Athènes",
   "privacyDescription": "Comment H&A VIP Tours collecte, utilise et protège vos données personnelles — cookies, statistiques et droits au titre du RGPD.",
   "passengerLabel": "Jusqu’à 7 passagers",
@@ -251,15 +254,32 @@ export default {
     {
       "heading": "Transferts du Pirée vers les Hôtels et le Centre d’Athènes",
       "paragraphs": [
-        "Un transfert privé du Pirée peut relier votre arrivée en ferry ou en croisière à un hôtel ou à une autre adresse convenue dans le centre d’Athènes. Envoyez l’adresse complète avec votre demande afin que le devis corresponde au trajet réellement souhaité. Si vous séjournez à Glyfada, Vouliagmeni ou ailleurs sur la Riviera d’Athènes, précisez ce lieu au lieu de demander simplement une dépose à Athènes.",
+        "Un transfert privé du Pirée peut relier votre arrivée en ferry ou en croisière à un hôtel dans le centre d’Athènes, notamment à Syntagma, Plaka, Monastiraki et Koukaki, ou à une autre adresse convenue. Envoyez l’adresse complète avec votre demande afin que le devis corresponde au trajet réellement souhaité. Si vous séjournez à Glyfada, Vouliagmeni ou ailleurs sur la Riviera d’Athènes, précisez ce lieu au lieu de demander simplement une dépose à Athènes.",
         "Pour le retour, communiquez l’adresse de votre hébergement et les détails de départ du ferry ou de la croisière. Nous pouvons discuter de la prise en charge avant votre réservation. Chaque trajet suit le parcours convenu ; sa durée varie selon la circulation et les lieux de départ et d’arrivée. Contactez-nous sur WhatsApp avec vos projets et demandez un devis personnalisé pour votre transfert privé."
       ]
+    },
+    {
+        "heading": "Prix des transferts du Pirée",
+        "paragraphs": [
+            "Centre d’Athènes ↔ Port du Pirée : à partir de 55 €. Aéroport d’Athènes ↔ Port du Pirée : à partir de 100 € (110 € pour 5–7 passagers)."
+        ],
+        "quoteLink": "Pour un devis exact, utilisez le calculateur de prix.",
+        "listHeading": "Ce qui est inclus",
+        "items": [
+            "Accueil avec une pancarte à votre nom",
+            "Suivi des vols et des navires en cas de retard",
+            "1 heure d’attente gratuite à l’aéroport et au port",
+            "Aide avec les bagages",
+            "Sièges enfants inclus sur demande"
+        ]
     },
     {
       "heading": "Terminaux de Croisière, Ports de Ferries et Accueil",
       "paragraphs": [
         "Le Pirée accueille des navires de croisière et des ferries : le nom du navire et le bon terminal ou la bonne porte comptent donc pour organiser la prise en charge. Fournissez les informations disponibles et informez-nous de tout changement. L’accueil et le point de rencontre sont coordonnés pour votre trajet ; confirmez les consignes de prise en charge et les modalités d’attente convenues avant de réserver pour savoir à quoi vous attendre à l’arrivée.",
-        "Nos transferts desservent également Rafina et Lavrio. Ce sont des ports distincts, pas d’autres noms du Pirée : vérifiez votre billet et indiquez le bon port dans votre demande. Pour un trajet entre ports ou vers ATH, précisez les deux extrémités du parcours. Le suivi du vol ou du navire est assuré lorsque nécessaire, tandis que les modalités d’attente doivent toujours être discutées et confirmées pour votre réservation."
+        "Nos transferts desservent également Rafina et Lavrio. Ce sont des ports distincts, pas d’autres noms du Pirée : vérifiez votre billet et indiquez le bon port dans votre demande. Pour un trajet entre ports ou vers ATH, précisez les deux extrémités du parcours.",
+        "Le Pirée est un grand port : les navires de croisière et les ferries utilisent différentes zones du port. Les arrivées de croisière sont généralement traitées autour des portes E11 et E12. Les ferries vers les Cyclades et Égine utilisent souvent les portes E6 à E8, et les autres lignes utilisent d’autres portes. Indiquez-nous le nom de votre navire ou de votre compagnie de ferry, ainsi que la porte figurant sur votre billet si vous la connaissez.",
+        "Nous suivons les vols et les navires en cas de retard et incluons 1 heure d’attente gratuite à l’aéroport et au port. Le point de rencontre est confirmé lors de la réservation."
       ]
     },
     {
@@ -277,11 +297,23 @@ export default {
     },
     {
       "question": "Quel est le prix d’un transfert privé du Pirée ?",
-      "answer": "Les prix sont fournis sur demande. Envoyez le parcours, la date, le nombre de passagers, les bagages et les besoins en sièges enfants pour un devis personnalisé."
+      "answer": "Du centre d’Athènes au port du Pirée à partir de 55 €. De l’aéroport d’Athènes au port du Pirée à partir de 100 €, ou 110 € pour 5–7 passagers. Pour un devis exact, utilisez le calculateur de prix sur cette page."
     },
     {
       "question": "Quelles sont les modalités d’attente au Pirée ?",
-      "answer": "L’attente et la rencontre sont coordonnées pour votre trajet et confirmées avant la réservation. Communiquez les détails du navire et demandez confirmation des modalités applicables ; ne supposez pas une durée d’attente garantie."
+      "answer": "Nous incluons 1 heure d’attente gratuite au port et à l’aéroport, et nous suivons les vols et les navires en cas de retard. Le point de rencontre est confirmé lors de la réservation."
+    },
+    {
+      "question": "Assurez-vous la prise en charge au terminal de croisière et aux portes des ferries ?",
+      "answer": "Oui. Les navires de croisière arrivent généralement autour des portes E11 et E12, et les ferries vers les Cyclades et Égine utilisent souvent les portes E6 à E8. Indiquez-nous le nom de votre navire ou de votre compagnie de ferry."
+    },
+    {
+      "question": "Pouvez-vous nous conduire au Pirée pour prendre le ferry vers Égine ?",
+      "answer": "Oui. Nous vous conduisons de votre hôtel ou de l’aéroport d’Athènes à la bonne porte de ferry au Pirée, puis nous venons vous chercher à votre retour."
+    },
+    {
+      "question": "Allez-vous du Pirée vers les hôtels du centre d’Athènes ?",
+      "answer": "Oui, notamment à Syntagma, Plaka, Monastiraki et Koukaki, ainsi que sur la Riviera d’Athènes, notamment à Glyfada et Vouliagmeni."
     }
   ],
   "aboutParagraphs": [
@@ -578,7 +610,7 @@ export default {
     title: "FAQ",
     items: {
       q1: "Combien coûte un transfert ?",
-      a1: "Les transferts à partir de 85 € varient selon le nombre de passagers et l'itinéraire. Contactez-nous pour un devis précis.",
+      a1: "Les transferts à partir de 55 € varient selon le nombre de passagers et l'itinéraire. Contactez-nous pour un devis précis.",
       q2: "Qu'est-ce qui est inclus dans le prix ?",
       a2: "Tous les transferts incluent les péages, l'eau en bouteille, le Wi-Fi gratuit et le suivi des vols ou des navires.",
       q3: "Combien de passagers et de valises peuvent entrer ?",

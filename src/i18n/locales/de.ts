@@ -200,6 +200,9 @@ export default {
   "piraeusTitle": "Transfer Hafen Piräus | Privater Transfer zum Flughafen Athen",
   "piraeusDescription": "Private Transfers von Piräus zum Flughafen Athen, zu Hotels und ins Zentrum. Mercedes Vito VIP bis 7 Fahrgäste, Empfang und Kindersitze inklusive auf Anfrage.",
   "piraeusH1": "Private Transfers am Hafen Piräus",
+  "piraeusIntro": "Private VIP-Transfers vom Hafen Piräus im Mercedes Vito VIP: vom Kreuzfahrtterminal und den Fährtoren zum Flughafen Athen, zu Hotels im Stadtzentrum und an die Athener Riviera, für bis zu 7 Fahrgäste.",
+  "piraeusAirportLabel": "internationalen Flughafen Athen (ATH)",
+  "piraeusRelated": "Weitere Einzelheiten finden Sie in unseren Ratgebern über [die Verbindung vom Flughafen Athen zum Hafen Piräus](/blog/athens-airport-to-piraeus-port-transport-options/), [einen privaten Transfer vom Hafen Piräus zum Flughafen Athen](/blog/private-transfer-piraeus-port-to-athens-airport/) und [Kreuzfahrttransfers in Piräus](/blog/piraeus-cruise-transfer/).",
   "privacyTitle": "Datenschutzerklärung | H&A VIP Tours Athen",
   "privacyDescription": "Wie H&A VIP Tours Ihre personenbezogenen Daten erhebt, nutzt und schützt — Cookies, Analysen und Ihre Rechte nach der DSGVO.",
   "passengerLabel": "Bis zu 7 Fahrgäste",
@@ -251,15 +254,32 @@ export default {
     {
       "heading": "Transfers von Piräus zu Hotels und ins Zentrum Athens",
       "paragraphs": [
-        "Ein privater Transfer ab Piräus kann Ihre Ankunft per Fähre oder Kreuzfahrtschiff mit einem Hotel oder einer anderen vereinbarten Adresse im Zentrum Athens verbinden. Senden Sie mit Ihrer Anfrage die vollständige Zieladresse, damit das Angebot die tatsächlich benötigte Fahrt berücksichtigt. Liegt Ihre Unterkunft in Glyfada, Vouliagmeni oder an einem anderen Ort der Athener Riviera, geben Sie diesen Ort an, statt nur eine Fahrt nach Athen anzufragen.",
+        "Ein privater Transfer ab Piräus kann Ihre Ankunft per Fähre oder Kreuzfahrtschiff mit einem Hotel im Athener Stadtzentrum verbinden, einschließlich Syntagma, Plaka, Monastiraki und Koukaki, oder mit einer anderen vereinbarten Adresse. Senden Sie mit Ihrer Anfrage die vollständige Zieladresse, damit das Angebot die tatsächlich benötigte Fahrt berücksichtigt. Liegt Ihre Unterkunft in Glyfada, Vouliagmeni oder an einem anderen Ort der Athener Riviera, geben Sie diesen Ort an, statt nur eine Fahrt nach Athen anzufragen.",
         "Für die Rückfahrt teilen Sie uns die Adresse Ihrer Unterkunft und die Abfahrtsdaten Ihrer Fähre oder Kreuzfahrt mit. Wir besprechen die Abholung vor Ihrer Buchung. Jede Fahrt wird anhand der vereinbarten Route geplant; die Fahrzeit variiert mit Verkehr sowie Abhol- und Zielort. Kontaktieren Sie uns über WhatsApp mit Ihren Plänen und bitten Sie um ein individuelles Preisangebot für Ihren privaten Transfer."
       ]
+    },
+    {
+        "heading": "Preise für Transfers ab Piräus",
+        "paragraphs": [
+            "Athener Stadtzentrum ↔ Hafen Piräus: ab €55. Flughafen Athen ↔ Hafen Piräus: ab €100 (€110 für 5–7 Fahrgäste)."
+        ],
+        "quoteLink": "Für ein genaues Angebot nutzen Sie den Preisrechner.",
+        "listHeading": "Was ist inklusive",
+        "items": [
+            "Persönlicher Empfang mit einem Schild mit Ihrem Namen",
+            "Flug- und Schiffsüberwachung bei Verspätungen",
+            "1 Stunde kostenloses Warten am Flughafen und am Hafen",
+            "Hilfe mit dem Gepäck",
+            "Kindersitze auf Anfrage inklusive"
+        ]
     },
     {
       "heading": "Kreuzfahrtterminals, Fährhäfen und persönlicher Empfang",
       "paragraphs": [
         "Piräus bedient Kreuzfahrtschiffe und Fähren. Deshalb sind der Schiffsname und das richtige Terminal oder Tor für die Abholung wichtig. Teilen Sie uns die verfügbaren Angaben mit und informieren Sie uns bei Änderungen. Persönlicher Empfang und Treffpunkt werden für Ihre Fahrt abgestimmt. Bestätigen Sie die Abholhinweise und die vereinbarten Wartebedingungen vor der Buchung, damit Sie wissen, was Sie bei der Ankunft erwartet.",
-        "Unsere Hafentransfers bedienen auch Rafina und Lavrio. Dies sind eigenständige Häfen und keine anderen Namen für Piräus. Prüfen Sie daher Ihr Ticket und nennen Sie den richtigen Hafen in Ihrer Anfrage. Bei einer Fahrt zwischen Häfen oder weiter zum ATH geben Sie beide Endpunkte an. Flug- oder Schiffsüberwachung erfolgt bei Bedarf; Wartebedingungen sollten stets für Ihre Buchung besprochen und bestätigt werden."
+        "Unsere Hafentransfers bedienen auch Rafina und Lavrio. Dies sind eigenständige Häfen und keine anderen Namen für Piräus. Prüfen Sie daher Ihr Ticket und nennen Sie den richtigen Hafen in Ihrer Anfrage. Bei einer Fahrt zwischen Häfen oder weiter zum ATH geben Sie beide Endpunkte an.",
+        "Piräus ist ein großer Hafen: Kreuzfahrtschiffe und Fähren nutzen unterschiedliche Bereiche des Hafens. Kreuzfahrtankünfte werden üblicherweise an den Toren E11 und E12 abgewickelt. Fähren zu den Kykladen und nach Aegina nutzen häufig die Tore E6 bis E8; andere Verbindungen nutzen andere Tore. Nennen Sie uns den Namen Ihres Schiffes oder der Fährgesellschaft sowie das Tor auf Ihrem Ticket, falls Sie es kennen.",
+        "Wir überwachen sowohl Flüge als auch Schiffe auf Verspätungen und schließen 1 Stunde kostenloses Warten am Flughafen und am Hafen ein. Der Treffpunkt wird bei der Buchung bestätigt."
       ]
     },
     {
@@ -277,11 +297,23 @@ export default {
     },
     {
       "question": "Was kostet ein privater Transfer ab Piräus?",
-      "answer": "Preise erhalten Sie auf Anfrage. Senden Sie Route, Datum, Fahrgastzahl, Gepäck und benötigte Kindersitze für ein individuelles Preisangebot."
+      "answer": "Vom Athener Stadtzentrum zum Hafen Piräus ab €55. Vom Flughafen Athen zum Hafen Piräus ab €100 oder €110 für 5–7 Fahrgäste. Für ein genaues Angebot nutzen Sie den Preisrechner auf dieser Seite."
     },
     {
       "question": "Welche Wartebedingungen gelten in Piräus?",
-      "answer": "Warte- und Treffpunktregelungen werden für Ihre Fahrt abgestimmt und vor der Buchung bestätigt. Teilen Sie Ihre Schiffsdaten mit und lassen Sie die geltenden Bedingungen bestätigen. Gehen Sie nicht von einer garantierten Wartezeit aus."
+      "answer": "Wir schließen 1 Stunde kostenloses Warten am Hafen und am Flughafen ein und überwachen Flüge und Schiffe auf Verspätungen. Der Treffpunkt wird bei der Buchung bestätigt."
+    },
+    {
+      "question": "Holen Sie uns am Kreuzfahrtterminal und an den Fährtoren ab?",
+      "answer": "Ja. Kreuzfahrtschiffe kommen üblicherweise an den Toren E11 und E12 an, und Fähren zu den Kykladen und nach Aegina nutzen häufig die Tore E6 bis E8. Nennen Sie uns den Namen Ihres Schiffes oder der Fährgesellschaft."
+    },
+    {
+      "question": "Können Sie uns zur Fähre nach Aegina nach Piräus bringen?",
+      "answer": "Ja. Wir fahren Sie von Ihrem Hotel oder vom Flughafen Athen zum richtigen Fährtor in Piräus und holen Sie bei Ihrer Rückkehr wieder ab."
+    },
+    {
+      "question": "Fahren Sie von Piräus zu Hotels im Athener Stadtzentrum?",
+      "answer": "Ja, einschließlich Syntagma, Plaka, Monastiraki und Koukaki sowie zur Athener Riviera, einschließlich Glyfada und Vouliagmeni."
     }
   ],
   "aboutParagraphs": [
@@ -578,7 +610,7 @@ export default {
     title: "FAQ",
     items: {
       q1: "Wie viel kostet ein Transfer?",
-      a1: "Transfers ab €85 — der Preis richtet sich nach Passagierzahl und Route. Kontaktieren Sie uns für ein genaues Angebot.",
+      a1: "Transfers ab €55 — der Preis richtet sich nach Passagierzahl und Route. Kontaktieren Sie uns für ein genaues Angebot.",
       q2: "Was ist im Preis inbegriffen?",
       a2: "Alle Transfers beinhalten Maut, Wasser, kostenloses WLAN sowie Flug- und Schiffsüberwachung.",
       q3: "Wie viele Passagiere und Koffer passen hinein?",

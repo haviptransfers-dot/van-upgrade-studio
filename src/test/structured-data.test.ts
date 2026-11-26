@@ -45,7 +45,7 @@ describe("public sitemap and structured data", () => {
     expect(new Set(organization.sameAs).size).toBe(organization.sameAs.length);
   });
   it.each([
-    ["/airport-transfer-athens", [85, 100]], ["/piraeus-port-transfer", [55]],
+    ["/airport-transfer-athens", [85, 100]], ["/piraeus-port-transfer", [55, 100]],
     ["/athens-city-tour", [180]], ["/cape-sounion-tour", [350]],
     ["/delphi-private-tour", [500]], ["/meteora-private-tour", [800]], ["/nafplio-private-tour", [500]],
   ])("publishes correct EUR offers and both types for %s", (path, prices) => {

@@ -200,6 +200,9 @@ export default {
   "piraeusTitle": "Transfer Porto del Pireo | Transfer Privato per l’Aeroporto di Atene",
   "piraeusDescription": "Transfer privati dal Pireo all’aeroporto di Atene, hotel e centro. Mercedes Vito VIP fino a 7 passeggeri, accoglienza e seggiolini inclusi su richiesta.",
   "piraeusH1": "Trasferimenti Privati al Porto del Pireo",
+  "piraeusIntro": "Transfer VIP privati dal porto del Pireo in Mercedes Vito VIP: dal terminal crociere e dai varchi dei traghetti all’Aeroporto di Atene, agli hotel del centro città e alla Riviera di Atene, per un massimo di 7 passeggeri.",
+  "piraeusAirportLabel": "Aeroporto Internazionale di Atene (ATH)",
+  "piraeusRelated": "Per maggiori dettagli, consulta le nostre guide su [come andare dall’Aeroporto di Atene al porto del Pireo](/blog/athens-airport-to-piraeus-port-transport-options/), [un transfer privato dal porto del Pireo all’Aeroporto di Atene](/blog/private-transfer-piraeus-port-to-athens-airport/) e [i transfer crociere del Pireo](/blog/piraeus-cruise-transfer/).",
   "privacyTitle": "Informativa sulla Privacy | H&A VIP Tours Atene",
   "privacyDescription": "Come H&A VIP Tours raccoglie, utilizza e protegge i tuoi dati personali: cookie, analisi e diritti previsti dal GDPR.",
   "passengerLabel": "Fino a 7 passeggeri",
@@ -251,15 +254,32 @@ export default {
     {
       "heading": "Transfer dal Pireo a Hotel e Centro di Atene",
       "paragraphs": [
-        "Un transfer privato dal Pireo può collegare l’arrivo del traghetto o della crociera a un hotel o a un altro indirizzo concordato nel centro di Atene. Invia l’indirizzo completo con la richiesta affinché il preventivo rispecchi il viaggio effettivamente necessario. Se soggiorni a Glyfada, Vouliagmeni o altrove sulla Riviera di Atene, indica la località specifica anziché richiedere genericamente un arrivo ad Atene.",
+        "Un transfer privato dal Pireo può collegare l’arrivo del traghetto o della crociera a un hotel nel centro di Atene, inclusi Syntagma, Plaka, Monastiraki e Koukaki, o a un altro indirizzo concordato. Invia l’indirizzo completo con la richiesta affinché il preventivo rispecchi il viaggio effettivamente necessario. Se soggiorni a Glyfada, Vouliagmeni o altrove sulla Riviera di Atene, indica la località specifica anziché richiedere genericamente un arrivo ad Atene.",
         "Per il ritorno, comunica l’indirizzo dell’alloggio e i dettagli di partenza del traghetto o della crociera. Possiamo discutere il prelievo prima della prenotazione. Ogni viaggio segue il percorso concordato; i tempi variano con il traffico e le località di partenza e arrivo. Contattaci su WhatsApp con i tuoi programmi e richiedi una tariffa personalizzata per il trasferimento privato."
       ]
+    },
+    {
+        "heading": "Prezzi dei transfer del Pireo",
+        "paragraphs": [
+            "Centro di Atene ↔ Porto del Pireo: da €55. Aeroporto di Atene ↔ Porto del Pireo: da €100 (€110 per 5–7 passeggeri)."
+        ],
+        "quoteLink": "Per un preventivo esatto, usa il calcolatore dei prezzi.",
+        "listHeading": "Cosa è incluso",
+        "items": [
+            "Accoglienza con un cartello con il tuo nome",
+            "Monitoraggio di voli e navi per eventuali ritardi",
+            "1 ora di attesa gratuita all’aeroporto e al porto",
+            "Aiuto con i bagagli",
+            "Seggiolini inclusi su richiesta"
+        ]
     },
     {
       "heading": "Terminal Crociere, Porti dei Traghetti e Accoglienza",
       "paragraphs": [
         "Il Pireo serve navi da crociera e traghetti: il nome della nave e il terminal o varco corretto sono quindi importanti per organizzare il prelievo. Fornisci le informazioni disponibili e aggiornaci in caso di cambiamenti. L’accoglienza e il punto d’incontro vengono coordinati per il viaggio; conferma le istruzioni e le condizioni di attesa concordate prima di prenotare, così da sapere cosa aspettarti all’arrivo.",
-        "I nostri transfer servono anche Rafina e Lavrio. Sono porti differenti, non altri nomi del Pireo: controlla quindi il biglietto e specifica il porto corretto nella richiesta. Per un trasferimento tra porti o verso ATH, indica entrambi gli estremi del percorso. Il monitoraggio del volo o della nave viene effettuato quando necessario, mentre le condizioni di attesa vanno sempre discusse e confermate per la prenotazione."
+        "I nostri transfer servono anche Rafina e Lavrio. Sono porti differenti, non altri nomi del Pireo: controlla quindi il biglietto e specifica il porto corretto nella richiesta. Per un trasferimento tra porti o verso ATH, indica entrambi gli estremi del percorso.",
+        "Il Pireo è un grande porto: le navi da crociera e i traghetti utilizzano zone diverse del porto. Gli arrivi delle crociere sono generalmente gestiti presso i varchi E11 ed E12. I traghetti per le Cicladi ed Egina utilizzano spesso i varchi da E6 a E8, mentre altre rotte utilizzano altri varchi. Comunicaci il nome della nave o della compagnia di traghetti e il varco indicato sul biglietto, se lo conosci.",
+        "Monitoriamo sia i voli sia le navi per eventuali ritardi e includiamo 1 ora di attesa gratuita all’aeroporto e al porto. Il punto d’incontro viene confermato al momento della prenotazione."
       ]
     },
     {
@@ -277,11 +297,23 @@ export default {
     },
     {
       "question": "Quanto costa un transfer privato dal Pireo?",
-      "answer": "I prezzi sono disponibili su richiesta. Invia percorso, data, numero di passeggeri, bagagli ed esigenze di seggiolini per un preventivo personalizzato."
+      "answer": "Dal centro di Atene al porto del Pireo da €55. Dall’Aeroporto di Atene al porto del Pireo da €100 o €110 per 5–7 passeggeri. Per un preventivo esatto, usa il calcolatore dei prezzi su questa pagina."
     },
     {
       "question": "Quali sono le condizioni di attesa al Pireo?",
-      "answer": "Attesa e incontro vengono coordinati per il viaggio e confermati prima della prenotazione. Comunica i dettagli della nave e chiedi conferma delle condizioni applicabili; non presumere un periodo di attesa garantito."
+      "answer": "Includiamo 1 ora di attesa gratuita al porto e all’aeroporto e monitoriamo voli e navi per eventuali ritardi. Il punto d’incontro viene confermato al momento della prenotazione."
+    },
+    {
+      "question": "Effettuate prelievi al terminal crociere e ai varchi dei traghetti?",
+      "answer": "Sì. Le navi da crociera arrivano generalmente presso i varchi E11 ed E12, e i traghetti per le Cicladi ed Egina utilizzano spesso i varchi da E6 a E8. Comunicaci il nome della nave o della compagnia di traghetti."
+    },
+    {
+      "question": "Potete portarci al Pireo per il traghetto per Egina?",
+      "answer": "Sì. Ti accompagniamo dal tuo hotel o dall’Aeroporto di Atene al varco corretto dei traghetti del Pireo e veniamo a prenderti al tuo ritorno."
+    },
+    {
+      "question": "Andate dal Pireo agli hotel del centro di Atene?",
+      "answer": "Sì, inclusi Syntagma, Plaka, Monastiraki e Koukaki, e alla Riviera di Atene, incluse Glyfada e Vouliagmeni."
     }
   ],
   "aboutParagraphs": [
@@ -578,7 +610,7 @@ export default {
     title: "FAQ",
     items: {
       q1: "Quanto costa un transfer?",
-      a1: "I transfer partono da €85 e variano in base al numero di passeggeri e all'itinerario. Contattaci per un preventivo esatto.",
+      a1: "I transfer partono da €55 e variano in base al numero di passeggeri e all'itinerario. Contattaci per un preventivo esatto.",
       q2: "Cosa è incluso nel prezzo?",
       a2: "Tutti i transfer includono pedaggi, acqua in bottiglia, Wi-Fi gratuito e monitoraggio voli o navi.",
       q3: "Quanti passeggeri e valigie entrano?",

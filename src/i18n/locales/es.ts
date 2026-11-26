@@ -200,6 +200,9 @@ export default {
   "piraeusTitle": "Traslado Puerto del Pireo | Traslado Privado al Aeropuerto de Atenas",
   "piraeusDescription": "Traslados privados del Pireo al aeropuerto de Atenas, hoteles y centro. Mercedes Vito VIP hasta 7 pasajeros, recepción y sillas infantiles bajo petición.",
   "piraeusH1": "Traslados Privados del Puerto del Pireo",
+  "piraeusIntro": "Traslados VIP privados desde el puerto del Pireo en un Mercedes Vito VIP: de la terminal de cruceros y las puertas de ferris al Aeropuerto de Atenas, hoteles del centro de la ciudad y la Riviera de Atenas, para hasta 7 pasajeros.",
+  "piraeusAirportLabel": "Aeropuerto Internacional de Atenas (ATH)",
+  "piraeusRelated": "Para más detalles, consulta nuestras guías sobre [cómo ir del Aeropuerto de Atenas al puerto del Pireo](/blog/athens-airport-to-piraeus-port-transport-options/), [un traslado privado del puerto del Pireo al Aeropuerto de Atenas](/blog/private-transfer-piraeus-port-to-athens-airport/) y [traslados de cruceros del Pireo](/blog/piraeus-cruise-transfer/).",
   "privacyTitle": "Política de Privacidad | H&A VIP Tours Atenas",
   "privacyDescription": "Cómo H&A VIP Tours recopila, utiliza y protege tus datos personales: cookies, analítica y tus derechos según el RGPD.",
   "passengerLabel": "Hasta 7 pasajeros",
@@ -251,15 +254,32 @@ export default {
     {
       "heading": "Traslados del Pireo a Hoteles y al Centro de Atenas",
       "paragraphs": [
-        "Un traslado privado del Pireo puede conectar la llegada de tu ferry o crucero con un hotel u otra dirección acordada en el centro de Atenas. Envía la dirección completa del destino con tu solicitud para que el presupuesto refleje el viaje que realmente necesitas. Si te alojas en Glyfada, Vouliagmeni u otro lugar de la Riviera de Atenas, indica esa ubicación en vez de solicitar simplemente un traslado a Atenas.",
+        "Un traslado privado del Pireo puede conectar la llegada de tu ferry o crucero con un hotel en el centro de Atenas, incluidos Syntagma, Plaka, Monastiraki y Koukaki, o con otra dirección acordada. Envía la dirección completa del destino con tu solicitud para que el presupuesto refleje el viaje que realmente necesitas. Si te alojas en Glyfada, Vouliagmeni u otro lugar de la Riviera de Atenas, indica esa ubicación en vez de solicitar simplemente un traslado a Atenas.",
         "Para la vuelta, comparte la dirección del alojamiento y los datos de salida del ferry o crucero. Podemos hablar de la recogida antes de reservar. Cada viaje se planifica según la ruta acordada; el tiempo varía con el tráfico y las ubicaciones de origen y destino. Contacta por WhatsApp con tus planes y solicita un presupuesto personalizado para tu traslado privado."
       ]
+    },
+    {
+        "heading": "Precios de traslados del Pireo",
+        "paragraphs": [
+            "Centro de Atenas ↔ Puerto del Pireo: desde €55. Aeropuerto de Atenas ↔ Puerto del Pireo: desde €100 (€110 para 5–7 pasajeros)."
+        ],
+        "quoteLink": "Para un presupuesto exacto, utiliza la calculadora de precios.",
+        "listHeading": "Qué está incluido",
+        "items": [
+            "Recepción con un cartel con tu nombre",
+            "Seguimiento de vuelos y barcos por si hay retrasos",
+            "1 hora de espera gratuita en el aeropuerto y en el puerto",
+            "Ayuda con el equipaje",
+            "Sillas infantiles incluidas bajo petición"
+        ]
     },
     {
       "heading": "Terminales de Cruceros, Puertos de Ferris y Recepción",
       "paragraphs": [
         "El Pireo atiende tanto cruceros como ferris, por lo que el nombre del barco y la terminal o puerta correcta son importantes al organizar la recogida. Facilita los datos que tengas y avísanos si cambian. La recepción y el punto de encuentro se coordinan para tu viaje; confirma las instrucciones de recogida y las condiciones de espera acordadas antes de reservar para saber qué esperar a tu llegada.",
-        "Nuestros traslados también atienden Rafina y Lavrio. Son puertos distintos, no otros nombres del Pireo, así que revisa el billete e indica el puerto correcto en tu solicitud. Para un traslado entre puertos o hacia ATH, comunica ambos extremos del recorrido. Se realiza seguimiento del vuelo o barco cuando es necesario, mientras que las condiciones de espera siempre deben comentarse y confirmarse para tu reserva."
+        "Nuestros traslados también atienden Rafina y Lavrio. Son puertos distintos, no otros nombres del Pireo, así que revisa el billete e indica el puerto correcto en tu solicitud. Para un traslado entre puertos o hacia ATH, comunica ambos extremos del recorrido.",
+        "El Pireo es un puerto grande: los cruceros y los ferris utilizan distintas zonas del puerto. Las llegadas de cruceros suelen atenderse en las puertas E11 y E12. Los ferris a las Cícladas y Egina suelen utilizar las puertas E6 a E8, y otras rutas utilizan otras puertas. Indícanos el nombre de tu barco o compañía de ferry y la puerta que figure en tu billete, si la conoces.",
+        "Realizamos el seguimiento de vuelos y barcos por si hay retrasos e incluimos 1 hora de espera gratuita en el aeropuerto y en el puerto. El punto de encuentro se confirma al reservar."
       ]
     },
     {
@@ -277,11 +297,23 @@ export default {
     },
     {
       "question": "¿Cuánto cuesta un traslado privado del Pireo?",
-      "answer": "Los precios se facilitan bajo petición. Envía ruta, fecha, número de pasajeros, equipaje y necesidades de sillas infantiles para recibir un presupuesto personalizado."
+      "answer": "Desde el centro de Atenas al puerto del Pireo desde €55. Desde el Aeropuerto de Atenas al puerto del Pireo desde €100 o €110 para 5–7 pasajeros. Para un presupuesto exacto, utiliza la calculadora de precios de esta página."
     },
     {
       "question": "¿Cuáles son las condiciones de espera en el Pireo?",
-      "answer": "La espera y el encuentro se coordinan para tu viaje y se confirman antes de reservar. Facilita los datos del barco y pide confirmar las condiciones aplicables; no des por hecho un periodo de espera garantizado."
+      "answer": "Incluimos 1 hora de espera gratuita en el puerto y en el aeropuerto, y realizamos el seguimiento de vuelos y barcos por si hay retrasos. El punto de encuentro se confirma al reservar."
+    },
+    {
+      "question": "¿Recogéis en la terminal de cruceros y en las puertas de ferris?",
+      "answer": "Sí. Los cruceros suelen llegar a las puertas E11 y E12, y los ferris a las Cícladas y Egina suelen utilizar las puertas E6 a E8. Indícanos el nombre de tu barco o compañía de ferry."
+    },
+    {
+      "question": "¿Podéis llevarnos al Pireo para tomar el ferry a Egina?",
+      "answer": "Sí. Te llevamos desde tu hotel o desde el Aeropuerto de Atenas a la puerta de ferry correcta del Pireo y te recogemos cuando vuelvas."
+    },
+    {
+      "question": "¿Vais del Pireo a hoteles del centro de Atenas?",
+      "answer": "Sí, incluidos Syntagma, Plaka, Monastiraki y Koukaki, y a la Riviera de Atenas, incluidas Glyfada y Vouliagmeni."
     }
   ],
   "aboutParagraphs": [
@@ -578,7 +610,7 @@ export default {
     title: "FAQ",
     items: {
       q1: "¿Cuánto cuesta un traslado?",
-      a1: "Los traslados empiezan desde €85 y varían según el número de pasajeros y la ruta. Contáctanos para un presupuesto exacto.",
+      a1: "Los traslados empiezan desde €55 y varían según el número de pasajeros y la ruta. Contáctanos para un presupuesto exacto.",
       q2: "¿Qué está incluido en el precio?",
       a2: "Todos los traslados incluyen peajes, agua embotellada, Wi-Fi gratuito y seguimiento de vuelos o barcos.",
       q3: "¿Cuántos pasajeros y maletas caben?",
