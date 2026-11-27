@@ -1,6 +1,8 @@
 {
-  "version": "1.0",
-  "publisher": "Haviptransfers.gr",
-  "publisher_url": "https://haviptransfers.gr",
-  "resources": []
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "H&A VIP Tours",
+    "identifier": "haviptransfers.gr"
+  },
+  "entries": []
 }

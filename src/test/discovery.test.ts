@@ -16,10 +16,12 @@ describe("public AI discovery", () => {
   });
   it("serves the requested catalog data rather than an HTML document", () => {
     expect(JSON.parse(readPublic(".well-known/ai-catalog.json"))).toEqual({
-      version: "1.0",
-      publisher: "Haviptransfers.gr",
-      publisher_url: "https://haviptransfers.gr",
-      resources: [],
+      specVersion: "1.0",
+      host: {
+        displayName: "H&A VIP Tours",
+        identifier: "haviptransfers.gr",
+      },
+      entries: [],
     });
   });
 
