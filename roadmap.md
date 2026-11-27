@@ -53,3 +53,4 @@
 
 - [done] Organization schema image/logo serve from https://haviptransfers.gr/logo.png; the owner's high-resolution logo replaced the small source.
 - [done] Dedicated /airport-transfer-athens/ page in 8 languages (own H1, description, body, FAQ schema). Not published.
+- [done] llms.txt rewritten with owner-supplied business details, services, tours, example Piraeus price and AI notes; served at /llms.txt as text/plain with no redirect and robots.txt open. 6 discovery checks + 542 tests pass; typecheck clean. Not published.

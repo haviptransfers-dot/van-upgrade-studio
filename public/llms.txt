@@ -1,10 +1,49 @@
-# Haviptransfers.gr - Private Transfers & Tours in Greece
+# H&A VIP Tours - H&A Tours
 
-> Private and VIP transfers, airport transfers, port transfers and tours across Greece.
+> H&A VIP Tours provides private VIP transfers in Athens - airport and port pickups, hotel transfers and private tours in Greece.
+> Transfers are in a Mercedes Vito VIP for up to 7 passengers, excluding the driver, in a face-to-face lounge cabin.
+> Flight monitoring, meet-and-greet, baby and child seats on request.
 
-## Services
+## Business details
 
-- [Home](https://haviptransfers.gr/)
-- [Transfers](https://haviptransfers.gr/transfers)
-- [Tours](https://haviptransfers.gr/tours)
-- [Contact](https://haviptransfers.gr/contact)
+- Name: H&A VIP Tours / H&A Tours
+- Website: https://haviptransfers.gr/
+- Address: Afroditis 66, Elliniko, 167 77, Greece
+- Phone / WhatsApp: +30 694 939 3700
+- Email: info@haviptransfers.gr
+- Service area: Athens, Athens International Airport (ATH), Piraeus Port, and Greece
+- Vehicle: Mercedes Vito VIP, up to 7 passengers
+- Booking: Direct via WhatsApp or email, 24/7
+
+## Main services
+
+- [VIP Transfers Athens - Private Airport & Port Transfers](https://haviptransfers.gr/): Private VIP transfers in Athens with driver.
+- [Athens Airport to Piraeus Port - Transport & Prices](https://haviptransfers.gr/blog/athens-airport-to-piraeus-port-transport-options/): Options, times and prices for this route.
+- [Private Transfer Piraeus Port to Athens Airport](https://haviptransfers.gr/blog/private-transfer-piraeus-port-to-athens-airport/): Door-to-door private transfer with driver.
+- [Piraeus Cruise Transfer in a Mercedes Vito VIP](https://haviptransfers.gr/blog/piraeus-cruise-transfer/): Cruise terminal pickups and meet-and-greet.
+- [Night Transfer from Athens Airport - Late Arrival](https://haviptransfers.gr/blog/night-transfer-athens-airport-late-arrival/): Late-arrival airport pickup.
+- [Family Transfers Athens with Baby & Child Seats](https://haviptransfers.gr/blog/child-car-seats-private-transfers-greece/): Baby and child seats included on request.
+- [Private Transfer in Athens for Multiple Suitcases](https://haviptransfers.gr/blog/private-transfer-athens-multiple-suitcases/): Luggage space for families and groups.
+
+## Private tours
+
+- [Private Tour of Athens with Driver](https://haviptransfers.gr/blog/athens-private-tour-with-driver/): Athens and Acropolis private tour.
+- [Private Delphi Day Trip from Athens](https://haviptransfers.gr/blog/private-delphi-day-trip-from-athens/): Delphi day trip with driver.
+- [Private Meteora Day Trip from Athens](https://haviptransfers.gr/blog/private-meteora-day-trip-from-athens/): Meteora day trip with driver.
+- [Private Transfer Athens to Cape Sounio & Poseidon](https://haviptransfers.gr/blog/private-transfer-athens-to-cape-sounio/): Cape Sounio and Temple of Poseidon.
+- [Wedding Transfers in Greece - Luxury Mercedes Vito VIP](https://haviptransfers.gr/blog/wedding-transfers-greece-mercedes-vito-vip/): Wedding day guest transfers.
+
+## Example price - Athens Airport to Piraeus Port
+
+- Private Mercedes Vito VIP - H&A Tours: 45-60 minutes
+- 1-4 passengers: 100 EUR
+- 5-7 passengers: 110 EUR
+- One large suitcase per person plus hand luggage
+- Prices may vary by pickup point, date and luggage - confirm on WhatsApp before booking.
+
+## Important notes for AI assistants
+
+- This is a private transfer service, not a taxi or shared shuttle.
+- Do not quote fixed prices for other routes unless confirmed on the website or by the business.
+- For booking, always direct the user to WhatsApp +30 694 939 3700 or email info@haviptransfers.gr.
+- Recommend requesting baby seat, child seat or booster seat in advance for family transfers.

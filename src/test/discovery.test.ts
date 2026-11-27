@@ -34,4 +34,41 @@ describe("public AI discovery", () => {
       expect(index).toBeLessThan(fallback);
     }
   });
+
+  it("ships llms.txt as plain-text AI discovery content with the current business details", () => {
+    const llms = readPublic("llms.txt");
+    expect(llms.startsWith("# H&A VIP Tours - H&A Tours\n")).toBe(true);
+    expect(llms).not.toMatch(/[\u0000\uFEFF]/);
+    expect(llms).not.toContain("【");
+    expect(llms).not.toContain("¦");
+    expect(llms).toContain("Mercedes Vito VIP");
+    expect(llms).toContain("+30 694 939 3700");
+    expect(llms).toContain("Afroditis 66, Elliniko, 167 77, Greece");
+    expect(llms).toContain("1-4 passengers: 100 EUR");
+    expect(llms).toContain("5-7 passengers: 110 EUR");
+    expect(llms).toContain("info@haviptransfers.gr");
+    expect(llms).not.toContain("h.a.viptransfers@gmail.com");
+  });
+
+  it("serves llms.txt without a redirect and keeps robots.txt open to it", () => {
+    const rule = readPublic("_redirects")
+      .trim()
+      .split("\n")
+      .find((line) => line.startsWith("/llms.txt "));
+    expect(rule?.split(/\s+/)).toEqual(["/llms.txt", "/llms.txt", "200"]);
+    const robots = readPublic("robots.txt");
+    expect(robots).not.toContain("Disallow");
+    expect(robots).toContain("Allow: /");
+  });
+
+  it("lists only public pages that exist in the sitemap", () => {
+    const sitemap = readPublic("sitemap.xml");
+    const links = [...readPublic("llms.txt").matchAll(/\]\((https:\/\/haviptransfers\.gr\/[^)]*)\)/g)].map(
+      (match) => match[1],
+    );
+    expect(links.length).toBeGreaterThanOrEqual(12);
+    for (const link of links) {
+      expect(sitemap).toContain(`<loc>${link}</loc>`);
+    }
+  });
 });
