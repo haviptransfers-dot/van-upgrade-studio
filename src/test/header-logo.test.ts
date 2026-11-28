@@ -27,11 +27,12 @@ function webpSize(buf: Buffer) {
 
 const navTag = page.match(/<nav className="home-navigation[^"]*"/)?.[0] ?? "";
 const navRow = page.match(/<nav className="home-navigation[^"]*">\s*<div className="([^"]*)"/)?.[1] ?? "";
-const brandWrap = page.match(/<div className="(flex items-center gap-2[^"]*)">/)?.[1] ?? "";
+const brandWrap = page.match(/<div className="([^"]*)">\s*<img src=\{headerLogo\}/)?.[1] ?? "";
 const logoImg = page.match(/<img src=\{headerLogo\}[^>]*>/)?.[0] ?? "";
 const snapshotNav = snapshot.match(/<nav class="home-navigation[\s\S]*?<\/nav>/)?.[0] ?? "";
 const snapshotRow = snapshotNav.match(/<div class="([^"]*)"/)?.[1] ?? "";
 const snapshotLogoImg = snapshot.match(/<img alt="H&amp;A Tours"[^>]*>/)?.[0] ?? "";
+const snapshotBrand = snapshot.match(/<div class="([^"]*)">\s*<img alt="H&amp;A Tours"/)?.[1] ?? "";
 
 describe("homepage header logo", () => {
   it("shows the uploaded logo image instead of the brand text", () => {
@@ -86,14 +87,26 @@ describe("homepage header logo", () => {
     expect(snapshotLogoImg).toContain("w-auto");
   });
 
+  it("centres the logo in the mobile header and keeps it left on desktop", () => {
+    expect(brandWrap).toContain("items-center");
+    expect(brandWrap).toContain("flex-1");
+    expect(brandWrap).toContain("justify-center");
+    expect(brandWrap).toContain("md:flex-none");
+    expect(brandWrap).toContain("md:justify-start");
+    for (const cls of ["flex-1", "justify-center", "md:flex-none", "md:justify-start"]) {
+      expect(snapshotBrand).toContain(cls);
+    }
+  });
+
   it("ships the snapshot's own sizing rules in the critical stylesheet", () => {
     expect(critical).toContain("--header: 0 0% 0%;");
     expect(critical).toContain(".h-16 { height: 4rem; }");
     expect(critical).toContain(".w-auto { width: auto; }");
     expect(critical).toContain(".py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }");
+    expect(critical).toContain(".flex-1 { flex: 1 1 0%; }");
     expect(critical).toContain(".bg-header { background-color: hsl(var(--header)); }");
     expect(critical).toContain(
-      "@media (min-width: 768px) { .md\\:h-\\[72px\\] { height: 72px; } .md\\:py-1\\.5 { padding-top: 0.375rem; padding-bottom: 0.375rem; } }",
+      "@media (min-width: 768px) { .md\\:h-\\[72px\\] { height: 72px; } .md\\:py-1\\.5 { padding-top: 0.375rem; padding-bottom: 0.375rem; } .md\\:flex-none { flex: none; } .md\\:justify-start { justify-content: flex-start; } }",
     );
   });
 });

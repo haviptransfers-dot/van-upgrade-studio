@@ -117,7 +117,7 @@ const Index = ({ routeKey }: IndexProps) => {
       {/* Navigation */}
       <nav className="home-navigation fixed top-0 left-0 right-0 z-50 bg-header">
         <div className="container mx-auto flex flex-wrap items-center justify-between py-1 md:py-1.5 px-4">
-          <div className="flex items-center gap-2 md:gap-3 min-w-0">
+          <div className="flex min-w-0 flex-1 items-center justify-center gap-2 md:flex-none md:justify-start md:gap-3">
             <img src={headerLogo} alt="H&A Tours" className="h-16 w-auto object-contain flex-shrink-0 md:h-[72px]" width={224} height={216} loading="eager" decoding="async" />
             <p className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-muted-foreground">{t("nav.tagline")}</p>
           </div>
