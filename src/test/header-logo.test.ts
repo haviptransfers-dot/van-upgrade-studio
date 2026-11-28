@@ -26,7 +26,11 @@ function webpSize(buf: Buffer) {
 }
 
 const navTag = page.match(/<nav className="home-navigation[^"]*"/)?.[0] ?? "";
+const navRow = page.match(/<nav className="home-navigation[^"]*">\s*<div className="([^"]*)"/)?.[1] ?? "";
+const brandWrap = page.match(/<div className="(flex items-center gap-2[^"]*)">/)?.[1] ?? "";
 const logoImg = page.match(/<img src=\{headerLogo\}[^>]*>/)?.[0] ?? "";
+const snapshotNav = snapshot.match(/<nav class="home-navigation[\s\S]*?<\/nav>/)?.[0] ?? "";
+const snapshotRow = snapshotNav.match(/<div class="([^"]*)"/)?.[1] ?? "";
 const snapshotLogoImg = snapshot.match(/<img alt="H&amp;A Tours"[^>]*>/)?.[0] ?? "";
 
 describe("homepage header logo", () => {
@@ -38,15 +42,16 @@ describe("homepage header logo", () => {
     expect(page).not.toContain("logoImg");
   });
 
-  it("keeps the logo unsquashed at 48px on mobile and 56px on desktop", () => {
+  it("keeps the logo unsquashed at 64px on mobile and 72px on desktop", () => {
     const { width, height } = webpSize(logo);
-    expect(logoImg).toContain("h-12");
-    expect(logoImg).toContain("md:h-14");
+    expect(logoImg).toContain("h-16");
+    expect(logoImg).toContain("md:h-[72px]");
     expect(logoImg).toContain("w-auto");
     expect(logoImg).toContain("object-contain");
     expect(logoImg).toContain(`width={${width}}`);
     expect(logoImg).toContain(`height={${height}}`);
     expect(width).not.toBe(height);
+    expect(height).toBeGreaterThanOrEqual(216);
   });
 
   it("sits on a clean black header with no border, shadow or translucent panel", () => {
@@ -58,23 +63,37 @@ describe("homepage header logo", () => {
     expect(tailwind).toContain('header: "hsl(var(--header))"');
   });
 
+  it("keeps the header tight and the logo vertically centred", () => {
+    expect(navRow).toContain("items-center");
+    expect(navRow).toContain("py-1");
+    expect(navRow).toContain("md:py-1.5");
+    for (const unwanted of ["py-2", "py-3", "py-4", "py-6"]) expect(navRow).not.toContain(unwanted);
+    expect(brandWrap).toContain("items-center");
+    expect(snapshotRow).toContain("items-center");
+    expect(snapshotRow).toContain("py-1");
+    expect(snapshotRow).toContain("md:py-1.5");
+    for (const unwanted of ["py-2", "py-3", "py-4", "py-6"]) expect(snapshotRow).not.toContain(unwanted);
+  });
+
   it("paints the same header from the first-screen snapshot", () => {
-    const snapshotNav = snapshot.match(/<nav class="home-navigation[^"]*"/)?.[0] ?? "";
     expect(snapshotNav).toContain("bg-header");
     expect(snapshotNav).not.toContain("bg-background/90");
     expect(snapshotNav).not.toContain("border-b");
     expect(snapshot).not.toContain("H&amp;A TOURS");
     expect(snapshotLogoImg).toContain("data:image/webp;base64,");
-    expect(snapshotLogoImg).toContain("h-12");
-    expect(snapshotLogoImg).toContain("md:h-14");
+    expect(snapshotLogoImg).toContain("h-16");
+    expect(snapshotLogoImg).toContain("md:h-[72px]");
     expect(snapshotLogoImg).toContain("w-auto");
   });
 
   it("ships the snapshot's own sizing rules in the critical stylesheet", () => {
     expect(critical).toContain("--header: 0 0% 0%;");
-    expect(critical).toContain(".h-12 { height: 3rem; }");
+    expect(critical).toContain(".h-16 { height: 4rem; }");
     expect(critical).toContain(".w-auto { width: auto; }");
+    expect(critical).toContain(".py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }");
     expect(critical).toContain(".bg-header { background-color: hsl(var(--header)); }");
-    expect(critical).toContain("@media (min-width: 768px) { .md\\:h-14 { height: 3.5rem; } }");
+    expect(critical).toContain(
+      "@media (min-width: 768px) { .md\\:h-\\[72px\\] { height: 72px; } .md\\:py-1\\.5 { padding-top: 0.375rem; padding-bottom: 0.375rem; } }",
+    );
   });
 });
