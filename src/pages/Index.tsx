@@ -12,7 +12,7 @@ import DeferredSection from "@/components/DeferredSection";
 import ClickToChat from "@/components/ClickToChat";
 import { useAfterFirstPaint } from "@/hooks/use-after-first-paint";
 import { linkPath } from "@/lib/languagePaths";
-import logoImg from "@/assets/logo.webp";
+import headerLogo from "@/assets/logo-header.webp";
 import tourAcropolis from "@/assets/tour-acropolis.webp";
 import tourSounio from "@/assets/tour-sounio.webp";
 import tourMeteora from "@/assets/tour-meteora.webp";
@@ -115,14 +115,11 @@ const Index = ({ routeKey }: IndexProps) => {
       )}
       {backgroundReady && <Suspense fallback={null}><AnimatedBackground /></Suspense>}
       {/* Navigation */}
-      <nav className="home-navigation fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
+      <nav className="home-navigation fixed top-0 left-0 right-0 z-50 bg-header">
         <div className="container mx-auto flex flex-wrap items-center justify-between py-2 md:py-3 px-4">
           <div className="flex items-center gap-2 md:gap-3 min-w-0">
-            <img src={logoImg} alt="H&A Tours" className="h-9 w-9 md:h-10 md:w-10 object-contain flex-shrink-0" width={40} height={40} loading="eager" decoding="async" />
-            <div className="min-w-0">
-              <span className="font-display text-base md:text-lg font-bold text-primary whitespace-nowrap">H&A TOURS</span>
-              <p className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-muted-foreground">{t("nav.tagline")}</p>
-            </div>
+            <img src={headerLogo} alt="H&A Tours" className="h-12 w-auto object-contain flex-shrink-0 md:h-14" width={174} height={168} loading="eager" decoding="async" />
+            <p className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-muted-foreground">{t("nav.tagline")}</p>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium">
             <a href={sectionHref("services")} className="text-foreground/70 hover:text-primary transition-colors">{t("nav.services")}</a>
