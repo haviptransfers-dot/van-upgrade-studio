@@ -116,8 +116,8 @@ const Index = ({ routeKey }: IndexProps) => {
       {backgroundReady && <Suspense fallback={null}><AnimatedBackground /></Suspense>}
       {/* Navigation */}
       <nav className="home-navigation fixed top-0 left-0 right-0 z-50 bg-header">
-        <div className="container mx-auto flex flex-wrap items-center justify-between py-1 md:py-1.5 px-4">
-          <div className="flex min-w-0 flex-1 items-center justify-center gap-2 md:flex-none md:justify-start md:gap-3">
+        <div className="container mx-auto relative flex min-h-[72px] flex-wrap items-center justify-between py-1 md:min-h-[84px] md:py-1.5 px-4">
+          <div className="absolute left-1/2 top-0 flex h-full -translate-x-1/2 items-center gap-2 md:static md:h-auto md:translate-x-0 md:flex-none md:justify-start md:gap-3">
             <img src={headerLogo} alt="H&A Tours" className="h-16 w-auto object-contain flex-shrink-0 md:h-[72px]" width={224} height={216} loading="eager" decoding="async" />
             <p className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-muted-foreground">{t("nav.tagline")}</p>
           </div>
@@ -135,7 +135,7 @@ const Index = ({ routeKey }: IndexProps) => {
               </span>
             </Link>
           </div>
-          <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">
+          <div className="ml-auto flex items-center gap-2 md:ml-0 md:gap-3 flex-shrink-0">
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label={t("seoUi.uiTranslations.Book now via WhatsApp")}>
               <Button size="sm" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/80 md:h-10 md:px-4" aria-label={t("seoUi.uiTranslations.Book now via WhatsApp")}>
                 <MessageCircle className="w-4 h-4" />
